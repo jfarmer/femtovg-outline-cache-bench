@@ -1,0 +1,22 @@
+{
+  "01-native-pool-examples-replay-audit.json": {
+    "bytes": 2591794,
+    "sha256": "b525a5aba347c60cab2b46e8ce827c7b5b924dced3688ac31b847549367f593f",
+    "source": "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/01-native-pool-examples-replay-audit.json"
+  },
+  "02-native-pool-alustin-app-audit.json": {
+    "bytes": 127234,
+    "sha256": "3abda52171831064aeb80dc905403fc15a1ca2b86eff71068d680ec56d016835",
+    "source": "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/02-native-pool-alustin-app-audit.json"
+  },
+  "historical-path-map.json": {
+    "bytes": 502,
+    "sha256": "10eec6aee0ff631088facbac98b8de5eaf71fcb182a3f7d81356b26205f9b77f",
+    "source": "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/historical-path-map.json"
+  },
+  "verification.json": {
+    "bytes": 2567,
+    "sha256": "01375a06449a693447d6e097bb486304f02fe2b1674e3a35b2932559492f29f0",
+    "source": "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/verification.json"
+  }
+}

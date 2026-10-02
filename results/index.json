@@ -1,352 +1,413 @@
 {
-  "schema": 1,
-  "campaigns": [
-    {
-      "label": "original-alustin",
-      "path": "results/original-alustin",
-      "original_root": "/private/tmp/alustin-femtovg-outline-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "0f6bfbfbba9291280bc11446d46ed9dbfe7a57498cfdfe78ac06d450526e04db",
-        "bytes": 11057080
-      },
-      "files": 1399,
-      "raw_bytes": 72445441
-    },
-    {
-      "label": "original-examples",
-      "path": "results/original-examples",
-      "original_root": "/private/tmp/femtovg-example-outline-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "8862de08717862928240fddbc8993a7323d80506d590022c4e56b9c358559fbc",
-        "bytes": 9871674
-      },
-      "files": 523,
-      "raw_bytes": 210507495
-    },
-    {
-      "label": "original-e2e",
-      "path": "results/original-e2e",
-      "original_root": "/private/tmp/femtovg-outline-e2e-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "440771b5d918aa151703d455aa9592a065f3ab6c1dcbcd859df0181ce2126620",
-        "bytes": 5400225
-      },
-      "files": 561,
-      "raw_bytes": 41599202
-    },
-    {
-      "label": "font-alustin",
-      "path": "results/font-alustin",
-      "original_root": "/private/tmp/alustin-font-outline-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "a122a8825e67d939a9c2030782a9b2bfe5e309264b60ccd43ea0daedf0a89e48",
-        "bytes": 16288425
-      },
-      "files": 2709,
-      "raw_bytes": 123663357
-    },
-    {
-      "label": "liberation-examples",
-      "path": "results/liberation-examples",
-      "original_root": "/private/tmp/femtovg-liberation-example-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "9c6b3088109bb8a1829936fabf220ed140ef06942496a2d9294f702643604254",
-        "bytes": 23204966
-      },
-      "files": 1123,
-      "raw_bytes": 735341801
-    },
-    {
-      "label": "pt-sans-font-study",
-      "path": "results/pt-sans-font-study",
-      "original_root": "/private/tmp/pt-sans-outline-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "360de9f466c40678c16ea267e219fc7220634048d56fa7b7dac076a95c83e0fd",
-        "bytes": 160638
-      },
-      "files": 22,
-      "raw_bytes": 566786
-    },
-    {
-      "label": "font-hint-search",
-      "path": "results/font-hint-search",
-      "original_root": "/private/tmp/femtovg-open-font-search",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "185bf26dcb3852006d01ce3639de67afd9ee0332837c53a2bedc2c63568eb5f1",
-        "bytes": 1741937
-      },
-      "files": 20,
-      "raw_bytes": 3585119
-    },
-    {
-      "label": "liberation-font-inspection",
-      "path": "results/liberation-font-inspection",
-      "original_root": "/private/tmp/femtovg-liberation-font-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "232e755f28ce067f2226ab5be4c977e1a77934419e585cb0d38eb65d078ff547",
-        "bytes": 4739085
-      },
-      "files": 19,
-      "raw_bytes": 6759532
-    },
-    {
-      "label": "pt-sans-examples",
-      "path": "results/pt-sans-examples",
-      "original_root": "/private/tmp/femtovg-pt-sans-outline-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "5978c54e17a3d380476d406d43fa1184bcf9368403bf7409783694e5f036f383",
-        "bytes": 12835542
-      },
-      "files": 550,
-      "raw_bytes": 539447344
-    },
-    {
-      "label": "pt-sans-alustin",
-      "path": "results/pt-sans-alustin",
-      "original_root": "/private/tmp/alustin-pt-sans-outline-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "b97df14a5e294d35e1c96f287d5dc06ec9b956dd00555d8369c50840f626dd4e",
-        "bytes": 5722174
-      },
-      "files": 1179,
-      "raw_bytes": 52704440
-    },
-    {
-      "label": "admission-examples",
-      "path": "results/admission-examples",
-      "original_root": "/private/tmp/femtovg-admission-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "e4c9cf16cc7a5f9243d8cef2e4e584ca6c4cdd72cdd7f3417f5c062eec75914d",
-        "bytes": 16505915
-      },
-      "files": 2435,
-      "raw_bytes": 938393545
-    },
-    {
-      "label": "admission-alustin",
-      "path": "results/admission-alustin",
-      "original_root": "/private/tmp/alustin-admission-review",
-      "role": "historical",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "a5fa65691f0052e8f5242d1c9b6771d0d7ee6242ad566fbfd8d7a21a19886746",
-        "bytes": 19239721
-      },
-      "files": 5104,
-      "raw_bytes": 178219770
-    },
-    {
-      "label": "miss-screening-examples",
-      "path": "results/miss-screening-examples",
-      "original_root": "/private/tmp/femtovg-miss-review",
-      "role": "screening",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "f9c9d87aa5dcae52001ac157e435df9dd9a08225401afc0275c23799a0172a08",
-        "bytes": 26355091
-      },
-      "files": 8964,
-      "raw_bytes": 3751949147
-    },
-    {
-      "label": "miss-screening-alustin",
-      "path": "results/miss-screening-alustin",
-      "original_root": "/private/tmp/alustin-miss-review",
-      "role": "screening",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "7f116d1ebd62d6f91b8afb97633bf65869ef5933791dcee2229a0b532ee11066",
-        "bytes": 23502239
-      },
-      "files": 3846,
-      "raw_bytes": 306762722
-    },
-    {
-      "label": "draft-final-examples",
-      "path": "results/draft-final-examples",
-      "original_root": "/private/tmp/femtovg-miss-final-review",
-      "role": "superseded",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "956a84c4a4b4ecb3ffca7deb7946d6cd0498aec0bc3fa7707913622693a1e6d8",
-        "bytes": 10166906
-      },
-      "files": 1938,
-      "raw_bytes": 422433253
-    },
-    {
-      "label": "draft-final-alustin",
-      "path": "results/draft-final-alustin",
-      "original_root": "/private/tmp/alustin-miss-final-review",
-      "role": "superseded",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "11b00739bfb276455e6cd76a4cb01d148f9db14cc8d48a5f2306a4dec9d860f9",
-        "bytes": 6451995
-      },
-      "files": 385,
-      "raw_bytes": 33017973
-    },
-    {
-      "label": "draft-selection-examples",
-      "path": "results/draft-selection-examples",
-      "original_root": "/private/tmp/femtovg-miss-selection-review",
-      "role": "superseded",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "dbca20cd2f6fd7e56cebc70319f38d64d5a9efa1484d066ec56f6fe8b770497c",
-        "bytes": 6071134
-      },
-      "files": 928,
-      "raw_bytes": 66603541
-    },
-    {
-      "label": "draft-selection-alustin",
-      "path": "results/draft-selection-alustin",
-      "original_root": "/private/tmp/alustin-miss-selection-review",
-      "role": "superseded",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "e2f91ae00531ab2ce92c874bb2b76aa1205929a6ebadcdb2fbfea02eee8e9ae2",
-        "bytes": 6611846
-      },
-      "files": 233,
-      "raw_bytes": 25097742
-    },
-    {
-      "label": "gray8-diagnosis",
-      "path": "results/gray8-diagnosis",
-      "original_root": "/private/tmp/femtovg-gray8-diagnose",
-      "role": "correctness-diagnosis",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "3b7159008fb709f3e39239034e970cf0fab2ac5536b7002afe9bd6de9769a3c5",
-        "bytes": 5947952
-      },
-      "files": 452,
-      "raw_bytes": 38732063
-    },
-    {
-      "label": "selection-examples",
-      "path": "results/selection-examples",
-      "original_root": "/private/tmp/femtovg-miss-selection-v2-review",
-      "role": "final-selection",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "6f13559c2c3351eb0c34bac2f02278f9b4ff22c746d644db78e286978d0e5eac",
-        "bytes": 24578314
-      },
-      "files": 2676,
-      "raw_bytes": 1719004942
-    },
-    {
-      "label": "selection-alustin",
-      "path": "results/selection-alustin",
-      "original_root": "/private/tmp/alustin-miss-selection-v2-review",
-      "role": "final-selection",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "0e9b253d8d576f52db2b2ff28ef7a238f6b948d009e15d5ebfdff0b331628ead",
-        "bytes": 19491621
-      },
-      "files": 2720,
-      "raw_bytes": 206613998
-    },
-    {
-      "label": "portable-validation",
-      "path": "results/portable-validation",
-      "original_root": "/private/tmp/femtovg-outline-cache-bench/runs/portable-validation",
-      "role": "functional-validation",
-      "complete": true,
-      "archive": {
-        "path": "records.tar.gz",
-        "sha256": "d09304d8c006a1a93616a2d3747670e36ef1a24806dea1c6f5182c47284ac948",
-        "bytes": 13379957
-      },
-      "files": 1498,
-      "raw_bytes": 642108156
-    }
-  ],
   "analysis_audits": [
     {
-      "suite": "replay",
       "campaign": "selection-examples",
-      "results": "results",
       "experiment": "experiment.json",
       "modes": [
         "cpu",
         "gpu"
       ],
       "phase_summary": "results/analysis/summary.csv",
-      "sequence_summary": "results/sequence-analysis/summary.csv"
-    },
-    {
-      "suite": "app",
-      "campaign": "selection-alustin",
-      "batch": "cpu-12",
-      "analysis": "analysis",
-      "experiment": "experiment.json"
-    },
-    {
-      "suite": "replay",
-      "campaign": "miss-screening-examples",
       "results": "results",
+      "sequence_summary": "results/sequence-analysis/summary.csv",
+      "suite": "replay"
+    },
+    {
+      "analysis": "analysis",
+      "batch": "cpu-12",
+      "campaign": "selection-alustin",
+      "experiment": "experiment.json",
+      "suite": "app"
+    },
+    {
+      "campaign": "miss-screening-examples",
       "experiment": "experiment.json",
       "modes": [
         "cpu"
       ],
       "phase_summary": "results/analysis/summary.csv",
-      "sequence_summary": "results/sequence-analysis/summary.csv"
+      "results": "results",
+      "sequence_summary": "results/sequence-analysis/summary.csv",
+      "suite": "replay"
     },
     {
-      "suite": "app",
-      "campaign": "miss-screening-alustin",
-      "batch": "cpu-8",
       "analysis": "analysis",
-      "experiment": "experiment.json"
+      "batch": "cpu-8",
+      "campaign": "miss-screening-alustin",
+      "experiment": "experiment.json",
+      "suite": "app"
+    },
+    {
+      "campaign": "native-pool-examples",
+      "experiment": "runtime/core/experiment.json",
+      "modes": [
+        "cpu",
+        "gpu"
+      ],
+      "phase_summary": "analysis/phase/summary.csv",
+      "results": "results",
+      "sequence_summary": "analysis/sequence/summary.csv",
+      "suite": "replay"
+    },
+    {
+      "analysis": "analysis",
+      "batch": "cpu-12",
+      "campaign": "native-pool-alustin",
+      "experiment": "experiment.json",
+      "suite": "app"
     }
-  ]
+  ],
+  "campaigns": [
+    {
+      "archive": {
+        "bytes": 11057080,
+        "path": "records.tar.gz",
+        "sha256": "0f6bfbfbba9291280bc11446d46ed9dbfe7a57498cfdfe78ac06d450526e04db"
+      },
+      "complete": true,
+      "files": 1399,
+      "label": "original-alustin",
+      "original_root": "/private/tmp/alustin-femtovg-outline-review",
+      "path": "results/original-alustin",
+      "raw_bytes": 72445441,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 9871674,
+        "path": "records.tar.gz",
+        "sha256": "8862de08717862928240fddbc8993a7323d80506d590022c4e56b9c358559fbc"
+      },
+      "complete": true,
+      "files": 523,
+      "label": "original-examples",
+      "original_root": "/private/tmp/femtovg-example-outline-review",
+      "path": "results/original-examples",
+      "raw_bytes": 210507495,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 5400225,
+        "path": "records.tar.gz",
+        "sha256": "440771b5d918aa151703d455aa9592a065f3ab6c1dcbcd859df0181ce2126620"
+      },
+      "complete": true,
+      "files": 561,
+      "label": "original-e2e",
+      "original_root": "/private/tmp/femtovg-outline-e2e-review",
+      "path": "results/original-e2e",
+      "raw_bytes": 41599202,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 16288425,
+        "path": "records.tar.gz",
+        "sha256": "a122a8825e67d939a9c2030782a9b2bfe5e309264b60ccd43ea0daedf0a89e48"
+      },
+      "complete": true,
+      "files": 2709,
+      "label": "font-alustin",
+      "original_root": "/private/tmp/alustin-font-outline-review",
+      "path": "results/font-alustin",
+      "raw_bytes": 123663357,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 23204966,
+        "path": "records.tar.gz",
+        "sha256": "9c6b3088109bb8a1829936fabf220ed140ef06942496a2d9294f702643604254"
+      },
+      "complete": true,
+      "files": 1123,
+      "label": "liberation-examples",
+      "original_root": "/private/tmp/femtovg-liberation-example-review",
+      "path": "results/liberation-examples",
+      "raw_bytes": 735341801,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 160638,
+        "path": "records.tar.gz",
+        "sha256": "360de9f466c40678c16ea267e219fc7220634048d56fa7b7dac076a95c83e0fd"
+      },
+      "complete": true,
+      "files": 22,
+      "label": "pt-sans-font-study",
+      "original_root": "/private/tmp/pt-sans-outline-review",
+      "path": "results/pt-sans-font-study",
+      "raw_bytes": 566786,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 1741937,
+        "path": "records.tar.gz",
+        "sha256": "185bf26dcb3852006d01ce3639de67afd9ee0332837c53a2bedc2c63568eb5f1"
+      },
+      "complete": true,
+      "files": 20,
+      "label": "font-hint-search",
+      "original_root": "/private/tmp/femtovg-open-font-search",
+      "path": "results/font-hint-search",
+      "raw_bytes": 3585119,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 4739085,
+        "path": "records.tar.gz",
+        "sha256": "232e755f28ce067f2226ab5be4c977e1a77934419e585cb0d38eb65d078ff547"
+      },
+      "complete": true,
+      "files": 19,
+      "label": "liberation-font-inspection",
+      "original_root": "/private/tmp/femtovg-liberation-font-review",
+      "path": "results/liberation-font-inspection",
+      "raw_bytes": 6759532,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 12835542,
+        "path": "records.tar.gz",
+        "sha256": "5978c54e17a3d380476d406d43fa1184bcf9368403bf7409783694e5f036f383"
+      },
+      "complete": true,
+      "files": 550,
+      "label": "pt-sans-examples",
+      "original_root": "/private/tmp/femtovg-pt-sans-outline-review",
+      "path": "results/pt-sans-examples",
+      "raw_bytes": 539447344,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 5722174,
+        "path": "records.tar.gz",
+        "sha256": "b97df14a5e294d35e1c96f287d5dc06ec9b956dd00555d8369c50840f626dd4e"
+      },
+      "complete": true,
+      "files": 1179,
+      "label": "pt-sans-alustin",
+      "original_root": "/private/tmp/alustin-pt-sans-outline-review",
+      "path": "results/pt-sans-alustin",
+      "raw_bytes": 52704440,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 16505915,
+        "path": "records.tar.gz",
+        "sha256": "e4c9cf16cc7a5f9243d8cef2e4e584ca6c4cdd72cdd7f3417f5c062eec75914d"
+      },
+      "complete": true,
+      "files": 2435,
+      "label": "admission-examples",
+      "original_root": "/private/tmp/femtovg-admission-review",
+      "path": "results/admission-examples",
+      "raw_bytes": 938393545,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 19239721,
+        "path": "records.tar.gz",
+        "sha256": "a5fa65691f0052e8f5242d1c9b6771d0d7ee6242ad566fbfd8d7a21a19886746"
+      },
+      "complete": true,
+      "files": 5104,
+      "label": "admission-alustin",
+      "original_root": "/private/tmp/alustin-admission-review",
+      "path": "results/admission-alustin",
+      "raw_bytes": 178219770,
+      "role": "historical"
+    },
+    {
+      "archive": {
+        "bytes": 26355091,
+        "path": "records.tar.gz",
+        "sha256": "f9c9d87aa5dcae52001ac157e435df9dd9a08225401afc0275c23799a0172a08"
+      },
+      "complete": true,
+      "files": 8964,
+      "label": "miss-screening-examples",
+      "original_root": "/private/tmp/femtovg-miss-review",
+      "path": "results/miss-screening-examples",
+      "raw_bytes": 3751949147,
+      "role": "screening"
+    },
+    {
+      "archive": {
+        "bytes": 23502239,
+        "path": "records.tar.gz",
+        "sha256": "7f116d1ebd62d6f91b8afb97633bf65869ef5933791dcee2229a0b532ee11066"
+      },
+      "complete": true,
+      "files": 3846,
+      "label": "miss-screening-alustin",
+      "original_root": "/private/tmp/alustin-miss-review",
+      "path": "results/miss-screening-alustin",
+      "raw_bytes": 306762722,
+      "role": "screening"
+    },
+    {
+      "archive": {
+        "bytes": 10166906,
+        "path": "records.tar.gz",
+        "sha256": "956a84c4a4b4ecb3ffca7deb7946d6cd0498aec0bc3fa7707913622693a1e6d8"
+      },
+      "complete": true,
+      "files": 1938,
+      "label": "draft-final-examples",
+      "original_root": "/private/tmp/femtovg-miss-final-review",
+      "path": "results/draft-final-examples",
+      "raw_bytes": 422433253,
+      "role": "superseded"
+    },
+    {
+      "archive": {
+        "bytes": 6451995,
+        "path": "records.tar.gz",
+        "sha256": "11b00739bfb276455e6cd76a4cb01d148f9db14cc8d48a5f2306a4dec9d860f9"
+      },
+      "complete": true,
+      "files": 385,
+      "label": "draft-final-alustin",
+      "original_root": "/private/tmp/alustin-miss-final-review",
+      "path": "results/draft-final-alustin",
+      "raw_bytes": 33017973,
+      "role": "superseded"
+    },
+    {
+      "archive": {
+        "bytes": 6071134,
+        "path": "records.tar.gz",
+        "sha256": "dbca20cd2f6fd7e56cebc70319f38d64d5a9efa1484d066ec56f6fe8b770497c"
+      },
+      "complete": true,
+      "files": 928,
+      "label": "draft-selection-examples",
+      "original_root": "/private/tmp/femtovg-miss-selection-review",
+      "path": "results/draft-selection-examples",
+      "raw_bytes": 66603541,
+      "role": "superseded"
+    },
+    {
+      "archive": {
+        "bytes": 6611846,
+        "path": "records.tar.gz",
+        "sha256": "e2f91ae00531ab2ce92c874bb2b76aa1205929a6ebadcdb2fbfea02eee8e9ae2"
+      },
+      "complete": true,
+      "files": 233,
+      "label": "draft-selection-alustin",
+      "original_root": "/private/tmp/alustin-miss-selection-review",
+      "path": "results/draft-selection-alustin",
+      "raw_bytes": 25097742,
+      "role": "superseded"
+    },
+    {
+      "archive": {
+        "bytes": 5947952,
+        "path": "records.tar.gz",
+        "sha256": "3b7159008fb709f3e39239034e970cf0fab2ac5536b7002afe9bd6de9769a3c5"
+      },
+      "complete": true,
+      "files": 452,
+      "label": "gray8-diagnosis",
+      "original_root": "/private/tmp/femtovg-gray8-diagnose",
+      "path": "results/gray8-diagnosis",
+      "raw_bytes": 38732063,
+      "role": "correctness-diagnosis"
+    },
+    {
+      "archive": {
+        "bytes": 24578314,
+        "path": "records.tar.gz",
+        "sha256": "6f13559c2c3351eb0c34bac2f02278f9b4ff22c746d644db78e286978d0e5eac"
+      },
+      "complete": true,
+      "files": 2676,
+      "label": "selection-examples",
+      "original_root": "/private/tmp/femtovg-miss-selection-v2-review",
+      "path": "results/selection-examples",
+      "raw_bytes": 1719004942,
+      "role": "final-selection"
+    },
+    {
+      "archive": {
+        "bytes": 19491621,
+        "path": "records.tar.gz",
+        "sha256": "0e9b253d8d576f52db2b2ff28ef7a238f6b948d009e15d5ebfdff0b331628ead"
+      },
+      "complete": true,
+      "files": 2720,
+      "label": "selection-alustin",
+      "original_root": "/private/tmp/alustin-miss-selection-v2-review",
+      "path": "results/selection-alustin",
+      "raw_bytes": 206613998,
+      "role": "final-selection"
+    },
+    {
+      "archive": {
+        "bytes": 13379957,
+        "path": "records.tar.gz",
+        "sha256": "d09304d8c006a1a93616a2d3747670e36ef1a24806dea1c6f5182c47284ac948"
+      },
+      "complete": true,
+      "files": 1498,
+      "label": "portable-validation",
+      "original_root": "/private/tmp/femtovg-outline-cache-bench/runs/portable-validation",
+      "path": "results/portable-validation",
+      "raw_bytes": 642108156,
+      "role": "functional-validation"
+    },
+    {
+      "archive": {
+        "bytes": 26529251,
+        "path": "records.tar.gz",
+        "sha256": "91c4b739e37acdbcd6f08a831459cf7a0a09f11b307bee8a3e27559ddd21a225"
+      },
+      "complete": true,
+      "files": 2884,
+      "label": "native-pool-examples",
+      "original_root": "/private/tmp/femtovg-outline-pool-review",
+      "path": "results/native-pool-examples",
+      "raw_bytes": 1751809483,
+      "role": "native-outline-comparison"
+    },
+    {
+      "archive": {
+        "bytes": 12635393,
+        "path": "records.tar.gz",
+        "sha256": "68f59c0082bf171c3a8c68686fd13a68e2dca7d7179ce52eba20ff3ec6b4442c"
+      },
+      "complete": true,
+      "files": 1832,
+      "label": "native-pool-alustin",
+      "original_root": "/private/tmp/alustin-outline-pool-review",
+      "path": "results/native-pool-alustin",
+      "raw_bytes": 138630505,
+      "role": "native-outline-comparison"
+    },
+    {
+      "archive": {
+        "bytes": 6544144,
+        "path": "records.tar.gz",
+        "sha256": "b728162ce4e251aa559168ec0e61c484dfc494e25f8f89ba2431408ea98e4b42"
+      },
+      "complete": true,
+      "files": 769,
+      "label": "native-pool-source-bundle",
+      "original_root": "/private/tmp/femtovg-outline-pool-bundle",
+      "path": "results/native-pool-source-bundle",
+      "raw_bytes": 56604212,
+      "role": "native-outline-reproduction"
+    }
+  ],
+  "schema": 1
 }

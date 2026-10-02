@@ -35,11 +35,13 @@ def baseline_pairs(versions):
 def pairs(versions):
     comparisons=baseline_pairs(versions)
     if 'route' in versions and 'final' in versions:comparisons.append(('route','final'))
+    if 'pool' in versions and 'final' in versions:comparisons.append(('final','pool'))
     return comparisons
 
 def declared_pairs(versions,declared):
     baseline=baseline_pairs(versions);declared=list(map(tuple,declared))
     allowed=[baseline]
     if 'route' in versions and 'final' in versions:allowed.append(baseline+[('route','final')])
+    if 'pool' in versions and 'final' in versions:allowed.append(baseline+[('final','pool')])
     assert declared in allowed,('unexpected comparison plan',declared,allowed)
     return declared

@@ -1,0 +1,72 @@
+{
+  "archives": [
+    {
+      "files_verified": 2884,
+      "label": "native-pool-examples",
+      "omitted_files": 3287,
+      "raw_bytes": 1751809483
+    },
+    {
+      "files_verified": 1832,
+      "label": "native-pool-alustin",
+      "omitted_files": 0,
+      "raw_bytes": 138630505
+    },
+    {
+      "files_verified": 769,
+      "label": "native-pool-source-bundle",
+      "omitted_files": 2,
+      "raw_bytes": 56604212
+    }
+  ],
+  "audits": [
+    {
+      "artifact": "01-native-pool-examples-replay-audit.json",
+      "complete": true,
+      "plan": {
+        "campaign": "native-pool-examples",
+        "experiment": "runtime/core/experiment.json",
+        "modes": [
+          "cpu",
+          "gpu"
+        ],
+        "phase_summary": "analysis/phase/summary.csv",
+        "results": "results",
+        "sequence_summary": "analysis/sequence/summary.csv",
+        "suite": "replay"
+      },
+      "sha256": "b525a5aba347c60cab2b46e8ce827c7b5b924dced3688ac31b847549367f593f"
+    },
+    {
+      "artifact": "02-native-pool-alustin-app-audit.json",
+      "complete": true,
+      "plan": {
+        "analysis": "analysis",
+        "batch": "cpu-12",
+        "campaign": "native-pool-alustin",
+        "experiment": "experiment.json",
+        "suite": "app"
+      },
+      "sha256": "3abda52171831064aeb80dc905403fc15a1ca2b86eff71068d680ec56d016835"
+    }
+  ],
+  "binary_policy": "Compiled executables are omitted; provenance hashes retained. Offline audits verify their recorded identity, not absent binary bytes.",
+  "complete": true,
+  "created_utc": "2026-10-02T14:31:29.825352+00:00",
+  "index_sha256": "b2004b8fbbab9b07d39144de1d2ec64e81999e91c6005c8ccf0d890487680fb8",
+  "integrity_only": false,
+  "schema": 1,
+  "statistical_audits": 2,
+  "statistical_scope": "Selected modern replay/app cohorts declared in analysis_audits; historical campaigns retain exact records and are checksum verified",
+  "verification_script_sha256": "e8ec17e22fc6212920849ddb802c3148f1b230df1ba3a194d0ab7baa136901ce",
+  "visible_inputs": {
+    "analysis_copies": 49,
+    "bundle_manifest_sha256": "5b8cd2596713a4928dc09b6f88aaca28695eb3cbb9da0b267cca6c3dc6b1fe89",
+    "bundled_files": 612,
+    "copy_manifest_sha256": "0eaddd539e3785e958c9737b7f398d80a543b37f0de60872b570bdcfd26bda14",
+    "native_pool_report_inputs": 25,
+    "native_pool_report_inputs_manifest_sha256": "8c389d3c5f1b86621edea0141e8e18d78d27da57146980f0621e82707c1fe74d",
+    "report_inputs": 8,
+    "report_inputs_manifest_sha256": "14a82872d219dbc55986f9f45ec43a44e873123416f95c7bbd9db5879a989328"
+  }
+}

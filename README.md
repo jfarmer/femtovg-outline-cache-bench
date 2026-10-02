@@ -19,6 +19,17 @@ on the machine, toolchain and desktop workload.
 The portable wrappers were exercised with real fresh builds and untimed pixel
 and actual-font checks; see [portable execution validation](docs/portable-validation.md).
 
+## Native Swash Outline pool follow-up
+
+The [arena/native-object comparison](NATIVE-OUTLINE-POOL.md) adds fresh example
+and Alustin measurements under a balanced order schedule, exact pixels, and
+independent allocation/residency evidence. The original reports and 22 campaign archives
+remain preserved. Three new archives retain this comparison and its isolated
+portable source bundle; see [reproduction](docs/native-pool-reproduction.md).
+The default verifier now includes the new audit plans in the full archive index.
+The [installed offline check](docs/native-pool-offline-verification.md) verified
+all new retained files and independently reproduced the primary statistics.
+
 ## Verify the retained evidence offline
 
 The installed repository passed all 22 archive checks and four independent raw

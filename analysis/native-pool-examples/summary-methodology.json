@@ -1,0 +1,214 @@
+{
+  "bootstrap_resamples": 10000,
+  "seed": 72531,
+  "versions": [
+    "master",
+    "current",
+    "final",
+    "pool"
+  ],
+  "comparisons": [
+    [
+      "master",
+      "current"
+    ],
+    [
+      "master",
+      "final"
+    ],
+    [
+      "master",
+      "pool"
+    ],
+    [
+      "current",
+      "final"
+    ],
+    [
+      "current",
+      "pool"
+    ],
+    [
+      "final",
+      "pool"
+    ]
+  ],
+  "pairing": "Median across trials per child process, then pair all versions within block/font/DPR/phase",
+  "effect": "Median paired candidate-minus-reference microseconds and median paired 100*(candidate/reference-1) percent; negative means faster",
+  "intervals": "Percentile bootstrap of whole multi-version blocks, using shared block indices across comparisons and cumulative metrics; linearly interpolated 2.5/97.5 percentiles; no CI below three blocks",
+  "absolute_values": "All per-trial phase averages pooled for marginal medians; process-median absolutes also recorded",
+  "scope": "Exploratory intervals across 28 phases and reference comparisons, without multiplicity adjustment; Roboto control repetitions across font factors are not independent font evidence",
+  "retention": "All validated processes/trials from completed batches included; retained raw stdout re-parsed and matched against aggregate CSV; no outlier removal",
+  "units": "Microseconds per frame, averaged within phase/trial; draw/submit/complete cumulative and not additive",
+  "provenance_files": {
+    "cpu": "/private/tmp/femtovg-outline-pool-review/results/cpu-provenance.json",
+    "gpu": "/private/tmp/femtovg-outline-pool-review/results/gpu-provenance.json"
+  },
+  "pixels": {
+    "complete": true,
+    "comparisons": 504,
+    "identical_comparisons": 504,
+    "font_override_controls": [
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "current",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "current",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "pool",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "pool",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "current",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "current",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "pool",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "pool",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      }
+    ]
+  }
+}

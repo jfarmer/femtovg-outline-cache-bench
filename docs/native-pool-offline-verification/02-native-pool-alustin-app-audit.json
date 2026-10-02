@@ -1,0 +1,1982 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-02T14:31:53.716032+00:00",
+  "versions": [
+    "master",
+    "current",
+    "final",
+    "pool"
+  ],
+  "raw_launches": 300,
+  "accepted_launches": 288,
+  "accepted_blocks": 72,
+  "retry_attempts_revalidated": 3,
+  "point_effects_recomputed": 72,
+  "cpu_ci_rows_recomputed": 72,
+  "results": [
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 18.0388125,
+      "candidate_median": 17.2632295,
+      "median_paired_delta": -0.9212919999999993,
+      "median_paired_ratio": 0.9489905604086691,
+      "median_paired_change_pct": -5.100943959133087,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.244407840132505,
+        -2.2152466553077454
+      ],
+      "delta_ci95": [
+        -1.1462499999999984,
+        -0.39475000000000016
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 18.0388125,
+      "candidate_median": 17.4045835,
+      "median_paired_delta": -0.6613755000000001,
+      "median_paired_ratio": 0.9633591127651664,
+      "median_paired_change_pct": -3.664088723483361,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.924030521215751,
+        -2.0105799259033996
+      ],
+      "delta_ci95": [
+        -1.1027079999999998,
+        -0.3512915000000003
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 18.0388125,
+      "candidate_median": 17.1167085,
+      "median_paired_delta": -0.8163750000000007,
+      "median_paired_ratio": 0.9543326095187745,
+      "median_paired_change_pct": -4.566739048122548,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.610312848793032,
+        -2.6261787478326637
+      ],
+      "delta_ci95": [
+        -1.2100619999999989,
+        -0.46427050000000136
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.2632295,
+      "candidate_median": 17.4045835,
+      "median_paired_delta": 0.2229164999999984,
+      "median_paired_ratio": 1.0130182358999196,
+      "median_paired_change_pct": 1.3018235899919572,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.6306934906153536,
+        2.6368574872188244
+      ],
+      "delta_ci95": [
+        -0.27808350000000104,
+        0.45906249999999993
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 17.2632295,
+      "candidate_median": 17.1167085,
+      "median_paired_delta": -0.19622899999999888,
+      "median_paired_ratio": 0.9886671503707225,
+      "median_paired_change_pct": -1.1332849629277497,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.2943647540069056,
+        3.287372008422418
+      ],
+      "delta_ci95": [
+        -0.39629150000000024,
+        0.5580829999999981
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 17.4045835,
+      "candidate_median": 17.1167085,
+      "median_paired_delta": -0.2042300000000008,
+      "median_paired_ratio": 0.9881485461824346,
+      "median_paired_change_pct": -1.185145381756536,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.744463693505662,
+        3.729493184657473
+      ],
+      "delta_ci95": [
+        -0.6657504999999997,
+        0.6270834999999995
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 2.1455,
+      "candidate_median": 2.1116665,
+      "median_paired_delta": -0.06445849999999997,
+      "median_paired_ratio": 0.9697245949570616,
+      "median_paired_change_pct": -3.0275405042938353,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.566767045626285,
+        1.0354048465721855
+      ],
+      "delta_ci95": [
+        -0.09804149999999989,
+        0.020583999999999714
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1455,
+      "candidate_median": 2.0848545,
+      "median_paired_delta": -0.046521500000000215,
+      "median_paired_ratio": 0.9775852641022512,
+      "median_paired_change_pct": -2.2414735897748783,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.3481728053690345,
+        1.0426005964919938
+      ],
+      "delta_ci95": [
+        -0.13824950000000003,
+        0.021542000000000172
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1455,
+      "candidate_median": 2.113875,
+      "median_paired_delta": -0.011062499999999975,
+      "median_paired_ratio": 0.994898874314757,
+      "median_paired_change_pct": -0.5101125685243013,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.402375267613468,
+        1.4720360267352683
+      ],
+      "delta_ci95": [
+        -0.11575000000000013,
+        0.03110349999999995
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1116665,
+      "candidate_median": 2.0848545,
+      "median_paired_delta": -0.011958000000000024,
+      "median_paired_ratio": 0.9940243532679888,
+      "median_paired_change_pct": -0.597564673201123,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.582064024524092,
+        5.225956142674448
+      ],
+      "delta_ci95": [
+        -0.14324949999999992,
+        0.10637500000000011
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1116665,
+      "candidate_median": 2.113875,
+      "median_paired_delta": 0.041604500000000155,
+      "median_paired_ratio": 1.020139168077781,
+      "median_paired_change_pct": 2.0139168077780933,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.712454619052986,
+        4.133087343096076
+      ],
+      "delta_ci95": [
+        -0.10391649999999997,
+        0.0837699999999999
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.0848545,
+      "candidate_median": 2.113875,
+      "median_paired_delta": 0.02256199999999997,
+      "median_paired_ratio": 1.0105686733384798,
+      "median_paired_change_pct": 1.0568673338479773,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.6377441439531903,
+        3.5393176108530433
+      ],
+      "delta_ci95": [
+        -0.03447900000000004,
+        0.07095749999999967
+      ],
+      "bootstrap_seed": 1615566516321956065
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 17.243833000000002,
+      "candidate_median": 16.9163125,
+      "median_paired_delta": -0.4012499999999992,
+      "median_paired_ratio": 0.976713913231227,
+      "median_paired_change_pct": -2.3286086768772973,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.3757530874050765,
+        0.4272436695235804
+      ],
+      "delta_ci95": [
+        -0.7671875000000004,
+        0.07202149999999818
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.243833000000002,
+      "candidate_median": 16.7777915,
+      "median_paired_delta": -0.3353539999999988,
+      "median_paired_ratio": 0.9803029158288735,
+      "median_paired_change_pct": -1.9697084171126478,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.0941161997981705,
+        0.06797471764807828
+      ],
+      "delta_ci95": [
+        -0.7098125,
+        0.012166999999999817
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 17.243833000000002,
+      "candidate_median": 16.7623125,
+      "median_paired_delta": -0.4403745000000008,
+      "median_paired_ratio": 0.9747899215500231,
+      "median_paired_change_pct": -2.5210078449976914,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.60765600079458,
+        -0.9324895192946325
+      ],
+      "delta_ci95": [
+        -0.7994579999999996,
+        -0.15779150000000008
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 16.9163125,
+      "candidate_median": 16.7777915,
+      "median_paired_delta": 0.05937499999999929,
+      "median_paired_ratio": 1.0033394236547946,
+      "median_paired_change_pct": 0.333942365479456,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.4414141543447556,
+        1.2601379166109705
+      ],
+      "delta_ci95": [
+        -0.2438129999999994,
+        0.2118544999999994
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 16.9163125,
+      "candidate_median": 16.7623125,
+      "median_paired_delta": -0.14318749999999802,
+      "median_paired_ratio": 0.991216778883649,
+      "median_paired_change_pct": -0.8783221116350992,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.4161480822857304,
+        1.4214704133023837
+      ],
+      "delta_ci95": [
+        -0.5802704999999992,
+        0.23518749999999855
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 16.7777915,
+      "candidate_median": 16.7623125,
+      "median_paired_delta": 0.008604000000000056,
+      "median_paired_ratio": 1.0005430388818446,
+      "median_paired_change_pct": 0.054303888184459304,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.8578185615479,
+        2.657353022582609
+      ],
+      "delta_ci95": [
+        -0.8320830000000008,
+        0.4444169999999996
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 2.1052295,
+      "candidate_median": 2.1243125000000003,
+      "median_paired_delta": 0.0011250000000000426,
+      "median_paired_ratio": 1.0008063170561778,
+      "median_paired_change_pct": 0.0806317056177841,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.248784504092318,
+        5.1265319186549085
+      ],
+      "delta_ci95": [
+        -0.08872849999999988,
+        0.10210399999999986
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1052295,
+      "candidate_median": 2.1345625000000004,
+      "median_paired_delta": -0.017271499999999884,
+      "median_paired_ratio": 0.9917358290535139,
+      "median_paired_change_pct": -0.8264170946486127,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.3610817474350805,
+        7.5067294697645615
+      ],
+      "delta_ci95": [
+        -0.09481249999999997,
+        0.15349999999999986
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1052295,
+      "candidate_median": 2.1150830000000003,
+      "median_paired_delta": 0.05410350000000008,
+      "median_paired_ratio": 1.0257047560099664,
+      "median_paired_change_pct": 2.5704756009966356,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.3060296597201,
+        4.930611006348484
+      ],
+      "delta_ci95": [
+        -0.07129199999999991,
+        0.100167
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1243125000000003,
+      "candidate_median": 2.1345625000000004,
+      "median_paired_delta": -0.02008349999999992,
+      "median_paired_ratio": 0.9911646299242401,
+      "median_paired_change_pct": -0.8835370075759852,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.867669357631222,
+        8.884470179673132
+      ],
+      "delta_ci95": [
+        -0.10358299999999998,
+        0.17535400000000012
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1243125000000003,
+      "candidate_median": 2.1150830000000003,
+      "median_paired_delta": 0.010500500000000024,
+      "median_paired_ratio": 1.004786737609972,
+      "median_paired_change_pct": 0.4786737609971947,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.219004116164673,
+        5.731315155535244
+      ],
+      "delta_ci95": [
+        -0.16218750000000004,
+        0.11629100000000003
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1345625000000004,
+      "candidate_median": 2.1150830000000003,
+      "median_paired_delta": -0.05212550000000016,
+      "median_paired_ratio": 0.9751145785901538,
+      "median_paired_change_pct": -2.4885421409846176,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.143033479738534,
+        -0.43504578119559767
+      ],
+      "delta_ci95": [
+        -0.11606249999999996,
+        -0.00914550000000025
+      ],
+      "bootstrap_seed": 5423952733883399556
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 25.2389165,
+      "candidate_median": 20.531270499999998,
+      "median_paired_delta": -4.899687500000001,
+      "median_paired_ratio": 0.8093553310867307,
+      "median_paired_change_pct": -19.064466891326926,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -20.515407050761404,
+        -16.928270281627753
+      ],
+      "delta_ci95": [
+        -5.2592505,
+        -4.2372499999999995
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 25.2389165,
+      "candidate_median": 20.430125,
+      "median_paired_delta": -4.9893329999999985,
+      "median_paired_ratio": 0.8010921349744203,
+      "median_paired_change_pct": -19.890786502557965,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -21.906395154586967,
+        -17.17467828897359
+      ],
+      "delta_ci95": [
+        -5.5711249999999986,
+        -4.287916999999998
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 25.2389165,
+      "candidate_median": 20.1777915,
+      "median_paired_delta": -5.205312499999998,
+      "median_paired_ratio": 0.7934707427488532,
+      "median_paired_change_pct": -20.652925725114677,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -21.510223397221438,
+        -18.9737635132023
+      ],
+      "delta_ci95": [
+        -5.506354,
+        -4.764541499999998
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 20.531270499999998,
+      "candidate_median": 20.430125,
+      "median_paired_delta": -0.25587499999999963,
+      "median_paired_ratio": 0.9875377913848647,
+      "median_paired_change_pct": -1.246220861513525,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.6164545202927325,
+        0.6881796498014126
+      ],
+      "delta_ci95": [
+        -0.5442704999999997,
+        0.14374950000000197
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 20.531270499999998,
+      "candidate_median": 20.1777915,
+      "median_paired_delta": -0.40685399999999916,
+      "median_paired_ratio": 0.9804995937963545,
+      "median_paired_change_pct": -1.950040620364546,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.357120105452205,
+        -1.1509747363564804
+      ],
+      "delta_ci95": [
+        -0.7032710000000009,
+        -0.23077049999999844
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 20.430125,
+      "candidate_median": 20.1777915,
+      "median_paired_delta": -0.23291649999999997,
+      "median_paired_ratio": 0.9884992069839436,
+      "median_paired_change_pct": -1.1500793016056443,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.356690021055363,
+        0.36343544384960236
+      ],
+      "delta_ci95": [
+        -0.4763125000000006,
+        0.07499999999999929
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 2.330375,
+      "candidate_median": 2.1803125000000003,
+      "median_paired_delta": -0.16366699999999978,
+      "median_paired_ratio": 0.9302999280302038,
+      "median_paired_change_pct": -6.970007196979622,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -8.941565022083253,
+        -2.248868572136775
+      ],
+      "delta_ci95": [
+        -0.20943749999999994,
+        -0.05043799999999976
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.330375,
+      "candidate_median": 2.1886039999999998,
+      "median_paired_delta": -0.1555000000000002,
+      "median_paired_ratio": 0.9321244897441291,
+      "median_paired_change_pct": -6.78755102558709,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -9.98511236488846,
+        -2.2721934547788702
+      ],
+      "delta_ci95": [
+        -0.2347714999999999,
+        -0.05293750000000008
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.330375,
+      "candidate_median": 2.2336875000000003,
+      "median_paired_delta": -0.12137500000000001,
+      "median_paired_ratio": 0.9489953518630871,
+      "median_paired_change_pct": -5.100464813691286,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -8.47891904380318,
+        1.4262480756185525
+      ],
+      "delta_ci95": [
+        -0.20035399999999992,
+        0.03202050000000001
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1803125000000003,
+      "candidate_median": 2.1886039999999998,
+      "median_paired_delta": 0.021166499999999866,
+      "median_paired_ratio": 1.0097936507271272,
+      "median_paired_change_pct": 0.9793650727127234,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.289936132439354,
+        6.050327920288945
+      ],
+      "delta_ci95": [
+        -0.09606250000000016,
+        0.12612499999999982
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1803125000000003,
+      "candidate_median": 2.2336875000000003,
+      "median_paired_delta": 0.0351459999999999,
+      "median_paired_ratio": 1.0160262924786991,
+      "median_paired_change_pct": 1.6026292478699133,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.6170473721915593,
+        4.225888677797962
+      ],
+      "delta_ci95": [
+        -0.013645499999999977,
+        0.09158299999999975
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1886039999999998,
+      "candidate_median": 2.2336875000000003,
+      "median_paired_delta": 0.029917000000000193,
+      "median_paired_ratio": 1.013897238534164,
+      "median_paired_change_pct": 1.3897238534164025,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.492048797060911,
+        5.915679307719657
+      ],
+      "delta_ci95": [
+        -0.1299165,
+        0.12599950000000004
+      ],
+      "bootstrap_seed": 5155753748489065302
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 14.729,
+      "candidate_median": 14.1462285,
+      "median_paired_delta": -0.34231299999999987,
+      "median_paired_ratio": 0.9761145280989335,
+      "median_paired_change_pct": -2.388547190106649,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -10.755695555339662,
+        -0.8711861817175426
+      ],
+      "delta_ci95": [
+        -1.6811880000000006,
+        -0.12447999999999926
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.729,
+      "candidate_median": 14.1210625,
+      "median_paired_delta": -0.3643755000000004,
+      "median_paired_ratio": 0.9744414574804845,
+      "median_paired_change_pct": -2.5558542519515504,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -11.625361287452652,
+        -0.4917148369359525
+      ],
+      "delta_ci95": [
+        -1.8135625000000006,
+        -0.07087549999999965
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 14.729,
+      "candidate_median": 14.0349585,
+      "median_paired_delta": -0.5840830000000006,
+      "median_paired_ratio": 0.9598807209701623,
+      "median_paired_change_pct": -4.01192790298377,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -9.573708062211427,
+        -1.1823302587695372
+      ],
+      "delta_ci95": [
+        -1.5057085,
+        -0.16852149999999977
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.1462285,
+      "candidate_median": 14.1210625,
+      "median_paired_delta": -0.061687000000000936,
+      "median_paired_ratio": 0.9955975280655589,
+      "median_paired_change_pct": -0.4402471934441099,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.875696045684072,
+        0.5538408561043484
+      ],
+      "delta_ci95": [
+        -0.2627499999999996,
+        0.07756200000000035
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 14.1462285,
+      "candidate_median": 14.0349585,
+      "median_paired_delta": -0.07445750000000029,
+      "median_paired_ratio": 0.9947073771479555,
+      "median_paired_change_pct": -0.529262285204446,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.4295371071118566,
+        2.4381140283927127
+      ],
+      "delta_ci95": [
+        -0.3497919999999999,
+        0.34195899999999924
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 14.1210625,
+      "candidate_median": 14.0349585,
+      "median_paired_delta": -0.03147949999999966,
+      "median_paired_ratio": 0.9976835862434742,
+      "median_paired_change_pct": -0.23164137565258036,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.9640999628659284,
+        2.904164303153345
+      ],
+      "delta_ci95": [
+        -0.28270850000000003,
+        0.39193750000000005
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 2.294521,
+      "candidate_median": 2.2047290000000004,
+      "median_paired_delta": -0.115375,
+      "median_paired_ratio": 0.9504458385089025,
+      "median_paired_change_pct": -4.955416149109748,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.684617260483573,
+        -0.48908208208671144
+      ],
+      "delta_ci95": [
+        -0.17997849999999982,
+        -0.011374999999999913
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.294521,
+      "candidate_median": 2.1484585000000003,
+      "median_paired_delta": -0.09956300000000007,
+      "median_paired_ratio": 0.9569430302426726,
+      "median_paired_change_pct": -4.305696975732742,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -10.059408350452358,
+        -0.056873680620639355
+      ],
+      "delta_ci95": [
+        -0.2342495,
+        -0.0012499999999999734
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.294521,
+      "candidate_median": 2.213938,
+      "median_paired_delta": -0.05927149999999992,
+      "median_paired_ratio": 0.9748392373941038,
+      "median_paired_change_pct": -2.516076260589617,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.791191362158299,
+        0.7456372814365508
+      ],
+      "delta_ci95": [
+        -0.1298125000000001,
+        0.016459
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2047290000000004,
+      "candidate_median": 2.1484585000000003,
+      "median_paired_delta": -0.0031255000000001143,
+      "median_paired_ratio": 0.9985838691379724,
+      "median_paired_change_pct": -0.14161308620276314,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.55502639023857,
+        3.089869155925662
+      ],
+      "delta_ci95": [
+        -0.10041600000000006,
+        0.0657289999999997
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.2047290000000004,
+      "candidate_median": 2.213938,
+      "median_paired_delta": 0.018750500000000114,
+      "median_paired_ratio": 1.0084051494018498,
+      "median_paired_change_pct": 0.8405149401849776,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.8241307828690814,
+        4.42891459589374
+      ],
+      "delta_ci95": [
+        -0.017854000000000037,
+        0.09793749999999979
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1484585000000003,
+      "candidate_median": 2.213938,
+      "median_paired_delta": 0.0451465000000002,
+      "median_paired_ratio": 1.0211256649554588,
+      "median_paired_change_pct": 2.1125664955458756,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.2487045160851196,
+        6.032326527467036
+      ],
+      "delta_ci95": [
+        -0.026707999999999954,
+        0.126625
+      ],
+      "bootstrap_seed": 12378074192498546608
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 14.142874500000001,
+      "candidate_median": 13.7305835,
+      "median_paired_delta": -0.4590829999999988,
+      "median_paired_ratio": 0.9685833337206168,
+      "median_paired_change_pct": -3.141666627938322,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.02027475745801,
+        0.34827092640945523
+      ],
+      "delta_ci95": [
+        -0.7200415000000007,
+        0.04804150000000007
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.142874500000001,
+      "candidate_median": 13.6522705,
+      "median_paired_delta": -0.5114995000000002,
+      "median_paired_ratio": 0.9641225726547799,
+      "median_paired_change_pct": -3.5877427345220148,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.031247932297067,
+        -0.33337451122841255
+      ],
+      "delta_ci95": [
+        -0.721645500000001,
+        -0.04547950000000078
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 14.142874500000001,
+      "candidate_median": 13.7704585,
+      "median_paired_delta": -0.44264550000000025,
+      "median_paired_ratio": 0.9682978963869731,
+      "median_paired_change_pct": -3.1702103613026944,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.278150061034203,
+        -1.6675736104111105
+      ],
+      "delta_ci95": [
+        -0.6099994999999998,
+        -0.23952050000000025
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 13.7305835,
+      "candidate_median": 13.6522705,
+      "median_paired_delta": 0.04824999999999946,
+      "median_paired_ratio": 1.0034156448929368,
+      "median_paired_change_pct": 0.34156448929367755,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.7169717121679593,
+        2.811800724382607
+      ],
+      "delta_ci95": [
+        -0.3778750000000004,
+        0.3760830000000004
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 13.7305835,
+      "candidate_median": 13.7704585,
+      "median_paired_delta": -0.0654590000000006,
+      "median_paired_ratio": 0.9953502755125747,
+      "median_paired_change_pct": -0.46497244874252885,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.9325302756410192,
+        1.4336267352775156
+      ],
+      "delta_ci95": [
+        -0.12693699999999986,
+        0.20104200000000017
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 13.6522705,
+      "candidate_median": 13.7704585,
+      "median_paired_delta": 0.1397295000000005,
+      "median_paired_ratio": 1.0102407303146996,
+      "median_paired_change_pct": 1.024073031469963,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.9332915179455465,
+        2.6466713193229463
+      ],
+      "delta_ci95": [
+        -0.40843700000000016,
+        0.35966699999999996
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 2.1612080000000002,
+      "candidate_median": 2.2032084999999997,
+      "median_paired_delta": 0.06302099999999977,
+      "median_paired_ratio": 1.0292439408035419,
+      "median_paired_change_pct": 2.924394080354187,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.742955515921431,
+        5.545699490373046
+      ],
+      "delta_ci95": [
+        -0.08456249999999987,
+        0.1166250000000002
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1612080000000002,
+      "candidate_median": 2.1893335,
+      "median_paired_delta": -0.004249500000000017,
+      "median_paired_ratio": 0.9979933018467015,
+      "median_paired_change_pct": -0.20066981532984585,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.3204450346438255,
+        1.8956218982423945
+      ],
+      "delta_ci95": [
+        -0.052416499999999866,
+        0.04031249999999997
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1612080000000002,
+      "candidate_median": 2.167771,
+      "median_paired_delta": -0.012854500000000213,
+      "median_paired_ratio": 0.9946552256372154,
+      "median_paired_change_pct": -0.5344774362784577,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.314493678393028,
+        3.5424738137589173
+      ],
+      "delta_ci95": [
+        -0.0976245,
+        0.0755840000000001
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2032084999999997,
+      "candidate_median": 2.1893335,
+      "median_paired_delta": -0.005958499999999978,
+      "median_paired_ratio": 0.9972819585420829,
+      "median_paired_change_pct": -0.27180414579170975,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.094698967434472,
+        3.3208937815657924
+      ],
+      "delta_ci95": [
+        -0.04593700000000012,
+        0.07206299999999999
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.2032084999999997,
+      "candidate_median": 2.167771,
+      "median_paired_delta": -0.025562000000000085,
+      "median_paired_ratio": 0.988750387728687,
+      "median_paired_change_pct": -1.1249612271313048,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.462272105516951,
+        1.4802142163541587
+      ],
+      "delta_ci95": [
+        -0.09879200000000021,
+        0.03147949999999988
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.1893335,
+      "candidate_median": 2.167771,
+      "median_paired_delta": -0.043166999999999955,
+      "median_paired_ratio": 0.9806619441945943,
+      "median_paired_change_pct": -1.9338055805405707,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.874021271865513,
+        2.289993560743997
+      ],
+      "delta_ci95": [
+        -0.08512500000000012,
+        0.050020500000000245
+      ],
+      "bootstrap_seed": 6187999205069891185
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 21.813125,
+      "candidate_median": 17.057958499999998,
+      "median_paired_delta": -4.954271500000001,
+      "median_paired_ratio": 0.7722369687164533,
+      "median_paired_change_pct": -22.77630312835467,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -23.486741547005664,
+        -21.009611140818073
+      ],
+      "delta_ci95": [
+        -5.244292,
+        -4.586916999999998
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 21.813125,
+      "candidate_median": 16.709166,
+      "median_paired_delta": -5.1836249999999975,
+      "median_paired_ratio": 0.7615714938152436,
+      "median_paired_change_pct": -23.84285061847564,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -24.386279744276585,
+        -22.59873228298379
+      ],
+      "delta_ci95": [
+        -5.295604000000001,
+        -4.950999999999999
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 21.813125,
+      "candidate_median": 16.8567915,
+      "median_paired_delta": -4.9563334999999995,
+      "median_paired_ratio": 0.7771820369433342,
+      "median_paired_change_pct": -22.281796305666578,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -24.51295375284357,
+        -20.734349971015575
+      ],
+      "delta_ci95": [
+        -5.381938000000002,
+        -4.532271
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.057958499999998,
+      "candidate_median": 16.709166,
+      "median_paired_delta": -0.4263955000000017,
+      "median_paired_ratio": 0.9747334833169654,
+      "median_paired_change_pct": -2.526651668303459,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.105723449831845,
+        -0.6098017633504371
+      ],
+      "delta_ci95": [
+        -0.8910630000000008,
+        -0.10181249999999942
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 17.057958499999998,
+      "candidate_median": 16.8567915,
+      "median_paired_delta": -0.07152100000000061,
+      "median_paired_ratio": 0.9957287965744122,
+      "median_paired_change_pct": -0.4271203425587844,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.2172007301118466,
+        1.6626144301889578
+      ],
+      "delta_ci95": [
+        -0.5720209999999994,
+        0.2901045
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 16.709166,
+      "candidate_median": 16.8567915,
+      "median_paired_delta": 0.3876039999999996,
+      "median_paired_ratio": 1.0231627366205291,
+      "median_paired_change_pct": 2.3162736620529145,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.24230061106029765,
+        4.303063865015111
+      ],
+      "delta_ci95": [
+        -0.04162500000000158,
+        0.7171869999999991
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 12,
+      "reference_median": 2.423937,
+      "candidate_median": 2.326521,
+      "median_paired_delta": -0.1726455,
+      "median_paired_ratio": 0.9302670066098723,
+      "median_paired_change_pct": -6.973299339012772,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -9.621002814110934,
+        -5.057030715082256
+      ],
+      "delta_ci95": [
+        -0.24306250000000018,
+        -0.12335399999999996
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.423937,
+      "candidate_median": 2.270917,
+      "median_paired_delta": -0.18133349999999981,
+      "median_paired_ratio": 0.9265201358592462,
+      "median_paired_change_pct": -7.347986414075381,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -10.542174016548877,
+        -2.5780486604708885
+      ],
+      "delta_ci95": [
+        -0.2636660000000002,
+        -0.06231249999999999
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.423937,
+      "candidate_median": 2.3526875,
+      "median_paired_delta": -0.05335449999999997,
+      "median_paired_ratio": 0.9778273733798426,
+      "median_paired_change_pct": -2.21726266201574,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -10.720783734304229,
+        1.5683889057497513
+      ],
+      "delta_ci95": [
+        -0.2654995,
+        0.038999999999999924
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.326521,
+      "candidate_median": 2.270917,
+      "median_paired_delta": -0.049811999999999745,
+      "median_paired_ratio": 0.9788005083132494,
+      "median_paired_change_pct": -2.1199491686750616,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.063765507617512,
+        1.6435020618168927
+      ],
+      "delta_ci95": [
+        -0.0957920000000001,
+        0.03652100000000025
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.326521,
+      "candidate_median": 2.3526875,
+      "median_paired_delta": 0.029625000000000012,
+      "median_paired_ratio": 1.0133137983110165,
+      "median_paired_change_pct": 1.3313798311016534,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.0585408351199828,
+        7.819215136850133
+      ],
+      "delta_ci95": [
+        -0.07397949999999986,
+        0.17156249999999984
+      ],
+      "bootstrap_seed": 12536063306786996377
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "final",
+      "candidate": "pool",
+      "n_blocks": 12,
+      "reference_median": 2.270917,
+      "candidate_median": 2.3526875,
+      "median_paired_delta": 0.06041699999999994,
+      "median_paired_ratio": 1.0268917583272898,
+      "median_paired_change_pct": 2.689175832728985,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.5540790606316968,
+        9.401770298282287
+      ],
+      "delta_ci95": [
+        -0.037396500000000055,
+        0.21229150000000008
+      ],
+      "bootstrap_seed": 12536063306786996377
+    }
+  ],
+  "input_sha256": {
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/summary.json": "5e26ba3e38afb1eeda17288aa179cb9451d91157b2804332e4ca07419d244171",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/analysis/summary.json": "a87d98313a8dca65bfbaa8e88bb7a5a5bb80ab1b0271630ffdfcf62f441c695a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "eba8c768f74e39f2e74a565af7c7a934a77cb1da5e7faaddd6ca072b5645a678",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "68c1d5cb76b9948fbeed230ae3979850f7bc0dc43636d06fb575d3ffa643e852",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "85feadc2206c2932907b44be98a91e2815fe0dbe7188ed6f4fd4f7891d3b0ed1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "85229c31514a36b8076ea859a7c070427c5e37fe63f2ba83a147d1c8d1ae85b5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-vollkorn-attempt1-master/summary.json": "5825a24260802e1b4933c20e37bdf0fd2c152c46ea4732749ac30fefd1ca83b2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-vollkorn-attempt1-current/summary.json": "87dfa305225dfcfbf82849955af2627b19d6c95ca23f27ec3fe44351e88b3992",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-vollkorn-attempt1-pool/summary.json": "cb72d39a4d29035efee5e864cd1e9c80a2c4399e10350c8ee246b04e63bdf51d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-vollkorn-attempt1-final/summary.json": "241729490f2bf00adfdec9df9e790f5c47e06bdad5f1ddb9b82a9b6176be1b0d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "c6245bdd5776f479774b43653fa0d0ec40f9236138bb056ade8a45323d867db4",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "cf796a360d85936f0e7020a4febfa33ccd5bd28f113fb97c8f513db6739efc89",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "c60a982dbc592fcde893ca3751ec7e9744552062c699de072c70b4ea691f5b18",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "912e79957bde8edf41f30cad273f2c95063b12e785c331d2aebf6ae6d1cbbe22",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt2-current/summary.json": "28bfe19a734486801b908483d71ac8718b207eab059591cbe81905d3d571af3f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt2-final/summary.json": "8836b443d8994c620853df8e24fce7fd2ba8ca7aeb62bc942f46838376a1469d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt2-master/summary.json": "fe3be2144352575c3b86523cf3428de5fe1ed4b4461036ebd2152567e4ad4ffb",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-ptsans-attempt2-pool/summary.json": "9931f42e85905747807b1eee00d364b14f9ca6c69ca0aa592d4fd373488dedfa",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-ptsans-attempt1-master/summary.json": "8468f77df0e3231aa8fe0b0b6458204bca39f825d9c5aa8f0efd00b339353174",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-ptsans-attempt1-current/summary.json": "fcb609c3fb3a4dfbfb71b737babf2dfcda43f60de43733078e6294373550ae10",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-ptsans-attempt1-pool/summary.json": "6ad667bf1f3b91e064563c6e021248a052772fd311962d9a5da2b88ffe8e09a5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-ptsans-attempt1-final/summary.json": "d015190dd12ad7c44aef5a8c3ac2ca5f5132d9d33afe71249c1fc9447d58cc3d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "1d9f2c5ee5fdb28602d0210ad5f8d78ba272b19ac8632a652aeaffdf9a233a6a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "6467cecd1d9ade8a6956e76d292d222bb5cf804b67d008c4bf64794688e414ec",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "c97e566ea6811540ef692d576823b8a86e86b30bdc25a40d3c3a273b2e181128",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "6000d920f695f5b70ab2fef4e6398ab6434d368d9b9062b0c160555311b31f70",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-roboto-attempt1-master/summary.json": "b04ca2b2f56670a35c2eef2cc902350e47e9d709e9b17897e60f10040c37ecc0",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-roboto-attempt1-current/summary.json": "73cff32ae5ef5d009c622e7477131b622878610de00d0183597f695413d095a5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-roboto-attempt1-pool/summary.json": "d4ce9d2d7e90352275cc589a65c3e3d50c8ba1fa5d2a2fdf604df05eacdbcd9e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/01-winit-femtovg-roboto-attempt1-final/summary.json": "a0005ff2468749cf030dcbef8736eda535a1914d94b843466b98516706a35311",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-vollkorn-attempt1-current/summary.json": "38caeb3a0c60e4baea4cfff56ed77c93974a0ebd498a4fc3276d91c85c4f1016",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-vollkorn-attempt1-final/summary.json": "368b87e4d1ba252039cf626f7f460fa394f7082f2c40a4d53b52a73e9f289f53",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-vollkorn-attempt1-master/summary.json": "1c779c57cd459d96c91170b518d4f3a5154c5917b52e8a3e38491c2b50e137e8",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-vollkorn-attempt1-pool/summary.json": "343dbb4f124ae3292abab0d4c432b28983bde4c75a9ed4e8a652ec91a3b45e96",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "1b4c44f5ec93abd3d48f0bdc6e51eff2b62467f644091f61b3694d4ee3465ace",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "d6cdeab6870815f27001f09cdf699fc0d2d14c3851f6b1ad9c0580f206360c2e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "5e67cc2b08f50c9824d912e8305ed8c1625768c1f03317497a5653ddb8de0791",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "cc751cef5c0864aa7ec9c308e35e39dbb88686faa096ae95c00836866bdf9054",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt2-final/summary.json": "7b8919c9fc6e91161de8f375c88e7bb46ba379edc208f3d424aea85a92db4f92",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt2-pool/summary.json": "e4978c516036d8baea853c7511feab533d7da9343466c566ca59cc60d0933d99",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt2-current/summary.json": "6943ccbde71009b4a66c65861a1917021005724df5487d9ef133ba70aef1aff6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-ptsans-attempt2-master/summary.json": "998f1ff1d8fe31aed3b39fef73b964c7d1e3298b666f35258cb6aa06cec0e528",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt1-current/summary.json": "b8246c3724aaecb7f3e07901864556ae52a09321add01eee534cc0fa0acf918f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt1-final/summary.json": "3d858961aa693a34d3ae8a7fa9c6e593361a0c0f8844334b0d5beedd0e79d8cf",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt1-master/summary.json": "a5ff4066c98b26a8b0e82338b9f345554a604c5984a05706d042e7de41272c5f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt1-pool/summary.json": "6229ab4836a6a30573654a490432451b8d30fa7f302c7e3df770b0e3ecbeab81",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt2-final/summary.json": "c649218f796b0279de810f2efc4f3301cac878916074039be1e179e698346ce0",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt2-pool/summary.json": "9fa0d2840af6ebce5cc9c4a3939cf0843f7ca2c85f914a097b0dde22bea1f403",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt2-current/summary.json": "cbd0c939eb64a40ab82e843785e06575124bc320cf629d927c931716288b438e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-ptsans-attempt2-master/summary.json": "1b88cb2ec5ece57d80e5508263908f97a26d9374916a02be9a959e41e0be6346",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "68b973b61af3534c36efe12e4959f46f85628e7ae4b70b8f1abe57dbd1c00918",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "478e9eae732254a7445480620f764b919d7a67565b385999302c67996444f3be",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "3bd27bc2539079e0e5e41ccdfbe246412964948a1a602b078592035616c9d05e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "e9ca1cee13d59cd309033406da2549487f5b28b1a343910200c6e0853a9ec1c0",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-roboto-attempt1-current/summary.json": "a9ef550dd77d6754e6d8953a2cb02076cf47ebae994921c6ac2ee59689b225c3",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-roboto-attempt1-final/summary.json": "e79b7ca97a90c6e9769d871c3d39f94a36e8c45ba9fb11355488b5a6abcf4468",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-roboto-attempt1-master/summary.json": "e6159fe6733836fe0ffa3dc9333a2c107730327759a56f0dd5a1d237e7b6cb43",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-roboto-attempt1-pool/summary.json": "f06c601ad212693d3fe774e5b832a31de3224e14b4dc26314072a36ea9aa176b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "85adf3dc6ca9f0ccac10c6d8a3e676567ddb8f7c288424341e1366c4425b5488",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "53a5d34c5f17724ffcc70998cf8ead84cf83b69d8431a9d701b2beb2e57016d6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "0e955c1e8466c369e6aad4ee9b207a5ee9805ca9b255d731b23854d0d0713d32",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/02-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "8db65b6b71519309c67b843b39408c742f6fee80990d2a7ac5b43a8ad2ad586a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "1beb263b2baf263d1978d105b50686cd438e6c6904c8e9276c9bc4d2dc6bafbd",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "96cd36899edb7d11ab22cc9e43c8d62e600171ef1561b0dbaa353297433e41d5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "5447210a99681d12e16bb205aac57092419e64efbd260aa34788ce8d5fdce2fa",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "63eab50833e836b0dc1a69e4b65d718bc242a40e2b66bcd7885ebaa8bd1afecc",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-ptsans-attempt1-final/summary.json": "3213cecd6ee2eabeafd0d595e240132cb08cb653a1abe2445f09e9e0b2106689",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-ptsans-attempt1-pool/summary.json": "91af81c8daa9edbfa0c698deaedaeb4bbee94446ccc0ce4faefd066e39e35ef2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-ptsans-attempt1-current/summary.json": "c805822360237e3f983f30a44c67b62db50a8761349749bad836593a8b8ee2f6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-ptsans-attempt1-master/summary.json": "cfdfe6d85c6aaae8560f476ec83b79264effc53184d2ee66fcfeaa0ea42ca825",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "6ca7acb1caa188c136ab9c80542a000a456ac74b3f872fef85c3547ad416f828",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "3aa34c8298dfac9dd536c6f0738a60d43fe9f25bedf064dea84b95f8f282d2ea",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "834356b92eb8b40789ce90034e7df4b38ab1e92797d7162c9c3ba9cb1480885e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "691d5cef29a0ff51b38c178c07f152b73090368d30858767bdbec8e2390d8d22",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-roboto-attempt1-final/summary.json": "b73c48d8f79b98e8e9841426ea34f1af2f9e61087f9a38463d91af397a941501",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-roboto-attempt1-pool/summary.json": "fa40e580e50b296b12f6e48e8c7cd0816cd0d87f424a1cd8a06c1d287e6f2572",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-roboto-attempt1-current/summary.json": "f86c30ab11743a2247035b3941c713bb943c8b5723d4ae9d4d9baa049265b1f1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-roboto-attempt1-master/summary.json": "4175bd1ff88f6c62701cc00d7cdc567f7f4ebf1a47bb0ae5921eb789606c9707",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "6303ad8ec643947ea5bd1a343da706df642267b54f64543739275b5854548586",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "11525202c3c2f773b98403ad31dd197ba66d11fef7f1de8d059e82eeeadc9509",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "b5568b66fb0086dfc5bdf85a5552990431426ac59be3c2a57e96a2e5279cd8c1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "9d741499103d53a9bed0884f48fa7212b7db220fb9414a2ccb6be66086f60501",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-vollkorn-attempt1-final/summary.json": "40c6b4ff6278d955a77ddaa8c7d8241add832e60b35b3eb23553a03860dca488",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-vollkorn-attempt1-pool/summary.json": "ee3c6cf0025c78a4d368f35ee95315361e50c6366c421a0c81e0d92f7ad503a3",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-vollkorn-attempt1-current/summary.json": "2a8d5292c881440a6754d517ecc5ad5ac166c383ff08ecd43ccf123e93ee3e1e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/03-winit-femtovg-vollkorn-attempt1-master/summary.json": "1f3987724e4e4afd3e40d5fd665feb55a0958dcdb8021ec35720043817fccae3",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-ptsans-attempt1-pool/summary.json": "8c03af7dc88f5ecabc73cf8e2c4f7f36bdd69507eb783844bf843c4fb05ef1c1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-ptsans-attempt1-master/summary.json": "09bfa73d01f0ae04b57768a35eadfa8d30d457e5f4e041623a782cf6d6540978",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-ptsans-attempt1-final/summary.json": "fc7f70b820286029bcede6316c002bd211c9aa54a6c0971aed4b71f1324ba3b0",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-ptsans-attempt1-current/summary.json": "b9d384cf248efee425b638eb1fc55d76a6f7155fafe35ad5b09fd77f0b36fabd",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "2091dd26937f26a6aa3b7835130cf8dc819aa110036eae542f57477c0c647252",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "99b001fd959e8081f292cfd5aabf7ade9b1b71877a41f01f171a4a2cb8b65664",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "636c38ed4b90705a85fa422cc5416a730d9b547f600c0485f4dc27200aab8c28",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "ce3a4cbfab507e5a1736fe911185cfece265bd00100742e81cabe08e938c4c4d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-roboto-attempt1-pool/summary.json": "0a9c5d90c3ffd8ebe48791c3559d5300d8ccd0c911638feb74d3c356af6e8d13",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-roboto-attempt1-master/summary.json": "5fbd24405d60d189bcb660ac0e27d9f3f3e64286e4fb9fa3aa6ca868a6e9c502",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-roboto-attempt1-final/summary.json": "d07488cf8c5ae9ae2a6c3c9f778b5d413aef4b27bb1b607e7789a7376cadc985",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-roboto-attempt1-current/summary.json": "a013c6017f34d093c9840a51ae71ad32809136d19c8f22c63fbdc46d02dce787",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "6bf20ca76beeed901bf89e7ba5ea429e54fd94c73a3050118a0eacd0a9507745",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "122203686f4f544cd1c5f27fb2766f5a6b603e9e640757d7cd4c90106870c696",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "2286a05441d3dcec42866393bbb703570b69f44dffc77a68b62b555dd864272a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "daffdb9c9e6ec186ab129b4b469f91dbbb42da2a6c9e580a125ffc7ae8410c6f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-vollkorn-attempt1-pool/summary.json": "fbcbe39a9953dd6092732a87b32cf6429502fec701e54a23f069857b7457ab08",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-vollkorn-attempt1-master/summary.json": "e445729cf3563ecb2ebca7a652d4876023bf6be8fd29713cec828ef1c4fce19b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-vollkorn-attempt1-final/summary.json": "acba5fe9dc8912a153500879113d7e81fc9a1c3ba9c40e1227dd8570df788c8b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-vollkorn-attempt1-current/summary.json": "b0d03813520115739b34f20625295ae7cfe862f0743a181ea12d771f2fe0ab21",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "23bdc6de0bcf7e8b719e25c99feee2d3b794fe76611ae2fc5206c317d6cbec01",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "c1a3a193f1ac4e220880b653c8b221c369fc9c4d0c9c1765391e69ed903e620d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "383de5d1f6ae021606ff6b5ead559f03374235c27f8f03046eb0d8479a66add7",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/04-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "f66002e70992435a8454b581762268495258e52e30670627f87aa0a5aff47ba6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "59836f32cbd0e116db5d44d54a6c8a3e28455b536f892babe79def6a0d12e047",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "7d2cb6f40f978154064f1520ebc566bc3a5bd6b6d37351d4dc7f14f23e4d3638",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "c18d161a6f0c8213ee859373a6844f5500ce50e1113db137fff876d840a7f366",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "b53ebd78cf907ab28c451ef5b4b97e0f6640f083336a0336d18a935eb5585bdd",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-roboto-attempt1-master/summary.json": "befcde2e64252ca40406f66409e1035d53488d23a415d70405fb4ce00216e4ed",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-roboto-attempt1-current/summary.json": "d28a486d0d7080519cad39cc16665d488f9cf719338334f928416095218bcbf9",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-roboto-attempt1-pool/summary.json": "64a06e940c17a1d8f86d5d0ccb4d63c7b640d3bf3dcf573b957e97d65ce3de08",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-roboto-attempt1-final/summary.json": "3e364c241e705eceedc656944c436939dc4116b2f26ee47463a2fdf3e0dec72d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "2d5935335a45af0dd9904a609731a06744c172615a3e4d6ff454c698475c9a43",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "9697f5728975bdc4a22352a13b7c7f3ce13f97308d4b292c7940ebdf7016b85c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "d7d932d4286cd6b75abe1cff1cae0d5a93309254aafb8c56432c354777ae45cd",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "ec7e01f77059db377ba68e292950f77f53498b59290e5d22f0dff3e35dc3677e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-vollkorn-attempt1-master/summary.json": "9a08fdeac8e2a754be47ca5f5329b44fcdd995a986e6f1ee2023373265981e30",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-vollkorn-attempt1-current/summary.json": "6d9169b14a807b1fb21d41dec3791ac37c20e293fe5f5c7b5e64a1ac9f1e6f99",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-vollkorn-attempt1-pool/summary.json": "de95c7507ec5c2b1ddbb4df1454cae4023580f32c434ecb61b8d7916ef5b8991",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-vollkorn-attempt1-final/summary.json": "acacd4e9af1a4230f3b5ab69fcc9e70934e70c7dfc424877c1215c5ee3541395",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "c0a7a1d70fde0a5bba9ad319bbb1f44fd174844238c46f0c75385dac3e095517",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "9961b2afcc88672d2708292e30e6eac765dfa394097e0aa500886a7ad25c7e33",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "c694568962879b0ef9b1dcccfb0821fb3c01dbbf68afcb2438b7c96c44de036b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "ae2250e8d45ff66375c2aa38028070658107e335194e33ef2901c35c7c3d0293",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-ptsans-attempt1-master/summary.json": "be3794c5a94c9873476b1a3dbb2f1b8c8a8cdd042688657401ea2491099b7051",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-ptsans-attempt1-current/summary.json": "6802925a4eb90c1ba25c6acdde884c3259c2525c0c5495189cb9e80d1189886a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-ptsans-attempt1-pool/summary.json": "ba0ac06095706de7f43d49a272bfcda78cfcaff972b8d3096b268cca9d7b994a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/05-winit-femtovg-ptsans-attempt1-final/summary.json": "c61f98eda3b7bb08a9270a09b4d051759507afa521d9c0004d21d4e16abe559a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-roboto-attempt1-current/summary.json": "0060928e31dfe1ad893f3190c1e5245c4f5364da2a0363ed97cf5a9b47c4a7ee",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-roboto-attempt1-final/summary.json": "af04d589b569ea35b3b7ab44667ee40e37ab37430a3f20b8d0dd24e0313a24d2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-roboto-attempt1-master/summary.json": "4956af7f30a54db3f3913375d3299037c1aee676a01f141031dc1cb16c8763f8",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-roboto-attempt1-pool/summary.json": "d0cf7399b81e97cf7d72f7d85866e7e5f43b62833953994272227270ff64edb0",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "8ebbe3114cba6ec42cbb3b83e4ab03cfe3514ab2175bc5e49d933a7845ae5169",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "4fcac8f3cdb0ce3cca9c2e5faebfb42dfbb595d3b28eed3fa57c6ac406ddf607",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "694a270059ab42b485f1f9b0e39eb10f83361bc16ef00c7a85f970d4a4050100",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "992004a1caaafcf2f4b51ba5cb9300b54b8bccfc6dcbb4beb5bc674d5ddc3a3e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-vollkorn-attempt1-current/summary.json": "3bb3235ee13c265752c934bf80b2ef6dc24215aee68a90cf25f6cfd59c33e5d1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-vollkorn-attempt1-final/summary.json": "e5c3eef4c0340ae6d9fd00f185f5e3808abce084ebe667404550b3de4a0d8a2d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-vollkorn-attempt1-master/summary.json": "65039dc5d5d5bbd176b0f58e811d2efcf2e17171ed0993dfb0e9721f94e36287",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-vollkorn-attempt1-pool/summary.json": "0c5f3ea40535fa15388ad4cec29336682f0ee8f2e05998be453047a5ec79d02b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "d837da94383018c315be248c7d867d5a215627d741a8e114c6ad2246495c5ad8",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "131f2b56fc5fbd647ed97a79aad9a4e002c1c27a97cc5508978a0bf0bb746db5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "d2c27263d77fbd1b0b45786632c256fc384824397e4a6f8456b1a00a1e5ca712",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "1b120df2ae69c7d8ebe1ff10c095af7e4f7a057da9b6a67dbd5926c8c9d19db5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-ptsans-attempt1-current/summary.json": "206e572e726982812db884db76062096af7e5acd5d4b6a6202d74910d6120fb6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-ptsans-attempt1-final/summary.json": "78d8c1447f2a65b735c58b3a3846c5e38f7df3b3e39ab9fa2f30f73770848e22",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-ptsans-attempt1-master/summary.json": "11a1c844114a81d3e64c4876a5fd5d0e7add8da83e0bfdfbf0901457fff777db",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-ptsans-attempt1-pool/summary.json": "d373dac0e01cb0339ea44bd4b0be781649eb1b5db7e394fe9b98d2b83562231b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "6b850cc54060109d8c3cafa87e9b603bcf13f98cda6170d3511d81b733a74c04",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "5f57711cf3fea158905177cb7dae916f3eb234ba25cb9a51bcddcc0ab0fc3bb1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "e0be3657787c80ac8f761158d36710a6caee42aff9807ddb4f2e9d86a1d75157",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/06-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "70f1402fd5ef6aeaf6e3bb10f4b4f38a91ce97ce3a9fec5040897058ba2532a9",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "a349cb31120ac0ee2d80577bbbc54d82d8e68fc7da4f3183a3260cc02b3b1050",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "f6c56488114bf7332f8383b3615edd71f64c52b6558b0c30a91194b223dd390d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "2e34f3d551513364993ba2b427d71c12e75e1ee9e6f4eea256113b919df8a9e3",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "400cb209c23f2bb8746fd477eb74f59146a376899ca8d3378c7240d9fdfea6ef",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-vollkorn-attempt1-final/summary.json": "9bc5fc06406411ce5591cd7871c84b07647815dcda86735a06e848fb546f8cda",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-vollkorn-attempt1-pool/summary.json": "66d9affb23853caffc687360fb008f1dc05ed77b26bfced4b3bf0027a17123a4",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-vollkorn-attempt1-current/summary.json": "c2cded93a2b8df16697859adfdbd33151ef21441652e415ef1e62a1372532a44",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-vollkorn-attempt1-master/summary.json": "a5e7637a79a902f4efae31c72ca48590627cafc6228475dcecc4a81957175e6d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "f25af99bae9810755997ed907286780570916454d8292a61cb1c8076a73f65ff",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "4c152474928122b6337478f5ff89df4377ba61d95c74ec48a77b74c7257b0658",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "c3d4658119e78b459ab08d00fb9ce68233e7dce36f092d1c47f91c93689bad6c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "c886a7edce9d9eaa26f7fb1ade254b492ae84a7649e4bac864fdab5b306c433b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-ptsans-attempt1-final/summary.json": "b5488d717b24c36b350987fb90356d0c84fc64d4243fd12110c072d733105135",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-ptsans-attempt1-pool/summary.json": "313ad02f4bd2df6b92bfa1078ec4543dd0dd34b36a1409443cf93128fdb3c97e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-ptsans-attempt1-current/summary.json": "fcf9ecbc2550d6a1a5b7e3c75f8475a7c2b35bbfca0aeba3f6167022db4c6733",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-ptsans-attempt1-master/summary.json": "15384b8817674dd6136a3d4ae37ca36f037a4202c8d2fbb50c7b0f2bd361aaf2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "7f159cbdd92a38bbb96022e3aaa2207f74a54575de188e71dd45015ad861fe98",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "6ffc36dc0ab6fb351c58c1185d77440438b3ed66b364dc9c9d564d63b20028c6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "1ae19d262f4f42cf90ed4fdd65d30e57d7d803ca3e6bbe97364c4c1a37b74958",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "e6cfb3f3a12934bc3074ca01b3427df467e8bfa92748c134f3e1071d9404cc12",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-roboto-attempt1-final/summary.json": "f83cd81daef8414b2422f0502d1b4980f44dd28d64f02616c9684d3d3c5de80c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-roboto-attempt1-pool/summary.json": "75f94c6e17022946d41fbd8f5e64eade2851a3407f6a0ef00613e2964d949933",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-roboto-attempt1-current/summary.json": "86bde50983eeda465e5c12686db10cf40a5c6f163edfaeeab35a22497086980a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/07-winit-femtovg-roboto-attempt1-master/summary.json": "637a343413c9ffacb88410704708085cc18ea2576581c4046c37909364db7af2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-vollkorn-attempt1-pool/summary.json": "ec0f9372418591f6828ce2b1a500f14d8b95298a1e4fa2df40535b1103fc2d5b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-vollkorn-attempt1-master/summary.json": "0233bef120a047ee5f5f8a7439228b6d53971dd256e256700c3b150578818a32",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-vollkorn-attempt1-final/summary.json": "b933663b7e8ace60d1b86a524e8192e1ba24718f6fbadaf65c6584292e35e716",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-vollkorn-attempt1-current/summary.json": "5bcbbe8ad1e86af07c5a183901fa5aac1b0d71e4dabea2f27b676a8a6fe9eb89",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "41c389081fee1969e1f22147b02073691bd494d1b3060f11ca481d83c5bc23fd",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "de49328d0cd95258cd9106804b4ce9b68ff813e9c25b77300cd6dabc533f0180",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "7aee4546d1a8ac44755da71bd487d88ffc5c6d6c2d512299ad787418b0f96302",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "b4f97072606d5a670eb065ae30748e32a0121b387bc8a50f1f848eacecca848d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-ptsans-attempt1-pool/summary.json": "865d24c5f281a0baeec5545e58527fb30dfdc3811a0f8b4461c66d0cc914842e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-ptsans-attempt1-master/summary.json": "9eeed65cb4da9d926329cc078839f1ccca8bea52a3759d5f86cb6ff69c2dca83",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-ptsans-attempt1-final/summary.json": "f40099cec9bfe9c1509fd82f043903f762c52e101f6d7fdd30c440c525bbd0a2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-ptsans-attempt1-current/summary.json": "31942b28ae9d1194a442d4d26a6a1c8c3ebaa8b95c3e2ae022c1590ed72bca4c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "d0b1b4386721a97e12ae652d5099d12966901b8f93cf788a3064ffab5ff5b1b7",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "ba0a0481c5c0d6bca44cf4fec9edab8f5ba803f5d9b0dfd495c0147682eae86f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "13b7f73669fb467ce4174350bb129303e5578251678718f6f000c8a3131d714b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "0ab7fb49cbfe8a7feb110827183d39028a2cf629bfc5f795a2fefe8a506a48a3",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-roboto-attempt1-pool/summary.json": "4476c2cdcaca2807c2c1e8fb6af546aab2d3d3c4274b8574bd04ea4d662d4688",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-roboto-attempt1-master/summary.json": "0954fb48805299b53493093adb7d8bc79f7ccc3bdd3fc5b1e9408082c15e14fc",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-roboto-attempt1-final/summary.json": "e6c5f4264edf1ad93b1b0443552dcb98b31060a7d3220496e2a47e67e76c3f07",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-roboto-attempt1-current/summary.json": "1caee2044e85af92eef5fbf1de9eb594819e1088fb04e670e6a28be37ee96628",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "363108386f71e414dd92175cbe9b5de0ce06ce8e4f7bf37f5815683f6d41434e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "31bccaa870282d3be882c3cebe30bf8fcf8d86364f6fd139741818e630bbcbd4",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "aee05e866c079bc539cae776db53f28dd350e673ae6829caf8a3c1a5074694d5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/08-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "8d72bb20bb6ac5d583fb027970c215e91bae271fd2f86bdc50f67f6325eed40c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "13390589281151b2e7217fb930fc0764cfbc4ffd90be93a548826c10d06b3633",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "1101f0c1a7d2f7d76a84e7a7eae0dff441aebae83820acd0a4b4bb4ce4cb8ad9",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "c8330583daffbd95bc8dc701d547e5199b7d745f793b7099f10cdebef6fbc15a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "a0f49063894d608ba05d44cf3d4da1c76bf451b93615682d356ee21f861b5a94",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-ptsans-attempt1-master/summary.json": "6d3ff0883c28acdf703329599a60d315d6c02ca124bc44fb7f59e8447a81bee6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-ptsans-attempt1-current/summary.json": "8577ad5ad4dc9d9b50a71f5edfd81c11781b0863fbe8da1caea014148231e0ea",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-ptsans-attempt1-pool/summary.json": "7021a4b714fb30d6786c6b468eb150d07d4bc23fdeef8fe1f91defca6f1dd645",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-ptsans-attempt1-final/summary.json": "7847d706efc526b399bab42bd299ddb05a6cb55b116d5fbf652e7cdeaffb946f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "82f28b5b194e21125fa7ffe7bdcce5797e13095da12c30ee65bd0532a97b0587",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "725311841f0bf18ad3d4c721e1c264d5a32ad4ee7c6a36fcd00cfbc2593e8248",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "3cdc3e6e174565369e9ca51e35b66143b4d0d668247accd6afed4345aaa627a2",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "dded19e7047308d5f66f4cd288103f2c440531ea33a37f03e4c3abad5f9d495c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-roboto-attempt1-master/summary.json": "9d98594c5b6930d28b64ab83fe39c0a12586b6293a648ce6c6c5cc700ac9bdcf",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-roboto-attempt1-current/summary.json": "08d7c884f8ddb5db674784428eb6259bf9a9bcff2f4c49a89db9eeaa46541105",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-roboto-attempt1-pool/summary.json": "8f6be600ec5b3dcde0424629f8c02f4cb18637be484f4c286833b1e18266bb9e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-roboto-attempt1-final/summary.json": "d3bf42cd07598875104ed6ac073a026c42a8f2cda1f8529987f78c81bb8914ae",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "571066cd3e19abad325272991b0b71de50cf4716e24fbebc3e5bd09266560acc",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "28a49c33fb6ff5337d52fc4f46c2cbc24872d34706717a8f68bd0548da4ce5b5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "65453b2ba91afd86d8973c4b78161504abedde7be62fce36746f38c219d31549",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "4cda764dbf60f933eac904747bc91ceddef492c92f0e7e64162e3b9a57d8fe7a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-vollkorn-attempt1-master/summary.json": "b229f03dc9b4546e6a5c23f272e04497b1c0144e2281afc1c4d9263b2b81e827",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-vollkorn-attempt1-current/summary.json": "44b90210ac285654eb87d1b312abd2b4cc63768a7c5345ee6e476607cd2f35e5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-vollkorn-attempt1-pool/summary.json": "1ca09c39ba6db0839c64e690f8a9a6045ed46cbbd13c7bbac483ccb691a75b76",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/09-winit-femtovg-vollkorn-attempt1-final/summary.json": "02ee2ad07084262488ecc6fb22afad3780b905ded5d979093cc458abb03661dc",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-ptsans-attempt1-current/summary.json": "ce51bbb12d5f14c66d87a3393ab18fe5d05cde84c884be5438a99501bd962e35",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-ptsans-attempt1-final/summary.json": "55250c6849e782f4a9948c6c7fe7f4d9f80b2182671aa45d20561c8359504d44",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-ptsans-attempt1-master/summary.json": "dae97cb6e6c4f108a17ea5672c9d6e5be22d3ffdd41e4efb1915fcb78c4c42d9",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-ptsans-attempt1-pool/summary.json": "d27e1c0c6bffc07356ac0872fc620b74cd98f4e45180a1f2d0d5ec9753a7531a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "12618f0dfc6e2f8eeee6b50c7147e7f42edc1986acc2e3679973f8b634a520b6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "798498d8a6638db13af8222517ee83b5978ced2f0e1a67d49e59a597adde3b06",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "d2091c71e101937132e13812f5619b83f8381cdb33e2fd680f850b4878f29e28",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "039896dbf9872e7f124f0e1dfea05700dcc7cf76cc0b6814f59fd220c49e5ce1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-roboto-attempt1-current/summary.json": "371071c1bb8b03dace5cb47bd926062ca3d4ee844cbc611cb3582b706a156881",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-roboto-attempt1-final/summary.json": "70909fec4e34b4be3b9ea866e65b4acf5f21ff3123e9658bb68becfdef3c743f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-roboto-attempt1-master/summary.json": "ca7d52998bff54daec540305a708da006a2e0cab5ca4008b5e601ca7125dd0cc",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-roboto-attempt1-pool/summary.json": "0a558ec35322fc05918090855bd3f9de324a7fb9902086f035172a1617df73e1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "2f65037f22735068ac5d9edcacde1b423c3e60a42ca7adc9aa01c330407c977f",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "91f406f808720bb20c4a24da1af2221bcb37d93fa7c1d997f2982f6ad2c267e0",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "99cf057e6271d01f0435c34fd41b6dd1e3dc11c4d8af76b401a513640b790c14",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "ff7858d3ff14755cf55b16487f1b41ace59dbf1e2817b99a7f4e113ec9968628",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-vollkorn-attempt1-current/summary.json": "b0d860e0e768e42b4915effb26724217662f47da5fa1fc9ea3dde3e3ffb02047",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-vollkorn-attempt1-final/summary.json": "45dfe6a26ba0711eaefb6c46c67b6724d07300dc01a0db3b8038e03b0339926d",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-vollkorn-attempt1-master/summary.json": "3acd75cadbf7088aa5be2d6cf717d7f499acc60fdd868b273d3c960d69781807",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-vollkorn-attempt1-pool/summary.json": "1dc92274255c0e5f7a16a4aa78e7f80f02c188ce9a9c1c021b61b2a5eb3b1d55",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "9155a2762e88292f70c896b30c5bc0c01135dec662302bb8872bd951a2dda9e3",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "c59f9d22348946298e908b07cc16e5a4ab540e688b42197380e4d66d9b3d96f1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "ac9cb39608bd83998703ed7979c665d568c8d45ba26c738ff5ce1080d895e96c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/10-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "2080fc887795bfe5763e7580254124f3b27531413e5d7edc2c7254797e20c142",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "45e73bd1510018953485a3e714ffafc817f3441c14dbc22a179c779d997b6609",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "4aeb8e5241a9aa0a1ae1f9da722dcd663cfa980b76d0fc9a4633615658965a37",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "cacd994c90d0847fe802a4d9940268b5b631ef569ca1e1b5dad39d1a9da4f2d5",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "b50acea8369fd2b635d44525756f63068cbdd0f511a3a740d02b3738d78e56bc",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-roboto-attempt1-final/summary.json": "fa48f2c14e399a4db7c740fe44579c7273bf64bfa0de9ee917782ac6bad4d264",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-roboto-attempt1-pool/summary.json": "80cf51f809b297234844fc0af005c3dd0421185df38805997c03c968e4d42a14",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-roboto-attempt1-current/summary.json": "8a57ae84d1a58b461e3df3264c895e9199229291e25dc273976ac461b1024197",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-roboto-attempt1-master/summary.json": "f38bcfa7b9043d710e9820aaa610caa61d9a73027a97a9e7b73cae9a598a0162",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "8945afa44dda3b3d4f1a0afda4f5bda5f9ec34d678bf58d3e050d9890e353a41",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "61fc24923861e35f1e46675a9a3b7526d5f696fac96d8b1111083e54fd89885e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "4d8d6180047b7ff222acbd0d8a26e1721d9f632e016af1c05f8edc79a9f86335",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "47d1c782812ad1fbefbee925029f2fbb3e4b1fb8b83fc203a0bd36c29b6fdfce",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-vollkorn-attempt1-final/summary.json": "dcdf4a84859c6fdf6420436f74cad03e5021fa5286549a06cd72adf905ce5b78",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-vollkorn-attempt1-pool/summary.json": "756b01c74a5760edccd199cacb204080adb5235e93cc6937cfd109aae0291386",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-vollkorn-attempt1-current/summary.json": "e5302e2358599d2577a2dff81d1e9971feda6ed4cf1e6a97f4940a38423ba2be",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-vollkorn-attempt1-master/summary.json": "378c370792359ce8fe566c56a45c43ea5a5b80404140c09396c35773b866c6ad",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "f0f6acb3c48d570a3f99bd43bc846c46bfafa311af3e988e56d22c3d9dc600d7",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "2025310ce6e283f09a3832b5efcb97209610da851b2dd53bd3f994b54d077d0a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "050ecfa463a4b8ce64f91653f95e81fac69a93411fbec13cf0d2a478fb273f19",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "ad12b714100003c2f8c10592412c6a5e88188aacd1f931a7720283e801b23e90",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-ptsans-attempt1-final/summary.json": "44606007347997912084d22fc4a994a4e81f8d794b274825143d9d1e19927275",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-ptsans-attempt1-pool/summary.json": "4ed638276addc71c7ec8830602c39794e6abfb03c04bf3743ddcf1872182d345",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-ptsans-attempt1-current/summary.json": "b7bc16d784a168a6b54da36da48fdc0afe0401c59608976ee0e17e166b268ed6",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/11-winit-femtovg-ptsans-attempt1-master/summary.json": "c949702bc4fc588b80d258d2cba66fe74af2d146ee2d685543a7ab132afdc7f1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-roboto-attempt1-pool/summary.json": "d69d9d737df95e84f0037790dead7a35f048e24476d475fe187fcef9b9ac4e1b",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-roboto-attempt1-master/summary.json": "06f52b2d804214dac4576ee94217bd1e2214b224b9e2937865a8b2b1b7a0cbc8",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-roboto-attempt1-final/summary.json": "97820d07edd8f75eec7e6f328ae1072b354fc547f25a1d0bf6e50864b7d69cfb",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-roboto-attempt1-current/summary.json": "02f127e96bb272d566a65474e0c6541fc1cdd18384a62ea9e5f6023c9d178260",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-vollkorn-attempt1-pool/summary.json": "641a8aa86f3887bfb6c918fac7487229f7ac67c2e1cf70fef5d89a584d11ecef",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "5e7e419ce9520d935218a6d9daf4dd37f63e078e107c616ec77455836bb92881",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "904a583146cfd5ba7a3c3c6e3ecd54f14fd0da3d7689029f7cbfe1145481a69c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "5b103269dda287b68b6e2cf1d9fdc3a34c52948ae292fe2dd5ca946a2d94cc14",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-vollkorn-attempt1-pool/summary.json": "925cfa487c20e8962268ebaaa0c2ec881dbab828d7514b742eff1c6abd37aafb",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-vollkorn-attempt1-master/summary.json": "cfdc0206a2624e6060f55b473767d8fcce420b978953447543e285932f40c9a9",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-vollkorn-attempt1-final/summary.json": "54f3925b6d10604e4000c143b8348bdeae0db1239c94e012cd0e18a33e504592",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-vollkorn-attempt1-current/summary.json": "c9ed5f38377389e24357839c1d14564a8d382fa26212a117fdc4d18a933d7b9a",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-ptsans-attempt1-pool/summary.json": "5124dcf25cb7db55148002581148a5f2567dd315c1933fba6c7d8ef180dbb912",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "3aab2e8ef71593ac570bc861f18d694978206c2c457b39421128ac9d1a94354e",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "4d4cce653bcfbcfb5caefe40ac085ace40a1d1767b98932897d8040c9b9763fd",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-ptsans-attempt1-current/summary.json": "90ef0989008d382b214caeb2ed7da2a8d8d2c83ec6e256f7e211afd91f4a2b30",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-ptsans-attempt1-pool/summary.json": "fc14af50868aa56a7b5d517815cedb5c4ba8df76235c4792de48efbaddef96f1",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-ptsans-attempt1-master/summary.json": "8fbc003c80d2c6f9828252ca5b77ca82ec8ece960e006e7f3c5557d47ef04b65",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-ptsans-attempt1-final/summary.json": "dc6fb8685cbd0313b2c572ec279dc42eec2c4c73a7d5c0deec002e9d3b24b83c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-ptsans-attempt1-current/summary.json": "e62876e32e0e65b79219b9b8ae6b85695dc99eba6b023961613764f5c97a963c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-roboto-attempt1-pool/summary.json": "4d543cfd3376ddf0913480a7b8731ec027e7883491b554a9b88198a1f1e15de8",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "d861c1ebe6aefe1f2f18d559d47525f0a5d1578de9c2e3fc7484fae602dfd71c",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "cb0e09c8c83fbeeeb3b8994f375c4d1d5a109341d5a6673acd001c3e9f2dcf60",
+    "/Users/jesse/github/femtovg-outline-cache-bench/runs/native-pool-offline-verification/metadata/native-pool-alustin/cpu-12/12-winit-femtovg-wgpu-roboto-attempt1-current/summary.json": "2a20a9038508bab35bb871fae34c5b6a6e66345b24322a9818b9ba4400871821"
+  },
+  "binary_verification": "Recorded identity and build-provenance hashes only; compiled executable bytes omitted from archive",
+  "auditor_sha256": "8d958ef93dd1aacfaec738448383ba2c378403f9c06b462266c485703547d0cc",
+  "math_helper_sha256": "ee4feff8aaa87fb34b8d4dae23d0e6a67b9d4ce326e65a11aebbf0856445c296",
+  "scope": "Unique raw renderer frames enclosing first/search markers and their unique renderer-thread CPU amount counters; all accepted variants paired within the same round/attempt; retries independently require raw query contamination. Deterministic whole-block percentile bootstrap; exploratory/unadjusted intervals. No runner/analyzer imports."
+}

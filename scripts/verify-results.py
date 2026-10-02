@@ -20,13 +20,14 @@ def verify_visible_inputs(store):
             archived=json.loads((REPO/campaign['path']/'archive.json').read_text())
             if archived['files'].get(source_relative)!={key:expected[key] for key in ('sha256','bytes')}:raise ValueError(f'Analysis copy differs from archived source record: {relative}')
         checks['analysis_copies']=len(copies);checks['copy_manifest_sha256']=sha(path)
-    path=REPO/'analysis/report-inputs.json'
-    if path.exists():
-        inputs=json.loads(path.read_text())
-        for relative,expected in inputs.items():
-            safe_relative(relative)
-            if not (REPO/relative).is_file() or sha(REPO/relative)!=expected:raise ValueError(f'Report input checksum differs: {relative}')
-        checks['report_inputs']=len(inputs);checks['report_inputs_manifest_sha256']=sha(path)
+    for filename,prefix in (('report-inputs.json','report_inputs'),('native-pool-report-inputs.json','native_pool_report_inputs')):
+        path=REPO/'analysis'/filename
+        if path.exists():
+            inputs=json.loads(path.read_text())
+            for relative,expected in inputs.items():
+                safe_relative(relative)
+                if not (REPO/relative).is_file() or sha(REPO/relative)!=expected:raise ValueError(f'Report input checksum differs: {relative}')
+            checks[prefix]=len(inputs);checks[prefix+'_manifest_sha256']=sha(path)
     return checks
 
 def main():

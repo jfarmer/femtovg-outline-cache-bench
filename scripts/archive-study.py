@@ -30,6 +30,9 @@ CAMPAIGNS = [
     ("selection-examples", "femtovg-miss-selection-v2-review", "final-selection"),
     ("selection-alustin", "alustin-miss-selection-v2-review", "final-selection"),
     ("portable-validation", "femtovg-outline-cache-bench/runs/portable-validation", "functional-validation"),
+    ("native-pool-examples", "femtovg-outline-pool-review", "native-outline-comparison"),
+    ("native-pool-alustin", "alustin-outline-pool-review", "native-outline-comparison"),
+    ("native-pool-source-bundle", "femtovg-outline-pool-bundle", "native-outline-reproduction"),
 ]
 
 

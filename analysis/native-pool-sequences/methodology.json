@@ -1,0 +1,48 @@
+{
+  "bootstrap_resamples": 10000,
+  "seed": 72531,
+  "versions": [
+    "master",
+    "current",
+    "final",
+    "pool"
+  ],
+  "comparisons": [
+    [
+      "master",
+      "current"
+    ],
+    [
+      "master",
+      "final"
+    ],
+    [
+      "master",
+      "pool"
+    ],
+    [
+      "current",
+      "final"
+    ],
+    [
+      "current",
+      "pool"
+    ],
+    [
+      "final",
+      "pool"
+    ]
+  ],
+  "sequence_aggregation": "For each trial and scene, sum frames*draw_us, frames*submit_us, and frames*complete_us over every reported phase. Then take the median of complete trial sums within each child process, then pair version process medians within blocks.",
+  "whole_sequences": "All five controlled scenes are complete sequences. grid_two_phases includes first and second; grid_pollution includes both hot-population phases, all 64 pollution frames, and the hot-return frame.",
+  "original_examples": "Labelled sum of reported phases: all 19 original phase rows are included, but each original scene has 119 unreported warmup frames that cannot be reconstructed from retained timing rows. These totals are not complete startup-to-end durations.",
+  "interpretation": "Whole-sequence totals include all cache population and pollution work, so an isolated hot-return speedup is not mistaken for a net speedup over the preceding work.",
+  "pairing": "All reference comparisons use the same multi-version block. Each process median is computed after trial sums, never by summing phase medians.",
+  "intervals": "Percentile bootstrap of whole multi-version blocks, shared indices across all reference comparisons and all three cumulative metrics; no CI below three blocks; exploratory with no multiplicity adjustment.",
+  "units": "Microseconds for the entire reported sequence. Draw/submit/complete are cumulative and must not be added. For readability divide totals by 1000 to display milliseconds.",
+  "retention": "read_mode revalidates every retained raw stdout against aggregate CSV; all trials/processes in each complete batch retained; no exclusions or timing launches.",
+  "provenance_files": {
+    "cpu": "/private/tmp/femtovg-outline-pool-review/results/cpu-provenance.json",
+    "gpu": "/private/tmp/femtovg-outline-pool-review/results/gpu-provenance.json"
+  }
+}

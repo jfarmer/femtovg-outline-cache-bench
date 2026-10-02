@@ -1,0 +1,45 @@
+{
+  "candidate": "/private/tmp/femtovg-outline-pool-review/snapshots/pool",
+  "arena": "/private/tmp/femtovg-miss-selection-v2-review/snapshots/final",
+  "modified": [
+    "src/text/swash_rasterizer.rs"
+  ],
+  "before_sha256": "960cb354f190f5a99dc30724a51e4715a550dfb802ca17b4d959274504d7240c",
+  "after_sha256": "13f217dbcb2151babbcd1f457dccce17c716a89a5889a900f47abc3d9ef673f6",
+  "production_lines": {
+    "arena": 293,
+    "pool": 280
+  },
+  "pool_budget": "1 MiB logical native length high-water per owned object + cached key/coords/wrapper metadata + free Vec actual capacity; inaccessible native capacities and private layers excluded",
+  "unchanged_file_count": 138,
+  "validation": {
+    "format": {
+      "command": "cargo fmt --all --check",
+      "exit_code": 0
+    },
+    "library": {
+      "command": "cargo test --lib --features swash --locked --offline --target-dir /private/tmp/femtovg-outline-pool-review/test-target",
+      "exit_code": 0,
+      "passed": 173,
+      "failed": 0,
+      "ignored": 0,
+      "measured": 0,
+      "filtered_out": 0,
+      "test_seconds": 1.69,
+      "compilation_seconds": 14.65,
+      "dependency_versions": {
+        "swash": "0.2.10",
+        "zeno": "0.3.3",
+        "skrifa": "0.44.0"
+      },
+      "warnings": [
+        "Existing unused geometry::Transform2D import in src/paint.rs:1630"
+      ]
+    }
+  },
+  "test_lockfile": {
+    "source": "/Users/jesse/github/femtovg/Cargo.lock",
+    "sha256": "f86c41245f81acd5b392c04dfc13369e8be46408a05ed264faeaa254001082e4",
+    "note": "Pure frozen snapshots omit Cargo.lock; workspace lock copied for library tests only. Timed runner uses its own pinned lockfile."
+  }
+}

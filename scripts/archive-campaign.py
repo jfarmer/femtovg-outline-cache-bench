@@ -14,7 +14,7 @@ import json
 from pathlib import Path
 import tarfile
 
-PRUNE = {"target", "test-targets", "__pycache__", ".git", ".serena"}
+PRUNE = {"target", "test-target", "test-targets", "probe-target", "__pycache__", ".git", ".serena"}
 EXECUTABLE_MAGIC = {
     b"\x7fELF", b"\xcf\xfa\xed\xfe", b"\xfe\xed\xfa\xcf",
     b"\xce\xfa\xed\xfe", b"\xfe\xed\xfa\xce", b"\xca\xfe\xba\xbe",
