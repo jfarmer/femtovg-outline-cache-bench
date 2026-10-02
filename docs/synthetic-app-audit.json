@@ -1,0 +1,276 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-02T11:50:37.384878+00:00",
+  "versions": [
+    "master",
+    "current",
+    "final",
+    "route"
+  ],
+  "raw_launches": 20,
+  "accepted_launches": 16,
+  "accepted_blocks": 4,
+  "retry_attempts_revalidated": 1,
+  "point_effects_recomputed": 10,
+  "cpu_ci_rows_recomputed": 10,
+  "results": [
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 4,
+      "reference_median": 23.522541,
+      "candidate_median": 23.522541,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 4,
+      "reference_median": 23.522541,
+      "candidate_median": 23.522541,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "route",
+      "n_blocks": 4,
+      "reference_median": 23.522541,
+      "candidate_median": 23.522541,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 4,
+      "reference_median": 23.522541,
+      "candidate_median": 23.522541,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "route",
+      "n_blocks": 4,
+      "reference_median": 23.522541,
+      "candidate_median": 23.522541,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "current",
+      "n_blocks": 4,
+      "reference_median": 2.689333,
+      "candidate_median": 2.689333,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 4,
+      "reference_median": 2.689333,
+      "candidate_median": 2.689333,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "route",
+      "n_blocks": 4,
+      "reference_median": 2.689333,
+      "candidate_median": 2.689333,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "final",
+      "n_blocks": 4,
+      "reference_median": 2.689333,
+      "candidate_median": 2.689333,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "current",
+      "candidate": "route",
+      "n_blocks": 4,
+      "reference_median": 2.689333,
+      "candidate_median": 2.689333,
+      "median_paired_delta": 0.0,
+      "median_paired_ratio": 1.0,
+      "median_paired_change_pct": 0.0,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_seed": 1812024596969256872
+    }
+  ],
+  "input_sha256": {
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/summary.json": "c93d158f4f3670c5a986e0695cb15b0c180a8e94442160bc04c661e35a244076",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/analysis/summary.json": "4f719855f5f52a4c105e4cbec544b57430db8b720898782b8f3cd99eee3eb78e",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "750fd6abfdd1b6f3fa8e4bb8e4f409528e1f2bedf5815b28c9a3d2461e7ed952",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "71146ac4dd2016f3c58413425465044d070a96e560a13589771caac9a74c083b",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-route/summary.json": "2a9523ccc65038b9035e0da375e7f9ffd4b9bbea7d42d07744b048e966fd1547",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "8685fb8415397e3fe133caf78c419afe73c85daf4c2264e5ae0473e12fbfb54e",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt2-current/summary.json": "b2ee50e103700b20c26677f9acb5817f48e3ec31d5283959efed8c1481259f6b",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt2-final/summary.json": "8685fb8415397e3fe133caf78c419afe73c85daf4c2264e5ae0473e12fbfb54e",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt2-master/summary.json": "750fd6abfdd1b6f3fa8e4bb8e4f409528e1f2bedf5815b28c9a3d2461e7ed952",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/01-winit-femtovg-wgpu-vollkorn-attempt2-route/summary.json": "2a9523ccc65038b9035e0da375e7f9ffd4b9bbea7d42d07744b048e966fd1547",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "b2ee50e103700b20c26677f9acb5817f48e3ec31d5283959efed8c1481259f6b",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "8685fb8415397e3fe133caf78c419afe73c85daf4c2264e5ae0473e12fbfb54e",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "750fd6abfdd1b6f3fa8e4bb8e4f409528e1f2bedf5815b28c9a3d2461e7ed952",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-route/summary.json": "2a9523ccc65038b9035e0da375e7f9ffd4b9bbea7d42d07744b048e966fd1547",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "8685fb8415397e3fe133caf78c419afe73c85daf4c2264e5ae0473e12fbfb54e",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-route/summary.json": "2a9523ccc65038b9035e0da375e7f9ffd4b9bbea7d42d07744b048e966fd1547",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "b2ee50e103700b20c26677f9acb5817f48e3ec31d5283959efed8c1481259f6b",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "750fd6abfdd1b6f3fa8e4bb8e4f409528e1f2bedf5815b28c9a3d2461e7ed952",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-route/summary.json": "2a9523ccc65038b9035e0da375e7f9ffd4b9bbea7d42d07744b048e966fd1547",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "750fd6abfdd1b6f3fa8e4bb8e4f409528e1f2bedf5815b28c9a3d2461e7ed952",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "8685fb8415397e3fe133caf78c419afe73c85daf4c2264e5ae0473e12fbfb54e",
+    "/private/tmp/alustin-miss-selection-v2-review/smoke-42b6c77d/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-current/summary.json": "b2ee50e103700b20c26677f9acb5817f48e3ec31d5283959efed8c1481259f6b"
+  },
+  "binary_verification": "Executable bytes independently hashed",
+  "auditor_sha256": "8d958ef93dd1aacfaec738448383ba2c378403f9c06b462266c485703547d0cc",
+  "math_helper_sha256": "7038eb6d035795300b46d1a9d43d69fa7172956a8872223f52b7234053ca58dc",
+  "scope": "Unique raw renderer frames enclosing first/search markers and their unique renderer-thread CPU amount counters; all accepted variants paired within the same round/attempt; retries independently require raw query contamination. Deterministic whole-block percentile bootstrap; exploratory/unadjusted intervals. No runner/analyzer imports."
+}

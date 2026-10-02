@@ -1,0 +1,682 @@
+struct Params {
+    scissor_mat: mat3x4<f32>,
+    paint_mat: mat3x4<f32>,
+    inner_col: vec4<f32>,
+    outer_col: vec4<f32>,
+    scissor_ext: vec2<f32>,
+    scissor_scale: vec2<f32>,
+    extent: vec2<f32>,
+    radius: f32,
+    feather: f32,
+    stroke_mult: f32,
+    stroke_thr: f32,
+    tex_type: f32,
+    shader_type: f32,
+    glyph_texture_type: f32, // 0 -> no glyph rendering, 1 -> alpha mask, 2 -> color texture
+    image_blur_filter_sigma: f32,
+    image_blur_filter_direction: vec2<f32>,
+    image_blur_filter_coeff: vec3<f32>,
+    // scissor_radius fills the padding after the vec3 (byte offset 204);
+    // conic_start_angle starts the next 16-byte row (byte offset 208), which
+    // is frag[13].x in the flat uniform array written from Rust.
+    scissor_radius: f32,
+    conic_start_angle: f32,
+}
+
+const SHADER_TYPE_FillGradient: i32 = 0;
+const SHADER_TYPE_FillImage: i32 = 1;
+const SHADER_TYPE_Stencil: i32 = 2;
+const SHADER_TYPE_FillImageGradient: i32 = 3;
+const SHADER_TYPE_FilterImage: i32 = 4;
+const SHADER_TYPE_FillColor: i32 = 5;
+const SHADER_TYPE_TextureCopyUnclipped: i32 = 6;
+const SHADER_TYPE_FillColorUnclipped: i32 = 7;
+const SHADER_TYPE_FillGradientConic: i32 = 8;
+const SHADER_TYPE_FillImageGradientConic: i32 = 9;
+const SHADER_TYPE_FilterImageColorMatrix: i32 = 10;
+const SHADER_TYPE_FillGradientTwoPointRadial: i32 = 11;
+const SHADER_TYPE_FillImageGradientTwoPointRadial: i32 = 12;
+const SHADER_TYPE_FilterImageTurbulence: i32 = 13;
+const SHADER_TYPE_FilterImageTransfer: i32 = 14;
+const SHADER_TYPE_FilterImageBlend: i32 = 15;
+
+const TAU: f32 = 6.28318530717958647692528676655900577;
+
+struct ViewSize {
+    x: f32,
+    y: f32,
+    pad: vec2<f32>,
+}
+
+@group(0)
+@binding(0)
+var<uniform> viewSize: ViewSize;
+
+@group(1)
+@binding(0)
+var<uniform> params: Params;
+
+struct Vertex {
+    vertex: vec2<f32>,
+    tcoord: vec2<f32>,
+}
+
+struct VertexOutput {
+    @builtin(position) position: vec4<f32>,
+    @location(0) ftcoord: vec2<f32>,
+    @location(1) fpos: vec2<f32>,
+};
+
+@vertex
+fn vs_main(
+    @location(0) vertex: vec2<f32>,
+    @location(1) tcoord: vec2<f32>,
+) -> VertexOutput {
+    var result: VertexOutput;
+    result.ftcoord = tcoord;
+    result.fpos = vertex;
+    result.position = vec4<f32>(2.0 * vertex.x / viewSize.x - 1.0, 1.0 - 2.0 * vertex.y / viewSize.y, 0, 1);
+    return result;
+}
+
+@vertex
+fn vs_main_texture(
+    @location(0) vertex: vec2<f32>,
+    @location(1) tcoord: vec2<f32>,
+) -> VertexOutput {
+    var result: VertexOutput;
+    result.ftcoord = tcoord;
+    result.fpos = vertex;
+    result.position = vec4<f32>(2.0 * vertex.x / viewSize.x - 1.0, 2.0 * vertex.y / viewSize.y - 1.0, 0, 1);
+    return result;
+}
+
+@group(1)
+@binding(1)
+var image_texture: texture_2d<f32>;
+@group(1)
+@binding(2)
+var image_sampler: sampler;
+
+@group(1)
+@binding(3)
+var glyph_texture: texture_2d<f32>;
+@group(1)
+@binding(4)
+var glyph_sampler: sampler;
+
+
+@fragment
+fn fs_main(vertex: VertexOutput) -> @location(0) vec4<f32> {
+    var result: vec4<f32>;
+    let shader_type_int: i32 = i32(params.shader_type);
+
+    var strokeAlpha: f32 = 1.0;
+    if (shader_type_int != SHADER_TYPE_TextureCopyUnclipped && shader_type_int != SHADER_TYPE_FillColorUnclipped && shader_type_int != SHADER_TYPE_FilterImage) {
+        strokeAlpha = strokeMask(vertex, params);
+        if (strokeAlpha < params.stroke_thr) {
+            discard;
+        }
+    }
+
+    switch (shader_type_int) {
+        case SHADER_TYPE_FillGradient: {
+            // Gradient
+            result = renderGradient(vertex, params);
+        }
+        case SHADER_TYPE_FillImageGradient: {
+            // Image-based Gradient; sample a texture using the gradient position.
+            result = renderImageGradient(vertex, params);
+        }
+        case SHADER_TYPE_FillImage: {
+            // Image
+            result = renderImage(vertex, params);
+        }
+        case SHADER_TYPE_FillColor: {
+            // Plain color fill
+            result = params.inner_col;
+        }
+        case SHADER_TYPE_TextureCopyUnclipped: {
+            // Plain texture copy, unclipped
+            return renderPlainTextureCopy(vertex, params);
+        }
+        case SHADER_TYPE_Stencil: {
+            // Stencil fill
+            result = vec4<f32>(1,1,1,1);
+        }
+        case SHADER_TYPE_FilterImage: {
+            // Filter Image
+            return renderFilteredImage(vertex, params);
+        }
+        case SHADER_TYPE_FillColorUnclipped: {
+            // Plain color fill
+            return params.inner_col;
+        }
+        case SHADER_TYPE_FillGradientConic: {
+            // Set `result` and fall through to the scissor + stroke-AA multiply
+            // below (like the other gradient cases); returning here would skip
+            // the clip and antialiasing, so conic fills would ignore scissors.
+            let d = conicAngleFraction(vertex, params);
+            // Straight endpoints, premultiplied post-mix (see renderGradient).
+            let mixed = ditherGradient(mix(params.inner_col,params.outer_col,d), vertex.position.xy);
+            result = vec4<f32>(mixed.rgb * mixed.a, mixed.a);
+        }
+        case SHADER_TYPE_FillImageGradientConic: {
+            let d = conicAngleFraction(vertex, params);
+            result = ditherGradient(textureSample(image_texture, image_sampler, vec2<f32>(d, 0.0)), vertex.position.xy);
+        }
+        case SHADER_TYPE_FilterImageColorMatrix: {
+            return renderColorMatrix(vertex, params);
+        }
+        case SHADER_TYPE_FillGradientTwoPointRadial: {
+            // Set `result` and fall through to the scissor + stroke-AA multiply.
+            result = renderGradientTwoPointRadial(vertex, params);
+        }
+        case SHADER_TYPE_FillImageGradientTwoPointRadial: {
+            result = renderImageGradientTwoPointRadial(vertex, params);
+        }
+        case SHADER_TYPE_FilterImageTurbulence: {
+            return renderTurbulence(vertex, params);
+        }
+        case SHADER_TYPE_FilterImageTransfer: {
+            return renderTransfer(vertex, params);
+        }
+        case SHADER_TYPE_FilterImageBlend: {
+            return renderBlend(vertex, params);
+        }
+        default: {
+            result = vec4<f32>(0.0, 0.0, 1.0, 1.0);
+        }
+    }
+
+    var scissor: f32 = scissorMask(vertex.fpos, params);
+
+    if (params.glyph_texture_type != 0.0) {
+        // Textured tris
+        var mask: vec4<f32> = textureSample(glyph_texture, glyph_sampler, vertex.ftcoord);
+
+        if (params.glyph_texture_type == 1) {
+            mask = vec4<f32>(mask.x);
+        } else {
+            result = vec4<f32>(1, 1, 1, 1);
+            mask = vec4<f32>(mask.xyz * mask.w, mask.w);
+        }
+
+        mask *= scissor;
+        result *= mask;
+    } else if (shader_type_int != SHADER_TYPE_Stencil && shader_type_int != SHADER_TYPE_FilterImage) {
+        // Not stencil fill
+        // Combine alpha
+        result *= strokeAlpha * scissor;
+    }
+
+    return result;
+}
+
+fn renderColorMatrix(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    // The 4x5 color matrix is packed into the scissor/paint matrix slots (dead
+    // during a filter pass): scissor_mat columns 0..2 hold the first 12 values,
+    // paint_mat columns 0..1 the last 8. Apply in unpremultiplied sRGB space,
+    // clamp to [0,1], then re-premultiply — unpremultiplying avoids edge halos
+    // and the clamp keeps overflowing matrices from producing out-of-range/NaN.
+    var c: vec4<f32> = textureSample(image_texture, image_sampler, vertex.fpos.xy / params.extent);
+    if (c.a > 0.0) {
+        c = vec4<f32>(c.rgb / c.a, c.a);
+    }
+    let m0 = params.scissor_mat[0];
+    let m1 = params.scissor_mat[1];
+    let m2 = params.scissor_mat[2];
+    let m3 = params.paint_mat[0];
+    let m4 = params.paint_mat[1];
+    let r = m0.x * c.r + m0.y * c.g + m0.z * c.b + m0.w * c.a + m1.x;
+    let g = m1.y * c.r + m1.z * c.g + m1.w * c.b + m2.x * c.a + m2.y;
+    let b = m2.z * c.r + m2.w * c.g + m3.x * c.b + m3.y * c.a + m3.z;
+    let a = m3.w * c.r + m4.x * c.g + m4.y * c.b + m4.z * c.a + m4.w;
+    let outc = clamp(vec4<f32>(r, g, b, a), vec4<f32>(0.0), vec4<f32>(1.0));
+    return vec4<f32>(outc.rgb * outc.a, outc.a);
+}
+
+// SVG feTurbulence (SVG 1.1 section 15.19), all four channels at once. The
+// image texture is the lattice built by src/turbulence.rs: texel (bx, by) of
+// the left 256 columns holds the unit gradient vectors of channels 0 and 1 at
+// lattice corner (bx, by), the right 256 columns those of channels 2 and 3,
+// each component stored as (g + 1) / 2. The reference code's integer
+// truncation and 0xff mask become floor() and a floored modulo, the same
+// arithmetic as the GLSL ES 1.00 shader so both backends agree, and the
+// PerlinN offset that kept its integers positive drops out, so the stitch
+// thresholds arrive from Rust without it.
+const TURBULENCE_MAX_OCTAVES: f32 = 10.0;
+
+fn turbulenceWrap(corner: vec2<f32>) -> vec2<f32> {
+    return corner - 256.0 * floor(corner / 256.0);
+}
+
+fn turbulenceGradients(corner: vec2<f32>, pair: f32) -> vec4<f32> {
+    let uv = vec2<f32>(corner.x + pair * 256.0 + 0.5, corner.y + 0.5) / vec2<f32>(512.0, 256.0);
+    return textureSample(image_texture, image_sampler, uv) * 2.0 - 1.0;
+}
+
+// One octave of classic Perlin noise at v: the spec's noise2() for the four
+// channels. stitch is (tile width, tile height, wrap x, wrap y) in lattice units.
+fn turbulenceOctave(v: vec2<f32>, stitch: vec4<f32>, stitching: bool) -> vec4<f32> {
+    var b0 = floor(v);
+    let r0 = v - b0;
+    var b1 = b0 + 1.0;
+    let r1 = r0 - 1.0;
+    if (stitching) {
+        if (b0.x >= stitch.z) { b0.x -= stitch.x; }
+        if (b1.x >= stitch.z) { b1.x -= stitch.x; }
+        if (b0.y >= stitch.w) { b0.y -= stitch.y; }
+        if (b1.y >= stitch.w) { b1.y -= stitch.y; }
+    }
+    b0 = turbulenceWrap(b0);
+    b1 = turbulenceWrap(b1);
+    let c10 = vec2<f32>(b1.x, b0.y);
+    let c01 = vec2<f32>(b0.x, b1.y);
+    let gA00 = turbulenceGradients(b0, 0.0);
+    let gB00 = turbulenceGradients(b0, 1.0);
+    let gA10 = turbulenceGradients(c10, 0.0);
+    let gB10 = turbulenceGradients(c10, 1.0);
+    let gA01 = turbulenceGradients(c01, 0.0);
+    let gB01 = turbulenceGradients(c01, 1.0);
+    let gA11 = turbulenceGradients(b1, 0.0);
+    let gB11 = turbulenceGradients(b1, 1.0);
+    let r10 = vec2<f32>(r1.x, r0.y);
+    let r01 = vec2<f32>(r0.x, r1.y);
+    let u00 = vec4<f32>(dot(r0, gA00.xy), dot(r0, gA00.zw), dot(r0, gB00.xy), dot(r0, gB00.zw));
+    let u10 = vec4<f32>(dot(r10, gA10.xy), dot(r10, gA10.zw), dot(r10, gB10.xy), dot(r10, gB10.zw));
+    let u01 = vec4<f32>(dot(r01, gA01.xy), dot(r01, gA01.zw), dot(r01, gB01.xy), dot(r01, gB01.zw));
+    let u11 = vec4<f32>(dot(r1, gA11.xy), dot(r1, gA11.zw), dot(r1, gB11.xy), dot(r1, gB11.zw));
+    let s = r0 * r0 * (3.0 - 2.0 * r0);
+    return mix(mix(u00, u10, s.x), mix(u01, u11, s.x), s.y);
+}
+
+fn renderTurbulence(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    // Slots (see ImageFilter::single_pass): scissor_mat[0] = inverse transform
+    // a b c d, scissor_mat[1] = e f and the base frequency, scissor_mat[2] =
+    // octaves, fractal flag and the stitch tile size, paint_mat[0] = the stitch
+    // wrap thresholds and flag. Each output pixel is evaluated at its integer
+    // index mapped into noise space.
+    let m0 = params.scissor_mat[0];
+    let m1 = params.scissor_mat[1];
+    let m2 = params.scissor_mat[2];
+    let m3 = params.paint_mat[0];
+    let px = floor(vertex.fpos.xy);
+    let p = vec2<f32>(m0.x * px.x + m0.z * px.y + m1.x, m0.y * px.x + m0.w * px.y + m1.y);
+    var v = p * m1.zw;
+    let octaves = m2.x;
+    let fractal = m2.y > 0.5;
+    var stitch = vec4<f32>(m2.zw, m3.xy);
+    let stitching = m3.z > 0.5;
+    var sum = vec4<f32>(0.0);
+    var ratio: f32 = 1.0;
+    for (var o: f32 = 0.0; o < TURBULENCE_MAX_OCTAVES; o += 1.0) {
+        // Constant loop bound with the octave count breaking out, as in the
+        // GLES 2.0 shader, so both backends sum the same octaves.
+        if (o >= octaves) {
+            break;
+        }
+        let n = turbulenceOctave(v, stitch, stitching);
+        sum += select(abs(n), n, fractal) / ratio;
+        v *= 2.0;
+        ratio *= 2.0;
+        stitch *= 2.0;
+    }
+    let c = clamp(select(sum, (sum + 1.0) / 2.0, fractal), vec4<f32>(0.0), vec4<f32>(1.0));
+    return vec4<f32>(c.rgb * c.a, c.a);
+}
+
+// The sRGB transfer curve (IEC 61966-2-1) on unpremultiplied color, alpha
+// untouched: scissor_mat[0].x > 0.5 converts linearRGB to sRGB, otherwise the
+// reverse.
+fn renderTransfer(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    var c: vec4<f32> = textureSample(image_texture, image_sampler, vertex.fpos.xy / params.extent);
+    if (c.a > 0.0) {
+        c = vec4<f32>(c.rgb / c.a, c.a);
+    }
+    let x = clamp(c.rgb, vec3<f32>(0.0), vec3<f32>(1.0));
+    var y: vec3<f32>;
+    if (params.scissor_mat[0].x > 0.5) {
+        y = mix(x * 12.92, 1.055 * pow(x, vec3<f32>(1.0 / 2.4)) - 0.055, step(vec3<f32>(0.0031308), x));
+    } else {
+        y = mix(x / 12.92, pow((x + 0.055) / 1.055, vec3<f32>(2.4)), step(vec3<f32>(0.04045), x));
+    }
+    return vec4<f32>(y * c.a, c.a);
+}
+
+
+// SVG feBlend: the image over the backdrop bound in the glyph-texture slot.
+// Slot 0 is the BlendMode index, slot 1 whether the backdrop is stored the
+// other way up from the image at this pass, slot 2 the alpha the image is
+// scaled by first, slot 3 whether to write the image's contribution over
+// the backdrop (what source-over onto it adds) instead of the result. Both
+// textures are premultiplied;
+// the blend function B(Cb, Cs) of the Compositing and Blending spec runs on
+// the unpremultiplied colors and the result is composited as
+// cs * (1 - ab) + cb * (1 - as) + as * ab * B, alpha as = as + ab - as * ab.
+fn blendLum(c: vec3<f32>) -> f32 {
+    return 0.3 * c.r + 0.59 * c.g + 0.11 * c.b;
+}
+
+fn blendClipColor(c: vec3<f32>) -> vec3<f32> {
+    let l = blendLum(c);
+    let n = min(c.r, min(c.g, c.b));
+    let x = max(c.r, max(c.g, c.b));
+    var o = c;
+    if (n < 0.0) {
+        o = l + (c - l) * l / (l - n);
+    }
+    if (x > 1.0) {
+        o = l + (o - l) * (1.0 - l) / (x - l);
+    }
+    return o;
+}
+
+fn blendSetLum(c: vec3<f32>, l: f32) -> vec3<f32> {
+    return blendClipColor(c + (l - blendLum(c)));
+}
+
+fn blendSat(c: vec3<f32>) -> f32 {
+    return max(c.r, max(c.g, c.b)) - min(c.r, min(c.g, c.b));
+}
+
+fn blendSetSat(c: vec3<f32>, s: f32) -> vec3<f32> {
+    let mn = min(c.r, min(c.g, c.b));
+    let mx = max(c.r, max(c.g, c.b));
+    if (mx > mn) {
+        return (c - mn) * s / (mx - mn);
+    }
+    return vec3<f32>(0.0);
+}
+
+fn blendHardLight(cb: vec3<f32>, cs: vec3<f32>) -> vec3<f32> {
+    let multiply = cb * (2.0 * cs);
+    let cs2 = 2.0 * cs - 1.0;
+    let screen = cb + cs2 - cb * cs2;
+    return select(screen, multiply, cs <= vec3<f32>(0.5));
+}
+
+fn blendColorDodge(cb: vec3<f32>, cs: vec3<f32>) -> vec3<f32> {
+    let dodge = min(vec3<f32>(1.0), cb / max(1.0 - cs, vec3<f32>(1e-6)));
+    let lit = select(dodge, vec3<f32>(1.0), cs >= vec3<f32>(1.0));
+    return select(lit, vec3<f32>(0.0), cb <= vec3<f32>(0.0));
+}
+
+fn blendColorBurn(cb: vec3<f32>, cs: vec3<f32>) -> vec3<f32> {
+    let burn = 1.0 - min(vec3<f32>(1.0), (1.0 - cb) / max(cs, vec3<f32>(1e-6)));
+    let dark = select(burn, vec3<f32>(0.0), cs <= vec3<f32>(0.0));
+    return select(dark, vec3<f32>(1.0), cb >= vec3<f32>(1.0));
+}
+
+fn blendSoftLight(cb: vec3<f32>, cs: vec3<f32>) -> vec3<f32> {
+    let d = select(sqrt(cb), ((16.0 * cb - 12.0) * cb + 4.0) * cb, cb <= vec3<f32>(0.25));
+    let lo = cb - (1.0 - 2.0 * cs) * cb * (1.0 - cb);
+    let hi = cb + (2.0 * cs - 1.0) * (d - cb);
+    return select(hi, lo, cs <= vec3<f32>(0.5));
+}
+
+fn blendMode(mode: i32, cb: vec3<f32>, cs: vec3<f32>) -> vec3<f32> {
+    switch (mode) {
+        case 0: { return cs; }
+        case 1: { return cb * cs; }
+        case 2: { return cb + cs - cb * cs; }
+        case 3: { return blendHardLight(cs, cb); }
+        case 4: { return min(cb, cs); }
+        case 5: { return max(cb, cs); }
+        case 6: { return blendColorDodge(cb, cs); }
+        case 7: { return blendColorBurn(cb, cs); }
+        case 8: { return blendHardLight(cb, cs); }
+        case 9: { return blendSoftLight(cb, cs); }
+        case 10: { return abs(cb - cs); }
+        case 11: { return cb + cs - 2.0 * cb * cs; }
+        case 12: { return blendSetLum(blendSetSat(cs, blendSat(cb)), blendLum(cb)); }
+        case 13: { return blendSetLum(blendSetSat(cb, blendSat(cs)), blendLum(cb)); }
+        case 14: { return blendSetLum(cs, blendLum(cb)); }
+        default: { return blendSetLum(cb, blendLum(cs)); }
+    }
+}
+
+fn renderBlend(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    let uv = vertex.fpos.xy / params.extent;
+    let buv = select(uv, vec2<f32>(uv.x, 1.0 - uv.y), params.scissor_mat[0].y > 0.5);
+    let src = textureSample(image_texture, image_sampler, uv) * params.scissor_mat[0].z;
+    let bd = textureSample(glyph_texture, glyph_sampler, buv);
+    var cs = src.rgb;
+    if (src.a > 0.0) {
+        cs = src.rgb / src.a;
+    }
+    var cb = bd.rgb;
+    if (bd.a > 0.0) {
+        cb = bd.rgb / bd.a;
+    }
+    let mode = i32(params.scissor_mat[0].x);
+    let b = clamp(blendMode(mode, clamp(cb, vec3<f32>(0.0), vec3<f32>(1.0)), clamp(cs, vec3<f32>(0.0), vec3<f32>(1.0))), vec3<f32>(0.0), vec3<f32>(1.0));
+    let contribution = src.rgb * (1.0 - bd.a) + src.a * bd.a * b;
+    if (params.scissor_mat[0].w > 0.5) {
+        return vec4<f32>(contribution, src.a);
+    }
+    return vec4<f32>(contribution + bd.rgb * (1.0 - src.a), src.a + bd.a - src.a * bd.a);
+}
+
+fn conicAngleFraction(vertex: VertexOutput, params: Params) -> f32 {
+    let pt: vec2<f32> = (params.paint_mat * vec3<f32>(vertex.fpos, 1.0)).xy;
+    // Measure the angle clockwise from the positive x axis. In the gradient's
+    // local space (y points down on screen), atan2(pt.y, pt.x) increases in the
+    // clockwise direction, so offset 0 sits at 3 o'clock and the ramp proceeds
+    // clockwise, matching Canvas 2D createConicGradient. fract() wraps the angle
+    // into [0, 1) for negative or large start angles.
+    return fract((atan2(pt.y, pt.x) - params.conic_start_angle) / TAU);
+}
+
+// Two-point (independently centered) radial gradient: the general Canvas
+// createRadialGradient(x0,y0,r0, x1,y1,r1). paint_mat places the start circle at
+// the origin, so in local space the start circle is (0,0) radius r0 and the end
+// circle is `extent` away with radius r0 + dr (dr in feather). For a fragment pt
+// we solve for the interpolation offset t where |pt - t*cd| = r0 + t*dr, i.e.
+// a*t^2 - 2b*t + c = 0. `covered` reports whether any interpolated circle with a
+// non-negative radius reaches the fragment; uncovered fragments are transparent.
+struct RadialT {
+    t: f32,
+    covered: bool,
+}
+
+fn radialTwoPointT(vertex: VertexOutput, params: Params) -> RadialT {
+    let pt: vec2<f32> = (params.paint_mat * vec3<f32>(vertex.fpos, 1.0)).xy;
+    let cd: vec2<f32> = params.extent;  // end circle center relative to start
+    let r0: f32 = params.radius;
+    let dr: f32 = params.feather;       // r1 - r0
+    let a: f32 = dot(cd, cd) - dr * dr;
+    let b: f32 = dot(pt, cd) + r0 * dr;
+    let c: f32 = dot(pt, pt) - r0 * r0;
+    var result: RadialT;
+    result.covered = false;
+    result.t = 0.0;
+    // `a` is a squared length, so how close to zero it counts as depends on the
+    // size of the shape: the same geometry scaled up scales `a` with the square
+    // of the scale factor. Comparing it against a fixed constant would treat a
+    // focal point sitting on the end circle as a cone in one scene and as a
+    // degenerate in another. Measure it against the terms it came from instead,
+    // which also folds in the case where both are zero and the circles coincide.
+    let a_scale = max(dot(cd, cd), dr * dr);
+    if (a_scale == 0.0) {
+        // The two circles are the same circle. There is no sweep to walk, so
+        // the whole plane takes the far end of the ramp. The Canvas algorithm
+        // says to paint nothing here, but SVG resolved the opposite and its
+        // test suite asserts the gradient is drawn, so follow SVG.
+        result.t = 1.0;
+        result.covered = true;
+    } else if (abs(a) <= 1e-4 * a_scale) {
+        // Degenerate cone (|cd| == |dr|): the quadratic collapses to the linear
+        // equation -2b*t + c = 0. This is exactly the case where the end center
+        // sits on the start circle, common in focal-style gradients.
+        if (abs(b) > 1e-6) {
+            result.t = c / (2.0 * b);
+            result.covered = (r0 + result.t * dr >= 0.0);
+        }
+    } else {
+        let disc: f32 = b * b - a * c;
+        // When one circle strictly contains the other (a < 0), every fragment
+        // is on some interpolated circle and the discriminant is never really
+        // negative: at the focal point it is mathematically zero and rounds
+        // just below, which would punch a hole exactly where the first stop
+        // belongs. So a negative discriminant only counts as a miss for a > 0.
+        if (a < 0.0 || disc >= 0.0) {
+            let s: f32 = sqrt(max(disc, 0.0));
+            // One reciprocal, two roots (a is guaranteed away from zero here).
+            let inv_a: f32 = 1.0 / a;
+            let root_a: f32 = (b - s) * inv_a;
+            let root_b: f32 = (b + s) * inv_a;
+            let t_lo: f32 = min(root_a, root_b);
+            let t_hi: f32 = max(root_a, root_b);
+            // Canvas draws circles from the largest offset toward the smallest and
+            // does not overpaint, so the largest offset whose interpolated circle
+            // has a non-negative radius is the one that claims the fragment.
+            if (r0 + t_hi * dr >= 0.0) {
+                result.t = t_hi;
+                result.covered = true;
+            } else if (r0 + t_lo * dr >= 0.0) {
+                result.t = t_lo;
+                result.covered = true;
+            }
+        }
+    }
+    result.t = clamp(result.t, 0.0, 1.0);
+    return result;
+}
+
+fn renderGradientTwoPointRadial(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    let r: RadialT = radialTwoPointT(vertex, params);
+    if (!r.covered) {
+        return vec4<f32>(0.0);
+    }
+    // Straight endpoints, premultiplied post-mix (see renderGradient).
+    let color = ditherGradient(mix(params.inner_col, params.outer_col, r.t), vertex.position.xy);
+    return vec4<f32>(color.rgb * color.a, color.a);
+}
+
+fn renderImageGradientTwoPointRadial(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    let r: RadialT = radialTwoPointT(vertex, params);
+    if (!r.covered) {
+        return vec4<f32>(0.0);
+    }
+    return ditherGradient(textureSample(image_texture, image_sampler, vec2<f32>(r.t, 0.0)), vertex.position.xy);
+}
+
+fn sdroundrect(pt: vec2<f32>, ext: vec2<f32>, rad: f32) -> f32 {
+    let ext2: vec2<f32> = ext - vec2<f32>(rad,rad);
+    let d: vec2<f32> = abs(pt) - ext2;
+    return min(max(d.x,d.y),0.0) + length(max(d, vec2<f32>(0.0, 0.0))) - rad;
+}
+
+// Scissoring
+fn scissorMask(p: vec2<f32>, params: Params) -> f32 {
+    if (params.scissor_radius > 0.0) {
+        let pt = (params.scissor_mat * vec3<f32>(p, 1.0)).xy;
+        let distance = sdroundrect(pt, params.scissor_ext, params.scissor_radius);
+        return clamp(0.5 - distance * min(params.scissor_scale.x, params.scissor_scale.y), 0.0, 1.0);
+    }
+
+    var sc: vec2<f32> = (abs((params.scissor_mat * vec3<f32>(p,1.0)).xy) - params.scissor_ext);
+    sc = vec2(0.5,0.5) - sc * params.scissor_scale;
+    return clamp(sc.x,0.0,1.0) * clamp(sc.y,0.0,1.0);
+}
+
+// Stroke - from [0..1] to clipped pyramid, where the slope is 1px.
+fn strokeMask(vertex: VertexOutput, params: Params) -> f32 {
+    return min(1.0, (1.0-abs(vertex.ftcoord.x*2.0-1.0))*params.stroke_mult) * min(1.0, vertex.ftcoord.y);
+    // Using this smoothstep preduces maybe better results when combined with fringe_width of 2, but it may look blurrier
+    // maybe this should be controlled via flag
+    //return smoothstep(0.0, 1.0, (1.0-abs(vertex.ftcoord.x*2.0-1.0))*params.stroke_mult) * smoothstep(0.0, 1.0, vertex.ftcoord.y);
+}
+
+// Interleaved gradient noise dither (see the GLSL shader / issue femtovg/femtovg#239):
+// a cheap, deterministic screen-space ordered dither. A sub-LSB colour offset
+// before the 8-bit write breaks up gradient banding between close colours.
+fn ditherNoise(p: vec2<f32>) -> f32 {
+    return fract(52.9829189 * fract(dot(p, vec2<f32>(0.06711056, 0.00583715))));
+}
+fn ditherGradient(color: vec4<f32>, fragcoord: vec2<f32>) -> vec4<f32> {
+    let d = (ditherNoise(fragcoord) - 0.5) / 255.0;
+    return vec4<f32>(color.rgb + d, color.a);
+}
+
+fn renderGradient(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    // Calculate gradient color using box gradient
+    let pt: vec2<f32> = (params.paint_mat * vec3<f32>(vertex.fpos, 1.0)).xy;
+
+    let d: f32 = clamp((sdroundrect(pt, params.extent, params.radius) + params.feather*0.5) / params.feather, 0.0, 1.0);
+    // Endpoints arrive straight (unpremultiplied) so transparent stops keep
+    // their hue through the mix - the interpolation Canvas and SVG gradients
+    // apply; premultiply here for the compositing pipeline.
+    let color: vec4<f32> = ditherGradient(mix(params.inner_col,params.outer_col,d), vertex.position.xy);
+    return vec4<f32>(color.rgb * color.a, color.a);
+}
+
+// Image-based Gradient; sample a texture using the gradient position.
+fn renderImageGradient(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    // Calculate gradient color using box gradient
+    let pt: vec2<f32> = (params.paint_mat * vec3<f32>(vertex.fpos, 1.0)).xy;
+
+    let d: f32 = clamp((sdroundrect(pt, params.extent, params.radius) + params.feather*0.5) / params.feather, 0.0, 1.0);
+    return ditherGradient(textureSample(image_texture, image_sampler, vec2<f32>(d, 0.0)), vertex.position.xy);
+}
+
+fn renderImage(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    // Calculate color from texture
+    let pt: vec2<f32> = (params.paint_mat * vec3<f32>(vertex.fpos, 1.0)).xy / params.extent;
+
+    var color: vec4<f32> = textureSample(image_texture, image_sampler, pt);
+
+    if (params.tex_type == 1) { color = vec4(color.xyz * color.w, color.w); }
+    if (params.tex_type == 2) { color = vec4(color.x); }
+
+    // Apply color tint and alpha.
+    color *= params.inner_col;
+    return color;
+}
+
+fn renderPlainTextureCopy(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    var color: vec4<f32> = textureSample(image_texture, image_sampler, vertex.ftcoord);
+
+    if (params.tex_type == 1) { color = vec4(color.xyz * color.w, color.w); }
+    if (params.tex_type == 2) { color = vec4(color.x); }
+    // Apply color tint and alpha.
+    color *= params.inner_col;
+    return color;
+}
+
+fn renderFilteredImage(vertex: VertexOutput, params: Params) -> vec4<f32> {
+    let sampleCount: f32 = ceil(3.0 * params.image_blur_filter_sigma);
+
+    var gaussian_coeff: vec3<f32> = params.image_blur_filter_coeff;
+
+    var color_sum: vec4<f32> = textureSample(image_texture, image_sampler, vertex.fpos.xy / params.extent) * gaussian_coeff.x;
+    var coefficient_sum: f32 = gaussian_coeff.x;
+    gaussian_coeff.x *= gaussian_coeff.y;
+    gaussian_coeff.y *= gaussian_coeff.z;
+
+    for (var i: f32 = 1.0; i <= 24.0; i += 1.) {
+        // Work around GLES 2.0 limitation of only allowing constant loop indices by
+        // breaking here. Each pass's sigma is bounded to 8 on the Rust side (a larger
+        // blur is split into passes that compose to it) and the kernel reaches
+        // +/-3*sigma, so the tap count never exceeds this 24-iteration bound.
+        if (i >= sampleCount) {
+            break;
+        }
+        color_sum += textureSample(image_texture, image_sampler, (vertex.fpos.xy - i * params.image_blur_filter_direction) / params.extent) * gaussian_coeff.x;
+        color_sum += textureSample(image_texture, image_sampler, (vertex.fpos.xy + i * params.image_blur_filter_direction) / params.extent) * gaussian_coeff.x;
+        coefficient_sum += 2.0 * gaussian_coeff.x;
+
+        // Compute the coefficients incrementally:
+        // https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-40-incremental-computation-gaussian
+        gaussian_coeff.x *= gaussian_coeff.y;
+        gaussian_coeff.y *= gaussian_coeff.z;
+    }
+
+    var color: vec4<f32> = color_sum / coefficient_sum;
+
+    if (params.tex_type == 1) { color = vec4<f32>(color.xyz * color.w, color.w); }
+    if (params.tex_type == 2) { color = vec4<f32>(color.x); }
+
+    return color;
+}

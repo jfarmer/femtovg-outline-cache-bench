@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "scope": "Source-only/lightweight synthetic validation; no Rust builds, GUI or actual benchmark CIs",
+  "created_utc": "2026-10-02T11:37:09.098860+00:00",
+  "portable_guard_tests": 5,
+  "synthetic_replay": {
+    "point_effects": 648,
+    "primary_cis": 216
+  },
+  "synthetic_app": {
+    "point_effects": 10,
+    "cpu_cis": 10
+  },
+  "scripts": {
+    "analyze.py": "6fa6cb8cf595aaf8abf28aff618c14b2372d649588e16f4c1d1af98ff445c54a",
+    "archive-campaign.py": "35790163eb41b56d2bd01832fd59461139daf9aa612a6fe621c38575ef766fe3",
+    "archive-study.py": "8eece22b5cf77636be649dacc627d9dfebed3e52bfffe157a52a9206e099ecad",
+    "benchlib.py": "58b7e2065163e4334dcfd4746aee87ece41ba0cd03727bf7a22c8ac43049d0fa",
+    "build.py": "74246d0b4d3d84a579e77a7a08c1e4ee3d06b46cb0ca6ac3c570548d144e439a",
+    "bundle-runtime.py": "909b027c5116f68f1a1cc5a72b0bb05e470745325f93750af8ef2e00893ac207",
+    "independent_audit_math.py": "5575b3e73e29188d040cdeb8d29c36eb7df62b0082ef840775a61d16f779e05a",
+    "independent_raw_app_audit.py": "8d958ef93dd1aacfaec738448383ba2c378403f9c06b462266c485703547d0cc",
+    "independent_raw_replay_audit.py": "4b4a676f8e90acabbf5200c4c8a99f808c875aadcf3ba33453285a2588567ac5",
+    "portable_verify_ready.py": "ee3cec7185f1e35f9cc466b9ac27426431397832286cb04b8d156be1d9eae780",
+    "prepare.py": "7f8adb6b888077602721df9ef58e602af1d3923d6833cffe84f51279147c86f1",
+    "render-report.py": "24df3b2d87df10d1eca87e609af9d64944c98752b121e890f2ba0d5381f16177",
+    "run.py": "1452c2722cd8d1941ce0f9f39e7157e2affe379ce86b31f89c09bcbfdfbefcb8",
+    "test_portability.py": "52953f049ab457432838fa74d2cc7470dd372a8d5332df42140fa1623d21997a",
+    "verify-results.py": "565d49552feaf0ff425e4bab21de7e76aebe1b3e4fc8b9d75dd3786e545509f1"
+  }
+}

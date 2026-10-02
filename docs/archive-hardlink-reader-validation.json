@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-02T12:04:05.398012+00:00",
+  "portable_guard_tests_passed": 7,
+  "scope": "Synthetic archive content/path and fresh build guards; new hardlink reader retains legacy regular-only support",
+  "hardlink_cases": [
+    "prior regular canonical",
+    "metadata alias whose canonical extension is excluded",
+    "full materialization",
+    "escape rejection",
+    "absolute target rejection",
+    "forward rejection",
+    "chain rejection",
+    "alias size mismatch rejection",
+    "alias SHA mismatch rejection"
+  ],
+  "script_sha256": {
+    "benchlib.py": "4c7647d8b6225077b6340cb3de6e86e41ec8d6f8c00d7d32c2916e97c3db4467",
+    "test_portability.py": "0bb3a48ce60671e855c0ec94e0b44d1e8505107d343a68e900bdd0fb17f436df",
+    "verify-results.py": "565d49552feaf0ff425e4bab21de7e76aebe1b3e4fc8b9d75dd3786e545509f1"
+  }
+}

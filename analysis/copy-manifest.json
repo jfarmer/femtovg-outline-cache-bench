@@ -1,0 +1,122 @@
+{
+  "analysis/selection-examples/summary.json": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/analysis/summary.json",
+    "sha256": "ecec9d8c49aefe2ffba9aafa1b731665873bb9fd74f18ee0bf64f0131bcaada7",
+    "bytes": 13072417
+  },
+  "analysis/selection-examples/summary.csv": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/analysis/summary.csv",
+    "sha256": "5163c9fee6e5d1c5c71cb91e74934a7fef2ed39a0ad560f6f6ba7a9a0c3ec6f0",
+    "bytes": 756640
+  },
+  "analysis/selection-examples/paired-processes.csv": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/analysis/paired-processes.csv",
+    "sha256": "48956ba2654ae52cdfa2b1fe6ec0fdb126683425799487b37ac18644d8c6de18",
+    "bytes": 4907565
+  },
+  "analysis/selection-examples/summary-methodology.json": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/analysis/summary-methodology.json",
+    "sha256": "8281a0921a2b0a7d4e8327095f47cc7e955ee6c73ef5a54983fe2dc0ed67e315",
+    "bytes": 5517
+  },
+  "analysis/selection-sequences/summary.json": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/sequence-analysis/summary.json",
+    "sha256": "3921a9a6ecc8306fcf1ea46867b82a7285d8db6a33e28721d6983a71d523736b",
+    "bytes": 3811151
+  },
+  "analysis/selection-sequences/summary.csv": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/sequence-analysis/summary.csv",
+    "sha256": "4fa74c4f1506f7cb479207250acb2a14095c6d15b0bdef669a1545684b5a6eea",
+    "bytes": 253259
+  },
+  "analysis/selection-sequences/paired-processes.csv": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/sequence-analysis/paired-processes.csv",
+    "sha256": "90b09d24b97a918dcc4c36eb0c27b9308174db8e0dc434e933f3dc99b3502735",
+    "bytes": 1907159
+  },
+  "analysis/selection-sequences/methodology.json": {
+    "source": "/private/tmp/femtovg-miss-selection-v2-review/results/sequence-analysis/methodology.json",
+    "sha256": "7319b946e2f0578333d039ed11cf9a7f7699b1d97de4bd324e0bd632492dc4b4",
+    "bytes": 2296
+  },
+  "analysis/selection-alustin/pairs.csv": {
+    "source": "/private/tmp/alustin-miss-selection-v2-review/analysis/pairs.csv",
+    "sha256": "1913dcd8cd5f3100e0b948e475cc7e3bd2804c61f925803e2cf2af4d1f62b8dc",
+    "bytes": 1279432
+  },
+  "analysis/selection-alustin/summary.json": {
+    "source": "/private/tmp/alustin-miss-selection-v2-review/analysis/summary.json",
+    "sha256": "a9eeb49f5f6008c93acf7289c076cbcd3dc3c66d56d8e28e13bf159e9507008a",
+    "bytes": 2801297
+  },
+  "analysis/selection-alustin/summary.csv": {
+    "source": "/private/tmp/alustin-miss-selection-v2-review/analysis/summary.csv",
+    "sha256": "0ed5c649db122463eaba88309484909cdb8e68ce4ce2c515d3465d7d0bbb6a04",
+    "bytes": 181333
+  },
+  "analysis/selection-alustin/launches.json": {
+    "source": "/private/tmp/alustin-miss-selection-v2-review/analysis/launches.json",
+    "sha256": "8e7ad7f2872fc77bbc72782a95b853cbd61d83518ebb30da3e026cb42ddf92ff",
+    "bytes": 395252
+  },
+  "analysis/screening-examples/summary.json": {
+    "source": "/private/tmp/femtovg-miss-review/results/analysis/summary.json",
+    "sha256": "22be2a4825b81d9f2f4bade4c897e9748276f4d103799bfafbc3b5374b5c461b",
+    "bytes": 10327619
+  },
+  "analysis/screening-examples/summary.csv": {
+    "source": "/private/tmp/femtovg-miss-review/results/analysis/summary.csv",
+    "sha256": "4b15eb967799e6b73045cf74eff5f76d3d791d4e6331f0fc54736220a36d4eb8",
+    "bytes": 815762
+  },
+  "analysis/screening-examples/paired-processes.csv": {
+    "source": "/private/tmp/femtovg-miss-review/results/analysis/paired-processes.csv",
+    "sha256": "4cf386c4eeb383f683bdf60315927107c87c7132b632c169e2ec0b582e07baa9",
+    "bytes": 3563701
+  },
+  "analysis/screening-examples/summary-methodology.json": {
+    "source": "/private/tmp/femtovg-miss-review/results/analysis/summary-methodology.json",
+    "sha256": "cda8476815a29be89053426cca0bf33dd193f5ccbe16627315fa6a900f0e3484",
+    "bytes": 9521
+  },
+  "analysis/screening-sequences/summary.json": {
+    "source": "/private/tmp/femtovg-miss-review/results/sequence-analysis/summary.json",
+    "sha256": "d77adeab5732cafc59ba9d1517ac294a7287a2da9da41d682c3aa7b22f194a3a",
+    "bytes": 3002856
+  },
+  "analysis/screening-sequences/summary.csv": {
+    "source": "/private/tmp/femtovg-miss-review/results/sequence-analysis/summary.csv",
+    "sha256": "6d0d466ef2dd5c1e1b630316d0916822380dec0f3e95b64e6aca33a5a4163d57",
+    "bytes": 271989
+  },
+  "analysis/screening-sequences/paired-processes.csv": {
+    "source": "/private/tmp/femtovg-miss-review/results/sequence-analysis/paired-processes.csv",
+    "sha256": "503785a04167cb743048aae15fafa10034dc5a5c0305527e93b92008f7a4e34a",
+    "bytes": 1380937
+  },
+  "analysis/screening-sequences/methodology.json": {
+    "source": "/private/tmp/femtovg-miss-review/results/sequence-analysis/methodology.json",
+    "sha256": "39c8cabc4ad29fcae907dd41fdc318f7b49e6510858e5ee41842368339e5e8d8",
+    "bytes": 2589
+  },
+  "analysis/screening-alustin/pairs.csv": {
+    "source": "/private/tmp/alustin-miss-review/analysis/pairs.csv",
+    "sha256": "e765293548b821fea29f993249101e14e82b37a73429b164e7050acc5aaa22b5",
+    "bytes": 1845849
+  },
+  "analysis/screening-alustin/summary.json": {
+    "source": "/private/tmp/alustin-miss-review/analysis/summary.json",
+    "sha256": "49b214689383e3c9167455d391cbde5e2fac5ac8dbc1fc654926027daaeaf127",
+    "bytes": 4536748
+  },
+  "analysis/screening-alustin/summary.csv": {
+    "source": "/private/tmp/alustin-miss-review/analysis/summary.csv",
+    "sha256": "2ad61389d95617a172798d7531d4c513bdf8c791c9bd5da045596c6cc8d9bfc6",
+    "bytes": 390172
+  },
+  "analysis/screening-alustin/launches.json": {
+    "source": "/private/tmp/alustin-miss-review/analysis/launches.json",
+    "sha256": "82adbae94928046d35e015d271e38f08367c8cedc67e01178ae8dbee023edf82",
+    "bytes": 521580
+  }
+}

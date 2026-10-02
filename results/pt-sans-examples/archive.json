@@ -1,0 +1,2218 @@
+{
+  "schema": 1,
+  "label": "pt-sans-examples",
+  "original_root": "/private/tmp/femtovg-pt-sans-outline-review",
+  "retention": "All noncompiled files, including incomplete/rejected cohorts; inclusion in the archive does not imply inclusion in a timing analysis",
+  "storage": "Lossless tar hardlinks deduplicate identical file contents; every original path and byte checksum is retained",
+  "files": {
+    "analysis/paired-processes.csv": {
+      "sha256": "558845619e51fe0aaa1ec6686b7b4d9f17d44e8f0e2e13ecce632d8d6136d5f9",
+      "bytes": 496589
+    },
+    "analysis/summary-methodology.json": {
+      "sha256": "6bc3459dd46413d171f922aa2e4c76e6a3051270cec5e25c404111c9bbd8168b",
+      "bytes": 3193
+    },
+    "analysis/summary.csv": {
+      "sha256": "35b4f94e5961d9026169abfe8f2490ebbc92e68c0beb1010fb7db0c9669f8b88",
+      "bytes": 99287
+    },
+    "analysis/summary.json": {
+      "sha256": "6710d43f6e91a6f91aa8ec1de22ddbe2ac4bf02fdbacb5383b5b5fc43e47449e",
+      "bytes": 1299890
+    },
+    "cpu-provenance.json": {
+      "sha256": "f7f53a5fa00770fd7388f55f25130ff7bf97de96ed3b5e3067dbac1fc7a60a28",
+      "bytes": 58181
+    },
+    "cpu-results.csv": {
+      "sha256": "3df84468673c4d9f7613777194159ad7a5da3b072548c2cb376b4ed8f5eed59a",
+      "bytes": 571868
+    },
+    "cpu-runs/01-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "764c239c5a9d41c5fbe1702f49c1531c75ee67dae7053b7444a3078aa83cec9c",
+      "bytes": 5774
+    },
+    "cpu-runs/01-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "2b72bc84ad077d760ff4f4b269cf6f4928e0f7f87aeee84ea6e066f5f8a384fd",
+      "bytes": 5771
+    },
+    "cpu-runs/01-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "4b7d63817e38f0b6e8619d1bfbca8a0bc1de8343232f40d46ff17f3c058367a7",
+      "bytes": 5768
+    },
+    "cpu-runs/01-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "2b84dc6322ecd2840fafee220b946a42afdd5874c2bf0b822b0de15cc8e8929a",
+      "bytes": 5771
+    },
+    "cpu-runs/01-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "6c8d80b530cd1909bf1f654070859e6333a4e3c247ef85a7f357abfcdf9ce3c1",
+      "bytes": 5798
+    },
+    "cpu-runs/01-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "3d5ceb860fcd6a5d431ffb4bd8b3556640946c2a2a89ac1d4f2750948c5f473d",
+      "bytes": 5783
+    },
+    "cpu-runs/01-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "83f64f5cfd2c82be65977285270695c2e9e383a993a697c594a3316be82aec7e",
+      "bytes": 5798
+    },
+    "cpu-runs/01-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/01-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "823a56966e819082b3e94eda6621edd185518cc09d122ddaf76d3c0756653ee6",
+      "bytes": 5786
+    },
+    "cpu-runs/02-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "4c26bfa9a04c67e833695d84ad4a525197d9e520e304a9f63988fe5943d23500",
+      "bytes": 5777
+    },
+    "cpu-runs/02-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "ccd276e20a726d9923ebe6234607d6b6a6d2c602efb85caa5bf64653101969e4",
+      "bytes": 5768
+    },
+    "cpu-runs/02-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "9a8b69356813a41d1926aedaaea906182381fa7b1a1484e860219f6c4ad1e354",
+      "bytes": 5774
+    },
+    "cpu-runs/02-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "d9313a1be8067e5d1c9783ec3cadf92b2cceb69d6ea31d844ad48b53cba23697",
+      "bytes": 5768
+    },
+    "cpu-runs/02-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "ec42c1409fa9f4ad2172ac8b14b27d6eeede9bfcf54e1d8a725a359d89c65fd5",
+      "bytes": 5798
+    },
+    "cpu-runs/02-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "13218ff8a5c4f995e653e7f1cae9af87956c8ea7eae11388194c8c87c542ac56",
+      "bytes": 5783
+    },
+    "cpu-runs/02-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "105b62f017f232da1ab8b631db4680774314267744d32ef4a20f5aef191c016b",
+      "bytes": 5798
+    },
+    "cpu-runs/02-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/02-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "b890a3e37092ff0d560ca848e5fe8962859ce63496c29793d3a061778c96e0a6",
+      "bytes": 5783
+    },
+    "cpu-runs/03-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "b4873bc91fe5a82fc06a1b0da0919d6ae33a9405a0a6891caf6571de16aeefba",
+      "bytes": 5780
+    },
+    "cpu-runs/03-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "98b6106bc46d8088ec865e17f7a38bc372b414e02654d9aa1292c8356680b5a0",
+      "bytes": 5768
+    },
+    "cpu-runs/03-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "e52af24ec51bfe829867c390a11412ebcfb00c56980778f8f67ddc3f580c7033",
+      "bytes": 5777
+    },
+    "cpu-runs/03-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "aca3f29861f7f7beee3ab477991c2b4485e0f933e029acd71f7068ab892746a0",
+      "bytes": 5768
+    },
+    "cpu-runs/03-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "1fd24febc8299aa6ae8d0ee5dab3a3ab87984b0a1b2ca868560cd5082d822cc0",
+      "bytes": 5798
+    },
+    "cpu-runs/03-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "b011a713b0f9a610112d14a8ee0186edb607d593b3b0548e67a9ed49c3e0f475",
+      "bytes": 5783
+    },
+    "cpu-runs/03-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "204cdff2463151fb037622e35e7f108822972f78e5cdd416a791b02083b9ed4e",
+      "bytes": 5798
+    },
+    "cpu-runs/03-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/03-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "8e6688a00d262d72a085abb58fa61b9e2953af40315774bc40e524f0eb5f0c49",
+      "bytes": 5783
+    },
+    "cpu-runs/04-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "05b63f59c687856459ab1a5a12bd04c8ba3a0b2c4d8fbdd17aca92afda68da21",
+      "bytes": 5780
+    },
+    "cpu-runs/04-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "95f7faeafb2863fab3fead491841bd0557f56a0d1212f871ad04b859296148de",
+      "bytes": 5774
+    },
+    "cpu-runs/04-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "6eb3398826c3fbf1c21d4a7624b2171716084c695bb4827c6a488694a3ce9b57",
+      "bytes": 5777
+    },
+    "cpu-runs/04-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "b60f3f16ecbb5fc7a94619e4036c43112d07e354a43de66561e9b557cd0662e6",
+      "bytes": 5768
+    },
+    "cpu-runs/04-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "00b29bf2f1b4ca401b03180bfcfc6dc2bfa4d86d0b4f4eced4fdbd6c5d7b3fb0",
+      "bytes": 5798
+    },
+    "cpu-runs/04-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "7b22564554c8237531ff89dab296de9319ed8c7bce8fe27420b49fea2ec89412",
+      "bytes": 5783
+    },
+    "cpu-runs/04-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "fc0f29d6f5ac4a73f533fbdaafa5b231ff4f5f6593dc4bbb57dd6474914b74eb",
+      "bytes": 5798
+    },
+    "cpu-runs/04-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/04-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "d8e531c28c24827b7e938d02f3b70b37cb631f1df474a05a6b0af72b0366eab3",
+      "bytes": 5783
+    },
+    "cpu-runs/05-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "4598371e26c71d13794a1a7036467aea1893d60e04e6b3bc6d6ca8a52d16935d",
+      "bytes": 5777
+    },
+    "cpu-runs/05-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "5d6fd747f41d7e786e282ff36978ca6b6f23668a0812b989c9f77dff6584a8a2",
+      "bytes": 5768
+    },
+    "cpu-runs/05-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "e97585f4189aa113e1b10d940113957fd95d09f266c92e875a91027b12061f84",
+      "bytes": 5771
+    },
+    "cpu-runs/05-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "a297b6252584490023c79070dc44f64132c291dbf05b1ba08cbd1270e3d060f7",
+      "bytes": 5771
+    },
+    "cpu-runs/05-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "ef800b802785db2f3704b8948f6e71ed90d3da6c16aaf153b3cc95c5e0de9106",
+      "bytes": 5798
+    },
+    "cpu-runs/05-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "906b86cc4a588638e51e2c7fb2450fce347dbbd916ed8b723b5134d022b9c4e4",
+      "bytes": 5783
+    },
+    "cpu-runs/05-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "884df02f4814c04f881ef474e8517bfd4e574948f34741122590e75c446eecbe",
+      "bytes": 5798
+    },
+    "cpu-runs/05-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/05-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "ee6637221f3f85a73ebae597eb230d978160974dc702711cd37ffe82a0b552e3",
+      "bytes": 5786
+    },
+    "cpu-runs/06-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "574b8de3286d98132b8315852704994aa40da37e88d964a5affda0c7009562a6",
+      "bytes": 5777
+    },
+    "cpu-runs/06-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "3dee60567ccbd95547294f80291ffdf198d7ad3360ef9daf94ae9693a5a4584d",
+      "bytes": 5768
+    },
+    "cpu-runs/06-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "149aa215c1e90a3027798928968665e427cc4395d16e32527e34e817fdfefe63",
+      "bytes": 5780
+    },
+    "cpu-runs/06-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "e9d6c74bee9dc372ddeae3e1c483b48384ef86e88e7619491c14de771321cf12",
+      "bytes": 5768
+    },
+    "cpu-runs/06-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "e80dd061749e37a0434d6905d62601dad703a05cad3010a3d9a7501add9d67b2",
+      "bytes": 5801
+    },
+    "cpu-runs/06-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "6379f22072b07c92e55934e12be40c725adf5d40325b78a69d130d45c232c2e7",
+      "bytes": 5783
+    },
+    "cpu-runs/06-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "57d66ba4a8f3773ff4b8f7a1eee3075fd821acce334118517d114655362c1371",
+      "bytes": 5798
+    },
+    "cpu-runs/06-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/06-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "26f9ccc25689bdc884e2282d60a9001202e55d02a8070639547cff06fe8796ba",
+      "bytes": 5783
+    },
+    "cpu-runs/07-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "6ccb18e466b4770ce0889f6378ec290a48584690f49f671b673629eabe0bbed5",
+      "bytes": 5774
+    },
+    "cpu-runs/07-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "230969e583233b23db8916df08cbae0322c06aac9118d0210e67cde94faf7b3a",
+      "bytes": 5768
+    },
+    "cpu-runs/07-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "6db16140c35d8a2d17f875d8f998a4bd0f7f60a674fdb92013dd0f7045086b95",
+      "bytes": 5777
+    },
+    "cpu-runs/07-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "52c61ceff686a2e8767e5943284241ef94047e7338a796f5b3a6076e7499a926",
+      "bytes": 5768
+    },
+    "cpu-runs/07-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "0584217de015cb5e66e1859d0b462a514c9a7d28edb15c4c2ad5b266ad5ab6da",
+      "bytes": 5798
+    },
+    "cpu-runs/07-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "337f21ea381c9f25e1198b9453c3683e640c3ce340fce41c735497eaff597a24",
+      "bytes": 5783
+    },
+    "cpu-runs/07-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "c77a04226e76998e3e8fb0e5795de6ce3ba8ee37c12e54d47cfe8e29f3141afe",
+      "bytes": 5798
+    },
+    "cpu-runs/07-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/07-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "0da9bed275b155348cbe9f5f0b8d139eabca0a5bca6e1708b5b1bae3ef0d581f",
+      "bytes": 5783
+    },
+    "cpu-runs/08-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "ecda4fbb4bcf0a917beb1615de4085d50b1ac3e1845478db382e85a1703d2ff7",
+      "bytes": 5783
+    },
+    "cpu-runs/08-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "6b1e0a0e15d800f51ae88c10c87d513c370d5701af2057d6384e42611b7e5b17",
+      "bytes": 5768
+    },
+    "cpu-runs/08-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "a57a2bac400181523b8e67687bbb723213da3f4cd6b7ebbbd7c2fcc99ef80d0d",
+      "bytes": 5777
+    },
+    "cpu-runs/08-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "db2d87a11655e36d2e6a9202628ff26f3d87bc9d596c8eee3c5095351040ca6b",
+      "bytes": 5768
+    },
+    "cpu-runs/08-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "1f27d51a493e65dd5f60bdb57b95fcf0dc8797feaba03e3e5641682ead30695f",
+      "bytes": 5798
+    },
+    "cpu-runs/08-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "52823d49ac69696378f692dbb2b2ee96bbd35d0444ba1987407833944ff3862b",
+      "bytes": 5783
+    },
+    "cpu-runs/08-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "b517bb728839cad66a71f4b7b4d4940b7b889ebb3db3bf2bd1227434312bb2e4",
+      "bytes": 5798
+    },
+    "cpu-runs/08-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/08-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "5123de15c9ff4d8d139d7fed661042083ac06c334eb90c78450cacc3030a6a48",
+      "bytes": 5783
+    },
+    "cpu-runs/09-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "5eccd44b19ba3dcbc6d1efcdffbcc3d43424ff7050a41f630a72f998211c5de0",
+      "bytes": 5780
+    },
+    "cpu-runs/09-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "8895860e69ae0c448e9733c29f45c6a3238abeebea5ae42977a12b163613ede3",
+      "bytes": 5768
+    },
+    "cpu-runs/09-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "3da78901ad6a2035be32e8b850dd0c22ed6153d2ded3bfa4f30507befb74b7f0",
+      "bytes": 5771
+    },
+    "cpu-runs/09-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "9c5565b6e25d266b469022b285f4252841a6f9d82f2efa2634fabca8d070d8e5",
+      "bytes": 5768
+    },
+    "cpu-runs/09-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "f1316fec389d17eeda06cd847c9878526bd6f83575532cd1b0067820161c16d3",
+      "bytes": 5798
+    },
+    "cpu-runs/09-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "e9cb22c3cedda0ac8fc18a4efd684cefd9593f0b70ccd4179a49b0e33d635eb3",
+      "bytes": 5783
+    },
+    "cpu-runs/09-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "13e636efd8b30d0f375abe790e945d0867be75d4c4db60788557d7a931b56ef4",
+      "bytes": 5798
+    },
+    "cpu-runs/09-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "371991a8010e35247f7387d8142b02c77b417dfce465905fafb88bd4d4f9ef36",
+      "bytes": 230
+    },
+    "cpu-runs/09-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "71893d77c88e7050b3ea1669664a11522dcf2d28f063969805272f3a8a2940b0",
+      "bytes": 5783
+    },
+    "gpu-provenance.json": {
+      "sha256": "59db004d9a4e91a8411eac14a609ec8b06e3db944741111946387c07434513ea",
+      "bytes": 58181
+    },
+    "gpu-results.csv": {
+      "sha256": "cb99e7af228828bbc2698bb0e2d378f9a689f0a9d198b56403a1928e855ef7a9",
+      "bytes": 346245
+    },
+    "gpu-runs/01-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "4c5829e774630f84659db679cb677b242616b3f0a97e3c9c13edbef2c562ed68",
+      "bytes": 3542
+    },
+    "gpu-runs/01-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "81f059cd281c572c46797671d2e991cf6db57c346e8371af846a0967e4e513db",
+      "bytes": 3530
+    },
+    "gpu-runs/01-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "1cb81b6ae2ff3f032526d97945533a896b27e345c7db902fc5f10f965b8fe714",
+      "bytes": 3535
+    },
+    "gpu-runs/01-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "220d30354100c944621ab13885b674c256df6f361cc4012e733446b9b62a4845",
+      "bytes": 3532
+    },
+    "gpu-runs/01-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "bdbbaeb95a5a59741d394fa9c31d8629670e8f8d07c63ffa13c63b25dd01c07b",
+      "bytes": 3546
+    },
+    "gpu-runs/01-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "49aa39388b61953f3b7033a9934b99e0e59e45016b13bc9b45c2592eb30415fc",
+      "bytes": 3537
+    },
+    "gpu-runs/01-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "589ffd8c01f4cebf13a245f33f65f7a3cd7486138a9ead9cd13a771592c039aa",
+      "bytes": 3554
+    },
+    "gpu-runs/01-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/01-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "fde5950ee95292bf360e89989020ef6c76d86510641964a145de59cb55be2c23",
+      "bytes": 3541
+    },
+    "gpu-runs/02-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "91ce857c73ab055e763c13250ae7d76882dab90519bcc5532db14cfe2b17e565",
+      "bytes": 3539
+    },
+    "gpu-runs/02-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "e1ea1c4428b544dc0ad37c0c729d406986ab9cbff8d2d1e2aed620f542b7b8b1",
+      "bytes": 3544
+    },
+    "gpu-runs/02-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "97766a49ebe222b612b8e8b268bbdd84ec4567d040508088d2a81db0c9cb835d",
+      "bytes": 3537
+    },
+    "gpu-runs/02-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "959c98b06d9ae2174fbb0e81a36e226efb774eb1b95cd4ae061cfedba3386d7a",
+      "bytes": 3540
+    },
+    "gpu-runs/02-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "7adb4ed39679761acd14f357b49c10a2d904a682a9d6266a60ae5a46a9dd2dab",
+      "bytes": 3548
+    },
+    "gpu-runs/02-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "dbe1f8ac8f3ef2efa695e140f3eabd541fa2051ac45ab10725d4df2a04b41b32",
+      "bytes": 3543
+    },
+    "gpu-runs/02-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "c2ba68622f7a1886b961a7b8e86bda0d4c146ff3a45ebe454243f383d96f0a05",
+      "bytes": 3547
+    },
+    "gpu-runs/02-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/02-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "c5cc413d0b9991d562dbe8583c9e0eb7de712c0f7068db14bf829c4d7c8052ec",
+      "bytes": 3547
+    },
+    "gpu-runs/03-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "511d0ff1496cfda4aa8e379a3879f519355e045a5f5fad66933959664c09f0b2",
+      "bytes": 3532
+    },
+    "gpu-runs/03-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "6077357e225d2aeae165c4855d2359c6fd24355f852a6959ca0fb47520080894",
+      "bytes": 3533
+    },
+    "gpu-runs/03-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "8c56b243edd0e09ef7c820d699a9722c38dc34a6ef341d2be3cb88535461c263",
+      "bytes": 3535
+    },
+    "gpu-runs/03-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "755beeb3c6daf83d5c881280f98473e9cc1b57ef740a309423a373d324c7ead2",
+      "bytes": 3533
+    },
+    "gpu-runs/03-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "734169b45028773f517526ed7e74028d4ec94739b6c6db2c5457da5de1df3810",
+      "bytes": 3561
+    },
+    "gpu-runs/03-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "8daca3a92f0bdad5e898c081e62422caf101188e23d057167e7cf48a8af76af2",
+      "bytes": 3540
+    },
+    "gpu-runs/03-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "f7faa5f526e8a3dfb806dfc8e98443100552c77d003b742f80025305fb1b4d57",
+      "bytes": 3546
+    },
+    "gpu-runs/03-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/03-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "4bf00b0a968ff9ca34e8ec5a50139e5c1402f24efb22735878ca07b237da24f0",
+      "bytes": 3542
+    },
+    "gpu-runs/04-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "53b07b89518de67d99009b8f4f6312adaf1e32774e3f28d275da5d32a2cb2571",
+      "bytes": 3551
+    },
+    "gpu-runs/04-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "b835ac3fdec584a978442acbf226d14774e40c8cb5e3079b6b7bfaabee44ad91",
+      "bytes": 3547
+    },
+    "gpu-runs/04-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "f7e4a1bb38d1360d3152be6ea246dfd97ec06d7dd60b5c8c74b8150d16703ab7",
+      "bytes": 3540
+    },
+    "gpu-runs/04-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "ef6d98bc921a1b879cd3aad7f61fa35ff5a937c789ca6ad26fbe90d4296b231e",
+      "bytes": 3536
+    },
+    "gpu-runs/04-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "c4055ff471a387b1e9be9dee32b51661084622914609f34d854b0f68e51c71ad",
+      "bytes": 3552
+    },
+    "gpu-runs/04-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "e216b0b45bf22f31902fbf98789440b1a46c3fc732cd0a9be64f397fa9ab06f8",
+      "bytes": 3548
+    },
+    "gpu-runs/04-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "a4782e7e77274c883218010f500916dd5e3589f596753bd771ffe28f8a8eb55d",
+      "bytes": 3561
+    },
+    "gpu-runs/04-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/04-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "d692359cdfe5736d2b1fea4b1923103c63ea61d49401b0d41559657f85e4dce0",
+      "bytes": 3552
+    },
+    "gpu-runs/05-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "63c83898632f8606dc9b7c9d6782165e4965dc9d644654a6101c6ac9991e4655",
+      "bytes": 3533
+    },
+    "gpu-runs/05-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "09b3ea4f94b9f0a0d58831967681e13f3578bc3899350b148c541d5a021729f8",
+      "bytes": 3546
+    },
+    "gpu-runs/05-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "f9e5d14d2d43b64dd6e18a60251ae7a132824d54e3bbd78bae52483d7f489dc9",
+      "bytes": 3541
+    },
+    "gpu-runs/05-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "d58a65c21d026efc447056150afdde6d37da434739834c19cedf2fc82810804f",
+      "bytes": 3538
+    },
+    "gpu-runs/05-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "24347e3a3deb05b15fd9616f763aa7cb8db5edcb024846b22aaae8409e9715bf",
+      "bytes": 3558
+    },
+    "gpu-runs/05-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "1e3c011bb637dc34c2f6e57f5b7ae3793298019029bc46b5d13681bed91a1072",
+      "bytes": 3550
+    },
+    "gpu-runs/05-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "aab731a0a24647bcc698dd1b2f950146b7a4230fa9b4a331c313d24ebd347700",
+      "bytes": 3547
+    },
+    "gpu-runs/05-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/05-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "93ef8c74b91ced74225647c76d8f95ffdb751e135a4c00bf5a90ec5d47bfa348",
+      "bytes": 3545
+    },
+    "gpu-runs/06-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "3ab30f057cf49f47d5dd324af3b48b486a8b2b7749e5bd49576552eb19ab5e75",
+      "bytes": 3538
+    },
+    "gpu-runs/06-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "7ab4e3acf95051ba117bd47bfbe18d3d98466170df2b4458f3865c5ec2b6432f",
+      "bytes": 3533
+    },
+    "gpu-runs/06-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "97a2a496ced964dd328083ed0f0898eafbf5338ba2af65d682294e2e15567419",
+      "bytes": 3537
+    },
+    "gpu-runs/06-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "e07e0055178395839406d48062be79a05c070efa2c87045c9e881a211fa47ad3",
+      "bytes": 3533
+    },
+    "gpu-runs/06-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "9a338180dd214d3d28c5d4a1c0833964cb9d09a6196b5c41aa57ffac38b6dcd8",
+      "bytes": 3549
+    },
+    "gpu-runs/06-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "3e84acce1a98117b7ba214fca9083dd9ec3644e68da9c0008467c1f2a520e8fa",
+      "bytes": 3542
+    },
+    "gpu-runs/06-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "0fe1a48642203c5da8544ae6ae161dec5fb8dbb1b5fefa36e56a29d689719015",
+      "bytes": 3546
+    },
+    "gpu-runs/06-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/06-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "23da52d14cc8cdf7707c5830cdb5265c50cbe3473460d31607caa1ea6635bb19",
+      "bytes": 3546
+    },
+    "gpu-runs/07-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "589be8e141b933dd1a8942707bc8bb99f1cf1c118d21814ca2e3fe81e9c688b3",
+      "bytes": 3532
+    },
+    "gpu-runs/07-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "dbe1be0d8b6f4757d6ee553a80392cc224d4ca097a5f159138655c3b58fc35dd",
+      "bytes": 3534
+    },
+    "gpu-runs/07-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "2ea4c27699df1ae2440f74b64d52e5718bb4b5295f6a8325e6b33ae237a8fe77",
+      "bytes": 3531
+    },
+    "gpu-runs/07-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "3f194e2aaaa7b9aa3ab6d4a9f335a73353754e19bb6334ab73babe4c47475cfb",
+      "bytes": 3534
+    },
+    "gpu-runs/07-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "fc4d54cff8c5897d14f3fb18bac85a746d2866fc004a5bbc55f0dfb45b16d77c",
+      "bytes": 3545
+    },
+    "gpu-runs/07-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "c0585e1d50c6e73d308eeddac480997886753e22ad599924583866910e445eec",
+      "bytes": 3539
+    },
+    "gpu-runs/07-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "6630fc8a7bc71a2bbe64d6c867c9ce205d943808c1839f39efaaadf2fc669327",
+      "bytes": 3544
+    },
+    "gpu-runs/07-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/07-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "52a7c6524f5cc8872b617e81106ff3f1c980de5ffa1d1f30cedb227d015863e4",
+      "bytes": 3538
+    },
+    "gpu-runs/08-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "ace975afc0506bf3b2f13376327a01a2314caca68a6b61d814a11e415b21849a",
+      "bytes": 3531
+    },
+    "gpu-runs/08-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "568e01f15dbb7d40a2bae1e47cff9e5c990c30299b8b62c70e85606c623aa335",
+      "bytes": 3535
+    },
+    "gpu-runs/08-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "15228f49d5c61af5d5ba9eec84f5d35eb52c1ee861215970ee45d64121290e7b",
+      "bytes": 3529
+    },
+    "gpu-runs/08-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "ca4ec908b3e4a976b1d2e527ff66272a75193f40539e41f786a4ec5bed4f6520",
+      "bytes": 3533
+    },
+    "gpu-runs/08-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "66e71bdf0a8cdb069bf6eb23ba329802c8d69c9612b4a490a92929246e6a2644",
+      "bytes": 3546
+    },
+    "gpu-runs/08-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "a89f14fde8a5d99933cf5d5a22465eae4b0a3f5ae237c422ef41f98a5f7606a7",
+      "bytes": 3541
+    },
+    "gpu-runs/08-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "348ae89562c5beb551e315216dc516365bfc194df107248d89842d2d4838c082",
+      "bytes": 3541
+    },
+    "gpu-runs/08-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/08-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "b92bdc40997db4acbdb8a0b4cdcc63d90d715ce76de1b8cc44f74b422c5b8327",
+      "bytes": 3536
+    },
+    "gpu-runs/09-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "998737b6262a851f649ace569c0d92aca8d36d5775ffb72d6e4d90338a761767",
+      "bytes": 3532
+    },
+    "gpu-runs/09-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "ff60768b84400a8710880f6c4f8ec7b459d6cb6bbf0bcdc3e9f872a16815c87d",
+      "bytes": 3533
+    },
+    "gpu-runs/09-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "827186762755b8ea148e3c93c525f50bd03df65f23ac9343dbf06a73501e3bc4",
+      "bytes": 3533
+    },
+    "gpu-runs/09-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "4519e6a2348b5ef3a5f928ec052510042bd9d4211965dc0eff455eb6e7bce124",
+      "bytes": 3534
+    },
+    "gpu-runs/09-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "7f937c1fde8bd4b3f7de8d5a53240d9926cafdaab98b81f2672f1c3fd418dc9a",
+      "bytes": 3548
+    },
+    "gpu-runs/09-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "34fef9593011631fd6ba740b78919e66f32fcc1799ec5793f7c702fd2bbf3899",
+      "bytes": 3542
+    },
+    "gpu-runs/09-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "2ea55bfff0e02cec45086d32d04290dfdc54b4a16f61210429c8f8ca3a41263d",
+      "bytes": 3544
+    },
+    "gpu-runs/09-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "486c6fbbb086147a1f2ffb39ee1d5130436ad87e234ddfef3a230b892845e8ac",
+      "bytes": 213
+    },
+    "gpu-runs/09-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "74a9ceeb3f2d6dde0145962e9b73babfd3e4b9d1914ee47e2004e7f672b0e9f6",
+      "bytes": 3545
+    },
+    "pixels-provenance.json": {
+      "sha256": "fd26824d97dce36f5c372b1835b7956cfe31bbb00f52ec5d4b8ba62d8d4715b6",
+      "bytes": 95357
+    },
+    "pixels-results.csv": {
+      "sha256": "98afd7f1aae0bbd37264647ea6da5dec48cb3adf1556cbc5d54e97e39a47044c",
+      "bytes": 19203
+    },
+    "pixels-runs/01-ptsans-dpi1-master.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-ptsans-dpi1-master.stdout.csv": {
+      "sha256": "d7a93ac5f82ab8360420024d2598ca22a5e40cfe52d4ba1f0b9dafa30f3fdec9",
+      "bytes": 1228
+    },
+    "pixels-runs/01-ptsans-dpi1-patch.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-ptsans-dpi1-patch.stdout.csv": {
+      "sha256": "878b0293489f29edfea5c83f61fdcb81e6a581066ed5bf16c6e353b2b5e8fff6",
+      "bytes": 1230
+    },
+    "pixels-runs/01-ptsans-dpi2-master.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-ptsans-dpi2-master.stdout.csv": {
+      "sha256": "45aaf4c394da94f7dcfe70157f86872c65de0d5d0a0d82f493647a5b860532df",
+      "bytes": 1232
+    },
+    "pixels-runs/01-ptsans-dpi2-patch.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-ptsans-dpi2-patch.stdout.csv": {
+      "sha256": "85fb9b95214f57bc3dab626ea4294c6bbe4bdd3eaa7e5b486fb26fae017fa8d1",
+      "bytes": 1229
+    },
+    "pixels-runs/01-stock-dpi1-master.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-stock-dpi1-master.stdout.csv": {
+      "sha256": "2d145dd3dd7fb03b66f40a038419fa8dcc0c7ebf05aa60b28640ca5385e32cf9",
+      "bytes": 1229
+    },
+    "pixels-runs/01-stock-dpi1-patch.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-stock-dpi1-patch.stdout.csv": {
+      "sha256": "b0033d755c120f544413b6d545307cf65a750880d2f692b76cdb7836559987aa",
+      "bytes": 1229
+    },
+    "pixels-runs/01-stock-dpi2-master.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-stock-dpi2-master.stdout.csv": {
+      "sha256": "c704813168103c7ffadf8df9220bad14d7dc725467330a87e12e1e86bb1a4aa2",
+      "bytes": 1230
+    },
+    "pixels-runs/01-stock-dpi2-patch.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-stock-dpi2-patch.stdout.csv": {
+      "sha256": "ce45718a49b7c8a6a94191dbe507babdc8a49fb9ed9099b37d0912baa20be6e5",
+      "bytes": 1229
+    },
+    "pixels-runs/01-vollkorn-dpi1-master.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-vollkorn-dpi1-master.stdout.csv": {
+      "sha256": "30c71effadda22de9b5c491aa01aba75c99af79486d68458ced8acd4a737dda6",
+      "bytes": 1232
+    },
+    "pixels-runs/01-vollkorn-dpi1-patch.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-vollkorn-dpi1-patch.stdout.csv": {
+      "sha256": "6b72d3e7f35967afc4f15b608a2e2d5e1d25358846327c96144e15e9d731a687",
+      "bytes": 1233
+    },
+    "pixels-runs/01-vollkorn-dpi2-master.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-vollkorn-dpi2-master.stdout.csv": {
+      "sha256": "bf61b64a30cab9d910241415d7a65dddcb745382374233fd784a7ecbbcf036b5",
+      "bytes": 1235
+    },
+    "pixels-runs/01-vollkorn-dpi2-patch.stderr.txt": {
+      "sha256": "fa66df70804f336808e18f0f5c609ab112c0be4adb84b01f1256ed8c92f259f7",
+      "bytes": 121
+    },
+    "pixels-runs/01-vollkorn-dpi2-patch.stdout.csv": {
+      "sha256": "b91909ccf75767715b2e7527fd0870b6cdba165394bcb6cafdf08e58fd42d0e8",
+      "bytes": 1233
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/demo-first_paint.rgba": {
+      "sha256": "e6eb63d7ca4f6750303134f92ea52e4570f539dfdfc7d04d413f5915a3ace143",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/demo-pan.rgba": {
+      "sha256": "da7f509e8c852a592d62e11344a8bd2069ef19b64ed30d05a3560fa22d27d277",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/demo-warm.rgba": {
+      "sha256": "98779a5d0667816e24522e670504b044ff86ba85f4f0c00100aeaeff77980048",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/demo-zoom_in.rgba": {
+      "sha256": "30a14232b6609fbe079f5594a00832ebf5bd5308369355ad13850a7764a46f25",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/demo-zoom_out.rgba": {
+      "sha256": "dcddf3596647d11271ba2dc048d03854c2135e10980d0ede3793021370c10791",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-first_paint.rgba": {
+      "sha256": "1b79784080f1dda43e05d99291d259943668e392e127479e99b6aef60b0c0e3f",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-reflow.rgba": {
+      "sha256": "c27a2f85ebcfbc7f0265513175e44dd804228726e5673106597734a7b4574839",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-size_advance.rgba": {
+      "sha256": "59711f9050b8089c9339df9ba3bc569724e2d56f4641017cb2a21ea02009add4",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-size_return.rgba": {
+      "sha256": "ae621bef443ebbd6377545771c880f156b2dc11043e50167d96e1eae06530912",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-warm.rgba": {
+      "sha256": "26cc705f67eec2962c2926cf45bdffda65af6517d1a9ba7ee2099ed3738c3961",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-x_advance.rgba": {
+      "sha256": "e7314c38131a68345c7a8cd927c7ee8334d8ed44a90cba2fb258527aca5e3740",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-x_return.rgba": {
+      "sha256": "73a67c97209663b144ac8b776bb7bdedd15b582c691f650509cd1ca986bb0bb5",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-master-pixels/text-y_advance.rgba": {
+      "sha256": "e80e59b4626fdd36ef2327e683275d374ee1274479e26d87fcbe9d27402fba10",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/demo-first_paint.rgba": {
+      "sha256": "e6eb63d7ca4f6750303134f92ea52e4570f539dfdfc7d04d413f5915a3ace143",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/demo-pan.rgba": {
+      "sha256": "da7f509e8c852a592d62e11344a8bd2069ef19b64ed30d05a3560fa22d27d277",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/demo-warm.rgba": {
+      "sha256": "98779a5d0667816e24522e670504b044ff86ba85f4f0c00100aeaeff77980048",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/demo-zoom_in.rgba": {
+      "sha256": "30a14232b6609fbe079f5594a00832ebf5bd5308369355ad13850a7764a46f25",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/demo-zoom_out.rgba": {
+      "sha256": "dcddf3596647d11271ba2dc048d03854c2135e10980d0ede3793021370c10791",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-first_paint.rgba": {
+      "sha256": "1b79784080f1dda43e05d99291d259943668e392e127479e99b6aef60b0c0e3f",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-reflow.rgba": {
+      "sha256": "c27a2f85ebcfbc7f0265513175e44dd804228726e5673106597734a7b4574839",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-size_advance.rgba": {
+      "sha256": "59711f9050b8089c9339df9ba3bc569724e2d56f4641017cb2a21ea02009add4",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-size_return.rgba": {
+      "sha256": "ae621bef443ebbd6377545771c880f156b2dc11043e50167d96e1eae06530912",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-warm.rgba": {
+      "sha256": "26cc705f67eec2962c2926cf45bdffda65af6517d1a9ba7ee2099ed3738c3961",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-x_advance.rgba": {
+      "sha256": "e7314c38131a68345c7a8cd927c7ee8334d8ed44a90cba2fb258527aca5e3740",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-x_return.rgba": {
+      "sha256": "73a67c97209663b144ac8b776bb7bdedd15b582c691f650509cd1ca986bb0bb5",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi1-patch-pixels/text-y_advance.rgba": {
+      "sha256": "e80e59b4626fdd36ef2327e683275d374ee1274479e26d87fcbe9d27402fba10",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/demo-first_paint.rgba": {
+      "sha256": "81e2ec145d299953a47d00639fbf30052da14bd27236334b8b75092f273d3617",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/demo-pan.rgba": {
+      "sha256": "39a27deeb8b3ce74f2f8050706111e78011efdf7588f4bcbbd62214319b63cea",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/demo-warm.rgba": {
+      "sha256": "55a0c673a821f87df2d4563f6d2d690e872657f47bbec2519510c900aa866df6",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/demo-zoom_in.rgba": {
+      "sha256": "b421855350fb91e7c4e9e36f01b4629a8ab089276f2ff71f893d5b03ef8e1aef",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/demo-zoom_out.rgba": {
+      "sha256": "248de4d259f9733dc7e3bd3ead43dabea7616609618a5a1baa0a90bc054b3e77",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-first_paint.rgba": {
+      "sha256": "d32e51d614126f8ad39b5a325ba9601a79aa2bef0002858c9713cce395084618",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-reflow.rgba": {
+      "sha256": "42b3ed5746891f010d0cce304841cff5d2e09f44efe0421023f1b04c603c4222",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-size_advance.rgba": {
+      "sha256": "781647ad457c0e1ae15816668ab32dfdeb7ff38cabe6350868d4900937eed286",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-size_return.rgba": {
+      "sha256": "afaa04409e754f902f8187de60572753a52bc1580d3aec40087fe8eb4b1dfdef",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-warm.rgba": {
+      "sha256": "5943314484b2191afd413bd20191828be4670d18be6b1fb2827a8d43ebce4e8f",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-x_advance.rgba": {
+      "sha256": "4066f2295d4c01b71219c6dff46f38c27a0e6c6a0c001d7b9f7709effe971ecf",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-x_return.rgba": {
+      "sha256": "f5f490cccb1f0c6a098d737d7e39eaca4ce66872c7db2dc716578f108a420016",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-master-pixels/text-y_advance.rgba": {
+      "sha256": "5189522bb87c9a2bfe2ce2da13e95eb831f1bd328d1d3e20331a40610eacfc64",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/demo-first_paint.rgba": {
+      "sha256": "81e2ec145d299953a47d00639fbf30052da14bd27236334b8b75092f273d3617",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/demo-pan.rgba": {
+      "sha256": "39a27deeb8b3ce74f2f8050706111e78011efdf7588f4bcbbd62214319b63cea",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/demo-warm.rgba": {
+      "sha256": "55a0c673a821f87df2d4563f6d2d690e872657f47bbec2519510c900aa866df6",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/demo-zoom_in.rgba": {
+      "sha256": "b421855350fb91e7c4e9e36f01b4629a8ab089276f2ff71f893d5b03ef8e1aef",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/demo-zoom_out.rgba": {
+      "sha256": "248de4d259f9733dc7e3bd3ead43dabea7616609618a5a1baa0a90bc054b3e77",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-first_paint.rgba": {
+      "sha256": "d32e51d614126f8ad39b5a325ba9601a79aa2bef0002858c9713cce395084618",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-reflow.rgba": {
+      "sha256": "42b3ed5746891f010d0cce304841cff5d2e09f44efe0421023f1b04c603c4222",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-size_advance.rgba": {
+      "sha256": "781647ad457c0e1ae15816668ab32dfdeb7ff38cabe6350868d4900937eed286",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-size_return.rgba": {
+      "sha256": "afaa04409e754f902f8187de60572753a52bc1580d3aec40087fe8eb4b1dfdef",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-warm.rgba": {
+      "sha256": "5943314484b2191afd413bd20191828be4670d18be6b1fb2827a8d43ebce4e8f",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-x_advance.rgba": {
+      "sha256": "4066f2295d4c01b71219c6dff46f38c27a0e6c6a0c001d7b9f7709effe971ecf",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-x_return.rgba": {
+      "sha256": "f5f490cccb1f0c6a098d737d7e39eaca4ce66872c7db2dc716578f108a420016",
+      "bytes": 2400000
+    },
+    "pixels-runs/ptsans-dpi2-patch-pixels/text-y_advance.rgba": {
+      "sha256": "5189522bb87c9a2bfe2ce2da13e95eb831f1bd328d1d3e20331a40610eacfc64",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/demo-first_paint.rgba": {
+      "sha256": "f0ea0b187951b3048d14780b6f8f99e0406f1ba8a32c6eaacf8d9363fdd6ea59",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/demo-pan.rgba": {
+      "sha256": "0c9358d8af343e5d6b4b43206666443afc7305c918772c700acca99a806a0330",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/demo-warm.rgba": {
+      "sha256": "3e43af87828ea480152f67ba47c8b6c98d093861ee263e6fee1d0b580a1c7aa5",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/demo-zoom_in.rgba": {
+      "sha256": "9089c9516d5edc8b176f793c5fdb405c318759a5b6264a3d2ad193ac15b63c1d",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/demo-zoom_out.rgba": {
+      "sha256": "cfb64478569cbec8dfad22bcf3ca30dd2fb22be348314bd90ad3a778bf11701f",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-first_paint.rgba": {
+      "sha256": "a3e26b00cb45d9a49513270a36a067b8ec7d259d345489c16400fb5080a8c06b",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-reflow.rgba": {
+      "sha256": "850a0b83ad1f66ba1afcf21630c6c8150a84350bf3ce2e4d8aa7030e097789a4",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-size_advance.rgba": {
+      "sha256": "1a22076fbf0d2e3322c5d5efca334019441a67a218353780c3e2379323749c5d",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-size_return.rgba": {
+      "sha256": "42bbdbd0b79d07beb311efa8134f198fed2cbce7b1ea4b6b6fa31d455099f1e2",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-warm.rgba": {
+      "sha256": "67076903b57def0589cdefd0e1c2426978ebb0e49158999b82843bd988ba593e",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-x_advance.rgba": {
+      "sha256": "860ab871397d828ad7224281fc1981139a5d8947a334587c66913401c589e7ff",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-x_return.rgba": {
+      "sha256": "59aef5bfdc88507c9273feba929d413792c8e5bf5e458aa98c568e1e510bccb6",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-master-pixels/text-y_advance.rgba": {
+      "sha256": "b53c4ade3d002179fff706f101afe763b048980e897726e2c365e1fedd730b52",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/demo-first_paint.rgba": {
+      "sha256": "f0ea0b187951b3048d14780b6f8f99e0406f1ba8a32c6eaacf8d9363fdd6ea59",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/demo-pan.rgba": {
+      "sha256": "0c9358d8af343e5d6b4b43206666443afc7305c918772c700acca99a806a0330",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/demo-warm.rgba": {
+      "sha256": "3e43af87828ea480152f67ba47c8b6c98d093861ee263e6fee1d0b580a1c7aa5",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/demo-zoom_in.rgba": {
+      "sha256": "9089c9516d5edc8b176f793c5fdb405c318759a5b6264a3d2ad193ac15b63c1d",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/demo-zoom_out.rgba": {
+      "sha256": "cfb64478569cbec8dfad22bcf3ca30dd2fb22be348314bd90ad3a778bf11701f",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-first_paint.rgba": {
+      "sha256": "a3e26b00cb45d9a49513270a36a067b8ec7d259d345489c16400fb5080a8c06b",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-reflow.rgba": {
+      "sha256": "850a0b83ad1f66ba1afcf21630c6c8150a84350bf3ce2e4d8aa7030e097789a4",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-size_advance.rgba": {
+      "sha256": "1a22076fbf0d2e3322c5d5efca334019441a67a218353780c3e2379323749c5d",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-size_return.rgba": {
+      "sha256": "42bbdbd0b79d07beb311efa8134f198fed2cbce7b1ea4b6b6fa31d455099f1e2",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-warm.rgba": {
+      "sha256": "67076903b57def0589cdefd0e1c2426978ebb0e49158999b82843bd988ba593e",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-x_advance.rgba": {
+      "sha256": "860ab871397d828ad7224281fc1981139a5d8947a334587c66913401c589e7ff",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-x_return.rgba": {
+      "sha256": "59aef5bfdc88507c9273feba929d413792c8e5bf5e458aa98c568e1e510bccb6",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi1-patch-pixels/text-y_advance.rgba": {
+      "sha256": "b53c4ade3d002179fff706f101afe763b048980e897726e2c365e1fedd730b52",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/demo-first_paint.rgba": {
+      "sha256": "6e92cc06f9ec942af0a874cdb0d3a1e451a6ac2e5f5cf26ca0ca3423ccba5cf7",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/demo-pan.rgba": {
+      "sha256": "854eaecb9530555aab6bbb8fdf170cea0e0b5ec7c5f1c05240631ca38d6f9483",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/demo-warm.rgba": {
+      "sha256": "0e3984c232477017464cecd982441b3f5c5f9377963fd617a7e556ec864356ab",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/demo-zoom_in.rgba": {
+      "sha256": "6f6a4334149bb7fe65b902bc96c55cf69370ee83c05a6ff235d5eafac07180b4",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/demo-zoom_out.rgba": {
+      "sha256": "7ef6f546d531208a9f356ea3350137602453f9e770b4f675eaed327fe2a87a35",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-first_paint.rgba": {
+      "sha256": "19a82f7a984811223fec006ed4caf82ca4fe40ae76a714d845740d749a8d7fc1",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-reflow.rgba": {
+      "sha256": "d1301254168e3380539271d63c3ea2704fda710d0b040f74658fd6b28c022f19",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-size_advance.rgba": {
+      "sha256": "41328059dff470abe84b0056561712cdaf3745d2ba5d7cb70a25cedd54b02f60",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-size_return.rgba": {
+      "sha256": "e47ea59044a6010ced14ea7e3e2c838a7dd55cfbbf7611f2a0394ed3099a4f53",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-warm.rgba": {
+      "sha256": "485be5046156749d2bcd0bdf6e8b46fda3ed0c0b80c6868aa1dbfe0d7d398e8b",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-x_advance.rgba": {
+      "sha256": "a78a8d110a3b3ba4c360344068e98adc237c185907fa02997a633f51abf5b6d2",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-x_return.rgba": {
+      "sha256": "d59e3a6d9adb2201df7ea763f55f0c7475129afc4224ad395f62fb9775c29db9",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-master-pixels/text-y_advance.rgba": {
+      "sha256": "19c29b479edda141376ef8de603286388f9865958dda3a54c2e3f8c15d0f016d",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/demo-first_paint.rgba": {
+      "sha256": "6e92cc06f9ec942af0a874cdb0d3a1e451a6ac2e5f5cf26ca0ca3423ccba5cf7",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/demo-pan.rgba": {
+      "sha256": "854eaecb9530555aab6bbb8fdf170cea0e0b5ec7c5f1c05240631ca38d6f9483",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/demo-warm.rgba": {
+      "sha256": "0e3984c232477017464cecd982441b3f5c5f9377963fd617a7e556ec864356ab",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/demo-zoom_in.rgba": {
+      "sha256": "6f6a4334149bb7fe65b902bc96c55cf69370ee83c05a6ff235d5eafac07180b4",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/demo-zoom_out.rgba": {
+      "sha256": "7ef6f546d531208a9f356ea3350137602453f9e770b4f675eaed327fe2a87a35",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-first_paint.rgba": {
+      "sha256": "19a82f7a984811223fec006ed4caf82ca4fe40ae76a714d845740d749a8d7fc1",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-reflow.rgba": {
+      "sha256": "d1301254168e3380539271d63c3ea2704fda710d0b040f74658fd6b28c022f19",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-size_advance.rgba": {
+      "sha256": "41328059dff470abe84b0056561712cdaf3745d2ba5d7cb70a25cedd54b02f60",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-size_return.rgba": {
+      "sha256": "e47ea59044a6010ced14ea7e3e2c838a7dd55cfbbf7611f2a0394ed3099a4f53",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-warm.rgba": {
+      "sha256": "485be5046156749d2bcd0bdf6e8b46fda3ed0c0b80c6868aa1dbfe0d7d398e8b",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-x_advance.rgba": {
+      "sha256": "a78a8d110a3b3ba4c360344068e98adc237c185907fa02997a633f51abf5b6d2",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-x_return.rgba": {
+      "sha256": "d59e3a6d9adb2201df7ea763f55f0c7475129afc4224ad395f62fb9775c29db9",
+      "bytes": 2400000
+    },
+    "pixels-runs/stock-dpi2-patch-pixels/text-y_advance.rgba": {
+      "sha256": "19c29b479edda141376ef8de603286388f9865958dda3a54c2e3f8c15d0f016d",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/demo-first_paint.rgba": {
+      "sha256": "9ae6332bf40ba219af2616a2992488f50882abd6b55d9320b2257e06c6976757",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/demo-pan.rgba": {
+      "sha256": "9445346caf17cbf995781767a83de5e0b560a556c953db480e4b97cd226bc071",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/demo-warm.rgba": {
+      "sha256": "33c2ab540db4f6f5854e3a1f8903d6ae1580f0f64311203decc588e7927499ef",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/demo-zoom_in.rgba": {
+      "sha256": "286b73ce6a23d2e520fa436d81696689fe1d73eb48e564ed875a69754df526b1",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/demo-zoom_out.rgba": {
+      "sha256": "112c3763b58ec3ea081dff4f4df97a8d2ef6b6c2dd2e9285b757488e772c6dc0",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-first_paint.rgba": {
+      "sha256": "95b742f6ab98857288e0b2cdb8e91f70f6ea6bf981b814a418757df7f5dc831c",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-reflow.rgba": {
+      "sha256": "b9114f7135dc26c174e4789626c808aebfbb48c04975f78ff9fffe36de942ff2",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-size_advance.rgba": {
+      "sha256": "bb061021792d2c34d6ad142eb6cdcf902f060536244388d398ac28a0650d600c",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-size_return.rgba": {
+      "sha256": "2d4f4eea371c87956433820e1c6d7fa6231b7f9638a1954d259ad84c5b06aaf8",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-warm.rgba": {
+      "sha256": "e4e87513ed1a5998f5945bab662582431b899767104793ec0ef0abe9080f8ca0",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-x_advance.rgba": {
+      "sha256": "afbbddaf91d9accb73fc8833d3d140f1193252a5aa1e9deab08d9383d56aed9b",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-x_return.rgba": {
+      "sha256": "d6ae5b93ba486636271f0d99e1bcd31bd21a41975596067ebbd208eed62877fa",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-master-pixels/text-y_advance.rgba": {
+      "sha256": "92cadea0a2b11082c68103fe00c39487c9c95115fec395b162a2a25258af9fa2",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/demo-first_paint.rgba": {
+      "sha256": "9ae6332bf40ba219af2616a2992488f50882abd6b55d9320b2257e06c6976757",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/demo-pan.rgba": {
+      "sha256": "9445346caf17cbf995781767a83de5e0b560a556c953db480e4b97cd226bc071",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/demo-warm.rgba": {
+      "sha256": "33c2ab540db4f6f5854e3a1f8903d6ae1580f0f64311203decc588e7927499ef",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/demo-zoom_in.rgba": {
+      "sha256": "286b73ce6a23d2e520fa436d81696689fe1d73eb48e564ed875a69754df526b1",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/demo-zoom_out.rgba": {
+      "sha256": "112c3763b58ec3ea081dff4f4df97a8d2ef6b6c2dd2e9285b757488e772c6dc0",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-first_paint.rgba": {
+      "sha256": "95b742f6ab98857288e0b2cdb8e91f70f6ea6bf981b814a418757df7f5dc831c",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-reflow.rgba": {
+      "sha256": "b9114f7135dc26c174e4789626c808aebfbb48c04975f78ff9fffe36de942ff2",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-size_advance.rgba": {
+      "sha256": "bb061021792d2c34d6ad142eb6cdcf902f060536244388d398ac28a0650d600c",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-size_return.rgba": {
+      "sha256": "2d4f4eea371c87956433820e1c6d7fa6231b7f9638a1954d259ad84c5b06aaf8",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-warm.rgba": {
+      "sha256": "e4e87513ed1a5998f5945bab662582431b899767104793ec0ef0abe9080f8ca0",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-x_advance.rgba": {
+      "sha256": "afbbddaf91d9accb73fc8833d3d140f1193252a5aa1e9deab08d9383d56aed9b",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-x_return.rgba": {
+      "sha256": "d6ae5b93ba486636271f0d99e1bcd31bd21a41975596067ebbd208eed62877fa",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi1-patch-pixels/text-y_advance.rgba": {
+      "sha256": "92cadea0a2b11082c68103fe00c39487c9c95115fec395b162a2a25258af9fa2",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/demo-first_paint.rgba": {
+      "sha256": "03456fd535ac5430690a9f8e74fb576204cf06631e2fe67a7c77f592475f4260",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/demo-pan.rgba": {
+      "sha256": "40ed18e00742b94c7b957cabbb8dac66e58ece684f1b3d0b1b28c09d8e504bb0",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/demo-warm.rgba": {
+      "sha256": "8ee2962c57ea8a60dff04e90aff583fb81c53c8dfcb85d0bc846ef464f744e52",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/demo-zoom_in.rgba": {
+      "sha256": "ef0cfb5a40bf87025ee3f2aa745ad5fd29065c2f47d16d5b2800684897c7e8f5",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/demo-zoom_out.rgba": {
+      "sha256": "227d4a7ccbf0f0867d91318fd53fcc0b3b2347c95b1a1c50ac51da3048436244",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-first_paint.rgba": {
+      "sha256": "cf39301249de15c53bfe092c277d9b43a2b7d0f940f52eb8c38ba4c7e3ed5ac8",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-reflow.rgba": {
+      "sha256": "ed4fda9b7fb2994d16bbea04a2aa848909062c8ea2aadf19e2ec35cc25225c83",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-size_advance.rgba": {
+      "sha256": "08b11a44d3d877e11b5e16386c5f7cd19997baa9e3a26b657d8090840c07bf6d",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-size_return.rgba": {
+      "sha256": "bb5d8b644b9babe231c3f9cb2f4d1c68edf0931630c5a4737eec23425f066447",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-warm.rgba": {
+      "sha256": "f01c008fbbffc857ad8bb6402e36459dd5ea9457f6491531e6ad70fb85c4f2aa",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-x_advance.rgba": {
+      "sha256": "d8d5fc6e80e0416ee9a86754ace3bfc117d7712af04bcfed4cf597542ebcc515",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-x_return.rgba": {
+      "sha256": "c1ad035a577d93412ba30c44c704bb13b5475a8399386b9c5bf16de97e9c097b",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-master-pixels/text-y_advance.rgba": {
+      "sha256": "43bfb902f6c3c9e1996b7c663dac54f01e37da44df7d117dafa86abe811be272",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/demo-first_paint.rgba": {
+      "sha256": "03456fd535ac5430690a9f8e74fb576204cf06631e2fe67a7c77f592475f4260",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/demo-pan.rgba": {
+      "sha256": "40ed18e00742b94c7b957cabbb8dac66e58ece684f1b3d0b1b28c09d8e504bb0",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/demo-warm.rgba": {
+      "sha256": "8ee2962c57ea8a60dff04e90aff583fb81c53c8dfcb85d0bc846ef464f744e52",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/demo-zoom_in.rgba": {
+      "sha256": "ef0cfb5a40bf87025ee3f2aa745ad5fd29065c2f47d16d5b2800684897c7e8f5",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/demo-zoom_out.rgba": {
+      "sha256": "227d4a7ccbf0f0867d91318fd53fcc0b3b2347c95b1a1c50ac51da3048436244",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/font_variations-first_paint.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/font_variations-slant_advance.rgba": {
+      "sha256": "98f0826c2f469f65a9adcf47571fce2ee5c8756c25584e31013bee7d7d3bfc91",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/font_variations-slant_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/font_variations-warm.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/font_variations-weight_advance.rgba": {
+      "sha256": "dd85258b6296a716efd7968237716f8a699bd39de2c73ef381172b10bf492120",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/font_variations-weight_return.rgba": {
+      "sha256": "d94550a29701a1ef9e22933e3a5cdc81ae05ed146cea906bacf66ebfa5135744",
+      "bytes": 2240000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-first_paint.rgba": {
+      "sha256": "cf39301249de15c53bfe092c277d9b43a2b7d0f940f52eb8c38ba4c7e3ed5ac8",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-reflow.rgba": {
+      "sha256": "ed4fda9b7fb2994d16bbea04a2aa848909062c8ea2aadf19e2ec35cc25225c83",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-size_advance.rgba": {
+      "sha256": "08b11a44d3d877e11b5e16386c5f7cd19997baa9e3a26b657d8090840c07bf6d",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-size_return.rgba": {
+      "sha256": "bb5d8b644b9babe231c3f9cb2f4d1c68edf0931630c5a4737eec23425f066447",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-warm.rgba": {
+      "sha256": "f01c008fbbffc857ad8bb6402e36459dd5ea9457f6491531e6ad70fb85c4f2aa",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-x_advance.rgba": {
+      "sha256": "d8d5fc6e80e0416ee9a86754ace3bfc117d7712af04bcfed4cf597542ebcc515",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-x_return.rgba": {
+      "sha256": "c1ad035a577d93412ba30c44c704bb13b5475a8399386b9c5bf16de97e9c097b",
+      "bytes": 2400000
+    },
+    "pixels-runs/vollkorn-dpi2-patch-pixels/text-y_advance.rgba": {
+      "sha256": "43bfb902f6c3c9e1996b7c663dac54f01e37da44df7d117dafa86abe811be272",
+      "bytes": 2400000
+    }
+  },
+  "omitted": [],
+  "complete": true,
+  "archive": {
+    "path": "records.tar.gz",
+    "sha256": "5978c54e17a3d380476d406d43fa1184bcf9368403bf7409783694e5f036f383",
+    "bytes": 12835542
+  },
+  "raw_bytes": 539447344,
+  "unique_content_bytes": 197654560
+}

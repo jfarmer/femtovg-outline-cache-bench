@@ -1,0 +1,135 @@
+diff --git a/crates/alustin-gui/Cargo.toml b/crates/alustin-gui/Cargo.toml
+index bc2b8abe..8dd746de 100644
+--- a/crates/alustin-gui/Cargo.toml
++++ b/crates/alustin-gui/Cargo.toml
+@@ -7,6 +7,9 @@ rust-version = "1.92"
+ publish = false
+ 
+ [features]
++# Narrow renderer build for the master/outline-cache application comparison.
++femtovg-benchmark = ["slint/renderer-femtovg-wgpu", "startup-diagnostics"]
++
+ # Optional renderer comparison; normal builds keep the current renderer set.
+ renderer-bench = ["slint/renderer-femtovg-wgpu", "slint/renderer-skia", "slint/renderer-vello"]
+ 
+diff --git a/crates/alustin-gui/src/main.rs b/crates/alustin-gui/src/main.rs
+index 1c444938..74498e95 100644
+--- a/crates/alustin-gui/src/main.rs
++++ b/crates/alustin-gui/src/main.rs
+@@ -661,6 +661,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
+         slint::BackendSelector::new().select()
+     })?;
+     let ui = trace.measure("window_created", ForgeWindow::new)?;
++    #[cfg(feature = "femtovg-benchmark")]
++    if let Ok(family) = std::env::var("ALUSTIN_BENCH_FONT_FAMILY") {
++        let font_path = std::env::var("SLINT_FONT_PATH")?;
++        ui.set_benchmark_font_family(family.as_str().into());
++        trace.event("benchmark_font_configured", || {
++            json!({"family": ui.get_benchmark_font_family().as_str(), "font_path": font_path})
++        });
++    }
+     trace.install(&ui, args.startup_probe, args.startup_observe_presentation)?;
+     let (catalog, prepared) = trace
+         .measure("load_joined", || loader.join())
+diff --git a/crates/alustin-gui/src/startup.rs b/crates/alustin-gui/src/startup.rs
+index 64a1296f..d3085ef0 100644
+--- a/crates/alustin-gui/src/startup.rs
++++ b/crates/alustin-gui/src/startup.rs
+@@ -165,7 +165,7 @@ impl Trace {
+                             slint::GraphicsAPI::NativeOpenGL { .. } => "OpenGL",
+                             #[cfg(feature = "renderer-bench")]
+                             slint::GraphicsAPI::WGPU29 { .. } => "WGPU29",
+-                            #[cfg(feature = "renderer-bench")]
++                            #[cfg(any(feature = "renderer-bench", feature = "femtovg-benchmark"))]
+                             slint::GraphicsAPI::WGPU30 { .. } => "WGPU30",
+                             _ => "other",
+                         };
+diff --git a/crates/alustin-gui/ui/forge.slint b/crates/alustin-gui/ui/forge.slint
+index fa4abd91..c80c8e45 100644
+--- a/crates/alustin-gui/ui/forge.slint
++++ b/crates/alustin-gui/ui/forge.slint
+@@ -168,7 +168,9 @@ export component ForgeWindow inherits Window {
+     min-width: 1080px;
+     min-height: 600px;
+     background: Theme.bg;
+-    default-font-family: "Vollkorn";
++    // Host override is used only by the font/cache benchmark.
++    in property <string> benchmark-font-family: "Vollkorn";
++    default-font-family: root.benchmark-font-family;
+     default-font-size: 14px;
+     in-out property <bool> tray-open: false;
+     private property <bool> about-open: false;
+diff --git a/crates/alustin-gui/vendor/i-slint-renderer-femtovg/font_cache.rs b/crates/alustin-gui/vendor/i-slint-renderer-femtovg/font_cache.rs
+index a18b55e8..b33710be 100644
+--- a/crates/alustin-gui/vendor/i-slint-renderer-femtovg/font_cache.rs
++++ b/crates/alustin-gui/vendor/i-slint-renderer-femtovg/font_cache.rs
+@@ -26,6 +26,7 @@ impl FontCache {
+         let text_context = self.text_context.clone();
+ 
+         *self.fonts.entry((font.data.clone().into(), font.index)).or_insert_with(move || {
++            benchmark_actual_font(font);
+             text_context.add_shared_font_with_index(font.data.clone(), font.index).unwrap()
+         })
+     }
+@@ -34,3 +35,61 @@ impl FontCache {
+ thread_local! {
+     pub static FONT_CACHE: RefCell<FontCache> = RefCell::new(Default::default())
+ }
++
++
++/// Untimed validation only: record the actual font passed by shaped text to FemtoVG.
++/// Primary timing runs leave ALUSTIN_FONT_DIAGNOSTICS_DIR unset.
++fn benchmark_actual_font(font: &parley::FontData) {
++    use i_slint_common::sharedfontique::skrifa::{self, MetadataProvider, string::StringId};
++    use std::collections::HashSet;
++    use std::fmt::Write as _;
++    use std::path::PathBuf;
++    use std::sync::{Mutex, OnceLock};
++
++    type Diagnostics = (PathBuf, Mutex<HashSet<(u64, u32)>>);
++    static DIAGNOSTICS: OnceLock<Option<Diagnostics>> = OnceLock::new();
++    let Some((directory, seen)) = DIAGNOSTICS.get_or_init(|| {
++        std::env::var_os("ALUSTIN_FONT_DIAGNOSTICS_DIR")
++            .filter(|path| !path.is_empty())
++            .map(|path| (PathBuf::from(path), Mutex::new(HashSet::new())))
++    }) else {
++        return;
++    };
++    let key = (font.data.id(), font.index);
++    let mut seen = seen.lock().expect("actual-font diagnostic lock");
++    if !seen.insert(key) {
++        return;
++    }
++
++    let data: &[u8] = font.data.as_ref();
++    let face = skrifa::FontRef::from_index(data, font.index)
++        .expect("actual-font diagnostic face was already accepted by Slint");
++    let family = face.localized_strings(StringId::TYPOGRAPHIC_FAMILY_NAME)
++        .english_or_first()
++        .or_else(|| face.localized_strings(StringId::FAMILY_NAME).english_or_first())
++        .map(|name| name.to_string()).unwrap_or_default();
++    let postscript = face.localized_strings(StringId::POSTSCRIPT_NAME)
++        .english_or_first().map(|name| name.to_string()).unwrap_or_default();
++    let hex = |text: &str| {
++        let mut encoded = String::with_capacity(text.len() * 2);
++        for byte in text.bytes() { write!(&mut encoded, "{byte:02x}").unwrap(); }
++        encoded
++    };
++    let cmap = face.charmap();
++    let has_ascii = (32u32..=126).all(|c| cmap.map(c).is_some_and(|g| g.to_u32() != 0));
++    let has_checkmark = cmap.map(0x2713u32).is_some_and(|g| g.to_u32() != 0);
++    let stem = format!("face-{}-{}", key.0, key.1);
++    let blob_file = format!("{stem}.font.bin");
++    std::fs::create_dir_all(directory).expect("actual-font diagnostic directory");
++    std::fs::write(directory.join(&blob_file), data).expect("actual-font diagnostic blob");
++    // UTF-8 hex avoids depending on a JSON serializer or hand-written string escaping.
++    // Postprocessing decodes the names and attaches SHA-256 of these exact blob bytes.
++    let metadata = format!(concat!(
++        "{{\"schema\":1,\"blob_id\":{},\"face_index\":{},\"bytes\":{},",
++        "\"blob_file\":\"{}\",\"family_utf8_hex\":\"{}\",",
++        "\"postscript_utf8_hex\":\"{}\",\"has_ascii\":{},\"has_checkmark\":{}}}\n"
++    ), key.0, key.1, data.len(), blob_file, hex(&family), hex(&postscript), has_ascii, has_checkmark);
++    std::fs::write(directory.join(format!("{stem}.font.json")), metadata)
++        .expect("actual-font diagnostic metadata");
++    eprintln!("Alustin actual font: family={family:?}, face_index={}, bytes={}", font.index, data.len());
++}

@@ -1,0 +1,14 @@
+[package]
+name = "femtovg-example-outline-review"
+version = "0.0.0"
+edition = "2021"
+[dependencies]
+femtovg = { path = "../replay-sources/current", features = ["swash", "wgpu"] }
+swash = "=0.2.10"
+wgpu = "30.0.0"
+pollster = "1.0"
+image = { version = "0.25.0", default-features = false, features = ["jpeg", "png"] }
+[features]
+debug_inspector = []
+[profile.release]
+debug = 1

@@ -1,0 +1,1842 @@
+{
+  "schema": 1,
+  "label": "gray8-diagnosis",
+  "original_root": "/private/tmp/femtovg-gray8-diagnose",
+  "retention": "All noncompiled files, including incomplete/rejected cohorts; inclusion in the archive does not imply inclusion in a timing analysis",
+  "storage": "Lossless tar hardlinks deduplicate identical file contents; every original path and byte checksum is retained",
+  "files": {
+    "DIAGNOSIS.md": {
+      "sha256": "d0648bc7c69827d296c877089cacc1374379e2bda5bb337283d59dc3fbda1e3a",
+      "bytes": 2355
+    },
+    "gray8/femtovg/.github/dependabot.yml": {
+      "sha256": "c63878becff6965f3d4cf33dd3f15ac488485514d315f44ff91e66f72fe5ce3e",
+      "bytes": 360
+    },
+    "gray8/femtovg/.github/workflows/book.yml": {
+      "sha256": "dff6dd483c609dc2266944dae385226f5633845d385178eaa56662a40f372f80",
+      "bytes": 699
+    },
+    "gray8/femtovg/.github/workflows/ci.yml": {
+      "sha256": "44f28c48d0ac2677fae2f14e26bdd65551dba068ca378b1f10ce95cfc2b59d96",
+      "bytes": 3169
+    },
+    "gray8/femtovg/.gitignore": {
+      "sha256": "89cfd3589317368117fc00c558940e9f11674699f0768c66d6bfda9191dca515",
+      "bytes": 272
+    },
+    "gray8/femtovg/CHANGELOG.md": {
+      "sha256": "86f0d2012feb09a383fc1344a40b91ab28f23b4f7fa4ea30431204de8ffca69c",
+      "bytes": 32668
+    },
+    "gray8/femtovg/Cargo.toml": {
+      "sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+      "bytes": 3630
+    },
+    "gray8/femtovg/LICENSE-APACHE": {
+      "sha256": "a88a993a1c7aaeb5f0d0c0aa5d206c8735eeffb153a922826d14ec92752316ee",
+      "bytes": 558
+    },
+    "gray8/femtovg/LICENSE-MIT": {
+      "sha256": "cd4eb10b20da1d85916624e0e15a8e76b0a66406996a4f9aa5afee909fecfb7e",
+      "bytes": 1072
+    },
+    "gray8/femtovg/README.md": {
+      "sha256": "4fd57efd811a54a95c02f50421c14ab2e9c174f10cb16005da7d33cc9d8208ed",
+      "bytes": 3768
+    },
+    "gray8/femtovg/assets/breakout.png": {
+      "sha256": "5eef13bafd86cc30722ee20a57cb3cba12276ce5baec6f7efc2f2faaa3f486e0",
+      "bytes": 49781
+    },
+    "gray8/femtovg/assets/demo.png": {
+      "sha256": "d74334132435f473770ed574003658b771f2c2590b0f62d6cbf429251b941b90",
+      "bytes": 181424
+    },
+    "gray8/femtovg/assets/gpupathrender.pdf": {
+      "sha256": "a09a09b3782c062c54021b6d2359f664bd6f205e57698e7a18d94d8cdb0f6f41",
+      "bytes": 6494900
+    },
+    "gray8/femtovg/assets/screen.frag.glsl": {
+      "sha256": "72938b9538d2c606a0b04920b917f37681ecd2da89e3cf7c77176302a9360d81",
+      "bytes": 312
+    },
+    "gray8/femtovg/assets/screen.vert.glsl": {
+      "sha256": "544ca5528d9b8564c62de6ed01591e9e86ea27ae8cc578a3c7e4da9b62062c2a",
+      "bytes": 295
+    },
+    "gray8/femtovg/assets/svg.png": {
+      "sha256": "3b4696ff8bda4a6bc2132d2c4307f4791cec1360e68bb2abd3ff9574705bfb77",
+      "bytes": 165116
+    },
+    "gray8/femtovg/assets/text.png": {
+      "sha256": "010aca7fd3a1c71e814ba0d3e947cc02e59b36a7631b6bb307e0faa5de4144c7",
+      "bytes": 259412
+    },
+    "gray8/femtovg/book/.gitignore": {
+      "sha256": "3c4dbff9eeda9410a0b9eb423472981db8997d666388b4cd2424700c3974d64b",
+      "bytes": 5
+    },
+    "gray8/femtovg/book/book.toml": {
+      "sha256": "4c552d588da75529d0fa0be860d47086b237bc803dc0dd84886c1e5ae349d056",
+      "bytes": 108
+    },
+    "gray8/femtovg/book/src/1_getting_started/0_intro.md": {
+      "sha256": "0bbd6e82d32c235a06f1fd8d4502f4cdeae09012a34afdb29c4ddaefb9bba169",
+      "bytes": 395
+    },
+    "gray8/femtovg/book/src/1_getting_started/1_setting_up.md": {
+      "sha256": "0d8625bf1e241977b41e9fd50f50cb9d7bd7b308813f938142b80d05e205c422",
+      "bytes": 3976
+    },
+    "gray8/femtovg/book/src/1_getting_started/1_setting_up.rs": {
+      "sha256": "e764a0198cd6692f1eb3168d88ddfe487f80c90e9790f16bb86d6d2b39035d58",
+      "bytes": 2472
+    },
+    "gray8/femtovg/book/src/1_getting_started/2_app.png": {
+      "sha256": "0b744b40dbadab32da029d671f88df97022350ff2f079be0f033b17626a3d42f",
+      "bytes": 6966
+    },
+    "gray8/femtovg/book/src/1_getting_started/2_rendering.md": {
+      "sha256": "431eb92cff0a25a54900fb7ca86e7cd87851c664f645d9cb0d6e76ef43fe127e",
+      "bytes": 2348
+    },
+    "gray8/femtovg/book/src/1_getting_started/2_rendering.rs": {
+      "sha256": "26b84fcbba73f65e3461976e8038a1fbd5f62fc3a166d89ad1c53bee94ea1857",
+      "bytes": 3961
+    },
+    "gray8/femtovg/book/src/1_getting_started/3_event_loop.md": {
+      "sha256": "742209797884afae89494a8f9cedc761fe54904b7fce8c2a301de18877ef6a76",
+      "bytes": 6712
+    },
+    "gray8/femtovg/book/src/1_getting_started/3_event_loop.rs": {
+      "sha256": "546f2a0cbe3aa9db4677bc764719980fc409af19c3e576b1aa72cad4b63eb34b",
+      "bytes": 4788
+    },
+    "gray8/femtovg/book/src/1_getting_started/3_final.png": {
+      "sha256": "9dffd90deece17a83f9ad806bf7316717316c7d390809b4a4b5a02aa4bcf6c83",
+      "bytes": 7502
+    },
+    "gray8/femtovg/book/src/1_getting_started/3_red_paint.png": {
+      "sha256": "6c02eb7040bc678c1d7d06359b4b4fff40ab8444865d2c2801a6f89e04591f45",
+      "bytes": 12467
+    },
+    "gray8/femtovg/book/src/SUMMARY.md": {
+      "sha256": "736b25819b9388e66279ecf217bb9bc57579ab26b93945d9b4df7bcc359f5095",
+      "bytes": 245
+    },
+    "gray8/femtovg/book/src/demo.png": {
+      "sha256": "b6ae64e28a5c02fac102434b7caaf81b815e0230f100e9791676a0e05e58e104",
+      "bytes": 134372
+    },
+    "gray8/femtovg/book/src/index.md": {
+      "sha256": "98db579a801beb283fc7f50b5acaaf44808c6dd470671d21368299d09c7873c2",
+      "bytes": 618
+    },
+    "gray8/femtovg/build.rs": {
+      "sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+      "bytes": 223
+    },
+    "gray8/femtovg/examples/README.md": {
+      "sha256": "2eebced8dab783de944e45f621bd11a9370d27ffa84eb268aece0ea234cb0236",
+      "bytes": 483
+    },
+    "gray8/femtovg/examples/assets/BungeeColor-Subset.ttf": {
+      "sha256": "17205020659530ce48c76112089dc0ca532302e16acc5a4d98e2e3696e871a5e",
+      "bytes": 2216
+    },
+    "gray8/femtovg/examples/assets/Ghostscript_Tiger.svg": {
+      "sha256": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+      "bytes": 68629
+    },
+    "gray8/femtovg/examples/assets/LICENSE-BungeeColor": {
+      "sha256": "b77aa3c20ddef79c5ad1088826ca88081fec3fe097caddc096984dec126438d6",
+      "bytes": 4360
+    },
+    "gray8/femtovg/examples/assets/LICENSE-Roboto": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "gray8/femtovg/examples/assets/RobotoFlex-VariableFont.ttf": {
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+      "bytes": 227888
+    },
+    "gray8/femtovg/examples/assets/amiri-regular.ttf": {
+      "sha256": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+      "bytes": 610836
+    },
+    "gray8/femtovg/examples/assets/entypo.ttf": {
+      "sha256": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+      "bytes": 35392
+    },
+    "gray8/femtovg/examples/assets/images/image1.jpg": {
+      "sha256": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+      "bytes": 25760
+    },
+    "gray8/femtovg/examples/assets/images/image10.jpg": {
+      "sha256": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+      "bytes": 3439
+    },
+    "gray8/femtovg/examples/assets/images/image11.jpg": {
+      "sha256": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+      "bytes": 3818
+    },
+    "gray8/femtovg/examples/assets/images/image12.jpg": {
+      "sha256": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+      "bytes": 5452
+    },
+    "gray8/femtovg/examples/assets/images/image2.jpg": {
+      "sha256": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+      "bytes": 24091
+    },
+    "gray8/femtovg/examples/assets/images/image3.jpg": {
+      "sha256": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+      "bytes": 29282
+    },
+    "gray8/femtovg/examples/assets/images/image4.jpg": {
+      "sha256": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+      "bytes": 23830
+    },
+    "gray8/femtovg/examples/assets/images/image5.jpg": {
+      "sha256": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+      "bytes": 27131
+    },
+    "gray8/femtovg/examples/assets/images/image6.jpg": {
+      "sha256": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+      "bytes": 25116
+    },
+    "gray8/femtovg/examples/assets/images/image7.jpg": {
+      "sha256": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+      "bytes": 25590
+    },
+    "gray8/femtovg/examples/assets/images/image8.jpg": {
+      "sha256": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+      "bytes": 24607
+    },
+    "gray8/femtovg/examples/assets/images/image9.jpg": {
+      "sha256": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+      "bytes": 4035
+    },
+    "gray8/femtovg/examples/assets/pattern.jpg": {
+      "sha256": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+      "bytes": 33638
+    },
+    "gray8/femtovg/examples/assets/rust-logo.png": {
+      "sha256": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596",
+      "bytes": 50672
+    },
+    "gray8/femtovg/examples/breakout.rs": {
+      "sha256": "da7da922fc9e0d38250340c4ed027ab975468e035013dcc616da9beba44ad90c",
+      "bytes": 39538
+    },
+    "gray8/femtovg/examples/demo.rs": {
+      "sha256": "ac4f547feb8d3f029ac21a88f328fb498595a5a5d02143238e9ffa1de5f1b9f6",
+      "bytes": 45923
+    },
+    "gray8/femtovg/examples/external_text_cosmic.rs": {
+      "sha256": "5463ba67fda5b6b588413f09cdd63550b83027c90937ace79c610eecc245a26a",
+      "bytes": 10659
+    },
+    "gray8/femtovg/examples/external_text_parley.rs": {
+      "sha256": "2533d48ddfc4d298f668c990eb8547e4403b4c3e521a4372620e766e94b3a665",
+      "bytes": 13786
+    },
+    "gray8/femtovg/examples/font_variations.rs": {
+      "sha256": "13c2c4c3c17c041c5ceabd37194e16437f9007e9536f2d4090aad6bf57fc50e3",
+      "bytes": 5496
+    },
+    "gray8/femtovg/examples/gradients.rs": {
+      "sha256": "64d1373b0ef22d96f159f16175e7c0fb1f80ba20d51e856c1498b3f653ee2882",
+      "bytes": 23873
+    },
+    "gray8/femtovg/examples/helpers/mod.rs": {
+      "sha256": "4978fa74c246aef34b46d190b25d8a3d1a930219dde19cc43b972e0ce75bfbdf",
+      "bytes": 1406
+    },
+    "gray8/femtovg/examples/helpers/opengl.rs": {
+      "sha256": "cf151a4d52f18ad7cb1d64d3ce888929f92688918c66851582555ec6977b508f",
+      "bytes": 8663
+    },
+    "gray8/femtovg/examples/helpers/perf_graph.rs": {
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "bytes": 2281
+    },
+    "gray8/femtovg/examples/helpers/wgpu.rs": {
+      "sha256": "0869f2ca78f964294236f43cbe8dbfb5d0f9b8810e888b0df49e6d69bb238b01",
+      "bytes": 11357
+    },
+    "gray8/femtovg/examples/index.html": {
+      "sha256": "84efe3d72dd1a8229830b5bd3e7024accc693bcb1f1097d7385907082ff54cc2",
+      "bytes": 288
+    },
+    "gray8/femtovg/examples/many_rects.rs": {
+      "sha256": "8ef3bca1ba6cba849bfc6b7bce000620660430113e2178a533190cde1d0e4348",
+      "bytes": 3170
+    },
+    "gray8/femtovg/examples/paint_filter.rs": {
+      "sha256": "80367fe28437e15d58a2ce844b1c8ff03b54214b3048de297a34b5e52b5eb526",
+      "bytes": 4124
+    },
+    "gray8/femtovg/examples/paint_image.rs": {
+      "sha256": "b5a43796ec821e8ca4a2553e8cf0dfe1a9a6fc224a0d4b325f750ddfc48db191",
+      "bytes": 8334
+    },
+    "gray8/femtovg/examples/shader.rs": {
+      "sha256": "22ef531e6ca7895ed3cb1ccc5832b0da1d485ae3563dbdcb46e0338f9892cfbd",
+      "bytes": 10565
+    },
+    "gray8/femtovg/examples/svg.rs": {
+      "sha256": "defb8e5b7ffcd76580cce93b17e98eb55afb75a5cf3575fd4dce3cebe73f3765",
+      "bytes": 7748
+    },
+    "gray8/femtovg/examples/text.rs": {
+      "sha256": "0b24bb6c99cd3414789e6c8fea9689ce916f49e8dbc4b74b4e5d548be8d83358",
+      "bytes": 15015
+    },
+    "gray8/femtovg/rustfmt.toml": {
+      "sha256": "f367a18c7ef1f48267c9f9c2e0c239b10533a6e59dca3c60db18ab39c99514ff",
+      "bytes": 98
+    },
+    "gray8/femtovg/src/color.rs": {
+      "sha256": "b1e50257884ba24005f606e1c56606650d49597720e6890757b1037ef6620cf1",
+      "bytes": 4650
+    },
+    "gray8/femtovg/src/error.rs": {
+      "sha256": "0ca2faf7832e2173dc4d6cf599b948b722b7e1530a4a39a3ecb8487679248e44",
+      "bytes": 2582
+    },
+    "gray8/femtovg/src/geometry.rs": {
+      "sha256": "9e2f8b3eb1faedfc04524f2239adf3b1d23180a5ecf67b0faaf28cc46c9aa65b",
+      "bytes": 15594
+    },
+    "gray8/femtovg/src/gradient_store.rs": {
+      "sha256": "c9919c37f4d9d7011fd07efded19dee376f4b83bedcf651fc2257060712624d9",
+      "bytes": 8030
+    },
+    "gray8/femtovg/src/image.rs": {
+      "sha256": "edb434fc417cab0cc85a75c0ddcfeb9f03eed7bcb2fdd5655fbef0401237c10b",
+      "bytes": 40698
+    },
+    "gray8/femtovg/src/lib.rs": {
+      "sha256": "1bf51e3b61f0aa74d4ce7fada53e089e026fc773198069968a5961fdf4529359",
+      "bytes": 376196
+    },
+    "gray8/femtovg/src/paint.rs": {
+      "sha256": "9f817f03ae9a36772831f75a0c9b8c3d63a87e55c0cd66a232b23d37e135f376",
+      "bytes": 67375
+    },
+    "gray8/femtovg/src/path/cache.rs": {
+      "sha256": "21153a3f0662ef3fa10d9c53eed3b3c76847c2233417d67fa45a36a712a89963",
+      "bytes": 51417
+    },
+    "gray8/femtovg/src/path.rs": {
+      "sha256": "e95160b66143d1637b00c3f8102bccb3b7f56d7f4960bad69ff6e0112ace3d9a",
+      "bytes": 91779
+    },
+    "gray8/femtovg/src/renderer/opengl/framebuffer.rs": {
+      "sha256": "ef52dfc86e7094b0f6d661a5fc8e179e1f896f553234151007a3f35df6296a86",
+      "bytes": 4829
+    },
+    "gray8/femtovg/src/renderer/opengl/gl_texture.rs": {
+      "sha256": "2826bb6eee3169fc37b6e35f6dbafdf8f90ab9cea4960d9540a629250fdb8315",
+      "bytes": 10648
+    },
+    "gray8/femtovg/src/renderer/opengl/main-fs.glsl": {
+      "sha256": "238a4b0009717c2672a59d036041eabd8fc8de2cb9d7cf9ca9cc1658e636feb3",
+      "bytes": 23312
+    },
+    "gray8/femtovg/src/renderer/opengl/main-vs.glsl": {
+      "sha256": "aac43ab9b49f186da3c8e6c6036d2c1a6e9e652d34ad56189535c501cc3244fc",
+      "bytes": 276
+    },
+    "gray8/femtovg/src/renderer/opengl/program.rs": {
+      "sha256": "d776f3f333af40774543732eaa118d6b72e2c54d815744c8156f0c1de6f94187",
+      "bytes": 5956
+    },
+    "gray8/femtovg/src/renderer/opengl/uniform_array.rs": {
+      "sha256": "bbf261f4cb464d7034365f86b2c559f29a3f348251c02ded9667fe6b9e229756",
+      "bytes": 3815
+    },
+    "gray8/femtovg/src/renderer/opengl.rs": {
+      "sha256": "11bc09404b7b2a11291ce78bae257b4e75c9af8ac8b56074fd316f5248ca1d51",
+      "bytes": 47184
+    },
+    "gray8/femtovg/src/renderer/params.rs": {
+      "sha256": "2406d865033afac974825a14af10353403e20c677490b661e3220497a9808fba",
+      "bytes": 15501
+    },
+    "gray8/femtovg/src/renderer/void.rs": {
+      "sha256": "484ae1e2b1591c7a58d89cb1dc3574979bb85f5c2ccde389a36753c733124508",
+      "bytes": 1894
+    },
+    "gray8/femtovg/src/renderer/wgpu/shader.wgsl": {
+      "sha256": "d9e810c2f1f99e17a5654e2a622fdc16ae5d72702dbbb0a7f313f39a3b833ed6",
+      "bytes": 28479
+    },
+    "gray8/femtovg/src/renderer/wgpu.rs": {
+      "sha256": "17f1e19df9a671e03f859563a6aa6d04a6579952dd4174a3412adaf082a8bda1",
+      "bytes": 88373
+    },
+    "gray8/femtovg/src/renderer.rs": {
+      "sha256": "297c75d5bcc61dff5eaa014c2f7b67e88be50537852246b0cccb62897978b263",
+      "bytes": 14007
+    },
+    "gray8/femtovg/src/text/atlas.rs": {
+      "sha256": "e8ba60fa500cc461563b1b48489fb101f053864a9c54d1576e049a6560be0d8e",
+      "bytes": 4875
+    },
+    "gray8/femtovg/src/text/font.rs": {
+      "sha256": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+      "bytes": 43204
+    },
+    "gray8/femtovg/src/text/swash_rasterizer.rs": {
+      "sha256": "55325dc71d59cee6224ab1aaef38af7e2e1b9a52f2a3a96dc47963f04eeb1167",
+      "bytes": 16638
+    },
+    "gray8/femtovg/src/text/textlayout.rs": {
+      "sha256": "048d0a638e09e530a86bdb2ae710533c5eeeed4fa68f7e26af92b25e0de6b558",
+      "bytes": 20099
+    },
+    "gray8/femtovg/src/text.rs": {
+      "sha256": "fcce0a3e0095c57e0754eee73bfc572f8916845aba07d6f05c9edbfd1275bec3",
+      "bytes": 48619
+    },
+    "gray8/femtovg/src/transient.rs": {
+      "sha256": "dd2272797d8d656d8f2f881fec0df81c49c38a5871b5a2d633afc63bd902759e",
+      "bytes": 8984
+    },
+    "gray8/femtovg/src/turbulence.rs": {
+      "sha256": "b5f942634c21deda757850a9477d546e8e68dc7770454a30ea168453dee3b78d",
+      "bytes": 14605
+    },
+    "gray8/femtovg/tests/blend_filter_wgpu.rs": {
+      "sha256": "daf88145c2a7e42706ad0300a33853348621066ea09d0aafbe1e27749e1cb969",
+      "bytes": 9982
+    },
+    "gray8/femtovg/tests/blit_scissor_wgpu.rs": {
+      "sha256": "6bda98a9eeab99db6b4438aaf12dd42250dbc3e3a6019df9e1bc665550453544",
+      "bytes": 8190
+    },
+    "gray8/femtovg/tests/blur_quadrature_wgpu.rs": {
+      "sha256": "22d5a302ccace86f0cdc2545d1edf652ab57fdbe771d5c1a2a8d8d24de6024b7",
+      "bytes": 11351
+    },
+    "gray8/femtovg/tests/clip_abuse_wgpu.rs": {
+      "sha256": "93d2591192b797eb14b9d1fb0b2dc9f41acc8ba84d4a526157d60b35d1520487",
+      "bytes": 2151
+    },
+    "gray8/femtovg/tests/color_matrix_wgpu.rs": {
+      "sha256": "579ecadc113cee65de185ebb7758cadcd7bb536f038398437000b593ab0c1bf5",
+      "bytes": 11460
+    },
+    "gray8/femtovg/tests/color_transfer_wgpu.rs": {
+      "sha256": "c1fbf922cc651ef77a53fbaf814cfd09f34dbe1220e15a7863f1954aee90d4eb",
+      "bytes": 6033
+    },
+    "gray8/femtovg/tests/common/blend.rs": {
+      "sha256": "18d1e72132817a8c027fe662bbbc51308b332eeceb24c731878b064d8fa9e890",
+      "bytes": 5000
+    },
+    "gray8/femtovg/tests/common/mod.rs": {
+      "sha256": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74",
+      "bytes": 7372
+    },
+    "gray8/femtovg/tests/conic_scissor_wgpu.rs": {
+      "sha256": "a878861a53f749d16f9aca5e8682c93cd60b57318922562b907cf68b5cfb41bd",
+      "bytes": 5745
+    },
+    "gray8/femtovg/tests/evenodd_stencil_wgpu.rs": {
+      "sha256": "34dd9f6f69af5e3160ac798f1bab91b11756d59afbd0b0b834d512fde306b3fa",
+      "bytes": 6649
+    },
+    "gray8/femtovg/tests/fill_winding_wgpu.rs": {
+      "sha256": "731b394753aada7f7596f514fc640fafe5955d1f4e8b146b37ca41530f1b2541",
+      "bytes": 10844
+    },
+    "gray8/femtovg/tests/filter_chain_wgpu.rs": {
+      "sha256": "c17464bf8ac37b892b751afd354bc888fd44df85ff60074a004486eb1bb19a6d",
+      "bytes": 16096
+    },
+    "gray8/femtovg/tests/gradient_dither_wgpu.rs": {
+      "sha256": "99f0fbf0f907c92d27bde35bb483c62c65dff59d78db803819b0c7e14e0549e6",
+      "bytes": 4080
+    },
+    "gray8/femtovg/tests/gradient_paint_conformance_wgpu.rs": {
+      "sha256": "7114a8307039246c15d866edacb45ddefb56be9d352bc1e8ce3de8fcc6e57034",
+      "bytes": 32793
+    },
+    "gray8/femtovg/tests/gradient_stop_interpolation_wgpu.rs": {
+      "sha256": "f571e0198fd491a73ae0cd5b0c607a329ada3ad760f7854347913f343738b712",
+      "bytes": 8722
+    },
+    "gray8/femtovg/tests/gradient_stress_wgpu.rs": {
+      "sha256": "4112feb232ca6f876fedb5fde2e5dea2f7d97228033e81116d2cc5ae1de9baa0",
+      "bytes": 7086
+    },
+    "gray8/femtovg/tests/gradient_tail_pad_wgpu.rs": {
+      "sha256": "4f709dbb883380a38f0de6520223fb1d976d83c766ada184038fd82ecd0444e5",
+      "bytes": 9183
+    },
+    "gray8/femtovg/tests/hairline_stroke_wgpu.rs": {
+      "sha256": "0a2b58c3f579ac36455733cdc142642f9903e5d02e050e71a49e4607611c83a5",
+      "bytes": 2899
+    },
+    "gray8/femtovg/tests/image_blit_wgpu.rs": {
+      "sha256": "d10ea25ba9240da6d2cab1f0bea3d3407c68652ee8105c48068307a465ed9587",
+      "bytes": 5030
+    },
+    "gray8/femtovg/tests/image_update_bounds_wgpu.rs": {
+      "sha256": "3fc071a814cbf5fba7b1614d1188f26d29c253c17dbf901b30bba46aff37d45a",
+      "bytes": 4608
+    },
+    "gray8/femtovg/tests/image_update_contract.rs": {
+      "sha256": "85f9320ffe599f2f37729172d0ee1655621d7b413f97b61f41ca32f26d68d207",
+      "bytes": 4172
+    },
+    "gray8/femtovg/tests/integration.rs": {
+      "sha256": "44f0e35841833a57f9f14f1b2627217a0fd2459a81da8e993378c2d4b68d32b6",
+      "bytes": 32212
+    },
+    "gray8/femtovg/tests/layer_effects_wgpu.rs": {
+      "sha256": "9ffab31ad0a35c52a07bac2ad918c383e991b999794b770f884cea4dc1a9038b",
+      "bytes": 40171
+    },
+    "gray8/femtovg/tests/layer_masks_review_wgpu.rs": {
+      "sha256": "5336fe330221c3fc7b19c00a8b3976c571052a1a05a2c09a38c220540609d90c",
+      "bytes": 23189
+    },
+    "gray8/femtovg/tests/layer_state_wgpu.rs": {
+      "sha256": "8926b1de1d437312788a7d736b3bb719e969ee724da601646a62f2375cebcf9c",
+      "bytes": 11143
+    },
+    "gray8/femtovg/tests/mix_blend_wgpu.rs": {
+      "sha256": "c2e5132ae1678e97c6262ec24b5a47909670c9e2213fe3d1ed4a6a7c7f42daaf",
+      "bytes": 17980
+    },
+    "gray8/femtovg/tests/path_clip_wgpu.rs": {
+      "sha256": "4f17a64a0b4548bed8e6ab7d385b9e72ef50b00a0020e6567361db069d020d1f",
+      "bytes": 31838
+    },
+    "gray8/femtovg/tests/pipeline_key_wgpu.rs": {
+      "sha256": "a10ad4ac36342e067ff5dc72e4edc69dbe78e1da65ff31aff4c5357a0eca4a29",
+      "bytes": 5832
+    },
+    "gray8/femtovg/tests/rounded_rect_radii.rs": {
+      "sha256": "9dae9f726396bf95d801e9b20f2b312a7e0558eb0136ec0b50dcc567869f2a77",
+      "bytes": 20516
+    },
+    "gray8/femtovg/tests/shadow_pressure_wgpu.rs": {
+      "sha256": "43bd59a7bee18ebc9c3af44e3b541e458956adde64d706c900adb441c60bf292",
+      "bytes": 4072
+    },
+    "gray8/femtovg/tests/shadow_wgpu.rs": {
+      "sha256": "313b3185a66848b141e64458cad32253d946c54f76b121b339dca307199d3e6a",
+      "bytes": 28887
+    },
+    "gray8/femtovg/tests/text_scale_position_wgpu.rs": {
+      "sha256": "6a72d5b37dea340882fbe6b43ca7b640939ee6f74456f9ea97a336c412523cbb",
+      "bytes": 9517
+    },
+    "gray8/femtovg/tests/transform2D.rs": {
+      "sha256": "e1aafb52ee16402731cb372d2c441d9f294bbabb0a8c53cb2633a925a7d2c16c",
+      "bytes": 2237
+    },
+    "gray8/femtovg/tests/turbulence_wgpu.rs": {
+      "sha256": "4e7eadb2fd51a299a07f52b2858e8cd61fa1adb2ed8a89b93be0123040074d72",
+      "bytes": 22503
+    },
+    "gray8/femtovg/tests/uniform_slots_wgpu.rs": {
+      "sha256": "036ab088ddac14d5e8c37602b9a38b6ac3ade250d7ac6eb1c95d104f4365dba0",
+      "bytes": 2854
+    },
+    "gray8/femtovg/tests/wpt_clip_wgpu.rs": {
+      "sha256": "0284301923b5afae35bf522142c6fd4ffd0510046830c758bb1a986df96c9de2",
+      "bytes": 9858
+    },
+    "gray8/femtovg/tests/wpt_layers_wgpu.rs": {
+      "sha256": "5cc651774d02270ba3309a29f3ca776cfc1904eba5d20245b70912b78a55d14a",
+      "bytes": 32246
+    },
+    "gray8/femtovg/tests/zero_area_fill_wgpu.rs": {
+      "sha256": "c9abd2f173f55d151f9c8de375c3e928d93f008d646395b275a374fb0c3fdbda",
+      "bytes": 6417
+    },
+    "gray8/femtovg/tests/zoom_invariance_wgpu.rs": {
+      "sha256": "fb16f5daf9de78ed6d6e1579b0abb3ea5aa8900a417ccf4ab473a981e48840bc",
+      "bytes": 9595
+    },
+    "gray8/runner/Cargo.lock": {
+      "sha256": "98197496b0960bacc66b87ec809bead70b927e15adf20236b043e7b95f9edde3",
+      "bytes": 39357
+    },
+    "gray8/runner/Cargo.toml": {
+      "sha256": "c8f6dc861fc3311da4d761bec4ca833c0817d408b04a034f9abd9941c4aa4704",
+      "bytes": 360
+    },
+    "gray8/runner/src/controlled.rs": {
+      "sha256": "30f7d26a8fcb2e74698c92ce098733ce3f5b8f79ab12b05d0e0dd17cf110ef51",
+      "bytes": 4158
+    },
+    "gray8/runner/src/demo.rs": {
+      "sha256": "af2ee8d9ef983b1c7cbfde8406ca5262f41557781fad178b104c235653202cb2",
+      "bytes": 40847
+    },
+    "gray8/runner/src/font_variations.rs": {
+      "sha256": "da0144677abd6d3858bd2aece75a67306442bf3588d4a6a459bda1dcc19e88e1",
+      "bytes": 3783
+    },
+    "gray8/runner/src/main.rs": {
+      "sha256": "eb52ceaef28d47befe90b2007a2575060c0d3f4d482c891882bdb9fd66a6ae7d",
+      "bytes": 11009
+    },
+    "gray8/runner/src/perf_graph.rs": {
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "bytes": 2281
+    },
+    "gray8/runner/src/text.rs": {
+      "sha256": "4b55ff0a63685f4f11fd4c3cf860dc44c37945d270b205587454f19feacba944",
+      "bytes": 12083
+    },
+    "gray8-cpu.stderr": {
+      "sha256": "5b7614cc70f35f3b5fd796e6a4ced2507f699f3f046db179e0daba5423d62a16",
+      "bytes": 1484
+    },
+    "gray8-cpu.stdout": {
+      "sha256": "019bc45455b3c9634a9cc1f2996e9a2be0d1c62c8dbfe77cb9f9d3698872f2cd",
+      "bytes": 138
+    },
+    "gray8-gpu.stderr": {
+      "sha256": "ef117391ae68b3c9f82392dfe66f6b133350cc68cf555ade1f0e6516e400ee5c",
+      "bytes": 1559
+    },
+    "gray8-gpu.stdout": {
+      "sha256": "a1362dc8251234dcae2040940b724a4d45ad6d6b0accd01dca17581f1a4d03e9",
+      "bytes": 138
+    },
+    "gray8-pixels/text-first_paint.rgba": {
+      "sha256": "ef1b4113d2e37fb48847e8a58743697fff3c8b2359f42b81c7b719d50cd2b2a3",
+      "bytes": 2400000
+    },
+    "master/femtovg/.github/dependabot.yml": {
+      "sha256": "c63878becff6965f3d4cf33dd3f15ac488485514d315f44ff91e66f72fe5ce3e",
+      "bytes": 360
+    },
+    "master/femtovg/.github/workflows/book.yml": {
+      "sha256": "dff6dd483c609dc2266944dae385226f5633845d385178eaa56662a40f372f80",
+      "bytes": 699
+    },
+    "master/femtovg/.github/workflows/ci.yml": {
+      "sha256": "44f28c48d0ac2677fae2f14e26bdd65551dba068ca378b1f10ce95cfc2b59d96",
+      "bytes": 3169
+    },
+    "master/femtovg/.gitignore": {
+      "sha256": "89cfd3589317368117fc00c558940e9f11674699f0768c66d6bfda9191dca515",
+      "bytes": 272
+    },
+    "master/femtovg/CHANGELOG.md": {
+      "sha256": "f1811362ca1c49685a6ca12c70e5a7e7055a7ff308aafe394368782db6a6e986",
+      "bytes": 32493
+    },
+    "master/femtovg/Cargo.toml": {
+      "sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+      "bytes": 3630
+    },
+    "master/femtovg/LICENSE-APACHE": {
+      "sha256": "a88a993a1c7aaeb5f0d0c0aa5d206c8735eeffb153a922826d14ec92752316ee",
+      "bytes": 558
+    },
+    "master/femtovg/LICENSE-MIT": {
+      "sha256": "cd4eb10b20da1d85916624e0e15a8e76b0a66406996a4f9aa5afee909fecfb7e",
+      "bytes": 1072
+    },
+    "master/femtovg/README.md": {
+      "sha256": "3e4421aaeabb44453fd302a0eaee7e5c6518f5ac79a10b72a5498869665d624b",
+      "bytes": 3638
+    },
+    "master/femtovg/assets/breakout.png": {
+      "sha256": "5eef13bafd86cc30722ee20a57cb3cba12276ce5baec6f7efc2f2faaa3f486e0",
+      "bytes": 49781
+    },
+    "master/femtovg/assets/demo.png": {
+      "sha256": "d74334132435f473770ed574003658b771f2c2590b0f62d6cbf429251b941b90",
+      "bytes": 181424
+    },
+    "master/femtovg/assets/gpupathrender.pdf": {
+      "sha256": "a09a09b3782c062c54021b6d2359f664bd6f205e57698e7a18d94d8cdb0f6f41",
+      "bytes": 6494900
+    },
+    "master/femtovg/assets/screen.frag.glsl": {
+      "sha256": "72938b9538d2c606a0b04920b917f37681ecd2da89e3cf7c77176302a9360d81",
+      "bytes": 312
+    },
+    "master/femtovg/assets/screen.vert.glsl": {
+      "sha256": "544ca5528d9b8564c62de6ed01591e9e86ea27ae8cc578a3c7e4da9b62062c2a",
+      "bytes": 295
+    },
+    "master/femtovg/assets/svg.png": {
+      "sha256": "3b4696ff8bda4a6bc2132d2c4307f4791cec1360e68bb2abd3ff9574705bfb77",
+      "bytes": 165116
+    },
+    "master/femtovg/assets/text.png": {
+      "sha256": "010aca7fd3a1c71e814ba0d3e947cc02e59b36a7631b6bb307e0faa5de4144c7",
+      "bytes": 259412
+    },
+    "master/femtovg/book/.gitignore": {
+      "sha256": "3c4dbff9eeda9410a0b9eb423472981db8997d666388b4cd2424700c3974d64b",
+      "bytes": 5
+    },
+    "master/femtovg/book/book.toml": {
+      "sha256": "4c552d588da75529d0fa0be860d47086b237bc803dc0dd84886c1e5ae349d056",
+      "bytes": 108
+    },
+    "master/femtovg/book/src/1_getting_started/0_intro.md": {
+      "sha256": "0bbd6e82d32c235a06f1fd8d4502f4cdeae09012a34afdb29c4ddaefb9bba169",
+      "bytes": 395
+    },
+    "master/femtovg/book/src/1_getting_started/1_setting_up.md": {
+      "sha256": "0d8625bf1e241977b41e9fd50f50cb9d7bd7b308813f938142b80d05e205c422",
+      "bytes": 3976
+    },
+    "master/femtovg/book/src/1_getting_started/1_setting_up.rs": {
+      "sha256": "e764a0198cd6692f1eb3168d88ddfe487f80c90e9790f16bb86d6d2b39035d58",
+      "bytes": 2472
+    },
+    "master/femtovg/book/src/1_getting_started/2_app.png": {
+      "sha256": "0b744b40dbadab32da029d671f88df97022350ff2f079be0f033b17626a3d42f",
+      "bytes": 6966
+    },
+    "master/femtovg/book/src/1_getting_started/2_rendering.md": {
+      "sha256": "431eb92cff0a25a54900fb7ca86e7cd87851c664f645d9cb0d6e76ef43fe127e",
+      "bytes": 2348
+    },
+    "master/femtovg/book/src/1_getting_started/2_rendering.rs": {
+      "sha256": "26b84fcbba73f65e3461976e8038a1fbd5f62fc3a166d89ad1c53bee94ea1857",
+      "bytes": 3961
+    },
+    "master/femtovg/book/src/1_getting_started/3_event_loop.md": {
+      "sha256": "742209797884afae89494a8f9cedc761fe54904b7fce8c2a301de18877ef6a76",
+      "bytes": 6712
+    },
+    "master/femtovg/book/src/1_getting_started/3_event_loop.rs": {
+      "sha256": "546f2a0cbe3aa9db4677bc764719980fc409af19c3e576b1aa72cad4b63eb34b",
+      "bytes": 4788
+    },
+    "master/femtovg/book/src/1_getting_started/3_final.png": {
+      "sha256": "9dffd90deece17a83f9ad806bf7316717316c7d390809b4a4b5a02aa4bcf6c83",
+      "bytes": 7502
+    },
+    "master/femtovg/book/src/1_getting_started/3_red_paint.png": {
+      "sha256": "6c02eb7040bc678c1d7d06359b4b4fff40ab8444865d2c2801a6f89e04591f45",
+      "bytes": 12467
+    },
+    "master/femtovg/book/src/SUMMARY.md": {
+      "sha256": "736b25819b9388e66279ecf217bb9bc57579ab26b93945d9b4df7bcc359f5095",
+      "bytes": 245
+    },
+    "master/femtovg/book/src/demo.png": {
+      "sha256": "b6ae64e28a5c02fac102434b7caaf81b815e0230f100e9791676a0e05e58e104",
+      "bytes": 134372
+    },
+    "master/femtovg/book/src/index.md": {
+      "sha256": "98db579a801beb283fc7f50b5acaaf44808c6dd470671d21368299d09c7873c2",
+      "bytes": 618
+    },
+    "master/femtovg/build.rs": {
+      "sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+      "bytes": 223
+    },
+    "master/femtovg/examples/README.md": {
+      "sha256": "2eebced8dab783de944e45f621bd11a9370d27ffa84eb268aece0ea234cb0236",
+      "bytes": 483
+    },
+    "master/femtovg/examples/assets/Ghostscript_Tiger.svg": {
+      "sha256": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+      "bytes": 68629
+    },
+    "master/femtovg/examples/assets/LICENSE-Roboto": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "master/femtovg/examples/assets/RobotoFlex-VariableFont.ttf": {
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+      "bytes": 227888
+    },
+    "master/femtovg/examples/assets/amiri-regular.ttf": {
+      "sha256": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+      "bytes": 610836
+    },
+    "master/femtovg/examples/assets/entypo.ttf": {
+      "sha256": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+      "bytes": 35392
+    },
+    "master/femtovg/examples/assets/images/image1.jpg": {
+      "sha256": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+      "bytes": 25760
+    },
+    "master/femtovg/examples/assets/images/image10.jpg": {
+      "sha256": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+      "bytes": 3439
+    },
+    "master/femtovg/examples/assets/images/image11.jpg": {
+      "sha256": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+      "bytes": 3818
+    },
+    "master/femtovg/examples/assets/images/image12.jpg": {
+      "sha256": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+      "bytes": 5452
+    },
+    "master/femtovg/examples/assets/images/image2.jpg": {
+      "sha256": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+      "bytes": 24091
+    },
+    "master/femtovg/examples/assets/images/image3.jpg": {
+      "sha256": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+      "bytes": 29282
+    },
+    "master/femtovg/examples/assets/images/image4.jpg": {
+      "sha256": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+      "bytes": 23830
+    },
+    "master/femtovg/examples/assets/images/image5.jpg": {
+      "sha256": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+      "bytes": 27131
+    },
+    "master/femtovg/examples/assets/images/image6.jpg": {
+      "sha256": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+      "bytes": 25116
+    },
+    "master/femtovg/examples/assets/images/image7.jpg": {
+      "sha256": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+      "bytes": 25590
+    },
+    "master/femtovg/examples/assets/images/image8.jpg": {
+      "sha256": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+      "bytes": 24607
+    },
+    "master/femtovg/examples/assets/images/image9.jpg": {
+      "sha256": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+      "bytes": 4035
+    },
+    "master/femtovg/examples/assets/pattern.jpg": {
+      "sha256": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+      "bytes": 33638
+    },
+    "master/femtovg/examples/assets/rust-logo.png": {
+      "sha256": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596",
+      "bytes": 50672
+    },
+    "master/femtovg/examples/breakout.rs": {
+      "sha256": "da7da922fc9e0d38250340c4ed027ab975468e035013dcc616da9beba44ad90c",
+      "bytes": 39538
+    },
+    "master/femtovg/examples/demo.rs": {
+      "sha256": "ac4f547feb8d3f029ac21a88f328fb498595a5a5d02143238e9ffa1de5f1b9f6",
+      "bytes": 45923
+    },
+    "master/femtovg/examples/external_text_cosmic.rs": {
+      "sha256": "5463ba67fda5b6b588413f09cdd63550b83027c90937ace79c610eecc245a26a",
+      "bytes": 10659
+    },
+    "master/femtovg/examples/external_text_parley.rs": {
+      "sha256": "2533d48ddfc4d298f668c990eb8547e4403b4c3e521a4372620e766e94b3a665",
+      "bytes": 13786
+    },
+    "master/femtovg/examples/font_variations.rs": {
+      "sha256": "13c2c4c3c17c041c5ceabd37194e16437f9007e9536f2d4090aad6bf57fc50e3",
+      "bytes": 5496
+    },
+    "master/femtovg/examples/gradients.rs": {
+      "sha256": "64d1373b0ef22d96f159f16175e7c0fb1f80ba20d51e856c1498b3f653ee2882",
+      "bytes": 23873
+    },
+    "master/femtovg/examples/helpers/mod.rs": {
+      "sha256": "4978fa74c246aef34b46d190b25d8a3d1a930219dde19cc43b972e0ce75bfbdf",
+      "bytes": 1406
+    },
+    "master/femtovg/examples/helpers/opengl.rs": {
+      "sha256": "cf151a4d52f18ad7cb1d64d3ce888929f92688918c66851582555ec6977b508f",
+      "bytes": 8663
+    },
+    "master/femtovg/examples/helpers/perf_graph.rs": {
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "bytes": 2281
+    },
+    "master/femtovg/examples/helpers/wgpu.rs": {
+      "sha256": "0869f2ca78f964294236f43cbe8dbfb5d0f9b8810e888b0df49e6d69bb238b01",
+      "bytes": 11357
+    },
+    "master/femtovg/examples/index.html": {
+      "sha256": "84efe3d72dd1a8229830b5bd3e7024accc693bcb1f1097d7385907082ff54cc2",
+      "bytes": 288
+    },
+    "master/femtovg/examples/many_rects.rs": {
+      "sha256": "8ef3bca1ba6cba849bfc6b7bce000620660430113e2178a533190cde1d0e4348",
+      "bytes": 3170
+    },
+    "master/femtovg/examples/paint_filter.rs": {
+      "sha256": "80367fe28437e15d58a2ce844b1c8ff03b54214b3048de297a34b5e52b5eb526",
+      "bytes": 4124
+    },
+    "master/femtovg/examples/paint_image.rs": {
+      "sha256": "b5a43796ec821e8ca4a2553e8cf0dfe1a9a6fc224a0d4b325f750ddfc48db191",
+      "bytes": 8334
+    },
+    "master/femtovg/examples/shader.rs": {
+      "sha256": "22ef531e6ca7895ed3cb1ccc5832b0da1d485ae3563dbdcb46e0338f9892cfbd",
+      "bytes": 10565
+    },
+    "master/femtovg/examples/svg.rs": {
+      "sha256": "defb8e5b7ffcd76580cce93b17e98eb55afb75a5cf3575fd4dce3cebe73f3765",
+      "bytes": 7748
+    },
+    "master/femtovg/examples/text.rs": {
+      "sha256": "0b24bb6c99cd3414789e6c8fea9689ce916f49e8dbc4b74b4e5d548be8d83358",
+      "bytes": 15015
+    },
+    "master/femtovg/rustfmt.toml": {
+      "sha256": "f367a18c7ef1f48267c9f9c2e0c239b10533a6e59dca3c60db18ab39c99514ff",
+      "bytes": 98
+    },
+    "master/femtovg/src/color.rs": {
+      "sha256": "b1e50257884ba24005f606e1c56606650d49597720e6890757b1037ef6620cf1",
+      "bytes": 4650
+    },
+    "master/femtovg/src/error.rs": {
+      "sha256": "0ca2faf7832e2173dc4d6cf599b948b722b7e1530a4a39a3ecb8487679248e44",
+      "bytes": 2582
+    },
+    "master/femtovg/src/geometry.rs": {
+      "sha256": "9e2f8b3eb1faedfc04524f2239adf3b1d23180a5ecf67b0faaf28cc46c9aa65b",
+      "bytes": 15594
+    },
+    "master/femtovg/src/gradient_store.rs": {
+      "sha256": "c9919c37f4d9d7011fd07efded19dee376f4b83bedcf651fc2257060712624d9",
+      "bytes": 8030
+    },
+    "master/femtovg/src/image.rs": {
+      "sha256": "edb434fc417cab0cc85a75c0ddcfeb9f03eed7bcb2fdd5655fbef0401237c10b",
+      "bytes": 40698
+    },
+    "master/femtovg/src/lib.rs": {
+      "sha256": "1bf51e3b61f0aa74d4ce7fada53e089e026fc773198069968a5961fdf4529359",
+      "bytes": 376196
+    },
+    "master/femtovg/src/paint.rs": {
+      "sha256": "9f817f03ae9a36772831f75a0c9b8c3d63a87e55c0cd66a232b23d37e135f376",
+      "bytes": 67375
+    },
+    "master/femtovg/src/path/cache.rs": {
+      "sha256": "21153a3f0662ef3fa10d9c53eed3b3c76847c2233417d67fa45a36a712a89963",
+      "bytes": 51417
+    },
+    "master/femtovg/src/path.rs": {
+      "sha256": "e95160b66143d1637b00c3f8102bccb3b7f56d7f4960bad69ff6e0112ace3d9a",
+      "bytes": 91779
+    },
+    "master/femtovg/src/renderer/opengl/framebuffer.rs": {
+      "sha256": "ef52dfc86e7094b0f6d661a5fc8e179e1f896f553234151007a3f35df6296a86",
+      "bytes": 4829
+    },
+    "master/femtovg/src/renderer/opengl/gl_texture.rs": {
+      "sha256": "2826bb6eee3169fc37b6e35f6dbafdf8f90ab9cea4960d9540a629250fdb8315",
+      "bytes": 10648
+    },
+    "master/femtovg/src/renderer/opengl/main-fs.glsl": {
+      "sha256": "238a4b0009717c2672a59d036041eabd8fc8de2cb9d7cf9ca9cc1658e636feb3",
+      "bytes": 23312
+    },
+    "master/femtovg/src/renderer/opengl/main-vs.glsl": {
+      "sha256": "aac43ab9b49f186da3c8e6c6036d2c1a6e9e652d34ad56189535c501cc3244fc",
+      "bytes": 276
+    },
+    "master/femtovg/src/renderer/opengl/program.rs": {
+      "sha256": "d776f3f333af40774543732eaa118d6b72e2c54d815744c8156f0c1de6f94187",
+      "bytes": 5956
+    },
+    "master/femtovg/src/renderer/opengl/uniform_array.rs": {
+      "sha256": "bbf261f4cb464d7034365f86b2c559f29a3f348251c02ded9667fe6b9e229756",
+      "bytes": 3815
+    },
+    "master/femtovg/src/renderer/opengl.rs": {
+      "sha256": "11bc09404b7b2a11291ce78bae257b4e75c9af8ac8b56074fd316f5248ca1d51",
+      "bytes": 47184
+    },
+    "master/femtovg/src/renderer/params.rs": {
+      "sha256": "2406d865033afac974825a14af10353403e20c677490b661e3220497a9808fba",
+      "bytes": 15501
+    },
+    "master/femtovg/src/renderer/void.rs": {
+      "sha256": "484ae1e2b1591c7a58d89cb1dc3574979bb85f5c2ccde389a36753c733124508",
+      "bytes": 1894
+    },
+    "master/femtovg/src/renderer/wgpu/shader.wgsl": {
+      "sha256": "d9e810c2f1f99e17a5654e2a622fdc16ae5d72702dbbb0a7f313f39a3b833ed6",
+      "bytes": 28479
+    },
+    "master/femtovg/src/renderer/wgpu.rs": {
+      "sha256": "17f1e19df9a671e03f859563a6aa6d04a6579952dd4174a3412adaf082a8bda1",
+      "bytes": 88373
+    },
+    "master/femtovg/src/renderer.rs": {
+      "sha256": "297c75d5bcc61dff5eaa014c2f7b67e88be50537852246b0cccb62897978b263",
+      "bytes": 14007
+    },
+    "master/femtovg/src/text/atlas.rs": {
+      "sha256": "e8ba60fa500cc461563b1b48489fb101f053864a9c54d1576e049a6560be0d8e",
+      "bytes": 4875
+    },
+    "master/femtovg/src/text/font.rs": {
+      "sha256": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+      "bytes": 43204
+    },
+    "master/femtovg/src/text/textlayout.rs": {
+      "sha256": "048d0a638e09e530a86bdb2ae710533c5eeeed4fa68f7e26af92b25e0de6b558",
+      "bytes": 20099
+    },
+    "master/femtovg/src/text.rs": {
+      "sha256": "d930206006c49fdd46dfc82a16b63f58e9adf0f3533145692220408a092022da",
+      "bytes": 37763
+    },
+    "master/femtovg/src/transient.rs": {
+      "sha256": "dd2272797d8d656d8f2f881fec0df81c49c38a5871b5a2d633afc63bd902759e",
+      "bytes": 8984
+    },
+    "master/femtovg/src/turbulence.rs": {
+      "sha256": "b5f942634c21deda757850a9477d546e8e68dc7770454a30ea168453dee3b78d",
+      "bytes": 14605
+    },
+    "master/femtovg/tests/blend_filter_wgpu.rs": {
+      "sha256": "daf88145c2a7e42706ad0300a33853348621066ea09d0aafbe1e27749e1cb969",
+      "bytes": 9982
+    },
+    "master/femtovg/tests/blit_scissor_wgpu.rs": {
+      "sha256": "6bda98a9eeab99db6b4438aaf12dd42250dbc3e3a6019df9e1bc665550453544",
+      "bytes": 8190
+    },
+    "master/femtovg/tests/blur_quadrature_wgpu.rs": {
+      "sha256": "22d5a302ccace86f0cdc2545d1edf652ab57fdbe771d5c1a2a8d8d24de6024b7",
+      "bytes": 11351
+    },
+    "master/femtovg/tests/clip_abuse_wgpu.rs": {
+      "sha256": "93d2591192b797eb14b9d1fb0b2dc9f41acc8ba84d4a526157d60b35d1520487",
+      "bytes": 2151
+    },
+    "master/femtovg/tests/color_matrix_wgpu.rs": {
+      "sha256": "579ecadc113cee65de185ebb7758cadcd7bb536f038398437000b593ab0c1bf5",
+      "bytes": 11460
+    },
+    "master/femtovg/tests/color_transfer_wgpu.rs": {
+      "sha256": "c1fbf922cc651ef77a53fbaf814cfd09f34dbe1220e15a7863f1954aee90d4eb",
+      "bytes": 6033
+    },
+    "master/femtovg/tests/common/blend.rs": {
+      "sha256": "18d1e72132817a8c027fe662bbbc51308b332eeceb24c731878b064d8fa9e890",
+      "bytes": 5000
+    },
+    "master/femtovg/tests/common/mod.rs": {
+      "sha256": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74",
+      "bytes": 7372
+    },
+    "master/femtovg/tests/conic_scissor_wgpu.rs": {
+      "sha256": "a878861a53f749d16f9aca5e8682c93cd60b57318922562b907cf68b5cfb41bd",
+      "bytes": 5745
+    },
+    "master/femtovg/tests/evenodd_stencil_wgpu.rs": {
+      "sha256": "34dd9f6f69af5e3160ac798f1bab91b11756d59afbd0b0b834d512fde306b3fa",
+      "bytes": 6649
+    },
+    "master/femtovg/tests/fill_winding_wgpu.rs": {
+      "sha256": "731b394753aada7f7596f514fc640fafe5955d1f4e8b146b37ca41530f1b2541",
+      "bytes": 10844
+    },
+    "master/femtovg/tests/filter_chain_wgpu.rs": {
+      "sha256": "c17464bf8ac37b892b751afd354bc888fd44df85ff60074a004486eb1bb19a6d",
+      "bytes": 16096
+    },
+    "master/femtovg/tests/gradient_dither_wgpu.rs": {
+      "sha256": "99f0fbf0f907c92d27bde35bb483c62c65dff59d78db803819b0c7e14e0549e6",
+      "bytes": 4080
+    },
+    "master/femtovg/tests/gradient_paint_conformance_wgpu.rs": {
+      "sha256": "7114a8307039246c15d866edacb45ddefb56be9d352bc1e8ce3de8fcc6e57034",
+      "bytes": 32793
+    },
+    "master/femtovg/tests/gradient_stop_interpolation_wgpu.rs": {
+      "sha256": "f571e0198fd491a73ae0cd5b0c607a329ada3ad760f7854347913f343738b712",
+      "bytes": 8722
+    },
+    "master/femtovg/tests/gradient_stress_wgpu.rs": {
+      "sha256": "4112feb232ca6f876fedb5fde2e5dea2f7d97228033e81116d2cc5ae1de9baa0",
+      "bytes": 7086
+    },
+    "master/femtovg/tests/gradient_tail_pad_wgpu.rs": {
+      "sha256": "4f709dbb883380a38f0de6520223fb1d976d83c766ada184038fd82ecd0444e5",
+      "bytes": 9183
+    },
+    "master/femtovg/tests/hairline_stroke_wgpu.rs": {
+      "sha256": "0a2b58c3f579ac36455733cdc142642f9903e5d02e050e71a49e4607611c83a5",
+      "bytes": 2899
+    },
+    "master/femtovg/tests/image_blit_wgpu.rs": {
+      "sha256": "d10ea25ba9240da6d2cab1f0bea3d3407c68652ee8105c48068307a465ed9587",
+      "bytes": 5030
+    },
+    "master/femtovg/tests/image_update_bounds_wgpu.rs": {
+      "sha256": "3fc071a814cbf5fba7b1614d1188f26d29c253c17dbf901b30bba46aff37d45a",
+      "bytes": 4608
+    },
+    "master/femtovg/tests/image_update_contract.rs": {
+      "sha256": "85f9320ffe599f2f37729172d0ee1655621d7b413f97b61f41ca32f26d68d207",
+      "bytes": 4172
+    },
+    "master/femtovg/tests/integration.rs": {
+      "sha256": "44f0e35841833a57f9f14f1b2627217a0fd2459a81da8e993378c2d4b68d32b6",
+      "bytes": 32212
+    },
+    "master/femtovg/tests/layer_effects_wgpu.rs": {
+      "sha256": "9ffab31ad0a35c52a07bac2ad918c383e991b999794b770f884cea4dc1a9038b",
+      "bytes": 40171
+    },
+    "master/femtovg/tests/layer_masks_review_wgpu.rs": {
+      "sha256": "5336fe330221c3fc7b19c00a8b3976c571052a1a05a2c09a38c220540609d90c",
+      "bytes": 23189
+    },
+    "master/femtovg/tests/layer_state_wgpu.rs": {
+      "sha256": "8926b1de1d437312788a7d736b3bb719e969ee724da601646a62f2375cebcf9c",
+      "bytes": 11143
+    },
+    "master/femtovg/tests/mix_blend_wgpu.rs": {
+      "sha256": "c2e5132ae1678e97c6262ec24b5a47909670c9e2213fe3d1ed4a6a7c7f42daaf",
+      "bytes": 17980
+    },
+    "master/femtovg/tests/path_clip_wgpu.rs": {
+      "sha256": "4f17a64a0b4548bed8e6ab7d385b9e72ef50b00a0020e6567361db069d020d1f",
+      "bytes": 31838
+    },
+    "master/femtovg/tests/pipeline_key_wgpu.rs": {
+      "sha256": "a10ad4ac36342e067ff5dc72e4edc69dbe78e1da65ff31aff4c5357a0eca4a29",
+      "bytes": 5832
+    },
+    "master/femtovg/tests/rounded_rect_radii.rs": {
+      "sha256": "9dae9f726396bf95d801e9b20f2b312a7e0558eb0136ec0b50dcc567869f2a77",
+      "bytes": 20516
+    },
+    "master/femtovg/tests/shadow_pressure_wgpu.rs": {
+      "sha256": "43bd59a7bee18ebc9c3af44e3b541e458956adde64d706c900adb441c60bf292",
+      "bytes": 4072
+    },
+    "master/femtovg/tests/shadow_wgpu.rs": {
+      "sha256": "313b3185a66848b141e64458cad32253d946c54f76b121b339dca307199d3e6a",
+      "bytes": 28887
+    },
+    "master/femtovg/tests/text_scale_position_wgpu.rs": {
+      "sha256": "6a72d5b37dea340882fbe6b43ca7b640939ee6f74456f9ea97a336c412523cbb",
+      "bytes": 9517
+    },
+    "master/femtovg/tests/transform2D.rs": {
+      "sha256": "e1aafb52ee16402731cb372d2c441d9f294bbabb0a8c53cb2633a925a7d2c16c",
+      "bytes": 2237
+    },
+    "master/femtovg/tests/turbulence_wgpu.rs": {
+      "sha256": "4e7eadb2fd51a299a07f52b2858e8cd61fa1adb2ed8a89b93be0123040074d72",
+      "bytes": 22503
+    },
+    "master/femtovg/tests/uniform_slots_wgpu.rs": {
+      "sha256": "036ab088ddac14d5e8c37602b9a38b6ac3ade250d7ac6eb1c95d104f4365dba0",
+      "bytes": 2854
+    },
+    "master/femtovg/tests/wpt_clip_wgpu.rs": {
+      "sha256": "0284301923b5afae35bf522142c6fd4ffd0510046830c758bb1a986df96c9de2",
+      "bytes": 9858
+    },
+    "master/femtovg/tests/wpt_layers_wgpu.rs": {
+      "sha256": "5cc651774d02270ba3309a29f3ca776cfc1904eba5d20245b70912b78a55d14a",
+      "bytes": 32246
+    },
+    "master/femtovg/tests/zero_area_fill_wgpu.rs": {
+      "sha256": "c9abd2f173f55d151f9c8de375c3e928d93f008d646395b275a374fb0c3fdbda",
+      "bytes": 6417
+    },
+    "master/femtovg/tests/zoom_invariance_wgpu.rs": {
+      "sha256": "fb16f5daf9de78ed6d6e1579b0abb3ea5aa8900a417ccf4ab473a981e48840bc",
+      "bytes": 9595
+    },
+    "master/runner/Cargo.lock": {
+      "sha256": "98197496b0960bacc66b87ec809bead70b927e15adf20236b043e7b95f9edde3",
+      "bytes": 39357
+    },
+    "master/runner/Cargo.toml": {
+      "sha256": "c8f6dc861fc3311da4d761bec4ca833c0817d408b04a034f9abd9941c4aa4704",
+      "bytes": 360
+    },
+    "master/runner/src/controlled.rs": {
+      "sha256": "30f7d26a8fcb2e74698c92ce098733ce3f5b8f79ab12b05d0e0dd17cf110ef51",
+      "bytes": 4158
+    },
+    "master/runner/src/demo.rs": {
+      "sha256": "af2ee8d9ef983b1c7cbfde8406ca5262f41557781fad178b104c235653202cb2",
+      "bytes": 40847
+    },
+    "master/runner/src/font_variations.rs": {
+      "sha256": "da0144677abd6d3858bd2aece75a67306442bf3588d4a6a459bda1dcc19e88e1",
+      "bytes": 3783
+    },
+    "master/runner/src/main.rs": {
+      "sha256": "eb52ceaef28d47befe90b2007a2575060c0d3f4d482c891882bdb9fd66a6ae7d",
+      "bytes": 11009
+    },
+    "master/runner/src/perf_graph.rs": {
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "bytes": 2281
+    },
+    "master/runner/src/text.rs": {
+      "sha256": "4b55ff0a63685f4f11fd4c3cf860dc44c37945d270b205587454f19feacba944",
+      "bytes": 12083
+    },
+    "master-cpu.stderr": {
+      "sha256": "df4e7275852114c723b54a7bc4f866112c52de51d14f10a556fa0c7d336f7430",
+      "bytes": 1493
+    },
+    "master-cpu.stdout": {
+      "sha256": "e780aada21d592c481392ba6e0f4a22b9acde9ae0a99b62352e8e30474894442",
+      "bytes": 138
+    },
+    "master-gpu.stderr": {
+      "sha256": "846cd8d904b8c84f995effb32a47b2b8349af58cacec58f293e4b39588b6c40f",
+      "bytes": 1568
+    },
+    "master-gpu.stdout": {
+      "sha256": "4bc3d4e06f0fed7b6cb90f81c3a89f85d799a3ae5921d6ade916de063b4653b0",
+      "bytes": 140
+    },
+    "master-pixels/text-first_paint.rgba": {
+      "sha256": "a3e26b00cb45d9a49513270a36a067b8ec7d259d345489c16400fb5080a8c06b",
+      "bytes": 2400000
+    },
+    "master_no_path_draw/femtovg/.github/dependabot.yml": {
+      "sha256": "c63878becff6965f3d4cf33dd3f15ac488485514d315f44ff91e66f72fe5ce3e",
+      "bytes": 360
+    },
+    "master_no_path_draw/femtovg/.github/workflows/book.yml": {
+      "sha256": "dff6dd483c609dc2266944dae385226f5633845d385178eaa56662a40f372f80",
+      "bytes": 699
+    },
+    "master_no_path_draw/femtovg/.github/workflows/ci.yml": {
+      "sha256": "44f28c48d0ac2677fae2f14e26bdd65551dba068ca378b1f10ce95cfc2b59d96",
+      "bytes": 3169
+    },
+    "master_no_path_draw/femtovg/.gitignore": {
+      "sha256": "89cfd3589317368117fc00c558940e9f11674699f0768c66d6bfda9191dca515",
+      "bytes": 272
+    },
+    "master_no_path_draw/femtovg/CHANGELOG.md": {
+      "sha256": "f1811362ca1c49685a6ca12c70e5a7e7055a7ff308aafe394368782db6a6e986",
+      "bytes": 32493
+    },
+    "master_no_path_draw/femtovg/Cargo.toml": {
+      "sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+      "bytes": 3630
+    },
+    "master_no_path_draw/femtovg/LICENSE-APACHE": {
+      "sha256": "a88a993a1c7aaeb5f0d0c0aa5d206c8735eeffb153a922826d14ec92752316ee",
+      "bytes": 558
+    },
+    "master_no_path_draw/femtovg/LICENSE-MIT": {
+      "sha256": "cd4eb10b20da1d85916624e0e15a8e76b0a66406996a4f9aa5afee909fecfb7e",
+      "bytes": 1072
+    },
+    "master_no_path_draw/femtovg/README.md": {
+      "sha256": "3e4421aaeabb44453fd302a0eaee7e5c6518f5ac79a10b72a5498869665d624b",
+      "bytes": 3638
+    },
+    "master_no_path_draw/femtovg/assets/breakout.png": {
+      "sha256": "5eef13bafd86cc30722ee20a57cb3cba12276ce5baec6f7efc2f2faaa3f486e0",
+      "bytes": 49781
+    },
+    "master_no_path_draw/femtovg/assets/demo.png": {
+      "sha256": "d74334132435f473770ed574003658b771f2c2590b0f62d6cbf429251b941b90",
+      "bytes": 181424
+    },
+    "master_no_path_draw/femtovg/assets/gpupathrender.pdf": {
+      "sha256": "a09a09b3782c062c54021b6d2359f664bd6f205e57698e7a18d94d8cdb0f6f41",
+      "bytes": 6494900
+    },
+    "master_no_path_draw/femtovg/assets/screen.frag.glsl": {
+      "sha256": "72938b9538d2c606a0b04920b917f37681ecd2da89e3cf7c77176302a9360d81",
+      "bytes": 312
+    },
+    "master_no_path_draw/femtovg/assets/screen.vert.glsl": {
+      "sha256": "544ca5528d9b8564c62de6ed01591e9e86ea27ae8cc578a3c7e4da9b62062c2a",
+      "bytes": 295
+    },
+    "master_no_path_draw/femtovg/assets/svg.png": {
+      "sha256": "3b4696ff8bda4a6bc2132d2c4307f4791cec1360e68bb2abd3ff9574705bfb77",
+      "bytes": 165116
+    },
+    "master_no_path_draw/femtovg/assets/text.png": {
+      "sha256": "010aca7fd3a1c71e814ba0d3e947cc02e59b36a7631b6bb307e0faa5de4144c7",
+      "bytes": 259412
+    },
+    "master_no_path_draw/femtovg/book/.gitignore": {
+      "sha256": "3c4dbff9eeda9410a0b9eb423472981db8997d666388b4cd2424700c3974d64b",
+      "bytes": 5
+    },
+    "master_no_path_draw/femtovg/book/book.toml": {
+      "sha256": "4c552d588da75529d0fa0be860d47086b237bc803dc0dd84886c1e5ae349d056",
+      "bytes": 108
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/0_intro.md": {
+      "sha256": "0bbd6e82d32c235a06f1fd8d4502f4cdeae09012a34afdb29c4ddaefb9bba169",
+      "bytes": 395
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/1_setting_up.md": {
+      "sha256": "0d8625bf1e241977b41e9fd50f50cb9d7bd7b308813f938142b80d05e205c422",
+      "bytes": 3976
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/1_setting_up.rs": {
+      "sha256": "e764a0198cd6692f1eb3168d88ddfe487f80c90e9790f16bb86d6d2b39035d58",
+      "bytes": 2472
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/2_app.png": {
+      "sha256": "0b744b40dbadab32da029d671f88df97022350ff2f079be0f033b17626a3d42f",
+      "bytes": 6966
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/2_rendering.md": {
+      "sha256": "431eb92cff0a25a54900fb7ca86e7cd87851c664f645d9cb0d6e76ef43fe127e",
+      "bytes": 2348
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/2_rendering.rs": {
+      "sha256": "26b84fcbba73f65e3461976e8038a1fbd5f62fc3a166d89ad1c53bee94ea1857",
+      "bytes": 3961
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/3_event_loop.md": {
+      "sha256": "742209797884afae89494a8f9cedc761fe54904b7fce8c2a301de18877ef6a76",
+      "bytes": 6712
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/3_event_loop.rs": {
+      "sha256": "546f2a0cbe3aa9db4677bc764719980fc409af19c3e576b1aa72cad4b63eb34b",
+      "bytes": 4788
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/3_final.png": {
+      "sha256": "9dffd90deece17a83f9ad806bf7316717316c7d390809b4a4b5a02aa4bcf6c83",
+      "bytes": 7502
+    },
+    "master_no_path_draw/femtovg/book/src/1_getting_started/3_red_paint.png": {
+      "sha256": "6c02eb7040bc678c1d7d06359b4b4fff40ab8444865d2c2801a6f89e04591f45",
+      "bytes": 12467
+    },
+    "master_no_path_draw/femtovg/book/src/SUMMARY.md": {
+      "sha256": "736b25819b9388e66279ecf217bb9bc57579ab26b93945d9b4df7bcc359f5095",
+      "bytes": 245
+    },
+    "master_no_path_draw/femtovg/book/src/demo.png": {
+      "sha256": "b6ae64e28a5c02fac102434b7caaf81b815e0230f100e9791676a0e05e58e104",
+      "bytes": 134372
+    },
+    "master_no_path_draw/femtovg/book/src/index.md": {
+      "sha256": "98db579a801beb283fc7f50b5acaaf44808c6dd470671d21368299d09c7873c2",
+      "bytes": 618
+    },
+    "master_no_path_draw/femtovg/build.rs": {
+      "sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+      "bytes": 223
+    },
+    "master_no_path_draw/femtovg/examples/README.md": {
+      "sha256": "2eebced8dab783de944e45f621bd11a9370d27ffa84eb268aece0ea234cb0236",
+      "bytes": 483
+    },
+    "master_no_path_draw/femtovg/examples/assets/Ghostscript_Tiger.svg": {
+      "sha256": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+      "bytes": 68629
+    },
+    "master_no_path_draw/femtovg/examples/assets/LICENSE-Roboto": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "master_no_path_draw/femtovg/examples/assets/RobotoFlex-VariableFont.ttf": {
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+      "bytes": 227888
+    },
+    "master_no_path_draw/femtovg/examples/assets/amiri-regular.ttf": {
+      "sha256": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+      "bytes": 610836
+    },
+    "master_no_path_draw/femtovg/examples/assets/entypo.ttf": {
+      "sha256": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+      "bytes": 35392
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image1.jpg": {
+      "sha256": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+      "bytes": 25760
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image10.jpg": {
+      "sha256": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+      "bytes": 3439
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image11.jpg": {
+      "sha256": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+      "bytes": 3818
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image12.jpg": {
+      "sha256": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+      "bytes": 5452
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image2.jpg": {
+      "sha256": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+      "bytes": 24091
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image3.jpg": {
+      "sha256": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+      "bytes": 29282
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image4.jpg": {
+      "sha256": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+      "bytes": 23830
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image5.jpg": {
+      "sha256": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+      "bytes": 27131
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image6.jpg": {
+      "sha256": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+      "bytes": 25116
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image7.jpg": {
+      "sha256": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+      "bytes": 25590
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image8.jpg": {
+      "sha256": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+      "bytes": 24607
+    },
+    "master_no_path_draw/femtovg/examples/assets/images/image9.jpg": {
+      "sha256": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+      "bytes": 4035
+    },
+    "master_no_path_draw/femtovg/examples/assets/pattern.jpg": {
+      "sha256": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+      "bytes": 33638
+    },
+    "master_no_path_draw/femtovg/examples/assets/rust-logo.png": {
+      "sha256": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596",
+      "bytes": 50672
+    },
+    "master_no_path_draw/femtovg/examples/breakout.rs": {
+      "sha256": "da7da922fc9e0d38250340c4ed027ab975468e035013dcc616da9beba44ad90c",
+      "bytes": 39538
+    },
+    "master_no_path_draw/femtovg/examples/demo.rs": {
+      "sha256": "ac4f547feb8d3f029ac21a88f328fb498595a5a5d02143238e9ffa1de5f1b9f6",
+      "bytes": 45923
+    },
+    "master_no_path_draw/femtovg/examples/external_text_cosmic.rs": {
+      "sha256": "5463ba67fda5b6b588413f09cdd63550b83027c90937ace79c610eecc245a26a",
+      "bytes": 10659
+    },
+    "master_no_path_draw/femtovg/examples/external_text_parley.rs": {
+      "sha256": "2533d48ddfc4d298f668c990eb8547e4403b4c3e521a4372620e766e94b3a665",
+      "bytes": 13786
+    },
+    "master_no_path_draw/femtovg/examples/font_variations.rs": {
+      "sha256": "13c2c4c3c17c041c5ceabd37194e16437f9007e9536f2d4090aad6bf57fc50e3",
+      "bytes": 5496
+    },
+    "master_no_path_draw/femtovg/examples/gradients.rs": {
+      "sha256": "64d1373b0ef22d96f159f16175e7c0fb1f80ba20d51e856c1498b3f653ee2882",
+      "bytes": 23873
+    },
+    "master_no_path_draw/femtovg/examples/helpers/mod.rs": {
+      "sha256": "4978fa74c246aef34b46d190b25d8a3d1a930219dde19cc43b972e0ce75bfbdf",
+      "bytes": 1406
+    },
+    "master_no_path_draw/femtovg/examples/helpers/opengl.rs": {
+      "sha256": "cf151a4d52f18ad7cb1d64d3ce888929f92688918c66851582555ec6977b508f",
+      "bytes": 8663
+    },
+    "master_no_path_draw/femtovg/examples/helpers/perf_graph.rs": {
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "bytes": 2281
+    },
+    "master_no_path_draw/femtovg/examples/helpers/wgpu.rs": {
+      "sha256": "0869f2ca78f964294236f43cbe8dbfb5d0f9b8810e888b0df49e6d69bb238b01",
+      "bytes": 11357
+    },
+    "master_no_path_draw/femtovg/examples/index.html": {
+      "sha256": "84efe3d72dd1a8229830b5bd3e7024accc693bcb1f1097d7385907082ff54cc2",
+      "bytes": 288
+    },
+    "master_no_path_draw/femtovg/examples/many_rects.rs": {
+      "sha256": "8ef3bca1ba6cba849bfc6b7bce000620660430113e2178a533190cde1d0e4348",
+      "bytes": 3170
+    },
+    "master_no_path_draw/femtovg/examples/paint_filter.rs": {
+      "sha256": "80367fe28437e15d58a2ce844b1c8ff03b54214b3048de297a34b5e52b5eb526",
+      "bytes": 4124
+    },
+    "master_no_path_draw/femtovg/examples/paint_image.rs": {
+      "sha256": "b5a43796ec821e8ca4a2553e8cf0dfe1a9a6fc224a0d4b325f750ddfc48db191",
+      "bytes": 8334
+    },
+    "master_no_path_draw/femtovg/examples/shader.rs": {
+      "sha256": "22ef531e6ca7895ed3cb1ccc5832b0da1d485ae3563dbdcb46e0338f9892cfbd",
+      "bytes": 10565
+    },
+    "master_no_path_draw/femtovg/examples/svg.rs": {
+      "sha256": "defb8e5b7ffcd76580cce93b17e98eb55afb75a5cf3575fd4dce3cebe73f3765",
+      "bytes": 7748
+    },
+    "master_no_path_draw/femtovg/examples/text.rs": {
+      "sha256": "0b24bb6c99cd3414789e6c8fea9689ce916f49e8dbc4b74b4e5d548be8d83358",
+      "bytes": 15015
+    },
+    "master_no_path_draw/femtovg/rustfmt.toml": {
+      "sha256": "f367a18c7ef1f48267c9f9c2e0c239b10533a6e59dca3c60db18ab39c99514ff",
+      "bytes": 98
+    },
+    "master_no_path_draw/femtovg/src/color.rs": {
+      "sha256": "b1e50257884ba24005f606e1c56606650d49597720e6890757b1037ef6620cf1",
+      "bytes": 4650
+    },
+    "master_no_path_draw/femtovg/src/error.rs": {
+      "sha256": "0ca2faf7832e2173dc4d6cf599b948b722b7e1530a4a39a3ecb8487679248e44",
+      "bytes": 2582
+    },
+    "master_no_path_draw/femtovg/src/geometry.rs": {
+      "sha256": "9e2f8b3eb1faedfc04524f2239adf3b1d23180a5ecf67b0faaf28cc46c9aa65b",
+      "bytes": 15594
+    },
+    "master_no_path_draw/femtovg/src/gradient_store.rs": {
+      "sha256": "c9919c37f4d9d7011fd07efded19dee376f4b83bedcf651fc2257060712624d9",
+      "bytes": 8030
+    },
+    "master_no_path_draw/femtovg/src/image.rs": {
+      "sha256": "edb434fc417cab0cc85a75c0ddcfeb9f03eed7bcb2fdd5655fbef0401237c10b",
+      "bytes": 40698
+    },
+    "master_no_path_draw/femtovg/src/lib.rs": {
+      "sha256": "1bf51e3b61f0aa74d4ce7fada53e089e026fc773198069968a5961fdf4529359",
+      "bytes": 376196
+    },
+    "master_no_path_draw/femtovg/src/paint.rs": {
+      "sha256": "9f817f03ae9a36772831f75a0c9b8c3d63a87e55c0cd66a232b23d37e135f376",
+      "bytes": 67375
+    },
+    "master_no_path_draw/femtovg/src/path/cache.rs": {
+      "sha256": "21153a3f0662ef3fa10d9c53eed3b3c76847c2233417d67fa45a36a712a89963",
+      "bytes": 51417
+    },
+    "master_no_path_draw/femtovg/src/path.rs": {
+      "sha256": "e95160b66143d1637b00c3f8102bccb3b7f56d7f4960bad69ff6e0112ace3d9a",
+      "bytes": 91779
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl/framebuffer.rs": {
+      "sha256": "ef52dfc86e7094b0f6d661a5fc8e179e1f896f553234151007a3f35df6296a86",
+      "bytes": 4829
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl/gl_texture.rs": {
+      "sha256": "2826bb6eee3169fc37b6e35f6dbafdf8f90ab9cea4960d9540a629250fdb8315",
+      "bytes": 10648
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl/main-fs.glsl": {
+      "sha256": "238a4b0009717c2672a59d036041eabd8fc8de2cb9d7cf9ca9cc1658e636feb3",
+      "bytes": 23312
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl/main-vs.glsl": {
+      "sha256": "aac43ab9b49f186da3c8e6c6036d2c1a6e9e652d34ad56189535c501cc3244fc",
+      "bytes": 276
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl/program.rs": {
+      "sha256": "d776f3f333af40774543732eaa118d6b72e2c54d815744c8156f0c1de6f94187",
+      "bytes": 5956
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl/uniform_array.rs": {
+      "sha256": "bbf261f4cb464d7034365f86b2c559f29a3f348251c02ded9667fe6b9e229756",
+      "bytes": 3815
+    },
+    "master_no_path_draw/femtovg/src/renderer/opengl.rs": {
+      "sha256": "11bc09404b7b2a11291ce78bae257b4e75c9af8ac8b56074fd316f5248ca1d51",
+      "bytes": 47184
+    },
+    "master_no_path_draw/femtovg/src/renderer/params.rs": {
+      "sha256": "2406d865033afac974825a14af10353403e20c677490b661e3220497a9808fba",
+      "bytes": 15501
+    },
+    "master_no_path_draw/femtovg/src/renderer/void.rs": {
+      "sha256": "484ae1e2b1591c7a58d89cb1dc3574979bb85f5c2ccde389a36753c733124508",
+      "bytes": 1894
+    },
+    "master_no_path_draw/femtovg/src/renderer/wgpu/shader.wgsl": {
+      "sha256": "d9e810c2f1f99e17a5654e2a622fdc16ae5d72702dbbb0a7f313f39a3b833ed6",
+      "bytes": 28479
+    },
+    "master_no_path_draw/femtovg/src/renderer/wgpu.rs": {
+      "sha256": "17f1e19df9a671e03f859563a6aa6d04a6579952dd4174a3412adaf082a8bda1",
+      "bytes": 88373
+    },
+    "master_no_path_draw/femtovg/src/renderer.rs": {
+      "sha256": "297c75d5bcc61dff5eaa014c2f7b67e88be50537852246b0cccb62897978b263",
+      "bytes": 14007
+    },
+    "master_no_path_draw/femtovg/src/text/atlas.rs": {
+      "sha256": "e8ba60fa500cc461563b1b48489fb101f053864a9c54d1576e049a6560be0d8e",
+      "bytes": 4875
+    },
+    "master_no_path_draw/femtovg/src/text/font.rs": {
+      "sha256": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+      "bytes": 43204
+    },
+    "master_no_path_draw/femtovg/src/text/textlayout.rs": {
+      "sha256": "048d0a638e09e530a86bdb2ae710533c5eeeed4fa68f7e26af92b25e0de6b558",
+      "bytes": 20099
+    },
+    "master_no_path_draw/femtovg/src/text.rs": {
+      "sha256": "e999e249cf50c1aadf4e8edd43846b5fd6f3d0b3ea46f3232c75f54a8555a114",
+      "bytes": 37757
+    },
+    "master_no_path_draw/femtovg/src/transient.rs": {
+      "sha256": "dd2272797d8d656d8f2f881fec0df81c49c38a5871b5a2d633afc63bd902759e",
+      "bytes": 8984
+    },
+    "master_no_path_draw/femtovg/src/turbulence.rs": {
+      "sha256": "b5f942634c21deda757850a9477d546e8e68dc7770454a30ea168453dee3b78d",
+      "bytes": 14605
+    },
+    "master_no_path_draw/femtovg/tests/blend_filter_wgpu.rs": {
+      "sha256": "daf88145c2a7e42706ad0300a33853348621066ea09d0aafbe1e27749e1cb969",
+      "bytes": 9982
+    },
+    "master_no_path_draw/femtovg/tests/blit_scissor_wgpu.rs": {
+      "sha256": "6bda98a9eeab99db6b4438aaf12dd42250dbc3e3a6019df9e1bc665550453544",
+      "bytes": 8190
+    },
+    "master_no_path_draw/femtovg/tests/blur_quadrature_wgpu.rs": {
+      "sha256": "22d5a302ccace86f0cdc2545d1edf652ab57fdbe771d5c1a2a8d8d24de6024b7",
+      "bytes": 11351
+    },
+    "master_no_path_draw/femtovg/tests/clip_abuse_wgpu.rs": {
+      "sha256": "93d2591192b797eb14b9d1fb0b2dc9f41acc8ba84d4a526157d60b35d1520487",
+      "bytes": 2151
+    },
+    "master_no_path_draw/femtovg/tests/color_matrix_wgpu.rs": {
+      "sha256": "579ecadc113cee65de185ebb7758cadcd7bb536f038398437000b593ab0c1bf5",
+      "bytes": 11460
+    },
+    "master_no_path_draw/femtovg/tests/color_transfer_wgpu.rs": {
+      "sha256": "c1fbf922cc651ef77a53fbaf814cfd09f34dbe1220e15a7863f1954aee90d4eb",
+      "bytes": 6033
+    },
+    "master_no_path_draw/femtovg/tests/common/blend.rs": {
+      "sha256": "18d1e72132817a8c027fe662bbbc51308b332eeceb24c731878b064d8fa9e890",
+      "bytes": 5000
+    },
+    "master_no_path_draw/femtovg/tests/common/mod.rs": {
+      "sha256": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74",
+      "bytes": 7372
+    },
+    "master_no_path_draw/femtovg/tests/conic_scissor_wgpu.rs": {
+      "sha256": "a878861a53f749d16f9aca5e8682c93cd60b57318922562b907cf68b5cfb41bd",
+      "bytes": 5745
+    },
+    "master_no_path_draw/femtovg/tests/evenodd_stencil_wgpu.rs": {
+      "sha256": "34dd9f6f69af5e3160ac798f1bab91b11756d59afbd0b0b834d512fde306b3fa",
+      "bytes": 6649
+    },
+    "master_no_path_draw/femtovg/tests/fill_winding_wgpu.rs": {
+      "sha256": "731b394753aada7f7596f514fc640fafe5955d1f4e8b146b37ca41530f1b2541",
+      "bytes": 10844
+    },
+    "master_no_path_draw/femtovg/tests/filter_chain_wgpu.rs": {
+      "sha256": "c17464bf8ac37b892b751afd354bc888fd44df85ff60074a004486eb1bb19a6d",
+      "bytes": 16096
+    },
+    "master_no_path_draw/femtovg/tests/gradient_dither_wgpu.rs": {
+      "sha256": "99f0fbf0f907c92d27bde35bb483c62c65dff59d78db803819b0c7e14e0549e6",
+      "bytes": 4080
+    },
+    "master_no_path_draw/femtovg/tests/gradient_paint_conformance_wgpu.rs": {
+      "sha256": "7114a8307039246c15d866edacb45ddefb56be9d352bc1e8ce3de8fcc6e57034",
+      "bytes": 32793
+    },
+    "master_no_path_draw/femtovg/tests/gradient_stop_interpolation_wgpu.rs": {
+      "sha256": "f571e0198fd491a73ae0cd5b0c607a329ada3ad760f7854347913f343738b712",
+      "bytes": 8722
+    },
+    "master_no_path_draw/femtovg/tests/gradient_stress_wgpu.rs": {
+      "sha256": "4112feb232ca6f876fedb5fde2e5dea2f7d97228033e81116d2cc5ae1de9baa0",
+      "bytes": 7086
+    },
+    "master_no_path_draw/femtovg/tests/gradient_tail_pad_wgpu.rs": {
+      "sha256": "4f709dbb883380a38f0de6520223fb1d976d83c766ada184038fd82ecd0444e5",
+      "bytes": 9183
+    },
+    "master_no_path_draw/femtovg/tests/hairline_stroke_wgpu.rs": {
+      "sha256": "0a2b58c3f579ac36455733cdc142642f9903e5d02e050e71a49e4607611c83a5",
+      "bytes": 2899
+    },
+    "master_no_path_draw/femtovg/tests/image_blit_wgpu.rs": {
+      "sha256": "d10ea25ba9240da6d2cab1f0bea3d3407c68652ee8105c48068307a465ed9587",
+      "bytes": 5030
+    },
+    "master_no_path_draw/femtovg/tests/image_update_bounds_wgpu.rs": {
+      "sha256": "3fc071a814cbf5fba7b1614d1188f26d29c253c17dbf901b30bba46aff37d45a",
+      "bytes": 4608
+    },
+    "master_no_path_draw/femtovg/tests/image_update_contract.rs": {
+      "sha256": "85f9320ffe599f2f37729172d0ee1655621d7b413f97b61f41ca32f26d68d207",
+      "bytes": 4172
+    },
+    "master_no_path_draw/femtovg/tests/integration.rs": {
+      "sha256": "44f0e35841833a57f9f14f1b2627217a0fd2459a81da8e993378c2d4b68d32b6",
+      "bytes": 32212
+    },
+    "master_no_path_draw/femtovg/tests/layer_effects_wgpu.rs": {
+      "sha256": "9ffab31ad0a35c52a07bac2ad918c383e991b999794b770f884cea4dc1a9038b",
+      "bytes": 40171
+    },
+    "master_no_path_draw/femtovg/tests/layer_masks_review_wgpu.rs": {
+      "sha256": "5336fe330221c3fc7b19c00a8b3976c571052a1a05a2c09a38c220540609d90c",
+      "bytes": 23189
+    },
+    "master_no_path_draw/femtovg/tests/layer_state_wgpu.rs": {
+      "sha256": "8926b1de1d437312788a7d736b3bb719e969ee724da601646a62f2375cebcf9c",
+      "bytes": 11143
+    },
+    "master_no_path_draw/femtovg/tests/mix_blend_wgpu.rs": {
+      "sha256": "c2e5132ae1678e97c6262ec24b5a47909670c9e2213fe3d1ed4a6a7c7f42daaf",
+      "bytes": 17980
+    },
+    "master_no_path_draw/femtovg/tests/path_clip_wgpu.rs": {
+      "sha256": "4f17a64a0b4548bed8e6ab7d385b9e72ef50b00a0020e6567361db069d020d1f",
+      "bytes": 31838
+    },
+    "master_no_path_draw/femtovg/tests/pipeline_key_wgpu.rs": {
+      "sha256": "a10ad4ac36342e067ff5dc72e4edc69dbe78e1da65ff31aff4c5357a0eca4a29",
+      "bytes": 5832
+    },
+    "master_no_path_draw/femtovg/tests/rounded_rect_radii.rs": {
+      "sha256": "9dae9f726396bf95d801e9b20f2b312a7e0558eb0136ec0b50dcc567869f2a77",
+      "bytes": 20516
+    },
+    "master_no_path_draw/femtovg/tests/shadow_pressure_wgpu.rs": {
+      "sha256": "43bd59a7bee18ebc9c3af44e3b541e458956adde64d706c900adb441c60bf292",
+      "bytes": 4072
+    },
+    "master_no_path_draw/femtovg/tests/shadow_wgpu.rs": {
+      "sha256": "313b3185a66848b141e64458cad32253d946c54f76b121b339dca307199d3e6a",
+      "bytes": 28887
+    },
+    "master_no_path_draw/femtovg/tests/text_scale_position_wgpu.rs": {
+      "sha256": "6a72d5b37dea340882fbe6b43ca7b640939ee6f74456f9ea97a336c412523cbb",
+      "bytes": 9517
+    },
+    "master_no_path_draw/femtovg/tests/transform2D.rs": {
+      "sha256": "e1aafb52ee16402731cb372d2c441d9f294bbabb0a8c53cb2633a925a7d2c16c",
+      "bytes": 2237
+    },
+    "master_no_path_draw/femtovg/tests/turbulence_wgpu.rs": {
+      "sha256": "4e7eadb2fd51a299a07f52b2858e8cd61fa1adb2ed8a89b93be0123040074d72",
+      "bytes": 22503
+    },
+    "master_no_path_draw/femtovg/tests/uniform_slots_wgpu.rs": {
+      "sha256": "036ab088ddac14d5e8c37602b9a38b6ac3ade250d7ac6eb1c95d104f4365dba0",
+      "bytes": 2854
+    },
+    "master_no_path_draw/femtovg/tests/wpt_clip_wgpu.rs": {
+      "sha256": "0284301923b5afae35bf522142c6fd4ffd0510046830c758bb1a986df96c9de2",
+      "bytes": 9858
+    },
+    "master_no_path_draw/femtovg/tests/wpt_layers_wgpu.rs": {
+      "sha256": "5cc651774d02270ba3309a29f3ca776cfc1904eba5d20245b70912b78a55d14a",
+      "bytes": 32246
+    },
+    "master_no_path_draw/femtovg/tests/zero_area_fill_wgpu.rs": {
+      "sha256": "c9abd2f173f55d151f9c8de375c3e928d93f008d646395b275a374fb0c3fdbda",
+      "bytes": 6417
+    },
+    "master_no_path_draw/femtovg/tests/zoom_invariance_wgpu.rs": {
+      "sha256": "fb16f5daf9de78ed6d6e1579b0abb3ea5aa8900a417ccf4ab473a981e48840bc",
+      "bytes": 9595
+    },
+    "master_no_path_draw/runner/Cargo.lock": {
+      "sha256": "98197496b0960bacc66b87ec809bead70b927e15adf20236b043e7b95f9edde3",
+      "bytes": 39357
+    },
+    "master_no_path_draw/runner/Cargo.toml": {
+      "sha256": "c8f6dc861fc3311da4d761bec4ca833c0817d408b04a034f9abd9941c4aa4704",
+      "bytes": 360
+    },
+    "master_no_path_draw/runner/src/controlled.rs": {
+      "sha256": "30f7d26a8fcb2e74698c92ce098733ce3f5b8f79ab12b05d0e0dd17cf110ef51",
+      "bytes": 4158
+    },
+    "master_no_path_draw/runner/src/demo.rs": {
+      "sha256": "af2ee8d9ef983b1c7cbfde8406ca5262f41557781fad178b104c235653202cb2",
+      "bytes": 40847
+    },
+    "master_no_path_draw/runner/src/font_variations.rs": {
+      "sha256": "da0144677abd6d3858bd2aece75a67306442bf3588d4a6a459bda1dcc19e88e1",
+      "bytes": 3783
+    },
+    "master_no_path_draw/runner/src/main.rs": {
+      "sha256": "eb52ceaef28d47befe90b2007a2575060c0d3f4d482c891882bdb9fd66a6ae7d",
+      "bytes": 11009
+    },
+    "master_no_path_draw/runner/src/perf_graph.rs": {
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "bytes": 2281
+    },
+    "master_no_path_draw/runner/src/text.rs": {
+      "sha256": "4b55ff0a63685f4f11fd4c3cf860dc44c37945d270b205587454f19feacba944",
+      "bytes": 12083
+    },
+    "master_no_path_draw-gpu.stderr": {
+      "sha256": "846cd8d904b8c84f995effb32a47b2b8349af58cacec58f293e4b39588b6c40f",
+      "bytes": 1568
+    },
+    "master_no_path_draw-gpu.stdout": {
+      "sha256": "a9f7952e3bb771b6cea3c302926d2e9468d9cea4fb9611fbdd0eee887f570ec2",
+      "bytes": 138
+    },
+    "master_no_path_draw-pixels/text-first_paint.rgba": {
+      "sha256": "25bc009212c276a77595872837275b821ec3e0a4faa05ec71030b50b97648e4b",
+      "bytes": 2400000
+    },
+    "pixel-results.json": {
+      "sha256": "f64a25de29881b5642e69bd589c1698926ac3e22470cdf561ed10af8df10abc6",
+      "bytes": 486
+    },
+    "provenance.json": {
+      "sha256": "5fe5a92c3344b767ee097453f60067dd8e6104ca496eeedac5e378efbed7078f",
+      "bytes": 3111
+    },
+    "run.py": {
+      "sha256": "872dc82ba11d773e9686f616085b123e0253666be6d64d61bd22d72184e8b997",
+      "bytes": 853
+    }
+  },
+  "omitted": [
+    {
+      "path": "gray8-runner",
+      "bytes": 9984672,
+      "reason": "compiled executable; build provenance retains its hash"
+    },
+    {
+      "path": "master-runner",
+      "bytes": 9806320,
+      "reason": "compiled executable; build provenance retains its hash"
+    },
+    {
+      "path": "master_no_path_draw-runner",
+      "bytes": 9806752,
+      "reason": "compiled executable; build provenance retains its hash"
+    }
+  ],
+  "complete": true,
+  "archive": {
+    "path": "records.tar.gz",
+    "sha256": "3b7159008fb709f3e39239034e970cf0fab2ac5536b7002afe9bd6de9769a3c5",
+    "bytes": 5947952
+  },
+  "raw_bytes": 38732063,
+  "unique_content_bytes": 17851521
+}

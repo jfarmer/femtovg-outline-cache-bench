@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "label": "pt-sans-font-study",
+  "original_root": "/private/tmp/pt-sans-outline-review",
+  "retention": "All noncompiled files, including incomplete/rejected cohorts; inclusion in the archive does not imply inclusion in a timing analysis",
+  "storage": "Lossless tar hardlinks deduplicate identical file contents; every original path and byte checksum is retained",
+  "files": {
+    "REPORT.md": {
+      "sha256": "999d50ca43853e5c89f0a97ead5ca17182dfb09d50b85707ecb9e831dc89bc04",
+      "bytes": 10265
+    },
+    "REPRODUCE.md": {
+      "sha256": "921de5c4ef2b8779d28115b96e5f2044b593d7338f308221f1f5e07e13d35985",
+      "bytes": 4843
+    },
+    "existing-binary-audit.json": {
+      "sha256": "3ed29496308c0f306e2191806d1b9fcd01e1962d6ddd6512539f2a5f27437922",
+      "bytes": 1125
+    },
+    "first-render-comparison-data.json": {
+      "sha256": "91e8bc609efa3598b0060eeca22f9663d658d529fa1fae617298014926c732bb",
+      "bytes": 1424
+    },
+    "first-render-comparison.png": {
+      "sha256": "af955338c656789adb9186b7a12da6ea3db864d2159ea2ebcd899e62a1b0d53d",
+      "bytes": 90655
+    },
+    "first-render-comparison.svg": {
+      "sha256": "696ad55b00d75275b61b8edc1451a116eb0fefcf2ac6bb3b5e704dc046315960",
+      "bytes": 82747
+    },
+    "independent-audit.json": {
+      "sha256": "e6e357dd638d0b7ec16d7149355722d82adcbfe6e4a2df57cffe24316cb90344",
+      "bytes": 43905
+    },
+    "independent_audit.py": {
+      "sha256": "2513da3ce33737d04a5f677936915141c550c7393b160ca2e28b1353f9fb76f7",
+      "bytes": 20548
+    },
+    "measurement-plan.json": {
+      "sha256": "98c6be80f8af9d1bb56e7ef60d26efc759667537a6f1ce5d73d52db2576bf2b8",
+      "bytes": 1247
+    },
+    "previous-runner-provenance.json": {
+      "sha256": "4b31476c427d2ad0eaa0daad657a5d9862b4cce68b38d68f9d9da0abf327cc84",
+      "bytes": 511
+    },
+    "previous-runners/alustin.py": {
+      "sha256": "2e7245168bb6877e10086f7e14664b1ec83882b38b800b399b44c785fe97466d",
+      "bytes": 22240
+    },
+    "previous-runners/replay.py": {
+      "sha256": "a23cac3b734f054caf9588b78f0a4808beae194170aa34e3a49a97fccc2a11ac",
+      "bytes": 14719
+    },
+    "report-work/create_report.py": {
+      "sha256": "286fd36bb110a6fdc1ca14a694e78046ecf3a8000804dc597ead43ec0d91d089",
+      "bytes": 15719
+    },
+    "report-work/matplotlib-cache/fontlist-v390.json": {
+      "sha256": "63c7ebd2b49f480a78c23f21149326430066f85f99f114d561a9d8d91a26d569",
+      "bytes": 180361
+    },
+    "used-runner-provenance.json": {
+      "sha256": "cfa1a38934d4e79d6e134956cf8a00ba248ab9e718b6e6df5b567daade0e1420",
+      "bytes": 1635
+    },
+    "used-runners/alustin-analyze.py": {
+      "sha256": "9dbec253a61395caf49d56f83b61623983649f34fd4078199cfd039bab9d78bf",
+      "bytes": 18279
+    },
+    "used-runners/alustin-run.py": {
+      "sha256": "800c7247cb60323061f3ea67a6db32dcd8187e7d43f9818d1ccbceed2b3edcb7",
+      "bytes": 22375
+    },
+    "used-runners/benchmark_helpers.py": {
+      "sha256": "88772983d739f8e5766d8791f7ed50a73b67710438daa2ccf07d2576a3e330bb",
+      "bytes": 4550
+    },
+    "used-runners/replay-run.py": {
+      "sha256": "c346075e304c3ac669aff1a4a5dcabd3dbfd4154c83b8113d5e93eafb5cd0533",
+      "bytes": 15092
+    },
+    "used-runners/replay-summarize.py": {
+      "sha256": "870f737edfe279f9e8fb2786407590ab243ffb35e9c75b4d6cf5c594e7182b94",
+      "bytes": 10156
+    },
+    "used-runners/verify_actual_fonts.py": {
+      "sha256": "d701ff5cafef1a1ce530a1105d2d21162ef2862e7d5e7e5567fd6070fdc80230",
+      "bytes": 3613
+    },
+    "visual-check.json": {
+      "sha256": "1e79cc7dbe863fd72a7b1f1b2c1fa4f4b7efcc3c6cbc59194003a9ea1b1c2e71",
+      "bytes": 777
+    }
+  },
+  "omitted": [],
+  "complete": true,
+  "archive": {
+    "path": "records.tar.gz",
+    "sha256": "360de9f466c40678c16ea267e219fc7220634048d56fa7b7dac076a95c83e0fd",
+    "bytes": 160638
+  },
+  "raw_bytes": 566786,
+  "unique_content_bytes": 566786
+}

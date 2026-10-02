@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "copied_prepared_runtime": "/private/tmp/femtovg-outline-cache-bench/runs/tamper-check",
+  "mutation": "core/snapshots/final/src/text/swash_rasterizer.rs",
+  "original_sha256": "960cb354f190f5a99dc30724a51e4715a550dfb802ca17b4d959274504d7240c",
+  "mutated_sha256": "379914afd03ba8be4114348c988813a22dd5eaff5770d780cbd60bb0629ef866",
+  "source_guard_rejected": "Prepared input changed: core/snapshots/final/src/text/swash_rasterizer.rs",
+  "vendor_unchanged": true,
+  "created_utc": "2026-10-02T11:48:58.226474+00:00"
+}

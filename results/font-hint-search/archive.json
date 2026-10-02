@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "label": "font-hint-search",
+  "original_root": "/private/tmp/femtovg-open-font-search",
+  "retention": "All noncompiled files, including incomplete/rejected cohorts; inclusion in the archive does not imply inclusion in a timing analysis",
+  "storage": "Lossless tar hardlinks deduplicate identical file contents; every original path and byte checksum is retained",
+  "files": {
+    "Carlito-OFL.txt": {
+      "sha256": "58402f82a7c332a700294988fe7554fbb0a63a8d27ccc1ee3bbc640311990a00",
+      "bytes": 4424
+    },
+    "Carlito-Regular.ttf": {
+      "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+      "bytes": 628032
+    },
+    "Lato-OFL.txt": {
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+      "bytes": 4407
+    },
+    "Lato-Regular.ttf": {
+      "sha256": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251",
+      "bytes": 656568
+    },
+    "NotoSans-OFL.txt": {
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb",
+      "bytes": 4377
+    },
+    "NotoSans-Regular.ttf": {
+      "sha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+      "bytes": 569208
+    },
+    "OpenSans-OFL.txt": {
+      "sha256": "01cd5ffb3a528c219a86e49a814c6c53bd8a69b9a3c305dd237074ba1c811af7",
+      "bytes": 4216
+    },
+    "OpenSans-Regular.ttf": {
+      "sha256": "c53aceea2dcf5b4098099c0c4d0a061d17e178a049317b42a422b1a9f7f8eb59",
+      "bytes": 147528
+    },
+    "Ubuntu-LICENSE.txt": {
+      "sha256": "2f0015108d68627bd788d313f529c21ff4da2c2c42a5e1f3883acc83480f9002",
+      "bytes": 4673
+    },
+    "Ubuntu-Medium.ttf": {
+      "sha256": "3cd952b8b52581e48a8fa95b31c8829c2baa41b635042a69587d57f98092961e",
+      "bytes": 339360
+    },
+    "Ubuntu-Regular.ttf": {
+      "sha256": "3128df86a31805618436d0ae5651ba4285d0c9de0a39057d025f64ee33bceb64",
+      "bytes": 351884
+    },
+    "candidate-agent/PTSans-OFL.txt": {
+      "sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c",
+      "bytes": 4425
+    },
+    "candidate-agent/PTSans-Regular.ttf": {
+      "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a",
+      "bytes": 442960
+    },
+    "candidate-agent/PTSerif-OFL.txt": {
+      "sha256": "ddf311c28ddf5a5ad9747649837346b67bed9d356789c3072bb27dbce49e514d",
+      "bytes": 4434
+    },
+    "candidate-agent/PTSerif-Regular.ttf": {
+      "sha256": "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+      "bytes": 359048
+    },
+    "candidate-agent/candidate-metadata.json": {
+      "sha256": "d2cc179e07210ce9c3fb13a9d87983604551c130f0e736fdc34ac5bb7abe8eb8",
+      "bytes": 19469
+    },
+    "candidate-agent/hint-program-metrics.json": {
+      "sha256": "dd4df6dbeab6e63fe998ffbc7cded4165bfa601606e122e513b6b48197771c23",
+      "bytes": 4987
+    },
+    "candidate-agent/independent-audit.json": {
+      "sha256": "fbf45207bd8d111e4aafa3f25c857842d9d674358663e4879861ffa9c30eb073",
+      "bytes": 1356
+    },
+    "candidate-metadata.json": {
+      "sha256": "33e4f132cec103cfde1ece30471e89da5fbd04c688ea03d6abc3ef242dbddae5",
+      "bytes": 31121
+    },
+    "inspect_candidates.py": {
+      "sha256": "dd61d07d00caab0f8ce791dac4de17a8b117d08be9987ccd89002258e75796b8",
+      "bytes": 2642
+    }
+  },
+  "omitted": [],
+  "complete": true,
+  "archive": {
+    "path": "records.tar.gz",
+    "sha256": "185bf26dcb3852006d01ce3639de67afd9ee0332837c53a2bedc2c63568eb5f1",
+    "bytes": 1741937
+  },
+  "raw_bytes": 3585119,
+  "unique_content_bytes": 3585119
+}

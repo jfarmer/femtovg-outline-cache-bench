@@ -1,0 +1,56 @@
+{
+  "selected_variant": "final",
+  "candidate": "combo_arena_soft",
+  "production_selection": {
+    "selected_variant": "final",
+    "candidate": "combo_arena_soft",
+    "scope": "Swash-only optimization paths internal to FemtoVG; no dependency changes",
+    "files": {
+      "src/lib.rs": "5076702ac30ca60ac2d0bcfe0d840756357043f8df4be659ffbc9ba17f5f3736",
+      "src/text.rs": "475af6f6d1fed8b0ee101c4a0e8f6ea46bbf06d6d3302c0db9dac813f23739e0",
+      "src/text/font.rs": "d3c9504da3e7965e7d060cd1471309c631a5a92ad860965c6cd714d844ae8e68",
+      "src/text/swash_rasterizer.rs": "960cb354f190f5a99dc30724a51e4715a550dfb802ca17b4d959274504d7240c"
+    },
+    "compiled_snapshot": "/private/tmp/femtovg-miss-selection-v2-review/snapshots/final",
+    "hash_parity_verified": true,
+    "workspace_validation_pending": false,
+    "validation": {
+      "default_plus_swash_library_tests": {
+        "passed": 171,
+        "failed": 0
+      },
+      "default_without_swash_library_check": "passed",
+      "swash_only_library_check": "passed",
+      "format_check": "passed",
+      "compiled_snapshot_swash_only_tests": {
+        "passed": 155,
+        "failed": 0
+      },
+      "replay_rgba_comparisons": 504,
+      "mixed_color_rgba_comparisons": 144,
+      "application_rgba_comparisons": 18,
+      "independent_replay_point_effects": 3888,
+      "independent_replay_primary_ci_rows": 1296,
+      "independent_application_point_effects": 684,
+      "independent_application_primary_ci_rows": 72
+    }
+  },
+  "report_conclusion": "Selected: keep the eager Swash outline cache with lazy native Scaler reuse, a legacy-preserving PNG prepass, and compact outline arenas with public soft accounting. The arena removes the measured unique-instance CPU downside in the cheap-font controls and preserves the larger reuse gains. Its incremental application effect is mostly uncertain; the selection rests on the directly paired miss controls and example results as well as the overall patch-versus-master comparison.",
+  "validation_summary": "The selected production sources match the frozen timed snapshot byte-for-byte. Workspace default+Swash tests pass 171/171; default-without-Swash and Swash-only library checks and formatting pass. The frozen Swash-only suite passes 155/155. All 504 example, 144 mixed-color-validator, and 18 Alustin RGBA comparisons match master. Separate accepted Alustin pixel launches verify the intended primary faces and bundled Inter fallback. Independent audits recompute all 3,888 replay point effects and 1,296 primary interval rows, plus all 684 application point effects and 72 first/search CPU interval rows.",
+  "timing_cohorts": {
+    "replay_cpu_processes": 144,
+    "replay_gpu_processes": 144,
+    "alustin_timed_launches": 288,
+    "alustin_blocks": 72,
+    "alustin_rounds": 12,
+    "alustin_timing_retries": 0
+  },
+  "pixel_retention": {
+    "app_raw_launches": 32,
+    "app_accepted_launches": 24,
+    "query_only_whole_block_retries": 2
+  },
+  "source_pin_master": "f57a2c39e9836c146556c58c98d80c5bf7899029",
+  "source_pin_original_cache": "7a278ca4f947658d01c355c450edc6abcdbe3958",
+  "scope": "Exploratory same-cohort implementation selection, one machine and selected fonts; no diagnostics-off startup or universal font cutoff claim"
+}

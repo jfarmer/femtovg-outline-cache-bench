@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "exact raw/source preservation",
+    "compiled/cache omission inventory",
+    "broken/directory symlink inventory",
+    "streaming copy checksum verification",
+    "lossless content hardlink deduplication",
+    "standard tar extraction parity",
+    "existing archive refusal",
+    "post-copy source inventory equality"
+  ],
+  "script_sha256": "8b897ea4008a1897e58b687909faeeee4633e72cb68dd84444827ad6fbabbfa8"
+}

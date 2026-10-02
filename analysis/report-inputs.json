@@ -1,0 +1,10 @@
+{
+  "selection.json": "a0e3752ccabb3bd1db9c45c6a97a20c7d32d8c6a0f0e48ca9ecae7c03d7577eb",
+  "scripts/render-report.py": "6d4448eeab29e9e25b48550f6eeb3f8055699790b0b341a482c0d123df9b2e7c",
+  "analysis/selection-examples/summary.csv": "5163c9fee6e5d1c5c71cb91e74934a7fef2ed39a0ad560f6f6ba7a9a0c3ec6f0",
+  "analysis/selection-examples/summary.json": "ecec9d8c49aefe2ffba9aafa1b731665873bb9fd74f18ee0bf64f0131bcaada7",
+  "analysis/selection-sequences/summary.csv": "4fa74c4f1506f7cb479207250acb2a14095c6d15b0bdef669a1545684b5a6eea",
+  "analysis/selection-sequences/summary.json": "3921a9a6ecc8306fcf1ea46867b82a7285d8db6a33e28721d6983a71d523736b",
+  "analysis/selection-alustin/summary.csv": "0ed5c649db122463eaba88309484909cdb8e68ce4ce2c515d3465d7d0bbb6a04",
+  "analysis/selection-alustin/summary.json": "a9eeb49f5f6008c93acf7289c076cbcd3dc3c66d56d8e28e13bf159e9507008a"
+}

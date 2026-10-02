@@ -1,0 +1,212 @@
+{
+  "archives": [
+    {
+      "files_verified": 1399,
+      "label": "original-alustin",
+      "omitted_files": 6,
+      "raw_bytes": 72445441
+    },
+    {
+      "files_verified": 523,
+      "label": "original-examples",
+      "omitted_files": 2,
+      "raw_bytes": 210507495
+    },
+    {
+      "files_verified": 561,
+      "label": "original-e2e",
+      "omitted_files": 683,
+      "raw_bytes": 41599202
+    },
+    {
+      "files_verified": 2709,
+      "label": "font-alustin",
+      "omitted_files": 14,
+      "raw_bytes": 123663357
+    },
+    {
+      "files_verified": 1123,
+      "label": "liberation-examples",
+      "omitted_files": 8,
+      "raw_bytes": 735341801
+    },
+    {
+      "files_verified": 22,
+      "label": "pt-sans-font-study",
+      "omitted_files": 0,
+      "raw_bytes": 566786
+    },
+    {
+      "files_verified": 20,
+      "label": "font-hint-search",
+      "omitted_files": 0,
+      "raw_bytes": 3585119
+    },
+    {
+      "files_verified": 19,
+      "label": "liberation-font-inspection",
+      "omitted_files": 0,
+      "raw_bytes": 6759532
+    },
+    {
+      "files_verified": 550,
+      "label": "pt-sans-examples",
+      "omitted_files": 0,
+      "raw_bytes": 539447344
+    },
+    {
+      "files_verified": 1179,
+      "label": "pt-sans-alustin",
+      "omitted_files": 0,
+      "raw_bytes": 52704440
+    },
+    {
+      "files_verified": 2435,
+      "label": "admission-examples",
+      "omitted_files": 13,
+      "raw_bytes": 938393545
+    },
+    {
+      "files_verified": 5104,
+      "label": "admission-alustin",
+      "omitted_files": 11,
+      "raw_bytes": 178219770
+    },
+    {
+      "files_verified": 8964,
+      "label": "miss-screening-examples",
+      "omitted_files": 18567,
+      "raw_bytes": 3751949147
+    },
+    {
+      "files_verified": 3846,
+      "label": "miss-screening-alustin",
+      "omitted_files": 15,
+      "raw_bytes": 306762722
+    },
+    {
+      "files_verified": 1938,
+      "label": "draft-final-examples",
+      "omitted_files": 23,
+      "raw_bytes": 422433253
+    },
+    {
+      "files_verified": 385,
+      "label": "draft-final-alustin",
+      "omitted_files": 14,
+      "raw_bytes": 33017973
+    },
+    {
+      "files_verified": 928,
+      "label": "draft-selection-examples",
+      "omitted_files": 7,
+      "raw_bytes": 66603541
+    },
+    {
+      "files_verified": 233,
+      "label": "draft-selection-alustin",
+      "omitted_files": 9,
+      "raw_bytes": 25097742
+    },
+    {
+      "files_verified": 452,
+      "label": "gray8-diagnosis",
+      "omitted_files": 3,
+      "raw_bytes": 38732063
+    },
+    {
+      "files_verified": 2676,
+      "label": "selection-examples",
+      "omitted_files": 14,
+      "raw_bytes": 1719004942
+    },
+    {
+      "files_verified": 2720,
+      "label": "selection-alustin",
+      "omitted_files": 16,
+      "raw_bytes": 206613998
+    },
+    {
+      "files_verified": 1498,
+      "label": "portable-validation",
+      "omitted_files": 15,
+      "raw_bytes": 642108156
+    }
+  ],
+  "audits": [
+    {
+      "artifact": "01-selection-examples-replay-audit.json",
+      "complete": true,
+      "plan": {
+        "campaign": "selection-examples",
+        "experiment": "experiment.json",
+        "modes": [
+          "cpu",
+          "gpu"
+        ],
+        "phase_summary": "results/analysis/summary.csv",
+        "results": "results",
+        "sequence_summary": "results/sequence-analysis/summary.csv",
+        "suite": "replay"
+      },
+      "sha256": "f8fbe6a5746765a69019e6c06d2a10425f59141c82312b298643676b61a5c466"
+    },
+    {
+      "artifact": "02-selection-alustin-app-audit.json",
+      "complete": true,
+      "plan": {
+        "analysis": "analysis",
+        "batch": "cpu-12",
+        "campaign": "selection-alustin",
+        "experiment": "experiment.json",
+        "suite": "app"
+      },
+      "sha256": "6eb3ff3c3a3f97d09d66d1fe2bf9210bf5ed382cff39f017a90764f4d005dce8"
+    },
+    {
+      "artifact": "03-miss-screening-examples-replay-audit.json",
+      "complete": true,
+      "plan": {
+        "campaign": "miss-screening-examples",
+        "experiment": "experiment.json",
+        "modes": [
+          "cpu"
+        ],
+        "phase_summary": "results/analysis/summary.csv",
+        "results": "results",
+        "sequence_summary": "results/sequence-analysis/summary.csv",
+        "suite": "replay"
+      },
+      "sha256": "01a6ba29a61877f67305cf95e0e2e8347336f4152013f218955b799d51b6b510"
+    },
+    {
+      "artifact": "04-miss-screening-alustin-app-audit.json",
+      "complete": true,
+      "plan": {
+        "analysis": "analysis",
+        "batch": "cpu-8",
+        "campaign": "miss-screening-alustin",
+        "experiment": "experiment.json",
+        "suite": "app"
+      },
+      "sha256": "833af4482cb153f2b1aae6bdd3faa5f88029353292c33dc46dadb6d2c5e4545a"
+    }
+  ],
+  "binary_policy": "Compiled executables are omitted; provenance hashes retained. Offline audits verify their recorded identity, not absent binary bytes.",
+  "complete": true,
+  "created_utc": "2026-10-02T12:22:32.185028+00:00",
+  "index_sha256": "0d336357f59d18f73934015cc2228994e8a6e2ce95fcde90f5ec8da1c9b198b8",
+  "integrity_only": false,
+  "schema": 1,
+  "statistical_audits": 4,
+  "statistical_scope": "Selected modern replay/app cohorts declared in analysis_audits; historical campaigns retain exact records and are checksum verified",
+  "verification_script_sha256": "d33e2e00380fd4151f72c4b8a912bd983e82d3edcf3073f24d50a0b85aaac07c",
+  "visible_inputs": {
+    "analysis_copies": 24,
+    "bundle_manifest_sha256": "5b8cd2596713a4928dc09b6f88aaca28695eb3cbb9da0b267cca6c3dc6b1fe89",
+    "bundled_files": 612,
+    "copy_manifest_sha256": "a4574017841526adac5469382d1116b7600c784578a4e59c545de71be633ce16",
+    "report_inputs": 8,
+    "report_inputs_manifest_sha256": "14a82872d219dbc55986f9f45ec43a44e873123416f95c7bbd9db5879a989328"
+  }
+}

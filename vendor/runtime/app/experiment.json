@@ -1,0 +1,31 @@
+{
+  "versions": [
+    "master",
+    "current",
+    "final",
+    "route"
+  ],
+  "baseline_master": "f57a2c39e9836c146556c58c98d80c5bf7899029",
+  "baseline_current": "7a278ca4f947658d01c355c450edc6abcdbe3958",
+  "final_selection": {
+    "source": "/private/tmp/femtovg-miss-review/snapshots/combo_arena_soft",
+    "description": "Lazy native run scaler, legacy-preserving bitmap prepass, compact eager outline arenas with public soft accounting",
+    "changed_files": [
+      "src/lib.rs",
+      "src/text.rs",
+      "src/text/font.rs",
+      "src/text/swash_rasterizer.rs"
+    ],
+    "outline_budget_scope": "1 MiB soft accounting; own capacities exact, native scratch public logical high-water counts; not total heap"
+  },
+  "prior_core_root": "/private/tmp/femtovg-miss-review",
+  "prior_final_root": "/private/tmp/alustin-miss-final-review",
+  "default_balanced_blocks": 12,
+  "default_balanced_rounds": 12,
+  "selection_scope": "Master/current/final public-logical-scratch arena/route no-arena marginal comparison; Gray8 preserved separately",
+  "prior_selection_root": "/private/tmp/alustin-miss-selection-review",
+  "route_selection": {
+    "source": "/private/tmp/femtovg-miss-review/snapshots/combo_route",
+    "description": "Lazy native run scaler and legacy-preserving bitmap prepass; original eager owned outline cache/accounting"
+  }
+}
