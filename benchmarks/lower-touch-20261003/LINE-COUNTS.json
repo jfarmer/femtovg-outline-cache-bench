@@ -1,0 +1,255 @@
+{
+  "method": "Count physical Rust code lines from snapshots, without compiling/editing them.\n\nCounts include attributes and brace-only lines. Comments and blank lines do not\ncount. Strings/chars/raw strings remain code, so comment-looking contents in\nliterals do not disappear. Source-specific test boundaries were reviewed;\ntest-only items are excluded from production and counted separately.\nWhitespace at each line's edges is ignored for diff churn, avoiding artificial\nchanges from the atlas loop's indentation inside its restoration closure.\n",
+  "scope": [
+    "src/lib.rs",
+    "src/text.rs",
+    "src/text/font.rs",
+    "src/text/swash_rasterizer.rs",
+    "src/text/glyph_atlas_tests.rs",
+    "src/text/glyph_atlas_fallback_tests.rs"
+  ],
+  "limits": "Physical code-line count, not statements or semantic complexity. Attributes/braces count. All production feature branches count; this is not per-feature compiled size. Test boundaries and inline accessors were manually identified. Full means this named snapshot, not an assumed historical commit.",
+  "variants": {
+    "master": {
+      "totals": {
+        "production_code_lines": 3107,
+        "test_support_code_lines": 1899
+      },
+      "files": {
+        "src/lib.rs": {
+          "sha256": "c513282de54ccf64c12f8580c575c08bbaf73a367bd243f585d50a58665b3455",
+          "physical_lines": 4671,
+          "production_code_lines": 1636,
+          "test_support_code_lines": 1763
+        },
+        "src/text.rs": {
+          "sha256": "a2f5b73e5517f3d1076b8d023f5490f0024f4b158ed78e8eff62cd71bf6d49f2",
+          "physical_lines": 1022,
+          "production_code_lines": 770,
+          "test_support_code_lines": 0
+        },
+        "src/text/font.rs": {
+          "sha256": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+          "physical_lines": 1129,
+          "production_code_lines": 701,
+          "test_support_code_lines": 136
+        },
+        "src/text/swash_rasterizer.rs": {
+          "absent": true,
+          "production_code_lines": 0,
+          "test_support_code_lines": 0
+        }
+      }
+    },
+    "full": {
+      "totals": {
+        "production_code_lines": 3546,
+        "test_support_code_lines": 2925
+      },
+      "files": {
+        "src/lib.rs": {
+          "sha256": "69c8ad213289595ce88c4a81697559cc7945192de6daa9c80ba30c6b982119e5",
+          "physical_lines": 4694,
+          "production_code_lines": 1635,
+          "test_support_code_lines": 1784
+        },
+        "src/text.rs": {
+          "sha256": "f30b49b8a79eb02fe832565b089601984bb088ca5c59935dc41144fb0fa9b406",
+          "physical_lines": 1188,
+          "production_code_lines": 911,
+          "test_support_code_lines": 4
+        },
+        "src/text/font.rs": {
+          "sha256": "303329d4e8e0fde0598b2a87cb82e4461b66bc54db0e99435c57fa2e8902181e",
+          "physical_lines": 1201,
+          "production_code_lines": 743,
+          "test_support_code_lines": 152
+        },
+        "src/text/swash_rasterizer.rs": {
+          "sha256": "fd5cc3b3a055c75c1f48f7630be409ea5499d80ad77a9811eaa82f804f227b40",
+          "physical_lines": 769,
+          "production_code_lines": 257,
+          "test_support_code_lines": 409
+        },
+        "src/text/glyph_atlas_tests.rs": {
+          "sha256": "2f5271264693deb00a802e8ba9b7cd4ffa1ace6bff1c53791df138a99b4783c5",
+          "physical_lines": 502,
+          "production_code_lines": 0,
+          "test_support_code_lines": 470
+        },
+        "src/text/glyph_atlas_fallback_tests.rs": {
+          "sha256": "89b30f1cd4800c8fd66a198516a21b9c47d3fe9c2f7ff8e04ce1ab6b27db8661",
+          "physical_lines": 113,
+          "production_code_lines": 0,
+          "test_support_code_lines": 106
+        }
+      }
+    },
+    "simple": {
+      "totals": {
+        "production_code_lines": 3400,
+        "test_support_code_lines": 2912
+      },
+      "files": {
+        "src/lib.rs": {
+          "sha256": "69c8ad213289595ce88c4a81697559cc7945192de6daa9c80ba30c6b982119e5",
+          "physical_lines": 4694,
+          "production_code_lines": 1635,
+          "test_support_code_lines": 1784
+        },
+        "src/text.rs": {
+          "sha256": "fd61ab4f4bb54e078383e0f9ff0366ccc082f740e587b7fbd39e00932de243f5",
+          "physical_lines": 1058,
+          "production_code_lines": 797,
+          "test_support_code_lines": 4
+        },
+        "src/text/font.rs": {
+          "sha256": "303329d4e8e0fde0598b2a87cb82e4461b66bc54db0e99435c57fa2e8902181e",
+          "physical_lines": 1201,
+          "production_code_lines": 743,
+          "test_support_code_lines": 152
+        },
+        "src/text/swash_rasterizer.rs": {
+          "sha256": "dde32655bf26a3dfee92e30c754c32345c78b525a1f46b1b433e85302e0aa312",
+          "physical_lines": 720,
+          "production_code_lines": 225,
+          "test_support_code_lines": 396
+        },
+        "src/text/glyph_atlas_tests.rs": {
+          "sha256": "13d7e7697fd6f440113a7b9057bdad22d279cae3f1619fc926df9c705972373b",
+          "physical_lines": 502,
+          "production_code_lines": 0,
+          "test_support_code_lines": 470
+        },
+        "src/text/glyph_atlas_fallback_tests.rs": {
+          "sha256": "89b30f1cd4800c8fd66a198516a21b9c47d3fe9c2f7ff8e04ce1ab6b27db8661",
+          "physical_lines": 113,
+          "production_code_lines": 0,
+          "test_support_code_lines": 106
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "master_to_full": {
+      "per_file_production_diff": {
+        "src/lib.rs": {
+          "added": 5,
+          "deleted": 6,
+          "net": -1,
+          "churn": 11
+        },
+        "src/text.rs": {
+          "added": 188,
+          "deleted": 47,
+          "net": 141,
+          "churn": 235
+        },
+        "src/text/font.rs": {
+          "added": 48,
+          "deleted": 6,
+          "net": 42,
+          "churn": 54
+        },
+        "src/text/swash_rasterizer.rs": {
+          "added": 257,
+          "deleted": 0,
+          "net": 257,
+          "churn": 257
+        }
+      },
+      "existing_file_integration_diff": {
+        "added": 241,
+        "deleted": 59,
+        "net": 182,
+        "churn": 300
+      },
+      "all_production_diff": {
+        "added": 498,
+        "deleted": 59,
+        "net": 439,
+        "churn": 557
+      }
+    },
+    "master_to_simple": {
+      "per_file_production_diff": {
+        "src/lib.rs": {
+          "added": 5,
+          "deleted": 6,
+          "net": -1,
+          "churn": 11
+        },
+        "src/text.rs": {
+          "added": 62,
+          "deleted": 35,
+          "net": 27,
+          "churn": 97
+        },
+        "src/text/font.rs": {
+          "added": 48,
+          "deleted": 6,
+          "net": 42,
+          "churn": 54
+        },
+        "src/text/swash_rasterizer.rs": {
+          "added": 225,
+          "deleted": 0,
+          "net": 225,
+          "churn": 225
+        }
+      },
+      "existing_file_integration_diff": {
+        "added": 115,
+        "deleted": 47,
+        "net": 68,
+        "churn": 162
+      },
+      "all_production_diff": {
+        "added": 340,
+        "deleted": 47,
+        "net": 293,
+        "churn": 387
+      }
+    },
+    "full_to_simple": {
+      "per_file_production_diff": {
+        "src/lib.rs": {
+          "added": 0,
+          "deleted": 0,
+          "net": 0,
+          "churn": 0
+        },
+        "src/text.rs": {
+          "added": 45,
+          "deleted": 159,
+          "net": -114,
+          "churn": 204
+        },
+        "src/text/font.rs": {
+          "added": 0,
+          "deleted": 0,
+          "net": 0,
+          "churn": 0
+        },
+        "src/text/swash_rasterizer.rs": {
+          "added": 20,
+          "deleted": 52,
+          "net": -32,
+          "churn": 72
+        }
+      },
+      "existing_file_integration_diff": {
+        "added": 45,
+        "deleted": 159,
+        "net": -114,
+        "churn": 204
+      },
+      "all_production_diff": {
+        "added": 65,
+        "deleted": 211,
+        "net": -146,
+        "churn": 276
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "accepted_rows": 864,
+  "accepted_blocks": 12,
+  "excluded_blocks": 0,
+  "guard_checks": 991,
+  "matched_build_process_checks": 0,
+  "preflight_guard_failures": 1,
+  "duplicates": 0,
+  "all_blocks_complete": true
+}

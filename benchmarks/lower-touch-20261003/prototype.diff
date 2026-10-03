@@ -1,0 +1,588 @@
+--- a/src/text.rs
++++ b/src/text.rs
+@@ -21,7 +21,7 @@
+ #[cfg(feature = "swash")]
+ mod swash_rasterizer;
+ #[cfg(feature = "swash")]
+-use swash_rasterizer::{HintedGlyphRun, SwashRasterizer};
++use swash_rasterizer::SwashRasterizer;
+ 
+ #[cfg(all(test, feature = "swash"))]
+ mod glyph_atlas_tests;
+@@ -505,20 +505,7 @@
+         normalized_coords: &[i16],
+     ) -> Result<GlyphDrawCommands, ErrorKind> {
+         #[cfg(feature = "swash")]
+-        if let Some(font_ref) = font.swash_atlas_font(mode) {
+-            return self.render_atlas_swash(
+-                canvas,
+-                font_id,
+-                font,
+-                font_face,
+-                font_ref,
+-                glyphs,
+-                font_size,
+-                line_width,
+-                mode,
+-                normalized_coords,
+-            );
+-        }
++        let native_atlas = font.swash_atlas_font(mode).is_some();
+ 
+         let mut alpha_cmd_map = FnvHashMap::default();
+         let mut color_cmd_map = FnvHashMap::default();
+@@ -534,6 +521,21 @@
+         canvas.with_render_target(initial_render_target, |canvas| {
+             for glyph in glyphs {
+                 let subpixel_location = crate::geometry::quantize(glyph.x.fract(), 0.1) * 10.0;
++                #[cfg(feature = "swash")]
++                let (subpixel_location, glyph_origin) = if native_atlas {
++                    // Native masks use a nonnegative phase and a floor origin,
++                    // including positions left of zero. Phase ten is phase zero
++                    // translated by one pixel.
++                    let origin = glyph.x.floor();
++                    let phase = crate::geometry::quantize(glyph.x - origin, 0.1) * 10.0;
++                    if phase == 10.0 {
++                        (0.0, origin + 1.0)
++                    } else {
++                        (phase, origin)
++                    }
++                } else {
++                    (subpixel_location, glyph.x.trunc())
++                };
+ 
+                 let id = RenderedGlyphId::new(
+                     glyph.glyph_id,
+@@ -550,7 +552,7 @@
+                 let glyph_cache_entry = match glyph_cache_entry {
+                     std::collections::hash_map::Entry::Occupied(occupied_entry) => occupied_entry,
+                     std::collections::hash_map::Entry::Vacant(_) => {
+-                        let result = self.render_glyph_fallback(
++                        let result = self.render_glyph(
+                             canvas,
+                             font_size,
+                             line_width,
+@@ -558,6 +560,7 @@
+                             font,
+                             font_face,
+                             glyph.glyph_id,
++                            subpixel_location / 10.0,
+                             normalized_coords,
+                         )?;
+                         glyph_cache_entry.insert_entry(result)
+@@ -589,7 +592,15 @@
+ 
+                     let line_width_offset = if rendered.color_glyph { 0. } else { line_width_offset };
+ 
+-                    q.x0 = glyph.x.trunc() + rendered.bearing_x as f32 - line_width_offset - GLYPH_PADDING as f32;
++                    #[cfg(feature = "swash")]
++                    let origin = if rendered.uses_subpixel_positioning {
++                        glyph_origin
++                    } else {
++                        glyph.x.trunc()
++                    };
++                    #[cfg(not(feature = "swash"))]
++                    let origin = glyph.x.trunc();
++                    q.x0 = origin + rendered.bearing_x as f32 - line_width_offset - GLYPH_PADDING as f32;
+                     q.y0 = glyph.y.round() - rendered.bearing_y as f32 - line_width_offset - GLYPH_PADDING as f32;
+                     q.x1 = q.x0 + rendered.width as f32;
+                     q.y1 = q.y0 + rendered.height as f32;
+@@ -610,169 +621,10 @@
+         })
+     }
+ 
+-    // Keep this helper inlined into native runs; the generic loop retains its
+-    // existing quad construction so enabling the cache does not affect its codegen.
+-    #[cfg(feature = "swash")]
+-    #[inline(always)]
+-    fn add_glyph_quad(
+-        &self,
+-        alpha_cmd_map: &mut FnvHashMap<usize, DrawCommand>,
+-        color_cmd_map: &mut FnvHashMap<usize, DrawCommand>,
+-        glyph: &PositionedGlyph,
+-        glyph_origin: f32,
+-        rendered: &RenderedGlyph,
+-        line_width_offset: f32,
+-    ) {
+-        if let Some(texture) = self.glyph_textures.borrow().get(rendered.texture_index) {
+-            let image_id = texture.image_id;
+-            let size = texture.atlas.size();
+-            let itw = 1.0 / size.0 as f32;
+-            let ith = 1.0 / size.1 as f32;
+-
+-            let cmd_map = if rendered.color_glyph {
+-                color_cmd_map
+-            } else {
+-                alpha_cmd_map
+-            };
+-
+-            let cmd = cmd_map.entry(rendered.texture_index).or_insert_with(|| DrawCommand {
+-                image_id,
+-                quads: Vec::new(),
+-            });
+-
+-            let mut q = Quad::default();
+-
+-            let line_width_offset = if rendered.color_glyph { 0. } else { line_width_offset };
+-
+-            q.x0 = glyph_origin + rendered.bearing_x as f32 - line_width_offset - GLYPH_PADDING as f32;
+-            q.y0 = glyph.y.round() - rendered.bearing_y as f32 - line_width_offset - GLYPH_PADDING as f32;
+-            q.x1 = q.x0 + rendered.width as f32;
+-            q.y1 = q.y0 + rendered.height as f32;
+-
+-            q.s0 = rendered.atlas_x as f32 * itw;
+-            q.t0 = rendered.atlas_y as f32 * ith;
+-            q.s1 = (rendered.atlas_x + rendered.width) as f32 * itw;
+-            q.t1 = (rendered.atlas_y + rendered.height) as f32 * ith;
+-
+-            cmd.quads.push(q);
+-        }
+-    }
+-
+-    #[cfg(feature = "swash")]
++    // Renders a glyph into the atlas, falling back to its generic representation
++    // when native Swash rendering is unavailable.
+     #[allow(clippy::too_many_arguments)]
+-    fn render_atlas_swash<T: Renderer>(
+-        &self,
+-        canvas: &mut Canvas<T>,
+-        font_id: FontId,
+-        font: &Font,
+-        font_face: &font::FontFaceRef<'_>,
+-        font_ref: swash::FontRef<'_>,
+-        mut glyphs: impl Iterator<Item = PositionedGlyph>,
+-        font_size: f32,
+-        line_width: f32,
+-        mode: RenderMode,
+-        normalized_coords: &[i16],
+-    ) -> Result<GlyphDrawCommands, ErrorKind> {
+-        let mut alpha_cmd_map = FnvHashMap::default();
+-        let mut color_cmd_map = FnvHashMap::default();
+-        let initial_render_target = canvas.current_render_target;
+-        let context = self.swash_rasterizer.as_ref().borrow().scale_context();
+-
+-        canvas.with_render_target(initial_render_target, |canvas| {
+-            loop {
+-                // The context is borrowed for this segment, but a Scaler is built
+-                // only when the first outline-cache miss actually needs one.
+-                // A fallback terminates the segment so it can safely use the same
+-                // shared context after this scaler and its borrow have been dropped.
+-                let mut fallback = None;
+-                {
+-                    let mut context_borrow = context.borrow_mut();
+-                    let mut run = HintedGlyphRun::new(&mut context_borrow, font_ref, font_size, normalized_coords);
+-                    for glyph in glyphs.by_ref() {
+-                        // Round a nonnegative fraction so integer translations
+-                        // select the same mask, including positions left of zero.
+-                        let origin = glyph.x.floor();
+-                        let phase = (crate::geometry::quantize(glyph.x - origin, 0.1) * 10.0) as u8;
+-                        let (subpixel_location, origin) = if phase == 10 {
+-                            (0, origin + 1.0)
+-                        } else {
+-                            (phase, origin)
+-                        };
+-                        let id = RenderedGlyphId::new(
+-                            glyph.glyph_id,
+-                            font_id,
+-                            font_size,
+-                            line_width,
+-                            mode,
+-                            subpixel_location,
+-                            normalized_coords,
+-                        );
+-                        let mut rendered_glyphs = self.rendered_glyphs.borrow_mut();
+-                        let rendered = match rendered_glyphs.entry(id) {
+-                            std::collections::hash_map::Entry::Occupied(entry) => *entry.get(),
+-                            std::collections::hash_map::Entry::Vacant(entry) => {
+-                                let image = self.swash_rasterizer.borrow_mut().render_glyph(
+-                                    &mut run,
+-                                    glyph.glyph_id,
+-                                    f32::from(subpixel_location) / 10.0,
+-                                );
+-                                let rendered = self.upload_glyph_swash_image(canvas, image)?;
+-                                if rendered.is_none() {
+-                                    fallback = Some((glyph, id));
+-                                    break;
+-                                }
+-                                *entry.insert(rendered)
+-                            }
+-                        };
+-                        drop(rendered_glyphs);
+-                        if let Some(rendered) = rendered {
+-                            // Bitmap and generic fallback entries retain their
+-                            // integer placement on both cold and warm draws.
+-                            let origin = if rendered.uses_subpixel_positioning {
+-                                origin
+-                            } else {
+-                                glyph.x.trunc()
+-                            };
+-                            self.add_glyph_quad(&mut alpha_cmd_map, &mut color_cmd_map, &glyph, origin, &rendered, 0.0);
+-                        }
+-                    }
+-                }
+-                let Some((glyph, id)) = fallback else {
+-                    break;
+-                };
+-                let rendered = self.render_glyph_fallback(
+-                    canvas,
+-                    font_size,
+-                    line_width,
+-                    mode,
+-                    font,
+-                    font_face,
+-                    glyph.glyph_id,
+-                    normalized_coords,
+-                )?;
+-                self.rendered_glyphs.borrow_mut().insert(id, rendered);
+-                if let Some(rendered) = rendered {
+-                    self.add_glyph_quad(
+-                        &mut alpha_cmd_map,
+-                        &mut color_cmd_map,
+-                        &glyph,
+-                        glyph.x.trunc(),
+-                        &rendered,
+-                        0.0,
+-                    );
+-                }
+-            }
+-            Ok(GlyphDrawCommands {
+-                alpha_glyphs: alpha_cmd_map.into_values().collect(),
+-                color_glyphs: color_cmd_map.into_values().collect(),
+-            })
+-        })
+-    }
+-
+-    // Renders a generic path or bitmap into the atlas, returning None for a
+-    // glyph without either representation. Native Swash fills use the run path.
+-    #[allow(clippy::too_many_arguments)]
+-    fn render_glyph_fallback<T: Renderer>(
++    fn render_glyph<T: Renderer>(
+         &self,
+         canvas: &mut Canvas<T>,
+         font_size: f32,
+@@ -781,8 +633,18 @@
+         font: &Font,
+         font_face: &font::FontFaceRef<'_>,
+         glyph_id: u16,
++        _subpixel_x: f32,
+         normalized_coords: &[i16],
+     ) -> Result<Option<RenderedGlyph>, ErrorKind> {
++        #[cfg(feature = "swash")]
++        if let Some(font_ref) = font.swash_atlas_font(mode) {
++            if let Some(rendered) =
++                self.render_glyph_swash(canvas, font_ref, font_size, glyph_id, _subpixel_x, normalized_coords)?
++            {
++                return Ok(Some(rendered));
++            }
++        }
++
+         let padding = GLYPH_PADDING + GLYPH_MARGIN;
+ 
+         let (mut glyph_representation, glyph_metrics, scale) = {
+@@ -930,11 +792,19 @@
+     }
+ 
+     #[cfg(feature = "swash")]
+-    fn upload_glyph_swash_image<T: Renderer>(
++    fn render_glyph_swash<T: Renderer>(
+         &self,
+         canvas: &mut Canvas<T>,
+-        image: Option<swash::scale::image::Image>,
++        font: swash::FontRef<'_>,
++        font_size: f32,
++        glyph_id: u16,
++        subpixel_x: f32,
++        normalized_coords: &[i16],
+     ) -> Result<Option<RenderedGlyph>, ErrorKind> {
++        let image = self
++            .swash_rasterizer
++            .borrow_mut()
++            .render(font, font_size, glyph_id, subpixel_x, normalized_coords);
+         let image = match image {
+             // Guard against glyphs with no visual (spaces)
+             Some(img) if img.placement.width > 0 && img.placement.height > 0 => img,
+--- a/src/text/swash_rasterizer.rs
++++ b/src/text/swash_rasterizer.rs
+@@ -10,7 +10,7 @@
+     scale::{
+         image::{Content, Image},
+         outline::Outline,
+-        Render, ScaleContext, Scaler, Source, StrikeWith,
++        Render, ScaleContext, Source, StrikeWith,
+     },
+     zeno::{Format, Mask, Origin, Point, Scratch, Vector, Verb},
+     CacheKey, FontRef,
+@@ -30,55 +30,6 @@
+ struct CachedPath {
+     points: Range<usize>,
+     verbs: Range<usize>,
+-}
+-
+-/// Keeps cache identity and native scaler settings together for one run segment.
+-/// The scaler is built lazily from these private, immutable settings on a miss.
+-pub(super) struct HintedGlyphRun<'a> {
+-    font: FontRef<'a>,
+-    font_size: f32,
+-    normalized_coords: &'a [i16],
+-    context: Option<&'a mut ScaleContext>,
+-    scaler: Option<Scaler<'a>>,
+-}
+-
+-impl<'a> HintedGlyphRun<'a> {
+-    pub(super) fn new(
+-        context: &'a mut ScaleContext,
+-        font: FontRef<'a>,
+-        font_size: f32,
+-        normalized_coords: &'a [i16],
+-    ) -> Self {
+-        Self {
+-            font,
+-            font_size,
+-            normalized_coords,
+-            context: Some(context),
+-            scaler: None,
+-        }
+-    }
+-
+-    fn outline_key(&self, glyph_id: u16) -> OutlineKey {
+-        OutlineKey {
+-            font: self.font.key,
+-            glyph_id,
+-            font_size: self.font_size.to_bits(),
+-            normalized_coords: self.normalized_coords.into(),
+-        }
+-    }
+-
+-    fn scaler(&mut self) -> &mut Scaler<'a> {
+-        self.scaler.get_or_insert_with(|| {
+-            self.context
+-                .take()
+-                .expect("a run initializes its scaler once")
+-                .builder(self.font)
+-                .size(self.font_size)
+-                .hint(true)
+-                .normalized_coords(self.normalized_coords)
+-                .build()
+-        })
+-    }
+ }
+ 
+ /// Renders glyphs using Swash, retaining hinted geometry in compact arenas.
+@@ -123,13 +74,13 @@
+         }
+     }
+ 
+-    pub(super) fn scale_context(&self) -> Rc<RefCell<ScaleContext>> {
++    #[cfg(test)]
++    fn scale_context(&self) -> Rc<RefCell<ScaleContext>> {
+         Rc::clone(&self.scale_context)
+     }
+ 
+-    /// Exercises the production run path for one glyph in cache tests.
+-    #[cfg(test)]
+-    fn render(
++    /// Looks up hinted geometry before building its matching native scaler.
++    pub(super) fn render(
+         &mut self,
+         font: FontRef<'_>,
+         font_size: f32,
+@@ -137,20 +88,12 @@
+         subpixel_x: f32,
+         normalized_coords: &[i16],
+     ) -> Option<Image> {
+-        let context = Rc::clone(&self.scale_context);
+-        let mut context_borrow = context.borrow_mut();
+-        let mut run = HintedGlyphRun::new(&mut context_borrow, font, font_size, normalized_coords);
+-        self.render_glyph(&mut run, glyph_id, subpixel_x)
+-    }
+-
+-    /// Reuses the native run scaler only when the eager arena cache misses.
+-    pub(super) fn render_glyph(
+-        &mut self,
+-        run: &mut HintedGlyphRun<'_>,
+-        glyph_id: u16,
+-        subpixel_x: f32,
+-    ) -> Option<Image> {
+-        let key = run.outline_key(glyph_id);
++        let key = OutlineKey {
++            font: font.key,
++            glyph_id,
++            font_size: font_size.to_bits(),
++            normalized_coords: normalized_coords.into(),
++        };
+         if let Some(path) = self.outlines.get(&key) {
+             return Some(rasterize_path(
+                 &self.points[path.points.clone()],
+@@ -159,11 +102,18 @@
+                 subpixel_x,
+             ));
+         }
+-        let scaler = run.scaler();
++        let context = Rc::clone(&self.scale_context);
++        let mut context = context.borrow_mut();
++        let mut scaler = context
++            .builder(font)
++            .size(font_size)
++            .hint(true)
++            .normalized_coords(normalized_coords)
++            .build();
+         if let Some(image) = Render::new(&COLOR_SOURCES)
+             .format(Format::Alpha)
+             .offset(Vector::new(subpixel_x, 0.0))
+-            .render(scaler, glyph_id)
++            .render(&mut scaler, glyph_id)
+         {
+             return Some(image);
+         }
+@@ -320,19 +270,35 @@
+     use super::*;
+ 
+     #[test]
+-    fn run_scaler_matches_native_render_for_outlines_color_invalid_and_variations() {
++    fn cached_outline_does_not_borrow_the_shared_scale_context() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('g');
++        let mut rasterizer = rasterizer();
++        rasterizer.render(font, 24.0, glyph_id, 0.0, &[]).unwrap();
++
++        let context = rasterizer.scale_context();
++        let _borrow = context.borrow_mut();
++        let actual = rasterizer.render(font, 24.0, glyph_id, 0.3, &[]);
++        let expected = render_uncached(&mut ScaleContext::new(), font, 24.0, glyph_id, 0.3, &[]);
++        assert_same_image(
++            actual.as_ref(),
++            expected.as_ref(),
++            "cached glyph with occupied scale context",
++        );
++    }
++
++    #[test]
++    fn interleaved_glyphs_match_native_render_for_outlines_color_invalid_and_variations() {
+         for face in faces() {
+             let font = FontRef::from_index(&face.data, 0).unwrap();
+             for coords in &face.instances {
+                 for size in [9.0, 16.5, 40.0] {
+                     let mut rasterizer = rasterizer();
+-                    let context = rasterizer.scale_context();
+                     let mut reference = ScaleContext::new();
+                     for offset in subpixel_offsets() {
+-                        let mut context_borrow = context.borrow_mut();
+-                        let mut run = HintedGlyphRun::new(&mut context_borrow, font, size, coords);
+                         for glyph_id in face.glyph_ids.clone() {
+-                            let actual = rasterizer.render_glyph(&mut run, glyph_id, offset);
++                            let actual = rasterizer.render(font, size, glyph_id, offset, coords);
+                             let expected = render_uncached(&mut reference, font, size, glyph_id, offset, coords);
+                             assert_same_image(
+                                 actual.as_ref(),
+@@ -347,34 +313,27 @@
+     }
+ 
+     #[test]
+-    fn run_scaler_is_lazy_and_second_phase_hits_do_not_build_it() {
++    fn second_phase_hits_skip_the_scale_context_and_a_later_miss_initializes_it() {
+         let data = read_font("RobotoFlex-VariableFont.ttf");
+         let font = FontRef::from_index(&data, 0).unwrap();
+         let mut rasterizer = rasterizer();
+         let context = rasterizer.scale_context();
+         let glyph_ids = ['A', 'g', 'W'].map(|ch| font.charmap().map(ch));
++        for glyph_id in glyph_ids {
++            rasterizer.render(font, 24.0, glyph_id, 0.0, &[]).unwrap();
++        }
++        assert_eq!(rasterizer.outlines.len(), glyph_ids.len());
+         {
+-            let mut context_borrow = context.borrow_mut();
+-            let mut run = HintedGlyphRun::new(&mut context_borrow, font, 24.0, &[]);
+-            assert!(run.scaler.is_none());
++            let _context_borrow = context.borrow_mut();
+             for glyph_id in glyph_ids {
+-                rasterizer.render_glyph(&mut run, glyph_id, 0.0).unwrap();
+-                assert!(run.scaler.is_some());
+-                assert!(run.context.is_none(), "the context is consumed once for this run");
++                rasterizer.render(font, 24.0, glyph_id, 0.3, &[]).unwrap();
+             }
+         }
+-        let mut context_borrow = context.borrow_mut();
+-        let mut run = HintedGlyphRun::new(&mut context_borrow, font, 24.0, &[]);
+-        for glyph_id in glyph_ids {
+-            rasterizer.render_glyph(&mut run, glyph_id, 0.3).unwrap();
+-            assert!(run.scaler.is_none(), "a cached outline must not build the run scaler");
+-        }
+         let cold_glyph = font.charmap().map('O');
+-        rasterizer.render_glyph(&mut run, cold_glyph, 0.3).unwrap();
+-        assert!(
+-            run.scaler.is_some(),
+-            "a later miss initializes the previously unused scaler"
+-        );
++        let actual = rasterizer.render(font, 24.0, cold_glyph, 0.3, &[]);
++        let expected = render_uncached(&mut ScaleContext::new(), font, 24.0, cold_glyph, 0.3, &[]);
++        assert_same_image(actual.as_ref(), expected.as_ref(), "later cold glyph");
++        assert_eq!(rasterizer.outlines.len(), glyph_ids.len() + 1);
+     }
+ 
+     fn read_font(file: &str) -> Vec<u8> {
+@@ -389,7 +348,7 @@
+     }
+ 
+     /// Renders through swash's `Render` alone, with no outline cache: the
+-    /// reference the production run renderer must match.
++    /// reference the production renderer must match.
+     fn render_uncached(
+         context: &mut ScaleContext,
+         font: FontRef<'_>,
+@@ -581,13 +540,10 @@
+             rasterizer.render(font, 16.0, glyph, 0.0, &[]).unwrap();
+             assert_eq!(rasterizer.outlines.len(), usize::from(admitted), "budget {budget}");
+             let context = rasterizer.scale_context();
+-            let actual = {
+-                let mut context = context.borrow_mut();
+-                let mut run = HintedGlyphRun::new(&mut context, font, 16.0, &[]);
+-                let image = rasterizer.render_glyph(&mut run, glyph, 0.3);
+-                assert_eq!(run.scaler.is_none(), admitted, "a retained outline avoids rehinting");
+-                image
+-            };
++            // Holding the context proves an admitted outline cannot rehint.
++            // An unadmitted outline must remain renderable on every miss.
++            let _context_borrow = admitted.then(|| context.borrow_mut());
++            let actual = rasterizer.render(font, 16.0, glyph, 0.3, &[]);
+             let expected = render_uncached(&mut reference, font, 16.0, glyph, 0.3, &[]);
+             assert_same_image(actual.as_ref(), expected.as_ref(), "budget boundary");
+         }
+@@ -623,10 +579,8 @@
+         assert_same_image(actual.as_ref(), expected.as_ref(), "unadmittable outline");
+         assert_eq!(rasterizer.outlines.len(), 1);
+         let context = rasterizer.scale_context();
+-        let mut context = context.borrow_mut();
+-        let mut run = HintedGlyphRun::new(&mut context, font, 16.0, &[]);
+-        assert!(rasterizer.render_glyph(&mut run, small, 0.3).is_some());
+-        assert!(run.scaler.is_none(), "the retained working set still hits");
++        let _context_borrow = context.borrow_mut();
++        assert!(rasterizer.render(font, 16.0, small, 0.3, &[]).is_some());
+     }
+ 
+     #[test]
+@@ -654,11 +608,8 @@
+         let context = rasterizer.scale_context();
+         for size in sizes.into_iter().cycle().take(9) {
+             let actual = {
+-                let mut context_borrow = context.borrow_mut();
+-                let mut run = HintedGlyphRun::new(&mut context_borrow, font, size, &[]);
+-                let image = rasterizer.render_glyph(&mut run, glyph_id, 0.3);
+-                assert!(run.scaler.is_none(), "the entire working set must remain cached");
+-                image
++                let _context_borrow = context.borrow_mut();
++                rasterizer.render(font, size, glyph_id, 0.3, &[])
+             };
+             let expected = render_uncached(&mut reference, font, size, glyph_id, 0.3, &[]);
+             assert_same_image(actual.as_ref(), expected.as_ref(), "retained near-budget outline");
+--- a/src/text/glyph_atlas_tests.rs
++++ b/src/text/glyph_atlas_tests.rs
+@@ -3,7 +3,7 @@
+ use crate::{renderer, Canvas, Color, FontId, Paint, PositionedGlyph, RecordingRenderer};
+ 
+ #[test]
+-fn run_scaler_releases_shared_context_at_empty_and_invalid_fallback_boundaries() {
++fn native_rendering_releases_shared_context_before_empty_and_invalid_fallbacks() {
+     let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
+     let font_ref = swash::FontRef::from_index(data, 0).unwrap();
+     let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();

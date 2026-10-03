@@ -9,6 +9,8 @@ The current PR measurements compare upstream master `6a5f15a` with proposed code
 
 Both measure CPU layout/drawing plus Void flush, excluding font/image loading, GPU work, window creation and startup. Each comparison uses twelve paired blocks on M4 Max/macOS. Plans, raw process output, provenance, font licenses and independent audits are retained alongside the reports. [Reproduction instructions](benchmarks/demo-current-20261003/README.md) describe the archived scripts and their validation scope.
 
+A [smaller-integration experiment](benchmarks/lower-touch-20261003/SUMMARY.md) compares master, the current cache plus encapsulation edits, and a prototype using the original atlas loop. It removes 146 production lines and preserves the demo gains, but loses some protection against repeated size changes when every request misses. The current FemtoVG implementation is unchanged.
+
 The earlier studies below retain their own source pins and baselines. They are not pooled with these current-master comparisons.
 
 Original evidence documents are preserved as captured. Statements that the repository had no public remote describe the capture date; the current [PR draft](pr-draft/PR_BODY.md) links the published source and results.
