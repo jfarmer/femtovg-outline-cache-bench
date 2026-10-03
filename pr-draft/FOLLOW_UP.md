@@ -4,7 +4,7 @@ The main comparison is proposed released code at `b87a94dd` against upstream mas
 
 The demo keeps FemtoVG’s drawing and performance graph, including layout, paths, images and strokes. Its first-paint gains recur during zoom, when new sizes require new atlas entries:
 
-| Typeface | Zoom-in master → proposed (ms/frame) | All 65 reported frames master → proposed (ms/sequence) |
+| Typeface | Zoom-in Master → PR (ms/frame) | All 65 reported frames Master → PR (ms/sequence) |
 |---|---:|---:|
 | Roboto Flex | 1.315 → 1.279 | 36.649 → 35.563 |
 | PT Sans | 1.846 → 1.550 | 47.249 → 40.826 |
@@ -15,9 +15,11 @@ The demo keeps FemtoVG’s drawing and performance graph, including layout, path
 
 The 65-frame sequence includes first paint, 30 warm, 12 zoom-in, 12 zoom-out and 10 pan frames. The 119 intervening warmup frames are excluded. Once the bitmap atlas is warm, little hinting work remains; warm-frame changes cannot be attributed to outline-cache hits.
 
+The app sentence comes from the [earlier Alustin comparison](https://github.com/jfarmer/femtovg-outline-cache-bench/blob/main/analysis/updated-cache-alustin/summary.csv), with Vollkorn on OpenGL. Time from `main` to the first rendered-frame marker was 205.608 → 199.985 ms across twelve paired blocks with rendering diagnostics enabled. This used the earlier cache revision described in [the report](https://github.com/jfarmer/femtovg-outline-cache-bench/blob/main/REVISED-OUTLINE-CACHE.md) versus master `f57a2c3`, rather than the current demo builds. The corresponding WGPU launch comparison was inconclusive. This marker does not measure compositor presentation.
+
 The proof sheet deliberately requests many positions for each hinted result: 66 Latin letters/digits/symbols in ten rows at each of three logical sizes, 14/20/28 at DPI 1. Row origins advance by 0.1 native atlas units. Public TextMetrics confirms 1,980 requests and 198 glyph-size instances per frame in both variants. Everything fits inside a finite 1800 × 1200 page; there is no invisible or clipped extra text. The rows request up to ten phase bins per instance; actual bitmap and outline-cache misses are not instrumented.
 
-| Typeface | First paint master → proposed (ms) | Paired first-paint saving (ms, exploratory 95% interval) | All 44 frames master → proposed (ms) |
+| Typeface | First paint Master → PR (ms) | Paired first-paint saving (ms, exploratory 95% interval) | All 44 frames Master → PR (ms) |
 |---|---:|---:|---:|
 | Fleur de Leah | 89.304 → 19.936 | 69.192 [68.633, 70.555] | 1181.153 → 284.902 |
 | Rye | 51.453 → 12.771 | 38.513 [38.079, 39.176] | 687.949 → 183.041 |
