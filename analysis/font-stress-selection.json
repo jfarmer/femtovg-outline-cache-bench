@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "frozen_utc": "2026-10-02T20:10:35.795181+00:00",
+  "fonts": [
+    {
+      "label": "Rye-Regular",
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    {
+      "label": "DoulosSIL-Regular",
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/upstream-agent/DoulosSIL-Regular.ttf",
+      "sha256": "cc89b87c047bcc8dc00246398218bb6343e0f2372b153cf560c29a77f27068ef",
+      "bytes": 887828
+    },
+    {
+      "label": "Vollkorn-Medium",
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    }
+  ],
+  "screened_distinct_fonts": 56,
+  "selection_inputs": {
+    "font-candidates.json": "e891ba83a51d320003757cf7c791e285b39ad3cb9a9f4ae6557f8a85297516ff",
+    "font-candidates-wave2.json": "6a3541f131a54c669eabd196531250d468794b8efd033d0c4b89340a0ab79f6a",
+    "native-screen/batch.json": "916edbff565103218e8eae6ceb9416585294666f1b3b978e101fe216ebf2eb7a",
+    "native-screen-wave2/batch.json": "f4523f7634991b1e64de51ca1ae5c93143d45152e9ffff3b0f2125384da7f80f",
+    "demo-selection/ranking.json": "a796464a265911d6fc4d51e4b8a01b8fd174d32c7b8afb8f9f1986766542e29d",
+    "demo-selection-wave2/ranking.json": "d27f844c3c9451beea8fc340c807a1bf2033ee4f185353a9583ac3f23969b5ba"
+  },
+  "rationale": {
+    "Rye-Regular": "Highest native hinted per-glyph cost among bytecode fonts in the screen and highest exploratory actual-demo first-paint savings in wave1. Decorative open-font stress case.",
+    "DoulosSIL-Regular": "Second highest exploratory wave1 demo saving; practical non-decorative SIL serif contrast. Its interpreter buffer maxima are smaller than Vollkorn; test actual workload rather than infer from maxima.",
+    "Vollkorn-Medium": "Simultaneously measured previous beneficial-font control; exploratory batches drifted enough that historical results cannot supply this comparison."
+  },
+  "primary_endpoint": "Absolute mean paired-block saving in demo first_paint draw_us, final versus master, at DPR2. DPR1, all other phases, reported sequence sums and GPU draw/submit/complete are retained secondary outcomes.",
+  "confirmation": {
+    "versions": [
+      "master",
+      "final"
+    ],
+    "blocks": 12,
+    "CPU_trials_per_process": 5,
+    "GPU_trials_per_process": 3,
+    "DPR": [
+      1,
+      2
+    ],
+    "order": "2-version Williams counterbalance, six font/DPR configurations rotated across blocks",
+    "statistics": "Process trial medians; paired block effects; mean and 95% paired-block bootstrap confidence interval, 10000 resamples. No optional stopping/exclusions."
+  },
+  "pixels": "New all-phase master/final/native actual-offset oracle captures at both DPRs, exact byte+atlas-count proof required before confirmation. Fixed Roboto controls unchanged by font overrides.",
+  "search_limit": "Two exploratory waves, all attempts retained; no fonts synthesized or modified, no scene, text, zoom schedule, or cache parameters changed. Candidate selection is intentional and disclosed."
+}

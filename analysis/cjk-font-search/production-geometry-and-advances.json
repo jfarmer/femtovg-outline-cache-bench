@@ -1,0 +1,691 @@
+{
+  "complete": true,
+  "analyzer": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/annotate_production_count_trace.py",
+    "sha256": "99700ecbe52b183c96095e1cf938386a359dba39424f83d0f6570653baa05338",
+    "bytes": 3059
+  },
+  "campaign": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/trace-campaign.json",
+    "sha256": "c416f22ef50bdd2826f09729cb826a8e766682066852609e412ebba988872645",
+    "bytes": 41471
+  },
+  "runs": [
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-Rye-Regular-final.events.tsv",
+        "sha256": "af716154fdedbf1eb094369d7ec536d093a8aed2d976f0e4af2041086b59c525",
+        "bytes": 722668
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 106,
+            "empty_native_outlines": 6,
+            "nonempty_geometry_hits": 137,
+            "empty_geometry_hits": 19
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 151
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1077,
+            "empty_native_outlines": 60,
+            "nonempty_geometry_hits": 1554,
+            "empty_geometry_hits": 191
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 710,
+            "empty_native_outlines": 40,
+            "nonempty_geometry_hits": 1025,
+            "empty_geometry_hits": 128
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-Vollkorn-Medium-final.events.tsv",
+        "sha256": "0ee8024fe07d064d8ccf50d1e4bc7fefcbac12db3606daf63df5efba7c8f20c7",
+        "bytes": 722482
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 107,
+            "empty_native_outlines": 5,
+            "nonempty_geometry_hits": 133,
+            "empty_geometry_hits": 18
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 153
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1080,
+            "empty_native_outlines": 48,
+            "nonempty_geometry_hits": 1499,
+            "empty_geometry_hits": 194
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 720,
+            "empty_native_outlines": 31,
+            "nonempty_geometry_hits": 1036,
+            "empty_geometry_hits": 127
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NanumMyeongjo-Regular-final.events.tsv",
+        "sha256": "3d7ef5f836afcf2b68671046753cecce49312c4ac1419478ef79a2a6fe2b58a6",
+        "bytes": 712183
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 106,
+            "empty_native_outlines": 6,
+            "nonempty_geometry_hits": 141,
+            "empty_geometry_hits": 16
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 45
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1068,
+            "empty_native_outlines": 60,
+            "nonempty_geometry_hits": 1549,
+            "empty_geometry_hits": 186
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 703,
+            "empty_native_outlines": 38,
+            "nonempty_geometry_hits": 1007,
+            "empty_geometry_hits": 135
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-ExtraBold",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NanumMyeongjo-ExtraBold-final.events.tsv",
+        "sha256": "31336535dc109df40625cc996e7817da68bd7f764af9ffe5eec5fcf8066fee0d",
+        "bytes": 712620
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 106,
+            "empty_native_outlines": 6,
+            "nonempty_geometry_hits": 141,
+            "empty_geometry_hits": 16
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 45
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1068,
+            "empty_native_outlines": 60,
+            "nonempty_geometry_hits": 1543,
+            "empty_geometry_hits": 187
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 710,
+            "empty_native_outlines": 39,
+            "nonempty_geometry_hits": 1000,
+            "empty_geometry_hits": 133
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-BabelStoneHan-final.events.tsv",
+        "sha256": "8189496ee00cdd27b24123ead3709b9e2d41546693f490824598f998f5da83e9",
+        "bytes": 669133
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 107,
+            "empty_native_outlines": 5,
+            "nonempty_geometry_hits": 20,
+            "empty_geometry_hits": 1
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1080,
+            "empty_native_outlines": 48,
+            "nonempty_geometry_hits": 1424,
+            "empty_geometry_hits": 170
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 712,
+            "empty_native_outlines": 31,
+            "nonempty_geometry_hits": 927,
+            "empty_geometry_hits": 110
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "font": "NotoSansSC[wght]",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NotoSansSC[wght]-final.events.tsv",
+        "sha256": "5bbf9466c3ce80f4ce044bc604af88780d10e4d3daf32ca22afa88c6bd959a51",
+        "bytes": 734736
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 114,
+            "empty_native_outlines": 5,
+            "nonempty_geometry_hits": 132,
+            "empty_geometry_hits": 17
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 43
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1164,
+            "empty_native_outlines": 48,
+            "nonempty_geometry_hits": 1452,
+            "empty_geometry_hits": 191
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 723,
+            "empty_native_outlines": 31,
+            "nonempty_geometry_hits": 1026,
+            "empty_geometry_hits": 124
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NotoSerifSC[wght]-final.events.tsv",
+        "sha256": "0c78bdf3d41579989d08d5a8bfca983c35e57d19f6e9f07902cbddf9646edc65",
+        "bytes": 754338
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 114,
+            "empty_native_outlines": 5,
+            "nonempty_geometry_hits": 139,
+            "empty_geometry_hits": 18
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 113
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1164,
+            "empty_native_outlines": 48,
+            "nonempty_geometry_hits": 1467,
+            "empty_geometry_hits": 189
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 795,
+            "empty_native_outlines": 33,
+            "nonempty_geometry_hits": 971,
+            "empty_geometry_hits": 131
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-NanumMyeongjo-Regular-final.events.tsv",
+        "sha256": "c57a87a7a3643bab6e6f0968c05889117c887b9a2ccdef4bc6d3dfca42f001e6",
+        "bytes": 659449
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 145,
+            "empty_native_outlines": 6,
+            "empty_geometry_hits": 16,
+            "nonempty_geometry_hits": 31
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 45
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1548,
+            "empty_native_outlines": 62,
+            "empty_geometry_hits": 152,
+            "nonempty_geometry_hits": 261
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 1034,
+            "empty_native_outlines": 41,
+            "empty_geometry_hits": 101,
+            "nonempty_geometry_hits": 174
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-ExtraBold",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-NanumMyeongjo-ExtraBold-final.events.tsv",
+        "sha256": "8c1464627812b7eb3ccfb01d43dc747947fc87412ad4bfcb850b4d3c6b5c8de2",
+        "bytes": 660697
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 145,
+            "empty_native_outlines": 6,
+            "empty_geometry_hits": 16,
+            "nonempty_geometry_hits": 31
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 45
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1551,
+            "empty_native_outlines": 61,
+            "empty_geometry_hits": 153,
+            "nonempty_geometry_hits": 258
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 1031,
+            "empty_native_outlines": 40,
+            "empty_geometry_hits": 102,
+            "nonempty_geometry_hits": 177
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-BabelStoneHan-final.events.tsv",
+        "sha256": "de9a9ad70043ad002f0495c184f6bd8c7e1ecec5574aef09b207726dc0514166",
+        "bytes": 539513
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 137,
+            "empty_native_outlines": 2
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1428,
+            "nonempty_geometry_hits": 159
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 966,
+            "nonempty_geometry_hits": 91
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSansSC[wght]",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-NotoSansSC[wght]-final.events.tsv",
+        "sha256": "cb86fd96992622fa06cdd24c1ecce92e4eb26b094bf0a39add094c3c6b11cd76",
+        "bytes": 547519
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 137,
+            "nonempty_geometry_hits": 8,
+            "empty_native_outlines": 2,
+            "empty_geometry_hits": 1
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 43
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1430,
+            "nonempty_geometry_hits": 161
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 956,
+            "nonempty_geometry_hits": 104
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-NotoSerifSC[wght]-final.events.tsv",
+        "sha256": "7b99d0203d37a84da66815869330ebd16a5f8d15b08463c94d7c11519b951804",
+        "bytes": 557318
+      },
+      "phases": {
+        "first_paint": {
+          "regular": {
+            "nonempty_native_outlines": 137,
+            "nonempty_geometry_hits": 8,
+            "empty_native_outlines": 2,
+            "empty_geometry_hits": 1
+          },
+          "icons": {
+            "nonempty_native_outlines": 6
+          }
+        },
+        "warmup": {
+          "regular": {
+            "nonempty_native_outlines": 15,
+            "nonempty_geometry_hits": 114
+          }
+        },
+        "zoom_in": {
+          "regular": {
+            "nonempty_native_outlines": 1433,
+            "nonempty_geometry_hits": 159
+          },
+          "icons": {
+            "nonempty_native_outlines": 56
+          }
+        },
+        "zoom_out": {
+          "regular": {
+            "nonempty_native_outlines": 952,
+            "nonempty_geometry_hits": 108
+          },
+          "icons": {
+            "nonempty_native_outlines": 42
+          }
+        }
+      }
+    }
+  ],
+  "advance_widths": [
+    {
+      "font": "BabelStoneHan",
+      "sha256": "d8bb747b3fdccd84a60bd0aa56bb90937270d0bd15f1101cd8f2a5a3709dd0a3",
+      "corpora": {
+        "chinese": {
+          "distinct_mapped_chars": 102,
+          "advance_width_frequency": {
+            "1024": 102
+          },
+          "units_per_em": 1024
+        },
+        "korean": {
+          "distinct_mapped_chars": 0,
+          "advance_width_frequency": {},
+          "units_per_em": 1024
+        }
+      }
+    },
+    {
+      "font": "NanumMyeongjo-ExtraBold",
+      "sha256": "60c0077fce069ba90ae97c0a3679f6eb3712e0ca637bdd0c15b72d335ec46db7",
+      "corpora": {
+        "chinese": {
+          "distinct_mapped_chars": 0,
+          "advance_width_frequency": {},
+          "units_per_em": 1024
+        },
+        "korean": {
+          "distinct_mapped_chars": 113,
+          "advance_width_frequency": {
+            "973": 113
+          },
+          "units_per_em": 1024
+        }
+      }
+    },
+    {
+      "font": "NanumMyeongjo-Regular",
+      "sha256": "7ed9e8653a8ed04285d51dc343ffea6eb3d9c73afc27383ea8929ee4ffd03205",
+      "corpora": {
+        "chinese": {
+          "distinct_mapped_chars": 0,
+          "advance_width_frequency": {},
+          "units_per_em": 1024
+        },
+        "korean": {
+          "distinct_mapped_chars": 113,
+          "advance_width_frequency": {
+            "973": 113
+          },
+          "units_per_em": 1024
+        }
+      }
+    },
+    {
+      "font": "NotoSansSC[wght]",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "corpora": {
+        "chinese": {
+          "distinct_mapped_chars": 102,
+          "advance_width_frequency": {
+            "1000": 102
+          },
+          "units_per_em": 1000
+        },
+        "korean": {
+          "distinct_mapped_chars": 0,
+          "advance_width_frequency": {},
+          "units_per_em": 1000
+        }
+      }
+    },
+    {
+      "font": "NotoSerifSC[wght]",
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "corpora": {
+        "chinese": {
+          "distinct_mapped_chars": 102,
+          "advance_width_frequency": {
+            "1000": 102
+          },
+          "units_per_em": 1000
+        },
+        "korean": {
+          "distinct_mapped_chars": 0,
+          "advance_width_frequency": {},
+          "units_per_em": 1000
+        }
+      }
+    }
+  ]
+}

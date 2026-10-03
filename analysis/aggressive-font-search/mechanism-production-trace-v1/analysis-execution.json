@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyze_selected_trace.py"
+  ],
+  "exit_code": 0,
+  "analyzer": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyze_selected_trace.py",
+    "sha256": "29f11c1947f057071a68ccd058ca2fa19624052b0aeb1adee230221991aae6d7",
+    "bytes": 8078
+  },
+  "stdout": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analysis.stdout",
+    "sha256": "2b69e7d8eb0a544cbd69c62f75fc9dc07b5c621eaa27ae3f9491ff1c45dc9b56",
+    "bytes": 2451
+  },
+  "stderr": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analysis.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

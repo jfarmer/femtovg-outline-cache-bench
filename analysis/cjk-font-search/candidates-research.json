@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-02",
+  "scope": "Primary-source research only. No font downloads, builds, timings or benchmark-repository writes.",
+  "ranking_basis": "Expected repeated per-glyph decoding and TrueType hint VM cost; total glyph count and file size are not per-glyph work. Screen unchanged binaries with actual mapped glyphs before choosing any confirmation font.",
+  "experiment_constraints": [
+    "Keep the original Latin FemtoVG demo as a separate unchanged-text result.",
+    "Add a clearly labeled CJK-localized text workload if evaluating CJK glyphs; font substitution alone only measures the selected font's Latin subset.",
+    "Use common prose/UI glyphs as primary CJK corpus; any rare many-stroke stress glyphs must be separately labeled.",
+    "Record per-corpus glyph mapping, missing glyphs, bytecode and point/contour metrics, font asset hashes and exact original files.",
+    "Check glyf/fpgm/prep before classifying a TTF as a TrueType VM stressor. A TTF extension by itself does not establish bytecode; a CFF OTF requires a separate mechanism interpretation.",
+    "Pin font bytes without generating, subsetting, auto-hinting or modifying them.",
+    "Rank by actual hinted-outline timing at demo sizes/DPRs, together with unhinted timing, rather than stored hint bytes alone."
+  ],
+  "primary_candidates": [
+    {
+      "name": "Nanum Myeongjo Regular",
+      "repository": "google/fonts",
+      "revision": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+      "asset_path": "ofl/nanummyeongjo/NanumMyeongjo-Regular.ttf",
+      "asset_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nanummyeongjo/NanumMyeongjo-Regular.ttf",
+      "license": "SIL OFL 1.1",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nanummyeongjo/OFL.txt",
+      "screening_reason": "Highest-priority manually hinted Korean serif; serif CJK outlines plausibly add more curve/point work than Gothic. Bold and ExtraBold are natural original asset variants.",
+      "verified_source_claim": "Pinned Google Fonts DESCRIPTION describes screen hinting; official NAVER page https://hangeul.naver.com/think describes Nanum ClearType manual hinting. Complexity/cost remain inference, not measured facts.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "Nanum Gothic Regular",
+      "repository": "google/fonts",
+      "revision": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+      "asset_path": "ofl/nanumgothic/NanumGothic-Regular.ttf",
+      "asset_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nanumgothic/NanumGothic-Regular.ttf",
+      "license": "SIL OFL 1.1",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nanumgothic/OFL.txt",
+      "screening_reason": "High-priority manually hinted Korean sans control against Myeongjo.",
+      "verified_source_claim": "Pinned Google Fonts DESCRIPTION describes screen hinting. Official NAVER page https://hangeul.naver.com/think describes Nanum ClearType manual hinting.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "Nanum Gothic Coding Regular",
+      "repository": "google/fonts",
+      "revision": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+      "asset_path": "ofl/nanumgothiccoding/NanumGothicCoding-Regular.ttf",
+      "asset_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nanumgothiccoding/NanumGothicCoding-Regular.ttf",
+      "license": "SIL OFL 1.1",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nanumgothiccoding/OFL.txt",
+      "screening_reason": "Editor-relevant manually hinted Hangul/Latin monospace; useful against Alustin Latin-like repeated UI. Do not use a Han corpus for it.",
+      "verified_source_claim": "Official NAVER README at https://github.com/naver/nanumfont/blob/770142018d7b23abe48a1ff9370adeac3bbbcd0e/README.md explicitly documents ClearType manual hinting, Hangul/English/Japanese support, and no Han ideographs.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "D2Coding Regular",
+      "repository": "naver/d2-coding-font",
+      "revision": "d95bc36438113099566bb39064334608955c2612",
+      "asset_path": "fonts/ttf/D2Coding-Regular.ttf",
+      "asset_url": "https://raw.githubusercontent.com/naver/d2-coding-font/d95bc36438113099566bb39064334608955c2612/fonts/ttf/D2Coding-Regular.ttf",
+      "license": "SIL OFL 1.1",
+      "license_url": "https://raw.githubusercontent.com/naver/d2-coding-font/d95bc36438113099566bb39064334608955c2612/OFL.txt",
+      "screening_reason": "Strong additional Korean editor face derived from Nanum Barun Gothic, with Han and full Hangul coverage; plausible manual hint VM stress beyond coding font alone.",
+      "verified_source_claim": "Official NAVER README and release VER1.3.3 document hinting tuned 8–18pt. Release 1.3.3 is metadata-only relative to 1.3.2.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "Droid Sans Fallback",
+      "repository": "aosp-mirror/platform_frameworks_base",
+      "revision": "1cdfff555f4a21f71ccc978290e2e212e2f8b168",
+      "asset_path": "data/fonts/DroidSansFallback.ttf",
+      "asset_url": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/1cdfff555f4a21f71ccc978290e2e212e2f8b168/data/fonts/DroidSansFallback.ttf",
+      "license": "Apache 2.0",
+      "license_url": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/1cdfff555f4a21f71ccc978290e2e212e2f8b168/data/fonts/NOTICE",
+      "screening_reason": "Legacy shipped Android CJK outline; useful older-font control. Inspect actual CJK glyph instructions rather than assuming their presence.",
+      "verified_source_claim": "Pinned data/fonts/README.txt explicitly says platform fonts in this directory are Apache 2 licensed. DroidSansFallbackFull.ttf also exists beside this asset.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "WenQuanYi Micro Hei",
+      "repository": "anthonyfok/fonts-wqy-microhei",
+      "revision": "cd82defe33ec0e86e628329f1b63049ef562c8e5",
+      "asset_path": "wqy-microhei.ttc",
+      "asset_url": "https://raw.githubusercontent.com/anthonyfok/fonts-wqy-microhei/cd82defe33ec0e86e628329f1b63049ef562c8e5/wqy-microhei.ttc",
+      "license": "Apache 2.0 OR GPL v3 with font embedding exception",
+      "license_url": "https://raw.githubusercontent.com/anthonyfok/fonts-wqy-microhei/cd82defe33ec0e86e628329f1b63049ef562c8e5/LICENSE_Apache2.txt",
+      "screening_reason": "Compact legacy CJK collection derived from Droid; index 0 Micro Hei and index 1 Mono. Composite outline decoding may dominate even if CJK instructions are absent.",
+      "verified_source_claim": "Pinned README version 0.2.0-beta explicitly guarantees Latin hinting, not CJK hinting; names two TTC faces and states Droid derivation. Packaging maintainer repository, not author-owned upstream; original author documentation is preserved.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "Noto Sans SC variable TrueType",
+      "repository": "notofonts/noto-cjk",
+      "revision": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+      "asset_path": "Sans/Variable/TTF/Subset/NotoSansSC-VF.ttf",
+      "asset_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/Variable/TTF/Subset/NotoSansSC-VF.ttf",
+      "license": "SIL OFL 1.1",
+      "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/LICENSE",
+      "screening_reason": "Modern large CJK control. Use original TrueType release rather than regenerating from CFF, and inspect actual instructions before making VM claims.",
+      "verified_source_claim": "Pinned official Sans/README.md lists this region-subset variable TTF format; pinned Sans/NEWS.md documents 2.004 and OFL 1.1.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "BabelStone Han",
+      "source_page": "https://www.babelstone.co.uk/Fonts/Han.html",
+      "version": "16.0.3",
+      "release_date": "2025-01-01",
+      "asset_url": "https://www.babelstone.co.uk/Fonts/Download/BabelStoneHan-16.0.3.zip",
+      "asset_path_inside_archive": "BabelStoneHan.ttf",
+      "license": "Original Arphic Public License (1999)",
+      "license_url": "https://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE",
+      "screening_reason": "Song/Ming outline-heavy CJK control, including rare many-stroke glyphs; coverage is not evidence of per-glyph cost. Hinting unverified.",
+      "verified_source_claim": "Author page provides this exact versioned ZIP and original unrestricted Arphic license; this was confirmed by reading author HTML metadata without downloading the font.",
+      "performance_status": "unmeasured"
+    }
+  ],
+  "secondary_candidates": [
+    {
+      "name": "Original AR PL Mingti2L Big5",
+      "asset_url": "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/bsmi00lp.ttf.gz",
+      "source_page": "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/",
+      "directory_listing_date": "2000-02-28",
+      "license_url": "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/LICENSE",
+      "reason": "Unchanged original Arphic asset; inspect hinting, unlike derivatives known to have removed generated hints."
+    },
+    {
+      "name": "Original AR PL SungtiL GB",
+      "asset_url": "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/gbsn00lp.ttf.gz",
+      "source_page": "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/",
+      "directory_listing_date": "2000-02-28",
+      "license_url": "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/LICENSE",
+      "reason": "Smaller original legacy Song CJK comparison."
+    },
+    {
+      "name": "WenQuanYi Zen Hei",
+      "repository": "deepin-community/fonts-wqy-zenhei",
+      "revision": "ffaf6eb0b269fc3768f6000ce22eb1ec42900e3c",
+      "asset_path": "wqy-zenhei.ttc",
+      "asset_url": "https://raw.githubusercontent.com/deepin-community/fonts-wqy-zenhei/ffaf6eb0b269fc3768f6000ce22eb1ec42900e3c/wqy-zenhei.ttc",
+      "license": "GPL v2 with font embedding exception",
+      "license_url": "https://raw.githubusercontent.com/deepin-community/fonts-wqy-zenhei/ffaf6eb0b269fc3768f6000ce22eb1ec42900e3c/COPYING",
+      "screening_reason": "Geometry control, lower VM-extreme priority because no hint claim verified and embedded bitmaps could bypass tested outline route at selected sizes.",
+      "verified_source_claim": "Pinned README describes version 0.9.45 release 7, embedded bitmaps and outline Hanzi; publisher packaging mirror rather than author-owned repository.",
+      "performance_status": "unmeasured by this research agent; no cost or speedup asserted"
+    },
+    {
+      "name": "AR PL UKai / UMing derivatives",
+      "priority": "low for hint-bytecode search",
+      "source_page": "https://github.com/SilentByte/fonts-arphic-ukai/blob/master/fonts-arphic-ukai/FONTLOG",
+      "reason": "UKai FONTLOG 2003-05-04 says auto-generated hints were removed. This argues against assuming it is VM-extreme merely because it is old/large; can still be an outline geometry control."
+    }
+  ],
+  "sources": [
+    "https://hangeul.naver.com/think",
+    "https://developers.naver.com/notice/article/7563",
+    "https://help.naver.com/service/11029/contents/18088?lang=ko&osType=PC",
+    "https://github.com/naver/d2-coding-font/blob/d95bc36438113099566bb39064334608955c2612/README.md",
+    "https://github.com/naver/d2-coding-font/releases/tag/VER1.3.3",
+    "https://github.com/anthonyfok/fonts-wqy-microhei/blob/cd82defe33ec0e86e628329f1b63049ef562c8e5/README.txt",
+    "https://github.com/notofonts/noto-cjk/blob/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/README.md",
+    "https://github.com/aosp-mirror/platform_frameworks_base/blob/1cdfff555f4a21f71ccc978290e2e212e2f8b168/data/fonts/README.txt",
+    "https://www.babelstone.co.uk/Fonts/Han.html",
+    "https://ftp.gnu.org/gnu/non-gnu/chinese-fonts-truetype/"
+  ]
+}

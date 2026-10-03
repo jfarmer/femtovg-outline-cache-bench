@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "entries": [
+    {
+      "observed_tool_exit_code": 0,
+      "tool_chunk": "a6a7f6",
+      "command": [
+        "python3",
+        "-B",
+        "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/diagnose_selected.py",
+        "collect"
+      ],
+      "stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/collector.stdout",
+        "sha256": "5b0bde8c478bb4bf2eda7ae22c0211fd8ddd347c00513bbab9103ff8a1c79c8f",
+        "bytes": 628
+      },
+      "stderr": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/collector.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "driver": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/diagnose_selected.py",
+        "sha256": "da34f3b9fdcd0d76eadb1652b6bf769d413459292c19d02b8b91a023f2f300da",
+        "bytes": 13106
+      }
+    },
+    {
+      "observed_tool_exit_code": 0,
+      "tool_chunk": "586cf4",
+      "command": [
+        "python3",
+        "-B",
+        "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/diagnose_selected.py",
+        "analyze"
+      ],
+      "stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analyzer.stdout",
+        "sha256": "9991f3c2eedbf025f0fe9183da105e0c409ce3fa74a39e7aa0fa8361884c9498",
+        "bytes": 184
+      },
+      "stderr": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analyzer.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "driver": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/diagnose_selected.py",
+        "sha256": "da34f3b9fdcd0d76eadb1652b6bf769d413459292c19d02b8b91a023f2f300da",
+        "bytes": 13106
+      }
+    }
+  ],
+  "observation": "Exact exit0 observed in functions tool responses; completion records and preserved stdout/stderr additionally checked."
+}

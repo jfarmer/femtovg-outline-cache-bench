@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-10-03T16:11:15.178057+00:00",
+  "completed_processes": 72,
+  "expected_processes": 72,
+  "summary_rows": 15,
+  "phase_observations": 288,
+  "measured_frames": 3168,
+  "interference_events": 0,
+  "all_processes_returned_zero": true,
+  "all_before_after_process_guards_idle": true,
+  "plan_sha256": "28baa1129ec0a9615bb22371b3a042b0639d02818d9f888da11443b1363a66d2",
+  "raw_sha256": "4510d0fc98c75c8699a53fa4d839dd4f19c4a90654082dd9058532f1b7ce0b67",
+  "summary_sha256": "af323ab422a2b4f2d0f66707f8be497a2c07044d6cc79c8b94e8fc1d3441bc34",
+  "report_sha256": "95d0791b7151122991055afeb53bc0519fd711c54a765d63a7baf44a91d9baa7"
+}

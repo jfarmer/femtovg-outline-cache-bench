@@ -1,0 +1,72 @@
+What makes an outline cache useful
+
+Two independent conditions matter: how much CPU work an outline costs, and how often a new bitmap phase requests an outline already computed at the same font, exact size and variation. Whole-font bytecode totals and glyph counts do not measure either condition sufficiently.
+
+The observed production workload, without timing instrumentation
+
+The count-only study copies the frozen measured libraries, adds observational eprintln calls, and limits the unchanged runner to the demo scene. All five demo phases and all 119 original warmup frames remain. Each of 12 font/locale cases ran master and final once at requested DPR2, using the CPU Void renderer. The resulting 24 processes have 184 frames each. Diagnostic elapsed times are discarded; neither numerical analyzer reads them.
+
+Every one of the 120 reported atlas-count rows agrees with that version's original measured runner. Every master native-render request sequence agrees exactly with final's outline-request sequence, including glyph, exact size bits, coordinates and horizontal phase. The independent audit reconstructs every copied source edit back to its original bytes, verifies six resolved dependency/feature graphs against the measured originals, and independently recounts raw events. This establishes identical request workloads, not fresh pixel agreement. Earlier original master/final/native-oracle pixel evidence applies to the Rye/Vollkorn controls, and separate localized CJK pixel campaigns apply to the Korean and Chinese workloads. The new exploratory English CJK-font cohort has no application pixel-proof campaign. Observational edits, source agreement, request-sequence agreement and atlas-count agreement do not supply a new pixel proof for that cohort.
+
+First-paint regular-font counts:
+locale/font                    master native  final nonempty hits  empty hits  final misses  final scaler builds
+English Rye                    268            137                  19          112           39
+English Vollkorn               263            133                  18          112           37
+English Nanum Myeongjo Reg/EB   269            141                  16          112           37
+Korean Nanum Myeongjo Reg/EB    198             31                  16          151           47
+English BabelStone Han         133             20                   1          112           30
+Chinese BabelStone Han         139              0                   0          139           29
+English Noto Sans SC           268            132                  17          119           38
+English Noto Serif SC          276            139                  18          119           38
+Chinese Noto Sans/Serif SC      148              8                   1          139           30
+
+Counts include empty outlines such as spaces. A hit with nonempty geometry is a stronger indicator of avoided visible-glyph work, but is still not a dynamic VM instruction count. No font has a whole-cache clear during first paint. All fonts have zero outline requests, scaler builds and native renders during the reported warm and pan phases. CPU differences in those phases therefore occur outside outline hit/miss work, for example PNG classification, routing, run handling and general draw work; they do not measure arena admission or allocation.
+
+During the zoom phases, the retained 1 MiB working set can clear. Korean Myeongjo clears twice during zoom-in and once during zoom-out; Chinese BabelStone clears once and twice; Chinese Noto Sans and Serif clear once in each phase. These are measured cache events. They do not by themselves prove that an uncertain timing regression was caused by eviction.
+
+Why phase reuse differs
+
+The old bitmap atlas already caches glyph/font/size/mode/variation plus horizontal phase. Only a vacant bitmap entry reaches native Swash rendering. Final's geometry key deliberately excludes phase and keeps font CacheKey, glyph id, exact f32 size bits and full normalized variation coordinates. It rerasterizes the retained geometry at the new phase; bitmap rasterization and upload remain.
+
+For this fixed text, the localized Chinese scene needs little repeated geometry on first paint: BabelStone has no geometry hits and Noto has eight nonempty hits. The same English scene needs 132-141 nonempty hits for Noto/Nanum, and Rye has 137. Direct hmtx inspection also finds that all 102 mapped ordinary Han characters in the inspected fixed Chinese corpus have one-em advances in BabelStone/Noto, while all 113 mapped Hangul characters in Myeongjo have 973/1024-em advances. At integer initial outline sizes, full-em advances are integral. That is consistent with repeated Han already sharing a bitmap phase, whereas proportional Latin text can request several phases of the same outline. This spacing explanation is an inference supported by the recorded requests and default-instance metrics; glyph count alone is not the mechanism, and the metric inspection does not assert HVAR behavior at every variation.
+
+What master repeats, and what Swash already caches
+
+Master constructs a native Scaler on each bitmap-atlas miss: frozen master src/text.rs:757-773. Swash ScalerBuilder::new constructs a Skrifa FontRef and OutlineGlyphCollection at every builder call, even when its ScalerProxy font cache hits: Swash src/scale/mod.rs:362-378. Constructing a TrueType outline collection reads table metadata, not all glyph outlines; a large glyph count must not be presented as proof of a correspondingly expensive builder.
+
+Swash already has a separate eight-entry LRU of HintingInstances per outline format (Glyf, CFF, other), keyed by font identity, size and normalized coordinates: src/scale/hinting_cache.rs:12-18,34-64,76-100; builder lookup src/scale/mod.rs:446-463. This is distinct from ScaleContext's default eight-entry font-proxy cache. When a hint instance is reused, font-program and prep execution are retained; master does not normally execute the whole font program for every glyph. A new/evicted hint instance does execute font/prep setup through Skrifa glyf/hint/instance.rs:54-79.
+
+The uncached per-glyph path still fetches/describes the glyph, recursively examines composites, decodes and scales points, applies variations where requested, executes that glyph's hint program when present, and converts it to drawing commands. Swash src/scale/mod.rs:565-580 calls OutlineGlyphCollection::get followed by glyph.draw every time. Skrifa glyf/mod.rs:152-171,190-242 describes simple/composite geometry and hinting storage; simple glyph execution is gated by nonempty instructions at 727-762 and composite execution at 961-985. The cache hit avoids that path and can also avoid a lazily constructed run scaler. On a miss, final reuses one scaler for the run segment, rather than building one per glyph: frozen final src/text/swash_rasterizer.rs:61-84,143-184 and src/text.rs:649-700. Blank-image fallback ends a segment, so it is not necessarily one scaler for an entire text run.
+
+Stored hint bytes are not executed instructions
+
+Rye's roughly 20 microsecond prepared hinted-outline cost versus roughly 2.5 microseconds for the most costly screened Korean font and 0.4-0.6 microseconds for the screened Chinese fonts is direct kernel evidence of different repeated per-glyph costs. The exact aggregate cannot be used as an app prediction. A glyph can call a short function many times, use LOOPCALL, take size-dependent branches, or operate on many points. Composites can invoke component glyph programs whose bytes are absent from the root glyph's direct byte count. Conversely, font definitions can occupy many bytes but execute little during a particular glyph draw.
+
+Skrifa executes opcodes in the dispatch loop (glyf/hint/engine/dispatch.rs:55-71); CALL and LOOPCALL are at definition.rs:61-82. The private dispatch instruction counter is a safety limit and is not exposed as a measurement. Dynamic diagnostic counters can distinguish font/prep/glyph invocations, dispatched operations, CALL/LOOPCALL and point work, but even opcode counts are not cycle counts. Native timing of hinted versus unhinted outlines is the proportionate first measure; an untimed copied-dependency VM trace is the stronger causal supplement.
+
+Allocator and working memory are additional per-glyph costs. Skrifa chooses zeroed stack buckets up to 16 KiB and a zeroed heap vector above that threshold (outline/memory.rs:5-30), with the required size derived from actual outline geometry and declared hinting maxima (outline/mod.rs:343-348,759-770; glyf/mod.rs:164-171). Glyph hinting copies twilight state (glyf/hint/instance.rs:112-119). Cache hits avoid this native work; the arena reduces retained-outline allocations separately. Large declared maxp buffers can matter, but neither buffer maxima nor stored bytes alone establish execution time.
+
+All named SC/Nanum/Rye/Vollkorn candidates here select the TrueType interpreter path, because they have nonempty fpgm/prep or nonzero maxSizeOfInstructions. The real fallback decision also checks that maxp field (Skrifa glyf/mod.rs:115), not just fpgm/prep. Noto SC's seven-byte prep is PUSHW 511; SCANCTRL; PUSHB 4; SCANTYPE. It is not an INSTCTRL program disabling hint execution; the fonts have no per-glyph hint instructions to execute. Autohinter font-wide style construction exists in Skrifa and can cost setup for other fonts, but it is not an explanation established for these candidates.
+
+Another independent benefit: avoiding an unnecessary generic outline
+
+Before native atlas lookup, master classifies each glyph by calling Font::glyph, which tries to create a generic unhinted Path when its glyph/variation key is vacant: master src/lib.rs:4495-4501 and src/text/font.rs:802-843. With the benchmark's default textlayout feature, this is ttf_parser outline decoding, followed by native Swash decoding later. Successfully built paths are cached, so this duplicate generic construction is principally a first-glyph/variation cost; blank/missing results are not inserted and can be retried. Final uses matching largest-strike PNG metadata to classify Swash atlas fills, avoiding generic outline construction: final src/lib.rs:4493-4511 and src/text/font.rs:800-815. Direct paths and strokes still use generic geometry. This explains why some benefit can remain with little per-glyph bytecode or little geometry reuse. It should be separated from VM savings; the cache patch bundles classification, run-scaler reuse and geometry retention.
+
+Native screen versus application sizes and variations
+
+The actual requested DPR2 first paints use regular outline sizes 11,12,14,15,16. draw_text includes DPR while shaping (final src/lib.rs:4206-4224), then divides glyph positions by that scale (4330-4335); draw_glyph_run computes effective_font_size from Paint's font size and the quantized canvas transform, without multiplying DPR (4445-4475). Thus a DPR label is not automatically an outline-size multiplier in the real application.
+
+The native screen explicitly defines case.size=logical_size*dpr, and always uses normalized_coords(&[]) (font-stress-search src/main.rs:49-75,194-200). Its initial DPR1 outline sizes match the traced initial sizes; its DPR2 rows test larger outline sizes. Prepared native kernels also exclude builder creation, instance setup and warmup from their timer. The application zoom phases have exact sizes approximately 9.625-50px, depending on label and quantized transform.
+
+The real demo requests weight overrides for several labels via Paint::with_font_weight, which sets the wght variation (final src/paint.rs:1428-1440). Noto trace coordinates are [] plus [2621]/[6390] for Sans and [1555]/[3441] for Serif. Native default-instance timings do not measure these variation states. Separately labelled nondefault-coordinate kernels and builder-only/rebuild-plus-outline kernels can isolate variation and setup costs without changing production or old measurements.
+
+Evidence artifacts
+
+mechanism-production-trace-v2/prepare.json binds original/copy source bytes and exact edit diffs.
+build.json binds six unique binaries, lockfiles and build commands.
+trace-campaign.json binds 24 exact invocations, fonts and raw events; its diagnostic durations are excluded.
+counts-analysis.json contains all regular/icon phase counts, exact size bits, coordinates, atlas checks and clears.
+independent-count-audit.json reconstructs source edits, matches dependency/feature graphs, and independently recounts requests.
+geometry-and-advances.json separates empty/nonempty hits and records fixed-corpus hmtx measurements.
+
+The failed initial build and its original helper remain preserved in mechanism-production-trace and production_count_trace.py. The fresh v2 only fixes the copied English runner's common-module path and gives copies new unique package/bin identities. No production FemtoVG or Swash checkout source was edited.

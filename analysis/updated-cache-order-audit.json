@@ -1,0 +1,817 @@
+{
+  "complete": true,
+  "versions": [
+    "master",
+    "prior",
+    "updated45",
+    "final"
+  ],
+  "raw_launches": 288,
+  "accepted_blocks": 72,
+  "accepted_launches": 288,
+  "retry_blocks": 0,
+  "exactly_balanced_groups": 6,
+  "groups_with_retry_induced_imbalance": 0,
+  "group_order_counts": [
+    {
+      "factor": [
+        "winit-femtovg",
+        "ptsans"
+      ],
+      "orders": [
+        {
+          "order": [
+            "final",
+            "master",
+            "updated45",
+            "prior"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "master",
+            "prior",
+            "final",
+            "updated45"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "prior",
+            "updated45",
+            "master",
+            "final"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "updated45",
+            "final",
+            "prior",
+            "master"
+          ],
+          "count": 3
+        }
+      ],
+      "positions": {
+        "master": {
+          "0": 3,
+          "2": 3,
+          "3": 3,
+          "1": 3
+        },
+        "prior": {
+          "1": 3,
+          "0": 3,
+          "2": 3,
+          "3": 3
+        },
+        "updated45": {
+          "3": 3,
+          "1": 3,
+          "0": 3,
+          "2": 3
+        },
+        "final": {
+          "2": 3,
+          "3": 3,
+          "1": 3,
+          "0": 3
+        }
+      },
+      "predecessors": [
+        {
+          "previous": "final",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "prior",
+          "count": 3
+        }
+      ],
+      "exactly_balanced": true
+    },
+    {
+      "factor": [
+        "winit-femtovg",
+        "roboto"
+      ],
+      "orders": [
+        {
+          "order": [
+            "final",
+            "master",
+            "updated45",
+            "prior"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "master",
+            "prior",
+            "final",
+            "updated45"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "prior",
+            "updated45",
+            "master",
+            "final"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "updated45",
+            "final",
+            "prior",
+            "master"
+          ],
+          "count": 3
+        }
+      ],
+      "positions": {
+        "master": {
+          "0": 3,
+          "2": 3,
+          "3": 3,
+          "1": 3
+        },
+        "prior": {
+          "1": 3,
+          "0": 3,
+          "2": 3,
+          "3": 3
+        },
+        "updated45": {
+          "3": 3,
+          "1": 3,
+          "0": 3,
+          "2": 3
+        },
+        "final": {
+          "2": 3,
+          "3": 3,
+          "1": 3,
+          "0": 3
+        }
+      },
+      "predecessors": [
+        {
+          "previous": "final",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "prior",
+          "count": 3
+        }
+      ],
+      "exactly_balanced": true
+    },
+    {
+      "factor": [
+        "winit-femtovg",
+        "vollkorn"
+      ],
+      "orders": [
+        {
+          "order": [
+            "final",
+            "master",
+            "updated45",
+            "prior"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "master",
+            "prior",
+            "final",
+            "updated45"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "prior",
+            "updated45",
+            "master",
+            "final"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "updated45",
+            "final",
+            "prior",
+            "master"
+          ],
+          "count": 3
+        }
+      ],
+      "positions": {
+        "master": {
+          "0": 3,
+          "2": 3,
+          "3": 3,
+          "1": 3
+        },
+        "prior": {
+          "1": 3,
+          "0": 3,
+          "2": 3,
+          "3": 3
+        },
+        "updated45": {
+          "3": 3,
+          "1": 3,
+          "0": 3,
+          "2": 3
+        },
+        "final": {
+          "2": 3,
+          "3": 3,
+          "1": 3,
+          "0": 3
+        }
+      },
+      "predecessors": [
+        {
+          "previous": "final",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "prior",
+          "count": 3
+        }
+      ],
+      "exactly_balanced": true
+    },
+    {
+      "factor": [
+        "winit-femtovg-wgpu",
+        "ptsans"
+      ],
+      "orders": [
+        {
+          "order": [
+            "final",
+            "master",
+            "updated45",
+            "prior"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "master",
+            "prior",
+            "final",
+            "updated45"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "prior",
+            "updated45",
+            "master",
+            "final"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "updated45",
+            "final",
+            "prior",
+            "master"
+          ],
+          "count": 3
+        }
+      ],
+      "positions": {
+        "master": {
+          "0": 3,
+          "2": 3,
+          "3": 3,
+          "1": 3
+        },
+        "prior": {
+          "1": 3,
+          "0": 3,
+          "2": 3,
+          "3": 3
+        },
+        "updated45": {
+          "3": 3,
+          "1": 3,
+          "0": 3,
+          "2": 3
+        },
+        "final": {
+          "2": 3,
+          "3": 3,
+          "1": 3,
+          "0": 3
+        }
+      },
+      "predecessors": [
+        {
+          "previous": "final",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "prior",
+          "count": 3
+        }
+      ],
+      "exactly_balanced": true
+    },
+    {
+      "factor": [
+        "winit-femtovg-wgpu",
+        "roboto"
+      ],
+      "orders": [
+        {
+          "order": [
+            "final",
+            "master",
+            "updated45",
+            "prior"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "master",
+            "prior",
+            "final",
+            "updated45"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "prior",
+            "updated45",
+            "master",
+            "final"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "updated45",
+            "final",
+            "prior",
+            "master"
+          ],
+          "count": 3
+        }
+      ],
+      "positions": {
+        "master": {
+          "0": 3,
+          "2": 3,
+          "3": 3,
+          "1": 3
+        },
+        "prior": {
+          "1": 3,
+          "0": 3,
+          "2": 3,
+          "3": 3
+        },
+        "updated45": {
+          "3": 3,
+          "1": 3,
+          "0": 3,
+          "2": 3
+        },
+        "final": {
+          "2": 3,
+          "3": 3,
+          "1": 3,
+          "0": 3
+        }
+      },
+      "predecessors": [
+        {
+          "previous": "final",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "prior",
+          "count": 3
+        }
+      ],
+      "exactly_balanced": true
+    },
+    {
+      "factor": [
+        "winit-femtovg-wgpu",
+        "vollkorn"
+      ],
+      "orders": [
+        {
+          "order": [
+            "final",
+            "master",
+            "updated45",
+            "prior"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "master",
+            "prior",
+            "final",
+            "updated45"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "prior",
+            "updated45",
+            "master",
+            "final"
+          ],
+          "count": 3
+        },
+        {
+          "order": [
+            "updated45",
+            "final",
+            "prior",
+            "master"
+          ],
+          "count": 3
+        }
+      ],
+      "positions": {
+        "master": {
+          "0": 3,
+          "2": 3,
+          "3": 3,
+          "1": 3
+        },
+        "prior": {
+          "1": 3,
+          "0": 3,
+          "2": 3,
+          "3": 3
+        },
+        "updated45": {
+          "3": 3,
+          "1": 3,
+          "0": 3,
+          "2": 3
+        },
+        "final": {
+          "2": 3,
+          "3": 3,
+          "1": 3,
+          "0": 3
+        }
+      },
+      "predecessors": [
+        {
+          "previous": "final",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "final",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "prior",
+          "count": 3
+        },
+        {
+          "previous": "master",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "prior",
+          "next": "updated45",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "final",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "master",
+          "count": 3
+        },
+        {
+          "previous": "updated45",
+          "next": "prior",
+          "count": 3
+        }
+      ],
+      "exactly_balanced": true
+    }
+  ],
+  "summary_sha256": "93239420ef99118059f16e2f282c6064a317af5ce7904e825fd3e7401a6ea07c",
+  "interpretation": "All six backend/font cohorts have three occurrences of each declared Williams order, each version/position, and every directed predecessor pair. Every accepted raw query equals a; no retries or excluded launches."
+}

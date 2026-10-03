@@ -1,0 +1,1957 @@
+{
+  "complete": true,
+  "auditor": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/audit_retention_ablation.py",
+    "sha256": "ca81b7e36a7c4d0ea8c8a175a2b6d7f0d86dd61d680e2dbaffe4bbc5520df541",
+    "bytes": 10393
+  },
+  "prepare": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/prepare.json",
+    "sha256": "18df9616795bb2eb5a3a06ee6f8ac166f895dc412db3cc07d706d41b41aa22e6",
+    "bytes": 245822
+  },
+  "build": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/build.json",
+    "sha256": "9783ac80750a19b5e966d9b03838950b95d37a1231a8fc8da694698368f8d6bb",
+    "bytes": 15216
+  },
+  "protocol": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/protocol-frozen.json",
+    "sha256": "ff41c5e0eb5402284b611436fbe2eafbe6ccc1e8a05f2ce134711f8bb74b3358",
+    "bytes": 202508
+  },
+  "campaign": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/campaign.json",
+    "sha256": "e9f46993f32c5147aebade7eee9c69e474426de00ea1369a9a16349e6093a689",
+    "bytes": 259379
+  },
+  "analysis": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/analysis.json",
+    "sha256": "1e3d8b723663cef78a9134316e676d964da8b274f2a4beb9bf3b074d0a5bc3f1",
+    "bytes": 239302
+  },
+  "source_checks": [
+    {
+      "group": "libraries",
+      "name": "master",
+      "files": 136,
+      "modified_files": []
+    },
+    {
+      "group": "libraries",
+      "name": "final",
+      "files": 139,
+      "modified_files": []
+    },
+    {
+      "group": "libraries",
+      "name": "no_retention",
+      "files": 139,
+      "modified_files": [
+        "Cargo.toml",
+        "src/text/swash_rasterizer.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "en-master",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "en-final",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "en-no_retention",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "ko-master",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "ko-final",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "ko-no_retention",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "zh-master",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "zh-final",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "group": "runners",
+      "name": "zh-no_retention",
+      "files": 8,
+      "modified_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    }
+  ],
+  "graphs": [
+    {
+      "name": "en-master",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/en-master.metadata.json",
+        "sha256": "24e9a241e929baa0f50e3876459aab32ceafed84abb2a4bd87e7dd111d334b4e",
+        "bytes": 786506
+      }
+    },
+    {
+      "name": "en-final",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/en-final.metadata.json",
+        "sha256": "b41b94d5ff335bb94b215735d23baf4c92d82288164306fe3a8182871de9da13",
+        "bytes": 786429
+      }
+    },
+    {
+      "name": "en-no_retention",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/en-no_retention.metadata.json",
+        "sha256": "f868cab33013f52d10262855c3b00411f69e218bc5134d06cce7b64fe02fbfc3",
+        "bytes": 787434
+      }
+    },
+    {
+      "name": "ko-master",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/ko-master.metadata.json",
+        "sha256": "64c0adcf11fdc3125ca92cf46d26df3693730f4fec30c1a326d8be971368d2fb",
+        "bytes": 786506
+      }
+    },
+    {
+      "name": "ko-final",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/ko-final.metadata.json",
+        "sha256": "5796c99fe3b1e2356f1938082df7f59f8b54725c0226c5bcb4beb68b827aa85e",
+        "bytes": 786429
+      }
+    },
+    {
+      "name": "ko-no_retention",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/ko-no_retention.metadata.json",
+        "sha256": "98ca895b89da1eb8d5222aca0e98895370df03d2f9c3ca434aaf39f227be21c1",
+        "bytes": 787434
+      }
+    },
+    {
+      "name": "zh-master",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/zh-master.metadata.json",
+        "sha256": "bde6d913fdc150f0a3991c1ff863d59eb0a79b1f3f69a40e39da31e865a14fad",
+        "bytes": 786506
+      }
+    },
+    {
+      "name": "zh-final",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/zh-final.metadata.json",
+        "sha256": "d38da444886a88fb574745f205e1e18b46959e5024b8cc4e2aef8fa1cf22bd4a",
+        "bytes": 786429
+      }
+    },
+    {
+      "name": "zh-no_retention",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/zh-no_retention.metadata.json",
+        "sha256": "e70497c44670c2fae1b4d8f65d0cbef02d66d6ca757b8591e6ff649f1335da4d",
+        "bytes": 787434
+      }
+    }
+  ],
+  "original_atlas_checks": [
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-master.stdout.csv",
+        "sha256": "4b72c541815211efbc203a44555fba7a49207f17ff59ab95e3e4e886941e288e",
+        "bytes": 5338
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-master.stdout.csv",
+        "sha256": "b5b22449f1d3bd2279723ac98b68415136cb5a6bf2abd8184592add220a9e0a1",
+        "bytes": 5347
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "ca2d177b3f94ee09f632434e9682cc07d7438feda0e6394b4bb4cfcd7714b29f",
+        "bytes": 5257
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "20e06ebfed2326dfb4fd2b99fe6cde229a57397ccb42986ef550ea514ec73650",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "522a4a00aa0ee0835f36b30bef04ec6aa088c9e5fbf51e9a91003626c94ed6d2",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "e7b75967aca39aa59a610fc53d5241da0e1eb3b40b2ff2b3ee5c14761a04d83f",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "9469dda6d1cb3b1a60012f5afa6da20f31135a6004e52ea35f1746a596c4320a",
+        "bytes": 8743
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "f2bf1b9bbae3dfb11d066225b249be24547806d350c26168928b9a1565e2938d",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 1,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-master.stdout.csv",
+        "sha256": "b5b22449f1d3bd2279723ac98b68415136cb5a6bf2abd8184592add220a9e0a1",
+        "bytes": 5347
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "ca2d177b3f94ee09f632434e9682cc07d7438feda0e6394b4bb4cfcd7714b29f",
+        "bytes": 5257
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "20e06ebfed2326dfb4fd2b99fe6cde229a57397ccb42986ef550ea514ec73650",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "522a4a00aa0ee0835f36b30bef04ec6aa088c9e5fbf51e9a91003626c94ed6d2",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "e7b75967aca39aa59a610fc53d5241da0e1eb3b40b2ff2b3ee5c14761a04d83f",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "9469dda6d1cb3b1a60012f5afa6da20f31135a6004e52ea35f1746a596c4320a",
+        "bytes": 8743
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "f2bf1b9bbae3dfb11d066225b249be24547806d350c26168928b9a1565e2938d",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "no_retention",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "block": 2,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-master.stdout.csv",
+        "sha256": "4b72c541815211efbc203a44555fba7a49207f17ff59ab95e3e4e886941e288e",
+        "bytes": 5338
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "ca2d177b3f94ee09f632434e9682cc07d7438feda0e6394b4bb4cfcd7714b29f",
+        "bytes": 5257
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "20e06ebfed2326dfb4fd2b99fe6cde229a57397ccb42986ef550ea514ec73650",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "522a4a00aa0ee0835f36b30bef04ec6aa088c9e5fbf51e9a91003626c94ed6d2",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "e7b75967aca39aa59a610fc53d5241da0e1eb3b40b2ff2b3ee5c14761a04d83f",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "9469dda6d1cb3b1a60012f5afa6da20f31135a6004e52ea35f1746a596c4320a",
+        "bytes": 8743
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "f2bf1b9bbae3dfb11d066225b249be24547806d350c26168928b9a1565e2938d",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-master.stdout.csv",
+        "sha256": "4b72c541815211efbc203a44555fba7a49207f17ff59ab95e3e4e886941e288e",
+        "bytes": 5338
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "no_retention",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-master.stdout.csv",
+        "sha256": "b5b22449f1d3bd2279723ac98b68415136cb5a6bf2abd8184592add220a9e0a1",
+        "bytes": 5347
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "block": 3,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "20e06ebfed2326dfb4fd2b99fe6cde229a57397ccb42986ef550ea514ec73650",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "522a4a00aa0ee0835f36b30bef04ec6aa088c9e5fbf51e9a91003626c94ed6d2",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "e7b75967aca39aa59a610fc53d5241da0e1eb3b40b2ff2b3ee5c14761a04d83f",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "9469dda6d1cb3b1a60012f5afa6da20f31135a6004e52ea35f1746a596c4320a",
+        "bytes": 8743
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "f2bf1b9bbae3dfb11d066225b249be24547806d350c26168928b9a1565e2938d",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-master.stdout.csv",
+        "sha256": "4b72c541815211efbc203a44555fba7a49207f17ff59ab95e3e4e886941e288e",
+        "bytes": 5338
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-master.stdout.csv",
+        "sha256": "b5b22449f1d3bd2279723ac98b68415136cb5a6bf2abd8184592add220a9e0a1",
+        "bytes": 5347
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 4,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "ca2d177b3f94ee09f632434e9682cc07d7438feda0e6394b4bb4cfcd7714b29f",
+        "bytes": 5257
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "522a4a00aa0ee0835f36b30bef04ec6aa088c9e5fbf51e9a91003626c94ed6d2",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "e7b75967aca39aa59a610fc53d5241da0e1eb3b40b2ff2b3ee5c14761a04d83f",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "9469dda6d1cb3b1a60012f5afa6da20f31135a6004e52ea35f1746a596c4320a",
+        "bytes": 8743
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "f2bf1b9bbae3dfb11d066225b249be24547806d350c26168928b9a1565e2938d",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-master.stdout.csv",
+        "sha256": "4b72c541815211efbc203a44555fba7a49207f17ff59ab95e3e4e886941e288e",
+        "bytes": 5338
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-master.stdout.csv",
+        "sha256": "b5b22449f1d3bd2279723ac98b68415136cb5a6bf2abd8184592add220a9e0a1",
+        "bytes": 5347
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "ca2d177b3f94ee09f632434e9682cc07d7438feda0e6394b4bb4cfcd7714b29f",
+        "bytes": 5257
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "20e06ebfed2326dfb4fd2b99fe6cde229a57397ccb42986ef550ea514ec73650",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 5,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "e7b75967aca39aa59a610fc53d5241da0e1eb3b40b2ff2b3ee5c14761a04d83f",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-ko-v2/confirm-cpu/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "e1c4cd9acb4055697be02ac06b0efd19e6f030afa485668eca9ea6033f7b02cb",
+        "bytes": 8713
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "9469dda6d1cb3b1a60012f5afa6da20f31135a6004e52ea35f1746a596c4320a",
+        "bytes": 8743
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "9fc52b9d93e5af26a5ba2fa657c7c4f643b12adac871f2ca1e910ef62d8960a5",
+        "bytes": 8740
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "f2bf1b9bbae3dfb11d066225b249be24547806d350c26168928b9a1565e2938d",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "6f854e71ebd7cbbd987578cdce734512cf87b5a7c62b4637f1527c2a558d8d8c",
+        "bytes": 8708
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-master.stdout.csv",
+        "sha256": "4b72c541815211efbc203a44555fba7a49207f17ff59ab95e3e4e886941e288e",
+        "bytes": 5338
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Rye-Regular-dpi2-final.stdout.csv",
+        "sha256": "70125f4a05f757ccdbfdeb850afb6cbdedf7fbe1d09e40479f761b09fb729989",
+        "bytes": 5320
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-master.stdout.csv",
+        "sha256": "b5b22449f1d3bd2279723ac98b68415136cb5a6bf2abd8184592add220a9e0a1",
+        "bytes": 5347
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-Vollkorn-Medium-dpi2-final.stdout.csv",
+        "sha256": "ffb58720bc760835cc12e1a31ff97317a1b8371ad5dd2c9c184837a1c1722583",
+        "bytes": 5317
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-master.stdout.csv",
+        "sha256": "ca2d177b3f94ee09f632434e9682cc07d7438feda0e6394b4bb4cfcd7714b29f",
+        "bytes": 5257
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NanumMyeongjo-Regular-dpi2-final.stdout.csv",
+        "sha256": "304c8eae0687556826ce0e3b2aaae37b2c3e2f5dcca8abe2fa8cdb5ea1c7a49a",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-master.stdout.csv",
+        "sha256": "20e06ebfed2326dfb4fd2b99fe6cde229a57397ccb42986ef550ea514ec73650",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-NotoSerifSC-VF-dpi2-final.stdout.csv",
+        "sha256": "a1b6f0389fd5d30a1a6da81b8c9f8218e95d897ff21eeda59cbdfdeeb87f5fb4",
+        "bytes": 5275
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-master.stdout.csv",
+        "sha256": "522a4a00aa0ee0835f36b30bef04ec6aa088c9e5fbf51e9a91003626c94ed6d2",
+        "bytes": 5245
+      },
+      "matched_rows": 25
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "no_retention",
+      "block": 6,
+      "original": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/english-demo-selection/cpu-runs/01-BabelStoneHan-dpi2-final.stdout.csv",
+        "sha256": "1808350c78729c40000181d113afc126a0dfd87178fdfcc972cae37b783bab7e",
+        "bytes": 5242
+      },
+      "matched_rows": 25
+    }
+  ],
+  "arithmetic_comparisons": 4176,
+  "processes": 144,
+  "raw_rows": 3600,
+  "atlas_rows": 3600,
+  "effects": 48,
+  "summary": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/summary.csv",
+    "sha256": "5608cf4a0a1bd33a0c501581a7472fcb29d4b9f6b9ea8bebb0374a7b389b1b95",
+    "bytes": 7449
+  },
+  "raw_csv": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/raw-results.csv",
+    "sha256": "ecd1f66d2c043511c598ab6a33ebce8761c6eeaecc4c0bd6834b323df6c03f4f",
+    "bytes": 314603
+  },
+  "image_evidence": "No new no-retention application pixel proof is collected. Earlier image evidence covers original Rye/Vollkorn controls and localized CJK campaigns; the exploratory English CJK-font cohort has no application pixel proof. Source-only insertion removal and original workload/source identities are recorded. No GUI or GPU preflight."
+}

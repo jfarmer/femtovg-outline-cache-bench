@@ -1,0 +1,10 @@
+=== 9b stroke atlas allocation failure: Err(UnknownError)
+--- after
+current_render_target(before flush) = Screen
+state_stack.len = 1
+rendered_glyphs.len = 0
+glyph_textures.len = 0
+glyph_textures = []
+commands = []
+verts.len = 0
+verts = []

@@ -1,0 +1,46 @@
+{
+  "status": "explicit post hoc provisional reanalysis; not the planned 12-block primary cold cohort",
+  "selection_rule": "Choose the chronologically earliest interrupted finalgenericrestore cold campaign and its first eight complete logical blocks 0 through 7; exclude its partial block 8 and all other campaigns. Never choose or combine records using timing effects.",
+  "source_cohort": "cold-genericrestore",
+  "candidate_cohort_start_times": {
+    "cold-genericrestore-final": "2026-10-03T12:39:07.516810+00:00",
+    "cold-genericrestore": "2026-10-03T12:14:19.004125+00:00",
+    "cold-genericrestore-clean": "2026-10-03T12:17:43.891450+00:00",
+    "cold-genericrestore-quiet": "2026-10-03T12:22:59.818071+00:00"
+  },
+  "selected_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "expected_configurations": 66,
+  "expected_variants": [
+    "master",
+    "base",
+    "finalgenericrestore"
+  ],
+  "expected_selected_records": 1584,
+  "excluded_partial_block": 8,
+  "expected_excluded_partial_records": 174,
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 61432,
+    "paired_blocks": 8,
+    "percentile_indices": [
+      250,
+      9750
+    ]
+  },
+  "original_artifact_sha256": {
+    "raw.jsonl": "08e2f917f9288392e97f5cffd11004e7e449355ebb8ddbc63b5c4c6eb3510e79",
+    "metadata.json": "aab9d6a58a5496bb90f789b5a0bce22eadbf4f985c845c5c59fd787d1f72346f",
+    "EXCLUDED.md": "86b59a74b95647fc8756c1322ecd9908e2c0eae8551f083162815455dade47cd"
+  },
+  "limitations": "Selection was declared after the campaign stopped, before this cold numerical analysis. The original guard checked before configurations, not continuously or after each process; later detected interference neither establishes earlier idle conditions nor invalidates every earlier record. Individual seven-sample values were not emitted. Intervals are exploratory, without multiplicity adjustment, on one machine; CPU glyph drawing and Void flush only, excluding layout and GPU work.",
+  "declared_utc": "2026-10-03T12:59:56.367293+00:00"
+}

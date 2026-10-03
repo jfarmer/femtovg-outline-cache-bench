@@ -1,0 +1,10 @@
+{
+  "aborted_utc": "2026-10-03T12:24:06.698490+00:00",
+  "reason": "Build/compiler/linker process name guard matched",
+  "pids": [
+    "89331"
+  ],
+  "names_only_ps_stdout": "89331 /Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo\n",
+  "names_only_ps_stderr": "",
+  "names_only_ps_returncode": 0
+}

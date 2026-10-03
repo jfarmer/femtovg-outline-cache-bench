@@ -1,0 +1,670 @@
+{
+  "app_graph_equal": true,
+  "builds": {
+    "final": {
+      "app_binary": {
+        "bytes": 19223504,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/app/build/bin/final/alustin-gui",
+        "sha256": "895ffd370ee00000c69f2a2ebf7f8e05d735da82310e8a72176d4e2d317b0f23"
+      },
+      "app_femtovg_features": [
+        "swash",
+        "wgpu"
+      ],
+      "app_local_packages": [
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-artifacts/Cargo.toml",
+          "name": "alustin-artifacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-backup/Cargo.toml",
+          "name": "alustin-backup"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-binfacts/Cargo.toml",
+          "name": "alustin-binfacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-bump/Cargo.toml",
+          "name": "alustin-bump"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-checkout/Cargo.toml",
+          "name": "alustin-checkout"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-cli/Cargo.toml",
+          "name": "alustin-cli"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-data/Cargo.toml",
+          "name": "alustin-data"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gamedata/Cargo.toml",
+          "name": "alustin-gamedata"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gdgates/Cargo.toml",
+          "name": "alustin-gdgates"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/Cargo.toml",
+          "name": "alustin-gui"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layoutfs/Cargo.toml",
+          "name": "alustin-layoutfs"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layouts/Cargo.toml",
+          "name": "alustin-layouts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-map/Cargo.toml",
+          "name": "alustin-map"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-pagdb/Cargo.toml",
+          "name": "alustin-pagdb"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-parc/Cargo.toml",
+          "name": "alustin-parc"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-save/Cargo.toml",
+          "name": "alustin-save"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-tracestore/Cargo.toml",
+          "name": "alustin-tracestore"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-versions/Cargo.toml",
+          "name": "alustin-versions"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-view/Cargo.toml",
+          "name": "alustin-view"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/final/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-backend-winit/Cargo.toml",
+          "name": "i-slint-backend-winit"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-common/Cargo.toml",
+          "name": "i-slint-common"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-core/Cargo.toml",
+          "name": "i-slint-core"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-femtovg/Cargo.toml",
+          "name": "i-slint-renderer-femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-skia/Cargo.toml",
+          "name": "i-slint-renderer-skia"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/repo-path/Cargo.toml",
+          "name": "repo-path"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/wgpu-hal/Cargo.toml",
+          "name": "wgpu-hal"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/winit/Cargo.toml",
+          "name": "winit"
+        }
+      ],
+      "app_log_sha256": "ecc16953e0bfe3693dad7464c977b12427570565c60884ad68ceeeece5991cb9",
+      "app_skrifa": "0.40.0",
+      "app_swash": "0.2.10",
+      "fresh_local_compiles": true,
+      "replay_binary": {
+        "bytes": 10005128,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/final-runner",
+        "sha256": "bd353058451437bd41b982d4edaccc6255553e25f399d991582202009fe443b5"
+      },
+      "replay_local_packages": [
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/replay-sources/final/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/runner/Cargo.toml",
+          "name": "femtovg-example-outline-review-final"
+        }
+      ],
+      "replay_log_sha256": "f43114675000f2144201e427768dffa023e0583af3a069a7e02a328415d587de",
+      "replay_package": "femtovg-example-outline-review-final",
+      "replay_skrifa": [
+        "0.44.0"
+      ],
+      "replay_swash": [
+        "0.2.10"
+      ]
+    },
+    "master": {
+      "app_binary": {
+        "bytes": 19067248,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/app/build/bin/master/alustin-gui",
+        "sha256": "58c5859a81f2b3cd31ba454d784c6b2aa76ea7d66e22f36d6d50fc8ce3715c6a"
+      },
+      "app_femtovg_features": [
+        "swash",
+        "wgpu"
+      ],
+      "app_local_packages": [
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-artifacts/Cargo.toml",
+          "name": "alustin-artifacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-backup/Cargo.toml",
+          "name": "alustin-backup"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-binfacts/Cargo.toml",
+          "name": "alustin-binfacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-bump/Cargo.toml",
+          "name": "alustin-bump"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-checkout/Cargo.toml",
+          "name": "alustin-checkout"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-cli/Cargo.toml",
+          "name": "alustin-cli"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-data/Cargo.toml",
+          "name": "alustin-data"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gamedata/Cargo.toml",
+          "name": "alustin-gamedata"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gdgates/Cargo.toml",
+          "name": "alustin-gdgates"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/Cargo.toml",
+          "name": "alustin-gui"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layoutfs/Cargo.toml",
+          "name": "alustin-layoutfs"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layouts/Cargo.toml",
+          "name": "alustin-layouts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-map/Cargo.toml",
+          "name": "alustin-map"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-pagdb/Cargo.toml",
+          "name": "alustin-pagdb"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-parc/Cargo.toml",
+          "name": "alustin-parc"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-save/Cargo.toml",
+          "name": "alustin-save"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-tracestore/Cargo.toml",
+          "name": "alustin-tracestore"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-versions/Cargo.toml",
+          "name": "alustin-versions"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-view/Cargo.toml",
+          "name": "alustin-view"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/master/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-backend-winit/Cargo.toml",
+          "name": "i-slint-backend-winit"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-common/Cargo.toml",
+          "name": "i-slint-common"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-core/Cargo.toml",
+          "name": "i-slint-core"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-femtovg/Cargo.toml",
+          "name": "i-slint-renderer-femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-skia/Cargo.toml",
+          "name": "i-slint-renderer-skia"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/repo-path/Cargo.toml",
+          "name": "repo-path"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/wgpu-hal/Cargo.toml",
+          "name": "wgpu-hal"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/winit/Cargo.toml",
+          "name": "winit"
+        }
+      ],
+      "app_log_sha256": "546670d332aea9b887a86b5f2b76c75fe91c8f54c0354cbf2f52815306e11fb7",
+      "app_skrifa": "0.40.0",
+      "app_swash": "0.2.10",
+      "fresh_local_compiles": true,
+      "replay_binary": {
+        "bytes": 9806152,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/master-runner",
+        "sha256": "2aa04d89246ce131fe7ce7a6a4923222d4502fbfdd2c8fa12b0c0ac18f383b48"
+      },
+      "replay_local_packages": [
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/replay-sources/master/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/runner/Cargo.toml",
+          "name": "femtovg-example-outline-review-master"
+        }
+      ],
+      "replay_log_sha256": "3b446580779b7109118ba54ed6fcd0cde50dc822b3b68975cb5844c6659c91fe",
+      "replay_package": "femtovg-example-outline-review-master",
+      "replay_skrifa": [
+        "0.44.0"
+      ],
+      "replay_swash": [
+        "0.2.10"
+      ]
+    },
+    "prior": {
+      "app_binary": {
+        "bytes": 19223648,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/app/build/bin/prior/alustin-gui",
+        "sha256": "386a5b159cb334af57492dc80cbf683aef4b609735561b532073b1208f1a9e5a"
+      },
+      "app_femtovg_features": [
+        "swash",
+        "wgpu"
+      ],
+      "app_local_packages": [
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-artifacts/Cargo.toml",
+          "name": "alustin-artifacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-backup/Cargo.toml",
+          "name": "alustin-backup"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-binfacts/Cargo.toml",
+          "name": "alustin-binfacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-bump/Cargo.toml",
+          "name": "alustin-bump"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-checkout/Cargo.toml",
+          "name": "alustin-checkout"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-cli/Cargo.toml",
+          "name": "alustin-cli"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-data/Cargo.toml",
+          "name": "alustin-data"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gamedata/Cargo.toml",
+          "name": "alustin-gamedata"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gdgates/Cargo.toml",
+          "name": "alustin-gdgates"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/Cargo.toml",
+          "name": "alustin-gui"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layoutfs/Cargo.toml",
+          "name": "alustin-layoutfs"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layouts/Cargo.toml",
+          "name": "alustin-layouts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-map/Cargo.toml",
+          "name": "alustin-map"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-pagdb/Cargo.toml",
+          "name": "alustin-pagdb"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-parc/Cargo.toml",
+          "name": "alustin-parc"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-save/Cargo.toml",
+          "name": "alustin-save"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-tracestore/Cargo.toml",
+          "name": "alustin-tracestore"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-versions/Cargo.toml",
+          "name": "alustin-versions"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-view/Cargo.toml",
+          "name": "alustin-view"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/prior/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-backend-winit/Cargo.toml",
+          "name": "i-slint-backend-winit"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-common/Cargo.toml",
+          "name": "i-slint-common"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-core/Cargo.toml",
+          "name": "i-slint-core"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-femtovg/Cargo.toml",
+          "name": "i-slint-renderer-femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-skia/Cargo.toml",
+          "name": "i-slint-renderer-skia"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/repo-path/Cargo.toml",
+          "name": "repo-path"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/wgpu-hal/Cargo.toml",
+          "name": "wgpu-hal"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/winit/Cargo.toml",
+          "name": "winit"
+        }
+      ],
+      "app_log_sha256": "7a5cd95777778d80a399de550d7f4cd6b622f06cf0ce30e022c864b4275e898d",
+      "app_skrifa": "0.40.0",
+      "app_swash": "0.2.10",
+      "fresh_local_compiles": true,
+      "replay_binary": {
+        "bytes": 10003944,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/prior-runner",
+        "sha256": "84e3994fe7c124cef4cdd6964f26358a63caf89a2ff6155058ecf577681ccfbf"
+      },
+      "replay_local_packages": [
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/replay-sources/prior/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/runner/Cargo.toml",
+          "name": "femtovg-example-outline-review-prior"
+        }
+      ],
+      "replay_log_sha256": "30799bd6e5bc5d9ca0183117f61bc826968c1e116c7b9f7858d4afb216a1e994",
+      "replay_package": "femtovg-example-outline-review-prior",
+      "replay_skrifa": [
+        "0.44.0"
+      ],
+      "replay_swash": [
+        "0.2.10"
+      ]
+    },
+    "updated45": {
+      "app_binary": {
+        "bytes": 19223312,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/app/build/bin/updated45/alustin-gui",
+        "sha256": "3de6a61ec4af85d1383b06018447ed81fb74d5e52ec55832016eddf26d4aae12"
+      },
+      "app_femtovg_features": [
+        "swash",
+        "wgpu"
+      ],
+      "app_local_packages": [
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-artifacts/Cargo.toml",
+          "name": "alustin-artifacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-backup/Cargo.toml",
+          "name": "alustin-backup"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-binfacts/Cargo.toml",
+          "name": "alustin-binfacts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-bump/Cargo.toml",
+          "name": "alustin-bump"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-checkout/Cargo.toml",
+          "name": "alustin-checkout"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-cli/Cargo.toml",
+          "name": "alustin-cli"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-data/Cargo.toml",
+          "name": "alustin-data"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gamedata/Cargo.toml",
+          "name": "alustin-gamedata"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gdgates/Cargo.toml",
+          "name": "alustin-gdgates"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/Cargo.toml",
+          "name": "alustin-gui"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layoutfs/Cargo.toml",
+          "name": "alustin-layoutfs"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-layouts/Cargo.toml",
+          "name": "alustin-layouts"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-map/Cargo.toml",
+          "name": "alustin-map"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-pagdb/Cargo.toml",
+          "name": "alustin-pagdb"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-parc/Cargo.toml",
+          "name": "alustin-parc"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-save/Cargo.toml",
+          "name": "alustin-save"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-tracestore/Cargo.toml",
+          "name": "alustin-tracestore"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-versions/Cargo.toml",
+          "name": "alustin-versions"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-view/Cargo.toml",
+          "name": "alustin-view"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/updated45/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-backend-winit/Cargo.toml",
+          "name": "i-slint-backend-winit"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-common/Cargo.toml",
+          "name": "i-slint-common"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-core/Cargo.toml",
+          "name": "i-slint-core"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-femtovg/Cargo.toml",
+          "name": "i-slint-renderer-femtovg"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/i-slint-renderer-skia/Cargo.toml",
+          "name": "i-slint-renderer-skia"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/repo-path/Cargo.toml",
+          "name": "repo-path"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/wgpu-hal/Cargo.toml",
+          "name": "wgpu-hal"
+        },
+        {
+          "manifest": "/Users/jesse/github/alustin-gui-v2/crates/alustin-gui/vendor/winit/Cargo.toml",
+          "name": "winit"
+        }
+      ],
+      "app_log_sha256": "630ffb2037747c04f7ece05e46356408272fd177647dd4778feee6a5761e47b9",
+      "app_skrifa": "0.40.0",
+      "app_swash": "0.2.10",
+      "fresh_local_compiles": true,
+      "replay_binary": {
+        "bytes": 10002968,
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/updated45-runner",
+        "sha256": "0cba259433ec52908d08a03527b670427cb5371b9e4bef8e642f7215784b90bd"
+      },
+      "replay_local_packages": [
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/replay-sources/updated45/Cargo.toml",
+          "name": "femtovg"
+        },
+        {
+          "manifest": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/runner/Cargo.toml",
+          "name": "femtovg-example-outline-review-updated45"
+        }
+      ],
+      "replay_log_sha256": "8d6f55fd0df46e175b54532ac22918c6f6abfe46f7ea575d8a700ec8c3050dd9",
+      "replay_package": "femtovg-example-outline-review-updated45",
+      "replay_skrifa": [
+        "0.44.0"
+      ],
+      "replay_swash": [
+        "0.2.10"
+      ]
+    }
+  },
+  "caveat": "Skrifa versions differ between the two existing suite locks (replay0.44.0/app0.40.0), while every version within each suite has an equal complete dependency/features graph. Shared target caches are used; every local library/root/application rebuild is proven by its variant path in release logs.",
+  "complete": true,
+  "final_differences_from_updated45": [
+    "src/lib.rs",
+    "src/text.rs"
+  ],
+  "final_exact_live_tracked_files": true,
+  "harness": {
+    "bytes": 1055856,
+    "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/app/build/bin/startup_bench",
+    "sha256": "de80512f51ef17f8fb2bcd06f0a130df4431592d1c2a1a7970aedbedb7ab14cc"
+  },
+  "input_proof_hashes": {
+    "final-validation.json": "3b376192ad0e18dc6eaed81ff06b51ccaf9f39535bfee1691b34ba35c5e44dbc",
+    "independent-source-identities.json": "8eee71b2bbc65959d0b31f4e4cdff56df2d6612a4d5b0499cd0591cad93dbef2",
+    "runtime/app/build/provenance.json": "d239de58b4a29c561db2c1b86efd06e13ccab959913432e3abafa5f2110e47a1",
+    "runtime/core/replay-build-provenance.json": "1691f480f8ff9445f877b445058ba4d09a9e1846378c8218d5c90b436ef317ed",
+    "runtime/prepare-provenance.json": "2ffd9c05256cbc681be46d13d2cd245151ab1c05f1c1fd9144507f6a0ae56a1a"
+  },
+  "replay_graph_equal": true,
+  "scope": "Exact pure/timed source, fresh compiler logs, executable hashes, locked manifests and dependency/features identities; no timing or pixel claims",
+  "source_checks": {
+    "final": {
+      "base_ref": "4c45270585f0fadca63d3eae61433adb8102bea2",
+      "exact": true,
+      "files": 139,
+      "source_map_sha256": "c102ffa60a13dba37bd44705a1eb97f67b8d819d00702d878c00c505cfe55bf5"
+    },
+    "master": {
+      "base_ref": "f57a2c39e9836c146556c58c98d80c5bf7899029",
+      "exact": true,
+      "files": 136,
+      "source_map_sha256": "b6c0743ac1bc9f331c533bf21d9dc9143cd3696cd07cc724e716e6bf5610dfea"
+    },
+    "prior": {
+      "base_ref": "4c45270585f0fadca63d3eae61433adb8102bea2",
+      "exact": true,
+      "files": 139,
+      "source_map_sha256": "f6f3f82d6e4d8b7e1f86c3230589c5d0f23d9ef2e2e105f9f140f008f4b958ee"
+    },
+    "updated45": {
+      "base_ref": "4c45270585f0fadca63d3eae61433adb8102bea2",
+      "exact": true,
+      "files": 139,
+      "source_map_sha256": "170c0f696d1ed197dbfafbef2e5dc73c57edea3b7a8e2a42489e828a9196de00"
+    }
+  },
+  "toolchain": {
+    "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)",
+    "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)"
+  },
+  "versions": [
+    "master",
+    "prior",
+    "updated45",
+    "final"
+  ]
+}

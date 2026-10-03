@@ -1,0 +1,1 @@
+{"checked_utc": "2026-10-03T14:20:18.469401+00:00", "status": "guard_failed", "context": {"stage": "quiet_interval", "reason": "initial_start"}, "returncode": 3, "stderr": "sysmon request failed with error: sysmond service not found\npgrep: Cannot get process list\n"}

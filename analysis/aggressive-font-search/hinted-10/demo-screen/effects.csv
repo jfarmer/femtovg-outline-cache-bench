@@ -1,0 +1,217 @@
+font,phase,endpoint,unit,master_mean_process_median,final_mean_process_median,master_minus_final_mean,paired_block_range,positive_blocks,negative_blocks
+AveriaGruesaLibre-Regular,first_paint,draw_us,microseconds per frame,1597.271,1341.1045,256.1665,"[232.416, 279.917]",2,0
+AveriaGruesaLibre-Regular,first_paint,submit_us,microseconds per frame,1599.5,1343.438,256.062,"[232.082, 280.042]",2,0
+AveriaGruesaLibre-Regular,first_paint,complete_us,microseconds per frame,1599.521,1343.459,256.062,"[232.124, 280.0]",2,0
+AveriaGruesaLibre-Regular,warm,draw_us,microseconds per frame,213.6367665,214.1701,-0.5333335,"[-0.6945, -0.372167]",0,2
+AveriaGruesaLibre-Regular,warm,submit_us,microseconds per frame,215.335517,215.8075835,-0.4720665,"[-0.6568, -0.287333]",0,2
+AveriaGruesaLibre-Regular,warm,complete_us,microseconds per frame,215.3535835,215.832617,-0.4790335,"[-0.672167, -0.2859]",0,2
+AveriaGruesaLibre-Regular,zoom_in,draw_us,microseconds per frame,1505.225667,1290.701375,214.524292,"[208.96875, 220.079834]",2,0
+AveriaGruesaLibre-Regular,zoom_in,submit_us,microseconds per frame,1506.482625,1291.8732915,214.6093335,"[209.020667, 220.198]",2,0
+AveriaGruesaLibre-Regular,zoom_in,complete_us,microseconds per frame,1506.503542,1291.902792,214.60075,"[209.0105, 220.191]",2,0
+AveriaGruesaLibre-Regular,zoom_out,draw_us,microseconds per frame,1034.0382915,883.114583,150.9237085,"[141.91675, 159.930667]",2,0
+AveriaGruesaLibre-Regular,zoom_out,submit_us,microseconds per frame,1035.4324165,884.422,151.0104165,"[142.00675, 160.014083]",2,0
+AveriaGruesaLibre-Regular,zoom_out,complete_us,microseconds per frame,1035.4549585,884.44975,151.0052085,"[142.007, 160.003417]",2,0
+AveriaGruesaLibre-Regular,pan,draw_us,microseconds per frame,216.37695,217.99785,-1.6209,"[-3.1334, -0.1084]",0,2
+AveriaGruesaLibre-Regular,pan,submit_us,microseconds per frame,218.12705,219.66875,-1.5417,"[-3.0707, -0.0127]",0,2
+AveriaGruesaLibre-Regular,pan,complete_us,microseconds per frame,218.1499,219.6896,-1.5397,"[-3.0627, -0.0167]",0,2
+AveriaGruesaLibre-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,40571.206492,35998.039994,4573.166498,"[4359.959994, 4786.373002]",2,0
+AveriaGruesaLibre-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,40674.295008,36095.710007,4578.585001,"[4365.704006, 4791.465996]",2,0
+AveriaGruesaLibre-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,40675.714514,36097.294012,4578.420502,"[4365.882, 4790.959004]",2,0
+AveriaSerifLibre-Regular,first_paint,draw_us,microseconds per frame,1639.1875,1413.4165,225.771,"[196.375, 255.167]",2,0
+AveriaSerifLibre-Regular,first_paint,submit_us,microseconds per frame,1641.604,1415.2915,226.3125,"[196.583, 256.042]",2,0
+AveriaSerifLibre-Regular,first_paint,complete_us,microseconds per frame,1641.625,1415.2915,226.3335,"[196.583, 256.084]",2,0
+AveriaSerifLibre-Regular,warm,draw_us,microseconds per frame,212.9660165,212.5742835,0.391733,"[0.0724, 0.711066]",2,0
+AveriaSerifLibre-Regular,warm,submit_us,microseconds per frame,214.6521,214.247183,0.404917,"[0.0627, 0.747134]",2,0
+AveriaSerifLibre-Regular,warm,complete_us,microseconds per frame,214.6709165,214.26945,0.4014665,"[0.055733, 0.7472]",2,0
+AveriaSerifLibre-Regular,zoom_in,draw_us,microseconds per frame,1596.1788335,1369.637125,226.5417085,"[199.618167, 253.46525]",2,0
+AveriaSerifLibre-Regular,zoom_in,submit_us,microseconds per frame,1597.3594585,1370.821,226.5384585,"[199.580083, 253.496834]",2,0
+AveriaSerifLibre-Regular,zoom_in,complete_us,microseconds per frame,1597.3802915,1370.8384585,226.541833,"[199.593833, 253.489833]",2,0
+AveriaSerifLibre-Regular,zoom_out,draw_us,microseconds per frame,1098.0658335,942.7620835,155.30375,"[151.38875, 159.21875]",2,0
+AveriaSerifLibre-Regular,zoom_out,submit_us,microseconds per frame,1099.40275,944.092,155.31075,"[151.427083, 159.194417]",2,0
+AveriaSerifLibre-Regular,zoom_out,complete_us,microseconds per frame,1099.427042,944.11275,155.314292,"[151.427167, 159.201417]",2,0
+AveriaSerifLibre-Regular,pan,draw_us,microseconds per frame,213.244,217.24805,-4.00405,"[-6.8413, -1.1668]",0,2
+AveriaSerifLibre-Regular,pan,submit_us,microseconds per frame,214.93775,218.8918,-3.95405,"[-6.8247, -1.0834]",0,2
+AveriaSerifLibre-Regular,pan,complete_us,microseconds per frame,214.96055,218.91685,-3.9563,"[-6.8457, -1.0669]",0,2
+AveriaSerifLibre-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,42724.025006,37700.476003,5023.549003,"[4979.801008, 5067.296998]",2,0
+AveriaSerifLibre-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,42823.146994,37798.976488,5024.170506,"[4979.047996, 5069.293016]",2,0
+AveriaSerifLibre-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,42824.501507,37800.312002,5024.189505,"[4978.71399, 5069.66502]",2,0
+AveriaLibre-Regular,first_paint,draw_us,microseconds per frame,1524.2495,1331.2295,193.02,"[142.916, 243.124]",2,0
+AveriaLibre-Regular,first_paint,submit_us,microseconds per frame,1526.354,1333.334,193.02,"[142.916, 243.124]",2,0
+AveriaLibre-Regular,first_paint,complete_us,microseconds per frame,1526.3745,1333.3545,193.02,"[142.957, 243.083]",2,0
+AveriaLibre-Regular,warm,draw_us,microseconds per frame,212.88535,213.1312,-0.24585,"[-3.151333, 2.659633]",1,1
+AveriaLibre-Regular,warm,submit_us,microseconds per frame,214.5305335,214.77005,-0.2395165,"[-3.2415, 2.762467]",1,1
+AveriaLibre-Regular,warm,complete_us,microseconds per frame,214.549233,214.7908665,-0.2416335,"[-3.2471, 2.763833]",1,1
+AveriaLibre-Regular,zoom_in,draw_us,microseconds per frame,1516.449667,1310.9062085,205.5434585,"[201.70475, 209.382167]",2,0
+AveriaLibre-Regular,zoom_in,submit_us,microseconds per frame,1517.7256665,1312.0589585,205.666708,"[201.836833, 209.496583]",2,0
+AveriaLibre-Regular,zoom_in,complete_us,microseconds per frame,1517.74475,1312.0832085,205.6615415,"[201.83325, 209.489833]",2,0
+AveriaLibre-Regular,zoom_out,draw_us,microseconds per frame,1048.4375,900.1458335,148.2916665,"[137.774333, 158.809]",2,0
+AveriaLibre-Regular,zoom_out,submit_us,microseconds per frame,1049.75525,901.501667,148.253583,"[137.698166, 158.809]",2,0
+AveriaLibre-Regular,zoom_out,complete_us,microseconds per frame,1049.7708335,901.526,148.2448335,"[137.701333, 158.788334]",2,0
+AveriaLibre-Regular,pan,draw_us,microseconds per frame,215.8354,216.21885,-0.38345,"[-2.3628, 1.5959]",1,1
+AveriaLibre-Regular,pan,submit_us,microseconds per frame,217.57925,217.88555,-0.3063,"[-2.3169, 1.7043]",1,1
+AveriaLibre-Regular,pan,complete_us,microseconds per frame,217.6022,217.9085,-0.3063,"[-2.3127, 1.7001]",1,1
+AveriaLibre-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,40783.250509,36333.436516,4449.813993,"[4425.955, 4473.672986]",2,0
+AveriaLibre-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,40881.897997,36428.977001,4452.920996,"[4428.915986, 4476.926006]",2,0
+AveriaLibre-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,40883.084995,36430.455004,4452.629991,"[4428.58199, 4476.677992]",2,0
+MissFajardose-Regular,first_paint,draw_us,microseconds per frame,1288.0835,1214.354,73.7295,"[69.167, 78.292]",2,0
+MissFajardose-Regular,first_paint,submit_us,microseconds per frame,1290.0835,1216.312,73.7715,"[69.334, 78.209]",2,0
+MissFajardose-Regular,first_paint,complete_us,microseconds per frame,1290.104,1216.354,73.75,"[69.292, 78.208]",2,0
+MissFajardose-Regular,warm,draw_us,microseconds per frame,204.9597,207.4250665,-2.4653665,"[-6.6849, 1.754167]",1,1
+MissFajardose-Regular,warm,submit_us,microseconds per frame,206.5290665,209.053483,-2.5244165,"[-6.7696, 1.720767]",1,1
+MissFajardose-Regular,warm,complete_us,microseconds per frame,206.5520835,209.07085,-2.5187665,"[-6.7681, 1.730567]",1,1
+MissFajardose-Regular,zoom_in,draw_us,microseconds per frame,1279.531375,1231.4722085,48.0591665,"[41.461833, 54.6565]",2,0
+MissFajardose-Regular,zoom_in,submit_us,microseconds per frame,1280.750042,1232.670167,48.079875,"[41.54525, 54.6145]",2,0
+MissFajardose-Regular,zoom_in,complete_us,microseconds per frame,1280.772625,1232.6945,48.078125,"[41.545084, 54.611166]",2,0
+MissFajardose-Regular,zoom_out,draw_us,microseconds per frame,863.9478335,822.472125,41.4757085,"[32.829917, 50.1215]",2,0
+MissFajardose-Regular,zoom_out,submit_us,microseconds per frame,865.2655835,823.716917,41.5486665,"[32.90975, 50.187583]",2,0
+MissFajardose-Regular,zoom_out,complete_us,microseconds per frame,865.2865,823.7447085,41.5417915,"[32.906166, 50.177417]",2,0
+MissFajardose-Regular,pan,draw_us,microseconds per frame,211.84995,208.16045,3.6895,"[0.5456, 6.8334]",2,0
+MissFajardose-Regular,pan,submit_us,microseconds per frame,213.56465,209.773,3.79165,"[0.6791, 6.9042]",2,0
+MissFajardose-Regular,pan,complete_us,microseconds per frame,213.58335,209.7896,3.79375,"[0.675, 6.9125]",2,0
+MissFajardose-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,35224.749498,34038.977502,1185.771996,"[1046.20499, 1325.339002]",2,0
+MissFajardose-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,35321.249993,34134.833508,1186.416485,"[1050.288992, 1322.543978]",2,0
+MissFajardose-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,35322.626011,34136.188504,1186.437507,"[1050.205014, 1322.67]",2,0
+HerrVonMuellerhoff-Regular,first_paint,draw_us,microseconds per frame,1249.0835,1236.5205,12.563,"[-2.208, 27.334]",1,1
+HerrVonMuellerhoff-Regular,first_paint,submit_us,microseconds per frame,1250.896,1238.7295,12.1665,"[-2.709, 27.042]",1,1
+HerrVonMuellerhoff-Regular,first_paint,complete_us,microseconds per frame,1250.917,1238.7705,12.1465,"[-2.75, 27.043]",1,1
+HerrVonMuellerhoff-Regular,warm,draw_us,microseconds per frame,207.91045,212.42015,-4.5097,"[-5.6471, -3.3723]",0,2
+HerrVonMuellerhoff-Regular,warm,submit_us,microseconds per frame,209.60485,214.1368165,-4.5319665,"[-5.727667, -3.336266]",0,2
+HerrVonMuellerhoff-Regular,warm,complete_us,microseconds per frame,209.6236665,214.159,-4.5353335,"[-5.7345, -3.336167]",0,2
+HerrVonMuellerhoff-Regular,zoom_in,draw_us,microseconds per frame,1288.0849585,1236.8194165,51.265542,"[48.746417, 53.784667]",2,0
+HerrVonMuellerhoff-Regular,zoom_in,submit_us,microseconds per frame,1289.2550835,1238.03475,51.2203335,"[48.67675, 53.763917]",2,0
+HerrVonMuellerhoff-Regular,zoom_in,complete_us,microseconds per frame,1289.2759585,1238.0539165,51.222042,"[48.680167, 53.763917]",2,0
+HerrVonMuellerhoff-Regular,zoom_out,draw_us,microseconds per frame,873.380125,840.855833,32.524292,"[25.0, 40.048584]",2,0
+HerrVonMuellerhoff-Regular,zoom_out,submit_us,microseconds per frame,874.692625,842.203125,32.4895,"[24.961666, 40.017334]",2,0
+HerrVonMuellerhoff-Regular,zoom_out,complete_us,microseconds per frame,874.720417,842.229125,32.491292,"[24.954834, 40.02775]",2,0
+HerrVonMuellerhoff-Regular,pan,draw_us,microseconds per frame,211.4731,212.88765,-1.41455,"[-5.5874, 2.7583]",1,1
+HerrVonMuellerhoff-Regular,pan,submit_us,microseconds per frame,213.15225,214.6314,-1.47915,"[-5.6791, 2.7208]",1,1
+HerrVonMuellerhoff-Regular,pan,complete_us,microseconds per frame,213.16895,214.6501,-1.48115,"[-5.6916, 2.7293]",1,1
+HerrVonMuellerhoff-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,35537.144492,34687.937498,849.206994,"[561.373984, 1137.040004]",2,0
+HerrVonMuellerhoff-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,35634.207003,34788.648495,845.558508,"[550.996002, 1140.121014]",2,0
+HerrVonMuellerhoff-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,35635.751006,34790.062496,845.68851,"[550.877012, 1140.500008]",2,0
+GreatVibes-Regular,first_paint,draw_us,microseconds per frame,7756.854,5499.0835,2257.7705,"[2235.999, 2279.542]",2,0
+GreatVibes-Regular,first_paint,submit_us,microseconds per frame,7759.104,5501.25,2257.854,"[2235.958, 2279.75]",2,0
+GreatVibes-Regular,first_paint,complete_us,microseconds per frame,7759.104,5501.271,2257.833,"[2235.916, 2279.75]",2,0
+GreatVibes-Regular,warm,draw_us,microseconds per frame,205.127067,207.8492665,-2.7221995,"[-5.187533, -0.256866]",0,2
+GreatVibes-Regular,warm,submit_us,microseconds per frame,206.776333,209.4805335,-2.7042005,"[-5.142967, -0.265434]",0,2
+GreatVibes-Regular,warm,complete_us,microseconds per frame,206.797183,209.5021,-2.704917,"[-5.143, -0.266834]",0,2
+GreatVibes-Regular,zoom_in,draw_us,microseconds per frame,7237.6477915,5127.5658335,2110.081958,"[2078.372083, 2141.791833]",2,0
+GreatVibes-Regular,zoom_in,submit_us,microseconds per frame,7238.955,5128.9305835,2110.0244165,"[2078.309333, 2141.7395]",2,0
+GreatVibes-Regular,zoom_in,complete_us,microseconds per frame,7238.977583,5128.949542,2110.028041,"[2078.312916, 2141.743166]",2,0
+GreatVibes-Regular,zoom_out,draw_us,microseconds per frame,4537.8610415,3063.5018335,1474.359208,"[1465.5035, 1483.214916]",2,0
+GreatVibes-Regular,zoom_out,submit_us,microseconds per frame,4539.26025,3064.9166665,1474.3435835,"[1465.4235, 1483.263667]",2,0
+GreatVibes-Regular,zoom_out,complete_us,microseconds per frame,4539.276,3064.937542,1474.338458,"[1465.406166, 1483.27075]",2,0
+GreatVibes-Regular,pan,draw_us,microseconds per frame,208.7562,209.46665,-0.71045,"[-3.8041, 2.3832]",1,1
+GreatVibes-Regular,pan,submit_us,microseconds per frame,210.4209,211.07495,-0.65405,"[-3.7499, 2.4418]",1,1
+GreatVibes-Regular,pan,complete_us,microseconds per frame,210.43955,211.09155,-0.652,"[-3.7583, 2.4543]",1,1
+GreatVibes-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,157111.627001,112342.521498,44769.105503,"[44131.712006, 45406.499]",2,0
+GreatVibes-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,157218.353498,112449.705504,44768.647994,"[44124.373978, 45412.92201]",2,0
+GreatVibes-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,157219.563497,112451.165001,44768.398496,"[44124.085, 45412.711992]",2,0
+BilboSwashCaps-Regular,first_paint,draw_us,microseconds per frame,1822.2085,1502.8335,319.375,"[260.875, 377.875]",2,0
+BilboSwashCaps-Regular,first_paint,submit_us,microseconds per frame,1824.6665,1504.7085,319.958,"[261.208, 378.708]",2,0
+BilboSwashCaps-Regular,first_paint,complete_us,microseconds per frame,1824.6665,1504.7085,319.958,"[261.208, 378.708]",2,0
+BilboSwashCaps-Regular,warm,draw_us,microseconds per frame,211.02925,210.0506165,0.9786335,"[-1.9137, 3.870967]",1,1
+BilboSwashCaps-Regular,warm,submit_us,microseconds per frame,212.660583,211.62625,1.034333,"[-1.885834, 3.9545]",1,1
+BilboSwashCaps-Regular,warm,complete_us,microseconds per frame,212.680033,211.6478165,1.0322165,"[-1.892767, 3.9572]",1,1
+BilboSwashCaps-Regular,zoom_in,draw_us,microseconds per frame,1685.4080415,1452.166542,233.2414995,"[222.024583, 244.458416]",2,0
+BilboSwashCaps-Regular,zoom_in,submit_us,microseconds per frame,1686.656208,1453.3437085,233.3124995,"[222.114666, 244.510333]",2,0
+BilboSwashCaps-Regular,zoom_in,complete_us,microseconds per frame,1686.675375,1453.3593335,233.3160415,"[222.114833, 244.51725]",2,0
+BilboSwashCaps-Regular,zoom_out,draw_us,microseconds per frame,1146.145917,978.4009585,167.7449585,"[165.583417, 169.9065]",2,0
+BilboSwashCaps-Regular,zoom_out,submit_us,microseconds per frame,1147.4984165,979.7032085,167.795208,"[165.670166, 169.92025]",2,0
+BilboSwashCaps-Regular,zoom_out,complete_us,microseconds per frame,1147.512333,979.72575,167.786583,"[165.666833, 169.906333]",2,0
+BilboSwashCaps-Regular,pan,draw_us,microseconds per frame,211.75835,214.06655,-2.3082,"[-2.4041, -2.2123]",0,2
+BilboSwashCaps-Regular,pan,submit_us,microseconds per frame,213.4749,215.69995,-2.22505,"[-2.3041, -2.146]",0,2
+BilboSwashCaps-Regular,pan,complete_us,microseconds per frame,213.4958,215.72905,-2.23325,"[-2.3083, -2.1582]",0,2
+BilboSwashCaps-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,44200.085498,39028.247497,5171.838001,"[5033.342996, 5310.333006]",2,0
+BilboSwashCaps-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,44300.811484,39124.078509,5176.732975,"[5037.011972, 5316.453978]",2,0
+BilboSwashCaps-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,44302.001495,39125.330009,5176.671486,"[5036.802986, 5316.539986]",2,0
+PinyonScript-Regular,first_paint,draw_us,microseconds per frame,5472.7705,3575.0205,1897.75,"[1885.125, 1910.375]",2,0
+PinyonScript-Regular,first_paint,submit_us,microseconds per frame,5474.896,3577.021,1897.875,"[1885.333, 1910.417]",2,0
+PinyonScript-Regular,first_paint,complete_us,microseconds per frame,5474.917,3577.0415,1897.8755,"[1885.334, 1910.417]",2,0
+PinyonScript-Regular,warm,draw_us,microseconds per frame,212.4923335,207.9853335,4.507,"[1.114, 7.9]",2,0
+PinyonScript-Regular,warm,submit_us,microseconds per frame,214.1832335,209.5784,4.6048335,"[1.2667, 7.942967]",2,0
+PinyonScript-Regular,warm,complete_us,microseconds per frame,214.2089665,209.5985665,4.6104,"[1.2778, 7.943]",2,0
+PinyonScript-Regular,zoom_in,draw_us,microseconds per frame,5163.5797085,3325.0710835,1838.508625,"[1822.29525, 1854.722]",2,0
+PinyonScript-Regular,zoom_in,submit_us,microseconds per frame,5164.8835835,3326.2915,1838.5920835,"[1822.357917, 1854.82625]",2,0
+PinyonScript-Regular,zoom_in,complete_us,microseconds per frame,5164.904375,3326.308833,1838.595542,"[1822.357917, 1854.833167]",2,0
+PinyonScript-Regular,zoom_out,draw_us,microseconds per frame,3394.5989165,2136.10575,1258.4931665,"[1257.646083, 1259.34025]",2,0
+PinyonScript-Regular,zoom_out,submit_us,microseconds per frame,3396.0103335,2137.517333,1258.4930005,"[1257.611084, 1259.374917]",2,0
+PinyonScript-Regular,zoom_out,complete_us,microseconds per frame,3396.032875,2137.533,1258.499875,"[1257.6145, 1259.38525]",2,0
+PinyonScript-Regular,pan,draw_us,microseconds per frame,213.99395,212.1978,1.79615,"[-0.3787, 3.971]",1,1
+PinyonScript-Regular,pan,submit_us,microseconds per frame,215.7294,213.92695,1.80245,"[-0.3454, 3.9503]",1,1
+PinyonScript-Regular,pan,complete_us,microseconds per frame,215.74805,213.95215,1.7959,"[-0.3458, 3.9376]",1,1
+PinyonScript-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,116764.790001,77643.579009,39121.210992,"[38523.377992, 39719.043992]",2,0
+PinyonScript-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,116864.895502,77741.9345,39122.961002,"[38525.71499, 39720.207014]",2,0
+PinyonScript-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,116866.249505,77743.227989,39123.021516,"[38525.793024, 39720.250008]",2,0
+FleurDeLeah-Regular,first_paint,draw_us,microseconds per frame,6503.8755,4360.9585,2142.917,"[2120.917, 2164.917]",2,0
+FleurDeLeah-Regular,first_paint,submit_us,microseconds per frame,6506.0625,4363.7705,2142.292,"[2121.25, 2163.334]",2,0
+FleurDeLeah-Regular,first_paint,complete_us,microseconds per frame,6506.1045,4363.7915,2142.313,"[2121.25, 2163.376]",2,0
+FleurDeLeah-Regular,warm,draw_us,microseconds per frame,209.57635,211.4291335,-1.8527835,"[-4.512567, 0.807]",1,1
+FleurDeLeah-Regular,warm,submit_us,microseconds per frame,211.2332665,213.1055835,-1.872317,"[-4.500167, 0.755533]",1,1
+FleurDeLeah-Regular,warm,complete_us,microseconds per frame,211.25205,213.129183,-1.877133,"[-4.5029, 0.748634]",1,1
+FleurDeLeah-Regular,zoom_in,draw_us,microseconds per frame,6107.7344165,4023.746667,2083.9877495,"[2036.461833, 2131.513666]",2,0
+FleurDeLeah-Regular,zoom_in,submit_us,microseconds per frame,6108.97575,4025.0625835,2083.9131665,"[2036.274333, 2131.552]",2,0
+FleurDeLeah-Regular,zoom_in,complete_us,microseconds per frame,6108.994917,4025.0835415,2083.9113755,"[2036.267334, 2131.555417]",2,0
+FleurDeLeah-Regular,zoom_out,draw_us,microseconds per frame,4003.251625,2611.118,1392.133625,"[1380.215167, 1404.052083]",2,0
+FleurDeLeah-Regular,zoom_out,submit_us,microseconds per frame,4004.6840835,2612.4947085,1392.189375,"[1380.278, 1404.10075]",2,0
+FleurDeLeah-Regular,zoom_out,complete_us,microseconds per frame,4004.704917,2612.5242085,1392.1807085,"[1380.264, 1404.097417]",2,0
+FleurDeLeah-Regular,pan,draw_us,microseconds per frame,213.8541,215.4022,-1.5481,"[-1.9043, -1.1919]",0,2
+FleurDeLeah-Regular,pan,submit_us,microseconds per frame,215.5813,217.12715,-1.54585,"[-1.9168, -1.1749]",0,2
+FleurDeLeah-Regular,pan,complete_us,microseconds per frame,215.5937,217.1522,-1.5585,"[-1.9418, -1.1752]",0,2
+FleurDeLeah-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,136572.272503,92367.875999,44204.396504,"[43406.706004, 45002.087004]",2,0
+FleurDeLeah-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,136675.0045,92470.147004,44204.857496,"[43407.12999, 45002.585002]",2,0
+FleurDeLeah-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,136676.358509,92471.585495,44204.773014,"[43406.959024, 45002.587004]",2,0
+Eater-Regular,first_paint,draw_us,microseconds per frame,2019.3335,1845.479,173.8545,"[138.375, 209.334]",2,0
+Eater-Regular,first_paint,submit_us,microseconds per frame,2021.4795,1847.3125,174.167,"[138.833, 209.501]",2,0
+Eater-Regular,first_paint,complete_us,microseconds per frame,2021.5,1847.333,174.167,"[138.833, 209.501]",2,0
+Eater-Regular,warm,draw_us,microseconds per frame,216.1021165,218.9118165,-2.8097,"[-4.3778, -1.2416]",0,2
+Eater-Regular,warm,submit_us,microseconds per frame,217.7792165,220.6076335,-2.828417,"[-4.401367, -1.255467]",0,2
+Eater-Regular,warm,complete_us,microseconds per frame,217.7993165,220.633283,-2.8339665,"[-4.405433, -1.2625]",0,2
+Eater-Regular,zoom_in,draw_us,microseconds per frame,2239.6371665,2112.59725,127.0399165,"[117.371333, 136.7085]",2,0
+Eater-Regular,zoom_in,submit_us,microseconds per frame,2240.859458,2113.9565835,126.9028745,"[117.166666, 136.639083]",2,0
+Eater-Regular,zoom_in,complete_us,microseconds per frame,2240.880333,2113.973958,126.906375,"[117.17, 136.64275]",2,0
+Eater-Regular,zoom_out,draw_us,microseconds per frame,1528.5138335,1429.87325,98.6405835,"[98.072834, 99.208333]",2,0
+Eater-Regular,zoom_out,submit_us,microseconds per frame,1529.888875,1431.21875,98.670125,"[98.145916, 99.194334]",2,0
+Eater-Regular,zoom_out,complete_us,microseconds per frame,1529.92025,1431.248208,98.672042,"[98.156334, 99.18775]",2,0
+Eater-Regular,pan,draw_us,microseconds per frame,223.91245,222.9085,1.00395,"[0.0413, 1.9666]",2,0
+Eater-Regular,pan,submit_us,microseconds per frame,225.6978,224.5856,1.1122,"[0.1415, 2.0829]",2,0
+Eater-Regular,pan,complete_us,microseconds per frame,225.7208,224.6084,1.1124,"[0.1499, 2.0749]",2,0
+Eater-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,55997.2925,53063.751502,2933.540998,"[2932.463996, 2934.618]",2,0
+Eater-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,56103.584501,53164.896012,2938.688489,"[2934.625, 2942.751978]",2,0
+Eater-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,56105.000999,53166.374486,2938.626513,"[2934.628018, 2942.625008]",2,0
+Rye-Regular,first_paint,draw_us,microseconds per frame,6280.208,3659.437,2620.771,"[2612.042, 2629.5]",2,0
+Rye-Regular,first_paint,submit_us,microseconds per frame,6282.166,3662.354,2619.812,"[2610.499, 2629.125]",2,0
+Rye-Regular,first_paint,complete_us,microseconds per frame,6282.187,3662.375,2619.812,"[2610.541, 2629.083]",2,0
+Rye-Regular,warm,draw_us,microseconds per frame,215.4485835,211.8826165,3.565967,"[0.954167, 6.177767]",2,0
+Rye-Regular,warm,submit_us,microseconds per frame,217.1542335,213.4702165,3.684017,"[1.0097, 6.358334]",2,0
+Rye-Regular,warm,complete_us,microseconds per frame,217.179183,213.4903165,3.6888665,"[1.0139, 6.363833]",2,0
+Rye-Regular,zoom_in,draw_us,microseconds per frame,6056.1145,3444.0869165,2612.0275835,"[2608.156083, 2615.899084]",2,0
+Rye-Regular,zoom_in,submit_us,microseconds per frame,6057.453,3445.364625,2612.088375,"[2608.291583, 2615.885167]",2,0
+Rye-Regular,zoom_in,complete_us,microseconds per frame,6057.4755415,3445.378583,2612.0969585,"[2608.301917, 2615.892]",2,0
+Rye-Regular,zoom_out,draw_us,microseconds per frame,3984.01725,2290.4721665,1693.5450835,"[1688.59025, 1698.499917]",2,0
+Rye-Regular,zoom_out,submit_us,microseconds per frame,3985.4165835,2291.798625,1693.6179585,"[1688.635167, 1698.60075]",2,0
+Rye-Regular,zoom_out,complete_us,microseconds per frame,3985.437417,2291.81775,1693.619667,"[1688.635167, 1698.604167]",2,0
+Rye-Regular,pan,draw_us,microseconds per frame,218.3708,221.08125,-2.71045,"[-4.2417, -1.1792]",0,2
+Rye-Regular,pan,submit_us,microseconds per frame,220.0604,222.77085,-2.71045,"[-4.3124, -1.1085]",0,2
+Rye-Regular,pan,complete_us,microseconds per frame,220.0791,222.79165,-2.71255,"[-4.3123, -1.1128]",0,2
+Rye-Regular,sequence_65_frames,draw_us,microseconds per 65-frame sequence,135201.790501,81104.020986,54097.769515,"[53565.082018, 54630.457012]",2,0
+Rye-Regular,sequence_65_frames,submit_us,microseconds per 65-frame sequence,135304.333993,81205.44099,54098.893003,"[53561.204014, 54636.581992]",2,0
+Rye-Regular,sequence_65_frames,complete_us,microseconds per 65-frame sequence,135305.626997,81206.731991,54098.895006,"[53561.329, 54636.461012]",2,0
+Vollkorn-Medium,first_paint,draw_us,microseconds per frame,6588.604,4381.646,2206.958,"[2191.334, 2222.582]",2,0
+Vollkorn-Medium,first_paint,submit_us,microseconds per frame,6591.667,4383.9795,2207.6875,"[2191.792, 2223.583]",2,0
+Vollkorn-Medium,first_paint,complete_us,microseconds per frame,6591.708,4384.021,2207.687,"[2191.792, 2223.582]",2,0
+Vollkorn-Medium,warm,draw_us,microseconds per frame,212.8729165,214.3529,-1.4799835,"[-2.3348, -0.625167]",0,2
+Vollkorn-Medium,warm,submit_us,microseconds per frame,214.583317,216.0827335,-1.4994165,"[-2.448733, -0.5501]",0,2
+Vollkorn-Medium,warm,complete_us,microseconds per frame,214.6056165,216.1021335,-1.496517,"[-2.441634, -0.5514]",0,2
+Vollkorn-Medium,zoom_in,draw_us,microseconds per frame,6078.06075,4006.595542,2071.465208,"[2059.836583, 2083.093833]",2,0
+Vollkorn-Medium,zoom_in,submit_us,microseconds per frame,6079.355875,4007.8334165,2071.5224585,"[2059.919917, 2083.125]",2,0
+Vollkorn-Medium,zoom_in,complete_us,microseconds per frame,6079.37325,4007.869792,2071.503458,"[2059.902583, 2083.104333]",2,0
+Vollkorn-Medium,zoom_out,draw_us,microseconds per frame,3986.38025,2545.4409585,1440.9392915,"[1415.42025, 1466.458333]",2,0
+Vollkorn-Medium,zoom_out,submit_us,microseconds per frame,3987.7812915,2546.791625,1440.9896665,"[1415.316167, 1466.663166]",2,0
+Vollkorn-Medium,zoom_out,complete_us,microseconds per frame,3987.809042,2546.822917,1440.986125,"[1415.3265, 1466.64575]",2,0
+Vollkorn-Medium,pan,draw_us,microseconds per frame,216.8354,216.44795,0.38745,"[0.1542, 0.6207]",2,0
+Vollkorn-Medium,pan,submit_us,microseconds per frame,218.5458,218.1625,0.3833,"[0.0711, 0.6955]",2,0
+Vollkorn-Medium,pan,complete_us,microseconds per frame,218.56875,218.20015,0.3686,"[0.0585, 0.6787]",2,0
+Vollkorn-Medium,sequence_65_frames,draw_us,microseconds per 65-frame sequence,136165.002494,91346.333997,44818.668497,"[43917.293998, 45720.042996]",2,0
+Vollkorn-Medium,sequence_65_frames,submit_us,microseconds per 65-frame sequence,136265.729998,91445.5195,44820.210498,"[43917.214, 45723.206996]",2,0
+Vollkorn-Medium,sequence_65_frames,complete_us,microseconds per 65-frame sequence,136267.147511,91447.372998,44819.774513,"[43916.67001, 45722.879016]",2,0

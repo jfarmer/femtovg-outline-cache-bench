@@ -1,0 +1,40 @@
+{
+  "Rye-Regular.ttf": {
+    "source_path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/Rye-Regular.ttf",
+    "bytes": 183244,
+    "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba"
+  },
+  "LICENSE-Rye": {
+    "source_path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/OFL.txt",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Rye",
+    "bytes": 4393,
+    "sha256": "399b33eb38cdfc76b8665defa5f81d52e8193d630ad5858c893db6bc20031bc9"
+  },
+  "PTSans-Regular.ttf": {
+    "source_path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/PTSans-Regular.ttf",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/PTSans-Regular.ttf",
+    "bytes": 442960,
+    "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a"
+  },
+  "LICENSE-PTSans": {
+    "source_path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/licenses/PTSans-OFL.txt",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-PTSans",
+    "bytes": 4425,
+    "sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+  },
+  "acquisition": {
+    "Rye": {
+      "repository": "google/fonts",
+      "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+      "font_member": "ofl/rye/Rye-Regular.ttf",
+      "license_member": "ofl/rye/OFL.txt"
+    },
+    "PTSans": {
+      "repository": "google/fonts",
+      "commit": "f3b885d5590e307e02542f1a724cec55d567fdaa",
+      "font_member": "ofl/ptsans/PT_Sans-Web-Regular.ttf",
+      "metadata_path": "/private/tmp/femtovg-open-font-search/candidate-agent/candidate-metadata.json"
+    }
+  }
+}

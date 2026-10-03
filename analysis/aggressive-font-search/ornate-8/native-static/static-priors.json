@@ -1,0 +1,469 @@
+{
+  "complete": true,
+  "reporter_sha256": "844706f0d836f31fef190baa88bd4c8aa65ba486e46fe2291d5a91498e17f6a6",
+  "inspection_sha256": "1ecf02230b3330e6af6a83baf52a5150345aed91ca929f341548ea878908aee4",
+  "hinter_metadata_sha256": "3299ee3ff1e95db85f64364ca6412263ca60c894400f461ee1766d94f5e47c56",
+  "method": "Independent static priors: ASCII94 unique glyph means and median of five logical-size English-demo unique-graphic-glyph means. Original demo UTF-8 corpora are retained alongside ASCII-graphic subsets. Unscaled unhinted default-instance composite-expanded points and direct stored glyph bytes are separate predictors; neither measures dynamic function/loop execution or performance. No fonts are mutated or dropped for aliases.",
+  "fonts": [
+    {
+      "label": "ComforterBrush-Regular",
+      "font_sha256": "7bd357dc8bf83d71f27fd5155ece5c8c100a2042d4530e4487635473c5836f95",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/comforterbrush/ComforterBrush-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 0,
+      "glyph_program_max_bytes": 0,
+      "fpgm_bytes": 0,
+      "prep_bytes": 7,
+      "ascii94_program_mean_bytes_per_unique_glyph": 0.0,
+      "ascii94_expanded_mean_points_per_unique_glyph": 372.8936170212766,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.0,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 402.0,
+      "version": "Version 1.013",
+      "creator_hinter_markers": [],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 6347,
+        "maxContours": 29,
+        "maxCompositePoints": 2024,
+        "maxCompositeContours": 30,
+        "maxZones": 1,
+        "maxTwilightPoints": 0,
+        "maxStorage": 0,
+        "maxFunctionDefs": 0,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 0,
+        "maxSizeOfInstructions": 0,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.0,
+        "ascii94_expanded_mean_points_per_unique_glyph": 3.611002369424127,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.0,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 3.430566330488751
+      }
+    },
+    {
+      "label": "WaterBrush-Regular",
+      "font_sha256": "2cbdccbca5d4be005fe4edd8895b91618a7f96639eaeeb4987ad83e81afc71a7",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/WaterBrush-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 87894,
+      "glyph_program_max_bytes": 2133,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 189,
+      "ascii94_program_mean_bytes_per_unique_glyph": 343.1595744680851,
+      "ascii94_expanded_mean_points_per_unique_glyph": 311.5851063829787,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 304.55555555555554,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 304.51851851851853,
+      "version": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 1545,
+        "maxContours": 22,
+        "maxCompositePoints": 1103,
+        "maxCompositeContours": 14,
+        "maxZones": 2,
+        "maxTwilightPoints": 92,
+        "maxStorage": 162,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 449,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.9661544912690568,
+        "ascii94_expanded_mean_points_per_unique_glyph": 3.0173070979705368,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.6756277531288265,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 2.5986840214924003
+      }
+    },
+    {
+      "label": "MySoul-Regular",
+      "font_sha256": "28bcb050c1220145fd6aff6f6f13b1b8f4a9608388c0c34e4ff94452e5e6444f",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/mysoul/MySoul-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 35651,
+      "glyph_program_max_bytes": 707,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 189,
+      "ascii94_program_mean_bytes_per_unique_glyph": 137.89361702127658,
+      "ascii94_expanded_mean_points_per_unique_glyph": 100.90425531914893,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 130.45454545454547,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 95.88888888888889,
+      "version": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 259,
+        "maxContours": 7,
+        "maxCompositePoints": 431,
+        "maxCompositeContours": 8,
+        "maxZones": 2,
+        "maxTwilightPoints": 60,
+        "maxStorage": 114,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 256,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.38823494174379247,
+        "ascii94_expanded_mean_points_per_unique_glyph": 0.9771299062532193,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.2894010955410698,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.818291526592535
+      }
+    },
+    {
+      "label": "ImperialScript-Regular",
+      "font_sha256": "fa040ae596cde82559c3bcf056ac216a94efa904b848382ab85740d38df4bab7",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/imperialscript/ImperialScript-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 50512,
+      "glyph_program_max_bytes": 2456,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 189,
+      "ascii94_program_mean_bytes_per_unique_glyph": 168.72340425531914,
+      "ascii94_expanded_mean_points_per_unique_glyph": 80.81914893617021,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 157.37037037037038,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 75.0,
+      "version": "Version 1.010; ttfautohint (v1.8.3)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 960,
+        "maxContours": 74,
+        "maxCompositePoints": 354,
+        "maxCompositeContours": 7,
+        "maxZones": 2,
+        "maxTwilightPoints": 72,
+        "maxStorage": 132,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 437,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.4750351933387246,
+        "ascii94_expanded_mean_points_per_unique_glyph": 0.7826310909652827,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.3491113125434007,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.6400310318076028
+      }
+    },
+    {
+      "label": "MeaCulpa-Regular",
+      "font_sha256": "c5a293151793820d25ff10844f1418170ae755fa61d0a126cefa1e9b82f21ce5",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/meaculpa/MeaCulpa-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 45771,
+      "glyph_program_max_bytes": 1750,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 189,
+      "ascii94_program_mean_bytes_per_unique_glyph": 155.93617021276594,
+      "ascii94_expanded_mean_points_per_unique_glyph": 103.69148936170212,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 122.54545454545455,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 93.11111111111111,
+      "version": "Version 1.010; ttfautohint (v1.8.3)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 462,
+        "maxContours": 18,
+        "maxCompositePoints": 479,
+        "maxCompositeContours": 19,
+        "maxZones": 2,
+        "maxTwilightPoints": 82,
+        "maxStorage": 147,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 390,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.43903315661784525,
+        "ascii94_expanded_mean_points_per_unique_glyph": 1.0041207376120325,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.2718555238950258,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.7945866735626239
+      }
+    },
+    {
+      "label": "LuxuriousScript-Regular",
+      "font_sha256": "db1a118a34eb835f7960a09d8be472b65971d7798772842dc3cd37a8641491e9",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/luxuriousscript/LuxuriousScript-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 125907,
+      "glyph_program_max_bytes": 3429,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 189,
+      "ascii94_program_mean_bytes_per_unique_glyph": 127.18085106382979,
+      "ascii94_expanded_mean_points_per_unique_glyph": 71.12765957446808,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 104.19354838709677,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 70.48148148148148,
+      "version": "Version 1.010; ttfautohint (v1.8.3)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 1104,
+        "maxContours": 114,
+        "maxCompositePoints": 232,
+        "maxCompositeContours": 8,
+        "maxZones": 2,
+        "maxTwilightPoints": 196,
+        "maxStorage": 318,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 674,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.35807350166232366,
+        "ascii94_expanded_mean_points_per_unique_glyph": 0.6887812918512414,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.23114355231143552,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.6014711375456139
+      }
+    },
+    {
+      "label": "BirthstoneBounce-Regular",
+      "font_sha256": "a03b6146597d467e794fdd4d61178d72f083eb93e9e86040a10530aaa1307ef9",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/birthstonebounce/BirthstoneBounce-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 79960,
+      "glyph_program_max_bytes": 707,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 203,
+      "ascii94_program_mean_bytes_per_unique_glyph": 108.11702127659575,
+      "ascii94_expanded_mean_points_per_unique_glyph": 93.07446808510639,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 101.0909090909091,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 93.18181818181819,
+      "version": "Version 1.010; ttfautohint (v1.8.3)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 340,
+        "maxContours": 7,
+        "maxCompositePoints": 315,
+        "maxCompositeContours": 6,
+        "maxZones": 2,
+        "maxTwilightPoints": 48,
+        "maxStorage": 96,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 218,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.30439991613502265,
+        "ascii94_expanded_mean_points_per_unique_glyph": 0.9013083341918203,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.22426063988966524,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.7951900698215671
+      }
+    },
+    {
+      "label": "LavishlyYours-Regular",
+      "font_sha256": "4a07a5002a4f852952818eebdcf008e48ea7d537541cc8ff7eb842088842313e",
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/LavishlyYours-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 46373,
+      "glyph_program_max_bytes": 1655,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 189,
+      "ascii94_program_mean_bytes_per_unique_glyph": 215.32978723404256,
+      "ascii94_expanded_mean_points_per_unique_glyph": 91.38297872340425,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 157.0,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 75.11111111111111,
+      "version": "Version 1.010; ttfautohint (v1.8.3)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 349,
+        "maxContours": 9,
+        "maxCompositePoints": 398,
+        "maxCompositeContours": 8,
+        "maxZones": 2,
+        "maxTwilightPoints": 90,
+        "maxStorage": 159,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 388,
+        "maxSizeOfInstructions": 3596,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.606253931170815,
+        "ascii94_expanded_mean_points_per_unique_glyph": 0.8849284021839908,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.348289680835838,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.6409792259287992
+      }
+    },
+    {
+      "label": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 94918,
+      "glyph_program_max_bytes": 1933,
+      "fpgm_bytes": 1865,
+      "prep_bytes": 96,
+      "ascii94_program_mean_bytes_per_unique_glyph": 355.1808510638298,
+      "ascii94_expanded_mean_points_per_unique_glyph": 103.26595744680851,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 450.7741935483871,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 117.18181818181819,
+      "version": "Version 1.001",
+      "creator_hinter_markers": [],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 255,
+        "maxContours": 13,
+        "maxCompositePoints": 0,
+        "maxCompositeContours": 0,
+        "maxZones": 2,
+        "maxTwilightPoints": 60,
+        "maxStorage": 71,
+        "maxFunctionDefs": 60,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 241,
+        "maxSizeOfInstructions": 1933,
+        "maxComponentElements": 2,
+        "maxComponentDepth": 0
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 1.0,
+        "ascii94_expanded_mean_points_per_unique_glyph": 1.0,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 1.0,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 1.0
+      }
+    },
+    {
+      "label": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "outline_type": "TrueType",
+      "ascii94_mapped_characters": 94,
+      "ascii94_unique_glyphs": 94,
+      "ascii94_original_kernel_coverage_unique_requirement_passes": true,
+      "demo_graphic_coverage_complete": true,
+      "glyph_program_bytes_all_glyphs": 85955,
+      "glyph_program_max_bytes": 4692,
+      "fpgm_bytes": 3596,
+      "prep_bytes": 250,
+      "ascii94_program_mean_bytes_per_unique_glyph": 73.47872340425532,
+      "ascii94_expanded_mean_points_per_unique_glyph": 47.56382978723404,
+      "demo_five_size_median_mean_program_bytes_per_unique_glyph": 97.19354838709677,
+      "demo_five_size_median_mean_expanded_points_per_unique_glyph": 52.074074074074076,
+      "version": "Version 5.000; ttfautohint (v1.8.3)",
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 5.000; ttfautohint (v1.8.3)"
+        }
+      ],
+      "TTFA_present": false,
+      "maxp": {
+        "maxPoints": 818,
+        "maxContours": 65,
+        "maxCompositePoints": 160,
+        "maxCompositeContours": 9,
+        "maxZones": 2,
+        "maxTwilightPoints": 524,
+        "maxStorage": 810,
+        "maxFunctionDefs": 141,
+        "maxInstructionDefs": 0,
+        "maxStackElements": 1320,
+        "maxSizeOfInstructions": 4692,
+        "maxComponentElements": 3,
+        "maxComponentDepth": 1
+      },
+      "ratios_vs_Rye": {
+        "ascii94_program_mean_bytes_per_unique_glyph": 0.20687692814568545,
+        "ascii94_expanded_mean_points_per_unique_glyph": 0.4605954465849387,
+        "demo_five_size_median_mean_program_bytes_per_unique_glyph": 0.21561471303850008,
+        "demo_five_size_median_mean_expanded_points_per_unique_glyph": 0.4443869781340689
+      }
+    }
+  ]
+}

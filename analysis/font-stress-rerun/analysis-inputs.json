@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "inputs": {
+    "cpu": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/confirm-cpu/cpu-provenance.json",
+      "bytes": 3208936,
+      "sha256": "5c384c78c12cdcc3b79f4b7694803083b5b0b8aa27d36ee31fe03e2b48af4f7d"
+    },
+    "gpu": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/confirm-gpu/gpu-provenance.json",
+      "bytes": 2066008,
+      "sha256": "6c2e450c52625646534ba444f4c7ce2d4406bb0d274a244777a4439f9891f82a"
+    },
+    "analyzer": {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/analyze_font_confirm.py",
+      "bytes": 37902,
+      "sha256": "0ce8ba540bebac34c4930bc2d7b283794c63ad1e116a0ed5b615b225f71c08f5"
+    },
+    "raw_audit": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/raw-audit.json",
+      "bytes": 609703,
+      "sha256": "9bc5f5faf15545299c0ff53c3a28107c88097a324002b13726bb7d2819831ed4"
+    }
+  },
+  "outputs": {
+    "summary.csv": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/summary.csv",
+      "bytes": 298441,
+      "sha256": "6694bbcd1fda644cdc43e15e21e789d2881ba99b7ed34051e2741245d59fe50d"
+    },
+    "summary.json": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/summary.json",
+      "bytes": 1004660,
+      "sha256": "b32d1aba6270c50d919a5112988e3b275d047a7a9a0ed567e5841ecc6a2e62b8"
+    },
+    "paired-processes.csv": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/paired-processes.csv",
+      "bytes": 1453375,
+      "sha256": "60a8d34a302af7b2a708e9b5583b79ffd68a51cd74162441b020a624e61b7f12"
+    },
+    "bootstrap-indices.json": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/bootstrap-indices.json",
+      "bytes": 2999967,
+      "sha256": "7673f8a4982af9ae0e4cbcf82fdeaccd7fa6749b5335475c1902115e4729dfef"
+    },
+    "raw-audit.json": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/raw-audit.json",
+      "bytes": 609703,
+      "sha256": "9bc5f5faf15545299c0ff53c3a28107c88097a324002b13726bb7d2819831ed4"
+    },
+    "primary-table.md": {
+      "path": "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/primary-table.md",
+      "bytes": 1462,
+      "sha256": "424a162afbf4319eb88235f457089582fe0ff7cba5eb74bbb36c5849a48a3116"
+    }
+  }
+}

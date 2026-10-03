@@ -1,0 +1,31 @@
+{
+  "final_commit": "b87a94ddfba46ee67ca35ba240104615ac1503d8",
+  "measured_variant": "finalgenericrestore",
+  "measured_runtime_matches_final_commit": true,
+  "post_measurement_change": "Only two comment lines inside cfg(test) clarify the lower-level test offset superset; no test logic or released code changed.",
+  "post_measurement_diff": "diff --git a/src/text/swash_rasterizer.rs b/src/text/swash_rasterizer.rs\nindex 26553f1..fda7325 100644\n--- a/src/text/swash_rasterizer.rs\n+++ b/src/text/swash_rasterizer.rs\n@@ -382,8 +382,8 @@ mod tests {\n         std::fs::read(&path).unwrap_or_else(|err| panic!(\"{path}: {err}\"))\n     }\n \n-    /// The offsets `GlyphAtlas::render_atlas` passes: the fractional part of a\n-    /// glyph's position, quantized to tenths.\n+    /// Cover the native atlas's ten phases plus signed offsets and the upper\n+    /// endpoint accepted by the lower-level rasterizer.\n     fn subpixel_offsets() -> impl Iterator<Item = f32> {\n         (-9..=10).map(|tenths| tenths as f32 / 10.0)\n     }\n",
+  "files": {
+    "src/lib.rs": {
+      "measured_sha256": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+      "committed_sha256": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+      "whole_file_equal": true
+    },
+    "src/text.rs": {
+      "measured_sha256": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+      "committed_sha256": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+      "whole_file_equal": true
+    },
+    "src/text/font.rs": {
+      "measured_sha256": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+      "committed_sha256": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+      "whole_file_equal": true
+    },
+    "src/text/swash_rasterizer.rs": {
+      "measured_sha256": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e",
+      "committed_sha256": "c0f5d831132bf4bb104217538a96e15766b090858762f477411f35926f59a6aa",
+      "whole_file_equal": false,
+      "before_test_module_sha256": "53305ccea4b8eb8c379e228a3cdac115603fdfbfe6ee5ec213cbc152d8b8b0dd",
+      "before_test_module_equal": true
+    }
+  }
+}

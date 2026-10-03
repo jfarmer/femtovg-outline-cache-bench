@@ -1,0 +1,463 @@
+{
+  "complete": true,
+  "reporter": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/report_selected_mechanism.py",
+    "sha256": "ea9562a57303729b1725ed1988afcc0c81dca91c921e0b89a670dd9732aed4bd",
+    "bytes": 21794
+  },
+  "inputs": [
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/counts-analysis.json",
+      "sha256": "e78412e56006183ce7586dccf06eb5e726ce194dea0cf6b83f433193113f412e",
+      "bytes": 329767
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace-campaign.json",
+      "sha256": "3fe5510c9d7e5b48c6a40ec9bc92ac7ad5219709b6c7290f5754488acb4f8736",
+      "bytes": 29190
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analysis/combined-six-font-counts.json",
+      "sha256": "2718713c8c8a44592fd038be0f544f5f0291636915d952800da22f77f0b485a9",
+      "bytes": 146090
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/independent-count-audit.json",
+      "sha256": "6c5b30b438594e79c15eef2b6527430d17313cb23b58b5cc0431655ce63294ea",
+      "bytes": 5999
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/provenance.json",
+      "sha256": "f4805fc8417bc9e7152525df1d33822eec89fa223390d6c82bc4a0b6e30b1a11",
+      "bytes": 13627
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/provenance.json",
+      "sha256": "2af62e82ac93eb8689b1d9d9e3ecd396c4e29a75967846926756ab2b2151ec3f",
+      "bytes": 13129
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analysis/count-summary.json",
+      "sha256": "9902169fbdbf4eab130aeb20ff5202ee05e1b418e1180f5e4a3c65dfe7e8f7c3",
+      "bytes": 77294
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analysis/count-summary.json",
+      "sha256": "e183a96d33bd6e5cf89a12e22013b8dd7daac6c69b9bc73bde3fd4c8fe8abf34",
+      "bytes": 76817
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analysis-execution.json",
+      "sha256": "704a57770120c6deb03885c272883f2d80b6b1739328001cee4adf3d79c672ab",
+      "bytes": 915
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analysis-execution.json",
+      "sha256": "127f2fa2b0d4475b420569b632de248000ac86524db0f31060ff979540e4ffc0",
+      "bytes": 956
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analysis-execution-v2.json",
+      "sha256": "ee25d54f1b6b541e24b09a6a9a6e65bfe8256fe8508569b2f7e0f6e1df71921c",
+      "bytes": 1188
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/auditor-adaptation.json",
+      "sha256": "abf68a998363d687dc63b41b1deccfa3fc1e62333ba9076a28a39691e45852d9",
+      "bytes": 6125
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyzer-adaptation.json",
+      "sha256": "9bba55c4b55f8083fdee0ef30e5c017dbf3c5ad576ee4675b08a383f8a47a559",
+      "bytes": 1445
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/engine-selection-audit.json",
+      "sha256": "201e85b6ab9d15e772b88de4c76afbe5ba557636005d7a348f0dca3047b2dfd9",
+      "bytes": 68079
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/engine-selection-audit.json",
+      "sha256": "d66268561e83e6d6c46d4108467690b8fb7e7831722738eb273d4c1f1b5b2950",
+      "bytes": 23990
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/prepare.json",
+      "sha256": "d6cde687a2a32c066109e1311eea3a64b2fa95de230137a3fd9fa251cd96744a",
+      "bytes": 22092
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/font-inspection.json",
+      "sha256": "9130dacce871c8717264b364828bd5b4bd63e1fa06918535c353c278adb2082b",
+      "bytes": 5882342
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/native-prescreen-audit.json",
+      "sha256": "fb56f5d5d3afac90dbdaa42f77a0424154579f5586e7c0b22aaf7e454ba7e39c",
+      "bytes": 670202
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/native-prescreen-ranking.json",
+      "sha256": "6848dffd90672cd442b37a9f67c55c8dc6c77c2e8494f6b0565d443187064e0b",
+      "bytes": 81766
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/font-inspection.json",
+      "sha256": "2bb547f4d2b2c71c99fd4f9186f7415441b9931249458e601e8d8a879d477d01",
+      "bytes": 2277912
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/native-prescreen-audit.json",
+      "sha256": "4582e5daf1504f596f0a49716339c178d5e8105bf90f8c0dd6ecab7a0396cf32",
+      "bytes": 265320
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/native-prescreen-ranking.json",
+      "sha256": "0a07bdae7a136295be7b9e654b2bc961c7d445f023dcbd22a7f19eef48621db4",
+      "bytes": 30099
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/font-inspection.json",
+      "sha256": "1ecf02230b3330e6af6a83baf52a5150345aed91ca929f341548ea878908aee4",
+      "bytes": 1912107
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/native-prescreen-audit.json",
+      "sha256": "447349a250b4eceee16cb0e2b4175e59c552d6b0850ff64db2e00df75df3f175",
+      "bytes": 243055
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/native-prescreen-ranking.json",
+      "sha256": "9e3ca70a5b3248fb49281050a38fd50b819e8ce3020402bb55d24a6224dae0f1",
+      "bytes": 27099
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/WaterBrush-Regular.ttf",
+      "sha256": "2cbdccbca5d4be005fe4edd8895b91618a7f96639eaeeb4987ad83e81afc71a7",
+      "bytes": 332028
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/counted-en-WaterBrush-Regular.jsonl",
+      "sha256": "6611c18d9eddae29e35752975a6381205b687c64d13b8b9726a2a0954a2cc7f5",
+      "bytes": 1557817
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/counted-en-WaterBrush-Regular.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/LavishlyYours-Regular.ttf",
+      "sha256": "4a07a5002a4f852952818eebdcf008e48ea7d537541cc8ff7eb842088842313e",
+      "bytes": 150132
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/counted-en-LavishlyYours-Regular.jsonl",
+      "sha256": "4b1f618c0f9f3c7ad43a36a767cc221b823c7d5bff0d332c1d652996a6db47d9",
+      "bytes": 1577062
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/counted-en-LavishlyYours-Regular.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DiplomataSC-Regular.ttf",
+      "sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "bytes": 87544
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/counted-en-DiplomataSC-Regular.jsonl",
+      "sha256": "0fbe1563e43d2a853d0cb789c12e9d6c83ec5ae103c9ccba88f2318a3d18d752",
+      "bytes": 1568995
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/counted-en-DiplomataSC-Regular.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+      "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+      "bytes": 231608
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-FleurDeLeah-Regular.jsonl",
+      "sha256": "9d53965861abe2657519a8053341cf05698dfdfd1a2b6943a91d008a5feaf8fe",
+      "bytes": 1577562
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-FleurDeLeah-Regular.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Rye-Regular.jsonl",
+      "sha256": "63dd0b64b583391988dea395fb6ea64eef03c8412c0804102ad1eee5bb9e22fc",
+      "bytes": 1526787
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Rye-Regular.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Vollkorn-Medium.jsonl",
+      "sha256": "b20d63735cfb82712ed8ecba71da8d8c54f5888a96db2b4dbf89eab675e06e1c",
+      "bytes": 1540932
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Vollkorn-Medium.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-WaterBrush-Regular-master.events.tsv",
+      "sha256": "364a21aa5f3bc6085fcc81454afb0ddff556f5fae1d176acc0e9b187e170ea5d",
+      "bytes": 266113
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-WaterBrush-Regular-master.stdout.csv",
+      "sha256": "af34cfc2994eb780dbdf2162da70bf78460051c8f28a6adfa0e10f3cedcbebe2",
+      "bytes": 358
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-WaterBrush-Regular-final.events.tsv",
+      "sha256": "f6e369ac5a58c328aaebe995710903682e232e40a685eb2be25fdd0575ff1483",
+      "bytes": 731756
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-WaterBrush-Regular-final.stdout.csv",
+      "sha256": "dbf24d5a0e6a9ce0fcbf11af014973ca083596416637701ba3b99e2ce3e7d0a0",
+      "bytes": 361
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-LavishlyYours-Regular-master.events.tsv",
+      "sha256": "9766d0195e542d15f062a6436ccf91dbeb678cdf8ec8d2a839a938259bf33eb9",
+      "bytes": 267991
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-LavishlyYours-Regular-master.stdout.csv",
+      "sha256": "68e3be063d450e9358baf29bbe05f64466fff362b2f60b6fcc77a52c18e9930e",
+      "bytes": 355
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-LavishlyYours-Regular-final.events.tsv",
+      "sha256": "ba317b87b01903fd551f7649286759dc1352c2d2116491ac1af9c9851cb9bb38",
+      "bytes": 723199
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-LavishlyYours-Regular-final.stdout.csv",
+      "sha256": "a3a89b8b925c19df0df26da9d2774953e3f24ae35d3b83071a5ddfdc47876ffd",
+      "bytes": 358
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Rye-Regular-master.events.tsv",
+      "sha256": "331d28296720cd85373c0c453e150c96de90817afcacaf5df8f8808522ce9033",
+      "bytes": 265573
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Rye-Regular-master.stdout.csv",
+      "sha256": "440db3554a9d194075fa36e6d7da52f34bacb5242cca4ece3af9cb848d668261",
+      "bytes": 355
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Rye-Regular-final.events.tsv",
+      "sha256": "af716154fdedbf1eb094369d7ec536d093a8aed2d976f0e4af2041086b59c525",
+      "bytes": 722668
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Rye-Regular-final.stdout.csv",
+      "sha256": "1be2824e1db3e74436bb37cb431dc494e5316b40a95e0af5da8fb54f294d161b",
+      "bytes": 358
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Vollkorn-Medium-master.events.tsv",
+      "sha256": "0b754ab237653b61dd9beae5fa5a4637cf5a59a131ed5b1fa4c79c07f35e01a1",
+      "bytes": 266708
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Vollkorn-Medium-master.stdout.csv",
+      "sha256": "2af755819c8ef61f9b32fcb7dfb1840e8d688f071477614cba71c0aa88e04c64",
+      "bytes": 355
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Vollkorn-Medium-final.events.tsv",
+      "sha256": "0ee8024fe07d064d8ccf50d1e4bc7fefcbac12db3606daf63df5efba7c8f20c7",
+      "bytes": 722482
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Vollkorn-Medium-final.stdout.csv",
+      "sha256": "f65121f73b2b9ca2d11e09f85024851d6a9b8491c36f340124683b324fc5ec7b",
+      "bytes": 358
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-DiplomataSC-Regular-master.events.tsv",
+      "sha256": "65aa0dcbec06440947c2de59fbb4bbafa4f35f936b83ac15fdfd8e29fd59247d",
+      "bytes": 257995
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-DiplomataSC-Regular-master.stdout.csv",
+      "sha256": "d2a6309b6a9a70bea242e4ff3c72735a200269e27b2329dc7dfe088571a9f772",
+      "bytes": 358
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-DiplomataSC-Regular-final.events.tsv",
+      "sha256": "01bf6d4fe989cc39686d88d7596238cf2854e2dbb3128be11357463704e5a300",
+      "bytes": 705643
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-DiplomataSC-Regular-final.stdout.csv",
+      "sha256": "b69f848aa60b865fc4547163d8a16a339cae4e825024d65cded46d0a4f7d64ba",
+      "bytes": 358
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-FleurDeLeah-Regular-master.events.tsv",
+      "sha256": "b160bb0d4d0a265e6a058f5adba8e4397eaad45f025c69af431369c58a433777",
+      "bytes": 267093
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-FleurDeLeah-Regular-master.stdout.csv",
+      "sha256": "953bf7c514139c1f45614060094828fcd985b8bf9e90b0f14805d97eefb84fea",
+      "bytes": 355
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-FleurDeLeah-Regular-final.events.tsv",
+      "sha256": "adab326d75582ed664743cbc38c763899e29a0422fe0d69ba503de4cd13c08b2",
+      "bytes": 725090
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-FleurDeLeah-Regular-final.stdout.csv",
+      "sha256": "8058355b9ae92fad25037089315dccee28237b783b064c88d91d9c550a7054df",
+      "bytes": 358
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/glyf/hint/engine/outline.rs",
+      "sha256": "4bc237846a7c2c5b5f12006727487955e283c66e7bdfa11d8117b7e414ef9740",
+      "bytes": 58337
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/glyf/hint/instance.rs",
+      "sha256": "99dd4ee9ec9546bf4f68603f303921a280a2f5a44165a540a3105d81672b1d79",
+      "bytes": 10018
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/collector.stdout",
+      "sha256": "5b0bde8c478bb4bf2eda7ae22c0211fd8ddd347c00513bbab9103ff8a1c79c8f",
+      "bytes": 628
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/collector.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/diagnose_selected.py",
+      "sha256": "da34f3b9fdcd0d76eadb1652b6bf769d413459292c19d02b8b91a023f2f300da",
+      "bytes": 13106
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analyzer.stdout",
+      "sha256": "9991f3c2eedbf025f0fe9183da105e0c409ce3fa74a39e7aa0fa8361884c9498",
+      "bytes": 184
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analyzer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/collector.stdout",
+      "sha256": "1e664d1e3d5bc21cc8567456c4a7b79acf85b4af6ed444be65acbe095b81e594",
+      "bytes": 897
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/collector.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace_selected.py",
+      "sha256": "a95935b55207514c0fabf87709995f0edfee0cecda57a3103485f808eac0d678",
+      "bytes": 10818
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyzer.stdout",
+      "sha256": "2b69e7d8eb0a544cbd69c62f75fc9dc07b5c621eaa27ae3f9491ff1c45dc9b56",
+      "bytes": 2451
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyzer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/report_selected_mechanism.py",
+      "sha256": "ea9562a57303729b1725ed1988afcc0c81dca91c921e0b89a670dd9732aed4bd",
+      "bytes": 21794
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-report.md",
+      "sha256": "164c968803a6d9d9a3ba9d4574a85d4f8ed274d5563e57147f922c4d71416dd9",
+      "bytes": 4397
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-report.json",
+      "sha256": "4ca1f12fd951be87a6fcd4e87423214f61d9baf716713660cd3471f29199dd00",
+      "bytes": 117690
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-vm-profiles.csv",
+      "sha256": "d15ac8f5e0c45eb0705e3b12b919be1bd5b792879b47f3adbeedbe1a36a066ef",
+      "bytes": 7253
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-trace-phases.csv",
+      "sha256": "4ad47037e747f353c88121f93c6ae61ab73e7a9b3ef10896ed001e7482222116",
+      "bytes": 5942
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-hit-weighted-first-paint.csv",
+      "sha256": "e1c231ff2cc9ecbbc0047011e8d233a6d12803c030b7dc62cae02396825f15c2",
+      "bytes": 1052
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-report.md",
+      "sha256": "164c968803a6d9d9a3ba9d4574a85d4f8ed274d5563e57147f922c4d71416dd9",
+      "bytes": 4397
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-report.json",
+      "sha256": "4ca1f12fd951be87a6fcd4e87423214f61d9baf716713660cd3471f29199dd00",
+      "bytes": 117690
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-vm-profiles.csv",
+      "sha256": "d15ac8f5e0c45eb0705e3b12b919be1bd5b792879b47f3adbeedbe1a36a066ef",
+      "bytes": 7253
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-trace-phases.csv",
+      "sha256": "4ad47037e747f353c88121f93c6ae61ab73e7a9b3ef10896ed001e7482222116",
+      "bytes": 5942
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-hit-weighted-first-paint.csv",
+      "sha256": "e1c231ff2cc9ecbbc0047011e8d233a6d12803c030b7dc62cae02396825f15c2",
+      "bytes": 1052
+    }
+  ],
+  "rule": "Original byte bindings and absolute paths retained; no source/file path is rewritten inside original artifacts."
+}

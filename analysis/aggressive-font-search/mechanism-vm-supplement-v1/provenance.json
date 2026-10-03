@@ -1,0 +1,240 @@
+{
+  "complete": true,
+  "count_only": true,
+  "no_timing_results": true,
+  "driver_sha256": "4e7f3675537f6f4cf53e8446c6421164fea871cf4008593b6a32aec57cb10503",
+  "prepare_sha256": "d6cde687a2a32c066109e1311eea3a64b2fa95de230137a3fd9fa251cd96744a",
+  "choices": {
+    "en": [
+      "FleurDeLeah-Regular",
+      "Rye-Regular",
+      "Vollkorn-Medium"
+    ]
+  },
+  "native_reference": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+    "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+    "bytes": 12926
+  },
+  "launches": [
+    {
+      "complete": true,
+      "mode": "native",
+      "locale": "en",
+      "font": "FleurDeLeah-Regular",
+      "font_file": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+        "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d"
+      },
+      "build": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/build-native-01/build.json",
+      "build_sha256": "a54bd5bc519ea72872f7c7079e527161b13c6abb60294246e4eabddde90b447b",
+      "native_reference": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+        "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+        "bytes": 12926
+      },
+      "command": [
+        "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/target-native/release/femtovg-ttvm-diagnostic-native",
+        "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+        "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+        "en"
+      ],
+      "stdout": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/native-en-FleurDeLeah-Regular.jsonl",
+      "stderr": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/native-en-FleurDeLeah-Regular.stderr",
+      "exit_code": 0,
+      "stdout_sha256": "d368c74697fb43bf140e508cf8706f5376bb5d0fd7c958a738533c152c5976fe",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 2372,
+      "case_audits": 20,
+      "native_retained_counts_and_alpha_digests_exact": true,
+      "native_reference_stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-FleurDeLeah-Regular.csv",
+        "sha256": "3b8327c573ff7799de87af1c4f2eb64dbba8344e24a6c5eeb4ce5d65d7717634",
+        "bytes": 52002
+      }
+    },
+    {
+      "complete": true,
+      "mode": "native",
+      "locale": "en",
+      "font": "Rye-Regular",
+      "font_file": {
+        "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+        "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba"
+      },
+      "build": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/build-native-01/build.json",
+      "build_sha256": "a54bd5bc519ea72872f7c7079e527161b13c6abb60294246e4eabddde90b447b",
+      "native_reference": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+        "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+        "bytes": 12926
+      },
+      "command": [
+        "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/target-native/release/femtovg-ttvm-diagnostic-native",
+        "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+        "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+        "en"
+      ],
+      "stdout": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/native-en-Rye-Regular.jsonl",
+      "stderr": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/native-en-Rye-Regular.stderr",
+      "exit_code": 0,
+      "stdout_sha256": "48a835c8dc923cc13d064333bcbd2ff3a8a863c6f3c357a190b1246ab49133b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 2372,
+      "case_audits": 20,
+      "native_retained_counts_and_alpha_digests_exact": true,
+      "native_reference_stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Rye-Regular.csv",
+        "sha256": "4c7a3698e092863a6fba6db1685f3730349284b0ee01dbe3fb70e4beb64e60c0",
+        "bytes": 51928
+      }
+    },
+    {
+      "complete": true,
+      "mode": "native",
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "font_file": {
+        "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+        "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+      },
+      "build": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/build-native-01/build.json",
+      "build_sha256": "a54bd5bc519ea72872f7c7079e527161b13c6abb60294246e4eabddde90b447b",
+      "native_reference": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+        "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+        "bytes": 12926
+      },
+      "command": [
+        "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/target-native/release/femtovg-ttvm-diagnostic-native",
+        "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+        "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+        "en"
+      ],
+      "stdout": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/native-en-Vollkorn-Medium.jsonl",
+      "stderr": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/native-en-Vollkorn-Medium.stderr",
+      "exit_code": 0,
+      "stdout_sha256": "ccea514393e2b85c75d904bbf11c34996f37eb7e8c6051e9e47d1966183be151",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 2372,
+      "case_audits": 20,
+      "native_retained_counts_and_alpha_digests_exact": true,
+      "native_reference_stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Vollkorn-Medium.csv",
+        "sha256": "c06bbaf5a57a9c05a940f6acf69489e0e7541fe1a209bacc18808433ce793ce7",
+        "bytes": 51585
+      }
+    },
+    {
+      "complete": true,
+      "mode": "counted",
+      "locale": "en",
+      "font": "FleurDeLeah-Regular",
+      "font_file": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+        "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d"
+      },
+      "build": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/build-counted-01/build.json",
+      "build_sha256": "1f83e46b50e57f39cae3b3828c0f0b6bde90f7b909a51f01b9970810ead064b2",
+      "native_reference": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+        "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+        "bytes": 12926
+      },
+      "command": [
+        "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/target-counted/release/femtovg-ttvm-diagnostic-counted",
+        "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+        "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+        "en"
+      ],
+      "stdout": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-FleurDeLeah-Regular.jsonl",
+      "stderr": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-FleurDeLeah-Regular.stderr",
+      "exit_code": 0,
+      "stdout_sha256": "9d53965861abe2657519a8053341cf05698dfdfd1a2b6943a91d008a5feaf8fe",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 2372,
+      "case_audits": 20,
+      "native_retained_counts_and_alpha_digests_exact": true,
+      "native_reference_stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-FleurDeLeah-Regular.csv",
+        "sha256": "3b8327c573ff7799de87af1c4f2eb64dbba8344e24a6c5eeb4ce5d65d7717634",
+        "bytes": 52002
+      }
+    },
+    {
+      "complete": true,
+      "mode": "counted",
+      "locale": "en",
+      "font": "Rye-Regular",
+      "font_file": {
+        "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+        "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba"
+      },
+      "build": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/build-counted-01/build.json",
+      "build_sha256": "1f83e46b50e57f39cae3b3828c0f0b6bde90f7b909a51f01b9970810ead064b2",
+      "native_reference": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+        "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+        "bytes": 12926
+      },
+      "command": [
+        "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/target-counted/release/femtovg-ttvm-diagnostic-counted",
+        "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+        "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+        "en"
+      ],
+      "stdout": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Rye-Regular.jsonl",
+      "stderr": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Rye-Regular.stderr",
+      "exit_code": 0,
+      "stdout_sha256": "63dd0b64b583391988dea395fb6ea64eef03c8412c0804102ad1eee5bb9e22fc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 2372,
+      "case_audits": 20,
+      "native_retained_counts_and_alpha_digests_exact": true,
+      "native_reference_stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Rye-Regular.csv",
+        "sha256": "4c7a3698e092863a6fba6db1685f3730349284b0ee01dbe3fb70e4beb64e60c0",
+        "bytes": 51928
+      }
+    },
+    {
+      "complete": true,
+      "mode": "counted",
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "font_file": {
+        "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+        "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+      },
+      "build": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/build-counted-01/build.json",
+      "build_sha256": "1f83e46b50e57f39cae3b3828c0f0b6bde90f7b909a51f01b9970810ead064b2",
+      "native_reference": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json",
+        "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7",
+        "bytes": 12926
+      },
+      "command": [
+        "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/target-counted/release/femtovg-ttvm-diagnostic-counted",
+        "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+        "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+        "en"
+      ],
+      "stdout": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Vollkorn-Medium.jsonl",
+      "stderr": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/counted-en-Vollkorn-Medium.stderr",
+      "exit_code": 0,
+      "stdout_sha256": "b20d63735cfb82712ed8ecba71da8d8c54f5888a96db2b4dbf89eab675e06e1c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 2372,
+      "case_audits": 20,
+      "native_retained_counts_and_alpha_digests_exact": true,
+      "native_reference_stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Vollkorn-Medium.csv",
+        "sha256": "c06bbaf5a57a9c05a940f6acf69489e0e7541fe1a209bacc18808433ce793ce7",
+        "bytes": 51585
+      }
+    }
+  ],
+  "scope": "Sealed existing native/count binaries; default coordinates, English ASCII94/demo_unique sizes11/12/14/15/16 at both native DPRs. Counted execution is not timed.",
+  "original_native_alpha_case_matches": 120,
+  "native_counted_hinted_and_unhinted_outline_hashes_exact": true
+}

@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "auditor": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/audit_demo_screen_effects_archive.py",
+    "bytes": 12977,
+    "sha256": "b6d0b88251d63a4b076f44eb14b95b4936b037dd8b06dfa42280214a435b62de"
+  },
+  "wrapper": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/run_aggressive_demo_screen.py",
+    "bytes": 19441,
+    "sha256": "149c8a984c24300fc53ff817c35b8ce46ca305e6176c41016b383a648a9477cf"
+  },
+  "protocol": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-selection-v1/protocol.json",
+    "bytes": 4246,
+    "sha256": "3359e8d7e1880c13858222612c23d995c74537f460dd3ff1cb1e23415d53dc90"
+  },
+  "selection": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-selection-v1/selection.json",
+    "bytes": 180561,
+    "sha256": "2bb1d95ae1a0b0d3151d38bbe854234465fbde6b2e05b634f8482f28ddb1cc4e"
+  },
+  "provenance": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-screen-v1/cpu-provenance.json",
+    "bytes": 327049,
+    "sha256": "b6e383aa5b7d099b646d60fadc83bcb52c1910d303da4243e2c360820917fe86"
+  },
+  "analysis": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-screen-v1/independent-analysis/analysis.json",
+    "bytes": 241261,
+    "sha256": "2d687bdc8f47c2fea97d84e4a8e52ccbbf71210dc31b1dfac75924277a17c07d"
+  },
+  "processes_checked": 40,
+  "raw_original_stdout_rows_checked": 600,
+  "original_atlas_annotations_checked": 600,
+  "phase_sequence_endpoint_effects_checked": 180,
+  "maximum_absolute_decimal_to_fraction_difference": 0.0,
+  "method": "Independent exact Fraction parsing and sorted median arithmetic from every original process stdout. Verify phase medians, within-trial 65-frame sequences, both paired blocks, means, ranges, signs, raw CSV agreement and AB/BA order. Source/build/font guard reused read-only; no benchmark, CI, exclusion or input mutation.",
+  "new_application_pixel_proof": false,
+  "archive_policy": {
+    "allow_missing_binaries_explicit": true,
+    "omitted_compiled_bodies": [],
+    "identity_adapter": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-confirmation-analysis-v1/analyze_demo_confirm.py",
+      "bytes": 38234,
+      "sha256": "3471ef075eb085ba8bca5298028009b56b029c7cd3ee9b6b6bad0d56c9190804"
+    },
+    "identity_adapter_source_proof": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-confirmation-analysis-v1/source-preparation.json",
+      "bytes": 36214,
+      "sha256": "8950942b04680157efcedd1feb4ae3b803e63ddf9a7cff566f7ff2577e6543d1"
+    },
+    "font_source_build_dependency_metadata_checks_retained": true,
+    "wrapper_and_collector_imported": false,
+    "path_map": {}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "command": ["sysctl", "-n", "machdep.cpu.brand_string", "hw.model", "hw.memsize", "hw.physicalcpu", "hw.logicalcpu"],
+  "observation_source": "Actual command and returned values reported by the parent agent after confirmation; this file records that observation and does not claim a second invocation.",
+  "stdout_lines": ["Apple M4 Max", "Mac16,5", "137438953472", "16", "16"],
+  "cpu_brand": "Apple M4 Max",
+  "hardware_model": "Mac16,5",
+  "memory_bytes": 137438953472,
+  "physical_cpus": 16,
+  "logical_cpus": 16,
+  "platform_from_confirmation_provenance": "macOS-26.6.2-arm64-arm-64bit"
+}

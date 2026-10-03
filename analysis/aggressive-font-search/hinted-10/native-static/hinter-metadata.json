@@ -1,0 +1,838 @@
+{
+  "complete": true,
+  "inspection": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/font-inspection.json",
+    "sha256": "2bb547f4d2b2c71c99fd4f9186f7415441b9931249458e601e8d8a879d477d01",
+    "bytes": 2277912
+  },
+  "inspector": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/inspect_cjk_fonts.py",
+    "sha256": "71abc2db5f2355ca48cb26b6ad7fbceca63728ce1e16d14aa2851473fce1d96a",
+    "bytes": 11383
+  },
+  "wrapper": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/inspect_aggressive.py",
+    "sha256": "4118047b99f979394e8d90731fca1099298ee92bd818e61c9d3b558935a6c4db",
+    "bytes": 5175
+  },
+  "fonts": [
+    {
+      "label": "AveriaGruesaLibre-Regular",
+      "font_sha256": "df080c6c99c694b3d741835957e4ebc37d640a9c54f4079ceb8c7211e3f2e209",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011, Dan Sayers (i@iotic.com), with Reserved Font Name 'Averia' and 'Averia Libre'."
+        },
+        {
+          "name_id": 1,
+          "value": "Averia Gruesa Libre"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.002;UKWN;AveriaGruesaLibre-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Averia Gruesa Libre Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002"
+        },
+        {
+          "name_id": 6,
+          "value": "AveriaGruesaLibre-Regular"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "AveriaSerifLibre-Regular",
+      "font_sha256": "c64545bce66be1d737832337c1188015f9acacc5230ccbeb4ce646a0eaa252da",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011, Dan Sayers (i@iotic.com), with Reserved Font Name 'Averia' and 'Averia Libre'."
+        },
+        {
+          "name_id": 1,
+          "value": "Averia Serif Libre"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.002;UKWN;AveriaSerifLibre-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Averia Serif Libre Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002"
+        },
+        {
+          "name_id": 6,
+          "value": "AveriaSerifLibre-Regular"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "AveriaLibre-Regular",
+      "font_sha256": "3dda695e06012f89b39eaccd77fbbcf22133a17b00ce5ddf3e4e9a996546b865",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011, Dan Sayers (i@iotic.com), with Reserved Font Name 'Averia' and 'Averia Libre'."
+        },
+        {
+          "name_id": 1,
+          "value": "Averia Libre"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.002;UKWN;AveriaLibre-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Averia Libre Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002"
+        },
+        {
+          "name_id": 6,
+          "value": "AveriaLibre-Regular"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "MissFajardose-Regular",
+      "font_sha256": "f76e0f245e781a75ea9fa528706b417173f7741439369c07d1501276170ab709",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2004 Alejandro Paul (sudtipos@sudtipos.com),\rwith Reserved Font Name \"MissFajardose\""
+        },
+        {
+          "name_id": 1,
+          "value": "Miss Fajardose"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "AlejandroPaul: Miss Fajardose Regular: 2004"
+        },
+        {
+          "name_id": 4,
+          "value": "Miss Fajardose Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "MissFajardose-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "MissFajardose is a trademark of Alejandro Paul."
+        },
+        {
+          "name_id": 8,
+          "value": "Alejandro Paul"
+        },
+        {
+          "name_id": 9,
+          "value": "Alejandro Paul"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.sudtipos.com"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.sudtipos.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "HerrVonMuellerhoff-Regular",
+      "font_sha256": "ba8ac10807a79462b7c8265b2eebb8419e5017fdc1a5828b1a071d9e8478772e",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2004 Alejandro Paul (sudtipos@sudtipos.com),\rwith Reserved Font Name \"Herr Von Mullerhoff\""
+        },
+        {
+          "name_id": 1,
+          "value": "Herr Von Muellerhoff"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "HerrVonMullerhoff"
+        },
+        {
+          "name_id": 4,
+          "value": "Herr Von Muellerhoff Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "HerrVonMuellerhoff-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Herr Von Mullerhoff is a trademark of Alejandro Paul."
+        },
+        {
+          "name_id": 8,
+          "value": "Alejandro Paul"
+        },
+        {
+          "name_id": 9,
+          "value": "Alejandro Paul"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.sudtipos.com"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.sudtipos.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "GreatVibes-Regular",
+      "font_sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.103; ttfautohint (v1.8.4.7-5d5b)"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2010 The Great Vibes Pro Project Authors (https://github.com/googlefonts/great-vibes)"
+        },
+        {
+          "name_id": 1,
+          "value": "Great Vibes"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.103;GOOG;GreatVibes-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Great Vibes Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.103; ttfautohint (v1.8.4.7-5d5b)"
+        },
+        {
+          "name_id": 6,
+          "value": "GreatVibes-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Robert E. Leuschke"
+        },
+        {
+          "name_id": 9,
+          "value": "Robert E. Leuschke, Viktoriya Grabowska, Viviana Monsalve, Eben Sorkin"
+        },
+        {
+          "name_id": 11,
+          "value": "www.typesetit.com"
+        },
+        {
+          "name_id": 12,
+          "value": "www.typesetit.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+        },
+        {
+          "name_id": 14,
+          "value": "https://openfontlicense.org"
+        },
+        {
+          "name_id": 256,
+          "value": "Swash Forms"
+        },
+        {
+          "name_id": 257,
+          "value": "Alternate Swash Forms"
+        },
+        {
+          "name_id": 258,
+          "value": "Serbian"
+        },
+        {
+          "name_id": 259,
+          "value": "Name:"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "BilboSwashCaps-Regular",
+      "font_sha256": "36e0a6d9f33c57797340a65c8789272247f8d2b0b9521a92112eaa13c77a4354",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 TypeSETit, LLC (typesetit@att.net),\rwith Reserved Font Names \"Bilbo\" and \"Bilbo Swash Caps\""
+        },
+        {
+          "name_id": 1,
+          "value": "Bilbo Swash Caps"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.003;UKWN;BilboSwashCaps-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Bilbo Swash Caps Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.003"
+        },
+        {
+          "name_id": 6,
+          "value": "BilboSwashCaps-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Bilbo Swash Caps is a trademark of Robert E. Leuschke."
+        },
+        {
+          "name_id": 8,
+          "value": "Robert E. Leuschke"
+        },
+        {
+          "name_id": 9,
+          "value": "Robert E. Leuschke"
+        },
+        {
+          "name_id": 12,
+          "value": "www.typesetit.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "PinyonScript-Regular",
+      "font_sha256": "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2022 The PinyonScript Project Authors (https://github.com/SorkinType/Pinyon)"
+        },
+        {
+          "name_id": 1,
+          "value": "Pinyon Script"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.008;STC;PinyonScript-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Pinyon Script Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)"
+        },
+        {
+          "name_id": 6,
+          "value": "PinyonScript-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Pinyon Scrpt is a trademark of Sorkin Type Co."
+        },
+        {
+          "name_id": 8,
+          "value": "Sorkin Type Co."
+        },
+        {
+          "name_id": 9,
+          "value": "Nicole Fally, Eben Sorkin"
+        },
+        {
+          "name_id": 10,
+          "value": "Pinyon Script is a Engish Roundhand connected script font"
+        },
+        {
+          "name_id": 11,
+          "value": "http://sorkintype.com"
+        },
+        {
+          "name_id": 12,
+          "value": "http://sorkintype.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+        },
+        {
+          "name_id": 14,
+          "value": "https://openfontlicense.org"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "FleurDeLeah-Regular",
+      "font_sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2008-2021 The Fleur De Leah Project Authors (https://github.com/googlefonts/fleurdeleah)"
+        },
+        {
+          "name_id": 1,
+          "value": "Fleur De Leah"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.010;NONE;FleurDeLeah-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Fleur De Leah Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.010; ttfautohint (v1.8.3)"
+        },
+        {
+          "name_id": 6,
+          "value": "FleurDeLeah-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Robert E. Leuschke"
+        },
+        {
+          "name_id": 9,
+          "value": "Robert E. Leuschke"
+        },
+        {
+          "name_id": 11,
+          "value": "www.typesetit.com"
+        },
+        {
+          "name_id": 12,
+          "value": "www.typesetit.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Eater-Regular",
+      "font_sha256": "df2744af0f58592c4ff13e8205e62a56f7bdf915b3e31c9def075668c42a2b3f",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 3,
+          "value": "FontForge 2.0 : Eater : 19-12-2011"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011, Typomondo, with Reserved Font Name \"Eater\""
+        },
+        {
+          "name_id": 1,
+          "value": "Eater"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "FontForge 2.0 : Eater : 19-12-2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Eater"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 001.002 "
+        },
+        {
+          "name_id": 6,
+          "value": "Eater-Regular"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2010 by Sorkin Type Co with Reserved Font Name Rye.\r\rThis Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 1,
+          "value": "Rye"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "NicoleFally: Rye Regular: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Rye Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "Rye-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Rye is a trademark of Sorkin Type Co."
+        },
+        {
+          "name_id": 8,
+          "value": "Nicole Fally"
+        },
+        {
+          "name_id": 9,
+          "value": "Nicole Fally"
+        },
+        {
+          "name_id": 10,
+          "value": "Rye's bold attention getting shapes are useful for advertising. Sasparilly is a medium contrast design inspired by posters using wood type. It gives off a feeling of the American West. It is suitable for use in medium to large sizes including headlines. This font was made specifically to be web type."
+        },
+        {
+          "name_id": 11,
+          "value": "sorkintype.com"
+        },
+        {
+          "name_id": 12,
+          "value": "sorkintype.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Rye Regular"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 5.000; ttfautohint (v1.8.3)"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2018 The Vollkorn Project Authors (https://github.com/FAlthausen/Vollkorn-Typeface)"
+        },
+        {
+          "name_id": 1,
+          "value": "Vollkorn Medium"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "5.000;NONE;Vollkorn-Medium"
+        },
+        {
+          "name_id": 4,
+          "value": "Vollkorn Medium"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 5.000; ttfautohint (v1.8.3)"
+        },
+        {
+          "name_id": 6,
+          "value": "Vollkorn-Medium"
+        },
+        {
+          "name_id": 8,
+          "value": "Friedrich Althausen"
+        },
+        {
+          "name_id": 9,
+          "value": "Friedrich Althausen"
+        },
+        {
+          "name_id": 11,
+          "value": "http://vollkorn-typeface.com/"
+        },
+        {
+          "name_id": 12,
+          "value": "http://friedrichalthausen.de/"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 16,
+          "value": "Vollkorn"
+        },
+        {
+          "name_id": 17,
+          "value": "Medium"
+        },
+        {
+          "name_id": 256,
+          "value": "Alternative Letters"
+        },
+        {
+          "name_id": 257,
+          "value": "Polish"
+        },
+        {
+          "name_id": 258,
+          "value": "Dutch"
+        },
+        {
+          "name_id": 259,
+          "value": "Bulgarian"
+        },
+        {
+          "name_id": 260,
+          "value": "Serbian"
+        },
+        {
+          "name_id": 261,
+          "value": "Alternative Figure One"
+        },
+        {
+          "name_id": 262,
+          "value": "Alternative Figure Three"
+        },
+        {
+          "name_id": 263,
+          "value": "Alternative Figure Four"
+        },
+        {
+          "name_id": 264,
+          "value": "Alternative Figure Seven"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    }
+  ],
+  "method": "Read unmodified SFNT name records and optional TTFA table. Creator strings are documentary metadata, not proof of runtime cost or interpreter selection."
+}

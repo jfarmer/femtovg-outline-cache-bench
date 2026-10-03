@@ -20,7 +20,7 @@ def verify_visible_inputs(store):
             archived=json.loads((REPO/campaign['path']/'archive.json').read_text())
             if archived['files'].get(source_relative)!={key:expected[key] for key in ('sha256','bytes')}:raise ValueError(f'Analysis copy differs from archived source record: {relative}')
         checks['analysis_copies']=len(copies);checks['copy_manifest_sha256']=sha(path)
-    for filename,prefix in (('report-inputs.json','report_inputs'),('native-pool-report-inputs.json','native_pool_report_inputs')):
+    for filename,prefix in (('report-inputs.json','report_inputs'),('native-pool-report-inputs.json','native_pool_report_inputs'),('revised-cache-report-inputs.json','revised_cache_report_inputs'),('font-stress-report-inputs.json','font_stress_report_inputs'),('font-stress-rerun-report-inputs.json','font_stress_rerun_report_inputs'),('cjk-font-report-inputs.json','cjk_font_report_inputs'),('aggressive-font-report-inputs.json','aggressive_font_report_inputs')):
         path=REPO/'analysis'/filename
         if path.exists():
             inputs=json.loads(path.read_text())
@@ -47,7 +47,16 @@ def main():
     selected=[audit for audit in audits if audit['campaign'] in campaigns] if not args.integrity_only else []
     # Cross-campaign historical references, including nested validators, resolve
     # through one verified longest-prefix map. Materialize each selected archive.
+    # Audit companions are verified/extracted without selecting their other audit plans.
+    for audit in selected:
+        for label in audit.get('required_campaigns',[]):
+            store.campaign(label)
+            if label not in campaigns:campaigns.append(label)
     materialize=set(campaigns) if selected else set()
+    full_materialize=set()
+    for audit in selected:
+        if audit['suite'] in ('cjk-native','cjk-localized','cjk-english','cjk-cost','aggressive-native','aggressive-demo-screen','aggressive-demo-confirmation'):
+            full_materialize.update([audit['campaign'],*audit.get('required_campaigns',[])])
     report={'schema':1,'complete':False,'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'index_sha256':sha(store.index),'archives':[],'audits':[],'binary_policy':'Compiled executables are omitted; provenance hashes retained. Offline audits verify their recorded identity, not absent binary bytes.',
         'verification_script_sha256':sha(__file__)}
@@ -55,7 +64,7 @@ def main():
     write_json(output/'verification.json',report)
     for label in campaigns:
         destination=output/'metadata'/label if label in materialize else None
-        record=store.inspect(label,destination,metadata_only=True);report['archives'].append(record)
+        record=store.inspect(label,destination,metadata_only=label not in full_materialize);report['archives'].append(record)
         write_json(output/'verification.json',report);print(f'Archive verified: {label}',flush=True)
     path_map=output/'historical-path-map.json';write_json(path_map,store.path_map())
     for number,audit in enumerate(selected,1):
@@ -67,7 +76,10 @@ def main():
         artifact=output/f'{number:02}-{audit["campaign"]}-{audit["suite"]}-audit.json'
         command=[sys.executable]
         if audit['suite']=='replay':
-            command += [str(REPO/'scripts/independent_raw_replay_audit.py'),'--results',location('results'),'--experiment',location('experiment')]
+            protocol=audit.get('validation_protocol')
+            if protocol not in (None,'native-master-offset-oracle'):raise ValueError('Unknown replay validation protocol: '+str(protocol))
+            auditor='independent_oracle_raw_replay_audit.py' if protocol=='native-master-offset-oracle' else 'independent_raw_replay_audit.py'
+            command += [str(REPO/'scripts'/auditor),'--results',location('results'),'--experiment',location('experiment')]
             if audit.get('modes'):command += ['--modes',*audit['modes']]
             for field,flag in (('phase_summary','--phase-summary'),('sequence_summary','--sequence-summary')):
                 if audit.get(field):command += [flag,location(field)]
@@ -75,12 +87,47 @@ def main():
         elif audit['suite']=='app':
             command += [str(REPO/'scripts/independent_raw_app_audit.py'),'--batch',location('batch'),'--analysis',location('analysis'),
                 '--experiment',location('experiment'),'--archived-binaries','--ci','all' if args.ci=='primary' else 'none']
+        elif audit['suite']=='font-confirmation':
+            command += [str(REPO/'scripts/independent_font_confirmation_audit.py'),'--root',str(root)]
+        elif audit['suite'] in ('cjk-native','aggressive-native'):
+            command += [str(REPO/'scripts/independent_cjk_native_audit.py'),'--allow-missing-binaries']
+            for name,relative_path in audit['screens']:
+                safe_relative(relative_path)
+                screen=root/relative_path
+                if not screen.is_dir():raise ValueError('Native screen input not retained: '+relative_path)
+                command += ['--screen',name,str(screen)]
+        elif audit['suite']=='cjk-localized':
+            command += [str(REPO/'scripts/independent_cjk_localized_confirmation_audit.py'),
+                '--root',location('audit_root'),'--control-font',audit['control_font'],
+                '--collector-fix-proof',location('collector_fix_proof')]
+        elif audit['suite']=='cjk-english':
+            command += [str(REPO/'scripts/independent_cjk_english_demo_audit.py'),
+                '--root',location('audit_root'),'--allow-missing-binaries']
+        elif audit['suite']=='cjk-cost':
+            if (audit.get('expected_processes'),audit.get('expected_raw_rows'),audit.get('expected_cases'))!=(18,12960,360):
+                raise ValueError('Full cost-cohort dimensions must be declared')
+            command += [str(REPO/'scripts/independent_cjk_cost_decomposition_audit.py'),
+                '--root',location('audit_root'),'--allow-missing-binaries',
+                '--default-reader',str(REPO/'scripts/independent_cjk_cost_screen_audit.py'),
+                '--weight-reader',str(REPO/'scripts/independent_cjk_weight_cost_screen_audit.py')]
+        elif audit['suite']=='aggressive-demo-screen':
+            cohort=root if audit['cohort_root']=='' else Path(location('cohort_root'))
+            command += [str(REPO/'scripts/independent_aggressive_demo_screen_audit.py'),
+                str(cohort),'--allow-missing-binaries']
+        elif audit['suite']=='aggressive-demo-confirmation':
+            confirmation_root=root if audit['audit_root']=='' else Path(location('audit_root'))
+            command += [str(REPO/'scripts/independent_aggressive_demo_confirmation_audit.py'),
+                '--root',str(confirmation_root)]
+            for field,flag in (('cpu','--cpu'),('gpu','--gpu'),('analysis','--analysis'),
+                               ('selection','--selection'),('collector_fix_proof','--collector-fix-proof')):
+                if audit.get(field):command += [flag,location(field)]
+            if audit.get('control_font'):command += ['--control-font',audit['control_font']]
         else:raise ValueError(f'Unknown audit suite: {audit["suite"]}')
         command += ['--path-map',str(path_map),'--output',str(artifact)]
         subprocess.run(command,check=True)
         report['audits'].append({'plan':audit,'artifact':artifact.name,'sha256':sha(artifact),'complete':True});write_json(output/'verification.json',report)
     report.update(complete=True,statistical_audits=len(selected),integrity_only=args.integrity_only,
-                  statistical_scope='Selected modern replay/app cohorts declared in analysis_audits; historical campaigns retain exact records and are checksum verified')
+                  statistical_scope='Selected replay/app/font-confirmation cohorts, exploratory CJK native/English/cost screens, and separately labeled localized CPU confirmations declared in analysis_audits; historical campaigns retain exact records and are checksum verified')
     write_json(output/'verification.json',report)
     print(f'Verified {len(campaigns)} campaign archives and {len(selected)} independent raw statistical audits: {output}')
 

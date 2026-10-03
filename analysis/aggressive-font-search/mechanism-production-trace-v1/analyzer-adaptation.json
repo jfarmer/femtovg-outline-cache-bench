@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "original": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/analyze_production_count_trace.py",
+    "sha256": "b093ed7e5ef91f435e54e99787cd7bd989166bfdd11556ea00429e59c7a93b97",
+    "bytes": 8000
+  },
+  "adapted": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyze_selected_trace.py",
+    "sha256": "29f11c1947f057071a68ccd058ca2fa19624052b0aeb1adee230221991aae6d7",
+    "bytes": 8078
+  },
+  "literal_source_edits": [
+    {
+      "old": "ROOT=Path(__file__).resolve().parent\nWORK=ROOT/'mechanism-production-trace-v2'",
+      "new": "ROOT=Path('/private/tmp/femtovg-cjk-font-search-20261002')\nWORK=Path('/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1')"
+    },
+    {
+      "old": "  original_root=ROOT/'english-demo-selection' if run['locale']=='en' else ROOT/f\"confirm-{run['locale']}-v2/confirm-cpu\"\n  original=original_root/'cpu-runs'/f\"01-{public_label}-dpi2-{run['version']}.stdout.csv\"",
+      "new": "  assert info(run[\"actual_demo_reference\"][\"path\"]) == run[\"actual_demo_reference\"]\n  assert info(run[\"actual_demo_stdout\"][\"path\"]) == run[\"actual_demo_stdout\"]\n  original=Path(run[\"actual_demo_stdout\"][\"path\"])"
+    }
+  ],
+  "scope": "Original event state machine and request-identity/atlas guards unchanged; only fresh output paths and exact actual-demo stdout bindings adapted."
+}

@@ -1,0 +1,82 @@
+{
+  "installed_utc": "2026-10-03T16:42:01.514449+00:00",
+  "status": "current demo cohort complete; supplemental and stress cohorts retained separately if supplied",
+  "current_cohort_complete": {
+    "ended_utc": "2026-10-03T15:07:22.747420+00:00",
+    "logical_blocks": 12,
+    "accepted_process_records": 192,
+    "attempt_process_records": 192,
+    "excluded_process_records": 0,
+    "environment_retries": 0,
+    "summary_rows": 48
+  },
+  "supplemental_completions": [
+    {
+      "path": "/private/tmp/femtovg-current-demo-extremes-20261003/demo-extremes-native/COMPLETE.json",
+      "complete": {
+        "ended_utc": "2026-10-03T15:30:24.701855+00:00",
+        "logical_blocks": 12,
+        "accepted_process_records": 96,
+        "attempt_process_records": 96,
+        "excluded_process_records": 0,
+        "environment_retries": 0,
+        "summary_rows": 24
+      }
+    }
+  ],
+  "stress_completions": [
+    {
+      "cohort": "/private/tmp/femtovg-hinting-stress-scene-20261003/paired12-dpi1",
+      "marker": {
+        "completed_utc": "2026-10-03T16:11:15.178057+00:00",
+        "completed_processes": 72,
+        "expected_processes": 72,
+        "summary_rows": 15,
+        "phase_observations": 288,
+        "measured_frames": 3168,
+        "interference_events": 0,
+        "all_processes_returned_zero": true,
+        "all_before_after_process_guards_idle": true,
+        "plan_sha256": "28baa1129ec0a9615bb22371b3a042b0639d02818d9f888da11443b1363a66d2",
+        "raw_sha256": "4510d0fc98c75c8699a53fa4d839dd4f19c4a90654082dd9058532f1b7ce0b67",
+        "summary_sha256": "af323ab422a2b4f2d0f66707f8be497a2c07044d6cc79c8b94e8fc1d3441bc34",
+        "report_sha256": "95d0791b7151122991055afeb53bc0519fd711c54a765d63a7baf44a91d9baa7"
+      },
+      "process_records": 72,
+      "summary_rows": 15
+    },
+    {
+      "cohort": "/private/tmp/femtovg-hinting-stress-scene-20261003/paired12-native",
+      "marker": {
+        "completed_utc": "2026-10-03T15:58:54.871964+00:00",
+        "completed_processes": 72,
+        "expected_processes": 72,
+        "summary_rows": 15,
+        "phase_observations": 288,
+        "measured_frames": 3168,
+        "interference_events": 0,
+        "all_processes_returned_zero": true,
+        "all_before_after_process_guards_idle": true,
+        "plan_sha256": "10ce1f5e410c67c2481cc14e5f5bddf4e70338b226662ca8c0febc970bd18cfc",
+        "raw_sha256": "df86ef9af5558413926965bf9ae5a6250ad9c5ff7b2b5c8ce5f2f77254d397d8",
+        "summary_sha256": "0a7c79bada88e4128f293262b2373400c2952cdd3e872943f6e1322e7a1c10c9",
+        "report_sha256": "9c94d7d011877f8e3f0fa45388350a199efcaf52a9801a0c150151da5e8df5a7"
+      },
+      "process_records": 72,
+      "summary_rows": 15
+    }
+  ],
+  "destination": "/Users/jesse/github/femtovg-outline-cache-bench/benchmarks/demo-current-20261003",
+  "source_roots": [
+    "/private/tmp/femtovg-current-demo-20261003",
+    "/private/tmp/femtovg-review-fixes-scenes",
+    "/private/tmp/femtovg-review-fixes-perf/scene-builds",
+    "/private/tmp/femtovg-current-demo-extremes-20261003",
+    "/private/tmp/femtovg-hinting-stress-scene-20261003"
+  ],
+  "baseline_commit": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+  "candidate_commit": "b87a94ddfba46ee67ca35ba240104615ac1503d8",
+  "builder_source": "/Users/jesse/github/femtovg-outline-cache-bench/benchmarks/review-fixes-20261003-interim/reproduce.py",
+  "portable_build_smoke_or_timing_executed_by_installer": false,
+  "copy_policy": "Raw metadata/source/manifests/locks retained verbatim. No global indexes or historical destinations modified. Every copied file verified against its pre-copy checksum."
+}

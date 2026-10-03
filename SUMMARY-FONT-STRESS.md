@@ -1,0 +1,9 @@
+# Favorable open-font confirmation
+
+The existing Rye Regular font gives a confirmed larger benefit in FemtoVG's demo at DPR2: CPU draw **6.396 → 3.761 ms**, saving **2.634 [2.564, 2.704] ms** (41.19%). Real offscreen GPU completion saves **2.808 [2.272, 3.323] ms**. Rye's CPU saving exceeds simultaneous Vollkorn by **0.450 ms [0.358, 0.547]**. Doulos improves versus master, but its additional saving over Vollkorn is uncertain.
+
+This adds a selected stress case after a retained 56-font search. It does not establish universal improvement: warm text has CPU regressions of roughly 6–8 µs/frame, some GPU return/warm/grid endpoints regress, and many secondary intervals cross zero. The 65-frame reported demo sequence excludes 119 unreported warm-up frames; these are draw/completion timings, not launch time or FPS.
+
+The unchanged master/final binaries completed 12 balanced paired blocks for all three fonts at both DPRs, retaining 288 processes and all 28 phases. Final pixels and atlas counts match the independent native-offset oracle. A separate raw/indexed-bootstrap audit matched 1,116 effects and 2,234 intervals. All reported floats are finite despite retained NumPy matmul warnings; no warning cause is claimed. Original open font binaries, OFL licenses, all attempts and proofs remain in the new archive; prior reports remain unchanged.
+
+Read [the report](FONT-STRESS-SEARCH.md), [all confirmation results](analysis/font-stress-confirmation/summary.csv), [static font metrics](analysis/font-stress-confirmation/font-inspection.csv), [exploratory results](analysis/font-stress-confirmation/search-metrics.csv), and [retained raw evidence](results/font-stress-search/). Reproduction preparation is documented [separately](docs/font-stress-reproduction.md); this summary does not claim fresh reproduction builds have completed.

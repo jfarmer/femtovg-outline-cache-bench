@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "complete": true,
+  "reproduction_only": true,
+  "maker_sha256": "986048a571daa16c3a69c266216d51f02dd5c0e575e4f9b16ad8a7ebc8d91bdc",
+  "source_directory": "/private/tmp/femtovg-updated-cache-bench-20261002/budget",
+  "source_files": {
+    "bench.py": "7095d66c6289ba65543c613c5c6b82c6b2ca6c9dd9fa6b6f24f96fd5b11a1017",
+    "main.rs": "fe978a49682357ac642242e60ea5fc4b3a6738c7cc52a868d1f39424f285b1cf",
+    "audit_void_tail.rs": "4246a70a53bff3fff78a5a24d1f845cadabe6b6d58c66eafead6007b3ca5c988",
+    "README.md": "f26fe2e0289d3d310507baa2d9af0e78753bd9f9642c4085a16624bfac561492"
+  },
+  "measured_driver_sha256": "2e8685d13ed772be46ebc057d998e729e8feac05be51b596cf25b03b630080ab",
+  "measured_lock_record_sha256": "c8d48d1a7672ba18fe7bc4cd9fc55f512289e1092a995efc817fe59742bb7b87",
+  "reproduction_files": {
+    "bench.py": "0d9f25b7a236b72837e9b9a44da185fe5c6b899fd54c57c992b33e536397e25e",
+    "main.rs": "fe978a49682357ac642242e60ea5fc4b3a6738c7cc52a868d1f39424f285b1cf",
+    "audit_void_tail.rs": "4246a70a53bff3fff78a5a24d1f845cadabe6b6d58c66eafead6007b3ca5c988",
+    "README.md": "120b1d9a2327767176f22b5b16e0a9a54f72fade88cda7aae7e5c89847109a9a"
+  },
+  "changes": "Prepare copies and pins exact measured per-kind/per-version Cargo.lock files. Build uses only offline locked metadata/build without generation. All scene, timing, sink, launch order and statistics code unchanged. README explains this adaptation.",
+  "new_measurements": false
+}

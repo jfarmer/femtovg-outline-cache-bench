@@ -1,0 +1,491 @@
+{
+  "complete": true,
+  "auditor": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/audit_production_count_trace.py",
+    "sha256": "9141f61e035e422ad24b1d374b09f2ce02b2053670648ed7186f749cd606a2fd",
+    "bytes": 6221
+  },
+  "prepare": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/prepare.json",
+    "sha256": "fedb991476707328031118ebefb09bddc7e9f635f664ba194cf0a451f62d5a44",
+    "bytes": 262499
+  },
+  "build": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/build.json",
+    "sha256": "9c0c8237f637114c78a0321f08bb82864425d53625635c35b4edc9a8e6e4b75b",
+    "bytes": 7109
+  },
+  "campaign": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/trace-campaign.json",
+    "sha256": "c416f22ef50bdd2826f09729cb826a8e766682066852609e412ebba988872645",
+    "bytes": 41471
+  },
+  "analysis": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/counts-analysis.json",
+    "sha256": "d12e90e966b97d4c59dc697ac89673b2fc0aca85f9abb59401b6f92b4b317640",
+    "bytes": 661245
+  },
+  "source_checks": [
+    {
+      "kind": "libraries",
+      "name": "master",
+      "source_files": 136,
+      "changed_files": [
+        "Cargo.toml",
+        "src/text.rs"
+      ]
+    },
+    {
+      "kind": "libraries",
+      "name": "final",
+      "source_files": 139,
+      "changed_files": [
+        "Cargo.toml",
+        "src/text/swash_rasterizer.rs"
+      ]
+    },
+    {
+      "kind": "runners",
+      "name": "en-master",
+      "source_files": 7,
+      "changed_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "kind": "runners",
+      "name": "en-final",
+      "source_files": 7,
+      "changed_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "kind": "runners",
+      "name": "ko-master",
+      "source_files": 7,
+      "changed_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "kind": "runners",
+      "name": "ko-final",
+      "source_files": 7,
+      "changed_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "kind": "runners",
+      "name": "zh-master",
+      "source_files": 7,
+      "changed_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    },
+    {
+      "kind": "runners",
+      "name": "zh-final",
+      "source_files": 7,
+      "changed_files": [
+        "Cargo.toml",
+        "src/main.rs"
+      ]
+    }
+  ],
+  "graphs": [
+    {
+      "name": "en-master",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-master.metadata.json",
+        "sha256": "4fc10714229126bddeb96880b45114a6c8d9367f40d40a01aae015186be881e4",
+        "bytes": 787218
+      },
+      "reference": {
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/master-replay-metadata.json",
+        "sha256": "1230cae854315779e92854d997b5623fd03c998a9143f9410fad0228f859f6bb",
+        "bytes": 786283
+      },
+      "nodes": 163
+    },
+    {
+      "name": "en-final",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-final.metadata.json",
+        "sha256": "e3945792cd3977b32b0a1c53e926309daa2cd99e15562fbbe2fc7936d83913b3",
+        "bytes": 787134
+      },
+      "reference": {
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/final-replay-metadata.json",
+        "sha256": "a7b16a5355ef966df61f6a313b5af10cafaf11c3ca899aadd2709f2c5aa277cd",
+        "bytes": 786216
+      },
+      "nodes": 163
+    },
+    {
+      "name": "ko-master",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-master.metadata.json",
+        "sha256": "dabf174d1dbf21b1ec294b49b0320cc42771db278a3f1076fc81c37154f6eda9",
+        "bytes": 787218
+      },
+      "reference": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/localized-ko-replay-v2/master-metadata.json",
+        "sha256": "60fd4c54b1857a7b6bec9438b940f06f58daf225c509e00db949ce28854b7fc3",
+        "bytes": 786396
+      },
+      "nodes": 163
+    },
+    {
+      "name": "ko-final",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-final.metadata.json",
+        "sha256": "09c7d4dcaf25341d056bf54a313ebc289a5f83979e51b8de94b39e2ea14be389",
+        "bytes": 787134
+      },
+      "reference": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/localized-ko-replay-v2/final-metadata.json",
+        "sha256": "097cf5454a5ca2c76d6b3c1ea00ffb6c2772f1afb75bb2d53ac0ede4497dd7cf",
+        "bytes": 786319
+      },
+      "nodes": 163
+    },
+    {
+      "name": "zh-master",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-master.metadata.json",
+        "sha256": "6f9e2137f677480cf5e5b4a4b7ee1121dc3b04e4a8d368e1636db05e636db496",
+        "bytes": 787218
+      },
+      "reference": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/localized-zh-replay-v2/master-metadata.json",
+        "sha256": "3120e4af741dc6f17c04af0610b96156ad8de4690aac99f59bf9bcd0614e339b",
+        "bytes": 786396
+      },
+      "nodes": 163
+    },
+    {
+      "name": "zh-final",
+      "metadata": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-final.metadata.json",
+        "sha256": "6a0a0d425ecb7f9ae88a15cc0e1930576d06fb7b6725d657fcbf4cec1e4fd699",
+        "bytes": 787134
+      },
+      "reference": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/localized-zh-replay-v2/final-metadata.json",
+        "sha256": "91fcc43e37c77f64deb148721095dc3e765737d33b652e1d551509bfd8a1ccda",
+        "bytes": 786319
+      },
+      "nodes": 163
+    }
+  ],
+  "raw_checks": [
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-Rye-Regular-master.events.tsv",
+        "sha256": "331d28296720cd85373c0c453e150c96de90817afcacaf5df8f8808522ce9033",
+        "bytes": 265573
+      },
+      "native_render_events": 5323,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "Rye-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-Rye-Regular-final.events.tsv",
+        "sha256": "af716154fdedbf1eb094369d7ec536d093a8aed2d976f0e4af2041086b59c525",
+        "bytes": 722668
+      },
+      "native_render_events": 0,
+      "outline_request_events": 5323
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-Vollkorn-Medium-master.events.tsv",
+        "sha256": "0b754ab237653b61dd9beae5fa5a4637cf5a59a131ed5b1fa4c79c07f35e01a1",
+        "bytes": 266708
+      },
+      "native_render_events": 5270,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-Vollkorn-Medium-final.events.tsv",
+        "sha256": "0ee8024fe07d064d8ccf50d1e4bc7fefcbac12db3606daf63df5efba7c8f20c7",
+        "bytes": 722482
+      },
+      "native_render_events": 0,
+      "outline_request_events": 5270
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NanumMyeongjo-Regular-master.events.tsv",
+        "sha256": "c9a2a40e973574d25628f2bff712010b8012c48616a441bb18504f2fd163c2f3",
+        "bytes": 262778
+      },
+      "native_render_events": 5179,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NanumMyeongjo-Regular-final.events.tsv",
+        "sha256": "3d7ef5f836afcf2b68671046753cecce49312c4ac1419478ef79a2a6fe2b58a6",
+        "bytes": 712183
+      },
+      "native_render_events": 0,
+      "outline_request_events": 5179
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-ExtraBold",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NanumMyeongjo-ExtraBold-master.events.tsv",
+        "sha256": "fb3eb1b5a766b48036a7314f6c559f4e3b6f292a6253b178fa70741eadbee6e4",
+        "bytes": 262454
+      },
+      "native_render_events": 5173,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "NanumMyeongjo-ExtraBold",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NanumMyeongjo-ExtraBold-final.events.tsv",
+        "sha256": "31336535dc109df40625cc996e7817da68bd7f764af9ffe5eec5fcf8066fee0d",
+        "bytes": 712620
+      },
+      "native_render_events": 0,
+      "outline_request_events": 5173
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-BabelStoneHan-master.events.tsv",
+        "sha256": "b2bf48eefb1403fdc08d378721c096f58537d85d005f8d00d2ea985911765c2d",
+        "bytes": 241535
+      },
+      "native_render_events": 4754,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-BabelStoneHan-final.events.tsv",
+        "sha256": "8189496ee00cdd27b24123ead3709b9e2d41546693f490824598f998f5da83e9",
+        "bytes": 669133
+      },
+      "native_render_events": 0,
+      "outline_request_events": 4754
+    },
+    {
+      "locale": "en",
+      "font": "NotoSansSC[wght]",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NotoSansSC[wght]-master.events.tsv",
+        "sha256": "bd52f719b6f1ba2a5fc129813435cceb427cec71697e59a8700b92cffe2fd0b4",
+        "bytes": 269514
+      },
+      "native_render_events": 5189,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "NotoSansSC[wght]",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NotoSansSC[wght]-final.events.tsv",
+        "sha256": "5bbf9466c3ce80f4ce044bc604af88780d10e4d3daf32ca22afa88c6bd959a51",
+        "bytes": 734736
+      },
+      "native_render_events": 0,
+      "outline_request_events": 5189
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NotoSerifSC[wght]-master.events.tsv",
+        "sha256": "6e63bf88e99bf3b6536578c8fe337f361ebd6629a66f205b6650caf4e47c0bb4",
+        "bytes": 275522
+      },
+      "native_render_events": 5306,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "en",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/en-NotoSerifSC[wght]-final.events.tsv",
+        "sha256": "0c78bdf3d41579989d08d5a8bfca983c35e57d19f6e9f07902cbddf9646edc65",
+        "bytes": 754338
+      },
+      "native_render_events": 0,
+      "outline_request_events": 5306
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-NanumMyeongjo-Regular-master.events.tsv",
+        "sha256": "f34c573558506cdd10b496343eb7bb39e70ddc89ad90cfdd27835071520f2169",
+        "bytes": 195756
+      },
+      "native_render_events": 3735,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-NanumMyeongjo-Regular-final.events.tsv",
+        "sha256": "c57a87a7a3643bab6e6f0968c05889117c887b9a2ccdef4bc6d3dfca42f001e6",
+        "bytes": 659449
+      },
+      "native_render_events": 0,
+      "outline_request_events": 3735
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-ExtraBold",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-NanumMyeongjo-ExtraBold-master.events.tsv",
+        "sha256": "8e399ab5922834d641f79d9150b97c8fc9a475f529ff712d285f9698ad0ca375",
+        "bytes": 195756
+      },
+      "native_render_events": 3735,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "ko",
+      "font": "NanumMyeongjo-ExtraBold",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/ko-NanumMyeongjo-ExtraBold-final.events.tsv",
+        "sha256": "8c1464627812b7eb3ccfb01d43dc747947fc87412ad4bfcb850b4d3c6b5c8de2",
+        "bytes": 660697
+      },
+      "native_render_events": 0,
+      "outline_request_events": 3735
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-BabelStoneHan-master.events.tsv",
+        "sha256": "5ea30d46d4b1bae385a1c830c7464de46fe1502f9f79cf94153c7eb111980f3c",
+        "bytes": 153199
+      },
+      "native_render_events": 2902,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "zh",
+      "font": "BabelStoneHan",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-BabelStoneHan-final.events.tsv",
+        "sha256": "de9a9ad70043ad002f0495c184f6bd8c7e1ecec5574aef09b207726dc0514166",
+        "bytes": 539513
+      },
+      "native_render_events": 0,
+      "outline_request_events": 2902
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSansSC[wght]",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-NotoSansSC[wght]-master.events.tsv",
+        "sha256": "a26e661e39ae6282b36e8d4e65387992538b3c5123d62831742d135a6a3c70ae",
+        "bytes": 158407
+      },
+      "native_render_events": 2961,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSansSC[wght]",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-NotoSansSC[wght]-final.events.tsv",
+        "sha256": "cb86fd96992622fa06cdd24c1ecce92e4eb26b094bf0a39add094c3c6b11cd76",
+        "bytes": 547519
+      },
+      "native_render_events": 0,
+      "outline_request_events": 2961
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-NotoSerifSC[wght]-master.events.tsv",
+        "sha256": "fa177ed58b90935db5bcf01f1310e9307512d19a4996096266a46fbbe846515e",
+        "bytes": 162079
+      },
+      "native_render_events": 3033,
+      "outline_request_events": 0
+    },
+    {
+      "locale": "zh",
+      "font": "NotoSerifSC[wght]",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/zh-NotoSerifSC[wght]-final.events.tsv",
+        "sha256": "7b99d0203d37a84da66815869330ebd16a5f8d15b08463c94d7c11519b951804",
+        "bytes": 557318
+      },
+      "native_render_events": 0,
+      "outline_request_events": 3033
+    }
+  ],
+  "elapsed_time_columns_read": 0,
+  "shared_common": {
+    "blend.rs": {
+      "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/master/tests/common/blend.rs",
+      "sha256": "18d1e72132817a8c027fe662bbbc51308b332eeceb24c731878b064d8fa9e890",
+      "bytes": 5000
+    },
+    "mod.rs": {
+      "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/master/tests/common/mod.rs",
+      "sha256": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74",
+      "bytes": 7372
+    }
+  }
+}

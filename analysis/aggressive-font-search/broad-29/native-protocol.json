@@ -1,0 +1,1208 @@
+{
+  "complete": true,
+  "source_only_protocol": true,
+  "collection_executed": false,
+  "font_count_including_controls": 31,
+  "fonts": [
+    {
+      "label": "FrederickatheGreat-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/FrederickatheGreat-Regular.ttf",
+      "sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "bytes": 486016
+    },
+    {
+      "label": "Ewert-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/Ewert-Regular.ttf",
+      "sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "bytes": 70752
+    },
+    {
+      "label": "JacquesFrancoisShadow-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/JacquesFrancoisShadow-Regular.ttf",
+      "sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "bytes": 82492
+    },
+    {
+      "label": "Monoton-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/Monoton-Regular.ttf",
+      "sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "bytes": 51604
+    },
+    {
+      "label": "BungeeShade-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeshade/BungeeShade-Regular.ttf",
+      "sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "bytes": 304936
+    },
+    {
+      "label": "BungeeOutline-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeoutline/BungeeOutline-Regular.ttf",
+      "sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "bytes": 202152
+    },
+    {
+      "label": "FascinateInline-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/FascinateInline-Regular.ttf",
+      "sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "bytes": 59604
+    },
+    {
+      "label": "RibeyeMarrow-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/RibeyeMarrow-Regular.ttf",
+      "sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "bytes": 84896
+    },
+    {
+      "label": "VastShadow-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/VastShadow-Regular.ttf",
+      "sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "bytes": 62364
+    },
+    {
+      "label": "RubikGlitch-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/RubikGlitch-Regular.ttf",
+      "sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "bytes": 407304
+    },
+    {
+      "label": "RubikGlitchPop-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/RubikGlitchPop-Regular.ttf",
+      "sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "bytes": 1976660
+    },
+    {
+      "label": "RubikDistressed-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/RubikDistressed-Regular.ttf",
+      "sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "bytes": 892544
+    },
+    {
+      "label": "RubikWetPaint-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/RubikWetPaint-Regular.ttf",
+      "sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "bytes": 442628
+    },
+    {
+      "label": "RubikBeastly-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/RubikBeastly-Regular.ttf",
+      "sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "bytes": 512684
+    },
+    {
+      "label": "RubikMicrobe-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/RubikMicrobe-Regular.ttf",
+      "sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "bytes": 1444176
+    },
+    {
+      "label": "RubikMoonrocks-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/RubikMoonrocks-Regular.ttf",
+      "sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "bytes": 403712
+    },
+    {
+      "label": "Rubik80sFade-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/Rubik80sFade-Regular.ttf",
+      "sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "bytes": 3448044
+    },
+    {
+      "label": "RubikVinyl-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/RubikVinyl-Regular.ttf",
+      "sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "bytes": 414752
+    },
+    {
+      "label": "RubikBurned-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/RubikBurned-Regular.ttf",
+      "sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "bytes": 605348
+    },
+    {
+      "label": "RubikPuddles-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/RubikPuddles-Regular.ttf",
+      "sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "bytes": 404956
+    },
+    {
+      "label": "RubikPixels-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpixels/RubikPixels-Regular.ttf",
+      "sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "bytes": 5627648
+    },
+    {
+      "label": "MysteryQuest-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/MysteryQuest-Regular.ttf",
+      "sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "bytes": 42124
+    },
+    {
+      "label": "FontdinerSwanky-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/FontdinerSwanky-Regular.ttf",
+      "sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "bytes": 45524
+    },
+    {
+      "label": "Frijole-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/Frijole-Regular.ttf",
+      "sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "bytes": 227860
+    },
+    {
+      "label": "Diplomata-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/Diplomata-Regular.ttf",
+      "sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "bytes": 89556
+    },
+    {
+      "label": "DiplomataSC-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DiplomataSC-Regular.ttf",
+      "sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "bytes": 87544
+    },
+    {
+      "label": "Kranky-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/Kranky-Regular.ttf",
+      "sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "bytes": 199284
+    },
+    {
+      "label": "Spirax-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/Spirax-Regular.ttf",
+      "sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "bytes": 49064
+    },
+    {
+      "label": "SnowburstOne-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/SnowburstOne-Regular.ttf",
+      "sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "bytes": 68360
+    },
+    {
+      "label": "Rye-Regular",
+      "control": true,
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    {
+      "label": "Vollkorn-Medium",
+      "control": true,
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/acquired-files.json",
+      "sha256": "75047db6c73f8e3d9f74a48fca7e288a824fadb8c70fde41bcb9c6a5a3ce6ce6",
+      "bytes": 550686
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/build/build.json",
+      "sha256": "6acc9ef62666206001e7315761db49e2e5a668cd68d18b20ba4b8e52e7b676fa",
+      "bytes": 9160
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/inputs.json",
+      "sha256": "13ac732fe5c4cf3a2fe4df6328f660585c6fd1911977a617cac421eb6c99d5ee",
+      "bytes": 10980
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+      "sha256": "a6e48607cc4d4d9b5ab9e128697c2265592c29d13cd8109d55ad04b3410a5d08",
+      "bytes": 10440
+    },
+    {
+      "path": "/private/tmp/femtovg-cache-bench/target/release/femtovg-font-cost-screen",
+      "sha256": "ecfb57759abdc77fe691ceaaea30bed0550db134f855efeed2fb41c8b8ea39f8",
+      "bytes": 2025208
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/build/metadata.json",
+      "sha256": "996ec405a4309b16768f940633b09852ce48bf3f6596e378380158dc5fc4c7ad",
+      "bytes": 57073
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/Cargo.lock",
+      "sha256": "5f8028ef1ed059d27c43f54a02f2236ca33a44456af17d362611a68962203fc2",
+      "bytes": 3313
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/audit_native_screens.py",
+      "sha256": "5d8bf61ec2f69da63f081a7e6d193d241fe3a1e3ed0d57d162171d44dcd33b9f",
+      "bytes": 16704
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/run_native_prescreen.py",
+      "sha256": "21b404be0c86485b28ae267f919487238df8a67c05c08de8540b697fe62ffe45",
+      "bytes": 8114
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/Cargo.toml",
+      "sha256": "cb79323bab2d2dc6766f290027a84b2c8ed41a1731b4e143a66da0b14d662cbb",
+      "bytes": 160
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/Cargo.lock",
+      "sha256": "5f8028ef1ed059d27c43f54a02f2236ca33a44456af17d362611a68962203fc2",
+      "bytes": 3313
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/src/main.rs",
+      "sha256": "15e1e8df6cd603e9e4d3c5d879e86af3e21f82278fac7576f2227049bcd61c84",
+      "bytes": 11930
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+      "sha256": "a6e48607cc4d4d9b5ab9e128697c2265592c29d13cd8109d55ad04b3410a5d08",
+      "bytes": 10440
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/README.md",
+      "sha256": "e3c5ec2d31648dda6cecd665b6a7c5b195ae5d87f886882feeb73338fe623db6",
+      "bytes": 3175
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/attributes.rs",
+      "sha256": "991bc7eec71304717994fc0df91fc48a8dee3663b5bdab2fc0c2421266c0cdc7",
+      "bytes": 20639
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/cache.rs",
+      "sha256": "18394f66b0dbe86359173ce28283094603f0cd50dd63489f7a8f76ea0e701ab4",
+      "bytes": 2617
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/charmap.rs",
+      "sha256": "b7c9904e77131aec8b9b33a39d9b16100248692c9f155e40403243bde1bcbbec",
+      "bytes": 2150
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/aat.rs",
+      "sha256": "db21c8a86a217cc2b7a9d64f50d4fbd42765212a37d2028a1a87fd41c53f474b",
+      "bytes": 2348
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/at.rs",
+      "sha256": "63858b3c1cc0cf516c6aa19e0908bc5103a1de5f46ce5e5513ee5572b0bdcc99",
+      "bytes": 10506
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/mod.rs",
+      "sha256": "22ea8569e8c6da41854e09e84afa0800c9e30dd2cefd420e5f6d6101d0f6112d",
+      "bytes": 7543
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/util.rs",
+      "sha256": "e285fbdf44f1b0afb5e868eaeeba8fa25f61ae5ebd6bec5d23ea9282d76e9dad",
+      "bytes": 9055
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/font.rs",
+      "sha256": "a8b55991cc5124fbb42f3199164a463004a81429b8b8ae7a575ab7d9265a7136",
+      "bytes": 8635
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/aat.rs",
+      "sha256": "71c3b1989e71b1324d8ab4291fa0ef9c6d2cf345505ef6c86d2a0d911d74941d",
+      "bytes": 58741
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/at.rs",
+      "sha256": "c813b5b7147bc0a2e84ede036a83fe1ab3517b9f0c01e82a4a234d714eb161aa",
+      "bytes": 27289
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/cmap.rs",
+      "sha256": "31e565eb71747c15e2adca584ba8206c857ea9f39f76eaf31ab0c70fefed13fa",
+      "bytes": 9565
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/fixed.rs",
+      "sha256": "e521276073ed28595d893791a94fccf9545e8421c711f4f83b6f880ecd2a7f70",
+      "bytes": 4103
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/glyf.rs",
+      "sha256": "fa65225c0a41850ba8784bbac8da993db702066e07b4ecb3ce6803fd1bdc990d",
+      "bytes": 1640
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/head.rs",
+      "sha256": "4143356ead3a8f2daf2031be20b274f710b0fead0b4a1a1875b2f692515456d4",
+      "bytes": 27779
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/mod.rs",
+      "sha256": "af8a56892e53a5cec0ff58d45070a9b1361b0b8e537369a5bd54a31fb004aed6",
+      "bytes": 5147
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/parse.rs",
+      "sha256": "e4dacac03ce81a15beb52ea1fa974c048d769cebc0ad4dc4614a2468100bee75",
+      "bytes": 15510
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/var.rs",
+      "sha256": "8716e40f86a54a4e5aa3e1ba4a7efd20a8bcbb69e9fad048c11ebc7f7b91473f",
+      "bytes": 13935
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/vorg.rs",
+      "sha256": "ab1599654524cfaa6b1fa57e4de04255aeff7d4f57dd2d3f867dfb05077f7af7",
+      "bytes": 818
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/xmtx.rs",
+      "sha256": "6449268f643d98f21c310812dee96f61a322493998c2f544f635d5c918422564",
+      "bytes": 929
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/lib.rs",
+      "sha256": "32c58a951217cc06ea3a22e81a31c220051fa6bd98a9380c731ce91837b0047c",
+      "bytes": 5379
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/macros.rs",
+      "sha256": "1390e57be2bf27f8908eec46788fd27568dec98d24bfe2b0a922b41e56ab5ebd",
+      "bytes": 1187
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/metrics.rs",
+      "sha256": "2850415dfa5982652e1783385410e87319039d9d473f45cc3433d7e593a545b1",
+      "bytes": 16665
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/palette.rs",
+      "sha256": "4b9931169c609bfd8c3816a729eeb48d154314acfd4babe0aa7b1ed1c8d9b8fc",
+      "bytes": 4652
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/bitmap/mod.rs",
+      "sha256": "65ee5720f4824ac9cf0535ffb75196601746a232794a561c40e5038c390f224f",
+      "bytes": 10951
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/bitmap/png.rs",
+      "sha256": "9db56d9596369a243e2ff19a9956deb5fafc946dc69fb5046909e4a536eda9cb",
+      "bytes": 17975
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/color.rs",
+      "sha256": "4a918c2173de55221028b1f5bf56c742b5aef6edcd006f5baad20d7d39628ebd",
+      "bytes": 2593
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/hinting_cache.rs",
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a",
+      "bytes": 3174
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/image.rs",
+      "sha256": "1fa960b1ced03dba861a857762bf043bd946c98c5da8d671a1cce4237d9ac565",
+      "bytes": 1056
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/mod.rs",
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a",
+      "bytes": 35661
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/outline.rs",
+      "sha256": "3e94e5c07bb0f38d696efc6835bcbd6ed5b075dab586ce6e60e848ce2a53842c",
+      "bytes": 12096
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/proxy.rs",
+      "sha256": "c1c3d2f0f78e3b1ae4ffcf4f9360b65d913a6abe1160174587a37c533eb70723",
+      "bytes": 599
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/setting.rs",
+      "sha256": "8f695ce0f9a9fb6bbf44c01e86ba58aec3902d81a6887463d9163b94dcd725d4",
+      "bytes": 5348
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/aat.rs",
+      "sha256": "b2774fc4a76abf6d8a4d0334c2840083ead77d19113c18970698ed41496cdd19",
+      "bytes": 15868
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/at.rs",
+      "sha256": "097aee7a68463f8bfd1443564a1b54f0a3f3131ec5d3eeb058b2ba974e031423",
+      "bytes": 64689
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/buffer.rs",
+      "sha256": "e2ad67fc10fc996750395e51e52efcac3c3ef7c12cce0394d9773c48c033005a",
+      "bytes": 21157
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/cache.rs",
+      "sha256": "0e7a3ad9b54939305d09116203bd2533a1e4989d5c420ad390a80575c3480c1b",
+      "bytes": 3329
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/cluster.rs",
+      "sha256": "d630ecda1553ba15911d4a4b8628291255c25950f2d17735b6460f7fee793314",
+      "bytes": 2972
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/engine.rs",
+      "sha256": "e83a0600999734da5866c0f1692e8fc5ae64b596b52fbc99f4970c30759a5fc6",
+      "bytes": 8759
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/feature.rs",
+      "sha256": "90d065912c0cf9ac1aa48ad2e8c1887b46a2e5772b544b1bc499a469448afc87",
+      "bytes": 2551
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/mod.rs",
+      "sha256": "0f5a32cfd9f82adc707f0c73a08174b6956b194b7facb2b850dbd03d639404a1",
+      "bytes": 33955
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/partition.rs",
+      "sha256": "c77c79aa5552d5093db45448db8b5f14c8dfc4103b639ea4388fea1aa6cb091c",
+      "bytes": 7091
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/strike.rs",
+      "sha256": "0fe0580dac1ddf0bc7a5c88d59fa1f00772516cbf4b3181fe8caefa2d6364ca4",
+      "bytes": 25772
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/string.rs",
+      "sha256": "14b8a2c7fe6b754d62acf67ff05cb7555f2a0f344db77a4c06c74d7c9c351ae7",
+      "bytes": 18041
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/tag.rs",
+      "sha256": "9638f899dacdee0d7b52dd991da14d667c7965e52e2ca344288ee309e77545b7",
+      "bytes": 529
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/analyze.rs",
+      "sha256": "97497b037d1ef911b261219e6e50a331ff29147776cf6fe347eedd0788666195",
+      "bytes": 18713
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/char.rs",
+      "sha256": "2cf557de67a1448dd0d474eea2dc772a29b1dfa39f7ccda2fbc693af030bb674",
+      "bytes": 1891
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/cluster.rs",
+      "sha256": "f449e18218d3f4d3679f637e02d1c05789f283bd1ee401e76af3f3a17b53b3dd",
+      "bytes": 12188
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/complex.rs",
+      "sha256": "857a095e792b0520c2d68c0b181b686947dffcf9360b503d855994e23e2744ed",
+      "bytes": 14778
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/info.rs",
+      "sha256": "c8c139b557f40240d642212d799aabf1ca48c6d767beebaaa2e2b43fc4029072",
+      "bytes": 6107
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/mod.rs",
+      "sha256": "aeed988fc595dd56bc5b7c4be7ffb0ac531a02a69fc3b8e953777549ef2cfbf4",
+      "bytes": 1384
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/myanmar.rs",
+      "sha256": "9409b52314f43b2fce13e6d4729989e48b6d2ec5827eb24eef0d4e4a31f0325c",
+      "bytes": 11283
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/parse.rs",
+      "sha256": "b8e34ea78a03929ff8f5bdddd5cb810f14c350d5e67dcd9e3ec5579fa900d384",
+      "bytes": 1474
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/simple.rs",
+      "sha256": "93c1264d8186b111ee5437cbda9452c53f3b92d7f3a219e5ac88b886b75e130f",
+      "bytes": 6753
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/token.rs",
+      "sha256": "6857c4cc0be79b29ce2ffb8f9b80dd5a0728e3fe6f8752cec902eaf42c965347",
+      "bytes": 627
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/compose.rs",
+      "sha256": "c5c6067d92c4e55a7c413ac82f7d10e4252deb4ae1944fc8458832e7743a14ac",
+      "bytes": 5073
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/lang.rs",
+      "sha256": "48a353c544b001fef2d5f144c755bc77868421ca227838ab49ee8a21baaaf1fb",
+      "bytes": 7893
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/lang_data.rs",
+      "sha256": "58e34d12cd3e70b0ca0583adb6367ee1510e819488d8c0088fc4204b317b609d",
+      "bytes": 43218
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/mod.rs",
+      "sha256": "90c94e0df79e7d05122f44ac50c123958f1fa5a3491ac2babd9fb0182234490b",
+      "bytes": 343
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/unicode.rs",
+      "sha256": "01d3f71881e6fbda987be6820d9da2818421f6a465b0901082359e20d3ce5e12",
+      "bytes": 10862
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/unicode_data.rs",
+      "sha256": "cd75b1d0ed789bce2a3be9ea33cae7dab17591253bcfac50b0339fbe9e26b6ae",
+      "bytes": 562406
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/variation.rs",
+      "sha256": "06552a82800cd08f6cf667ae2c80bf4de18332fbea5152de59c325835d5aeb0f",
+      "bytes": 9395
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/attributes.rs",
+      "sha256": "991bc7eec71304717994fc0df91fc48a8dee3663b5bdab2fc0c2421266c0cdc7",
+      "bytes": 20639
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/cache.rs",
+      "sha256": "18394f66b0dbe86359173ce28283094603f0cd50dd63489f7a8f76ea0e701ab4",
+      "bytes": 2617
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/charmap.rs",
+      "sha256": "b7c9904e77131aec8b9b33a39d9b16100248692c9f155e40403243bde1bcbbec",
+      "bytes": 2150
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/aat.rs",
+      "sha256": "db21c8a86a217cc2b7a9d64f50d4fbd42765212a37d2028a1a87fd41c53f474b",
+      "bytes": 2348
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/at.rs",
+      "sha256": "63858b3c1cc0cf516c6aa19e0908bc5103a1de5f46ce5e5513ee5572b0bdcc99",
+      "bytes": 10506
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/mod.rs",
+      "sha256": "22ea8569e8c6da41854e09e84afa0800c9e30dd2cefd420e5f6d6101d0f6112d",
+      "bytes": 7543
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/util.rs",
+      "sha256": "e285fbdf44f1b0afb5e868eaeeba8fa25f61ae5ebd6bec5d23ea9282d76e9dad",
+      "bytes": 9055
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/font.rs",
+      "sha256": "a8b55991cc5124fbb42f3199164a463004a81429b8b8ae7a575ab7d9265a7136",
+      "bytes": 8635
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/aat.rs",
+      "sha256": "71c3b1989e71b1324d8ab4291fa0ef9c6d2cf345505ef6c86d2a0d911d74941d",
+      "bytes": 58741
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/at.rs",
+      "sha256": "c813b5b7147bc0a2e84ede036a83fe1ab3517b9f0c01e82a4a234d714eb161aa",
+      "bytes": 27289
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/cmap.rs",
+      "sha256": "31e565eb71747c15e2adca584ba8206c857ea9f39f76eaf31ab0c70fefed13fa",
+      "bytes": 9565
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/fixed.rs",
+      "sha256": "e521276073ed28595d893791a94fccf9545e8421c711f4f83b6f880ecd2a7f70",
+      "bytes": 4103
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/glyf.rs",
+      "sha256": "fa65225c0a41850ba8784bbac8da993db702066e07b4ecb3ce6803fd1bdc990d",
+      "bytes": 1640
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/head.rs",
+      "sha256": "4143356ead3a8f2daf2031be20b274f710b0fead0b4a1a1875b2f692515456d4",
+      "bytes": 27779
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/mod.rs",
+      "sha256": "af8a56892e53a5cec0ff58d45070a9b1361b0b8e537369a5bd54a31fb004aed6",
+      "bytes": 5147
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/parse.rs",
+      "sha256": "e4dacac03ce81a15beb52ea1fa974c048d769cebc0ad4dc4614a2468100bee75",
+      "bytes": 15510
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/var.rs",
+      "sha256": "8716e40f86a54a4e5aa3e1ba4a7efd20a8bcbb69e9fad048c11ebc7f7b91473f",
+      "bytes": 13935
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/vorg.rs",
+      "sha256": "ab1599654524cfaa6b1fa57e4de04255aeff7d4f57dd2d3f867dfb05077f7af7",
+      "bytes": 818
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/xmtx.rs",
+      "sha256": "6449268f643d98f21c310812dee96f61a322493998c2f544f635d5c918422564",
+      "bytes": 929
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/lib.rs",
+      "sha256": "32c58a951217cc06ea3a22e81a31c220051fa6bd98a9380c731ce91837b0047c",
+      "bytes": 5379
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/macros.rs",
+      "sha256": "1390e57be2bf27f8908eec46788fd27568dec98d24bfe2b0a922b41e56ab5ebd",
+      "bytes": 1187
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/metrics.rs",
+      "sha256": "2850415dfa5982652e1783385410e87319039d9d473f45cc3433d7e593a545b1",
+      "bytes": 16665
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/palette.rs",
+      "sha256": "4b9931169c609bfd8c3816a729eeb48d154314acfd4babe0aa7b1ed1c8d9b8fc",
+      "bytes": 4652
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/bitmap/mod.rs",
+      "sha256": "65ee5720f4824ac9cf0535ffb75196601746a232794a561c40e5038c390f224f",
+      "bytes": 10951
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/bitmap/png.rs",
+      "sha256": "9db56d9596369a243e2ff19a9956deb5fafc946dc69fb5046909e4a536eda9cb",
+      "bytes": 17975
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/color.rs",
+      "sha256": "4a918c2173de55221028b1f5bf56c742b5aef6edcd006f5baad20d7d39628ebd",
+      "bytes": 2593
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/hinting_cache.rs",
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a",
+      "bytes": 3174
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/image.rs",
+      "sha256": "1fa960b1ced03dba861a857762bf043bd946c98c5da8d671a1cce4237d9ac565",
+      "bytes": 1056
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/mod.rs",
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a",
+      "bytes": 35661
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/outline.rs",
+      "sha256": "3e94e5c07bb0f38d696efc6835bcbd6ed5b075dab586ce6e60e848ce2a53842c",
+      "bytes": 12096
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/proxy.rs",
+      "sha256": "c1c3d2f0f78e3b1ae4ffcf4f9360b65d913a6abe1160174587a37c533eb70723",
+      "bytes": 599
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/setting.rs",
+      "sha256": "8f695ce0f9a9fb6bbf44c01e86ba58aec3902d81a6887463d9163b94dcd725d4",
+      "bytes": 5348
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/aat.rs",
+      "sha256": "b2774fc4a76abf6d8a4d0334c2840083ead77d19113c18970698ed41496cdd19",
+      "bytes": 15868
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/at.rs",
+      "sha256": "097aee7a68463f8bfd1443564a1b54f0a3f3131ec5d3eeb058b2ba974e031423",
+      "bytes": 64689
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/buffer.rs",
+      "sha256": "e2ad67fc10fc996750395e51e52efcac3c3ef7c12cce0394d9773c48c033005a",
+      "bytes": 21157
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/cache.rs",
+      "sha256": "0e7a3ad9b54939305d09116203bd2533a1e4989d5c420ad390a80575c3480c1b",
+      "bytes": 3329
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/cluster.rs",
+      "sha256": "d630ecda1553ba15911d4a4b8628291255c25950f2d17735b6460f7fee793314",
+      "bytes": 2972
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/engine.rs",
+      "sha256": "e83a0600999734da5866c0f1692e8fc5ae64b596b52fbc99f4970c30759a5fc6",
+      "bytes": 8759
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/feature.rs",
+      "sha256": "90d065912c0cf9ac1aa48ad2e8c1887b46a2e5772b544b1bc499a469448afc87",
+      "bytes": 2551
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/mod.rs",
+      "sha256": "0f5a32cfd9f82adc707f0c73a08174b6956b194b7facb2b850dbd03d639404a1",
+      "bytes": 33955
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/partition.rs",
+      "sha256": "c77c79aa5552d5093db45448db8b5f14c8dfc4103b639ea4388fea1aa6cb091c",
+      "bytes": 7091
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/strike.rs",
+      "sha256": "0fe0580dac1ddf0bc7a5c88d59fa1f00772516cbf4b3181fe8caefa2d6364ca4",
+      "bytes": 25772
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/string.rs",
+      "sha256": "14b8a2c7fe6b754d62acf67ff05cb7555f2a0f344db77a4c06c74d7c9c351ae7",
+      "bytes": 18041
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/tag.rs",
+      "sha256": "9638f899dacdee0d7b52dd991da14d667c7965e52e2ca344288ee309e77545b7",
+      "bytes": 529
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/analyze.rs",
+      "sha256": "97497b037d1ef911b261219e6e50a331ff29147776cf6fe347eedd0788666195",
+      "bytes": 18713
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/char.rs",
+      "sha256": "2cf557de67a1448dd0d474eea2dc772a29b1dfa39f7ccda2fbc693af030bb674",
+      "bytes": 1891
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/cluster.rs",
+      "sha256": "f449e18218d3f4d3679f637e02d1c05789f283bd1ee401e76af3f3a17b53b3dd",
+      "bytes": 12188
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/complex.rs",
+      "sha256": "857a095e792b0520c2d68c0b181b686947dffcf9360b503d855994e23e2744ed",
+      "bytes": 14778
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/info.rs",
+      "sha256": "c8c139b557f40240d642212d799aabf1ca48c6d767beebaaa2e2b43fc4029072",
+      "bytes": 6107
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/mod.rs",
+      "sha256": "aeed988fc595dd56bc5b7c4be7ffb0ac531a02a69fc3b8e953777549ef2cfbf4",
+      "bytes": 1384
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/myanmar.rs",
+      "sha256": "9409b52314f43b2fce13e6d4729989e48b6d2ec5827eb24eef0d4e4a31f0325c",
+      "bytes": 11283
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/parse.rs",
+      "sha256": "b8e34ea78a03929ff8f5bdddd5cb810f14c350d5e67dcd9e3ec5579fa900d384",
+      "bytes": 1474
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/simple.rs",
+      "sha256": "93c1264d8186b111ee5437cbda9452c53f3b92d7f3a219e5ac88b886b75e130f",
+      "bytes": 6753
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/token.rs",
+      "sha256": "6857c4cc0be79b29ce2ffb8f9b80dd5a0728e3fe6f8752cec902eaf42c965347",
+      "bytes": 627
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/compose.rs",
+      "sha256": "c5c6067d92c4e55a7c413ac82f7d10e4252deb4ae1944fc8458832e7743a14ac",
+      "bytes": 5073
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/lang.rs",
+      "sha256": "48a353c544b001fef2d5f144c755bc77868421ca227838ab49ee8a21baaaf1fb",
+      "bytes": 7893
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/lang_data.rs",
+      "sha256": "58e34d12cd3e70b0ca0583adb6367ee1510e819488d8c0088fc4204b317b609d",
+      "bytes": 43218
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/mod.rs",
+      "sha256": "90c94e0df79e7d05122f44ac50c123958f1fa5a3491ac2babd9fb0182234490b",
+      "bytes": 343
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/unicode.rs",
+      "sha256": "01d3f71881e6fbda987be6820d9da2818421f6a465b0901082359e20d3ce5e12",
+      "bytes": 10862
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/unicode_data.rs",
+      "sha256": "cd75b1d0ed789bce2a3be9ea33cae7dab17591253bcfac50b0339fbe9e26b6ae",
+      "bytes": 562406
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/variation.rs",
+      "sha256": "06552a82800cd08f6cf667ae2c80bf4de18332fbea5152de59c325835d5aeb0f",
+      "bytes": 9395
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/font-inspection.json",
+      "sha256": "9130dacce871c8717264b364828bd5b4bd63e1fa06918535c353c278adb2082b",
+      "bytes": 5882342
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/static-priors.json",
+      "sha256": "46beea9bf6e7a615eb238fb6ce8440c7b9bc0336a48020f10d18e363897c5846",
+      "bytes": 56306
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/FrederickatheGreat-Regular.ttf",
+      "sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "bytes": 486016
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/Ewert-Regular.ttf",
+      "sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "bytes": 70752
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/JacquesFrancoisShadow-Regular.ttf",
+      "sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "bytes": 82492
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/Monoton-Regular.ttf",
+      "sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "bytes": 51604
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeshade/BungeeShade-Regular.ttf",
+      "sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "bytes": 304936
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeoutline/BungeeOutline-Regular.ttf",
+      "sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "bytes": 202152
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/FascinateInline-Regular.ttf",
+      "sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "bytes": 59604
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/RibeyeMarrow-Regular.ttf",
+      "sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "bytes": 84896
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/VastShadow-Regular.ttf",
+      "sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "bytes": 62364
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/RubikGlitch-Regular.ttf",
+      "sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "bytes": 407304
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/RubikGlitchPop-Regular.ttf",
+      "sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "bytes": 1976660
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/RubikDistressed-Regular.ttf",
+      "sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "bytes": 892544
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/RubikWetPaint-Regular.ttf",
+      "sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "bytes": 442628
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/RubikBeastly-Regular.ttf",
+      "sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "bytes": 512684
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/RubikMicrobe-Regular.ttf",
+      "sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "bytes": 1444176
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/RubikMoonrocks-Regular.ttf",
+      "sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "bytes": 403712
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/Rubik80sFade-Regular.ttf",
+      "sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "bytes": 3448044
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/RubikVinyl-Regular.ttf",
+      "sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "bytes": 414752
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/RubikBurned-Regular.ttf",
+      "sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "bytes": 605348
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/RubikPuddles-Regular.ttf",
+      "sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "bytes": 404956
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpixels/RubikPixels-Regular.ttf",
+      "sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "bytes": 5627648
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/MysteryQuest-Regular.ttf",
+      "sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "bytes": 42124
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/FontdinerSwanky-Regular.ttf",
+      "sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "bytes": 45524
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/Frijole-Regular.ttf",
+      "sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "bytes": 227860
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/Diplomata-Regular.ttf",
+      "sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "bytes": 89556
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DiplomataSC-Regular.ttf",
+      "sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "bytes": 87544
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/Kranky-Regular.ttf",
+      "sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "bytes": 199284
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/Spirax-Regular.ttf",
+      "sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "bytes": 49064
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/SnowburstOne-Regular.ttf",
+      "sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "bytes": 68360
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    }
+  ],
+  "collect_command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+    "run",
+    "--build",
+    "/private/tmp/femtovg-font-stress-search-20261002/build/build.json",
+    "--output",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1",
+    "--mode",
+    "timing",
+    "--trials",
+    "4",
+    "--repeats",
+    "3",
+    "--rounds",
+    "1",
+    "--timeout",
+    "180",
+    "--font",
+    "FrederickatheGreat-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/FrederickatheGreat-Regular.ttf",
+    "--font",
+    "Ewert-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/Ewert-Regular.ttf",
+    "--font",
+    "JacquesFrancoisShadow-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/JacquesFrancoisShadow-Regular.ttf",
+    "--font",
+    "Monoton-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/Monoton-Regular.ttf",
+    "--font",
+    "BungeeShade-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeshade/BungeeShade-Regular.ttf",
+    "--font",
+    "BungeeOutline-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeoutline/BungeeOutline-Regular.ttf",
+    "--font",
+    "FascinateInline-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/FascinateInline-Regular.ttf",
+    "--font",
+    "RibeyeMarrow-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/RibeyeMarrow-Regular.ttf",
+    "--font",
+    "VastShadow-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/VastShadow-Regular.ttf",
+    "--font",
+    "RubikGlitch-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/RubikGlitch-Regular.ttf",
+    "--font",
+    "RubikGlitchPop-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/RubikGlitchPop-Regular.ttf",
+    "--font",
+    "RubikDistressed-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/RubikDistressed-Regular.ttf",
+    "--font",
+    "RubikWetPaint-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/RubikWetPaint-Regular.ttf",
+    "--font",
+    "RubikBeastly-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/RubikBeastly-Regular.ttf",
+    "--font",
+    "RubikMicrobe-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/RubikMicrobe-Regular.ttf",
+    "--font",
+    "RubikMoonrocks-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/RubikMoonrocks-Regular.ttf",
+    "--font",
+    "Rubik80sFade-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/Rubik80sFade-Regular.ttf",
+    "--font",
+    "RubikVinyl-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/RubikVinyl-Regular.ttf",
+    "--font",
+    "RubikBurned-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/RubikBurned-Regular.ttf",
+    "--font",
+    "RubikPuddles-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/RubikPuddles-Regular.ttf",
+    "--font",
+    "RubikPixels-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpixels/RubikPixels-Regular.ttf",
+    "--font",
+    "MysteryQuest-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/MysteryQuest-Regular.ttf",
+    "--font",
+    "FontdinerSwanky-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/FontdinerSwanky-Regular.ttf",
+    "--font",
+    "Frijole-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/Frijole-Regular.ttf",
+    "--font",
+    "Diplomata-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/Diplomata-Regular.ttf",
+    "--font",
+    "DiplomataSC-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DiplomataSC-Regular.ttf",
+    "--font",
+    "Kranky-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/Kranky-Regular.ttf",
+    "--font",
+    "Spirax-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/Spirax-Regular.ttf",
+    "--font",
+    "SnowburstOne-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/SnowburstOne-Regular.ttf",
+    "--font",
+    "Rye-Regular",
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+    "--font",
+    "Vollkorn-Medium",
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf"
+  ],
+  "legacy_analyze_command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+    "analyze",
+    "--root",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1"
+  ],
+  "independent_audit_command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-cjk-font-search-20261002/supporting/audit_native_screens.py",
+    "--screen",
+    "aggressive",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1",
+    "--output",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/native-prescreen-audit.json"
+  ],
+  "trials": 4,
+  "repeats": 3,
+  "rounds": 1,
+  "timeout_seconds": 180,
+  "scope": "Exploratory prepared native font-cost prescreen only; unchanged old screen.py and executable. Preserve all rejected fonts. Analyze each profile/DPR separately: per-case trial medians followed by median of five logical sizes. DPR1 outlines match actual first-paint 11/12/14/15/16px sizes; DPR2 outlines are 22/24/28/30/32px. No confidence intervals, cache overhead, predicted application savings or percentage claims."
+}

@@ -1,0 +1,15 @@
+   Compiling simd-adler32 v0.3.10
+   Compiling adler2 v2.0.1
+   Compiling crc32fast v1.5.2
+   Compiling cfg-if v1.0.5
+   Compiling zune-core v0.5.3
+   Compiling femtovg v0.27.0 (/private/tmp/femtovg-review-fixes-scenes/source/master)
+   Compiling miniz_oxide v0.9.1
+   Compiling fdeflate v0.3.7
+   Compiling miniz_oxide v0.8.9
+   Compiling zune-jpeg v0.5.15
+   Compiling flate2 v1.1.10
+   Compiling png v0.18.1
+   Compiling image v0.25.10
+   Compiling femtovg-review-scenes-master v0.1.0 (/private/tmp/femtovg-review-fixes-scenes/harness/master)
+    Finished `release` profile [optimized] target(s) in 4.55s

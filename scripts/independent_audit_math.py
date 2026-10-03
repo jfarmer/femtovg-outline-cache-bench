@@ -29,6 +29,9 @@ def token_seed(seed,token):
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 def baseline_pairs(versions):
+    if versions==['master','prior','updated45','final']:
+        return [('master','prior'),('master','updated45'),('master','final'),
+                ('prior','updated45'),('prior','final'),('updated45','final')]
     assert versions[:2]==['master','current']
     return [('master',v) for v in versions[1:]]+[('current',v) for v in versions[2:]]
 

@@ -1,10 +1,23 @@
 # FemtoVG Swash outline cache experiments
 
+The current PR measurements compare upstream master `6a5f15a` with proposed code `b87a94dd`. See the [combined results and analysis](benchmarks/demo-current-20261003/SUMMARY.md).
+
+| Scene | What it draws | Source and results |
+|---|---|---|
+| FemtoVG demo, DPI 2 | The existing demo: text, controls, images, paths, strokes and performance graph, followed by warm, zoom and pan frames. | [Drawing source](benchmarks/demo-current-20261003/raw/scenes/harness-src/demo.rs), [adapter](benchmarks/demo-current-20261003/raw/scenes/harness-src/main.rs), [four-font plan](benchmarks/demo-current-20261003/raw/current/demo-current-native/PLAN.json), [results](benchmarks/demo-current-20261003/raw/current/demo-current-native/REPORT.md), [two-font supplement](benchmarks/demo-current-20261003/raw/supplements/femtovg-current-demo-extremes-20261003/demo-extremes-native/REPORT.md) |
+| Font specimen, DPI 1 | A finite page with 1,980 glyph requests: three sizes, ten fractionally shifted rows per size, then warm frames and size changes. | [Drawing source](benchmarks/demo-current-20261003/raw/stress/harness-src/main.rs), [plan](benchmarks/demo-current-20261003/raw/stress/paired12-dpi1/PLAN.json), [results](benchmarks/demo-current-20261003/raw/stress/paired12-dpi1/REPORT.md) |
+
+Both measure CPU layout/drawing plus Void flush, excluding font/image loading, GPU work, window creation and startup. Each comparison uses twelve paired blocks on M4 Max/macOS. Plans, raw process output, provenance, font licenses and independent audits are retained alongside the reports. [Reproduction instructions](benchmarks/demo-current-20261003/README.md) describe the archived scripts and their validation scope.
+
+The earlier studies below retain their own source pins and baselines. They are not pooled with these current-master comparisons.
+
+Original evidence documents are preserved as captured. Statements that the repository had no public remote describe the capture date; the current [PR draft](pr-draft/PR_BODY.md) links the published source and results.
+
 This repository preserves the outline-cache investigation: original benchmarks,
 font/hinting studies, rejected alternatives, native Swash miss-cost prototypes,
 FemtoVG demo/text/variation replays, and Alustin application comparisons.
-See [SUMMARY.md](SUMMARY.md) for the submission case, [REPORT.md](REPORT.md) for
-the full findings, and [results/index.json](results/index.json)
+See the earlier [SUMMARY.md](SUMMARY.md) and [REPORT.md](REPORT.md) for
+those findings, and [results/index.json](results/index.json)
 for the full campaign inventory. An archived experiment can be incomplete or
 rejected; inclusion here does not make it a valid performance result.
 
@@ -29,6 +42,36 @@ portable source bundle; see [reproduction](docs/native-pool-reproduction.md).
 The default verifier now includes the new audit plans in the full archive index.
 The [installed offline check](docs/native-pool-offline-verification.md) verified
 all new retained files and independently reproduced the primary statistics.
+
+## Revised outline-cache follow-up
+
+The [revised-cache comparison](REVISED-OUTLINE-CACHE.md) records a fresh four-way
+master/prior/fixes-4–5/final comparison, with example and Alustin measurements
+under a balanced order schedule, pixels, independent audits, and the targeted
+public-API cache-boundary workload. The prior reports, source bundle, and campaign
+archives remain preserved. Three added archives retain every raw attempt and
+the isolated frozen reproduction bundle. See [reproduction](docs/revised-cache-reproduction.md)
+and `scripts/prepare-revised-cache.py` for a fresh extraction/preparation.
+
+## Repeated favorable-font measurements
+
+A [fresh repeat](FONT-STRESS-RERUN.md) measures the same frozen master/final
+sources, example scenes, three fonts, native pixel proof and balanced schedule.
+It was requested because of a background-load concern; overlap with the original
+measurement was not established. The original [font study](FONT-STRESS-SEARCH.md),
+its numerical report, and its archive remain preserved. See the
+[repeat summary](SUMMARY-FONT-STRESS-RERUN.md) and
+[reproduction notes](docs/font-stress-rerun-reproduction.md).
+
+## Favorable-font confirmation
+
+The [font study](FONT-STRESS-SEARCH.md) records a retained 56-face exploratory
+search followed by fresh frozen master/final measurements of Rye, Doulos SIL
+and Vollkorn in the existing example scenes. [Summary](SUMMARY-FONT-STRESS.md),
+all raw attempts, native pixels, font licenses, and independent statistical
+checks are preserved. These are selected favorable examples. See
+[reproduction](docs/font-stress-reproduction.md) for checked extraction and fresh
+locked builds, and the report for the actual reproduction validation scope.
 
 ## Verify the retained evidence offline
 
@@ -128,3 +171,16 @@ The harness code is MIT licensed. Bundled FemtoVG source retains its MIT/Apache
 license files. Font assets retain their separate licenses, including OFL 1.1 and
 Entypo CC BY-SA 4.0. The Roboto Flex OFL text is included separately from the
 older Apache-licensed Roboto font notice in the upstream asset directory.
+
+## CJK font investigation
+
+The [CJK font study](CJK-FONT-SEARCH.md) preserves the original English demo,
+adds explicitly labeled localized workloads where measured, and reports native
+glyph screening separately from application/cache comparisons. All earlier
+font studies and their raw cohorts remain retained. See the
+[summary](SUMMARY-CJK-FONT-SEARCH.md) and
+[reproduction notes](docs/cjk-font-reproduction.md).
+
+## Aggressive Latin font investigation
+
+The [Latin font study](AGGRESSIVE-FONT-SEARCH.md) preserves three separately frozen exploration cohorts and all original failed or rejected attempts. Native hinting/geometry costs remain distinct from unchanged-demo cache comparisons. See the [summary](SUMMARY-AGGRESSIVE-FONT-SEARCH.md) and [reproduction notes](docs/aggressive-font-reproduction.md).

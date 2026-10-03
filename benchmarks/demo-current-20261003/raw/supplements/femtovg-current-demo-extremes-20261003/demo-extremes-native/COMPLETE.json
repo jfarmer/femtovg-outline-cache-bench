@@ -1,0 +1,9 @@
+{
+  "ended_utc": "2026-10-03T15:30:24.701855+00:00",
+  "logical_blocks": 12,
+  "accepted_process_records": 96,
+  "attempt_process_records": 96,
+  "excluded_process_records": 0,
+  "environment_retries": 0,
+  "summary_rows": 24
+}

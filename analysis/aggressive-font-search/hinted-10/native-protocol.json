@@ -1,0 +1,923 @@
+{
+  "complete": true,
+  "source_only_protocol": true,
+  "collection_executed": false,
+  "font_count_including_controls": 12,
+  "fonts": [
+    {
+      "label": "AveriaGruesaLibre-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/AveriaGruesaLibre-Regular.ttf",
+      "sha256": "df080c6c99c694b3d741835957e4ebc37d640a9c54f4079ceb8c7211e3f2e209",
+      "bytes": 111584
+    },
+    {
+      "label": "AveriaSerifLibre-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/AveriaSerifLibre-Regular.ttf",
+      "sha256": "c64545bce66be1d737832337c1188015f9acacc5230ccbeb4ce646a0eaa252da",
+      "bytes": 109948
+    },
+    {
+      "label": "AveriaLibre-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/AveriaLibre-Regular.ttf",
+      "sha256": "3dda695e06012f89b39eaccd77fbbcf22133a17b00ce5ddf3e4e9a996546b865",
+      "bytes": 108424
+    },
+    {
+      "label": "MissFajardose-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/MissFajardose-Regular.ttf",
+      "sha256": "f76e0f245e781a75ea9fa528706b417173f7741439369c07d1501276170ab709",
+      "bytes": 58872
+    },
+    {
+      "label": "HerrVonMuellerhoff-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/HerrVonMuellerhoff-Regular.ttf",
+      "sha256": "ba8ac10807a79462b7c8265b2eebb8419e5017fdc1a5828b1a071d9e8478772e",
+      "bytes": 46624
+    },
+    {
+      "label": "GreatVibes-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/GreatVibes-Regular.ttf",
+      "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15",
+      "bytes": 457588
+    },
+    {
+      "label": "BilboSwashCaps-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/BilboSwashCaps-Regular.ttf",
+      "sha256": "36e0a6d9f33c57797340a65c8789272247f8d2b0b9521a92112eaa13c77a4354",
+      "bytes": 58072
+    },
+    {
+      "label": "PinyonScript-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/PinyonScript-Regular.ttf",
+      "sha256": "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a",
+      "bytes": 151412
+    },
+    {
+      "label": "FleurDeLeah-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+      "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+      "bytes": 231608
+    },
+    {
+      "label": "Eater-Regular",
+      "control": false,
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/Eater-Regular.ttf",
+      "sha256": "df2744af0f58592c4ff13e8205e62a56f7bdf915b3e31c9def075668c42a2b3f",
+      "bytes": 83928
+    },
+    {
+      "label": "Rye-Regular",
+      "control": true,
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    {
+      "label": "Vollkorn-Medium",
+      "control": true,
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/acquired-files.json",
+      "sha256": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f",
+      "bytes": 207478
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/build/build.json",
+      "sha256": "6acc9ef62666206001e7315761db49e2e5a668cd68d18b20ba4b8e52e7b676fa",
+      "bytes": 9160
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/inputs.json",
+      "sha256": "13ac732fe5c4cf3a2fe4df6328f660585c6fd1911977a617cac421eb6c99d5ee",
+      "bytes": 10980
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+      "sha256": "a6e48607cc4d4d9b5ab9e128697c2265592c29d13cd8109d55ad04b3410a5d08",
+      "bytes": 10440
+    },
+    {
+      "path": "/private/tmp/femtovg-cache-bench/target/release/femtovg-font-cost-screen",
+      "sha256": "ecfb57759abdc77fe691ceaaea30bed0550db134f855efeed2fb41c8b8ea39f8",
+      "bytes": 2025208
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/build/metadata.json",
+      "sha256": "996ec405a4309b16768f940633b09852ce48bf3f6596e378380158dc5fc4c7ad",
+      "bytes": 57073
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/Cargo.lock",
+      "sha256": "5f8028ef1ed059d27c43f54a02f2236ca33a44456af17d362611a68962203fc2",
+      "bytes": 3313
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/audit_native_screens.py",
+      "sha256": "5d8bf61ec2f69da63f081a7e6d193d241fe3a1e3ed0d57d162171d44dcd33b9f",
+      "bytes": 16704
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/run_native_prescreen.py",
+      "sha256": "21b404be0c86485b28ae267f919487238df8a67c05c08de8540b697fe62ffe45",
+      "bytes": 8114
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/Cargo.toml",
+      "sha256": "cb79323bab2d2dc6766f290027a84b2c8ed41a1731b4e143a66da0b14d662cbb",
+      "bytes": 160
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/Cargo.lock",
+      "sha256": "5f8028ef1ed059d27c43f54a02f2236ca33a44456af17d362611a68962203fc2",
+      "bytes": 3313
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/src/main.rs",
+      "sha256": "15e1e8df6cd603e9e4d3c5d879e86af3e21f82278fac7576f2227049bcd61c84",
+      "bytes": 11930
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+      "sha256": "a6e48607cc4d4d9b5ab9e128697c2265592c29d13cd8109d55ad04b3410a5d08",
+      "bytes": 10440
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/README.md",
+      "sha256": "e3c5ec2d31648dda6cecd665b6a7c5b195ae5d87f886882feeb73338fe623db6",
+      "bytes": 3175
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/attributes.rs",
+      "sha256": "991bc7eec71304717994fc0df91fc48a8dee3663b5bdab2fc0c2421266c0cdc7",
+      "bytes": 20639
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/cache.rs",
+      "sha256": "18394f66b0dbe86359173ce28283094603f0cd50dd63489f7a8f76ea0e701ab4",
+      "bytes": 2617
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/charmap.rs",
+      "sha256": "b7c9904e77131aec8b9b33a39d9b16100248692c9f155e40403243bde1bcbbec",
+      "bytes": 2150
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/aat.rs",
+      "sha256": "db21c8a86a217cc2b7a9d64f50d4fbd42765212a37d2028a1a87fd41c53f474b",
+      "bytes": 2348
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/at.rs",
+      "sha256": "63858b3c1cc0cf516c6aa19e0908bc5103a1de5f46ce5e5513ee5572b0bdcc99",
+      "bytes": 10506
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/mod.rs",
+      "sha256": "22ea8569e8c6da41854e09e84afa0800c9e30dd2cefd420e5f6d6101d0f6112d",
+      "bytes": 7543
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/util.rs",
+      "sha256": "e285fbdf44f1b0afb5e868eaeeba8fa25f61ae5ebd6bec5d23ea9282d76e9dad",
+      "bytes": 9055
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/font.rs",
+      "sha256": "a8b55991cc5124fbb42f3199164a463004a81429b8b8ae7a575ab7d9265a7136",
+      "bytes": 8635
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/aat.rs",
+      "sha256": "71c3b1989e71b1324d8ab4291fa0ef9c6d2cf345505ef6c86d2a0d911d74941d",
+      "bytes": 58741
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/at.rs",
+      "sha256": "c813b5b7147bc0a2e84ede036a83fe1ab3517b9f0c01e82a4a234d714eb161aa",
+      "bytes": 27289
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/cmap.rs",
+      "sha256": "31e565eb71747c15e2adca584ba8206c857ea9f39f76eaf31ab0c70fefed13fa",
+      "bytes": 9565
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/fixed.rs",
+      "sha256": "e521276073ed28595d893791a94fccf9545e8421c711f4f83b6f880ecd2a7f70",
+      "bytes": 4103
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/glyf.rs",
+      "sha256": "fa65225c0a41850ba8784bbac8da993db702066e07b4ecb3ce6803fd1bdc990d",
+      "bytes": 1640
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/head.rs",
+      "sha256": "4143356ead3a8f2daf2031be20b274f710b0fead0b4a1a1875b2f692515456d4",
+      "bytes": 27779
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/mod.rs",
+      "sha256": "af8a56892e53a5cec0ff58d45070a9b1361b0b8e537369a5bd54a31fb004aed6",
+      "bytes": 5147
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/parse.rs",
+      "sha256": "e4dacac03ce81a15beb52ea1fa974c048d769cebc0ad4dc4614a2468100bee75",
+      "bytes": 15510
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/var.rs",
+      "sha256": "8716e40f86a54a4e5aa3e1ba4a7efd20a8bcbb69e9fad048c11ebc7f7b91473f",
+      "bytes": 13935
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/vorg.rs",
+      "sha256": "ab1599654524cfaa6b1fa57e4de04255aeff7d4f57dd2d3f867dfb05077f7af7",
+      "bytes": 818
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/xmtx.rs",
+      "sha256": "6449268f643d98f21c310812dee96f61a322493998c2f544f635d5c918422564",
+      "bytes": 929
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/lib.rs",
+      "sha256": "32c58a951217cc06ea3a22e81a31c220051fa6bd98a9380c731ce91837b0047c",
+      "bytes": 5379
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/macros.rs",
+      "sha256": "1390e57be2bf27f8908eec46788fd27568dec98d24bfe2b0a922b41e56ab5ebd",
+      "bytes": 1187
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/metrics.rs",
+      "sha256": "2850415dfa5982652e1783385410e87319039d9d473f45cc3433d7e593a545b1",
+      "bytes": 16665
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/palette.rs",
+      "sha256": "4b9931169c609bfd8c3816a729eeb48d154314acfd4babe0aa7b1ed1c8d9b8fc",
+      "bytes": 4652
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/bitmap/mod.rs",
+      "sha256": "65ee5720f4824ac9cf0535ffb75196601746a232794a561c40e5038c390f224f",
+      "bytes": 10951
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/bitmap/png.rs",
+      "sha256": "9db56d9596369a243e2ff19a9956deb5fafc946dc69fb5046909e4a536eda9cb",
+      "bytes": 17975
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/color.rs",
+      "sha256": "4a918c2173de55221028b1f5bf56c742b5aef6edcd006f5baad20d7d39628ebd",
+      "bytes": 2593
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/hinting_cache.rs",
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a",
+      "bytes": 3174
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/image.rs",
+      "sha256": "1fa960b1ced03dba861a857762bf043bd946c98c5da8d671a1cce4237d9ac565",
+      "bytes": 1056
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/mod.rs",
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a",
+      "bytes": 35661
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/outline.rs",
+      "sha256": "3e94e5c07bb0f38d696efc6835bcbd6ed5b075dab586ce6e60e848ce2a53842c",
+      "bytes": 12096
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/proxy.rs",
+      "sha256": "c1c3d2f0f78e3b1ae4ffcf4f9360b65d913a6abe1160174587a37c533eb70723",
+      "bytes": 599
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/setting.rs",
+      "sha256": "8f695ce0f9a9fb6bbf44c01e86ba58aec3902d81a6887463d9163b94dcd725d4",
+      "bytes": 5348
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/aat.rs",
+      "sha256": "b2774fc4a76abf6d8a4d0334c2840083ead77d19113c18970698ed41496cdd19",
+      "bytes": 15868
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/at.rs",
+      "sha256": "097aee7a68463f8bfd1443564a1b54f0a3f3131ec5d3eeb058b2ba974e031423",
+      "bytes": 64689
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/buffer.rs",
+      "sha256": "e2ad67fc10fc996750395e51e52efcac3c3ef7c12cce0394d9773c48c033005a",
+      "bytes": 21157
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/cache.rs",
+      "sha256": "0e7a3ad9b54939305d09116203bd2533a1e4989d5c420ad390a80575c3480c1b",
+      "bytes": 3329
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/cluster.rs",
+      "sha256": "d630ecda1553ba15911d4a4b8628291255c25950f2d17735b6460f7fee793314",
+      "bytes": 2972
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/engine.rs",
+      "sha256": "e83a0600999734da5866c0f1692e8fc5ae64b596b52fbc99f4970c30759a5fc6",
+      "bytes": 8759
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/feature.rs",
+      "sha256": "90d065912c0cf9ac1aa48ad2e8c1887b46a2e5772b544b1bc499a469448afc87",
+      "bytes": 2551
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/mod.rs",
+      "sha256": "0f5a32cfd9f82adc707f0c73a08174b6956b194b7facb2b850dbd03d639404a1",
+      "bytes": 33955
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/partition.rs",
+      "sha256": "c77c79aa5552d5093db45448db8b5f14c8dfc4103b639ea4388fea1aa6cb091c",
+      "bytes": 7091
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/strike.rs",
+      "sha256": "0fe0580dac1ddf0bc7a5c88d59fa1f00772516cbf4b3181fe8caefa2d6364ca4",
+      "bytes": 25772
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/string.rs",
+      "sha256": "14b8a2c7fe6b754d62acf67ff05cb7555f2a0f344db77a4c06c74d7c9c351ae7",
+      "bytes": 18041
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/tag.rs",
+      "sha256": "9638f899dacdee0d7b52dd991da14d667c7965e52e2ca344288ee309e77545b7",
+      "bytes": 529
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/analyze.rs",
+      "sha256": "97497b037d1ef911b261219e6e50a331ff29147776cf6fe347eedd0788666195",
+      "bytes": 18713
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/char.rs",
+      "sha256": "2cf557de67a1448dd0d474eea2dc772a29b1dfa39f7ccda2fbc693af030bb674",
+      "bytes": 1891
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/cluster.rs",
+      "sha256": "f449e18218d3f4d3679f637e02d1c05789f283bd1ee401e76af3f3a17b53b3dd",
+      "bytes": 12188
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/complex.rs",
+      "sha256": "857a095e792b0520c2d68c0b181b686947dffcf9360b503d855994e23e2744ed",
+      "bytes": 14778
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/info.rs",
+      "sha256": "c8c139b557f40240d642212d799aabf1ca48c6d767beebaaa2e2b43fc4029072",
+      "bytes": 6107
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/mod.rs",
+      "sha256": "aeed988fc595dd56bc5b7c4be7ffb0ac531a02a69fc3b8e953777549ef2cfbf4",
+      "bytes": 1384
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/myanmar.rs",
+      "sha256": "9409b52314f43b2fce13e6d4729989e48b6d2ec5827eb24eef0d4e4a31f0325c",
+      "bytes": 11283
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/parse.rs",
+      "sha256": "b8e34ea78a03929ff8f5bdddd5cb810f14c350d5e67dcd9e3ec5579fa900d384",
+      "bytes": 1474
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/simple.rs",
+      "sha256": "93c1264d8186b111ee5437cbda9452c53f3b92d7f3a219e5ac88b886b75e130f",
+      "bytes": 6753
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/token.rs",
+      "sha256": "6857c4cc0be79b29ce2ffb8f9b80dd5a0728e3fe6f8752cec902eaf42c965347",
+      "bytes": 627
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/compose.rs",
+      "sha256": "c5c6067d92c4e55a7c413ac82f7d10e4252deb4ae1944fc8458832e7743a14ac",
+      "bytes": 5073
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/lang.rs",
+      "sha256": "48a353c544b001fef2d5f144c755bc77868421ca227838ab49ee8a21baaaf1fb",
+      "bytes": 7893
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/lang_data.rs",
+      "sha256": "58e34d12cd3e70b0ca0583adb6367ee1510e819488d8c0088fc4204b317b609d",
+      "bytes": 43218
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/mod.rs",
+      "sha256": "90c94e0df79e7d05122f44ac50c123958f1fa5a3491ac2babd9fb0182234490b",
+      "bytes": 343
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/unicode.rs",
+      "sha256": "01d3f71881e6fbda987be6820d9da2818421f6a465b0901082359e20d3ce5e12",
+      "bytes": 10862
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/unicode_data.rs",
+      "sha256": "cd75b1d0ed789bce2a3be9ea33cae7dab17591253bcfac50b0339fbe9e26b6ae",
+      "bytes": 562406
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/variation.rs",
+      "sha256": "06552a82800cd08f6cf667ae2c80bf4de18332fbea5152de59c325835d5aeb0f",
+      "bytes": 9395
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/attributes.rs",
+      "sha256": "991bc7eec71304717994fc0df91fc48a8dee3663b5bdab2fc0c2421266c0cdc7",
+      "bytes": 20639
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/cache.rs",
+      "sha256": "18394f66b0dbe86359173ce28283094603f0cd50dd63489f7a8f76ea0e701ab4",
+      "bytes": 2617
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/charmap.rs",
+      "sha256": "b7c9904e77131aec8b9b33a39d9b16100248692c9f155e40403243bde1bcbbec",
+      "bytes": 2150
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/aat.rs",
+      "sha256": "db21c8a86a217cc2b7a9d64f50d4fbd42765212a37d2028a1a87fd41c53f474b",
+      "bytes": 2348
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/at.rs",
+      "sha256": "63858b3c1cc0cf516c6aa19e0908bc5103a1de5f46ce5e5513ee5572b0bdcc99",
+      "bytes": 10506
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/mod.rs",
+      "sha256": "22ea8569e8c6da41854e09e84afa0800c9e30dd2cefd420e5f6d6101d0f6112d",
+      "bytes": 7543
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/feature/util.rs",
+      "sha256": "e285fbdf44f1b0afb5e868eaeeba8fa25f61ae5ebd6bec5d23ea9282d76e9dad",
+      "bytes": 9055
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/font.rs",
+      "sha256": "a8b55991cc5124fbb42f3199164a463004a81429b8b8ae7a575ab7d9265a7136",
+      "bytes": 8635
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/aat.rs",
+      "sha256": "71c3b1989e71b1324d8ab4291fa0ef9c6d2cf345505ef6c86d2a0d911d74941d",
+      "bytes": 58741
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/at.rs",
+      "sha256": "c813b5b7147bc0a2e84ede036a83fe1ab3517b9f0c01e82a4a234d714eb161aa",
+      "bytes": 27289
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/cmap.rs",
+      "sha256": "31e565eb71747c15e2adca584ba8206c857ea9f39f76eaf31ab0c70fefed13fa",
+      "bytes": 9565
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/fixed.rs",
+      "sha256": "e521276073ed28595d893791a94fccf9545e8421c711f4f83b6f880ecd2a7f70",
+      "bytes": 4103
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/glyf.rs",
+      "sha256": "fa65225c0a41850ba8784bbac8da993db702066e07b4ecb3ce6803fd1bdc990d",
+      "bytes": 1640
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/head.rs",
+      "sha256": "4143356ead3a8f2daf2031be20b274f710b0fead0b4a1a1875b2f692515456d4",
+      "bytes": 27779
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/mod.rs",
+      "sha256": "af8a56892e53a5cec0ff58d45070a9b1361b0b8e537369a5bd54a31fb004aed6",
+      "bytes": 5147
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/parse.rs",
+      "sha256": "e4dacac03ce81a15beb52ea1fa974c048d769cebc0ad4dc4614a2468100bee75",
+      "bytes": 15510
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/var.rs",
+      "sha256": "8716e40f86a54a4e5aa3e1ba4a7efd20a8bcbb69e9fad048c11ebc7f7b91473f",
+      "bytes": 13935
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/vorg.rs",
+      "sha256": "ab1599654524cfaa6b1fa57e4de04255aeff7d4f57dd2d3f867dfb05077f7af7",
+      "bytes": 818
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/internal/xmtx.rs",
+      "sha256": "6449268f643d98f21c310812dee96f61a322493998c2f544f635d5c918422564",
+      "bytes": 929
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/lib.rs",
+      "sha256": "32c58a951217cc06ea3a22e81a31c220051fa6bd98a9380c731ce91837b0047c",
+      "bytes": 5379
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/macros.rs",
+      "sha256": "1390e57be2bf27f8908eec46788fd27568dec98d24bfe2b0a922b41e56ab5ebd",
+      "bytes": 1187
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/metrics.rs",
+      "sha256": "2850415dfa5982652e1783385410e87319039d9d473f45cc3433d7e593a545b1",
+      "bytes": 16665
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/palette.rs",
+      "sha256": "4b9931169c609bfd8c3816a729eeb48d154314acfd4babe0aa7b1ed1c8d9b8fc",
+      "bytes": 4652
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/bitmap/mod.rs",
+      "sha256": "65ee5720f4824ac9cf0535ffb75196601746a232794a561c40e5038c390f224f",
+      "bytes": 10951
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/bitmap/png.rs",
+      "sha256": "9db56d9596369a243e2ff19a9956deb5fafc946dc69fb5046909e4a536eda9cb",
+      "bytes": 17975
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/color.rs",
+      "sha256": "4a918c2173de55221028b1f5bf56c742b5aef6edcd006f5baad20d7d39628ebd",
+      "bytes": 2593
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/hinting_cache.rs",
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a",
+      "bytes": 3174
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/image.rs",
+      "sha256": "1fa960b1ced03dba861a857762bf043bd946c98c5da8d671a1cce4237d9ac565",
+      "bytes": 1056
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/mod.rs",
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a",
+      "bytes": 35661
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/outline.rs",
+      "sha256": "3e94e5c07bb0f38d696efc6835bcbd6ed5b075dab586ce6e60e848ce2a53842c",
+      "bytes": 12096
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/proxy.rs",
+      "sha256": "c1c3d2f0f78e3b1ae4ffcf4f9360b65d913a6abe1160174587a37c533eb70723",
+      "bytes": 599
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/setting.rs",
+      "sha256": "8f695ce0f9a9fb6bbf44c01e86ba58aec3902d81a6887463d9163b94dcd725d4",
+      "bytes": 5348
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/aat.rs",
+      "sha256": "b2774fc4a76abf6d8a4d0334c2840083ead77d19113c18970698ed41496cdd19",
+      "bytes": 15868
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/at.rs",
+      "sha256": "097aee7a68463f8bfd1443564a1b54f0a3f3131ec5d3eeb058b2ba974e031423",
+      "bytes": 64689
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/buffer.rs",
+      "sha256": "e2ad67fc10fc996750395e51e52efcac3c3ef7c12cce0394d9773c48c033005a",
+      "bytes": 21157
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/cache.rs",
+      "sha256": "0e7a3ad9b54939305d09116203bd2533a1e4989d5c420ad390a80575c3480c1b",
+      "bytes": 3329
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/cluster.rs",
+      "sha256": "d630ecda1553ba15911d4a4b8628291255c25950f2d17735b6460f7fee793314",
+      "bytes": 2972
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/engine.rs",
+      "sha256": "e83a0600999734da5866c0f1692e8fc5ae64b596b52fbc99f4970c30759a5fc6",
+      "bytes": 8759
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/feature.rs",
+      "sha256": "90d065912c0cf9ac1aa48ad2e8c1887b46a2e5772b544b1bc499a469448afc87",
+      "bytes": 2551
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/mod.rs",
+      "sha256": "0f5a32cfd9f82adc707f0c73a08174b6956b194b7facb2b850dbd03d639404a1",
+      "bytes": 33955
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/shape/partition.rs",
+      "sha256": "c77c79aa5552d5093db45448db8b5f14c8dfc4103b639ea4388fea1aa6cb091c",
+      "bytes": 7091
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/strike.rs",
+      "sha256": "0fe0580dac1ddf0bc7a5c88d59fa1f00772516cbf4b3181fe8caefa2d6364ca4",
+      "bytes": 25772
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/string.rs",
+      "sha256": "14b8a2c7fe6b754d62acf67ff05cb7555f2a0f344db77a4c06c74d7c9c351ae7",
+      "bytes": 18041
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/tag.rs",
+      "sha256": "9638f899dacdee0d7b52dd991da14d667c7965e52e2ca344288ee309e77545b7",
+      "bytes": 529
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/analyze.rs",
+      "sha256": "97497b037d1ef911b261219e6e50a331ff29147776cf6fe347eedd0788666195",
+      "bytes": 18713
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/char.rs",
+      "sha256": "2cf557de67a1448dd0d474eea2dc772a29b1dfa39f7ccda2fbc693af030bb674",
+      "bytes": 1891
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/cluster.rs",
+      "sha256": "f449e18218d3f4d3679f637e02d1c05789f283bd1ee401e76af3f3a17b53b3dd",
+      "bytes": 12188
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/complex.rs",
+      "sha256": "857a095e792b0520c2d68c0b181b686947dffcf9360b503d855994e23e2744ed",
+      "bytes": 14778
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/info.rs",
+      "sha256": "c8c139b557f40240d642212d799aabf1ca48c6d767beebaaa2e2b43fc4029072",
+      "bytes": 6107
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/mod.rs",
+      "sha256": "aeed988fc595dd56bc5b7c4be7ffb0ac531a02a69fc3b8e953777549ef2cfbf4",
+      "bytes": 1384
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/myanmar.rs",
+      "sha256": "9409b52314f43b2fce13e6d4729989e48b6d2ec5827eb24eef0d4e4a31f0325c",
+      "bytes": 11283
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/parse.rs",
+      "sha256": "b8e34ea78a03929ff8f5bdddd5cb810f14c350d5e67dcd9e3ec5579fa900d384",
+      "bytes": 1474
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/simple.rs",
+      "sha256": "93c1264d8186b111ee5437cbda9452c53f3b92d7f3a219e5ac88b886b75e130f",
+      "bytes": 6753
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/cluster/token.rs",
+      "sha256": "6857c4cc0be79b29ce2ffb8f9b80dd5a0728e3fe6f8752cec902eaf42c965347",
+      "bytes": 627
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/compose.rs",
+      "sha256": "c5c6067d92c4e55a7c413ac82f7d10e4252deb4ae1944fc8458832e7743a14ac",
+      "bytes": 5073
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/lang.rs",
+      "sha256": "48a353c544b001fef2d5f144c755bc77868421ca227838ab49ee8a21baaaf1fb",
+      "bytes": 7893
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/lang_data.rs",
+      "sha256": "58e34d12cd3e70b0ca0583adb6367ee1510e819488d8c0088fc4204b317b609d",
+      "bytes": 43218
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/mod.rs",
+      "sha256": "90c94e0df79e7d05122f44ac50c123958f1fa5a3491ac2babd9fb0182234490b",
+      "bytes": 343
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/unicode.rs",
+      "sha256": "01d3f71881e6fbda987be6820d9da2818421f6a465b0901082359e20d3ce5e12",
+      "bytes": 10862
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/text/unicode_data.rs",
+      "sha256": "cd75b1d0ed789bce2a3be9ea33cae7dab17591253bcfac50b0339fbe9e26b6ae",
+      "bytes": 562406
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/variation.rs",
+      "sha256": "06552a82800cd08f6cf667ae2c80bf4de18332fbea5152de59c325835d5aeb0f",
+      "bytes": 9395
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/font-inspection.json",
+      "sha256": "2bb547f4d2b2c71c99fd4f9186f7415441b9931249458e601e8d8a879d477d01",
+      "bytes": 2277912
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/static-priors.json",
+      "sha256": "b0a373983b150e2e0135f46b890ee62c9464bbdaed5cf1e3e984e8557256ef90",
+      "bytes": 22979
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/AveriaGruesaLibre-Regular.ttf",
+      "sha256": "df080c6c99c694b3d741835957e4ebc37d640a9c54f4079ceb8c7211e3f2e209",
+      "bytes": 111584
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/AveriaSerifLibre-Regular.ttf",
+      "sha256": "c64545bce66be1d737832337c1188015f9acacc5230ccbeb4ce646a0eaa252da",
+      "bytes": 109948
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/AveriaLibre-Regular.ttf",
+      "sha256": "3dda695e06012f89b39eaccd77fbbcf22133a17b00ce5ddf3e4e9a996546b865",
+      "bytes": 108424
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/MissFajardose-Regular.ttf",
+      "sha256": "f76e0f245e781a75ea9fa528706b417173f7741439369c07d1501276170ab709",
+      "bytes": 58872
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/HerrVonMuellerhoff-Regular.ttf",
+      "sha256": "ba8ac10807a79462b7c8265b2eebb8419e5017fdc1a5828b1a071d9e8478772e",
+      "bytes": 46624
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/GreatVibes-Regular.ttf",
+      "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15",
+      "bytes": 457588
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/BilboSwashCaps-Regular.ttf",
+      "sha256": "36e0a6d9f33c57797340a65c8789272247f8d2b0b9521a92112eaa13c77a4354",
+      "bytes": 58072
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/PinyonScript-Regular.ttf",
+      "sha256": "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a",
+      "bytes": 151412
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+      "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+      "bytes": 231608
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/Eater-Regular.ttf",
+      "sha256": "df2744af0f58592c4ff13e8205e62a56f7bdf915b3e31c9def075668c42a2b3f",
+      "bytes": 83928
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    {
+      "path": "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    }
+  ],
+  "collect_command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+    "run",
+    "--build",
+    "/private/tmp/femtovg-font-stress-search-20261002/build/build.json",
+    "--output",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1",
+    "--mode",
+    "timing",
+    "--trials",
+    "4",
+    "--repeats",
+    "3",
+    "--rounds",
+    "1",
+    "--timeout",
+    "180",
+    "--font",
+    "AveriaGruesaLibre-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/AveriaGruesaLibre-Regular.ttf",
+    "--font",
+    "AveriaSerifLibre-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/AveriaSerifLibre-Regular.ttf",
+    "--font",
+    "AveriaLibre-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/AveriaLibre-Regular.ttf",
+    "--font",
+    "MissFajardose-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/MissFajardose-Regular.ttf",
+    "--font",
+    "HerrVonMuellerhoff-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/HerrVonMuellerhoff-Regular.ttf",
+    "--font",
+    "GreatVibes-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/GreatVibes-Regular.ttf",
+    "--font",
+    "BilboSwashCaps-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/BilboSwashCaps-Regular.ttf",
+    "--font",
+    "PinyonScript-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/PinyonScript-Regular.ttf",
+    "--font",
+    "FleurDeLeah-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+    "--font",
+    "Eater-Regular",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/Eater-Regular.ttf",
+    "--font",
+    "Rye-Regular",
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf",
+    "--font",
+    "Vollkorn-Medium",
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf"
+  ],
+  "legacy_analyze_command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-font-stress-search-20261002/screen.py",
+    "analyze",
+    "--root",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1"
+  ],
+  "independent_audit_command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-cjk-font-search-20261002/supporting/audit_native_screens.py",
+    "--screen",
+    "aggressive",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1",
+    "--output",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/native-prescreen-audit.json"
+  ],
+  "trials": 4,
+  "repeats": 3,
+  "rounds": 1,
+  "timeout_seconds": 180,
+  "scope": "Exploratory prepared native font-cost prescreen only; unchanged old screen.py and executable. Preserve all rejected fonts. Analyze each profile/DPR separately: per-case trial medians followed by median of five logical sizes. DPR1 outlines match actual first-paint 11/12/14/15/16px sizes; DPR2 outlines are 22/24/28/30/32px. No confidence intervals, cache overhead, predicted application savings or percentage claims."
+}

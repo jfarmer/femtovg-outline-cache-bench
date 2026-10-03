@@ -1,0 +1,47 @@
+use winit::event::{DeviceEvent, DeviceId, WindowEvent};
+use winit::event_loop::ActiveEventLoop;
+
+use super::run;
+
+mod perf_graph;
+#[allow(unused_imports)]
+pub use perf_graph::PerfGraph;
+
+pub trait WindowSurface {
+    type Renderer: femtovg::Renderer + 'static;
+    fn resize(&mut self, width: u32, height: u32);
+    fn present(&self, canvas: &mut femtovg::Canvas<Self::Renderer>);
+}
+
+pub struct Callbacks {
+    pub window_event: Box<dyn FnMut(WindowEvent, &ActiveEventLoop)>,
+    pub device_event: Option<Box<dyn FnMut(DeviceId, DeviceEvent, &ActiveEventLoop)>>,
+}
+
+#[cfg(not(feature = "wgpu"))]
+mod opengl;
+
+#[cfg(feature = "wgpu")]
+mod wgpu;
+
+pub fn start(
+    #[cfg(not(target_arch = "wasm32"))] width: u32,
+    #[cfg(not(target_arch = "wasm32"))] height: u32,
+    #[cfg(not(target_arch = "wasm32"))] title: &'static str,
+    #[cfg(not(target_arch = "wasm32"))] resizeable: bool,
+) {
+    #[cfg(not(feature = "wgpu"))]
+    {
+        #[cfg(not(target_arch = "wasm32"))]
+        opengl::start_opengl(width, height, title, resizeable);
+        #[cfg(target_arch = "wasm32")]
+        wasm_bindgen_futures::spawn_local(opengl::start_opengl_wasm());
+    }
+    #[cfg(feature = "wgpu")]
+    {
+        #[cfg(not(target_arch = "wasm32"))]
+        wgpu::start_wgpu(width, height, title, resizeable);
+        #[cfg(target_arch = "wasm32")]
+        wasm_bindgen_futures::spawn_local(wgpu::start_wgpu_wasm());
+    }
+}

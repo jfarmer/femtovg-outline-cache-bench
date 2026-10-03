@@ -1,0 +1,17 @@
+--- upstream 6a5f15a
++++ current source
+@@ -6,10 +6,10 @@
+ current_render_target(before flush) = Screen
+ state_stack.len = 1
+ rendered_glyphs.len = 4
+-  RenderedGlyphId { glyph_index: 36, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 215, height: 217, bearing_x: 0, bearing_y: 14, atlas_x: 1, atlas_y: 1, color_glyph: false })
+-  RenderedGlyphId { glyph_index: 37, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 212, height: 217, bearing_x: 2, bearing_y: 14, atlas_x: 218, atlas_y: 1, color_glyph: false })
+-  RenderedGlyphId { glyph_index: 38, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 214, height: 217, bearing_x: 1, bearing_y: 15, atlas_x: 1, atlas_y: 220, color_glyph: false })
+-  RenderedGlyphId { glyph_index: 39, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 213, height: 217, bearing_x: 2, bearing_y: 14, atlas_x: 217, atlas_y: 220, color_glyph: false })
++  RenderedGlyphId { glyph_index: 36, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 215, height: 217, bearing_x: 0, bearing_y: 14, atlas_x: 1, atlas_y: 1, color_glyph: false, uses_subpixel_positioning: false })
++  RenderedGlyphId { glyph_index: 37, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 212, height: 217, bearing_x: 2, bearing_y: 14, atlas_x: 218, atlas_y: 1, color_glyph: false, uses_subpixel_positioning: false })
++  RenderedGlyphId { glyph_index: 38, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 214, height: 217, bearing_x: 1, bearing_y: 15, atlas_x: 1, atlas_y: 220, color_glyph: false, uses_subpixel_positioning: false })
++  RenderedGlyphId { glyph_index: 39, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 2000, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 213, height: 217, bearing_x: 2, bearing_y: 14, atlas_x: 217, atlas_y: 220, color_glyph: false, uses_subpixel_positioning: false })
+ glyph_textures.len = 1
+ glyph_textures = [FontTexture { atlas: Atlas { width: 512, height: 512, nodes: [Node { x: 0, y: 438, width: 431 }, Node { x: 431, y: 0, width: 81 }] }, image_id: ImageId(DefaultKey(1v1)) }]
+ commands = [

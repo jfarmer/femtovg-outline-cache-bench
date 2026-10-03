@@ -1,0 +1,48 @@
+{
+  "aborted_utc": "2026-10-03T12:30:46.141669+00:00",
+  "reason": "Build/compiler/linker process name guard matched",
+  "pids": [
+    "16040",
+    "16338",
+    "16358",
+    "16363",
+    "16369"
+  ],
+  "process_families_and_names_only": [
+    {
+      "pid": "16040",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+      "family": "build",
+      "parent_pid": "16004",
+      "parent_comm": "/bin/sh"
+    },
+    {
+      "pid": "16338",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc",
+      "family": "compile",
+      "parent_pid": "16040",
+      "parent_comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo"
+    },
+    {
+      "pid": "16358",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc",
+      "family": "compile",
+      "parent_pid": "16040",
+      "parent_comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo"
+    },
+    {
+      "pid": "16363",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc",
+      "family": "compile",
+      "parent_pid": "16040",
+      "parent_comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo"
+    },
+    {
+      "pid": "16369",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc",
+      "family": "compile",
+      "parent_pid": "16040",
+      "parent_comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo"
+    }
+  ]
+}

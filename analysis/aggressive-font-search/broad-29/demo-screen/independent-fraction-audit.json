@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "auditor": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/audit_demo_screen_effects.py",
+    "bytes": 8526,
+    "sha256": "ee9f9d0e5b51fcc24f1278fe5343270bf99f79d8be50800113af791191ad9344"
+  },
+  "wrapper": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/run_aggressive_demo_screen.py",
+    "bytes": 19343,
+    "sha256": "d4675d97b2a880dd2c0c543760f5af635880b0c8998ce140d8ce4e757f77a02d"
+  },
+  "protocol": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-selection-v1/protocol.json",
+    "bytes": 7030,
+    "sha256": "5e01382b95b6ea97d2634eaa0e96dc7f3cd43fbdd7ddaa2f6050e05db7184a45"
+  },
+  "selection": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-selection-v1/selection.json",
+    "bytes": 193713,
+    "sha256": "763cfbdafee8309aefaa56068b5f421ab2de5c4bc275ee3b8216ce72d521319e"
+  },
+  "provenance": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-screen-v1/cpu-provenance.json",
+    "bytes": 636393,
+    "sha256": "ab6768883b684f3c4088b086c74713d54c430a2add42ccdcb049e735802143c6"
+  },
+  "analysis": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-screen-v1/independent-analysis/analysis.json",
+    "bytes": 742009,
+    "sha256": "db1cc46b3862a25c046b1ec0955dcb66051c26feccfda437a487576559dd2756"
+  },
+  "processes_checked": 124,
+  "raw_original_stdout_rows_checked": 1860,
+  "original_atlas_annotations_checked": 1860,
+  "phase_sequence_endpoint_effects_checked": 558,
+  "maximum_absolute_decimal_to_fraction_difference": 0.0,
+  "method": "Independent exact Fraction parsing and sorted median arithmetic from every original process stdout. Verify phase medians, within-trial 65-frame sequences, both paired blocks, means, ranges, signs, raw CSV agreement and AB/BA order. Source/build/font guard reused read-only; no benchmark, CI, exclusion or input mutation.",
+  "new_application_pixel_proof": false
+}

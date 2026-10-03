@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "inputs": {
+    "cpu": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu/cpu-provenance.json",
+      "bytes": 1600378,
+      "sha256": "7006bd1d33789e2abcd63bb4b0f92cfe9cbf4aeb469ecb7aad99592333eb5a3a"
+    },
+    "gpu": null,
+    "analyzer": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/localized-zh-replay-v2/analyze_font_confirm.py",
+      "bytes": 37982,
+      "sha256": "d6e6d6f87dba5674207c456694b94d8c06ca0a7a505da31871630756cd17a043"
+    },
+    "raw_audit": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/raw-audit.json",
+      "bytes": 232411,
+      "sha256": "b22115b05789d1961d1a6a1b4793c8f58aefdaa741a31c35266c129c58245c3f"
+    }
+  },
+  "outputs": {
+    "summary.csv": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/summary.csv",
+      "bytes": 74543,
+      "sha256": "bfb55a8c83edac0ceef06906b1672f47a894e695a65b72bd788b50ba165a20e9"
+    },
+    "summary.json": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/summary.json",
+      "bytes": 254763,
+      "sha256": "e250d95212e3b23940b157c34b26b0bad13c7c8b665ec9431691f21ea6806941"
+    },
+    "paired-processes.csv": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/paired-processes.csv",
+      "bytes": 356514,
+      "sha256": "c33cf9330e4907afdd8922a33bbe5718f920465bf96d91b3a61ec8c502f78479"
+    },
+    "bootstrap-indices.json": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/bootstrap-indices.json",
+      "bytes": 1499865,
+      "sha256": "e3e1d843888720672fa18a58d582ed7776c966781dfe761d0421baccac5900f6"
+    },
+    "raw-audit.json": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/raw-audit.json",
+      "bytes": 232411,
+      "sha256": "b22115b05789d1961d1a6a1b4793c8f58aefdaa741a31c35266c129c58245c3f"
+    },
+    "primary-table.md": {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis/primary-table.md",
+      "bytes": 1450,
+      "sha256": "d2d699e9066f0c22eb89561535ed81b26278ecff16f2f2a16dec2bd980e7ce44"
+    }
+  }
+}

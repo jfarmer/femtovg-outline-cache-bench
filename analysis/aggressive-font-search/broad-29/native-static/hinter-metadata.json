@@ -1,0 +1,2250 @@
+{
+  "complete": true,
+  "inspection": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/font-inspection.json",
+    "sha256": "9130dacce871c8717264b364828bd5b4bd63e1fa06918535c353c278adb2082b",
+    "bytes": 5882342
+  },
+  "inspector": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/inspect_cjk_fonts.py",
+    "sha256": "71abc2db5f2355ca48cb26b6ad7fbceca63728ce1e16d14aa2851473fce1d96a",
+    "bytes": 11383
+  },
+  "wrapper": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/inspect_aggressive.py",
+    "sha256": "4118047b99f979394e8d90731fca1099298ee92bd818e61c9d3b558935a6c4db",
+    "bytes": 5175
+  },
+  "fonts": [
+    {
+      "label": "FrederickatheGreat-Regular",
+      "font_sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 by Font Diner, Inc DBA Tart Workshop (diner@fontdiner.com) with Reseved Font Name \"Fredericka the Great\""
+        },
+        {
+          "name_id": 1,
+          "value": "Fredericka the Great"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "FontDiner,IncDBATartWorkshop: Fredericka the Great: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Fredericka the Great"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "FrederickatheGreat-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Fredericka the Great is a trademark of Font Diner, Inc DBA Tart Workshop."
+        },
+        {
+          "name_id": 8,
+          "value": "Font Diner, Inc DBA Tart Workshop"
+        },
+        {
+          "name_id": 9,
+          "value": "Crystal Kluge"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.fontbros.com/tartworkshop.php"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.tartworkshop.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Fredericka the Great"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Ewert-Regular",
+      "font_sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011, Johan Kallas (johankallas@gmail.com), Copyright (c) 2011 Mihkel Virkus (mihkelvirkus@gmail.com) with Reserved Font Name Ewert."
+        },
+        {
+          "name_id": 1,
+          "value": "Ewert"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "JohanKallas,MihkelVirkus: Ewert: 2012"
+        },
+        {
+          "name_id": 4,
+          "value": "Ewert"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "Ewert-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Ewert is a trademark of Johan Kallas, Mihkel Virkus."
+        },
+        {
+          "name_id": 8,
+          "value": "Johan Kallas, Mihkel Virkus"
+        },
+        {
+          "name_id": 9,
+          "value": "Johan Kallas, Mihkel Virkus"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "JacquesFrancoisShadow-Regular",
+      "font_sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011, Cyreal (www.cyreal.org) with Reserved Font Name 'Jacques Francois'"
+        },
+        {
+          "name_id": 1,
+          "value": "Jacques Francois Shadow"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "Cyreal(www.cyreal.org): Jacques Francois Shadow: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Jacques Francois Shadow"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.003"
+        },
+        {
+          "name_id": 6,
+          "value": "JacquesFrancoisShadow-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Jacques Francois Shadow is a trademark of Cyreal (www.cyreal.org)."
+        },
+        {
+          "name_id": 8,
+          "value": "Cyreal (www.cyreal.org)"
+        },
+        {
+          "name_id": 9,
+          "value": "Alexei Vanyashin, Nikita Kanarev (i@xarsok.ru)"
+        },
+        {
+          "name_id": 11,
+          "value": "cyreal.org"
+        },
+        {
+          "name_id": 12,
+          "value": "cyreal.org"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Jacques Francois Shadow"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Monoton-Regular",
+      "font_sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 3,
+          "value": "FontForge 2.0 : Monoton : 19-8-2011"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 by vernon adams. All rights reserved."
+        },
+        {
+          "name_id": 1,
+          "value": "Monoton"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "FontForge 2.0 : Monoton : 19-8-2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Monoton"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "Monoton-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Monoton is a trademark of vernon adams."
+        },
+        {
+          "name_id": 8,
+          "value": "vernon adams"
+        },
+        {
+          "name_id": 10,
+          "value": "Copyright (c) 2011 by vernon adams. All rights reserved."
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "BungeeShade-Regular",
+      "font_sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
+        },
+        {
+          "name_id": 1,
+          "value": "Bungee Shade"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.000;djr ;BungeeShade-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Bungee Shade Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.000"
+        },
+        {
+          "name_id": 6,
+          "value": "BungeeShade-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Bungee is a trademark of The Font Bureau."
+        },
+        {
+          "name_id": 8,
+          "value": "David Jonathan Ross"
+        },
+        {
+          "name_id": 9,
+          "value": "David Jonathan Ross"
+        },
+        {
+          "name_id": 11,
+          "value": "https://www.djr.com"
+        },
+        {
+          "name_id": 12,
+          "value": "https://www.djr.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+        },
+        {
+          "name_id": 14,
+          "value": "https://openfontlicense.org"
+        },
+        {
+          "name_id": 256,
+          "value": "Round forms"
+        },
+        {
+          "name_id": 257,
+          "value": "Round E"
+        },
+        {
+          "name_id": 258,
+          "value": "Sans-serif I"
+        },
+        {
+          "name_id": 259,
+          "value": "Sans-serif L"
+        },
+        {
+          "name_id": 260,
+          "value": "Alternate ampersand"
+        },
+        {
+          "name_id": 261,
+          "value": "Small quotes"
+        },
+        {
+          "name_id": 262,
+          "value": "Vertical alternates"
+        },
+        {
+          "name_id": 263,
+          "value": "John Downer's Recommendations"
+        },
+        {
+          "name_id": 264,
+          "value": "Rotated forms"
+        },
+        {
+          "name_id": 265,
+          "value": "Horizontal block spacing"
+        },
+        {
+          "name_id": 266,
+          "value": "Vertical block spacing"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "BungeeOutline-Regular",
+      "font_sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
+        },
+        {
+          "name_id": 1,
+          "value": "Bungee Outline"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.000;djr ;BungeeOutline-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Bungee Outline Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.000"
+        },
+        {
+          "name_id": 6,
+          "value": "BungeeOutline-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Bungee is a trademark of The Font Bureau."
+        },
+        {
+          "name_id": 8,
+          "value": "David Jonathan Ross"
+        },
+        {
+          "name_id": 9,
+          "value": "David Jonathan Ross"
+        },
+        {
+          "name_id": 11,
+          "value": "https://www.djr.com"
+        },
+        {
+          "name_id": 12,
+          "value": "https://www.djr.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+        },
+        {
+          "name_id": 14,
+          "value": "https://openfontlicense.org"
+        },
+        {
+          "name_id": 256,
+          "value": "Round forms"
+        },
+        {
+          "name_id": 257,
+          "value": "Round E"
+        },
+        {
+          "name_id": 258,
+          "value": "Sans-serif I"
+        },
+        {
+          "name_id": 259,
+          "value": "Sans-serif L"
+        },
+        {
+          "name_id": 260,
+          "value": "Alternate ampersand"
+        },
+        {
+          "name_id": 261,
+          "value": "Small quotes"
+        },
+        {
+          "name_id": 262,
+          "value": "Vertical alternates"
+        },
+        {
+          "name_id": 263,
+          "value": "John Downer's Recommendations"
+        },
+        {
+          "name_id": 264,
+          "value": "Rotated forms"
+        },
+        {
+          "name_id": 265,
+          "value": "Horizontal block spacing"
+        },
+        {
+          "name_id": 266,
+          "value": "Vertical block spacing"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "FascinateInline-Regular",
+      "font_sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved\rFont Name \"Fascinate Inline\""
+        },
+        {
+          "name_id": 1,
+          "value": "Fascinate Inline"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "Astigmatic(AOETI): Fascinate Inline: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Fascinate Inline"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "FascinateInline-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Fascinate Inline is a trademark of Astigmatic (AOETI)."
+        },
+        {
+          "name_id": 8,
+          "value": "Astigmatic (AOETI)"
+        },
+        {
+          "name_id": 9,
+          "value": "Astigmatic (AOETI)"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.astigmatic.com/"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.astigmatic.com/"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Fascinate Inline"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RibeyeMarrow-Regular",
+      "font_sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved\rFont Name \"Ribeye Marrow\""
+        },
+        {
+          "name_id": 1,
+          "value": "Ribeye Marrow"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "Astigmatic(AOETI): Ribeye Marrow: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Ribeye Marrow"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "RibeyeMarrow-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Ribeye Marrow is a trademark of Astigmatic (AOETI)."
+        },
+        {
+          "name_id": 8,
+          "value": "Astigmatic (AOETI)"
+        },
+        {
+          "name_id": 9,
+          "value": "Astigmatic (AOETI)"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.astigmatic.com/"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.astigmatic.com/"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Ribeye Marrow"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "VastShadow-Regular",
+      "font_sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 3,
+          "value": "FontForge 2.0 : Vast Shadow Regular : 10-10-2011"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2010 by Sorkin Type Co with Reserved Font Name Vast and Vast Shadow.\r\rThis Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 1,
+          "value": "Vast Shadow"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "FontForge 2.0 : Vast Shadow Regular : 10-10-2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Vast Shadow Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002"
+        },
+        {
+          "name_id": 6,
+          "value": "VastShadow-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Vast is a trademark of Sorkin Type Co."
+        },
+        {
+          "name_id": 8,
+          "value": "Nicole Fally"
+        },
+        {
+          "name_id": 9,
+          "value": "Nicole Fally"
+        },
+        {
+          "name_id": 10,
+          "value": "Vast is a Victorian slab serif advertising type. Vast has a feeling of sturdy solidity combined with just a little bit of refinement. Because Vast Shadow has a thin shadow that won't display well at small sizes we recommend that you use it from 32px and larger."
+        },
+        {
+          "name_id": 11,
+          "value": "sorkintype.com"
+        },
+        {
+          "name_id": 12,
+          "value": "sorkintype.com"
+        },
+        {
+          "name_id": 13,
+          "value": "Copyright (c) 2010 by Sorkin Type Co, with Reserved Font Name Vast and Vast Shadow. \u00caLicenced under the SIL Open Font License, Version 1.1, available with a FAQ at\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Vast Shadow"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikGlitch-Regular",
+      "font_sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Glitch"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikGlitch-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Glitch Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikGlitch-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikGlitchPop-Regular",
+      "font_sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Glitch Pop"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.201;NONE;RubikGlitchPop-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Glitch Pop Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.201"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikGlitchPop-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikDistressed-Regular",
+      "font_sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Distressed"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikDistressed-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Distressed Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikDistressed-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikWetPaint-Regular",
+      "font_sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Wet Paint"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikWetPaint-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Wet Paint Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikWetPaint-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikBeastly-Regular",
+      "font_sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Beastly"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NONE;RubikBeastly-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Beastly Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikBeastly-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikMicrobe-Regular",
+      "font_sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Microbe"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikMicrobe-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Microbe Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikMicrobe-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikMoonrocks-Regular",
+      "font_sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Moonrocks"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikMoonrocks-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Moonrocks Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikMoonrocks-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Rubik80sFade-Regular",
+      "font_sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik 80s Fade"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.201;NaN;Rubik80sFade-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik 80s Fade Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.201"
+        },
+        {
+          "name_id": 6,
+          "value": "Rubik80sFade-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikVinyl-Regular",
+      "font_sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Vinyl"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikVinyl-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Vinyl Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikVinyl-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikBurned-Regular",
+      "font_sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Burned"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikBurned-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Burned Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikBurned-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikPuddles-Regular",
+      "font_sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Puddles"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikPuddles-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Puddles Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikPuddles-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "RubikPixels-Regular",
+      "font_sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)"
+        },
+        {
+          "name_id": 1,
+          "value": "Rubik Pixels"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "2.200;NaN;RubikPixels-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Rubik Pixels Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 2.200"
+        },
+        {
+          "name_id": 6,
+          "value": "RubikPixels-Regular"
+        },
+        {
+          "name_id": 8,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 9,
+          "value": "Hubert and Fischer, NaN"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.google.com/fonts"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.hubertfischer.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "MysteryQuest-Regular",
+      "font_sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2012 by Font Diner, Inc DBA Sideshow (diner@fontdiner.com) with Reseved Font Name \"Mystery Quest\""
+        },
+        {
+          "name_id": 1,
+          "value": "Mystery Quest"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "FontDiner,IncDBASideshow: Mystery Quest: 2012"
+        },
+        {
+          "name_id": 4,
+          "value": "Mystery Quest"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "MysteryQuest"
+        },
+        {
+          "name_id": 7,
+          "value": "Mystery Quest is a trademark of Font Diner, Inc DBA Sideshow."
+        },
+        {
+          "name_id": 8,
+          "value": "Font Diner, Inc DBA Sideshow"
+        },
+        {
+          "name_id": 9,
+          "value": "Squid"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.fontbros.com/sideshow.php"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.squidart.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Mystery Quest"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "FontdinerSwanky-Regular",
+      "font_sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2010 by Font Diner, Inc. All rights reserved."
+        },
+        {
+          "name_id": 1,
+          "value": "Fontdiner Swanky"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.001;DINR;FontdinerSwanky-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Fontdiner Swanky Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "FontdinerSwanky-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Fontdiner Swanky is a trademark of Font Diner, Inc."
+        },
+        {
+          "name_id": 8,
+          "value": "Font Diner, Inc"
+        },
+        {
+          "name_id": 9,
+          "value": "Font Diner, Inc"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.fontdiner.com"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.fontdiner.com"
+        },
+        {
+          "name_id": 13,
+          "value": "Licensed under the Apache License, Version 2.0"
+        },
+        {
+          "name_id": 14,
+          "value": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Frijole-Regular",
+      "font_sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 by Font Diner, Inc DBA Sideshow (diner@fontdiner.com) with Reseved Font Name \"Frijole\""
+        },
+        {
+          "name_id": 1,
+          "value": "Frijole"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "FontDiner,IncDBASideshow: Frijole: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Frijole"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.000"
+        },
+        {
+          "name_id": 6,
+          "value": "Frijole"
+        },
+        {
+          "name_id": 7,
+          "value": "Frijole is a trademark of Font Diner, Inc DBA Sideshow."
+        },
+        {
+          "name_id": 8,
+          "value": "Font Diner, Inc DBA Sideshow"
+        },
+        {
+          "name_id": 9,
+          "value": "Squid"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.fontbros.com/sideshow.php"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.squidart.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Frijole"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Diplomata-Regular",
+      "font_sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.002; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.23]"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2011 The Diplomata Project Authors (https://github.com/etunni/diplomata), with Reserved Font Name \"Diplomata\""
+        },
+        {
+          "name_id": 1,
+          "value": "Diplomata"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.002;TIPO;Diplomata-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Diplomata Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.23]"
+        },
+        {
+          "name_id": 6,
+          "value": "Diplomata-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Diplomata is a trademark of Eduardo Rodriguez Tunni."
+        },
+        {
+          "name_id": 8,
+          "value": "Eduardo Rodriguez Tunni"
+        },
+        {
+          "name_id": 9,
+          "value": "Eduardo Rodriguez Tunni"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.tipo.net.ar"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.tipo.net.ar"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "DiplomataSC-Regular",
+      "font_sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 1.002; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.23]"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2011 The Diplomata Project Authors (https://github.com/etunni/diplomata), with Reserved Font Name \"Diplomata\""
+        },
+        {
+          "name_id": 1,
+          "value": "Diplomata SC"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.002;TIPO;DiplomataSC-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Diplomata SC Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.23]"
+        },
+        {
+          "name_id": 6,
+          "value": "DiplomataSC-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Diplomata is a trademark of Eduardo Rodriguez Tunni."
+        },
+        {
+          "name_id": 8,
+          "value": "Eduardo Rodriguez Tunni"
+        },
+        {
+          "name_id": 9,
+          "value": "Eduardo Rodriguez Tunni"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.tipo.net.ar"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.tipo.net.ar"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "https://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Kranky-Regular",
+      "font_sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2010 by Font Diner, Inc DBA Sideshow. All rights reserved."
+        },
+        {
+          "name_id": 1,
+          "value": "Kranky"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "1.001;DINR;Kranky-Regular"
+        },
+        {
+          "name_id": 4,
+          "value": "Kranky Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "Kranky-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Kranky is a trademark of Font Diner, Inc DBA Sideshow."
+        },
+        {
+          "name_id": 8,
+          "value": "Font Diner, Inc DBA Sideshow"
+        },
+        {
+          "name_id": 9,
+          "value": "Squid"
+        },
+        {
+          "name_id": 11,
+          "value": "http://www.fontbros.com/sideshow.php"
+        },
+        {
+          "name_id": 12,
+          "value": "http://www.squidart.com"
+        },
+        {
+          "name_id": 13,
+          "value": "Licensed under the Apache License, Version 2.0"
+        },
+        {
+          "name_id": 14,
+          "value": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Spirax-Regular",
+      "font_sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011 by Brenda Gallo (gbrenda1987@gmail.com), with Reserved Font Name Spirax."
+        },
+        {
+          "name_id": 1,
+          "value": "Spirax"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "BrendaGallo: Spirax: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Spirax-Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.002"
+        },
+        {
+          "name_id": 6,
+          "value": "Spirax-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Spirax is a trademark of Brenda Gallo (gbrenda1987@gmail.com)."
+        },
+        {
+          "name_id": 8,
+          "value": "Brenda Gallo"
+        },
+        {
+          "name_id": 9,
+          "value": "Brenda Gallo (gbrenda1987@gmail.com)"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "SnowburstOne-Regular",
+      "font_sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2011-2012, Sorkin Type Co (www.sorkintype.com)\rwith Reserved Font Name 'Snowburst'"
+        },
+        {
+          "name_id": 1,
+          "value": "Snowburst One"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "AnnetStirling: Snowburst One: 2012"
+        },
+        {
+          "name_id": 4,
+          "value": "Snowburst One"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "SnowburstOne-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Snowburst is a trademark of Sorkin Type Co."
+        },
+        {
+          "name_id": 8,
+          "value": "Annet Stirling"
+        },
+        {
+          "name_id": 9,
+          "value": "Annet Stirling"
+        },
+        {
+          "name_id": 10,
+          "value": "Snowburst is a low contrast serifed text typeface inspired by one of Annet Stirling's distictive styles of lettering. Snowburst's personality consistently shows in both small and large sizes. Becuase of the thin stokes this font is best used from medium to large sizes."
+        },
+        {
+          "name_id": 11,
+          "value": "www.sorkintype.com"
+        },
+        {
+          "name_id": 12,
+          "value": "www.incisiveletterwork.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Snowburst One"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "face_index": 0,
+      "creator_hinter_markers": [],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright (c) 2010 by Sorkin Type Co with Reserved Font Name Rye.\r\rThis Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 1,
+          "value": "Rye"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "NicoleFally: Rye Regular: 2011"
+        },
+        {
+          "name_id": 4,
+          "value": "Rye Regular"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 1.001"
+        },
+        {
+          "name_id": 6,
+          "value": "Rye-Regular"
+        },
+        {
+          "name_id": 7,
+          "value": "Rye is a trademark of Sorkin Type Co."
+        },
+        {
+          "name_id": 8,
+          "value": "Nicole Fally"
+        },
+        {
+          "name_id": 9,
+          "value": "Nicole Fally"
+        },
+        {
+          "name_id": 10,
+          "value": "Rye's bold attention getting shapes are useful for advertising. Sasparilly is a medium contrast design inspired by posters using wood type. It gives off a feeling of the American West. It is suitable for use in medium to large sizes including headlines. This font was made specifically to be web type."
+        },
+        {
+          "name_id": 11,
+          "value": "sorkintype.com"
+        },
+        {
+          "name_id": 12,
+          "value": "sorkintype.com"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 18,
+          "value": "Rye Regular"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    },
+    {
+      "label": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "face_index": 0,
+      "creator_hinter_markers": [
+        {
+          "name_id": 5,
+          "value": "Version 5.000; ttfautohint (v1.8.3)"
+        }
+      ],
+      "name_records": [
+        {
+          "name_id": 0,
+          "value": "Copyright 2018 The Vollkorn Project Authors (https://github.com/FAlthausen/Vollkorn-Typeface)"
+        },
+        {
+          "name_id": 1,
+          "value": "Vollkorn Medium"
+        },
+        {
+          "name_id": 2,
+          "value": "Regular"
+        },
+        {
+          "name_id": 3,
+          "value": "5.000;NONE;Vollkorn-Medium"
+        },
+        {
+          "name_id": 4,
+          "value": "Vollkorn Medium"
+        },
+        {
+          "name_id": 5,
+          "value": "Version 5.000; ttfautohint (v1.8.3)"
+        },
+        {
+          "name_id": 6,
+          "value": "Vollkorn-Medium"
+        },
+        {
+          "name_id": 8,
+          "value": "Friedrich Althausen"
+        },
+        {
+          "name_id": 9,
+          "value": "Friedrich Althausen"
+        },
+        {
+          "name_id": 11,
+          "value": "http://vollkorn-typeface.com/"
+        },
+        {
+          "name_id": 12,
+          "value": "http://friedrichalthausen.de/"
+        },
+        {
+          "name_id": 13,
+          "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 14,
+          "value": "http://scripts.sil.org/OFL"
+        },
+        {
+          "name_id": 16,
+          "value": "Vollkorn"
+        },
+        {
+          "name_id": 17,
+          "value": "Medium"
+        },
+        {
+          "name_id": 256,
+          "value": "Alternative Letters"
+        },
+        {
+          "name_id": 257,
+          "value": "Polish"
+        },
+        {
+          "name_id": 258,
+          "value": "Dutch"
+        },
+        {
+          "name_id": 259,
+          "value": "Bulgarian"
+        },
+        {
+          "name_id": 260,
+          "value": "Serbian"
+        },
+        {
+          "name_id": 261,
+          "value": "Alternative Figure One"
+        },
+        {
+          "name_id": 262,
+          "value": "Alternative Figure Three"
+        },
+        {
+          "name_id": 263,
+          "value": "Alternative Figure Four"
+        },
+        {
+          "name_id": 264,
+          "value": "Alternative Figure Seven"
+        }
+      ],
+      "TTFA_present": false,
+      "TTFA_bytes": 0,
+      "TTFA_ascii": null,
+      "TTFA_sha256": null
+    }
+  ],
+  "method": "Read unmodified SFNT name records and optional TTFA table. Creator strings are documentary metadata, not proof of runtime cost or interpreter selection."
+}

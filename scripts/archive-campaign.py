@@ -14,7 +14,7 @@ import json
 from pathlib import Path
 import tarfile
 
-PRUNE = {"target", "test-target", "test-targets", "probe-target", "__pycache__", ".git", ".serena"}
+PRUNE = {"target", "targets", "target-native", "target-counted", "test-target", "test-targets", "probe-target", "__pycache__", ".git", ".serena"}
 EXECUTABLE_MAGIC = {
     b"\x7fELF", b"\xcf\xfa\xed\xfe", b"\xfe\xed\xfa\xcf",
     b"\xce\xfa\xed\xfe", b"\xfe\xed\xfa\xce", b"\xca\xfe\xba\xbe",
@@ -27,14 +27,16 @@ def sha(path):
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def inventory(source):
+def inventory(source, excluded_prefixes=()):
     kept, omitted = [], []
     for path in sorted(source.rglob("*")):
         if not path.is_file() and not path.is_symlink():
             continue
         relative = path.relative_to(source)
         reason = None
-        if path.is_symlink():
+        if any(relative==prefix or prefix in relative.parents for prefix in excluded_prefixes):
+            reason = "separately archived nested campaign; original bytes retained there"
+        elif path.is_symlink():
             reason = "symlink; original target is recorded"
         elif any(part in PRUNE for part in relative.parts):
             reason = "compiler or local cache"
@@ -60,6 +62,7 @@ def main():
     parser.add_argument("source", type=Path)
     parser.add_argument("destination", type=Path)
     parser.add_argument("--label", required=True)
+    parser.add_argument("--exclude-prefix", action="append", default=[], help="Nested root retained in its own campaign archive")
     args = parser.parse_args()
     source = args.source.resolve(strict=True)
     destination = args.destination.resolve()
@@ -69,13 +72,18 @@ def main():
         parser.error("destination exists; use a fresh archive directory")
     if not args.label or "/" in args.label or args.label in {".", ".."}:
         parser.error("label must be one safe path component")
-    kept, omitted = inventory(source)
+    for value in args.exclude_prefix:
+        if not value or Path(value).is_absolute() or any(part in ("", ".", "..") for part in value.split("/")):
+            parser.error("--exclude-prefix must be a safe relative directory")
+        if not (source/value).is_dir():parser.error("--exclude-prefix must identify an existing nested campaign directory")
+    excluded_prefixes=tuple(Path(value) for value in args.exclude_prefix)
+    kept, omitted = inventory(source, excluded_prefixes)
     destination.mkdir(parents=True)
     archive = destination / "records.tar.gz"
     manifest = {"schema": 1, "label": args.label, "original_root": str(source),
                 "retention": "All noncompiled files, including incomplete/rejected cohorts; inclusion in the archive does not imply inclusion in a timing analysis",
                 "storage": "Lossless tar hardlinks deduplicate identical file contents; every original path and byte checksum is retained",
-                "files": {}, "omitted": omitted, "complete": False}
+                "files": {}, "omitted": omitted, "excluded_nested_campaign_prefixes": args.exclude_prefix, "complete": False}
     manifest_path = destination / "archive.json"
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
     canonical = {}
@@ -123,7 +131,7 @@ def main():
                 regular.add(relative)
     if observed != manifest["files"]:
         raise RuntimeError("Archive content differs from original files")
-    final_kept, final_omitted = inventory(source)
+    final_kept, final_omitted = inventory(source, excluded_prefixes)
     if final_kept != kept or final_omitted != omitted:
         raise RuntimeError("Source inventory changed while archiving")
     manifest.update(archive={"path": archive.name, "sha256": sha(archive), "bytes": archive.stat().st_size},

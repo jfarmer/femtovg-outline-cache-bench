@@ -1,0 +1,77 @@
+{
+  "variant": "master",
+  "feature": "default_swash",
+  "command": [
+    "cargo",
+    "build",
+    "--offline",
+    "--locked",
+    "--release",
+    "--manifest-path",
+    "/private/tmp/femtovg-review-fixes-scenes/harness/master/Cargo.toml",
+    "--features",
+    "default_swash",
+    "--message-format=json"
+  ],
+  "source_manifest": "/private/tmp/femtovg-review-fixes-scenes/source/master",
+  "femtovg_artifact": {
+    "reason": "compiler-artifact",
+    "package_id": "path+file:///private/tmp/femtovg-review-fixes-scenes/source/master#femtovg@0.27.0",
+    "manifest_path": "/private/tmp/femtovg-review-fixes-scenes/source/master/Cargo.toml",
+    "target": {
+      "kind": [
+        "lib"
+      ],
+      "crate_types": [
+        "lib"
+      ],
+      "name": "femtovg",
+      "src_path": "/private/tmp/femtovg-review-fixes-scenes/source/master/src/lib.rs",
+      "edition": "2021",
+      "doc": true,
+      "doctest": true,
+      "test": true
+    },
+    "profile": {
+      "opt_level": "3",
+      "debuginfo": 0,
+      "debug_assertions": false,
+      "overflow_checks": false,
+      "test": false
+    },
+    "features": [
+      "default",
+      "image",
+      "image-loading",
+      "swash",
+      "textlayout"
+    ],
+    "filenames": [
+      "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-b1ee4e6a6ddd9876.rlib",
+      "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-b1ee4e6a6ddd9876.rmeta"
+    ],
+    "executable": null,
+    "fresh": false
+  },
+  "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-master-default_swash",
+  "binary_sha256": "3a6624a90c4aa420a08b0fb37f84196cf6f94407da76f443589d331aa6e32058",
+  "lock_sha256": "6ce5a4eb546ef4d90f93379a007e8b75402bc9d8db498e2d77f34d806e85e39d",
+  "dependency_graph_sha256": "f071c3210bccff0ddf1c166f9671f31f91f96921fd6dab7c3382abdae2904394",
+  "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+  "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)\n",
+  "profile": {
+    "opt_level": 3,
+    "debug": false,
+    "lto": false,
+    "codegen_units": 16,
+    "incremental": false,
+    "panic": "unwind"
+  },
+  "build_environment": {
+    "RUSTFLAGS": null,
+    "CARGO_ENCODED_RUSTFLAGS": null,
+    "CARGO_BUILD_TARGET": null,
+    "CARGO_INCREMENTAL": "0",
+    "CARGO_TARGET_DIR": "/private/tmp/femtovg-review-fixes-perf/target"
+  }
+}

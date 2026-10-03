@@ -104,7 +104,7 @@ class ArchiveStore:
             cache=None
             if destination is not None:
                 cache=Path(lifetime.enter_context(tempfile.TemporaryDirectory(prefix='.content-',dir=destination.parent)))
-            stream=lifetime.enter_context(tarfile.open(archive, 'r|gz'))
+            stream=lifetime.enter_context(tarfile.open(archive, 'r|*'))
             for member in stream:
                 prefix=label+'/'
                 if not member.name.startswith(prefix) or not (member.isfile() or member.islnk()):raise ValueError(f'Unexpected tar member: {member.name}')

@@ -1,0 +1,199 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-03T05:51:26.483326+00:00",
+  "reviewer_source": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/review_final_reports_v1.py",
+    "bytes": 8196,
+    "sha256": "648d8a081362ab5db3ae2f5ead90b452a05443d7ef9548658e97fdd565df6331"
+  },
+  "reports": [
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/AGGRESSIVE-FONT-SEARCH.md",
+      "bytes": 12119,
+      "sha256": "f9d8416ea4352027f39477d2897cfad027a19e3468efbe26485b56102ddb04ae"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/SUMMARY-AGGRESSIVE-FONT-SEARCH.md",
+      "bytes": 2144,
+      "sha256": "3b6cc1363b91c1670039a5237f38881ea748be5d0b9819c618d312b3efc4529c"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/write_final_report.py",
+      "bytes": 15348,
+      "sha256": "2b84b7cce928c284025b8b1b0e888318d9e2863d2b87ac2c38eab1efbc0c58e6"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/absolute-results.json",
+      "bytes": 12544,
+      "sha256": "857fffd9216621755e109d2c277cbfa0a3be76dd3ece63cf8d974865b5e7fb25"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/summary.json",
+      "bytes": 87247,
+      "sha256": "3aa9382257ea800ecb7844f646afd6ad39a5943f6bb30d79eb148537975f2d38"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/summary.csv",
+      "bytes": 24067,
+      "sha256": "c2d14b0881bbc96fa72f35b71d7bda7442f7c84c830a0a8912e02c691535145e"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/independent-audit.json",
+      "bytes": 1043,
+      "sha256": "3fe07f89390b54a718be86c0199d1312f2695e08a1852c44f10fcf2345288012"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/raw-audit.json",
+      "bytes": 261044,
+      "sha256": "e91424f1738d09e5afc1bf73b4e02b33e35574ab9201707a0b87583bb80c7262"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-selection-v1/selection.json",
+      "bytes": 188839,
+      "sha256": "aa4b39d0f155595b8bb6bbe7378b2b4de4e5d7a9f695cfeaab3b3f4018f0e4aa"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-selection-v1/protocol.json",
+      "bytes": 5698,
+      "sha256": "0de89b2187e003a49c8b54f7c906413f6b377994d7a9c666cd55d30c5029ba05"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-pixels-v1/pixels-provenance.json",
+      "bytes": 235907,
+      "sha256": "d62fd7db2ef51dc16d734032c266b5dbae784e3b4e5d421f92f7685544f4e4e9"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-report.json",
+      "bytes": 117690,
+      "sha256": "4ca1f12fd951be87a6fcd4e87423214f61d9baf716713660cd3471f29199dd00"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-report.md",
+      "bytes": 4397,
+      "sha256": "164c968803a6d9d9a3ba9d4574a85d4f8ed274d5563e57147f922c4d71416dd9"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-input-bindings.json",
+      "bytes": 22279,
+      "sha256": "55ed526552c3d06a02004807454059b18224ad81356595094a22e98fd241ca31"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/selected-mechanism-hit-weighted-first-paint.csv",
+      "bytes": 1052,
+      "sha256": "e1c231ff2cc9ecbbc0047011e8d233a6d12803c030b7dc62cae02396825f15c2"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/counts-analysis.json",
+      "bytes": 329767,
+      "sha256": "e78412e56006183ce7586dccf06eb5e726ce194dea0cf6b83f433193113f412e"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/independent-count-audit.json",
+      "bytes": 5999,
+      "sha256": "6c5b30b438594e79c15eef2b6527430d17313cb23b58b5cc0431655ce63294ea"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analysis/count-overview.csv",
+      "bytes": 3800,
+      "sha256": "d596443a9f6b13806d5b58a70f82fc447746a2ad09f5f038d00a4facf5adc360"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analysis/combined-six-font-counts.json",
+      "bytes": 146090,
+      "sha256": "2718713c8c8a44592fd038be0f544f5f0291636915d952800da22f77f0b485a9"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/native-prescreen-ranking.json",
+      "bytes": 30099,
+      "sha256": "0a07bdae7a136295be7b9e654b2bc961c7d445f023dcbd22a7f19eef48621db4"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/native-prescreen-ranking.json",
+      "bytes": 81766,
+      "sha256": "6848dffd90672cd442b37a9f67c55c8dc6c77c2e8494f6b0565d443187064e0b"
+    },
+    {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/native-prescreen-ranking.json",
+      "bytes": 27099,
+      "sha256": "9e3ca70a5b3248fb49281050a38fd50b819e8ce3020402bb55d24a6224dae0f1"
+    }
+  ],
+  "checked_primary_rows": [
+    {
+      "font": "WaterBrush-Regular",
+      "first_paint_table_matches": true,
+      "sequence_table_matches": true,
+      "warm_pan_intervals_include_zero": true
+    },
+    {
+      "font": "DiplomataSC-Regular",
+      "first_paint_table_matches": true,
+      "sequence_table_matches": true,
+      "warm_pan_intervals_include_zero": true
+    },
+    {
+      "font": "FleurDeLeah-Regular",
+      "first_paint_table_matches": true,
+      "sequence_table_matches": true,
+      "warm_pan_intervals_include_zero": true
+    },
+    {
+      "font": "Rye-Regular",
+      "first_paint_table_matches": true,
+      "sequence_table_matches": true,
+      "warm_pan_intervals_include_zero": true
+    },
+    {
+      "font": "Vollkorn-Medium",
+      "first_paint_table_matches": true,
+      "sequence_table_matches": true,
+      "warm_pan_intervals_include_zero": true
+    }
+  ],
+  "pixel_captures_with_equal_recorded_hashes": 75,
+  "scope": "Prose/source-scope review and transcription checks against completed independent analyses. Existing live raw/source/font/binary/RGBA guards and bootstrap audits are bound, not rerun.",
+  "manual_source_review": [
+    {
+      "finding": "Native screen validates freshly hinted geometry against retained hinted geometry, plus bounds and alpha bytes at ten phases; unhinted outlines are a separate timed control.",
+      "source": {
+        "path": "/private/tmp/femtovg-font-stress-search-20261002/src/main.rs",
+        "bytes": 11930,
+        "sha256": "15e1e8df6cd603e9e4d3c5d879e86af3e21f82278fac7576f2227049bcd61c84"
+      },
+      "lines": "146-200"
+    },
+    {
+      "finding": "CPU replay is headless; common GPU helper also requests no compatible surface and renders to offscreen textures.",
+      "source": {
+        "path": "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/master/tests/common/mod.rs",
+        "bytes": 7372,
+        "sha256": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74"
+      }
+    },
+    {
+      "finding": "First-paint 268/156/112/39-style request counts refer to the regular font role; fixed fonts are recorded separately.",
+      "source": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/counts-analysis.json",
+        "bytes": 329767,
+        "sha256": "e78412e56006183ce7586dccf06eb5e726ce194dea0cf6b83f433193113f412e"
+      }
+    },
+    {
+      "finding": "The partial production/VM join checks mapped miss point/verb counts; full native/count geometry and duplicate glyph digests are separate checks.",
+      "source": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/report_selected_mechanism.py",
+        "bytes": 21794,
+        "sha256": "ea9562a57303729b1725ed1988afcc0c81dca91c921e0b89a670dd9732aed4bd"
+      }
+    }
+  ],
+  "limits": [
+    "Selection-conditional, unadjusted intervals on one machine/workload.",
+    "Warm/pan zero-inclusive intervals do not establish equivalence or zero overhead.",
+    "Glyph dispatches exclude preparation/rasterization and are not CPU cycles or attributed elapsed savings.",
+    "No new rendering, timing, or production source changes occurred in this review."
+  ],
+  "result": "Report data and methodological scope match bound completed evidence after the noted prose corrections."
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "font": "FleurDeLeah",
+    "variant": "master",
+    "command": [
+      "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-master",
+      "/private/tmp/femtovg-current-demo-extremes-20261003/assets/FleurDeLeah-Regular.ttf",
+      "proofsheet",
+      "2",
+      "1"
+    ],
+    "returncode": 0,
+    "stdout": "scene,phase,trial,frames,draw_us,flush_us,total_us,glyph_requests_per_frame,distinct_glyph_size_instances_per_frame,text_draw_calls_per_frame,logical_width,logical_height,nominal_characters_per_row\nproofsheet,first_paint,0,1,67199.250000,1.542000,67200.792000,1980,198,30,1800,1200,66\nproofsheet,warm,0,30,157.794433,0.176367,157.970800,1980,198,30,1800,1200,66\nproofsheet,new_size,0,12,53127.843833,1.420167,53129.264000,1980,198,30,1800,1200,66\nproofsheet,return,0,1,212.917000,0.333000,213.250000,1980,198,30,1800,1200,66\n",
+    "stderr": "",
+    "purpose": "API/count smoke only; excluded from timed cohort"
+  },
+  {
+    "font": "FleurDeLeah",
+    "variant": "final",
+    "command": [
+      "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-final",
+      "/private/tmp/femtovg-current-demo-extremes-20261003/assets/FleurDeLeah-Regular.ttf",
+      "proofsheet",
+      "2",
+      "1"
+    ],
+    "returncode": 0,
+    "stdout": "scene,phase,trial,frames,draw_us,flush_us,total_us,glyph_requests_per_frame,distinct_glyph_size_instances_per_frame,text_draw_calls_per_frame,logical_width,logical_height,nominal_characters_per_row\nproofsheet,first_paint,0,1,21683.541000,1.959000,21685.500000,1980,198,30,1800,1200,66\nproofsheet,warm,0,30,178.552767,0.190367,178.743133,1980,198,30,1800,1200,66\nproofsheet,new_size,0,12,16490.034750,1.149250,16491.184000,1980,198,30,1800,1200,66\nproofsheet,return,0,1,194.333000,0.250000,194.583000,1980,198,30,1800,1200,66\n",
+    "stderr": "",
+    "purpose": "API/count smoke only; excluded from timed cohort"
+  },
+  {
+    "font": "RobotoFlex",
+    "variant": "master",
+    "command": [
+      "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-master",
+      "/private/tmp/femtovg-current-demo-20261003/assets/RobotoFlex-VariableFont.ttf",
+      "proofsheet",
+      "2",
+      "1"
+    ],
+    "returncode": 0,
+    "stdout": "scene,phase,trial,frames,draw_us,flush_us,total_us,glyph_requests_per_frame,distinct_glyph_size_instances_per_frame,text_draw_calls_per_frame,logical_width,logical_height,nominal_characters_per_row\nproofsheet,first_paint,0,1,3035.458000,1.417000,3036.875000,1980,198,30,1800,1200,66\nproofsheet,warm,0,30,154.707000,0.162533,154.869533,1980,198,30,1800,1200,66\nproofsheet,new_size,0,12,2975.604250,0.451417,2976.055667,1980,198,30,1800,1200,66\nproofsheet,return,0,1,179.666000,0.250000,179.916000,1980,198,30,1800,1200,66\n",
+    "stderr": "",
+    "purpose": "API/count smoke only; excluded from timed cohort"
+  },
+  {
+    "font": "RobotoFlex",
+    "variant": "final",
+    "command": [
+      "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-final",
+      "/private/tmp/femtovg-current-demo-20261003/assets/RobotoFlex-VariableFont.ttf",
+      "proofsheet",
+      "2",
+      "1"
+    ],
+    "returncode": 0,
+    "stdout": "scene,phase,trial,frames,draw_us,flush_us,total_us,glyph_requests_per_frame,distinct_glyph_size_instances_per_frame,text_draw_calls_per_frame,logical_width,logical_height,nominal_characters_per_row\nproofsheet,first_paint,0,1,2587.500000,1.667000,2589.167000,1980,198,30,1800,1200,66\nproofsheet,warm,0,30,150.044467,0.165267,150.209733,1980,198,30,1800,1200,66\nproofsheet,new_size,0,12,2384.670167,0.364583,2385.034750,1980,198,30,1800,1200,66\nproofsheet,return,0,1,167.666000,0.209000,167.875000,1980,198,30,1800,1200,66\n",
+    "stderr": "",
+    "purpose": "API/count smoke only; excluded from timed cohort"
+  },
+  {
+    "font": "Rye",
+    "variant": "master",
+    "command": [
+      "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-master",
+      "/private/tmp/femtovg-current-demo-20261003/assets/Rye-Regular.ttf",
+      "proofsheet",
+      "2",
+      "1"
+    ],
+    "returncode": 0,
+    "stdout": "scene,phase,trial,frames,draw_us,flush_us,total_us,glyph_requests_per_frame,distinct_glyph_size_instances_per_frame,text_draw_calls_per_frame,logical_width,logical_height,nominal_characters_per_row\nproofsheet,first_paint,0,1,31044.417000,1.333000,31045.750000,1980,198,30,1800,1200,66\nproofsheet,warm,0,30,144.841733,0.181900,145.023633,1980,198,30,1800,1200,66\nproofsheet,new_size,0,12,31138.940833,0.965333,31139.906167,1980,198,30,1800,1200,66\nproofsheet,return,0,1,198.417000,0.333000,198.750000,1980,198,30,1800,1200,66\n",
+    "stderr": "",
+    "purpose": "API/count smoke only; excluded from timed cohort"
+  },
+  {
+    "font": "Rye",
+    "variant": "final",
+    "command": [
+      "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-final",
+      "/private/tmp/femtovg-current-demo-20261003/assets/Rye-Regular.ttf",
+      "proofsheet",
+      "2",
+      "1"
+    ],
+    "returncode": 0,
+    "stdout": "scene,phase,trial,frames,draw_us,flush_us,total_us,glyph_requests_per_frame,distinct_glyph_size_instances_per_frame,text_draw_calls_per_frame,logical_width,logical_height,nominal_characters_per_row\nproofsheet,first_paint,0,1,9629.792000,1.625000,9631.417000,1980,198,30,1800,1200,66\nproofsheet,warm,0,30,135.718067,0.168100,135.886167,1980,198,30,1800,1200,66\nproofsheet,new_size,0,12,9632.670083,0.458333,9633.128417,1980,198,30,1800,1200,66\nproofsheet,return,0,1,181.042000,0.250000,181.292000,1980,198,30,1800,1200,66\n",
+    "stderr": "",
+    "purpose": "API/count smoke only; excluded from timed cohort"
+  }
+]

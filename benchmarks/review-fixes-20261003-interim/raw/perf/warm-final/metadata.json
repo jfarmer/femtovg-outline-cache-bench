@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-10-03T11:58:50.809795+00:00",
+  "suite": "warm",
+  "blocks": 12,
+  "frames": 3000,
+  "cold_samples_per_process": 7,
+  "variants": [
+    "master",
+    "base",
+    "final",
+    "ordinary-inline"
+  ],
+  "binaries": {
+    "master-swash_only": "c737bd5acccc7bd57064cf5db1cca0edaa0db4ec78085ddad83a599e62666a5e",
+    "base-swash_only": "c0efd3cb21c9cb04f3564aec13107840950cbed52a5d787a29c08a8424862a5c",
+    "final-swash_only": "252a0c3c1188182dd1dbc8ae512a3515b261478a13c6c64b3f05d526dc12d3fc",
+    "ordinary-inline-swash_only": "862c37088c2f4856c4823e88af964924a2b095b5752ee667c94b77259627f4f5",
+    "master-default_swash": "d105124d5619e040e1eec3f57f62dfcd173551c5e54d095a8db9d3e5ef36fbf3",
+    "base-default_swash": "1cad19329d76f0b7234b6bac686b7bbc030091139a50bcde8fbb1a93c1cc6d8d",
+    "final-default_swash": "6cabb03c8d39d7a477d4acbbb4251d63149126e9a0d003ef6398b65fe3ce2789",
+    "ordinary-inline-default_swash": "d0096ca86b0cbfd00f1b294a0c9c04565c310021ab1f51368ace080faf238057"
+  },
+  "fonts": {
+    "Arial": {
+      "path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+    },
+    "RobotoFlex": {
+      "path": "/private/tmp/femtovg-review-fixes-perf/source/base/examples/assets/RobotoFlex-VariableFont.ttf",
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+    }
+  },
+  "harness_files": {
+    "controlled.rs": "98ba91a9eee74b615ca537cbc007e85f0887e4f2a1e278784fd60dc67fbb64dd",
+    "generic.rs": "c357059043eea162f268f6ebc1a163040ee14b69cbcef4a28c5ecc97f8591195",
+    "main.rs": "db7bffca787fa3403761205b46fd00052243fbe569ec53ebe4ee437d11f4faee",
+    "cold.rs": "4ffc93c39cb6e38f4df82d580f957960ec84f392786399f5ba7d16842c42a9e1"
+  },
+  "order": "Configuration order rotates per block; variant order rotates and reverses on odd blocks.",
+  "metrics": "CPU public glyph draw+Void flush; warm has 20 initial frames excluded, cold uses a new Canvas/atlas/context per sample; all layout, registration and control construction outside timing. Complete controlled sequences include population and pollution. No GPU/layout timing.",
+  "platform": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n"
+}

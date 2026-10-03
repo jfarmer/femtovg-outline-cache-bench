@@ -1,0 +1,221 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/babelstone/BabelStoneHan-16.0.3.zip",
+      "relative": "fonts/babelstone/BabelStoneHan-16.0.3.zip",
+      "sha256": "6a928e436ee52d1857c32b5e4d5e71f4f0a9d13ccf660fc4f1ff08df930e12dc",
+      "bytes": 20565576
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/babelstone/LICENSE",
+      "relative": "fonts/babelstone/LICENSE",
+      "sha256": "ba74a961aaa5fa7e73dc67276df2781ba405da2cb30c52c9d9eee9c200d4d11e",
+      "bytes": 6959
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/babelstone/release/BabelStoneHan.ttf",
+      "relative": "fonts/babelstone/release/BabelStoneHan.ttf",
+      "sha256": "d8bb747b3fdccd84a60bd0aa56bb90937270d0bd15f1101cd8f2a5a3709dd0a3",
+      "bytes": 51971284
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/d2coding/D2Coding-Regular.ttf",
+      "relative": "fonts/d2coding/D2Coding-Regular.ttf",
+      "sha256": "c064f343b5cfc131f083377ba606b748f9b61a5bbd89708e4010b9066dff5a24",
+      "bytes": 4185500
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/d2coding/OFL.txt",
+      "relative": "fonts/d2coding/OFL.txt",
+      "sha256": "1807e8dec4d65f474cbf9be39f5e2254ecb81702babc320749e272ea66ffcc69",
+      "bytes": 4511
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/droid/DroidSansFallback.ttf",
+      "relative": "fonts/droid/DroidSansFallback.ttf",
+      "sha256": "21b96a0377f067833a93af3082eb28d4ffab7a8cd46bfd513286f1d64b7b0949",
+      "bytes": 3451900
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/droid/DroidSansFallbackFull.ttf",
+      "relative": "fonts/droid/DroidSansFallbackFull.ttf",
+      "sha256": "2392015530438bafc48edfc4aee6d9de2387f627a6134d8ab3dfcc99d21c8240",
+      "bytes": 4033576
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/droid/MODULE_LICENSE_APACHE2",
+      "relative": "fonts/droid/MODULE_LICENSE_APACHE2",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/droid/NOTICE",
+      "relative": "fonts/droid/NOTICE",
+      "sha256": "38751245389e1e23f73e6f5384b5cbe7fa972cc4410c5adc9c04b082a0b9561a",
+      "bytes": 10695
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothic/METADATA.pb",
+      "relative": "fonts/nanumgothic/METADATA.pb",
+      "sha256": "3f58e10d125ed43d363f1730b14a29a740f61c39dfa8dc1cb7be532b0072b2e2",
+      "bytes": 1195
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothic/NanumGothic-ExtraBold.ttf",
+      "relative": "fonts/nanumgothic/NanumGothic-ExtraBold.ttf",
+      "sha256": "5c4568e5295a8c52bc30e7efa1ea6d2de43556268ef42daba93540a1ece691ae",
+      "bytes": 2112720
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothic/NanumGothic-Regular.ttf",
+      "relative": "fonts/nanumgothic/NanumGothic-Regular.ttf",
+      "sha256": "76f45ef4a6bcff344c837c95a7dcc26e017e38b5846d5ae0cdcb5b86be2e2d31",
+      "bytes": 2054744
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothic/OFL.txt",
+      "relative": "fonts/nanumgothic/OFL.txt",
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f",
+      "bytes": 4534
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothic/upstream_info.md",
+      "relative": "fonts/nanumgothic/upstream_info.md",
+      "sha256": "b363eaa29f2b85f1b1d00611067f6695d95ff41645e5f0929e3ff6373b40f449",
+      "bytes": 1714
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothiccoding/METADATA.pb",
+      "relative": "fonts/nanumgothiccoding/METADATA.pb",
+      "sha256": "b8e8b14cc0f6034e473498a752c689f8dd1396522fe80d5d7073236a4c1319ea",
+      "bytes": 986
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothiccoding/NanumGothicCoding-Regular.ttf",
+      "relative": "fonts/nanumgothiccoding/NanumGothicCoding-Regular.ttf",
+      "sha256": "787effd7efed2abca88ade231faa8191f4e9fcf85b1805a13ee1dc3724b72089",
+      "bytes": 2315924
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothiccoding/OFL.txt",
+      "relative": "fonts/nanumgothiccoding/OFL.txt",
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f",
+      "bytes": 4534
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothiccoding/upstream_info.md",
+      "relative": "fonts/nanumgothiccoding/upstream_info.md",
+      "sha256": "9db87cfc27d1c80b7d0526dfb1c77fc55a7e4c9197914d2f69a786a37080dc99",
+      "bytes": 550
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/METADATA.pb",
+      "relative": "fonts/nanummyeongjo/METADATA.pb",
+      "sha256": "9b5fb78ccdc8097d94ab915a5feba1fd3436520ab620aefe73eea10e29da709f",
+      "bytes": 1159
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/NanumMyeongjo-Bold.ttf",
+      "relative": "fonts/nanummyeongjo/NanumMyeongjo-Bold.ttf",
+      "sha256": "bc9ed8e60d93fe6db054b8fb988481b625f2eef8cb2317ad0e9834681b8fe3f3",
+      "bytes": 3074720
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/NanumMyeongjo-ExtraBold.ttf",
+      "relative": "fonts/nanummyeongjo/NanumMyeongjo-ExtraBold.ttf",
+      "sha256": "60c0077fce069ba90ae97c0a3679f6eb3712e0ca637bdd0c15b72d335ec46db7",
+      "bytes": 3180888
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/NanumMyeongjo-Regular.ttf",
+      "relative": "fonts/nanummyeongjo/NanumMyeongjo-Regular.ttf",
+      "sha256": "7ed9e8653a8ed04285d51dc343ffea6eb3d9c73afc27383ea8929ee4ffd03205",
+      "bytes": 3058408
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/OFL.txt",
+      "relative": "fonts/nanummyeongjo/OFL.txt",
+      "sha256": "8eb1c1019fe7fe6d0b6e7d7bbbba1d9cbdd969d8c5f26455708f6cfb8a77284c",
+      "bytes": 4497
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/upstream_info.md",
+      "relative": "fonts/nanummyeongjo/upstream_info.md",
+      "sha256": "15492e61be5d88a0331358bd46e09f44fd97520e1f974930ca8f9af53eb60927",
+      "bytes": 1792
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notosanssc/METADATA.pb",
+      "relative": "fonts/notosanssc/METADATA.pb",
+      "sha256": "c6c4bdb785793b2de1da177caeeffcd0c90d7680bdab2de8f88ab45007bc59bc",
+      "bytes": 1296
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notosanssc/NotoSansSC[wght].ttf",
+      "relative": "fonts/notosanssc/NotoSansSC[wght].ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "bytes": 17772300
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notosanssc/OFL.txt",
+      "relative": "fonts/notosanssc/OFL.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notosanssc/upstream_info.md",
+      "relative": "fonts/notosanssc/upstream_info.md",
+      "sha256": "9a10facde2dc3ded9d6314b4a595c0a7f3e421fc2f3840104d2d67f4d542b918",
+      "bytes": 2694
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notoserifsc/METADATA.pb",
+      "relative": "fonts/notoserifsc/METADATA.pb",
+      "sha256": "e0c253c6f850fc3ef6e7fc398361133dd55acc408c931822a3f69cfac08554c2",
+      "bytes": 1373
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notoserifsc/NotoSerifSC[wght].ttf",
+      "relative": "fonts/notoserifsc/NotoSerifSC[wght].ttf",
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "bytes": 25125512
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notoserifsc/OFL.txt",
+      "relative": "fonts/notoserifsc/OFL.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "bytes": 4350
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notoserifsc/upstream_info.md",
+      "relative": "fonts/notoserifsc/upstream_info.md",
+      "sha256": "260316c1df651c64c687caa0c474e91d25ffaa56f870de8a7707b3dbca03b98b",
+      "bytes": 1043
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/wqy-microhei/LICENSE_Apache2.txt",
+      "relative": "fonts/wqy-microhei/LICENSE_Apache2.txt",
+      "sha256": "1c19d8eb506a0e9d501d882fc9fe94eca99bc7b2f69f5e64fa79b7ec48cee54d",
+      "bytes": 10319
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/wqy-microhei/LICENSE_GPLv3.txt",
+      "relative": "fonts/wqy-microhei/LICENSE_GPLv3.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/wqy-microhei/README.txt",
+      "relative": "fonts/wqy-microhei/README.txt",
+      "sha256": "9b1f9a3d90f88041387700498296fc89d6d600d0ebc9b6258c119dd192eaf6b9",
+      "bytes": 20027
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/wqy-microhei/wqy-microhei.ttc",
+      "relative": "fonts/wqy-microhei/wqy-microhei.ttc",
+      "sha256": "e4bca8df123ce01b104780f576ea1a58b9a5ff1662a91124b6d3180cb6c88212",
+      "bytes": 5177387
+    }
+  ]
+}

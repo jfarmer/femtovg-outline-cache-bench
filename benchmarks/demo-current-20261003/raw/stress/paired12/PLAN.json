@@ -1,0 +1,920 @@
+{
+  "declared_utc": "2026-10-03T15:55:34.110262+00:00",
+  "blocks": 12,
+  "fonts": [
+    "FleurDeLeah",
+    "RobotoFlex",
+    "Rye"
+  ],
+  "dpi": 2.0,
+  "font_assets": {
+    "FleurDeLeah": {
+      "path": "/private/tmp/femtovg-current-demo-extremes-20261003/assets/FleurDeLeah-Regular.ttf",
+      "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d"
+    },
+    "RobotoFlex": {
+      "path": "/private/tmp/femtovg-current-demo-20261003/assets/RobotoFlex-VariableFont.ttf",
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+    },
+    "Rye": {
+      "path": "/private/tmp/femtovg-current-demo-20261003/assets/Rye-Regular.ttf",
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba"
+    }
+  },
+  "font_license_and_acquisition_records": {
+    "FleurDeLeah": [
+      {
+        "path": "/private/tmp/femtovg-current-demo-extremes-20261003/assets/LICENSE-FleurDeLeah",
+        "sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8"
+      },
+      {
+        "path": "/private/tmp/femtovg-current-demo-extremes-20261003/provenance/Fleur-acquisition-record.json",
+        "sha256": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f"
+      }
+    ],
+    "RobotoFlex": [
+      {
+        "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "/private/tmp/femtovg-current-demo-20261003/provenance/copied-control-assets.json",
+        "sha256": "b43819604fc067c71fc51074ffb672a4f517224d2f63d90c13175dacf7f04b43"
+      }
+    ],
+    "Rye": [
+      {
+        "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Rye",
+        "sha256": "399b33eb38cdfc76b8665defa5f81d52e8193d630ad5858c893db6bc20031bc9"
+      },
+      {
+        "path": "/private/tmp/femtovg-current-demo-20261003/provenance/Rye-acquisition-record.json",
+        "sha256": "5f5503c5f016fd6343b6a328afae3e4c9be2e4928d45c05e2112860e8d598e38"
+      }
+    ]
+  },
+  "builds": {
+    "master": {
+      "variant": "master",
+      "feature": "default_swash",
+      "command": [
+        "cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--release",
+        "--manifest-path",
+        "/private/tmp/femtovg-hinting-stress-scene-20261003/harness/master/Cargo.toml",
+        "--features",
+        "default_swash",
+        "--message-format=json"
+      ],
+      "source": {
+        "source_root": "/private/tmp/femtovg-review-fixes-scenes/source/master",
+        "registered_source_record": "/private/tmp/femtovg-review-fixes-scenes/source-master.json",
+        "registered_source_record_sha256": "b2813d6a4e65be50cc96472384e409157e945dc51718dda6939e778dfcafdfff",
+        "all_source_files": {
+          "Cargo.toml": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+          "LICENSE-APACHE": "a88a993a1c7aaeb5f0d0c0aa5d206c8735eeffb153a922826d14ec92752316ee",
+          "rustfmt.toml": "f367a18c7ef1f48267c9f9c2e0c239b10533a6e59dca3c60db18ab39c99514ff",
+          "CHANGELOG.md": "f1811362ca1c49685a6ca12c70e5a7e7055a7ff308aafe394368782db6a6e986",
+          "build.rs": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+          "README.md": "3e4421aaeabb44453fd302a0eaee7e5c6518f5ac79a10b72a5498869665d624b",
+          ".gitignore": "89cfd3589317368117fc00c558940e9f11674699f0768c66d6bfda9191dca515",
+          "LICENSE-MIT": "cd4eb10b20da1d85916624e0e15a8e76b0a66406996a4f9aa5afee909fecfb7e",
+          "tests/blit_scissor_wgpu.rs": "6bda98a9eeab99db6b4438aaf12dd42250dbc3e3a6019df9e1bc665550453544",
+          "tests/path_clip_wgpu.rs": "4f17a64a0b4548bed8e6ab7d385b9e72ef50b00a0020e6567361db069d020d1f",
+          "tests/shadow_wgpu.rs": "313b3185a66848b141e64458cad32253d946c54f76b121b339dca307199d3e6a",
+          "tests/text_scale_position_wgpu.rs": "6a72d5b37dea340882fbe6b43ca7b640939ee6f74456f9ea97a336c412523cbb",
+          "tests/image_update_bounds_wgpu.rs": "3fc071a814cbf5fba7b1614d1188f26d29c253c17dbf901b30bba46aff37d45a",
+          "tests/layer_effects_wgpu.rs": "9ffab31ad0a35c52a07bac2ad918c383e991b999794b770f884cea4dc1a9038b",
+          "tests/blend_filter_wgpu.rs": "daf88145c2a7e42706ad0300a33853348621066ea09d0aafbe1e27749e1cb969",
+          "tests/zoom_invariance_wgpu.rs": "fb16f5daf9de78ed6d6e1579b0abb3ea5aa8900a417ccf4ab473a981e48840bc",
+          "tests/uniform_slots_wgpu.rs": "036ab088ddac14d5e8c37602b9a38b6ac3ade250d7ac6eb1c95d104f4365dba0",
+          "tests/color_transfer_wgpu.rs": "c1fbf922cc651ef77a53fbaf814cfd09f34dbe1220e15a7863f1954aee90d4eb",
+          "tests/rounded_rect_radii.rs": "9dae9f726396bf95d801e9b20f2b312a7e0558eb0136ec0b50dcc567869f2a77",
+          "tests/clip_abuse_wgpu.rs": "93d2591192b797eb14b9d1fb0b2dc9f41acc8ba84d4a526157d60b35d1520487",
+          "tests/gradient_stop_interpolation_wgpu.rs": "f571e0198fd491a73ae0cd5b0c607a329ada3ad760f7854347913f343738b712",
+          "tests/conic_scissor_wgpu.rs": "a878861a53f749d16f9aca5e8682c93cd60b57318922562b907cf68b5cfb41bd",
+          "tests/hairline_stroke_wgpu.rs": "0a2b58c3f579ac36455733cdc142642f9903e5d02e050e71a49e4607611c83a5",
+          "tests/mix_blend_wgpu.rs": "c2e5132ae1678e97c6262ec24b5a47909670c9e2213fe3d1ed4a6a7c7f42daaf",
+          "tests/fill_winding_wgpu.rs": "731b394753aada7f7596f514fc640fafe5955d1f4e8b146b37ca41530f1b2541",
+          "tests/gradient_dither_wgpu.rs": "99f0fbf0f907c92d27bde35bb483c62c65dff59d78db803819b0c7e14e0549e6",
+          "tests/pipeline_key_wgpu.rs": "a10ad4ac36342e067ff5dc72e4edc69dbe78e1da65ff31aff4c5357a0eca4a29",
+          "tests/image_update_contract.rs": "85f9320ffe599f2f37729172d0ee1655621d7b413f97b61f41ca32f26d68d207",
+          "tests/transform2D.rs": "e1aafb52ee16402731cb372d2c441d9f294bbabb0a8c53cb2633a925a7d2c16c",
+          "tests/image_blit_wgpu.rs": "d10ea25ba9240da6d2cab1f0bea3d3407c68652ee8105c48068307a465ed9587",
+          "tests/filter_chain_wgpu.rs": "c17464bf8ac37b892b751afd354bc888fd44df85ff60074a004486eb1bb19a6d",
+          "tests/blur_quadrature_wgpu.rs": "22d5a302ccace86f0cdc2545d1edf652ab57fdbe771d5c1a2a8d8d24de6024b7",
+          "tests/gradient_stress_wgpu.rs": "4112feb232ca6f876fedb5fde2e5dea2f7d97228033e81116d2cc5ae1de9baa0",
+          "tests/shadow_pressure_wgpu.rs": "43bd59a7bee18ebc9c3af44e3b541e458956adde64d706c900adb441c60bf292",
+          "tests/zero_area_fill_wgpu.rs": "c9abd2f173f55d151f9c8de375c3e928d93f008d646395b275a374fb0c3fdbda",
+          "tests/layer_masks_review_wgpu.rs": "5336fe330221c3fc7b19c00a8b3976c571052a1a05a2c09a38c220540609d90c",
+          "tests/gradient_tail_pad_wgpu.rs": "4f709dbb883380a38f0de6520223fb1d976d83c766ada184038fd82ecd0444e5",
+          "tests/wpt_clip_wgpu.rs": "0284301923b5afae35bf522142c6fd4ffd0510046830c758bb1a986df96c9de2",
+          "tests/gradient_paint_conformance_wgpu.rs": "7114a8307039246c15d866edacb45ddefb56be9d352bc1e8ce3de8fcc6e57034",
+          "tests/evenodd_stencil_wgpu.rs": "34dd9f6f69af5e3160ac798f1bab91b11756d59afbd0b0b834d512fde306b3fa",
+          "tests/wpt_layers_wgpu.rs": "5cc651774d02270ba3309a29f3ca776cfc1904eba5d20245b70912b78a55d14a",
+          "tests/turbulence_wgpu.rs": "4e7eadb2fd51a299a07f52b2858e8cd61fa1adb2ed8a89b93be0123040074d72",
+          "tests/color_matrix_wgpu.rs": "579ecadc113cee65de185ebb7758cadcd7bb536f038398437000b593ab0c1bf5",
+          "tests/integration.rs": "44f0e35841833a57f9f14f1b2627217a0fd2459a81da8e993378c2d4b68d32b6",
+          "tests/layer_state_wgpu.rs": "8926b1de1d437312788a7d736b3bb719e969ee724da601646a62f2375cebcf9c",
+          "examples/external_text_parley.rs": "2533d48ddfc4d298f668c990eb8547e4403b4c3e521a4372620e766e94b3a665",
+          "examples/index.html": "84efe3d72dd1a8229830b5bd3e7024accc693bcb1f1097d7385907082ff54cc2",
+          "examples/gradients.rs": "64d1373b0ef22d96f159f16175e7c0fb1f80ba20d51e856c1498b3f653ee2882",
+          "examples/shader.rs": "22ef531e6ca7895ed3cb1ccc5832b0da1d485ae3563dbdcb46e0338f9892cfbd",
+          "examples/breakout.rs": "da7da922fc9e0d38250340c4ed027ab975468e035013dcc616da9beba44ad90c",
+          "examples/paint_image.rs": "b5a43796ec821e8ca4a2553e8cf0dfe1a9a6fc224a0d4b325f750ddfc48db191",
+          "examples/README.md": "2eebced8dab783de944e45f621bd11a9370d27ffa84eb268aece0ea234cb0236",
+          "examples/paint_filter.rs": "80367fe28437e15d58a2ce844b1c8ff03b54214b3048de297a34b5e52b5eb526",
+          "examples/many_rects.rs": "8ef3bca1ba6cba849bfc6b7bce000620660430113e2178a533190cde1d0e4348",
+          "examples/demo.rs": "ac4f547feb8d3f029ac21a88f328fb498595a5a5d02143238e9ffa1de5f1b9f6",
+          "examples/text.rs": "0b24bb6c99cd3414789e6c8fea9689ce916f49e8dbc4b74b4e5d548be8d83358",
+          "examples/font_variations.rs": "13c2c4c3c17c041c5ceabd37194e16437f9007e9536f2d4090aad6bf57fc50e3",
+          "examples/external_text_cosmic.rs": "5463ba67fda5b6b588413f09cdd63550b83027c90937ace79c610eecc245a26a",
+          "examples/svg.rs": "defb8e5b7ffcd76580cce93b17e98eb55afb75a5cf3575fd4dce3cebe73f3765",
+          ".github/dependabot.yml": "c63878becff6965f3d4cf33dd3f15ac488485514d315f44ff91e66f72fe5ce3e",
+          "book/.gitignore": "3c4dbff9eeda9410a0b9eb423472981db8997d666388b4cd2424700c3974d64b",
+          "book/book.toml": "4c552d588da75529d0fa0be860d47086b237bc803dc0dd84886c1e5ae349d056",
+          "assets/screen.frag.glsl": "72938b9538d2c606a0b04920b917f37681ecd2da89e3cf7c77176302a9360d81",
+          "assets/gpupathrender.pdf": "a09a09b3782c062c54021b6d2359f664bd6f205e57698e7a18d94d8cdb0f6f41",
+          "assets/breakout.png": "5eef13bafd86cc30722ee20a57cb3cba12276ce5baec6f7efc2f2faaa3f486e0",
+          "assets/demo.png": "d74334132435f473770ed574003658b771f2c2590b0f62d6cbf429251b941b90",
+          "assets/screen.vert.glsl": "544ca5528d9b8564c62de6ed01591e9e86ea27ae8cc578a3c7e4da9b62062c2a",
+          "assets/svg.png": "3b4696ff8bda4a6bc2132d2c4307f4791cec1360e68bb2abd3ff9574705bfb77",
+          "assets/text.png": "010aca7fd3a1c71e814ba0d3e947cc02e59b36a7631b6bb307e0faa5de4144c7",
+          "src/paint.rs": "9f817f03ae9a36772831f75a0c9b8c3d63a87e55c0cd66a232b23d37e135f376",
+          "src/renderer.rs": "297c75d5bcc61dff5eaa014c2f7b67e88be50537852246b0cccb62897978b263",
+          "src/error.rs": "0ca2faf7832e2173dc4d6cf599b948b722b7e1530a4a39a3ecb8487679248e44",
+          "src/color.rs": "b1e50257884ba24005f606e1c56606650d49597720e6890757b1037ef6620cf1",
+          "src/lib.rs": "c513282de54ccf64c12f8580c575c08bbaf73a367bd243f585d50a58665b3455",
+          "src/turbulence.rs": "b5f942634c21deda757850a9477d546e8e68dc7770454a30ea168453dee3b78d",
+          "src/gradient_store.rs": "c9919c37f4d9d7011fd07efded19dee376f4b83bedcf651fc2257060712624d9",
+          "src/image.rs": "edb434fc417cab0cc85a75c0ddcfeb9f03eed7bcb2fdd5655fbef0401237c10b",
+          "src/path.rs": "e95160b66143d1637b00c3f8102bccb3b7f56d7f4960bad69ff6e0112ace3d9a",
+          "src/filters.rs": "46fcbde0f019deb6fa4a85d892345c1dab7205e98882cd75c387a73f758df38b",
+          "src/clip.rs": "9b9c218abbd471d7457725a27e4a1199dc3033263f014ab8f5633ac895c84c30",
+          "src/layers.rs": "9cff13c152eae138580c8f0ce4792e73402efd85ec87c4ff85d9c6c77b9d4c9f",
+          "src/shadow.rs": "6a741cb7b3838e55a99ecd9fc785a9cd7c4e5c6f5ac646e35057e4d3cedf9484",
+          "src/text.rs": "a2f5b73e5517f3d1076b8d023f5490f0024f4b158ed78e8eff62cd71bf6d49f2",
+          "src/geometry.rs": "9e2f8b3eb1faedfc04524f2239adf3b1d23180a5ecf67b0faaf28cc46c9aa65b",
+          "src/transient.rs": "dd2272797d8d656d8f2f881fec0df81c49c38a5871b5a2d633afc63bd902759e",
+          "src/budgets.rs": "ed0f1e956a4ae8f923b09ad3c23cc394a12e168ff96b741bce4cc81e2ba0b065",
+          "tests/common/blend.rs": "18d1e72132817a8c027fe662bbbc51308b332eeceb24c731878b064d8fa9e890",
+          "tests/common/mod.rs": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74",
+          "examples/assets/Ghostscript_Tiger.svg": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+          "examples/assets/entypo.ttf": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+          "examples/assets/rust-logo.png": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596",
+          "examples/assets/LICENSE-Roboto": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "examples/assets/pattern.jpg": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+          "examples/assets/RobotoFlex-VariableFont.ttf": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+          "examples/assets/amiri-regular.ttf": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+          "examples/helpers/perf_graph.rs": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+          "examples/helpers/mod.rs": "4978fa74c246aef34b46d190b25d8a3d1a930219dde19cc43b972e0ce75bfbdf",
+          "examples/helpers/wgpu.rs": "0869f2ca78f964294236f43cbe8dbfb5d0f9b8810e888b0df49e6d69bb238b01",
+          "examples/helpers/opengl.rs": "cf151a4d52f18ad7cb1d64d3ce888929f92688918c66851582555ec6977b508f",
+          "examples/assets/images/image8.jpg": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+          "examples/assets/images/image9.jpg": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+          "examples/assets/images/image12.jpg": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+          "examples/assets/images/image11.jpg": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+          "examples/assets/images/image10.jpg": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+          "examples/assets/images/image7.jpg": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+          "examples/assets/images/image6.jpg": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+          "examples/assets/images/image4.jpg": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+          "examples/assets/images/image5.jpg": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+          "examples/assets/images/image1.jpg": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+          "examples/assets/images/image2.jpg": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+          "examples/assets/images/image3.jpg": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+          ".github/workflows/book.yml": "dff6dd483c609dc2266944dae385226f5633845d385178eaa56662a40f372f80",
+          ".github/workflows/ci.yml": "44f28c48d0ac2677fae2f14e26bdd65551dba068ca378b1f10ce95cfc2b59d96",
+          "book/src/SUMMARY.md": "736b25819b9388e66279ecf217bb9bc57579ab26b93945d9b4df7bcc359f5095",
+          "book/src/demo.png": "b6ae64e28a5c02fac102434b7caaf81b815e0230f100e9791676a0e05e58e104",
+          "book/src/index.md": "98db579a801beb283fc7f50b5acaaf44808c6dd470671d21368299d09c7873c2",
+          "book/src/1_getting_started/3_event_loop.md": "742209797884afae89494a8f9cedc761fe54904b7fce8c2a301de18877ef6a76",
+          "book/src/1_getting_started/2_rendering.rs": "26b84fcbba73f65e3461976e8038a1fbd5f62fc3a166d89ad1c53bee94ea1857",
+          "book/src/1_getting_started/1_setting_up.md": "0d8625bf1e241977b41e9fd50f50cb9d7bd7b308813f938142b80d05e205c422",
+          "book/src/1_getting_started/3_red_paint.png": "6c02eb7040bc678c1d7d06359b4b4fff40ab8444865d2c2801a6f89e04591f45",
+          "book/src/1_getting_started/0_intro.md": "0bbd6e82d32c235a06f1fd8d4502f4cdeae09012a34afdb29c4ddaefb9bba169",
+          "book/src/1_getting_started/2_app.png": "0b744b40dbadab32da029d671f88df97022350ff2f079be0f033b17626a3d42f",
+          "book/src/1_getting_started/3_event_loop.rs": "546f2a0cbe3aa9db4677bc764719980fc409af19c3e576b1aa72cad4b63eb34b",
+          "book/src/1_getting_started/2_rendering.md": "431eb92cff0a25a54900fb7ca86e7cd87851c664f645d9cb0d6e76ef43fe127e",
+          "book/src/1_getting_started/1_setting_up.rs": "e764a0198cd6692f1eb3168d88ddfe487f80c90e9790f16bb86d6d2b39035d58",
+          "book/src/1_getting_started/3_final.png": "9dffd90deece17a83f9ad806bf7316717316c7d390809b4a4b5a02aa4bcf6c83",
+          "src/renderer/void.rs": "38a5fe524ca380d960a3290769888eb598957e01e9d513bf5a56be68e69ae8c2",
+          "src/renderer/params.rs": "2406d865033afac974825a14af10353403e20c677490b661e3220497a9808fba",
+          "src/renderer/wgpu.rs": "117d64df11d92d4577c632da527dc901b0f829b67928fe66c9e35fa37b80686f",
+          "src/renderer/opengl.rs": "11bc09404b7b2a11291ce78bae257b4e75c9af8ac8b56074fd316f5248ca1d51",
+          "src/path/cache.rs": "21153a3f0662ef3fa10d9c53eed3b3c76847c2233417d67fa45a36a712a89963",
+          "src/text/font.rs": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+          "src/text/atlas.rs": "e8ba60fa500cc461563b1b48489fb101f053864a9c54d1576e049a6560be0d8e",
+          "src/text/textlayout.rs": "048d0a638e09e530a86bdb2ae710533c5eeeed4fa68f7e26af92b25e0de6b558",
+          "src/renderer/wgpu/shader.wgsl": "9b30d85b3b34b76914cd206482d0630df817a11e057f29a19009cf00bbc6adda",
+          "src/renderer/wgpu/filters.wgsl": "d8ba8bae14558f4caa5e770e066611367b00b58ccfddfbd93a16eb79f0435306",
+          "src/renderer/opengl/main-fs.glsl": "a2d76357d825679189dafa3d69c1253d038d2eaeea841f1019b519a79c3ec7de",
+          "src/renderer/opengl/gl_texture.rs": "2826bb6eee3169fc37b6e35f6dbafdf8f90ab9cea4960d9540a629250fdb8315",
+          "src/renderer/opengl/filters.glsl": "75c4bc80945eb46306fa363beaf1682139ab7caa91ffcbafb6ade95337aa1903",
+          "src/renderer/opengl/framebuffer.rs": "ef52dfc86e7094b0f6d661a5fc8e179e1f896f553234151007a3f35df6296a86",
+          "src/renderer/opengl/uniform_array.rs": "bbf261f4cb464d7034365f86b2c559f29a3f348251c02ded9667fe6b9e229756",
+          "src/renderer/opengl/program.rs": "92a601ac5a872c0cbc7691695587511648e61f1ad752259fefc923ea7db6962c",
+          "src/renderer/opengl/main-vs.glsl": "aac43ab9b49f186da3c8e6c6036d2c1a6e9e652d34ad56189535c501cc3244fc"
+        }
+      },
+      "femtovg_artifact": {
+        "reason": "compiler-artifact",
+        "package_id": "path+file:///private/tmp/femtovg-review-fixes-scenes/source/master#femtovg@0.27.0",
+        "manifest_path": "/private/tmp/femtovg-review-fixes-scenes/source/master/Cargo.toml",
+        "target": {
+          "kind": [
+            "lib"
+          ],
+          "crate_types": [
+            "lib"
+          ],
+          "name": "femtovg",
+          "src_path": "/private/tmp/femtovg-review-fixes-scenes/source/master/src/lib.rs",
+          "edition": "2021",
+          "doc": true,
+          "doctest": true,
+          "test": true
+        },
+        "profile": {
+          "opt_level": "3",
+          "debuginfo": 0,
+          "debug_assertions": false,
+          "overflow_checks": false,
+          "test": false
+        },
+        "features": [
+          "default",
+          "image",
+          "image-loading",
+          "swash",
+          "textlayout"
+        ],
+        "filenames": [
+          "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-b1ee4e6a6ddd9876.rlib",
+          "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-b1ee4e6a6ddd9876.rmeta"
+        ],
+        "executable": null,
+        "fresh": true
+      },
+      "binary_path": "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-master",
+      "binary_sha256": "13239e1e23976a29edfdbd711258d73951c240917efad15364a28fe4b6e77425",
+      "lock_sha256": "6ce5a4eb546ef4d90f93379a007e8b75402bc9d8db498e2d77f34d806e85e39d",
+      "matches_archived_lock": true,
+      "dependency_graph_sha256": "f071c3210bccff0ddf1c166f9671f31f91f96921fd6dab7c3382abdae2904394",
+      "harness_sha256": "8a16f144fc32b0808cd4202d79b19ba1faf23b356894a5fa20c62541e0a418e5",
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)\n",
+      "profile": {
+        "opt_level": 3,
+        "lto": false,
+        "codegen_units": 16,
+        "debug": false,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "build_environment": {
+        "RUSTFLAGS": null,
+        "CARGO_ENCODED_RUSTFLAGS": null,
+        "CARGO_BUILD_TARGET": null,
+        "CARGO_INCREMENTAL": "0",
+        "CARGO_TARGET_DIR": "/private/tmp/femtovg-review-fixes-perf/target"
+      }
+    },
+    "final": {
+      "variant": "final",
+      "feature": "default_swash",
+      "command": [
+        "cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--release",
+        "--manifest-path",
+        "/private/tmp/femtovg-hinting-stress-scene-20261003/harness/final/Cargo.toml",
+        "--features",
+        "default_swash",
+        "--message-format=json"
+      ],
+      "source": {
+        "source_root": "/private/tmp/femtovg-review-fixes-scenes/source/final",
+        "registered_source_record": "/private/tmp/femtovg-review-fixes-scenes/source-final.json",
+        "registered_source_record_sha256": "ecd5020f0831f7213b8b7812a70c7c45b916c56c4607cf54131a0589706698c6",
+        "all_source_files": {
+          "Cargo.toml": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+          "LICENSE-APACHE": "a88a993a1c7aaeb5f0d0c0aa5d206c8735eeffb153a922826d14ec92752316ee",
+          "rustfmt.toml": "f367a18c7ef1f48267c9f9c2e0c239b10533a6e59dca3c60db18ab39c99514ff",
+          "CHANGELOG.md": "125980d26809bbd7a1925881b29de51cf8b414c99574ef22c5c2a7d3be4c7d22",
+          "build.rs": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+          "README.md": "0093309e1dfe55265c322b3ce422d0784375fe499129fbde352d5a22ec916ab1",
+          ".gitignore": "89cfd3589317368117fc00c558940e9f11674699f0768c66d6bfda9191dca515",
+          "LICENSE-MIT": "cd4eb10b20da1d85916624e0e15a8e76b0a66406996a4f9aa5afee909fecfb7e",
+          "tests/blit_scissor_wgpu.rs": "6bda98a9eeab99db6b4438aaf12dd42250dbc3e3a6019df9e1bc665550453544",
+          "tests/path_clip_wgpu.rs": "4f17a64a0b4548bed8e6ab7d385b9e72ef50b00a0020e6567361db069d020d1f",
+          "tests/shadow_wgpu.rs": "313b3185a66848b141e64458cad32253d946c54f76b121b339dca307199d3e6a",
+          "tests/text_scale_position_wgpu.rs": "6a72d5b37dea340882fbe6b43ca7b640939ee6f74456f9ea97a336c412523cbb",
+          "tests/image_update_bounds_wgpu.rs": "3fc071a814cbf5fba7b1614d1188f26d29c253c17dbf901b30bba46aff37d45a",
+          "tests/layer_effects_wgpu.rs": "9ffab31ad0a35c52a07bac2ad918c383e991b999794b770f884cea4dc1a9038b",
+          "tests/blend_filter_wgpu.rs": "daf88145c2a7e42706ad0300a33853348621066ea09d0aafbe1e27749e1cb969",
+          "tests/zoom_invariance_wgpu.rs": "fb16f5daf9de78ed6d6e1579b0abb3ea5aa8900a417ccf4ab473a981e48840bc",
+          "tests/uniform_slots_wgpu.rs": "036ab088ddac14d5e8c37602b9a38b6ac3ade250d7ac6eb1c95d104f4365dba0",
+          "tests/color_transfer_wgpu.rs": "c1fbf922cc651ef77a53fbaf814cfd09f34dbe1220e15a7863f1954aee90d4eb",
+          "tests/rounded_rect_radii.rs": "9dae9f726396bf95d801e9b20f2b312a7e0558eb0136ec0b50dcc567869f2a77",
+          "tests/clip_abuse_wgpu.rs": "93d2591192b797eb14b9d1fb0b2dc9f41acc8ba84d4a526157d60b35d1520487",
+          "tests/gradient_stop_interpolation_wgpu.rs": "f571e0198fd491a73ae0cd5b0c607a329ada3ad760f7854347913f343738b712",
+          "tests/conic_scissor_wgpu.rs": "a878861a53f749d16f9aca5e8682c93cd60b57318922562b907cf68b5cfb41bd",
+          "tests/hairline_stroke_wgpu.rs": "0a2b58c3f579ac36455733cdc142642f9903e5d02e050e71a49e4607611c83a5",
+          "tests/mix_blend_wgpu.rs": "c2e5132ae1678e97c6262ec24b5a47909670c9e2213fe3d1ed4a6a7c7f42daaf",
+          "tests/fill_winding_wgpu.rs": "731b394753aada7f7596f514fc640fafe5955d1f4e8b146b37ca41530f1b2541",
+          "tests/gradient_dither_wgpu.rs": "99f0fbf0f907c92d27bde35bb483c62c65dff59d78db803819b0c7e14e0549e6",
+          "tests/pipeline_key_wgpu.rs": "a10ad4ac36342e067ff5dc72e4edc69dbe78e1da65ff31aff4c5357a0eca4a29",
+          "tests/image_update_contract.rs": "85f9320ffe599f2f37729172d0ee1655621d7b413f97b61f41ca32f26d68d207",
+          "tests/transform2D.rs": "e1aafb52ee16402731cb372d2c441d9f294bbabb0a8c53cb2633a925a7d2c16c",
+          "tests/image_blit_wgpu.rs": "d10ea25ba9240da6d2cab1f0bea3d3407c68652ee8105c48068307a465ed9587",
+          "tests/filter_chain_wgpu.rs": "c17464bf8ac37b892b751afd354bc888fd44df85ff60074a004486eb1bb19a6d",
+          "tests/blur_quadrature_wgpu.rs": "22d5a302ccace86f0cdc2545d1edf652ab57fdbe771d5c1a2a8d8d24de6024b7",
+          "tests/gradient_stress_wgpu.rs": "4112feb232ca6f876fedb5fde2e5dea2f7d97228033e81116d2cc5ae1de9baa0",
+          "tests/shadow_pressure_wgpu.rs": "43bd59a7bee18ebc9c3af44e3b541e458956adde64d706c900adb441c60bf292",
+          "tests/zero_area_fill_wgpu.rs": "c9abd2f173f55d151f9c8de375c3e928d93f008d646395b275a374fb0c3fdbda",
+          "tests/layer_masks_review_wgpu.rs": "5336fe330221c3fc7b19c00a8b3976c571052a1a05a2c09a38c220540609d90c",
+          "tests/gradient_tail_pad_wgpu.rs": "4f709dbb883380a38f0de6520223fb1d976d83c766ada184038fd82ecd0444e5",
+          "tests/wpt_clip_wgpu.rs": "0284301923b5afae35bf522142c6fd4ffd0510046830c758bb1a986df96c9de2",
+          "tests/gradient_paint_conformance_wgpu.rs": "7114a8307039246c15d866edacb45ddefb56be9d352bc1e8ce3de8fcc6e57034",
+          "tests/evenodd_stencil_wgpu.rs": "34dd9f6f69af5e3160ac798f1bab91b11756d59afbd0b0b834d512fde306b3fa",
+          "tests/wpt_layers_wgpu.rs": "5cc651774d02270ba3309a29f3ca776cfc1904eba5d20245b70912b78a55d14a",
+          "tests/turbulence_wgpu.rs": "4e7eadb2fd51a299a07f52b2858e8cd61fa1adb2ed8a89b93be0123040074d72",
+          "tests/color_matrix_wgpu.rs": "579ecadc113cee65de185ebb7758cadcd7bb536f038398437000b593ab0c1bf5",
+          "tests/integration.rs": "44f0e35841833a57f9f14f1b2627217a0fd2459a81da8e993378c2d4b68d32b6",
+          "tests/layer_state_wgpu.rs": "8926b1de1d437312788a7d736b3bb719e969ee724da601646a62f2375cebcf9c",
+          "examples/external_text_parley.rs": "2533d48ddfc4d298f668c990eb8547e4403b4c3e521a4372620e766e94b3a665",
+          "examples/index.html": "84efe3d72dd1a8229830b5bd3e7024accc693bcb1f1097d7385907082ff54cc2",
+          "examples/gradients.rs": "64d1373b0ef22d96f159f16175e7c0fb1f80ba20d51e856c1498b3f653ee2882",
+          "examples/shader.rs": "22ef531e6ca7895ed3cb1ccc5832b0da1d485ae3563dbdcb46e0338f9892cfbd",
+          "examples/breakout.rs": "da7da922fc9e0d38250340c4ed027ab975468e035013dcc616da9beba44ad90c",
+          "examples/paint_image.rs": "b5a43796ec821e8ca4a2553e8cf0dfe1a9a6fc224a0d4b325f750ddfc48db191",
+          "examples/README.md": "2eebced8dab783de944e45f621bd11a9370d27ffa84eb268aece0ea234cb0236",
+          "examples/paint_filter.rs": "80367fe28437e15d58a2ce844b1c8ff03b54214b3048de297a34b5e52b5eb526",
+          "examples/many_rects.rs": "8ef3bca1ba6cba849bfc6b7bce000620660430113e2178a533190cde1d0e4348",
+          "examples/demo.rs": "ac4f547feb8d3f029ac21a88f328fb498595a5a5d02143238e9ffa1de5f1b9f6",
+          "examples/text.rs": "0b24bb6c99cd3414789e6c8fea9689ce916f49e8dbc4b74b4e5d548be8d83358",
+          "examples/font_variations.rs": "13c2c4c3c17c041c5ceabd37194e16437f9007e9536f2d4090aad6bf57fc50e3",
+          "examples/external_text_cosmic.rs": "5463ba67fda5b6b588413f09cdd63550b83027c90937ace79c610eecc245a26a",
+          "examples/svg.rs": "defb8e5b7ffcd76580cce93b17e98eb55afb75a5cf3575fd4dce3cebe73f3765",
+          ".github/dependabot.yml": "c63878becff6965f3d4cf33dd3f15ac488485514d315f44ff91e66f72fe5ce3e",
+          "book/.gitignore": "3c4dbff9eeda9410a0b9eb423472981db8997d666388b4cd2424700c3974d64b",
+          "book/book.toml": "4c552d588da75529d0fa0be860d47086b237bc803dc0dd84886c1e5ae349d056",
+          "assets/screen.frag.glsl": "72938b9538d2c606a0b04920b917f37681ecd2da89e3cf7c77176302a9360d81",
+          "assets/gpupathrender.pdf": "a09a09b3782c062c54021b6d2359f664bd6f205e57698e7a18d94d8cdb0f6f41",
+          "assets/breakout.png": "5eef13bafd86cc30722ee20a57cb3cba12276ce5baec6f7efc2f2faaa3f486e0",
+          "assets/demo.png": "d74334132435f473770ed574003658b771f2c2590b0f62d6cbf429251b941b90",
+          "assets/screen.vert.glsl": "544ca5528d9b8564c62de6ed01591e9e86ea27ae8cc578a3c7e4da9b62062c2a",
+          "assets/svg.png": "3b4696ff8bda4a6bc2132d2c4307f4791cec1360e68bb2abd3ff9574705bfb77",
+          "assets/text.png": "010aca7fd3a1c71e814ba0d3e947cc02e59b36a7631b6bb307e0faa5de4144c7",
+          "src/paint.rs": "9f817f03ae9a36772831f75a0c9b8c3d63a87e55c0cd66a232b23d37e135f376",
+          "src/renderer.rs": "297c75d5bcc61dff5eaa014c2f7b67e88be50537852246b0cccb62897978b263",
+          "src/error.rs": "0ca2faf7832e2173dc4d6cf599b948b722b7e1530a4a39a3ecb8487679248e44",
+          "src/color.rs": "b1e50257884ba24005f606e1c56606650d49597720e6890757b1037ef6620cf1",
+          "src/lib.rs": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+          "src/turbulence.rs": "b5f942634c21deda757850a9477d546e8e68dc7770454a30ea168453dee3b78d",
+          "src/gradient_store.rs": "c9919c37f4d9d7011fd07efded19dee376f4b83bedcf651fc2257060712624d9",
+          "src/image.rs": "edb434fc417cab0cc85a75c0ddcfeb9f03eed7bcb2fdd5655fbef0401237c10b",
+          "src/path.rs": "e95160b66143d1637b00c3f8102bccb3b7f56d7f4960bad69ff6e0112ace3d9a",
+          "src/filters.rs": "46fcbde0f019deb6fa4a85d892345c1dab7205e98882cd75c387a73f758df38b",
+          "src/clip.rs": "9b9c218abbd471d7457725a27e4a1199dc3033263f014ab8f5633ac895c84c30",
+          "src/layers.rs": "9cff13c152eae138580c8f0ce4792e73402efd85ec87c4ff85d9c6c77b9d4c9f",
+          "src/shadow.rs": "6a741cb7b3838e55a99ecd9fc785a9cd7c4e5c6f5ac646e35057e4d3cedf9484",
+          "src/text.rs": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+          "src/geometry.rs": "9e2f8b3eb1faedfc04524f2239adf3b1d23180a5ecf67b0faaf28cc46c9aa65b",
+          "src/transient.rs": "dd2272797d8d656d8f2f881fec0df81c49c38a5871b5a2d633afc63bd902759e",
+          "src/budgets.rs": "ed0f1e956a4ae8f923b09ad3c23cc394a12e168ff96b741bce4cc81e2ba0b065",
+          "tests/common/blend.rs": "18d1e72132817a8c027fe662bbbc51308b332eeceb24c731878b064d8fa9e890",
+          "tests/common/mod.rs": "bd938270ac4d01c6a4457a9eb1a4162b7483b5f4612cc4ad48d9d2781a457d74",
+          "examples/assets/Ghostscript_Tiger.svg": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+          "examples/assets/entypo.ttf": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+          "examples/assets/LICENSE-BungeeColor": "b77aa3c20ddef79c5ad1088826ca88081fec3fe097caddc096984dec126438d6",
+          "examples/assets/rust-logo.png": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596",
+          "examples/assets/LICENSE-Roboto": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "examples/assets/BungeeColor-Subset.ttf": "17205020659530ce48c76112089dc0ca532302e16acc5a4d98e2e3696e871a5e",
+          "examples/assets/pattern.jpg": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+          "examples/assets/RobotoFlex-VariableFont.ttf": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+          "examples/assets/amiri-regular.ttf": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+          "examples/helpers/perf_graph.rs": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+          "examples/helpers/mod.rs": "4978fa74c246aef34b46d190b25d8a3d1a930219dde19cc43b972e0ce75bfbdf",
+          "examples/helpers/wgpu.rs": "0869f2ca78f964294236f43cbe8dbfb5d0f9b8810e888b0df49e6d69bb238b01",
+          "examples/helpers/opengl.rs": "cf151a4d52f18ad7cb1d64d3ce888929f92688918c66851582555ec6977b508f",
+          "examples/assets/images/image8.jpg": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+          "examples/assets/images/image9.jpg": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+          "examples/assets/images/image12.jpg": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+          "examples/assets/images/image11.jpg": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+          "examples/assets/images/image10.jpg": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+          "examples/assets/images/image7.jpg": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+          "examples/assets/images/image6.jpg": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+          "examples/assets/images/image4.jpg": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+          "examples/assets/images/image5.jpg": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+          "examples/assets/images/image1.jpg": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+          "examples/assets/images/image2.jpg": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+          "examples/assets/images/image3.jpg": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+          ".github/workflows/book.yml": "dff6dd483c609dc2266944dae385226f5633845d385178eaa56662a40f372f80",
+          ".github/workflows/ci.yml": "44f28c48d0ac2677fae2f14e26bdd65551dba068ca378b1f10ce95cfc2b59d96",
+          "book/src/SUMMARY.md": "736b25819b9388e66279ecf217bb9bc57579ab26b93945d9b4df7bcc359f5095",
+          "book/src/demo.png": "b6ae64e28a5c02fac102434b7caaf81b815e0230f100e9791676a0e05e58e104",
+          "book/src/index.md": "98db579a801beb283fc7f50b5acaaf44808c6dd470671d21368299d09c7873c2",
+          "book/src/1_getting_started/3_event_loop.md": "742209797884afae89494a8f9cedc761fe54904b7fce8c2a301de18877ef6a76",
+          "book/src/1_getting_started/2_rendering.rs": "26b84fcbba73f65e3461976e8038a1fbd5f62fc3a166d89ad1c53bee94ea1857",
+          "book/src/1_getting_started/1_setting_up.md": "0d8625bf1e241977b41e9fd50f50cb9d7bd7b308813f938142b80d05e205c422",
+          "book/src/1_getting_started/3_red_paint.png": "6c02eb7040bc678c1d7d06359b4b4fff40ab8444865d2c2801a6f89e04591f45",
+          "book/src/1_getting_started/0_intro.md": "0bbd6e82d32c235a06f1fd8d4502f4cdeae09012a34afdb29c4ddaefb9bba169",
+          "book/src/1_getting_started/2_app.png": "0b744b40dbadab32da029d671f88df97022350ff2f079be0f033b17626a3d42f",
+          "book/src/1_getting_started/3_event_loop.rs": "546f2a0cbe3aa9db4677bc764719980fc409af19c3e576b1aa72cad4b63eb34b",
+          "book/src/1_getting_started/2_rendering.md": "431eb92cff0a25a54900fb7ca86e7cd87851c664f645d9cb0d6e76ef43fe127e",
+          "book/src/1_getting_started/1_setting_up.rs": "e764a0198cd6692f1eb3168d88ddfe487f80c90e9790f16bb86d6d2b39035d58",
+          "book/src/1_getting_started/3_final.png": "9dffd90deece17a83f9ad806bf7316717316c7d390809b4a4b5a02aa4bcf6c83",
+          "src/renderer/void.rs": "38a5fe524ca380d960a3290769888eb598957e01e9d513bf5a56be68e69ae8c2",
+          "src/renderer/params.rs": "2406d865033afac974825a14af10353403e20c677490b661e3220497a9808fba",
+          "src/renderer/wgpu.rs": "117d64df11d92d4577c632da527dc901b0f829b67928fe66c9e35fa37b80686f",
+          "src/renderer/opengl.rs": "11bc09404b7b2a11291ce78bae257b4e75c9af8ac8b56074fd316f5248ca1d51",
+          "src/path/cache.rs": "21153a3f0662ef3fa10d9c53eed3b3c76847c2233417d67fa45a36a712a89963",
+          "src/text/font.rs": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+          "src/text/swash_rasterizer.rs": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e",
+          "src/text/glyph_atlas_fallback_tests.rs": "89b30f1cd4800c8fd66a198516a21b9c47d3fe9c2f7ff8e04ce1ab6b27db8661",
+          "src/text/atlas.rs": "e8ba60fa500cc461563b1b48489fb101f053864a9c54d1576e049a6560be0d8e",
+          "src/text/glyph_atlas_tests.rs": "2f5271264693deb00a802e8ba9b7cd4ffa1ace6bff1c53791df138a99b4783c5",
+          "src/text/textlayout.rs": "048d0a638e09e530a86bdb2ae710533c5eeeed4fa68f7e26af92b25e0de6b558",
+          "src/renderer/wgpu/shader.wgsl": "9b30d85b3b34b76914cd206482d0630df817a11e057f29a19009cf00bbc6adda",
+          "src/renderer/wgpu/filters.wgsl": "d8ba8bae14558f4caa5e770e066611367b00b58ccfddfbd93a16eb79f0435306",
+          "src/renderer/opengl/main-fs.glsl": "a2d76357d825679189dafa3d69c1253d038d2eaeea841f1019b519a79c3ec7de",
+          "src/renderer/opengl/gl_texture.rs": "2826bb6eee3169fc37b6e35f6dbafdf8f90ab9cea4960d9540a629250fdb8315",
+          "src/renderer/opengl/filters.glsl": "75c4bc80945eb46306fa363beaf1682139ab7caa91ffcbafb6ade95337aa1903",
+          "src/renderer/opengl/framebuffer.rs": "ef52dfc86e7094b0f6d661a5fc8e179e1f896f553234151007a3f35df6296a86",
+          "src/renderer/opengl/uniform_array.rs": "bbf261f4cb464d7034365f86b2c559f29a3f348251c02ded9667fe6b9e229756",
+          "src/renderer/opengl/program.rs": "92a601ac5a872c0cbc7691695587511648e61f1ad752259fefc923ea7db6962c",
+          "src/renderer/opengl/main-vs.glsl": "aac43ab9b49f186da3c8e6c6036d2c1a6e9e652d34ad56189535c501cc3244fc"
+        }
+      },
+      "femtovg_artifact": {
+        "reason": "compiler-artifact",
+        "package_id": "path+file:///private/tmp/femtovg-review-fixes-scenes/source/final#femtovg@0.27.0",
+        "manifest_path": "/private/tmp/femtovg-review-fixes-scenes/source/final/Cargo.toml",
+        "target": {
+          "kind": [
+            "lib"
+          ],
+          "crate_types": [
+            "lib"
+          ],
+          "name": "femtovg",
+          "src_path": "/private/tmp/femtovg-review-fixes-scenes/source/final/src/lib.rs",
+          "edition": "2021",
+          "doc": true,
+          "doctest": true,
+          "test": true
+        },
+        "profile": {
+          "opt_level": "3",
+          "debuginfo": 0,
+          "debug_assertions": false,
+          "overflow_checks": false,
+          "test": false
+        },
+        "features": [
+          "default",
+          "image",
+          "image-loading",
+          "swash",
+          "textlayout"
+        ],
+        "filenames": [
+          "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-ef9cd771b1e1a357.rlib",
+          "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-ef9cd771b1e1a357.rmeta"
+        ],
+        "executable": null,
+        "fresh": true
+      },
+      "binary_path": "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-final",
+      "binary_sha256": "074aa61d2bafa5276b8445cd15057beb5304d1c7913ad9e68f138078e5e67b13",
+      "lock_sha256": "bc58e776503abe30bf94d1e1240d6f4f569f6185358f2c4bf3134fc18bf94fcc",
+      "matches_archived_lock": true,
+      "dependency_graph_sha256": "f071c3210bccff0ddf1c166f9671f31f91f96921fd6dab7c3382abdae2904394",
+      "harness_sha256": "8a16f144fc32b0808cd4202d79b19ba1faf23b356894a5fa20c62541e0a418e5",
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)\n",
+      "profile": {
+        "opt_level": 3,
+        "lto": false,
+        "codegen_units": 16,
+        "debug": false,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "build_environment": {
+        "RUSTFLAGS": null,
+        "CARGO_ENCODED_RUSTFLAGS": null,
+        "CARGO_BUILD_TARGET": null,
+        "CARGO_INCREMENTAL": "0",
+        "CARGO_TARGET_DIR": "/private/tmp/femtovg-review-fixes-perf/target"
+      }
+    }
+  },
+  "runner_sha256": "6d833f565e717065ab55faf9481514e7d351d6e9195d5285c2037d5c37045225",
+  "phases": [
+    [
+      "first_paint",
+      1
+    ],
+    [
+      "warm",
+      30
+    ],
+    [
+      "new_size",
+      12
+    ],
+    [
+      "return",
+      1
+    ]
+  ],
+  "pair_order_counts": {
+    "FleurDeLeah": {
+      "master_then_final": 6,
+      "final_then_master": 6
+    },
+    "RobotoFlex": {
+      "master_then_final": 6,
+      "final_then_master": 6
+    },
+    "Rye": {
+      "master_then_final": 6,
+      "final_then_master": 6
+    }
+  },
+  "process_order": [
+    {
+      "block": 0,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 0,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 0,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 0,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 0,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 0,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 1,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 1,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 1,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 1,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 1,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 1,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 2,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 2,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 2,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 2,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 2,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 2,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 3,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 3,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 3,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 3,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 3,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 3,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 4,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 4,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 4,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 4,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 4,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 4,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 5,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 5,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 5,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 5,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 5,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 5,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 6,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 6,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 6,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 6,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 6,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 6,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 7,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 7,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 7,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 7,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 7,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 7,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 8,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 8,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 8,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 8,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 8,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 8,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 9,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 9,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 9,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 9,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 9,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 9,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 10,
+      "font": "RobotoFlex",
+      "variant": "master"
+    },
+    {
+      "block": 10,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 10,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 10,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 10,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 10,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 11,
+      "font": "Rye",
+      "variant": "final"
+    },
+    {
+      "block": 11,
+      "font": "Rye",
+      "variant": "master"
+    },
+    {
+      "block": 11,
+      "font": "FleurDeLeah",
+      "variant": "master"
+    },
+    {
+      "block": 11,
+      "font": "FleurDeLeah",
+      "variant": "final"
+    },
+    {
+      "block": 11,
+      "font": "RobotoFlex",
+      "variant": "final"
+    },
+    {
+      "block": 11,
+      "font": "RobotoFlex",
+      "variant": "master"
+    }
+  ],
+  "nominal_glyph_requests_per_frame": 1980,
+  "nominal_distinct_glyph_size_instances_per_frame": 198,
+  "actual_counts": "Public TextMetrics determine actual shaped requests and distinct glyph/font/size instances; ligatures may alter nominal counts.",
+  "policy": "Fixed complete paired matrix; guard before and after EACH process; abort whole cohort on environment interference; no timing-value filtering.",
+  "timed_work": "Public fill_text layout and atlas drawing, adaptive page layout, simple panel paths and Void flush. Fresh Canvas/font registration outside timing; all44frames included in weighted sequence.",
+  "limits": "Designed stress case, not a representative application or a proved globally worst font. No GPU/window/pixel timing; font cost attribution not isolated to hinting. Pressure does not prove eviction."
+}

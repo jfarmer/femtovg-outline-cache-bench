@@ -1,0 +1,38 @@
+{
+  "status": "preliminary structural audit; bootstrap and source identity replication paused for corrected DPI1 timing",
+  "created_utc": "2026-10-03T16:09:44.310423+00:00",
+  "cohort": "paired12-native",
+  "dpi": 2.0,
+  "processes": 72,
+  "phase_records": 288,
+  "measured_frames": 3168,
+  "matrix_order_verified": true,
+  "per_font_AB_BA": [
+    6,
+    6
+  ],
+  "glyph_requests_each_frame": 1980,
+  "distinct_glyph_size_instances_each_frame": 198,
+  "public_draws_each_frame": 30,
+  "statistics_independently_replicated": false,
+  "native_size_interpretation": "Identity CTM native atlas uses paint size14/20/28, plus changing-size delta; DPR2 is layout scale, not native size doubling.",
+  "row_shift_interpretation": "DPR2 means0.05-native-unit steps0..0.45; row requests do not imply10 distinct native canonical phases.",
+  "limits": [
+    "No native cache-hit/miss/eviction counters.",
+    "Return frame can reuse outer bitmap atlas and does not prove outline retention.",
+    "Changing-size frames include same-frame reuse and are not pure misses.",
+    "Constructed dense proof sheet is not an established maximum or representative application/GPU frame."
+  ],
+  "failed_prestart": {
+    "path": "/private/tmp/femtovg-hinting-stress-scene-20261003/paired12",
+    "raw_records": 0,
+    "reason": {
+      "utc": "2026-10-03T15:56:05.379855+00:00",
+      "reason": "compiler/build/linker process-name match",
+      "pids": [
+        "2131"
+      ]
+    }
+  },
+  "later_completed_audit": "AUDIT.json and REPORT.md now independently verify both cohorts, including every statistic and source identity."
+}

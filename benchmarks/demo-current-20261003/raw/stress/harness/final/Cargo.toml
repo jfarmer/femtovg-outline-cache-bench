@@ -1,0 +1,26 @@
+[package]
+name = "femtovg-review-scenes-final"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[[bin]]
+name = "hinting-stress-final"
+path = "../../harness-src/main.rs"
+
+[dependencies]
+femtovg = { path = "/private/tmp/femtovg-review-fixes-scenes/source/final", default-features = false }
+swash = "=0.2.10"
+image = { version = "0.25.0", default-features = false, features = ["jpeg", "png"] }
+
+[features]
+default_swash = ["femtovg/default", "femtovg/swash"]
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = false
+codegen-units = 16
+incremental = false
+panic = "unwind"

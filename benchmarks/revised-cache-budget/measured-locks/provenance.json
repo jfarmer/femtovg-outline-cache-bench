@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "complete": true,
+  "versions": [
+    "master",
+    "prior",
+    "updated45",
+    "final"
+  ],
+  "locks": {
+    "timing": {
+      "master": {
+        "file": "measured-locks/timing/master/Cargo.lock",
+        "sha256": "73204ee945e5f7b9a569b4ce39296ca6bd9d2beee9da2665a9f30bf4e093ec78",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing/master/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-build.json",
+        "measured_build_record_sha256": "788cd077243e5cc8f67aac669a61a43b08e1fe5bacaa14f9d0f1e637c573c574",
+        "measured_binary_sha256": "3753dee9388da43fc17f0bc0134159ac3006154612a41986a6242a19e2d34834",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-master-metadata.json",
+        "measured_metadata_sha256": "31052bab86da831a029880526adf74be928e5e218908791c412f61d6ef271171"
+      },
+      "prior": {
+        "file": "measured-locks/timing/prior/Cargo.lock",
+        "sha256": "a69621f0ba064bf5b134338af07a372fa6423090cb8e7e568593ddc7d2737edc",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing/prior/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-build.json",
+        "measured_build_record_sha256": "788cd077243e5cc8f67aac669a61a43b08e1fe5bacaa14f9d0f1e637c573c574",
+        "measured_binary_sha256": "250e7acf194181ff7f774f55d09b3a1aade9c239197256c466f412dd5518971d",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-prior-metadata.json",
+        "measured_metadata_sha256": "427513855bf3881aef7d0219a28e1ffc560a4732b4406434aa28ad9984bfcb2e"
+      },
+      "updated45": {
+        "file": "measured-locks/timing/updated45/Cargo.lock",
+        "sha256": "9f8ed6f3758c393958cb6f424c15b5daa0e3e2637615e3dcce04f6475998a795",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing/updated45/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-build.json",
+        "measured_build_record_sha256": "788cd077243e5cc8f67aac669a61a43b08e1fe5bacaa14f9d0f1e637c573c574",
+        "measured_binary_sha256": "915c691472b0bd5da3795fe32d3f436943f99c86572580e31a897ae4816074d6",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-updated45-metadata.json",
+        "measured_metadata_sha256": "d2346b4b9ba8f4c9e85546b7b5b2255fd1f06cbe32da13d13e87351ede181645"
+      },
+      "final": {
+        "file": "measured-locks/timing/final/Cargo.lock",
+        "sha256": "263e1a40a16372d8a68be1d408ac96b54538673fc09c6ac7850d23be9930cfee",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing/final/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-build.json",
+        "measured_build_record_sha256": "788cd077243e5cc8f67aac669a61a43b08e1fe5bacaa14f9d0f1e637c573c574",
+        "measured_binary_sha256": "f8db2e68608020c9070c553f5ce67805ff53fbba3c82a305f3f9bdbd7b438dc2",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-runtime/timing-final-metadata.json",
+        "measured_metadata_sha256": "2d64e7835c2ac116fe8bd58838df602cbd1cdd312458808a25d2e17e5d8ef07b"
+      }
+    },
+    "audit": {
+      "master": {
+        "file": "measured-locks/audit/master/Cargo.lock",
+        "sha256": "6189c99acc88c3ec4dd3bd77add4b04864981190ceaa72a98ff490f9f030107b",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit/master/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-build.json",
+        "measured_build_record_sha256": "d84dcdd106656d085a12ae1951aa2d2798846494ae1ac7b6083c9064272db5a5",
+        "measured_binary_sha256": "3022d8e5950cea1ecae9f321bb4a6e7da4eb446db34a15f42e7f37b2d18e6916",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-master-metadata.json",
+        "measured_metadata_sha256": "88fa780e38e1f11601e2fa601740ea45e59ad61eaa6ea0cf7c46eafff921ae20"
+      },
+      "prior": {
+        "file": "measured-locks/audit/prior/Cargo.lock",
+        "sha256": "6083d688bc2ff50316770de3f25f0d23b44911fdd9088f01e6609ed3b294bfbc",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit/prior/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-build.json",
+        "measured_build_record_sha256": "d84dcdd106656d085a12ae1951aa2d2798846494ae1ac7b6083c9064272db5a5",
+        "measured_binary_sha256": "a186ccee8cd0b41c816214c51e6882fe6cd6bc43b72b8b158f0e8fe4f857d901",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-prior-metadata.json",
+        "measured_metadata_sha256": "c892a229f640f664b1dcbc07c5ac95695d0920f115c99e108c2a6a67a573f3d8"
+      },
+      "updated45": {
+        "file": "measured-locks/audit/updated45/Cargo.lock",
+        "sha256": "295e8cdb0f3bc4190ac56345db9bdbd914ba70fa7ebccbae3a383b5fc9e9e5c4",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit/updated45/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-build.json",
+        "measured_build_record_sha256": "d84dcdd106656d085a12ae1951aa2d2798846494ae1ac7b6083c9064272db5a5",
+        "measured_binary_sha256": "bc2cf81ae4cc0aa0d0f8880b6992fc65a19bb9252f6c03e3d6604d7859a905cc",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-updated45-metadata.json",
+        "measured_metadata_sha256": "2eeb8b22d5e437cc34a8f5d58d2b1a5b4e2ec0bcca4446e2621e6aeb58db25ec"
+      },
+      "final": {
+        "file": "measured-locks/audit/final/Cargo.lock",
+        "sha256": "913473fcd34944ab685162bdc6c3f596605e253ce738d0433c9930d0a546497a",
+        "measured_source": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit/final/wrapper/Cargo.lock",
+        "measured_build_record": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-build.json",
+        "measured_build_record_sha256": "d84dcdd106656d085a12ae1951aa2d2798846494ae1ac7b6083c9064272db5a5",
+        "measured_binary_sha256": "cf91cd1703640d8503fddf62580e8745cfcd5798a3b23552488a34b334a7f26f",
+        "measured_metadata": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-audit-runtime/audit-final-metadata.json",
+        "measured_metadata_sha256": "a7584316f07b0e619f8adc273d802fa4d6ee61a2e651e6cf3a4fe502e3f48123"
+      }
+    }
+  },
+  "scope": "Exact eight lockfiles from the completed timing and corrected untimed-audit builds; original failed audit has no successful measured binary."
+}

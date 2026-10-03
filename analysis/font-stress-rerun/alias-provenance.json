@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "files": {
+    "selection-frozen.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/selection-frozen.json",
+      "sha256": "845ab9c0d043c526dc8ca2f34419fcb11cfad9bca0a22b67295ef7c7fbc2c5bd",
+      "bytes": 3260
+    },
+    "font-candidates.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/font-candidates.json",
+      "sha256": "e891ba83a51d320003757cf7c791e285b39ad3cb9a9f4ae6557f8a85297516ff",
+      "bytes": 7593
+    },
+    "font-candidates-wave2.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/font-candidates-wave2.json",
+      "sha256": "6a3541f131a54c669eabd196531250d468794b8efd033d0c4b89340a0ab79f6a",
+      "bytes": 7494
+    },
+    "native-screen/batch.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/native-screen/batch.json",
+      "sha256": "916edbff565103218e8eae6ceb9416585294666f1b3b978e101fe216ebf2eb7a",
+      "bytes": 39645
+    },
+    "native-screen-wave2/batch.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/native-screen-wave2/batch.json",
+      "sha256": "f4523f7634991b1e64de51ca1ae5c93143d45152e9ffff3b0f2125384da7f80f",
+      "bytes": 40347
+    },
+    "demo-selection/ranking.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/demo-selection/ranking.json",
+      "sha256": "a796464a265911d6fc4d51e4b8a01b8fd174d32c7b8afb8f9f1986766542e29d",
+      "bytes": 13714
+    },
+    "demo-selection-wave2/ranking.json": {
+      "original": "/private/tmp/femtovg-font-stress-search-20261002/demo-selection-wave2/ranking.json",
+      "sha256": "d27f844c3c9451beea8fc340c807a1bf2033ee4f185353a9583ac3f23969b5ba",
+      "bytes": 13782
+    }
+  },
+  "scope": "Byte-identical frozen inputs; original absolute collection bindings remain unchanged."
+}

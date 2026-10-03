@@ -1,0 +1,1951 @@
+{
+  "cohorts": [
+    {
+      "candidate_fonts": 29,
+      "demo_processes": 124,
+      "demo_rows": 1860,
+      "label": "broad-29",
+      "native_rejections": 0,
+      "native_rows": 9920,
+      "native_successes": 31
+    },
+    {
+      "candidate_fonts": 10,
+      "demo_processes": 48,
+      "demo_rows": 720,
+      "label": "hinted-10",
+      "native_rejections": 1,
+      "native_rows": 3520,
+      "native_successes": 11
+    },
+    {
+      "candidate_fonts": 8,
+      "demo_processes": 40,
+      "demo_rows": 600,
+      "label": "ornate-8",
+      "native_rejections": 0,
+      "native_rows": 3200,
+      "native_successes": 10
+    }
+  ],
+  "complete": true,
+  "inputs": {
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/attributes.rs": {
+      "bytes": 20639,
+      "sha256": "991bc7eec71304717994fc0df91fc48a8dee3663b5bdab2fc0c2421266c0cdc7"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/cache.rs": {
+      "bytes": 2617,
+      "sha256": "18394f66b0dbe86359173ce28283094603f0cd50dd63489f7a8f76ea0e701ab4"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/charmap.rs": {
+      "bytes": 2150,
+      "sha256": "b7c9904e77131aec8b9b33a39d9b16100248692c9f155e40403243bde1bcbbec"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/aat.rs": {
+      "bytes": 2348,
+      "sha256": "db21c8a86a217cc2b7a9d64f50d4fbd42765212a37d2028a1a87fd41c53f474b"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/at.rs": {
+      "bytes": 10506,
+      "sha256": "63858b3c1cc0cf516c6aa19e0908bc5103a1de5f46ce5e5513ee5572b0bdcc99"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/mod.rs": {
+      "bytes": 7543,
+      "sha256": "22ea8569e8c6da41854e09e84afa0800c9e30dd2cefd420e5f6d6101d0f6112d"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/feature/util.rs": {
+      "bytes": 9055,
+      "sha256": "e285fbdf44f1b0afb5e868eaeeba8fa25f61ae5ebd6bec5d23ea9282d76e9dad"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/font.rs": {
+      "bytes": 8635,
+      "sha256": "a8b55991cc5124fbb42f3199164a463004a81429b8b8ae7a575ab7d9265a7136"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/aat.rs": {
+      "bytes": 58741,
+      "sha256": "71c3b1989e71b1324d8ab4291fa0ef9c6d2cf345505ef6c86d2a0d911d74941d"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/at.rs": {
+      "bytes": 27289,
+      "sha256": "c813b5b7147bc0a2e84ede036a83fe1ab3517b9f0c01e82a4a234d714eb161aa"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/cmap.rs": {
+      "bytes": 9565,
+      "sha256": "31e565eb71747c15e2adca584ba8206c857ea9f39f76eaf31ab0c70fefed13fa"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/fixed.rs": {
+      "bytes": 4103,
+      "sha256": "e521276073ed28595d893791a94fccf9545e8421c711f4f83b6f880ecd2a7f70"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/glyf.rs": {
+      "bytes": 1640,
+      "sha256": "fa65225c0a41850ba8784bbac8da993db702066e07b4ecb3ce6803fd1bdc990d"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/head.rs": {
+      "bytes": 27779,
+      "sha256": "4143356ead3a8f2daf2031be20b274f710b0fead0b4a1a1875b2f692515456d4"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/mod.rs": {
+      "bytes": 5147,
+      "sha256": "af8a56892e53a5cec0ff58d45070a9b1361b0b8e537369a5bd54a31fb004aed6"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/parse.rs": {
+      "bytes": 15510,
+      "sha256": "e4dacac03ce81a15beb52ea1fa974c048d769cebc0ad4dc4614a2468100bee75"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/var.rs": {
+      "bytes": 13935,
+      "sha256": "8716e40f86a54a4e5aa3e1ba4a7efd20a8bcbb69e9fad048c11ebc7f7b91473f"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/vorg.rs": {
+      "bytes": 818,
+      "sha256": "ab1599654524cfaa6b1fa57e4de04255aeff7d4f57dd2d3f867dfb05077f7af7"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/internal/xmtx.rs": {
+      "bytes": 929,
+      "sha256": "6449268f643d98f21c310812dee96f61a322493998c2f544f635d5c918422564"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/lib.rs": {
+      "bytes": 5379,
+      "sha256": "32c58a951217cc06ea3a22e81a31c220051fa6bd98a9380c731ce91837b0047c"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/macros.rs": {
+      "bytes": 1187,
+      "sha256": "1390e57be2bf27f8908eec46788fd27568dec98d24bfe2b0a922b41e56ab5ebd"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/metrics.rs": {
+      "bytes": 16665,
+      "sha256": "2850415dfa5982652e1783385410e87319039d9d473f45cc3433d7e593a545b1"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/palette.rs": {
+      "bytes": 4652,
+      "sha256": "4b9931169c609bfd8c3816a729eeb48d154314acfd4babe0aa7b1ed1c8d9b8fc"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/bitmap/mod.rs": {
+      "bytes": 10951,
+      "sha256": "65ee5720f4824ac9cf0535ffb75196601746a232794a561c40e5038c390f224f"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/bitmap/png.rs": {
+      "bytes": 17975,
+      "sha256": "9db56d9596369a243e2ff19a9956deb5fafc946dc69fb5046909e4a536eda9cb"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/color.rs": {
+      "bytes": 2593,
+      "sha256": "4a918c2173de55221028b1f5bf56c742b5aef6edcd006f5baad20d7d39628ebd"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/hinting_cache.rs": {
+      "bytes": 3174,
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/image.rs": {
+      "bytes": 1056,
+      "sha256": "1fa960b1ced03dba861a857762bf043bd946c98c5da8d671a1cce4237d9ac565"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/mod.rs": {
+      "bytes": 35661,
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/outline.rs": {
+      "bytes": 12096,
+      "sha256": "3e94e5c07bb0f38d696efc6835bcbd6ed5b075dab586ce6e60e848ce2a53842c"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/scale/proxy.rs": {
+      "bytes": 599,
+      "sha256": "c1c3d2f0f78e3b1ae4ffcf4f9360b65d913a6abe1160174587a37c533eb70723"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/setting.rs": {
+      "bytes": 5348,
+      "sha256": "8f695ce0f9a9fb6bbf44c01e86ba58aec3902d81a6887463d9163b94dcd725d4"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/aat.rs": {
+      "bytes": 15868,
+      "sha256": "b2774fc4a76abf6d8a4d0334c2840083ead77d19113c18970698ed41496cdd19"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/at.rs": {
+      "bytes": 64689,
+      "sha256": "097aee7a68463f8bfd1443564a1b54f0a3f3131ec5d3eeb058b2ba974e031423"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/buffer.rs": {
+      "bytes": 21157,
+      "sha256": "e2ad67fc10fc996750395e51e52efcac3c3ef7c12cce0394d9773c48c033005a"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/cache.rs": {
+      "bytes": 3329,
+      "sha256": "0e7a3ad9b54939305d09116203bd2533a1e4989d5c420ad390a80575c3480c1b"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/cluster.rs": {
+      "bytes": 2972,
+      "sha256": "d630ecda1553ba15911d4a4b8628291255c25950f2d17735b6460f7fee793314"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/engine.rs": {
+      "bytes": 8759,
+      "sha256": "e83a0600999734da5866c0f1692e8fc5ae64b596b52fbc99f4970c30759a5fc6"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/feature.rs": {
+      "bytes": 2551,
+      "sha256": "90d065912c0cf9ac1aa48ad2e8c1887b46a2e5772b544b1bc499a469448afc87"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/mod.rs": {
+      "bytes": 33955,
+      "sha256": "0f5a32cfd9f82adc707f0c73a08174b6956b194b7facb2b850dbd03d639404a1"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/shape/partition.rs": {
+      "bytes": 7091,
+      "sha256": "c77c79aa5552d5093db45448db8b5f14c8dfc4103b639ea4388fea1aa6cb091c"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/strike.rs": {
+      "bytes": 25772,
+      "sha256": "0fe0580dac1ddf0bc7a5c88d59fa1f00772516cbf4b3181fe8caefa2d6364ca4"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/string.rs": {
+      "bytes": 18041,
+      "sha256": "14b8a2c7fe6b754d62acf67ff05cb7555f2a0f344db77a4c06c74d7c9c351ae7"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/tag.rs": {
+      "bytes": 529,
+      "sha256": "9638f899dacdee0d7b52dd991da14d667c7965e52e2ca344288ee309e77545b7"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/analyze.rs": {
+      "bytes": 18713,
+      "sha256": "97497b037d1ef911b261219e6e50a331ff29147776cf6fe347eedd0788666195"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/char.rs": {
+      "bytes": 1891,
+      "sha256": "2cf557de67a1448dd0d474eea2dc772a29b1dfa39f7ccda2fbc693af030bb674"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/cluster.rs": {
+      "bytes": 12188,
+      "sha256": "f449e18218d3f4d3679f637e02d1c05789f283bd1ee401e76af3f3a17b53b3dd"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/complex.rs": {
+      "bytes": 14778,
+      "sha256": "857a095e792b0520c2d68c0b181b686947dffcf9360b503d855994e23e2744ed"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/info.rs": {
+      "bytes": 6107,
+      "sha256": "c8c139b557f40240d642212d799aabf1ca48c6d767beebaaa2e2b43fc4029072"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/mod.rs": {
+      "bytes": 1384,
+      "sha256": "aeed988fc595dd56bc5b7c4be7ffb0ac531a02a69fc3b8e953777549ef2cfbf4"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/myanmar.rs": {
+      "bytes": 11283,
+      "sha256": "9409b52314f43b2fce13e6d4729989e48b6d2ec5827eb24eef0d4e4a31f0325c"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/parse.rs": {
+      "bytes": 1474,
+      "sha256": "b8e34ea78a03929ff8f5bdddd5cb810f14c350d5e67dcd9e3ec5579fa900d384"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/simple.rs": {
+      "bytes": 6753,
+      "sha256": "93c1264d8186b111ee5437cbda9452c53f3b92d7f3a219e5ac88b886b75e130f"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/cluster/token.rs": {
+      "bytes": 627,
+      "sha256": "6857c4cc0be79b29ce2ffb8f9b80dd5a0728e3fe6f8752cec902eaf42c965347"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/compose.rs": {
+      "bytes": 5073,
+      "sha256": "c5c6067d92c4e55a7c413ac82f7d10e4252deb4ae1944fc8458832e7743a14ac"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/lang.rs": {
+      "bytes": 7893,
+      "sha256": "48a353c544b001fef2d5f144c755bc77868421ca227838ab49ee8a21baaaf1fb"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/lang_data.rs": {
+      "bytes": 43218,
+      "sha256": "58e34d12cd3e70b0ca0583adb6367ee1510e819488d8c0088fc4204b317b609d"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/mod.rs": {
+      "bytes": 343,
+      "sha256": "90c94e0df79e7d05122f44ac50c123958f1fa5a3491ac2babd9fb0182234490b"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/unicode.rs": {
+      "bytes": 10862,
+      "sha256": "01d3f71881e6fbda987be6820d9da2818421f6a465b0901082359e20d3ce5e12"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/text/unicode_data.rs": {
+      "bytes": 562406,
+      "sha256": "cd75b1d0ed789bce2a3be9ea33cae7dab17591253bcfac50b0339fbe9e26b6ae"
+    },
+    "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/swash-0.2.10/src/variation.rs": {
+      "bytes": 9395,
+      "sha256": "06552a82800cd08f6cf667ae2c80bf4de18332fbea5152de59c325835d5aeb0f"
+    },
+    "/Users/jesse/code/swash/src/attributes.rs": {
+      "bytes": 20639,
+      "sha256": "991bc7eec71304717994fc0df91fc48a8dee3663b5bdab2fc0c2421266c0cdc7"
+    },
+    "/Users/jesse/code/swash/src/cache.rs": {
+      "bytes": 2617,
+      "sha256": "18394f66b0dbe86359173ce28283094603f0cd50dd63489f7a8f76ea0e701ab4"
+    },
+    "/Users/jesse/code/swash/src/charmap.rs": {
+      "bytes": 2150,
+      "sha256": "b7c9904e77131aec8b9b33a39d9b16100248692c9f155e40403243bde1bcbbec"
+    },
+    "/Users/jesse/code/swash/src/feature/aat.rs": {
+      "bytes": 2348,
+      "sha256": "db21c8a86a217cc2b7a9d64f50d4fbd42765212a37d2028a1a87fd41c53f474b"
+    },
+    "/Users/jesse/code/swash/src/feature/at.rs": {
+      "bytes": 10506,
+      "sha256": "63858b3c1cc0cf516c6aa19e0908bc5103a1de5f46ce5e5513ee5572b0bdcc99"
+    },
+    "/Users/jesse/code/swash/src/feature/mod.rs": {
+      "bytes": 7543,
+      "sha256": "22ea8569e8c6da41854e09e84afa0800c9e30dd2cefd420e5f6d6101d0f6112d"
+    },
+    "/Users/jesse/code/swash/src/feature/util.rs": {
+      "bytes": 9055,
+      "sha256": "e285fbdf44f1b0afb5e868eaeeba8fa25f61ae5ebd6bec5d23ea9282d76e9dad"
+    },
+    "/Users/jesse/code/swash/src/font.rs": {
+      "bytes": 8635,
+      "sha256": "a8b55991cc5124fbb42f3199164a463004a81429b8b8ae7a575ab7d9265a7136"
+    },
+    "/Users/jesse/code/swash/src/internal/aat.rs": {
+      "bytes": 58741,
+      "sha256": "71c3b1989e71b1324d8ab4291fa0ef9c6d2cf345505ef6c86d2a0d911d74941d"
+    },
+    "/Users/jesse/code/swash/src/internal/at.rs": {
+      "bytes": 27289,
+      "sha256": "c813b5b7147bc0a2e84ede036a83fe1ab3517b9f0c01e82a4a234d714eb161aa"
+    },
+    "/Users/jesse/code/swash/src/internal/cmap.rs": {
+      "bytes": 9565,
+      "sha256": "31e565eb71747c15e2adca584ba8206c857ea9f39f76eaf31ab0c70fefed13fa"
+    },
+    "/Users/jesse/code/swash/src/internal/fixed.rs": {
+      "bytes": 4103,
+      "sha256": "e521276073ed28595d893791a94fccf9545e8421c711f4f83b6f880ecd2a7f70"
+    },
+    "/Users/jesse/code/swash/src/internal/glyf.rs": {
+      "bytes": 1640,
+      "sha256": "fa65225c0a41850ba8784bbac8da993db702066e07b4ecb3ce6803fd1bdc990d"
+    },
+    "/Users/jesse/code/swash/src/internal/head.rs": {
+      "bytes": 27779,
+      "sha256": "4143356ead3a8f2daf2031be20b274f710b0fead0b4a1a1875b2f692515456d4"
+    },
+    "/Users/jesse/code/swash/src/internal/mod.rs": {
+      "bytes": 5147,
+      "sha256": "af8a56892e53a5cec0ff58d45070a9b1361b0b8e537369a5bd54a31fb004aed6"
+    },
+    "/Users/jesse/code/swash/src/internal/parse.rs": {
+      "bytes": 15510,
+      "sha256": "e4dacac03ce81a15beb52ea1fa974c048d769cebc0ad4dc4614a2468100bee75"
+    },
+    "/Users/jesse/code/swash/src/internal/var.rs": {
+      "bytes": 13935,
+      "sha256": "8716e40f86a54a4e5aa3e1ba4a7efd20a8bcbb69e9fad048c11ebc7f7b91473f"
+    },
+    "/Users/jesse/code/swash/src/internal/vorg.rs": {
+      "bytes": 818,
+      "sha256": "ab1599654524cfaa6b1fa57e4de04255aeff7d4f57dd2d3f867dfb05077f7af7"
+    },
+    "/Users/jesse/code/swash/src/internal/xmtx.rs": {
+      "bytes": 929,
+      "sha256": "6449268f643d98f21c310812dee96f61a322493998c2f544f635d5c918422564"
+    },
+    "/Users/jesse/code/swash/src/lib.rs": {
+      "bytes": 5379,
+      "sha256": "32c58a951217cc06ea3a22e81a31c220051fa6bd98a9380c731ce91837b0047c"
+    },
+    "/Users/jesse/code/swash/src/macros.rs": {
+      "bytes": 1187,
+      "sha256": "1390e57be2bf27f8908eec46788fd27568dec98d24bfe2b0a922b41e56ab5ebd"
+    },
+    "/Users/jesse/code/swash/src/metrics.rs": {
+      "bytes": 16665,
+      "sha256": "2850415dfa5982652e1783385410e87319039d9d473f45cc3433d7e593a545b1"
+    },
+    "/Users/jesse/code/swash/src/palette.rs": {
+      "bytes": 4652,
+      "sha256": "4b9931169c609bfd8c3816a729eeb48d154314acfd4babe0aa7b1ed1c8d9b8fc"
+    },
+    "/Users/jesse/code/swash/src/scale/bitmap/mod.rs": {
+      "bytes": 10951,
+      "sha256": "65ee5720f4824ac9cf0535ffb75196601746a232794a561c40e5038c390f224f"
+    },
+    "/Users/jesse/code/swash/src/scale/bitmap/png.rs": {
+      "bytes": 17975,
+      "sha256": "9db56d9596369a243e2ff19a9956deb5fafc946dc69fb5046909e4a536eda9cb"
+    },
+    "/Users/jesse/code/swash/src/scale/color.rs": {
+      "bytes": 2593,
+      "sha256": "4a918c2173de55221028b1f5bf56c742b5aef6edcd006f5baad20d7d39628ebd"
+    },
+    "/Users/jesse/code/swash/src/scale/hinting_cache.rs": {
+      "bytes": 3174,
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a"
+    },
+    "/Users/jesse/code/swash/src/scale/image.rs": {
+      "bytes": 1056,
+      "sha256": "1fa960b1ced03dba861a857762bf043bd946c98c5da8d671a1cce4237d9ac565"
+    },
+    "/Users/jesse/code/swash/src/scale/mod.rs": {
+      "bytes": 35661,
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a"
+    },
+    "/Users/jesse/code/swash/src/scale/outline.rs": {
+      "bytes": 12096,
+      "sha256": "3e94e5c07bb0f38d696efc6835bcbd6ed5b075dab586ce6e60e848ce2a53842c"
+    },
+    "/Users/jesse/code/swash/src/scale/proxy.rs": {
+      "bytes": 599,
+      "sha256": "c1c3d2f0f78e3b1ae4ffcf4f9360b65d913a6abe1160174587a37c533eb70723"
+    },
+    "/Users/jesse/code/swash/src/setting.rs": {
+      "bytes": 5348,
+      "sha256": "8f695ce0f9a9fb6bbf44c01e86ba58aec3902d81a6887463d9163b94dcd725d4"
+    },
+    "/Users/jesse/code/swash/src/shape/aat.rs": {
+      "bytes": 15868,
+      "sha256": "b2774fc4a76abf6d8a4d0334c2840083ead77d19113c18970698ed41496cdd19"
+    },
+    "/Users/jesse/code/swash/src/shape/at.rs": {
+      "bytes": 64689,
+      "sha256": "097aee7a68463f8bfd1443564a1b54f0a3f3131ec5d3eeb058b2ba974e031423"
+    },
+    "/Users/jesse/code/swash/src/shape/buffer.rs": {
+      "bytes": 21157,
+      "sha256": "e2ad67fc10fc996750395e51e52efcac3c3ef7c12cce0394d9773c48c033005a"
+    },
+    "/Users/jesse/code/swash/src/shape/cache.rs": {
+      "bytes": 3329,
+      "sha256": "0e7a3ad9b54939305d09116203bd2533a1e4989d5c420ad390a80575c3480c1b"
+    },
+    "/Users/jesse/code/swash/src/shape/cluster.rs": {
+      "bytes": 2972,
+      "sha256": "d630ecda1553ba15911d4a4b8628291255c25950f2d17735b6460f7fee793314"
+    },
+    "/Users/jesse/code/swash/src/shape/engine.rs": {
+      "bytes": 8759,
+      "sha256": "e83a0600999734da5866c0f1692e8fc5ae64b596b52fbc99f4970c30759a5fc6"
+    },
+    "/Users/jesse/code/swash/src/shape/feature.rs": {
+      "bytes": 2551,
+      "sha256": "90d065912c0cf9ac1aa48ad2e8c1887b46a2e5772b544b1bc499a469448afc87"
+    },
+    "/Users/jesse/code/swash/src/shape/mod.rs": {
+      "bytes": 33955,
+      "sha256": "0f5a32cfd9f82adc707f0c73a08174b6956b194b7facb2b850dbd03d639404a1"
+    },
+    "/Users/jesse/code/swash/src/shape/partition.rs": {
+      "bytes": 7091,
+      "sha256": "c77c79aa5552d5093db45448db8b5f14c8dfc4103b639ea4388fea1aa6cb091c"
+    },
+    "/Users/jesse/code/swash/src/strike.rs": {
+      "bytes": 25772,
+      "sha256": "0fe0580dac1ddf0bc7a5c88d59fa1f00772516cbf4b3181fe8caefa2d6364ca4"
+    },
+    "/Users/jesse/code/swash/src/string.rs": {
+      "bytes": 18041,
+      "sha256": "14b8a2c7fe6b754d62acf67ff05cb7555f2a0f344db77a4c06c74d7c9c351ae7"
+    },
+    "/Users/jesse/code/swash/src/tag.rs": {
+      "bytes": 529,
+      "sha256": "9638f899dacdee0d7b52dd991da14d667c7965e52e2ca344288ee309e77545b7"
+    },
+    "/Users/jesse/code/swash/src/text/analyze.rs": {
+      "bytes": 18713,
+      "sha256": "97497b037d1ef911b261219e6e50a331ff29147776cf6fe347eedd0788666195"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/char.rs": {
+      "bytes": 1891,
+      "sha256": "2cf557de67a1448dd0d474eea2dc772a29b1dfa39f7ccda2fbc693af030bb674"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/cluster.rs": {
+      "bytes": 12188,
+      "sha256": "f449e18218d3f4d3679f637e02d1c05789f283bd1ee401e76af3f3a17b53b3dd"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/complex.rs": {
+      "bytes": 14778,
+      "sha256": "857a095e792b0520c2d68c0b181b686947dffcf9360b503d855994e23e2744ed"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/info.rs": {
+      "bytes": 6107,
+      "sha256": "c8c139b557f40240d642212d799aabf1ca48c6d767beebaaa2e2b43fc4029072"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/mod.rs": {
+      "bytes": 1384,
+      "sha256": "aeed988fc595dd56bc5b7c4be7ffb0ac531a02a69fc3b8e953777549ef2cfbf4"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/myanmar.rs": {
+      "bytes": 11283,
+      "sha256": "9409b52314f43b2fce13e6d4729989e48b6d2ec5827eb24eef0d4e4a31f0325c"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/parse.rs": {
+      "bytes": 1474,
+      "sha256": "b8e34ea78a03929ff8f5bdddd5cb810f14c350d5e67dcd9e3ec5579fa900d384"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/simple.rs": {
+      "bytes": 6753,
+      "sha256": "93c1264d8186b111ee5437cbda9452c53f3b92d7f3a219e5ac88b886b75e130f"
+    },
+    "/Users/jesse/code/swash/src/text/cluster/token.rs": {
+      "bytes": 627,
+      "sha256": "6857c4cc0be79b29ce2ffb8f9b80dd5a0728e3fe6f8752cec902eaf42c965347"
+    },
+    "/Users/jesse/code/swash/src/text/compose.rs": {
+      "bytes": 5073,
+      "sha256": "c5c6067d92c4e55a7c413ac82f7d10e4252deb4ae1944fc8458832e7743a14ac"
+    },
+    "/Users/jesse/code/swash/src/text/lang.rs": {
+      "bytes": 7893,
+      "sha256": "48a353c544b001fef2d5f144c755bc77868421ca227838ab49ee8a21baaaf1fb"
+    },
+    "/Users/jesse/code/swash/src/text/lang_data.rs": {
+      "bytes": 43218,
+      "sha256": "58e34d12cd3e70b0ca0583adb6367ee1510e819488d8c0088fc4204b317b609d"
+    },
+    "/Users/jesse/code/swash/src/text/mod.rs": {
+      "bytes": 343,
+      "sha256": "90c94e0df79e7d05122f44ac50c123958f1fa5a3491ac2babd9fb0182234490b"
+    },
+    "/Users/jesse/code/swash/src/text/unicode.rs": {
+      "bytes": 10862,
+      "sha256": "01d3f71881e6fbda987be6820d9da2818421f6a465b0901082359e20d3ce5e12"
+    },
+    "/Users/jesse/code/swash/src/text/unicode_data.rs": {
+      "bytes": 562406,
+      "sha256": "cd75b1d0ed789bce2a3be9ea33cae7dab17591253bcfac50b0339fbe9e26b6ae"
+    },
+    "/Users/jesse/code/swash/src/variation.rs": {
+      "bytes": 9395,
+      "sha256": "06552a82800cd08f6cf667ae2c80bf4de18332fbea5152de59c325835d5aeb0f"
+    },
+    "/Users/jesse/github/femtovg-outline-cache-bench/scripts/independent_cjk_native_audit.py": {
+      "bytes": 16704,
+      "sha256": "5d8bf61ec2f69da63f081a7e6d193d241fe3a1e3ed0d57d162171d44dcd33b9f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/acquired-files.json": {
+      "bytes": 550686,
+      "sha256": "75047db6c73f8e3d9f74a48fca7e288a824fadb8c70fde41bcb9c6a5a3ce6ce6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-confirmation-analysis-v1/analyze_demo_confirm.py": {
+      "bytes": 38234,
+      "sha256": "3471ef075eb085ba8bca5298028009b56b029c7cd3ee9b6b6bad0d56c9190804"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-confirmation-analysis-v1/source-preparation.json": {
+      "bytes": 36214,
+      "sha256": "8950942b04680157efcedd1feb4ae3b803e63ddf9a7cff566f7ff2577e6543d1"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-screen-v1/cpu-provenance.json": {
+      "bytes": 636393,
+      "sha256": "ab6768883b684f3c4088b086c74713d54c430a2add42ccdcb049e735802143c6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-screen-v1/independent-analysis/analysis.json": {
+      "bytes": 742009,
+      "sha256": "db1cc46b3862a25c046b1ec0955dcb66051c26feccfda437a487576559dd2756"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-screen-v1/independent-analysis/archive-fraction-audit.json": {
+      "bytes": 2771,
+      "sha256": "802454727acf3b98bd4fec268431502d2d228e751f75c8e62c4b6a7e5af020c1"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-selection-v1/protocol.json": {
+      "bytes": 7030,
+      "sha256": "5e01382b95b6ea97d2634eaa0e96dc7f3cd43fbdd7ddaa2f6050e05db7184a45"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/demo-selection-v1/selection.json": {
+      "bytes": 193713,
+      "sha256": "763cfbdafee8309aefaa56068b5f421ab2de5c4bc275ee3b8216ce72d521319e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/finalize_aggressive_manifest.py": {
+      "bytes": 12731,
+      "sha256": "98ae1d971f08faecd18a671cc46bea20ffd3bea908863f11d2ff6360fe25dc22"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeoutline/BungeeOutline-Regular.ttf": {
+      "bytes": 202152,
+      "sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeoutline/METADATA.pb": {
+      "bytes": 899,
+      "sha256": "d468dcb18a675dea467f92e67152cadca985cc73e96ac236c2f7796cd048e71a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeoutline/OFL.txt": {
+      "bytes": 4473,
+      "sha256": "d5787a50dde5be6c6daecab9ed459939b1bc37cff0d0e00257eaf1ec2cf4c16c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeshade/BungeeShade-Regular.ttf": {
+      "bytes": 304936,
+      "sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeshade/METADATA.pb": {
+      "bytes": 885,
+      "sha256": "9f2cb7eb4428db3222b28b17fabdfbca35c011008b4553ab401e8d22e42e7c6c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/bungeeshade/OFL.txt": {
+      "bytes": 4473,
+      "sha256": "d5787a50dde5be6c6daecab9ed459939b1bc37cff0d0e00257eaf1ec2cf4c16c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/DESCRIPTION.en_us.html": {
+      "bytes": 1466,
+      "sha256": "7965583db56a3617ff5fd76c15c3570cafc28f2f5a6cd87dd7312cf67951ae3a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/Diplomata-Regular.ttf": {
+      "bytes": 89556,
+      "sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/METADATA.pb": {
+      "bytes": 868,
+      "sha256": "7fdda922d62f6a1870056b1a1509d682252c32474b38387cf1d4814af56addd1"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomata/OFL.txt": {
+      "bytes": 4517,
+      "sha256": "f4e8602be4b69bc44e3ce17d026622722b992a07b1aab0db23da48b0155b289e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DESCRIPTION.en_us.html": {
+      "bytes": 1463,
+      "sha256": "5877f99bb0e598c36ce462f178b255f1a1e7d54f6fceee310037fd4cf6021c0e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DiplomataSC-Regular.ttf": {
+      "bytes": 87544,
+      "sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/METADATA.pb": {
+      "bytes": 889,
+      "sha256": "b5ff724a01dc10bec61a5cc1be1481ae69841b8ddebb40b78ba1b7c0c653c53d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/OFL.txt": {
+      "bytes": 4517,
+      "sha256": "f4e8602be4b69bc44e3ce17d026622722b992a07b1aab0db23da48b0155b289e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/DESCRIPTION.en_us.html": {
+      "bytes": 336,
+      "sha256": "695978e727a94d76e72c5f928f1898d5c8d046073b6bd7d1d78f8f4213b763eb"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/Ewert-Regular.ttf": {
+      "bytes": 70752,
+      "sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/METADATA.pb": {
+      "bytes": 859,
+      "sha256": "d694e71dff2838ea5a23d0a0ee27be129bac6a20d5b7433341476820498374d2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ewert/OFL.txt": {
+      "bytes": 4452,
+      "sha256": "9bc1eb1c679510b32d2e3f5f4f3b47726b1657aa121494aa68ba0b124a3c3a53"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/DESCRIPTION.en_us.html": {
+      "bytes": 435,
+      "sha256": "b799d42e9641be5ee40ee087633d19cc297ebf16797d21cf3aaca29eac3ef2e5"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/FascinateInline-Regular.ttf": {
+      "bytes": 59604,
+      "sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/METADATA.pb": {
+      "bytes": 633,
+      "sha256": "dfbd69178153638a4eaa9303f909520290f269d80e10851f1b3d8204cd04b422"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fascinateinline/OFL.txt": {
+      "bytes": 4455,
+      "sha256": "a7fe1f3d23034092b015aaeb53d2ecbc9e592be96b10bdfbcf8700ec6a6ffc97"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/DESCRIPTION.en_us.html": {
+      "bytes": 301,
+      "sha256": "b3d8bfb060ebca3203cb2232f7c27b866b00ce2c91939ebc9caa32c9a6c92648"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/FontdinerSwanky-Regular.ttf": {
+      "bytes": 45524,
+      "sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/LICENSE.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/fontdinerswanky/METADATA.pb": {
+      "bytes": 590,
+      "sha256": "f5924b75b4172abf4552f3a84857b7b553067d31c4d3d69b881912a7269d80a8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/DESCRIPTION.en_us.html": {
+      "bytes": 259,
+      "sha256": "444ef5a1fa18ed54661b7851ff5a35c6922994a1851036876702b7ff0f5ca58f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/FrederickatheGreat-Regular.ttf": {
+      "bytes": 486016,
+      "sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/METADATA.pb": {
+      "bytes": 681,
+      "sha256": "c1b95f5346d3a6eb9b60b7371b48cf544468c670c5631dca6bb83e06f82cdf6c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frederickathegreat/OFL.txt": {
+      "bytes": 4433,
+      "sha256": "f8e2b58dd7a8c8e21e5d744b45876bce7e010a647c071c1ed42ff0e618d4ea59"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/DESCRIPTION.en_us.html": {
+      "bytes": 292,
+      "sha256": "783eb42f061121acfb55ebdada734a3ba4efcf291a4f2a78f79a59dea02f8ccd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/Frijole-Regular.ttf": {
+      "bytes": 227860,
+      "sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/METADATA.pb": {
+      "bytes": 523,
+      "sha256": "8125172567f385f39fb8917117773395e158443c624f3d8cdc71e554e0fd054c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/frijole/OFL.txt": {
+      "bytes": 4415,
+      "sha256": "c2368518f12463a93cfed44e1460f36085dc60df06f415ee9b0319809987ccce"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/DESCRIPTION.en_us.html": {
+      "bytes": 924,
+      "sha256": "28ea78fac749055c2f51e5ffa568d023162c30117abd537cdda8b2d0870b4fad"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/JacquesFrancoisShadow-Regular.ttf": {
+      "bytes": 82492,
+      "sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/METADATA.pb": {
+      "bytes": 657,
+      "sha256": "98ee870335b62536f7c475b38bd2f046e3886346a1ec2e11fa045afe3c9271fd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/jacquesfrancoisshadow/OFL.txt": {
+      "bytes": 4484,
+      "sha256": "2887c5bb38abbde9ccc608c4dcc4b0dba0fefc0c74eec011033bcfbd3ffcb235"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/DESCRIPTION.en_us.html": {
+      "bytes": 52,
+      "sha256": "b73c4a80e4e0704dcbd087bf12771dcdee88b79b77d676ea1da6e0337d064add"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/Kranky-Regular.ttf": {
+      "bytes": 199284,
+      "sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/LICENSE.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/kranky/METADATA.pb": {
+      "bytes": 561,
+      "sha256": "1caf9b98b4b418e25679352accffd6de2b972f68516cf9b10feb2203e307d3b2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/DESCRIPTION.en_us.html": {
+      "bytes": 346,
+      "sha256": "012b2a3d8c0bb72256234c2d1c4e29d8e2974c1a010f5c621ff8073dcd9ab0b7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/METADATA.pb": {
+      "bytes": 608,
+      "sha256": "8b58aa70c22e4917ee934ccb3b681dc364211933d428b3ab866d175835759c34"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/Monoton-Regular.ttf": {
+      "bytes": 51604,
+      "sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/monoton/OFL.txt": {
+      "bytes": 4401,
+      "sha256": "585c6d2da8bcd8ffa651e0016f2e992a6891b625143a46a1dacf00699a817d9a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/DESCRIPTION.en_us.html": {
+      "bytes": 436,
+      "sha256": "1a50de5e8ada9eb828c27b73dee958ba1569cbbe8c27324ee49295f0f1a0c272"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/METADATA.pb": {
+      "bytes": 594,
+      "sha256": "13a845f6e9cdbad08500d28073245f9e1c1af51c65a972c65920a66319600ad7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/MysteryQuest-Regular.ttf": {
+      "bytes": 42124,
+      "sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/mysteryquest/OFL.txt": {
+      "bytes": 4396,
+      "sha256": "965bd2c907f7bb6f36da4f85e83f29aea8b2f720783deebd7ed7b40678e67672"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/DESCRIPTION.en_us.html": {
+      "bytes": 425,
+      "sha256": "b4edb18e42721fc26331f8f4c45f29059e1482a391342a57fe75d5afdc28462a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/METADATA.pb": {
+      "bytes": 666,
+      "sha256": "ec9e4997fd85fb405160f90c1e20162b8b0ca26dfce8f5cf20bb0eb53df4f0cf"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/OFL.txt": {
+      "bytes": 4449,
+      "sha256": "9acc45e5ba18b5b38868fad1f51c03df4f5d7a43061d46314843de45c4444233"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/ribeyemarrow/RibeyeMarrow-Regular.ttf": {
+      "bytes": 84896,
+      "sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/DESCRIPTION.en_us.html": {
+      "bytes": 616,
+      "sha256": "b08600da74a15e9e2c4619483daf5464d1f5fb22168a66d8a57155ddc67efb01"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/METADATA.pb": {
+      "bytes": 1007,
+      "sha256": "9bfbe5dcc49635d27a8171e09812179f0ef12fd5ee86db9bb71dba066c65055f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubik80sfade/Rubik80sFade-Regular.ttf": {
+      "bytes": 3448044,
+      "sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/DESCRIPTION.en_us.html": {
+      "bytes": 617,
+      "sha256": "afe0b3f43d386ba63d9004ffb5bdafe903c116d5686451869a71677f6a587370"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/METADATA.pb": {
+      "bytes": 1004,
+      "sha256": "4e3f8445c29751de0affd3778108ea77b4d3dd2391a2ad7df435ba0324c972cc"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikbeastly/RubikBeastly-Regular.ttf": {
+      "bytes": 512684,
+      "sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/DESCRIPTION.en_us.html": {
+      "bytes": 616,
+      "sha256": "b08600da74a15e9e2c4619483daf5464d1f5fb22168a66d8a57155ddc67efb01"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/METADATA.pb": {
+      "bytes": 994,
+      "sha256": "685505294a0b57295ea56139db2df65a01b648c37c3582055d7290cc439f5149"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikburned/RubikBurned-Regular.ttf": {
+      "bytes": 605348,
+      "sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/DESCRIPTION.en_us.html": {
+      "bytes": 616,
+      "sha256": "b08600da74a15e9e2c4619483daf5464d1f5fb22168a66d8a57155ddc67efb01"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/METADATA.pb": {
+      "bytes": 1034,
+      "sha256": "16404dc1975954ac0eba2bd409345cb7ca0707d5d0baac3d6739c639b5cefdb6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikdistressed/RubikDistressed-Regular.ttf": {
+      "bytes": 892544,
+      "sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/DESCRIPTION.en_us.html": {
+      "bytes": 617,
+      "sha256": "afe0b3f43d386ba63d9004ffb5bdafe903c116d5686451869a71677f6a587370"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/METADATA.pb": {
+      "bytes": 994,
+      "sha256": "3878aec67d50c1865473d03527850d9c30725051a1e343afbe7e13195b013046"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitch/RubikGlitch-Regular.ttf": {
+      "bytes": 407304,
+      "sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/DESCRIPTION.en_us.html": {
+      "bytes": 616,
+      "sha256": "b08600da74a15e9e2c4619483daf5464d1f5fb22168a66d8a57155ddc67efb01"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/METADATA.pb": {
+      "bytes": 1086,
+      "sha256": "1dffff12b1ef36c8363d7bbbc289b9ec6ce20b50f2bf0bd069fe00198aa0071f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikglitchpop/RubikGlitchPop-Regular.ttf": {
+      "bytes": 1976660,
+      "sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/DESCRIPTION.en_us.html": {
+      "bytes": 617,
+      "sha256": "afe0b3f43d386ba63d9004ffb5bdafe903c116d5686451869a71677f6a587370"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/METADATA.pb": {
+      "bytes": 1004,
+      "sha256": "8431566215340ff93219c603e64d08dc28c2269c9972d4a222d8d03f7af441e2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmicrobe/RubikMicrobe-Regular.ttf": {
+      "bytes": 1444176,
+      "sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/DESCRIPTION.en_us.html": {
+      "bytes": 617,
+      "sha256": "afe0b3f43d386ba63d9004ffb5bdafe903c116d5686451869a71677f6a587370"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/METADATA.pb": {
+      "bytes": 1072,
+      "sha256": "2afc71becf23589431160272cd0be49c6d3c830c2529f8265cd6ce44fe597593"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikmoonrocks/RubikMoonrocks-Regular.ttf": {
+      "bytes": 403712,
+      "sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpixels/METADATA.pb": {
+      "bytes": 994,
+      "sha256": "29a5fa155149dbe5ba9138812bb623cbea94a5b8e2705c5787bf5abe2c75aa15"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpixels/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpixels/RubikPixels-Regular.ttf": {
+      "bytes": 5627648,
+      "sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/DESCRIPTION.en_us.html": {
+      "bytes": 617,
+      "sha256": "afe0b3f43d386ba63d9004ffb5bdafe903c116d5686451869a71677f6a587370"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/METADATA.pb": {
+      "bytes": 1004,
+      "sha256": "fb08f9c6ef807556bcda0d44c49a0708e5aab0ff83a6755dedd465a6ded30a1f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikpuddles/RubikPuddles-Regular.ttf": {
+      "bytes": 404956,
+      "sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/DESCRIPTION.en_us.html": {
+      "bytes": 616,
+      "sha256": "b08600da74a15e9e2c4619483daf5464d1f5fb22168a66d8a57155ddc67efb01"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/METADATA.pb": {
+      "bytes": 984,
+      "sha256": "2e43a1b7f15763bdb9c6d0d5f5d249735efb402b516978591c0a537c10528702"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikvinyl/RubikVinyl-Regular.ttf": {
+      "bytes": 414752,
+      "sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/DESCRIPTION.en_us.html": {
+      "bytes": 617,
+      "sha256": "afe0b3f43d386ba63d9004ffb5bdafe903c116d5686451869a71677f6a587370"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/METADATA.pb": {
+      "bytes": 1017,
+      "sha256": "58e9bb68d1d037c09825bd6edffd385726b5713bb336f9d972888e8273bc3247"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/OFL.txt": {
+      "bytes": 4406,
+      "sha256": "f9e2d4498ea80d38bac7b8841d68af68c132fa67e1552e7c05717e6987de1d74"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/rubikwetpaint/RubikWetPaint-Regular.ttf": {
+      "bytes": 442628,
+      "sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/DESCRIPTION.en_us.html": {
+      "bytes": 731,
+      "sha256": "c6a1b683e381f492bd656d4302e2b8e4bb03611b33a60b9371a2a352e249a6f5"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/METADATA.pb": {
+      "bytes": 610,
+      "sha256": "eb1fa5d6d60cbe80186cf4f7af79081f932a0a3494630fee36b9d4889e889928"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/OFL.txt": {
+      "bytes": 4398,
+      "sha256": "cd354a6084383c50398fae709ebe3a5dd98b947c486c1fe9de5f89caf81f980c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/snowburstone/SnowburstOne-Regular.ttf": {
+      "bytes": 68360,
+      "sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/DESCRIPTION.en_us.html": {
+      "bytes": 597,
+      "sha256": "5aee778200f4732d63d0f9bf409736a12dd6ffac3aa7baccbf00784c7f011a0e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/METADATA.pb": {
+      "bytes": 537,
+      "sha256": "3bf343ee8300b38ab1b3ff8d487d4234ec633798b9a33bb43101b846f56ecd76"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/OFL.txt": {
+      "bytes": 4395,
+      "sha256": "2c3737ea83b48d48624068d1bbd1d9f8049eb7cf2e1f67435e420375c42e0686"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/spirax/Spirax-Regular.ttf": {
+      "bytes": 49064,
+      "sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/DESCRIPTION.en_us.html": {
+      "bytes": 562,
+      "sha256": "90f3c424fcaaf306bda9f156977b69a4f7986f32ec72461f15ffd150cc1eae29"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/METADATA.pb": {
+      "bytes": 788,
+      "sha256": "4bdd10b479737071adca193fa86320d3f82863610d4dd43f5fcb1513c5ddc3f8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/OFL.txt": {
+      "bytes": 4413,
+      "sha256": "f1d1a3536fa4b9c71d04fe4c8d8bbfc0cc5c457d6883f45086b04d0bc07ed12d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/vastshadow/VastShadow-Regular.ttf": {
+      "bytes": 62364,
+      "sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/acquired-files.json": {
+      "bytes": 207478,
+      "sha256": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/demo-screen-v1/cpu-provenance.json": {
+      "bytes": 358131,
+      "sha256": "7b6e5397ecd87a76cb20c8dc01554f79239674d72082d23cf92ea1ce97281d81"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/demo-screen-v1/independent-analysis/analysis.json": {
+      "bytes": 289072,
+      "sha256": "27594ecbb2a5edf5155e5f5ff493efcd185b9ff582245ecf45253567f7bbde65"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/demo-screen-v1/independent-analysis/archive-fraction-audit.json": {
+      "bytes": 2873,
+      "sha256": "edc6cac2e94e0374e20c156caf2afbdc2d41ffaf8552e1cb3f07b5107cdc829d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/demo-selection-v1/protocol.json": {
+      "bytes": 4602,
+      "sha256": "6950fb4f935cf471319a1da537cc935cee251e6757a6062dc169ff3e0baa4aee"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/demo-selection-v1/selection.json": {
+      "bytes": 199921,
+      "sha256": "87ae8dc64fabdf09cc4fa1d922d1ddd80502a558e03c9fb3b988048a80146346"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/AveriaGruesaLibre-Regular.ttf": {
+      "bytes": 111584,
+      "sha256": "df080c6c99c694b3d741835957e4ebc37d640a9c54f4079ceb8c7211e3f2e209"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/DESCRIPTION.en_us.html": {
+      "bytes": 718,
+      "sha256": "0fe481fc36773771d49a629b1a4c48f809da429cb7326827e5ecde78a0534893"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/METADATA.pb": {
+      "bytes": 628,
+      "sha256": "f4ce8d75ad1a8218519b562ff8fab0968308e3316e13664d658199e50e97b97f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiagruesalibre/OFL.txt": {
+      "bytes": 4402,
+      "sha256": "46239ba6485d28553fd944da4ad32a00d9c403aa1c3e111676b0b96fe458d1d4"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/AveriaLibre-Regular.ttf": {
+      "bytes": 108424,
+      "sha256": "3dda695e06012f89b39eaccd77fbbcf22133a17b00ce5ddf3e4e9a996546b865"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/DESCRIPTION.en_us.html": {
+      "bytes": 704,
+      "sha256": "fe3315bbdf6348183b6f812b05f0fa6fad99471c4e9912a094298e350ce89699"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/METADATA.pb": {
+      "bytes": 1928,
+      "sha256": "949fbe8e590a49b490223d56d0d07a46a1151c65a339e8c380178a0fafa90c72"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averialibre/OFL.txt": {
+      "bytes": 4402,
+      "sha256": "46239ba6485d28553fd944da4ad32a00d9c403aa1c3e111676b0b96fe458d1d4"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/AveriaSerifLibre-Regular.ttf": {
+      "bytes": 109948,
+      "sha256": "c64545bce66be1d737832337c1188015f9acacc5230ccbeb4ce646a0eaa252da"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/DESCRIPTION.en_us.html": {
+      "bytes": 1153,
+      "sha256": "afd7985a8209d3c605de80c759a56462d699154d81085d3bb78ea36ebd9dc5e3"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/METADATA.pb": {
+      "bytes": 2248,
+      "sha256": "fb67a3f3b9766a06ecd8ad151bba9ad5bc787d07090ce2afa2ef77423ff627a8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/averiaseriflibre/OFL.txt": {
+      "bytes": 4402,
+      "sha256": "46239ba6485d28553fd944da4ad32a00d9c403aa1c3e111676b0b96fe458d1d4"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/BilboSwashCaps-Regular.ttf": {
+      "bytes": 58072,
+      "sha256": "36e0a6d9f33c57797340a65c8789272247f8d2b0b9521a92112eaa13c77a4354"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/DESCRIPTION.en_us.html": {
+      "bytes": 341,
+      "sha256": "fbaa87cfdc9d91661c69441b6311a85528191e66a802ee8bec9772b10e6cea98"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/METADATA.pb": {
+      "bytes": 857,
+      "sha256": "a642d01a5194fb02d055a942a53d2dab6aa4e5861e959bad9b03ee0311abebd6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/bilboswashcaps/OFL.txt": {
+      "bytes": 4385,
+      "sha256": "93f60741563b4f51f2fcdb207fde72b2b23292a47022c729aecd998b360d8038"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/DESCRIPTION.en_us.html": {
+      "bytes": 130,
+      "sha256": "cda1f10e9958631b5ee88ed8bd6edc99a7f806342afb33928f6ddcf461533a66"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/Eater-Regular.ttf": {
+      "bytes": 83928,
+      "sha256": "df2744af0f58592c4ff13e8205e62a56f7bdf915b3e31c9def075668c42a2b3f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/METADATA.pb": {
+      "bytes": 803,
+      "sha256": "505a9cbedcd761946de60542a0a96668247a225041130f89796525a26d52e37c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/eater/OFL.txt": {
+      "bytes": 4368,
+      "sha256": "5946eec3a7d3bda02825930156e4716198e7753641dd3303a3e8c386c8011909"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/DESCRIPTION.en_us.html": {
+      "bytes": 540,
+      "sha256": "4665ced7839e4496044ff75eb8e94728d8416125946451accc1bf894ade53dff"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf": {
+      "bytes": 231608,
+      "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/METADATA.pb": {
+      "bytes": 997,
+      "sha256": "86c863745494a134d24c9b5b7a191821029d1a1627611e6fd932a26b92e53067"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/OFL.txt": {
+      "bytes": 4495,
+      "sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/DESCRIPTION.en_us.html": {
+      "bytes": 483,
+      "sha256": "08782c9e096dd820f893a33bde65af0e546a72c997dc451c7123a15825c33a28"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/GreatVibes-Regular.ttf": {
+      "bytes": 457588,
+      "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/METADATA.pb": {
+      "bytes": 1426,
+      "sha256": "9acaa7e4a6ff0598c8ed6f53b6dc572dfdccfeebde4e80d65064c922f4426362"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/greatvibes/OFL.txt": {
+      "bytes": 4399,
+      "sha256": "61093a21f5e63dedf54222b3c09997e54c0fe43e3851d21386e02ddcbc246d49"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/DESCRIPTION.en_us.html": {
+      "bytes": 1107,
+      "sha256": "55c444376db08dbe80bd0b5bc08438c0ae7326e6a77f5ae55cdb2d9eefbb4e79"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/HerrVonMuellerhoff-Regular.ttf": {
+      "bytes": 46624,
+      "sha256": "ba8ac10807a79462b7c8265b2eebb8419e5017fdc1a5828b1a071d9e8478772e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/METADATA.pb": {
+      "bytes": 697,
+      "sha256": "4811d6faaa11ce4afe83c1444a60dd457a2e4e5531bebc18585e8f47daed96e3"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/herrvonmuellerhoff/OFL.txt": {
+      "bytes": 4410,
+      "sha256": "50265d2b41f8ad2dd350532d2286509aa694021b4aa0490b06f0068e4ed78c27"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/DESCRIPTION.en_us.html": {
+      "bytes": 1107,
+      "sha256": "55c444376db08dbe80bd0b5bc08438c0ae7326e6a77f5ae55cdb2d9eefbb4e79"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/METADATA.pb": {
+      "bytes": 605,
+      "sha256": "a8bb9619a367f87f4e07cd5dbd0cefaf0292dea107b4bca5387b5eb8c80ba751"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/MissFajardose-Regular.ttf": {
+      "bytes": 58872,
+      "sha256": "f76e0f245e781a75ea9fa528706b417173f7741439369c07d1501276170ab709"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/missfajardose/OFL.txt": {
+      "bytes": 4404,
+      "sha256": "d1bf0acea511ad1f4de53e942cffb8ab0e67c03c6203d6f390d71105d52c33f0"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/DESCRIPTION.en_us.html": {
+      "bytes": 666,
+      "sha256": "47304cf65921e9eb71559245098494484d84c7f43cce1e9f60ce6779b1d314bd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/METADATA.pb": {
+      "bytes": 883,
+      "sha256": "a3f29d6f856027778905c0263cbd7852019d3cdde5cd6898463dab7b74993b1a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/OFL.txt": {
+      "bytes": 4384,
+      "sha256": "61d07cb0eaa943943648df2b11d0c2210e772053c192871e13f680b53fe0b77e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/pinyonscript/PinyonScript-Regular.ttf": {
+      "bytes": 151412,
+      "sha256": "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-protocol-v1.json": {
+      "bytes": 39009,
+      "sha256": "a3fc0b9435036d8413a4654bd222d43498e35f9885fe5393e4598410af4f3f71"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-AveriaGruesaLibre-Regular.csv": {
+      "bytes": 51234,
+      "sha256": "910c3826ded96613199cbe6c1f91be32168af71d0357793fa3b544bb682802b1"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-AveriaGruesaLibre-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-AveriaLibre-Regular.csv": {
+      "bytes": 51244,
+      "sha256": "331fc60425a019eb10943762b0416d35fddadbe6537eee1458b24273fd2401ee"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-AveriaLibre-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-AveriaSerifLibre-Regular.csv": {
+      "bytes": 51276,
+      "sha256": "0f21726454989da9739440f15068ebc8a3c2d796c1a523e816a8dc9c136fde5c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-AveriaSerifLibre-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-BilboSwashCaps-Regular.csv": {
+      "bytes": 51370,
+      "sha256": "c563612955de05414908cd154a3f8cfe0a5850a13c4d7b8f379488dca4ac6c6c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-BilboSwashCaps-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Eater-Regular.csv": {
+      "bytes": 51838,
+      "sha256": "d549bacb81c78c8c5c9050d25ce8782e190ecbc73d8c533e454b19baccffae58"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Eater-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-FleurDeLeah-Regular.csv": {
+      "bytes": 52002,
+      "sha256": "3b8327c573ff7799de87af1c4f2eb64dbba8344e24a6c5eeb4ce5d65d7717634"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-FleurDeLeah-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-GreatVibes-Regular.csv": {
+      "bytes": 51706,
+      "sha256": "7b5d11f8a32e5f7c59e5165028bea736964413e9c488ffc337338867139c0fb9"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-GreatVibes-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-HerrVonMuellerhoff-Regular.csv": {
+      "bytes": 131,
+      "sha256": "e8d2da8aad3f05d3dc45f6668c99c19c63a57e4825f0a1a486fbbea4677bae0a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-HerrVonMuellerhoff-Regular.stderr": {
+      "bytes": 177,
+      "sha256": "3e9e19f67334ed40035fc22aad7274b0128df7f7196c3a18ad9fca4474e6d48c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-MissFajardose-Regular.csv": {
+      "bytes": 51345,
+      "sha256": "a5ce7659c5dc6236b0bb5e324302f8a8c2d5f3fa5fa9f4094d1a65593f6f7c54"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-MissFajardose-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-PinyonScript-Regular.csv": {
+      "bytes": 51709,
+      "sha256": "b3ff29cce11d51f2a61511191cf6e360cb98a98cc66a10f4154afc9b21011d83"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-PinyonScript-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Rye-Regular.csv": {
+      "bytes": 51928,
+      "sha256": "4c7a3698e092863a6fba6db1685f3730349284b0ee01dbe3fb70e4beb64e60c0"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Rye-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Vollkorn-Medium.csv": {
+      "bytes": 51585,
+      "sha256": "c06bbaf5a57a9c05a940f6acf69489e0e7541fe1a209bacc18808433ce793ce7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/01-Vollkorn-Medium.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/native-prescreen-v1/provenance.json": {
+      "bytes": 12926,
+      "sha256": "f0e4208119eb0f973446cb1f907ba65e139c62a69b4c217eb23517290d9adbb7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/run_aggressive_demo_screen.py": {
+      "bytes": 24111,
+      "sha256": "6bf58c7eff66e0ffc4098887aa3feac3dbeb9c6c41932062ff00839cf974e04d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/run_native_prescreen.py": {
+      "bytes": 8114,
+      "sha256": "21b404be0c86485b28ae267f919487238df8a67c05c08de8540b697fe62ffe45"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/font-inspection.json": {
+      "bytes": 2277912,
+      "sha256": "2bb547f4d2b2c71c99fd4f9186f7415441b9931249458e601e8d8a879d477d01"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/native-prescreen-audit.json": {
+      "bytes": 265320,
+      "sha256": "4582e5daf1504f596f0a49716339c178d5e8105bf90f8c0dd6ecab7a0396cf32"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/supporting/static-priors.json": {
+      "bytes": 22979,
+      "sha256": "b0a373983b150e2e0135f46b890ee62c9464bbdaed5cf1e3e984e8557256ef90"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/install_aggressive_study.py": {
+      "bytes": 24691,
+      "sha256": "7587677bd55ddfac0268dc63b4f0de5957ccbe75163f450fcf8e9dde99a1a03c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-protocol-v1.json": {
+      "bytes": 50884,
+      "sha256": "4485454617baa483472fc95d6c2305f14fa7ba21a6eeed25f4ec9cfd16b81a39"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-BungeeOutline-Regular.csv": {
+      "bytes": 51541,
+      "sha256": "9bf6fb47a1caa193ddf0f5121d6ec28e09aadd44e45d3d2791da44e6c3c3a5a5"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-BungeeOutline-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-BungeeShade-Regular.csv": {
+      "bytes": 51558,
+      "sha256": "c92ca936b5bd3752a263d2693062eaf723274ec67f5777dbbb651a03b1183fb3"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-BungeeShade-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Diplomata-Regular.csv": {
+      "bytes": 51706,
+      "sha256": "1a4b67bf97771dcde379b94bb22c962cff4bacb89e1e2c56e6c56b63b4e6da54"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Diplomata-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-DiplomataSC-Regular.csv": {
+      "bytes": 51636,
+      "sha256": "76af455dade2a6ffecd8875d934b7694df712d36ae2f2584a42882c080e975ff"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-DiplomataSC-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Ewert-Regular.csv": {
+      "bytes": 51626,
+      "sha256": "43e79b5444d81893f0b10ad0482fa5d4b71a8f6265a83df094055af41277d7b5"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Ewert-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-FascinateInline-Regular.csv": {
+      "bytes": 51263,
+      "sha256": "3d31c92cfd4e17acd8804af4605621239dda85c5912ae1349adffebd4f26c521"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-FascinateInline-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-FontdinerSwanky-Regular.csv": {
+      "bytes": 51139,
+      "sha256": "2e56d85558d4bbeae07c487e00f4b10793362ce13205a0260b76f5e128a084f8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-FontdinerSwanky-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-FrederickatheGreat-Regular.csv": {
+      "bytes": 52644,
+      "sha256": "505398b6d8db57e464b87afd5df2aea975e0740933df7a1bc7d31b8de6c7a297"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-FrederickatheGreat-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Frijole-Regular.csv": {
+      "bytes": 52115,
+      "sha256": "993829f0d8b4d4a8e1d79fee714e4c1cc5156cbd012f67cd0665c948503c3086"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Frijole-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-JacquesFrancoisShadow-Regular.csv": {
+      "bytes": 51425,
+      "sha256": "47029951c477065e4811d165c85abf88a1b39febd2278264b8ba64e30d651f5b"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-JacquesFrancoisShadow-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Kranky-Regular.csv": {
+      "bytes": 52028,
+      "sha256": "280dfc3e2f705fc5c2eac5fe729517107d23ca851cfc458cee995ce238d879ac"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Kranky-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Monoton-Regular.csv": {
+      "bytes": 51400,
+      "sha256": "ef273d8275965e8876769522e4b261961b5751637241e2b5729ebe7b423f4e38"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Monoton-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-MysteryQuest-Regular.csv": {
+      "bytes": 51506,
+      "sha256": "d76fce54f2373bed43a4c47572e0ef16f5bf83acb31619d7798556aeab268beb"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-MysteryQuest-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RibeyeMarrow-Regular.csv": {
+      "bytes": 51292,
+      "sha256": "38fc4f692caa44bf95ceb645a6feb2a92daf5a521af64d52d8c046e1ee6c32c6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RibeyeMarrow-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Rubik80sFade-Regular.csv": {
+      "bytes": 53127,
+      "sha256": "f4670aea401335e7f5db2b8ad1ed6a90b19e24a2e23538baf7c38f60b4492027"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Rubik80sFade-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikBeastly-Regular.csv": {
+      "bytes": 51997,
+      "sha256": "486a7579ce2edc75b1c88e98d64532a606b4fa2b0c65ad0081764bfcbe27bc11"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikBeastly-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikBurned-Regular.csv": {
+      "bytes": 52030,
+      "sha256": "44497921fe58cb5e96935e5b7d9c0238d1355e26e6332b2a6fbda793531e6ee3"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikBurned-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikDistressed-Regular.csv": {
+      "bytes": 52267,
+      "sha256": "bfab53edab9a27a714647c2b49d3da619d7257a4cf68350de412888b03d370bb"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikDistressed-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikGlitch-Regular.csv": {
+      "bytes": 51916,
+      "sha256": "33230142dd5fa7bfe52c5822382531195c68291fd9d20000fe0791204896e9b6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikGlitch-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikGlitchPop-Regular.csv": {
+      "bytes": 52908,
+      "sha256": "a54b009480fbcaa2807da6325e78740c113b93ac1234a4956f070a5d1541ed63"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikGlitchPop-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikMicrobe-Regular.csv": {
+      "bytes": 52712,
+      "sha256": "e6e862886a9c6dbbb1b0c7fa8a0199afdc71dce7c56f04ff8db445d929d5b910"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikMicrobe-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikMoonrocks-Regular.csv": {
+      "bytes": 51945,
+      "sha256": "2cbc5d58324d37a558e73607306cba0db0d5c902b7bad7ab8f6717aace8d6bba"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikMoonrocks-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikPixels-Regular.csv": {
+      "bytes": 53427,
+      "sha256": "a94d72c034560f8e69b2da1e26282522397f750dc718deb38c45190223b189bc"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikPixels-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikPuddles-Regular.csv": {
+      "bytes": 51924,
+      "sha256": "44c16e4c7b751e1fc177d335c9c3489f051462a97d64e9b1445802d03b01a3dc"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikPuddles-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikVinyl-Regular.csv": {
+      "bytes": 51894,
+      "sha256": "263730d86415ca5e202152cec5aef4bed7950bde20a014d69e193db39472ef64"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikVinyl-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikWetPaint-Regular.csv": {
+      "bytes": 51932,
+      "sha256": "5d648d9b6238a62c6336bf9482a45875af4aa7e684d68d24391d7691d5a28358"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-RubikWetPaint-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Rye-Regular.csv": {
+      "bytes": 51920,
+      "sha256": "ce81cbd1b575ec0a15dec56ea7e5acf9122d47a175c58742982752fbd8482cd3"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Rye-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-SnowburstOne-Regular.csv": {
+      "bytes": 51628,
+      "sha256": "2e632e7fd2fc7299d5d556a28cfcd18bfc70bf43bc86eb44712d6b6cd644b334"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-SnowburstOne-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Spirax-Regular.csv": {
+      "bytes": 51138,
+      "sha256": "2c798025999997b1aeb5034adc0b4e576c902a8e253f8f1e73d7cde6f4fa815f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Spirax-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-VastShadow-Regular.csv": {
+      "bytes": 51339,
+      "sha256": "0daf40b5c7380518768b7c1fa0724e041ff13750d6cacf4424b15b6111143f25"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-VastShadow-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Vollkorn-Medium.csv": {
+      "bytes": 51567,
+      "sha256": "1aac2e444d0c80d085308d4f0b8685890573ab18249081ba54b9ff81f979b37e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/01-Vollkorn-Medium.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-v1/provenance.json": {
+      "bytes": 29905,
+      "sha256": "7e6cd9d3ccd40e84afc00145663bdaabe5a04464d80d7e154c9cf6dc760ed5b0"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/acquired-files.json": {
+      "bytes": 248701,
+      "sha256": "c5c3daa0213519790c3b0d3b9555fe825c948426e18f5a5d4881de064b6bc19a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-screen-v1/cpu-provenance.json": {
+      "bytes": 327049,
+      "sha256": "b6e383aa5b7d099b646d60fadc83bcb52c1910d303da4243e2c360820917fe86"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-screen-v1/independent-analysis/analysis.json": {
+      "bytes": 241261,
+      "sha256": "2d687bdc8f47c2fea97d84e4a8e52ccbbf71210dc31b1dfac75924277a17c07d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-screen-v1/independent-analysis/archive-fraction-audit.json": {
+      "bytes": 2873,
+      "sha256": "7d75e3690b0fc452d9938883fe84d2475fac0646b6be9eed4c3c716ef4c0a3d6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-selection-v1/protocol.json": {
+      "bytes": 4246,
+      "sha256": "3359e8d7e1880c13858222612c23d995c74537f460dd3ff1cb1e23415d53dc90"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/demo-selection-v1/selection.json": {
+      "bytes": 180561,
+      "sha256": "2bb1d95ae1a0b0d3151d38bbe854234465fbde6b2e05b634f8482f28ddb1cc4e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/birthstonebounce/BirthstoneBounce-Regular.ttf": {
+      "bytes": 326712,
+      "sha256": "a03b6146597d467e794fdd4d61178d72f083eb93e9e86040a10530aaa1307ef9"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/birthstonebounce/DESCRIPTION.en_us.html": {
+      "bytes": 618,
+      "sha256": "ac8d925059792a11b94f3f54cecac3826ff87a9fc1de25f130014728d6be1e98"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/birthstonebounce/METADATA.pb": {
+      "bytes": 1472,
+      "sha256": "334b25fb9c66262ee3272ee49be784e2a7a95d5fa9672184d44f8b24628454bd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/birthstonebounce/OFL.txt": {
+      "bytes": 4500,
+      "sha256": "8214d2621f5a4113dd0eba60863e3e88916cd639444b519c87f6b6b652543072"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/birthstonebounce/upstream_info.md": {
+      "bytes": 3887,
+      "sha256": "c6d6370df07d146ac7a2c72c8fc78b12d2042234a4f07e2411b4e342ee7677b9"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/comforterbrush/ComforterBrush-Regular.ttf": {
+      "bytes": 807248,
+      "sha256": "7bd357dc8bf83d71f27fd5155ece5c8c100a2042d4530e4487635473c5836f95"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/comforterbrush/DESCRIPTION.en_us.html": {
+      "bytes": 402,
+      "sha256": "daa7383b0d369f84c0194a5c000f476ef6027f8e3edd7a2fbded145cf6b10dff"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/comforterbrush/METADATA.pb": {
+      "bytes": 1039,
+      "sha256": "aed06434df05b18f5cc805e74d85420e20c4646c70aae5470db147a0c68f78fe"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/comforterbrush/OFL.txt": {
+      "bytes": 4404,
+      "sha256": "8a4fe79803bade3a40c58d2ab69586f20b841f143e4ea60fd2bf7d98b29a8489"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/comforterbrush/upstream_info.md": {
+      "bytes": 2857,
+      "sha256": "39e0c697223d55acbb7d02fd1021b93a6bbd95d2c9213e64361359a74550aafd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/imperialscript/DESCRIPTION.en_us.html": {
+      "bytes": 480,
+      "sha256": "92fc7aba58e3c9a1bbd65714b972e337d792cbcf9c5d4df471bde635aef6fa00"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/imperialscript/ImperialScript-Regular.ttf": {
+      "bytes": 154824,
+      "sha256": "fa040ae596cde82559c3bcf056ac216a94efa904b848382ab85740d38df4bab7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/imperialscript/METADATA.pb": {
+      "bytes": 1020,
+      "sha256": "8a0fc3647526d5c3ace7461d5bfa29e22945d4891c1e7ef61a10bb3f2903a2e4"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/imperialscript/OFL.txt": {
+      "bytes": 4404,
+      "sha256": "42b758018a3f0fa429f9aaf7cafaa273ce922ea7dfba30f50cc828b8aa3e1717"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/imperialscript/upstream_info.md": {
+      "bytes": 2106,
+      "sha256": "36c681ae680bf5e14ef1ae6252c467e870f1236919079e683e30571f5163a066"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/DESCRIPTION.en_us.html": {
+      "bytes": 473,
+      "sha256": "37faca3df5b52b7cacc8b2e900af9a61dd45f44125e1b636b8beaf02a0653a45"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/LavishlyYours-Regular.ttf": {
+      "bytes": 150132,
+      "sha256": "4a07a5002a4f852952818eebdcf008e48ea7d537541cc8ff7eb842088842313e"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/METADATA.pb": {
+      "bytes": 1029,
+      "sha256": "e4646203365cb8295fb66f5e9f47c4a3a3456d50b3f5a8c812d32491c2e66df8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/OFL.txt": {
+      "bytes": 4407,
+      "sha256": "f679d25307d193d34ed36afedde50715c97f155a3c720d90d39e7e5d468e0092"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/lavishlyyours/upstream_info.md": {
+      "bytes": 1722,
+      "sha256": "bba3db9cd2cfa3b9bc31c819f753a54042406d5bcb62c74e446c949a301bd3c7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/luxuriousscript/DESCRIPTION.en_us.html": {
+      "bytes": 572,
+      "sha256": "3cc1ae1d0f5c2de9824007181ca501c55945227aeedfb8cde8e1ec8c6c1ea568"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/luxuriousscript/LuxuriousScript-Regular.ttf": {
+      "bytes": 387952,
+      "sha256": "db1a118a34eb835f7960a09d8be472b65971d7798772842dc3cd37a8641491e9"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/luxuriousscript/METADATA.pb": {
+      "bytes": 1014,
+      "sha256": "a969d907eedf81cd3187c1c02aa080ccdf7fbc50a1dbb21a87e2160eecc508cc"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/luxuriousscript/OFL.txt": {
+      "bytes": 4397,
+      "sha256": "0d53601eaba9a6f5dbf7ee43e26edbb37ea5fb7f3f170052ca5dc8d51704a5ea"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/luxuriousscript/upstream_info.md": {
+      "bytes": 5598,
+      "sha256": "f19180ef431d5211d88c45944c1a3e938111c9f6679c7ed3aa17ac3f85451ec6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/meaculpa/DESCRIPTION.en_us.html": {
+      "bytes": 313,
+      "sha256": "6b604a02e083e90b02e49b4cf2d7b7ea72eedc2981a1f40df7a8dba3c909ae0a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/meaculpa/METADATA.pb": {
+      "bytes": 965,
+      "sha256": "4c8f67044e979433a014bd15401d5efb981be43e4576e02ebb6775c99f14e708"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/meaculpa/MeaCulpa-Regular.ttf": {
+      "bytes": 162232,
+      "sha256": "c5a293151793820d25ff10844f1418170ae755fa61d0a126cefa1e9b82f21ce5"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/meaculpa/OFL.txt": {
+      "bytes": 4397,
+      "sha256": "bcc0945e23c5ea0269327a87b443443a15d2867f4bf6791f3c01c32245880849"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/meaculpa/upstream_info.md": {
+      "bytes": 4879,
+      "sha256": "c4608b8276bc7ad11ecb6b0bf102f4d233207631357167924265309e8b36c813"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/mysoul/DESCRIPTION.en_us.html": {
+      "bytes": 551,
+      "sha256": "7a3a934fc479c675d0f77a9d33b19e062a41e621ff596db7bd67a13ac150c1eb"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/mysoul/METADATA.pb": {
+      "bytes": 954,
+      "sha256": "28599ba21c0404c7b38d9aaf74b1975a315abb7e7772f31d508c322aaba0e461"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/mysoul/MySoul-Regular.ttf": {
+      "bytes": 145468,
+      "sha256": "28bcb050c1220145fd6aff6f6f13b1b8f4a9608388c0c34e4ff94452e5e6444f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/mysoul/OFL.txt": {
+      "bytes": 4388,
+      "sha256": "5d9c0715f247ead158013109a3c7a053d044ab58d74cbae50594f648189ac550"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/mysoul/upstream_info.md": {
+      "bytes": 409,
+      "sha256": "f4f7b71be0747d613918ce729d4e69c71fc746bd707f80c41d5d8fe719ece95a"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/DESCRIPTION.en_us.html": {
+      "bytes": 521,
+      "sha256": "1973a32e1bfffad9f919445225fc646eb705715ca2f097593c6846ca7c70b9b2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/METADATA.pb": {
+      "bytes": 999,
+      "sha256": "dec420851850de70ab9832bcbf72615cf108d909bc62aff31c297fa5e56c1cbd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/OFL.txt": {
+      "bytes": 4401,
+      "sha256": "eaa2e23b59eb264d9f982126f5d6cb7594b00a6a5e3684d916ecbf0c31004610"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/WaterBrush-Regular.ttf": {
+      "bytes": 332028,
+      "sha256": "2cbdccbca5d4be005fe4edd8895b91618a7f96639eaeeb4987ad83e81afc71a7"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/fonts/waterbrush/upstream_info.md": {
+      "bytes": 436,
+      "sha256": "c917fd20419a2f48605bd2d51b13b98004405e11832f4dff0f830e0a74b8c4c6"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-protocol-v1.json": {
+      "bytes": 37485,
+      "sha256": "34aa52c10970662fd36cddc2fedc74eb6e787de926b815347df77498931554eb"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-BirthstoneBounce-Regular.csv": {
+      "bytes": 51862,
+      "sha256": "aebfb86754b4ffdb254759737e2ed6b1657a5b719965ae01995e7afe5d897f6d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-BirthstoneBounce-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-ComforterBrush-Regular.csv": {
+      "bytes": 52018,
+      "sha256": "de3c25a38d36cfe576710aa40e902b6b215c2889390b3dcb83ef74966e472823"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-ComforterBrush-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-ImperialScript-Regular.csv": {
+      "bytes": 51613,
+      "sha256": "d9fcf77c9e9a26822b88122785549f7108012f3691306bdb5e04ca5ecd187d28"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-ImperialScript-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-LavishlyYours-Regular.csv": {
+      "bytes": 51654,
+      "sha256": "b74792beaf51fdf76cb8c479c7f30045b22033eb3443f7cedb1bf7251a1f0ebf"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-LavishlyYours-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-LuxuriousScript-Regular.csv": {
+      "bytes": 51622,
+      "sha256": "a055d2730ebfa96a7a2232df28b41118dbffa5d65dfb101a8110aa7553f68dbd"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-LuxuriousScript-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-MeaCulpa-Regular.csv": {
+      "bytes": 51917,
+      "sha256": "62f361e66faadd33f6d8a5c98e042a99abab372984d94ce3a4a1c4b570825748"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-MeaCulpa-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-MySoul-Regular.csv": {
+      "bytes": 51857,
+      "sha256": "5466b35de6258f57c28d1a3d66eff1720b0c2892db8974b3ef5713339003c3b2"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-MySoul-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-Rye-Regular.csv": {
+      "bytes": 51925,
+      "sha256": "cbd1172f83d31b3fa8dc45cf1128adea1e6377d9fb01e5d8d2b233cc2d4d223f"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-Rye-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-Vollkorn-Medium.csv": {
+      "bytes": 51574,
+      "sha256": "88e3886396b29a6b9d7f06b9aa024642f2d0a0a6d682d368950744d57f7bf128"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-Vollkorn-Medium.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-WaterBrush-Regular.csv": {
+      "bytes": 52231,
+      "sha256": "dd0eb8b7a13124d6a72fa4f1859d84c5759e8ec36b99aa64a8bf0567aae935e8"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/01-WaterBrush-Regular.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/native-prescreen-v1/provenance.json": {
+      "bytes": 10820,
+      "sha256": "c950cc989b4d1329744a5bf9e2658bfb18b310f267b60c5735f38647e7294567"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/run_aggressive_demo_screen.py": {
+      "bytes": 19441,
+      "sha256": "149c8a984c24300fc53ff817c35b8ce46ca305e6176c41016b383a648a9477cf"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/run_native_prescreen.py": {
+      "bytes": 8114,
+      "sha256": "21b404be0c86485b28ae267f919487238df8a67c05c08de8540b697fe62ffe45"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/font-inspection.json": {
+      "bytes": 1912107,
+      "sha256": "1ecf02230b3330e6af6a83baf52a5150345aed91ca929f341548ea878908aee4"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/native-prescreen-audit.json": {
+      "bytes": 243055,
+      "sha256": "447349a250b4eceee16cb0e2b4175e59c552d6b0850ff64db2e00df75df3f175"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/ornate-supplement-v1/supporting/static-priors.json": {
+      "bytes": 20160,
+      "sha256": "12bf682ae4012cdd09b4194cd1ece7dbcb6cfb022f61336a53ad6efcaa5758df"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/run_aggressive_demo_screen.py": {
+      "bytes": 19343,
+      "sha256": "d4675d97b2a880dd2c0c543760f5af635880b0c8998ce140d8ce4e757f77a02d"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/run_native_prescreen.py": {
+      "bytes": 8114,
+      "sha256": "21b404be0c86485b28ae267f919487238df8a67c05c08de8540b697fe62ffe45"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/audit_demo_screen_effects_archive.py": {
+      "bytes": 12977,
+      "sha256": "b6d0b88251d63a4b076f44eb14b95b4936b037dd8b06dfa42280214a435b62de"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/audit_installer_dependencies.py": {
+      "bytes": 5419,
+      "sha256": "ee3c6f88da55f2027b9059ab4872234420d892704f6d4f1e7ca1799b0f021d12"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/font-inspection.json": {
+      "bytes": 5882342,
+      "sha256": "9130dacce871c8717264b364828bd5b4bd63e1fa06918535c353c278adb2082b"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/native-prescreen-audit.json": {
+      "bytes": 670202,
+      "sha256": "fb56f5d5d3afac90dbdaa42f77a0424154579f5586e7c0b22aaf7e454ba7e39c"
+    },
+    "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/static-priors.json": {
+      "bytes": 56306,
+      "sha256": "46beea9bf6e7a615eb238fb6ce8440c7b9bc0336a48020f10d18e363897c5846"
+    },
+    "/private/tmp/femtovg-cache-bench/target/release/femtovg-font-cost-screen": {
+      "bytes": 2025208,
+      "sha256": "ecfb57759abdc77fe691ceaaea30bed0550db134f855efeed2fb41c8b8ea39f8"
+    },
+    "/private/tmp/femtovg-cjk-font-search-20261002/supporting/audit_native_screens.py": {
+      "bytes": 16704,
+      "sha256": "5d8bf61ec2f69da63f081a7e6d193d241fe3a1e3ed0d57d162171d44dcd33b9f"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/Cargo.lock": {
+      "bytes": 3313,
+      "sha256": "5f8028ef1ed059d27c43f54a02f2236ca33a44456af17d362611a68962203fc2"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/Cargo.toml": {
+      "bytes": 160,
+      "sha256": "cb79323bab2d2dc6766f290027a84b2c8ed41a1731b4e143a66da0b14d662cbb"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/README.md": {
+      "bytes": 3175,
+      "sha256": "e3c5ec2d31648dda6cecd665b6a7c5b195ae5d87f886882feeb73338fe623db6"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/build/build.json": {
+      "bytes": 9160,
+      "sha256": "6acc9ef62666206001e7315761db49e2e5a668cd68d18b20ba4b8e52e7b676fa"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/build/metadata.json": {
+      "bytes": 57073,
+      "sha256": "996ec405a4309b16768f940633b09852ce48bf3f6596e378380158dc5fc4c7ad"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf": {
+      "bytes": 428384,
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf": {
+      "bytes": 183244,
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/inputs.json": {
+      "bytes": 10980,
+      "sha256": "13ac732fe5c4cf3a2fe4df6328f660585c6fd1911977a617cac421eb6c99d5ee"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/screen.py": {
+      "bytes": 10440,
+      "sha256": "a6e48607cc4d4d9b5ab9e128697c2265592c29d13cd8109d55ad04b3410a5d08"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/src/main.rs": {
+      "bytes": 11930,
+      "sha256": "15e1e8df6cd603e9e4d3c5d879e86af3e21f82278fac7576f2227049bcd61c84"
+    }
+  },
+  "scope": "Actual installed baseline31/15 and full live exploration byte/field dependencies only; no final report, confirmation statistics or archive-stage claim"
+}

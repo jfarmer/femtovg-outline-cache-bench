@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-10-03T12:14:19.004125+00:00",
+  "suite": "cold",
+  "blocks": 12,
+  "frames": 3000,
+  "cold_samples_per_process": 7,
+  "variants": [
+    "master",
+    "base",
+    "finalgenericrestore"
+  ],
+  "binaries": {
+    "master-swash_only": "39bd9e16ff84ef51935b774f42d507ef8eda0ff36772d92aaf748369f77bcb5b",
+    "base-swash_only": "3405e4d3549aaf8478ccb05570b2b2189234073b4459036bb316ea3fcba6ee4f",
+    "finalgenericrestore-swash_only": "7aa1f86070af3a3d137b00396d91bc25ccdaea788fcee174c54bf28d97cc53b6",
+    "master-default_swash": "71cc04666e34fcd72363b37f20e4263ccdc7b6c2a1f5926e160f8855fe868074",
+    "base-default_swash": "c75cdce391dec945782f76f0573e3c37ca855ca4de33dd42d2861a24e8144c19",
+    "finalgenericrestore-default_swash": "a485726ceded6f69835f25d33998f1040666b7e2472ae0aab04ef9144aef2117"
+  },
+  "fonts": {
+    "Arial": {
+      "path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+    },
+    "RobotoFlex": {
+      "path": "/private/tmp/femtovg-review-fixes-perf/source/base/examples/assets/RobotoFlex-VariableFont.ttf",
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+    },
+    "Vollkorn": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+    },
+    "PTSans": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/PTSans-Regular.ttf",
+      "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a"
+    }
+  },
+  "harness_files": {
+    "controlled.rs": "98ba91a9eee74b615ca537cbc007e85f0887e4f2a1e278784fd60dc67fbb64dd",
+    "generic.rs": "c357059043eea162f268f6ebc1a163040ee14b69cbcef4a28c5ecc97f8591195",
+    "main.rs": "db7bffca787fa3403761205b46fd00052243fbe569ec53ebe4ee437d11f4faee",
+    "cold.rs": "4ffc93c39cb6e38f4df82d580f957960ec84f392786399f5ba7d16842c42a9e1"
+  },
+  "order": "Configuration order rotates per block; variant order rotates and reverses on odd blocks.",
+  "metrics": "CPU public glyph draw+Void flush; warm has 20 initial frames excluded, cold uses a new Canvas/atlas/context per sample; all layout, registration and control construction outside timing. Complete controlled sequences include population and pollution. No GPU/layout timing.",
+  "platform": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n"
+}

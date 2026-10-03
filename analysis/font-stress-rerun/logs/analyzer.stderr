@@ -1,0 +1,6 @@
+/private/tmp/femtovg-font-stress-search-20261002/analyze_font_confirm.py:382: RuntimeWarning: divide by zero encountered in matmul
+  return (weights @ numpy.asarray(values, dtype=numpy.float64) / len(values)).tolist()
+/private/tmp/femtovg-font-stress-search-20261002/analyze_font_confirm.py:382: RuntimeWarning: overflow encountered in matmul
+  return (weights @ numpy.asarray(values, dtype=numpy.float64) / len(values)).tolist()
+/private/tmp/femtovg-font-stress-search-20261002/analyze_font_confirm.py:382: RuntimeWarning: invalid value encountered in matmul
+  return (weights @ numpy.asarray(values, dtype=numpy.float64) / len(values)).tolist()

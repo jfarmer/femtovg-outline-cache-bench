@@ -1,0 +1,329 @@
+[
+  {
+    "path": "perf/target",
+    "kind": "directory",
+    "reason": "Regenerable compiler/interpreter cache; not traversed or hashed.",
+    "sha256": null,
+    "file_count": null
+  },
+  {
+    "path": "perf/__pycache__",
+    "kind": "directory",
+    "reason": "Regenerable compiler/interpreter cache; not traversed or hashed.",
+    "sha256": null,
+    "file_count": null
+  },
+  {
+    "path": "perf/bin/base-default_no_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 999408,
+    "sha256": "452d5a6d850b35deb287bd9bbd19910a79ca4fad17be8f0bc15c8b5d46cfceb1"
+  },
+  {
+    "path": "perf/bin/base-default_no_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960352,
+    "sha256": "64eaba309ded17c6d44cebb7a14286e8732db128486e10ad97c52f0ef2a8e078"
+  },
+  {
+    "path": "perf/bin/base-default_no_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 959888,
+    "sha256": "04289de08f4ce7572c7cc04d6c824649de0512fbeabf3d1b2e8b519bf473c94f"
+  },
+  {
+    "path": "perf/bin/base-default_swash",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2411024,
+    "sha256": "1cad19329d76f0b7234b6bac686b7bbc030091139a50bcde8fbb1a93c1cc6d8d"
+  },
+  {
+    "path": "perf/bin/base-default_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2450592,
+    "sha256": "c75cdce391dec945782f76f0573e3c37ca855ca4de33dd42d2861a24e8144c19"
+  },
+  {
+    "path": "perf/bin/base-default_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2411440,
+    "sha256": "c7db8d57dbc1543521e79ad82f1770e857d6a8fa48eed8c9c817980c1d2ba578"
+  },
+  {
+    "path": "perf/bin/base-default_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2411024,
+    "sha256": "1cad19329d76f0b7234b6bac686b7bbc030091139a50bcde8fbb1a93c1cc6d8d"
+  },
+  {
+    "path": "perf/bin/base-swash_only",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2165648,
+    "sha256": "c0efd3cb21c9cb04f3564aec13107840950cbed52a5d787a29c08a8424862a5c"
+  },
+  {
+    "path": "perf/bin/base-swash_only-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2204992,
+    "sha256": "3405e4d3549aaf8478ccb05570b2b2189234073b4459036bb316ea3fcba6ee4f"
+  },
+  {
+    "path": "perf/bin/base-swash_only-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2185488,
+    "sha256": "b31709c4e636158b3c1cf05d22686764d283b42f03288bc3acec8b2c2d306442"
+  },
+  {
+    "path": "perf/bin/base-swash_only-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2165648,
+    "sha256": "c0efd3cb21c9cb04f3564aec13107840950cbed52a5d787a29c08a8424862a5c"
+  },
+  {
+    "path": "perf/bin/final-default_no_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 999680,
+    "sha256": "e30a7143d3f2f032ba6a15b53b44ccb49801a446a5cda0538be1f57986ba632b"
+  },
+  {
+    "path": "perf/bin/final-default_no_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960592,
+    "sha256": "0aed5a89cc03c07133a1acd756b1905b21135f3b760bc86b0f3b70f3b0e0c172"
+  },
+  {
+    "path": "perf/bin/final-default_no_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960128,
+    "sha256": "5f1ff6d54f6369044520f84888b3576d77dad10bc2aa36b1956d6cf2cc845ba6"
+  },
+  {
+    "path": "perf/bin/final-default_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2450224,
+    "sha256": "6d22d6304424cd3d21db92da67c1e15f23bac070549600fe6398062cb99b7abd"
+  },
+  {
+    "path": "perf/bin/final-default_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2411120,
+    "sha256": "c73ad6bbeef045bd4b78ea7692a8718e88e3e59a3ed7266039288837e154e033"
+  },
+  {
+    "path": "perf/bin/final-default_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2410656,
+    "sha256": "6cabb03c8d39d7a477d4acbbb4251d63149126e9a0d003ef6398b65fe3ce2789"
+  },
+  {
+    "path": "perf/bin/final-swash_only-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2204960,
+    "sha256": "98241d76b16ee565fb305d383e46d23b8554c0f0f00d54800d325f3c383f5e9b"
+  },
+  {
+    "path": "perf/bin/final-swash_only-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2185408,
+    "sha256": "7bdbb522fbe33daebc95ee048eb4bce3ac75a7c87e4abd1fb209beb404f51a9e"
+  },
+  {
+    "path": "perf/bin/final-swash_only-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2182064,
+    "sha256": "252a0c3c1188182dd1dbc8ae512a3515b261478a13c6c64b3f05d526dc12d3fc"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-default_no_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 999856,
+    "sha256": "5fc5de7ed979a194bde7eee0d246c41f709393ec8bddd92a46b919c6bc7668b6"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-default_no_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960656,
+    "sha256": "2e75ce26e3d8db5dff9937393827a9174d18f1a1ed30f77c284a0865e51697aa"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-default_no_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960160,
+    "sha256": "e2b9048ee052e4295a54e27180e8f0a08872f92ce68d28fc1a87caff8c302dd7"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-default_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2450432,
+    "sha256": "a485726ceded6f69835f25d33998f1040666b7e2472ae0aab04ef9144aef2117"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-default_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2411248,
+    "sha256": "2ef0ad5b6dde019f726ccfdcabf2d7d8e167a94730d06de84253f12f803b09d8"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-default_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2410736,
+    "sha256": "5653b1ba01255a0e12ddb251879ab31847de4e90eddc8db458bd5e13d50b521c"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-swash_only-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2205120,
+    "sha256": "7aa1f86070af3a3d137b00396d91bc25ccdaea788fcee174c54bf28d97cc53b6"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-swash_only-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2185488,
+    "sha256": "e7521009db234b6dd9237014190e553962207ac048446d4354b990f3875fbca9"
+  },
+  {
+    "path": "perf/bin/finalgenericrestore-swash_only-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2182112,
+    "sha256": "768ee47f6cd0a117d652ec003ea35f701bcbe9ed2af2ea1d46f6a258206050f8"
+  },
+  {
+    "path": "perf/bin/master-default_no_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 999200,
+    "sha256": "72f7026a4205a7710e58508f7f8033e8e1360ec5c67003ef23e9af5e40222094"
+  },
+  {
+    "path": "perf/bin/master-default_no_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960048,
+    "sha256": "84863082283d9ae87885ea10d2b8134217bbe37001380edc3aa660d6cd742314"
+  },
+  {
+    "path": "perf/bin/master-default_no_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 959600,
+    "sha256": "776ab96e7e6eb13513dd4d2f5d6d6769728741439acea4df9885495e6893bfcd"
+  },
+  {
+    "path": "perf/bin/master-default_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2258080,
+    "sha256": "71cc04666e34fcd72363b37f20e4263ccdc7b6c2a1f5926e160f8855fe868074"
+  },
+  {
+    "path": "perf/bin/master-default_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2221792,
+    "sha256": "3e7f87c1acd612970b1bf9090bdb5dcc12ed8cf6481e3cc4c6e1fbcf54a672b6"
+  },
+  {
+    "path": "perf/bin/master-default_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2218288,
+    "sha256": "d105124d5619e040e1eec3f57f62dfcd173551c5e54d095a8db9d3e5ef36fbf3"
+  },
+  {
+    "path": "perf/bin/master-swash_only-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2012752,
+    "sha256": "39bd9e16ff84ef51935b774f42d507ef8eda0ff36772d92aaf748369f77bcb5b"
+  },
+  {
+    "path": "perf/bin/master-swash_only-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 1993200,
+    "sha256": "3308ae3243b57ac828adabefe373d2dcdf0393fb9bbcaad80403d020e298daa0"
+  },
+  {
+    "path": "perf/bin/master-swash_only-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 1989952,
+    "sha256": "c737bd5acccc7bd57064cf5db1cca0edaa0db4ec78085ddad83a599e62666a5e"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-default_no_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 999936,
+    "sha256": "1cf6c1cf9e98ec595091a6f1490e57de66b9c08c14c9ee02c4707994a8cdd925"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-default_no_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960752,
+    "sha256": "dc43df3b2b567854303c4c61ec3558434a829e4d81e036aff3bce2aca0e31bff"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-default_no_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 960240,
+    "sha256": "1b988ddb8a982546a3d396d3969cca589479d2115fdb34127c2380e4f5707001"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-default_swash-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2450432,
+    "sha256": "1d779c48c56201a77fe9b9555cc6f156630bd908a1dbcdfe171b56eb803a848a"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-default_swash-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2411264,
+    "sha256": "4b780b74d958502a09640447e7cceefdd381d8cf7fcc86409191fa829aa16ff2"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-default_swash-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2410784,
+    "sha256": "d0096ca86b0cbfd00f1b294a0c9c04565c310021ab1f51368ace080faf238057"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-swash_only-cold",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2205184,
+    "sha256": "399baf58b5445fd3fc4d7b9c679c5f0c5a17976757ed143a98f3b255c284348a"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-swash_only-generic",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2185568,
+    "sha256": "56bddcf793842825f9c9bfcc42fa1d4d8591358f1f5d7ad9c2f73426d941dfdd"
+  },
+  {
+    "path": "perf/bin/ordinary-inline-swash_only-warm",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2165680,
+    "sha256": "862c37088c2f4856c4823e88af964924a2b095b5752ee667c94b77259627f4f5"
+  },
+  {
+    "path": "perf/bin/scenes-final-default_no_swash",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2274256,
+    "sha256": "de363ab82e0e792d70c6aafc01b9fdbcb1866058425a8cc2cbdb0cb65be6adc2"
+  },
+  {
+    "path": "perf/bin/scenes-final-default_swash",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 3741264,
+    "sha256": "906e8e81beb4ac1e56c155e6f78de10649d217d2b7a61fea0fe5b01f6cd6cd43"
+  },
+  {
+    "path": "perf/bin/scenes-master-default_no_swash",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 2273712,
+    "sha256": "d62b31f95ce4be455d30347466d0c226e3f0e5154666027a4516f3ae168cfc9c"
+  },
+  {
+    "path": "perf/bin/scenes-master-default_swash",
+    "reason": "binary, build target, or regenerable cache directory",
+    "bytes": 3549680,
+    "sha256": "3a6624a90c4aa420a08b0fb37f84196cf6f94407da76f443589d331aa6e32058"
+  },
+  {
+    "path": "containment/target",
+    "kind": "directory",
+    "reason": "Regenerable compiler/interpreter cache; not traversed or hashed.",
+    "sha256": null,
+    "file_count": null
+  }
+]

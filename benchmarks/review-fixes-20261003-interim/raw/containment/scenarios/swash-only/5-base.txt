@@ -1,0 +1,142 @@
+=== 5 fill large: Ok(())
+--- after
+current_render_target(before flush) = Screen
+state_stack.len = 1
+rendered_glyphs.len = 2
+  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 79, height: 67, bearing_x: 1, bearing_y: 64, atlas_x: 1, atlas_y: 1, color_glyph: false })
+  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 4, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 78, height: 67, bearing_x: 2, bearing_y: 64, atlas_x: 82, atlas_y: 1, color_glyph: false })
+glyph_textures.len = 1
+glyph_textures = [FontTexture { atlas: Atlas { width: 512, height: 512, nodes: [Node { x: 0, y: 69, width: 161 }, Node { x: 161, y: 0, width: 351 }] }, image_id: ImageId(DefaultKey(1v1)) }]
+commands = [
+    Command {
+        cmd_type: SetRenderTarget(
+            Screen,
+        ),
+        clip_active: false,
+        drawables: [],
+        triangles_verts: None,
+        image: None,
+        filter_scratch: None,
+        glyph_texture: None,
+        blend_pass: BlendPass {
+            backdrop_flipped: false,
+            source_alpha: 1.0,
+            contribution: false,
+        },
+        fill_rule: NonZero,
+        composite_operation: CompositeOperationState {
+            src_rgb: One,
+            src_alpha: One,
+            dst_rgb: OneMinusSrcAlpha,
+            dst_alpha: OneMinusSrcAlpha,
+        },
+    },
+    Command {
+        cmd_type: Triangles {
+            params: Params {
+                scissor_mat: [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                ],
+                paint_mat: [
+                    1.0,
+                    -0.0,
+                    0.0,
+                    0.0,
+                    -0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    -300.0,
+                    -300.0,
+                    1.0,
+                    0.0,
+                ],
+                inner_col: [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                ],
+                outer_col: [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                ],
+                scissor_ext: [
+                    1.0,
+                    1.0,
+                ],
+                scissor_scale: [
+                    1.0,
+                    1.0,
+                ],
+                scissor_radius: 0.0,
+                extent: [
+                    0.0,
+                    0.0,
+                ],
+                radius: 0.0,
+                feather: 0.0,
+                stroke_mult: 1.0,
+                stroke_thr: -1.0,
+                tex_type: 0.0,
+                shader_type: FillColor,
+                glyph_texture_type: 1,
+                image_blur_filter_direction: [
+                    0.0,
+                    0.0,
+                ],
+                image_blur_filter_sigma: 0.0,
+                image_blur_filter_coeff: [
+                    0.0,
+                    0.0,
+                    0.0,
+                ],
+                conic_start_angle: 0.0,
+            },
+        },
+        clip_active: false,
+        drawables: [],
+        triangles_verts: Some(
+            (
+                0,
+                18,
+            ),
+        ),
+        image: None,
+        filter_scratch: None,
+        glyph_texture: AlphaMask(
+            ImageId(
+                DefaultKey(
+                    1v1,
+                ),
+            ),
+        ),
+        blend_pass: BlendPass {
+            backdrop_flipped: false,
+            source_alpha: 1.0,
+            contribution: false,
+        },
+        fill_rule: NonZero,
+        composite_operation: CompositeOperationState {
+            src_rgb: One,
+            src_alpha: One,
+            dst_rgb: OneMinusSrcAlpha,
+            dst_alpha: OneMinusSrcAlpha,
+        },
+    },
+]
+verts.len = 18
+verts = [Vertex { x: 197.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 276.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 276.0, y: 325.0, u: 0.15625, v: 0.001953125 }, Vertex { x: 197.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 197.0, y: 392.0, u: 0.001953125, v: 0.1328125 }, Vertex { x: 276.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 300.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 379.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 379.0, y: 325.0, u: 0.15625, v: 0.001953125 }, Vertex { x: 300.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 300.0, y: 392.0, u: 0.001953125, v: 0.1328125 }, Vertex { x: 379.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 404.0, y: 325.0, u: 0.16015625, v: 0.001953125 }, Vertex { x: 482.0, y: 392.0, u: 0.3125, v: 0.1328125 }, Vertex { x: 482.0, y: 325.0, u: 0.3125, v: 0.001953125 }, Vertex { x: 404.0, y: 325.0, u: 0.16015625, v: 0.001953125 }, Vertex { x: 404.0, y: 392.0, u: 0.16015625, v: 0.1328125 }, Vertex { x: 482.0, y: 392.0, u: 0.3125, v: 0.1328125 }]

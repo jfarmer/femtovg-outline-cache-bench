@@ -1,0 +1,384 @@
+{
+  "complete": true,
+  "scope": "Direct report/table inputs, completed identity/statistical proofs, all 56 candidate font bytes and selected licenses; nested raw and capture digests remain in campaign proofs, with every study member additionally required to pass archive verification.",
+  "numeric_check": {
+    "finite_result_rows": 1116,
+    "independent_effects": 1116,
+    "independent_intervals": 2234,
+    "absolute_match_tolerance": 1e-06
+  },
+  "files": {
+    "FONT-STRESS-SEARCH.md": {
+      "sha256": "7ba8193352baa5e8f737be06f6551fdf684eb7fa5bec1d5576d70799c445442b",
+      "bytes": 11631
+    },
+    "SUMMARY-FONT-STRESS.md": {
+      "sha256": "f2f58211add3d00b2d3cf2f8862ab1da3c1225c8e551f3ede0b885c952bb998c",
+      "bytes": 1844
+    },
+    "agent-source-provenance.json": {
+      "sha256": "a4c2e2491dc34e27b6a6b93692771b90acd77d21cccbb4e78b0c35becebe4991",
+      "bytes": 9135
+    },
+    "analysis-warning-observation.txt": {
+      "sha256": "e3a8d0a1758dc1a8be11a11d0fcd10b07d60cb847b9a6aa861db71f4d346a902",
+      "bytes": 1549
+    },
+    "analysis/analysis-inputs.json": {
+      "sha256": "0e174644fb477c12b02a9de9197789e774e722bcde39bac43925b5d415c0209e",
+      "bytes": 2337
+    },
+    "analysis/bootstrap-indices.json": {
+      "sha256": "7673f8a4982af9ae0e4cbcf82fdeaccd7fa6749b5335475c1902115e4729dfef",
+      "bytes": 2999967
+    },
+    "analysis/paired-processes.csv": {
+      "sha256": "a22345640d3846c361a8463d3df8c00c42791609bf1b7b34f81004e42bbf645b",
+      "bytes": 1452549
+    },
+    "analysis/primary-table.md": {
+      "sha256": "1b42d822b861176963222865228324b6f7efb20adc2f2fffd2b2ab3e110465f5",
+      "bytes": 1462
+    },
+    "analysis/raw-audit.json": {
+      "sha256": "47d2273f288ea2f9de1e509e5de71256b67f78452459862535c9f081a920451d",
+      "bytes": 610287
+    },
+    "analysis/summary.csv": {
+      "sha256": "aa1baf2bbb8ba83c45dd12cdf1af6e87c41050d64e0bd1d9a65c2405ed74177e",
+      "bytes": 298123
+    },
+    "analysis/summary.json": {
+      "sha256": "1e8a10fa03c8480db90a9806af8c91b41a1fedd9fc53b159d35846e98fe2a978",
+      "bytes": 1004154
+    },
+    "analyze_font_confirm.py": {
+      "sha256": "0ce8ba540bebac34c4930bc2d7b283794c63ad1e116a0ed5b615b225f71c08f5",
+      "bytes": 37902
+    },
+    "confirm-cpu/cpu-provenance.json": {
+      "sha256": "aa17483fc8d142a98e552bc7b5765ae68d8be7951ccadffb48e558c133226a8f",
+      "bytes": 3209513
+    },
+    "confirm-gpu/gpu-provenance.json": {
+      "sha256": "d0bc86e61b6e7c7407752cf40604eddfb08bb085d4653437da06ac3167f97ee2",
+      "bytes": 2066585
+    },
+    "demo-selection-wave2/ranking.json": {
+      "sha256": "d27f844c3c9451beea8fc340c807a1bf2033ee4f185353a9583ac3f23969b5ba",
+      "bytes": 13782
+    },
+    "demo-selection/ranking.json": {
+      "sha256": "a796464a265911d6fc4d51e4b8a01b8fd174d32c7b8afb8f9f1986766542e29d",
+      "bytes": 13714
+    },
+    "display-fonts.json": {
+      "sha256": "5f5503c5f016fd6343b6a328afae3e4c9be2e4928d45c05e2112860e8d598e38",
+      "bytes": 107435
+    },
+    "font-candidates-wave2.json": {
+      "sha256": "6a3541f131a54c669eabd196531250d468794b8efd033d0c4b89340a0ab79f6a",
+      "bytes": 7494
+    },
+    "font-candidates.json": {
+      "sha256": "e891ba83a51d320003757cf7c791e285b39ad3cb9a9f4ae6557f8a85297516ff",
+      "bytes": 7593
+    },
+    "fonts/almendra/Almendra-Bold.ttf": {
+      "sha256": "5895ef04d0d56c60083ec302e72db99b952b044ab2b440ee12283649b5edc971",
+      "bytes": 36624
+    },
+    "fonts/almendra/Almendra-BoldItalic.ttf": {
+      "sha256": "10e0a7dd4b9f5ad7d51be7f8ee42d76919c322dcbb7733dbad48f4ac751cb105",
+      "bytes": 35380
+    },
+    "fonts/almendra/Almendra-Italic.ttf": {
+      "sha256": "972eb95dd030592755064c35e8e394b75423973d0b7dbfd759c7e36ef80bb7cb",
+      "bytes": 35216
+    },
+    "fonts/almendra/Almendra-Regular.ttf": {
+      "sha256": "b127a6121209353b53da9ce73bf9d350f74190d8384c28ede179e4fb9440f946",
+      "bytes": 68684
+    },
+    "fonts/arbutus/Arbutus-Regular.ttf": {
+      "sha256": "6c86e8b86c9eebcdb963f83b382e5ba92764b34c53cd9dd96a00ec5d3c5acfdb",
+      "bytes": 80964
+    },
+    "fonts/bungeeoutline/BungeeOutline-Regular.ttf": {
+      "sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "bytes": 202152
+    },
+    "fonts/bungeeshade/BungeeShade-Regular.ttf": {
+      "sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "bytes": 304936
+    },
+    "fonts/controls/PTSans-Regular.ttf": {
+      "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a",
+      "bytes": 442960
+    },
+    "fonts/controls/RobotoFlex-VariableFont.ttf": {
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+      "bytes": 227888
+    },
+    "fonts/controls/Vollkorn-Medium.ttf": {
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "bytes": 428384
+    },
+    "fonts/controls/Vollkorn-OFL.txt": {
+      "sha256": "53f9c99fa3d47f7d632a42ee7bab4a834a60a744f6026d676c3a223cef2b2ef3",
+      "bytes": 4489
+    },
+    "fonts/creepster/Creepster-Regular.ttf": {
+      "sha256": "402aeb734586c74aecd3dbdc454589b1fb12e2e1c71f782fd019ae68066d9f44",
+      "bytes": 62724
+    },
+    "fonts/croissantone/CroissantOne-Regular.ttf": {
+      "sha256": "55ccb462d07bab853281e9fd9646f0cc258bfb1ae8ff645f857ba1f921f7f69e",
+      "bytes": 54744
+    },
+    "fonts/eaglelake/EagleLake-Regular.ttf": {
+      "sha256": "53a4e929c9ea3584f2432157fd549c7604e6be7e6c4b39873f34fae7f6823928",
+      "bytes": 78000
+    },
+    "fonts/emilyscandy/EmilysCandy-Regular.ttf": {
+      "sha256": "0cf3ca9dbe71b33596e8a1eb12b40deac2e6414fe5616dda50c554580b6e0c68",
+      "bytes": 237216
+    },
+    "fonts/ewert/Ewert-Regular.ttf": {
+      "sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "bytes": 70752
+    },
+    "fonts/jacquesfrancoisshadow/JacquesFrancoisShadow-Regular.ttf": {
+      "sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "bytes": 82492
+    },
+    "fonts/kalam/Kalam-Bold.ttf": {
+      "sha256": "2f6576601db015d4f6c08678120277fc8510b98c06e932ce7a6a9cbff4cbdded",
+      "bytes": 460896
+    },
+    "fonts/kalam/Kalam-Light.ttf": {
+      "sha256": "2b8f2c0208d397a1823688783da3317d6af18ea007a9a1b56ddb17e27820507e",
+      "bytes": 437512
+    },
+    "fonts/kalam/Kalam-Regular.ttf": {
+      "sha256": "57cecb63d4608019371954274ae1d8c397764debd5b19d4a33c1efa4dc923c0b",
+      "bytes": 427360
+    },
+    "fonts/medievalsharp/MedievalSharp.ttf": {
+      "sha256": "74cb2e6738bd7703adf120802f68fba0c9ddb9147a08e6847f1005b1e55df5a5",
+      "bytes": 148712
+    },
+    "fonts/metalmania/MetalMania-Regular.ttf": {
+      "sha256": "4b95f0e55b291990c26a7b68818b20c1b728a8be05a34982b7bb4736c46c19ea",
+      "bytes": 254568
+    },
+    "fonts/metamorphous/Metamorphous-Regular.ttf": {
+      "sha256": "55939a5664e06807e87fa4af64f52039ead12f002dda8317393fdce2f7ff57fe",
+      "bytes": 135740
+    },
+    "fonts/mukta/Mukta-Bold.ttf": {
+      "sha256": "7d22891cd57507b04af95a67ffaf59b7073b3595a27d1cfbbcefb418de820a12",
+      "bytes": 418416
+    },
+    "fonts/mukta/Mukta-ExtraBold.ttf": {
+      "sha256": "328eeebffe06fac60d60b46fe60c3995a908d2347e9c285f1eef1a0c9d73e004",
+      "bytes": 423168
+    },
+    "fonts/mukta/Mukta-ExtraLight.ttf": {
+      "sha256": "ff3260e6fd667797b0beb80430b0da318ccdac73c0f90fe828c2dd5a093265a1",
+      "bytes": 410644
+    },
+    "fonts/mukta/Mukta-Light.ttf": {
+      "sha256": "161f2f22d33a1c75d9fb37d74ea99e8dbbe119cd5c102c83146fb032a552e8f2",
+      "bytes": 405188
+    },
+    "fonts/mukta/Mukta-Medium.ttf": {
+      "sha256": "4db18bd8f19582607e8a6af0c4bf158b4b3378b426e42ad39d444d216c70074c",
+      "bytes": 419736
+    },
+    "fonts/mukta/Mukta-Regular.ttf": {
+      "sha256": "2958e4af564507df2a856164df6f9978dacb03f999a4f34a0c269dc8a4de9688",
+      "bytes": 432248
+    },
+    "fonts/mukta/Mukta-SemiBold.ttf": {
+      "sha256": "f437fb098f8f29acb8628617cb2682f0780ef22fa8b0443de1f66090c36e510a",
+      "bytes": 411160
+    },
+    "fonts/nosifer/Nosifer-Regular.ttf": {
+      "sha256": "09c5ac35e34dc7a397d5f698b703c5640b59cf93d4d343ebae4f16f3859d09b8",
+      "bytes": 43272
+    },
+    "fonts/rubikglitch/RubikGlitch-Regular.ttf": {
+      "sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "bytes": 407304
+    },
+    "fonts/rubikmicrobe/RubikMicrobe-Regular.ttf": {
+      "sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "bytes": 1444176
+    },
+    "fonts/rubikpixels/RubikPixels-Regular.ttf": {
+      "sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "bytes": 5627648
+    },
+    "fonts/rye/OFL.txt": {
+      "sha256": "399b33eb38cdfc76b8665defa5f81d52e8193d630ad5858c893db6bc20031bc9",
+      "bytes": 4393
+    },
+    "fonts/rye/Rye-Regular.ttf": {
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "bytes": 183244
+    },
+    "fonts/sahitya/Sahitya-Bold.ttf": {
+      "sha256": "9feb27b5d2980b741355bb6240d0f0b44d0f4cfdb15c11980049f4750fcaa88a",
+      "bytes": 267140
+    },
+    "fonts/sahitya/Sahitya-Regular.ttf": {
+      "sha256": "f43e57c9eb3c936e195009a5755906d34cdffb7e5ac4d0a51d260150f118ee62",
+      "bytes": 261652
+    },
+    "fonts/sancreek/Sancreek-Regular.ttf": {
+      "sha256": "8f87c42f6e6ba97125cd975c3d7d48902fc227d805948e678d5293a300e3fe55",
+      "bytes": 93252
+    },
+    "fonts/stixtwomath/STIXTwoMath-Regular.ttf": {
+      "sha256": "562551b15b836e6e01d1b7350909baf3c8c8d83260c1190fbf4544333e6936de",
+      "bytes": 1517976
+    },
+    "fonts/sumana/Sumana-Bold.ttf": {
+      "sha256": "e32150c36ced10804d077dc41714df7e5c8471408bccc7036fba30314a914e79",
+      "bytes": 223880
+    },
+    "fonts/sumana/Sumana-Regular.ttf": {
+      "sha256": "e71be1be55f8970ef24ee3aaf790c34cad3f5b6c5d518e41c8651c596e102ec4",
+      "bytes": 211548
+    },
+    "fonts/suranna/Suranna-Regular.ttf": {
+      "sha256": "66ad4194f922e0b230e12d35070c852d38573ad40ad4e993cbe7d69df344b177",
+      "bytes": 624852
+    },
+    "fonts/tradewinds/TradeWinds-Regular.ttf": {
+      "sha256": "bbc4c9a17927d6c5076a1957b0b165fae6c835c1bfa0fb8c07053243097e495b",
+      "bytes": 85380
+    },
+    "fonts/unifrakturcook/UnifrakturCook-Bold.ttf": {
+      "sha256": "ea002fa9c65f1a612af100e00d87ab65f16381f450020ec3d021f3dbf79a6dcd",
+      "bytes": 42688
+    },
+    "fonts/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf": {
+      "sha256": "d64afc0547059dd2e4a78da48bda0aba0a9901be58c7f8c201a8b2b6b4492cc8",
+      "bytes": 88508
+    },
+    "fonts/upstream-agent/Amiri-Italic.ttf": {
+      "sha256": "ca02e830027f4376fc35ab4a058880a7d43affe7bd58108a6e6a02bd2515b343",
+      "bytes": 437128
+    },
+    "fonts/upstream-agent/Amiri-Regular.ttf": {
+      "sha256": "cd2550c0f4c05eb341bf97958211aaa39382bca96577ba3a67d4a3b4912c43c0",
+      "bytes": 437780
+    },
+    "fonts/upstream-agent/Charis-Regular.ttf": {
+      "sha256": "c03738834bd3a43c3e4a59b11878bd6ede3ee505998242ae649ed1f9cd2edcf6",
+      "bytes": 878076
+    },
+    "fonts/upstream-agent/DoulosSIL-OFL.txt": {
+      "sha256": "9056bde1f5d6e66c8177bf3357a8b681a1e561781ab162e0dd5ae24a401becaf",
+      "bytes": 4500
+    },
+    "fonts/upstream-agent/DoulosSIL-Regular.ttf": {
+      "sha256": "cc89b87c047bcc8dc00246398218bb6343e0f2372b153cf560c29a77f27068ef",
+      "bytes": 887828
+    },
+    "fonts/upstream-agent/EBGaramond08-Regular.ttf": {
+      "sha256": "7bf5b4bb50d68c23453c924b982493fa9a9193e04d8a4492d66f350723e839d1",
+      "bytes": 303956
+    },
+    "fonts/upstream-agent/EBGaramond12-Italic.ttf": {
+      "sha256": "abeabc22f84a33dcc0aea6a5918028f23a7d516f4f8240b192b6833b7b7da429",
+      "bytes": 375584
+    },
+    "fonts/upstream-agent/EBGaramond12-Regular.ttf": {
+      "sha256": "2f31cea9211b8377ee8fd5b328adc7eb5ffe3ca64c28fd9ce55d81fcf9aaa7ba",
+      "bytes": 585416
+    },
+    "fonts/upstream-agent/FrederickatheGreat-Regular.ttf": {
+      "sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "bytes": 486016
+    },
+    "fonts/upstream-agent/Gentium-Regular.ttf": {
+      "sha256": "158d89548ef28f62abfc2921878fa253b833111e8d3932da7f501daef6d0eccf",
+      "bytes": 971304
+    },
+    "fonts/upstream-agent/IMFeENrm28P.ttf": {
+      "sha256": "fe9705bbde51af802719246d4608d08d37bde956ab99d9a590da996a5221a24c",
+      "bytes": 194992
+    },
+    "fonts/upstream-agent/Junicode-Italic.ttf": {
+      "sha256": "6f844c86b1c22fb383562b92a391ce0f20dc3ccedbed3b93807c8d2021656d47",
+      "bytes": 1031192
+    },
+    "fonts/upstream-agent/Junicode-Regular.ttf": {
+      "sha256": "1cf12039709603afe6aa2ae9d0910c11ed9b2b1bd975b38f04290a42d1821552",
+      "bytes": 1043236
+    },
+    "generate_font_stress_report.py": {
+      "sha256": "3a61ad6fe5effda4e409d20fd83868e75eda0dcc444b38370decf090fb9fbb0a",
+      "bytes": 21625
+    },
+    "hardware.json": {
+      "sha256": "5824187345bb2e8d9443ce38ae5febf78dbb044989fc066c4f583a392d549810",
+      "bytes": 618
+    },
+    "independent-confirmation-audit.json": {
+      "sha256": "0e57479d347050f369c2bb9ccebbb1e04e3f91d61c4c7cfae88171b47b042cc5",
+      "bytes": 1154
+    },
+    "independent_font_confirmation_audit.py": {
+      "sha256": "9d379c913e60088c553a1ae68d0891c465167a7de0350d88a92283ace85ceb93",
+      "bytes": 11076
+    },
+    "native-screen-wave2/batch.json": {
+      "sha256": "f4523f7634991b1e64de51ca1ae5c93143d45152e9ffff3b0f2125384da7f80f",
+      "bytes": 40347
+    },
+    "native-screen/batch.json": {
+      "sha256": "916edbff565103218e8eae6ceb9416585294666f1b3b978e101fe216ebf2eb7a",
+      "bytes": 39645
+    },
+    "pixels/pixels-provenance.json": {
+      "sha256": "3fabeda95b509a8c4b3feba01c68264ebb881bbd264167fc619a770127e01407",
+      "bytes": 386518
+    },
+    "replay_campaign.py": {
+      "sha256": "6ce05139d7deeef1c04077d2ee9775fab7faa89556f7e2fe5ae408e7d3a8db98",
+      "bytes": 23468
+    },
+    "second-wave-fonts.json": {
+      "sha256": "33ee8b8434e79b05f53c7346d8b49f53b9e3d91b0c19e8c343033cb3a5fc3716",
+      "bytes": 186790
+    },
+    "selection-frozen.json": {
+      "sha256": "845ab9c0d043c526dc8ca2f34419fcb11cfad9bca0a22b67295ef7c7fbc2c5bd",
+      "bytes": 3260
+    },
+    "supporting/font-inspection.csv": {
+      "sha256": "496845891daa278c862fd77523b86708acba4d337e196008ec7778e8e95b7054",
+      "bytes": 12036
+    },
+    "supporting/font-inspection.json": {
+      "sha256": "178ca53781abe1765c070c2710aebe91b36b09ea4497f2c73b4e8d71f009d724",
+      "bytes": 440222
+    },
+    "supporting/font_metadata.py": {
+      "sha256": "08c522fa6ad525e4929355067b9b3737e5da4a2697e417c5f057d9675192cdb8",
+      "bytes": 5286
+    },
+    "supporting/inspect_font_candidates.py": {
+      "sha256": "47aa329b4a52447273740f6ec24e335225c4d7627eb700b5dd7b92568fb7958f",
+      "bytes": 5697
+    },
+    "supporting/search-metrics.csv": {
+      "sha256": "b9b267b85d6e2b69d6e37b5c651a06ba34e3fa6405e50fcb91ca749bd896ff6f",
+      "bytes": 16373
+    }
+  }
+}

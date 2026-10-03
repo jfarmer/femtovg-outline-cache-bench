@@ -1,0 +1,14 @@
+{
+  "MECHANISM-SOURCE-AUDIT.txt": "analysis/cjk-font-search/mechanism-source-audit.txt",
+  "mechanism-diagnostic/analysis/dynamic-instructions.md": "analysis/cjk-font-search/vm-dynamic-instructions.md",
+  "mechanism-diagnostic/analysis/count-summary.json": "analysis/cjk-font-search/vm-count-summary.json",
+  "mechanism-cost-timing-v1/analysis-v2/summary.md": "analysis/cjk-font-search/cost-summary.md",
+  "mechanism-cost-timing-v1/analysis/independent-audit.json": "analysis/cjk-font-search/independent-cost-audit.json",
+  "mechanism-production-trace-v2/counts-summary.csv": "analysis/cjk-font-search/production-counts-summary.csv",
+  "mechanism-production-trace-v2/independent-count-audit.json": "analysis/cjk-font-search/production-independent-count-audit.json",
+  "mechanism-production-trace-v2/geometry-and-advances.json": "analysis/cjk-font-search/production-geometry-and-advances.json",
+  "mechanism-retention-ablation/protocol-frozen.json": "analysis/cjk-font-search/retention-protocol-frozen.json",
+  "mechanism-retention-ablation/analysis.json": "analysis/cjk-font-search/retention-analysis.json",
+  "mechanism-retention-ablation/summary.csv": "analysis/cjk-font-search/retention-summary.csv",
+  "mechanism-retention-ablation/independent-audit.json": "analysis/cjk-font-search/independent-retention-audit.json"
+}

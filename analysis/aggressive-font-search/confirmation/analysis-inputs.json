@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "inputs": {
+    "cpu": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-confirm-cpu-v1/cpu-provenance.json",
+      "bytes": 777434,
+      "sha256": "96176c3bd5912ced876c9d7646d7d655e45157a8d48f2292044f54cc1c69bb85"
+    },
+    "gpu": null,
+    "analyzer": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/demo-confirmation-analysis-v1/analyze_demo_confirm.py",
+      "bytes": 38234,
+      "sha256": "3471ef075eb085ba8bca5298028009b56b029c7cd3ee9b6b6bad0d56c9190804"
+    },
+    "raw_audit": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/raw-audit.json",
+      "bytes": 261044,
+      "sha256": "e91424f1738d09e5afc1bf73b4e02b33e35574ab9201707a0b87583bb80c7262"
+    }
+  },
+  "outputs": {
+    "summary.csv": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/summary.csv",
+      "bytes": 24067,
+      "sha256": "c2d14b0881bbc96fa72f35b71d7bda7442f7c84c830a0a8912e02c691535145e"
+    },
+    "summary.json": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/summary.json",
+      "bytes": 87247,
+      "sha256": "3aa9382257ea800ecb7844f646afd6ad39a5943f6bb30d79eb148537975f2d38"
+    },
+    "paired-processes.csv": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/paired-processes.csv",
+      "bytes": 113751,
+      "sha256": "11faf9718058111b3b54de1bdaeca3545038f6e2ca7771c9bac8088ab8c135dc"
+    },
+    "bootstrap-indices.json": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/bootstrap-indices.json",
+      "bytes": 1499865,
+      "sha256": "e3e1d843888720672fa18a58d582ed7776c966781dfe761d0421baccac5900f6"
+    },
+    "raw-audit.json": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/raw-audit.json",
+      "bytes": 261044,
+      "sha256": "e91424f1738d09e5afc1bf73b4e02b33e35574ab9201707a0b87583bb80c7262"
+    },
+    "primary-table.md": {
+      "path": "/private/tmp/femtovg-aggressive-font-search-20261002/primary-analysis-v1/primary-table.md",
+      "bytes": 1838,
+      "sha256": "2b72881103d34b97d69bfeebec6f0a3b283344d6350c262c265ed10ddafdd159"
+    }
+  }
+}

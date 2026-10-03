@@ -1,0 +1,37 @@
+   Compiling femtovg v0.27.0 (/private/tmp/femtovg-review-fixes-containment/base)
+warning: unused import: `path::Path as FilePath`
+  --> src/lib.rs:28:5
+   |
+28 |     path::Path as FilePath,
+   |     ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `geometry::Transform2D`
+    --> src/paint.rs:1630:17
+     |
+1630 |     use crate::{geometry::Transform2D, Color};
+     |                 ^^^^^^^^^^^^^^^^^^^^^
+
+warning: method `font_scale` is never used
+    --> src/lib.rs:2346:8
+     |
+ 439 | / impl<T> Canvas<T>
+ 440 | | where
+ 441 | |     T: Renderer,
+     | |________________- method in this implementation
+...
+2346 |       fn font_scale(&self) -> f32 {
+     |          ^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `femtovg` (lib test) generated 3 warnings (run `cargo fix --lib -p femtovg --tests` to apply 2 suggestions)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.88s
+     Running unittests src/lib.rs (/private/tmp/femtovg-review-fixes-containment/target/debug/deps/femtovg-60c307d6dc4690a3)
+
+running 1 test
+test containment_review_probe::containment_probe ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 147 filtered out; finished in 0.04s
+

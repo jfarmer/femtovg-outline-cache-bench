@@ -1,0 +1,34 @@
+=== 12 image update failure, fill: Err(UnknownError)
+--- after
+current_render_target(before flush) = Screen
+state_stack.len = 1
+rendered_glyphs.len = 0
+glyph_textures.len = 1
+glyph_textures = [FontTexture { atlas: Atlas { width: 512, height: 512, nodes: [Node { x: 0, y: 19, width: 17 }, Node { x: 17, y: 0, width: 495 }] }, image_id: ImageId(DefaultKey(1v1)) }]
+commands = [
+    Command {
+        cmd_type: SetRenderTarget(
+            Screen,
+        ),
+        clip_active: false,
+        drawables: [],
+        triangles_verts: None,
+        image: None,
+        filter_scratch: None,
+        glyph_texture: None,
+        blend_pass: BlendPass {
+            backdrop_flipped: false,
+            source_alpha: 1.0,
+            contribution: false,
+        },
+        fill_rule: NonZero,
+        composite_operation: CompositeOperationState {
+            src_rgb: One,
+            src_alpha: One,
+            dst_rgb: OneMinusSrcAlpha,
+            dst_alpha: OneMinusSrcAlpha,
+        },
+    },
+]
+verts.len = 0
+verts = []

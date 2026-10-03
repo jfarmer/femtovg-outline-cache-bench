@@ -1,0 +1,2503 @@
+{
+  "complete": true,
+  "audit": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/supporting/native-prescreen-audit.json",
+    "sha256": "fb56f5d5d3afac90dbdaa42f77a0424154579f5586e7c0b22aaf7e454ba7e39c",
+    "bytes": 670202
+  },
+  "protocol": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/native-prescreen-protocol-v1.json",
+    "sha256": "4485454617baa483472fc95d6c2305f14fa7ba21a6eeed25f4ec9cfd16b81a39",
+    "bytes": 50884
+  },
+  "method": "Exploratory prepared native font-cost prescreen only; unchanged old screen.py and executable. Preserve all rejected fonts. Analyze each profile/DPR separately: per-case trial medians followed by median of five logical sizes. DPR1 outlines match actual first-paint 11/12/14/15/16px sizes; DPR2 outlines are 22/24/28/30/32px. No confidence intervals, cache overhead, predicted application savings or percentage claims.",
+  "rows": [
+    {
+      "screen": "aggressive",
+      "font": "RubikPixels-Regular",
+      "font_sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 19.9950496455,
+      "native_render_us_per_glyph": 59.9748085105,
+      "geometry_reuse_us_per_glyph": 39.5900549645,
+      "native_outline_unhinted_us_per_glyph": 19.984781915,
+      "hinting_increment_us_per_glyph": 0.10379432599999916,
+      "potential_saved_us_per_glyph": 20.1374840425
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 17.5545939715,
+      "native_render_us_per_glyph": 19.932253546,
+      "geometry_reuse_us_per_glyph": 1.816710993,
+      "native_outline_unhinted_us_per_glyph": 0.43616844,
+      "hinting_increment_us_per_glyph": 17.1193085105,
+      "potential_saved_us_per_glyph": 17.9045531915
+    },
+    {
+      "screen": "aggressive",
+      "font": "DiplomataSC-Regular",
+      "font_sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 16.7961737585,
+      "native_render_us_per_glyph": 18.487441489,
+      "geometry_reuse_us_per_glyph": 1.6385195035,
+      "native_outline_unhinted_us_per_glyph": 0.2958049645,
+      "hinting_increment_us_per_glyph": 16.506945035,
+      "potential_saved_us_per_glyph": 16.911053191500002
+    },
+    {
+      "screen": "aggressive",
+      "font": "Diplomata-Regular",
+      "font_sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 16.7657358155,
+      "native_render_us_per_glyph": 18.584070922000002,
+      "geometry_reuse_us_per_glyph": 1.5585851064999998,
+      "native_outline_unhinted_us_per_glyph": 0.301714539,
+      "hinting_increment_us_per_glyph": 16.431515957000002,
+      "potential_saved_us_per_glyph": 16.863994680500003
+    },
+    {
+      "screen": "aggressive",
+      "font": "SnowburstOne-Regular",
+      "font_sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 12.753326241,
+      "native_render_us_per_glyph": 14.401742908,
+      "geometry_reuse_us_per_glyph": 1.490101064,
+      "native_outline_unhinted_us_per_glyph": 0.337322695,
+      "hinting_increment_us_per_glyph": 12.4263475175,
+      "potential_saved_us_per_glyph": 12.981086879
+    },
+    {
+      "screen": "aggressive",
+      "font": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 12.1428049645,
+      "native_render_us_per_glyph": 13.064936170500001,
+      "geometry_reuse_us_per_glyph": 0.8324468085000001,
+      "native_outline_unhinted_us_per_glyph": 0.2492606385,
+      "hinting_increment_us_per_glyph": 11.8971631205,
+      "potential_saved_us_per_glyph": 12.22658156
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rubik80sFade-Regular",
+      "font_sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 11.466975177,
+      "native_render_us_per_glyph": 33.538416667,
+      "geometry_reuse_us_per_glyph": 21.3111684395,
+      "native_outline_unhinted_us_per_glyph": 11.4346187945,
+      "hinting_increment_us_per_glyph": 0.002143617499999806,
+      "potential_saved_us_per_glyph": 12.005024823500001
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitchPop-Regular",
+      "font_sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 8.479315603,
+      "native_render_us_per_glyph": 22.874039007,
+      "geometry_reuse_us_per_glyph": 13.890955674,
+      "native_outline_unhinted_us_per_glyph": 8.386377659499999,
+      "hinting_increment_us_per_glyph": 0.1546968090000007,
+      "potential_saved_us_per_glyph": 8.970005319000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "FrederickatheGreat-Regular",
+      "font_sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 5.004358156,
+      "native_render_us_per_glyph": 15.387042553,
+      "geometry_reuse_us_per_glyph": 9.8958333335,
+      "native_outline_unhinted_us_per_glyph": 4.9885496455,
+      "hinting_increment_us_per_glyph": 0.06227836900000039,
+      "potential_saved_us_per_glyph": 5.299794326000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMicrobe-Regular",
+      "font_sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 4.0806719860000005,
+      "native_render_us_per_glyph": 14.793661347499999,
+      "geometry_reuse_us_per_glyph": 10.288859929000001,
+      "native_outline_unhinted_us_per_glyph": 4.1069734045,
+      "hinting_increment_us_per_glyph": -0.020539006999999998,
+      "potential_saved_us_per_glyph": 4.2273226955
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikDistressed-Regular",
+      "font_sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 2.653072695,
+      "native_render_us_per_glyph": 11.5316205675,
+      "geometry_reuse_us_per_glyph": 8.732934397000001,
+      "native_outline_unhinted_us_per_glyph": 2.6838049645,
+      "hinting_increment_us_per_glyph": -0.03738120549999957,
+      "potential_saved_us_per_glyph": 2.759161347000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "Frijole-Regular",
+      "font_sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.856973404,
+      "native_render_us_per_glyph": 6.781987589,
+      "geometry_reuse_us_per_glyph": 4.885787234,
+      "native_outline_unhinted_us_per_glyph": 1.8594113475,
+      "hinting_increment_us_per_glyph": -0.009310284000000113,
+      "potential_saved_us_per_glyph": 1.9209521274999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "Kranky-Regular",
+      "font_sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.625960993,
+      "native_render_us_per_glyph": 5.3659131205,
+      "geometry_reuse_us_per_glyph": 3.7496294325,
+      "native_outline_unhinted_us_per_glyph": 1.598329787,
+      "hinting_increment_us_per_glyph": 0.006796099500000263,
+      "potential_saved_us_per_glyph": 1.6433226949999993
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBurned-Regular",
+      "font_sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.572471631,
+      "native_render_us_per_glyph": 5.3982730495,
+      "geometry_reuse_us_per_glyph": 3.935062057,
+      "native_outline_unhinted_us_per_glyph": 1.586140071,
+      "hinting_increment_us_per_glyph": -0.033909574499999984,
+      "potential_saved_us_per_glyph": 1.4952712759999995
+    },
+    {
+      "screen": "aggressive",
+      "font": "JacquesFrancoisShadow-Regular",
+      "font_sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.507829787,
+      "native_render_us_per_glyph": 3.8525425535,
+      "geometry_reuse_us_per_glyph": 2.17922695,
+      "native_outline_unhinted_us_per_glyph": 0.348035461,
+      "hinting_increment_us_per_glyph": 1.1597943259999999,
+      "potential_saved_us_per_glyph": 1.7460833335000003
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBeastly-Regular",
+      "font_sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.2129858155,
+      "native_render_us_per_glyph": 5.816858156,
+      "geometry_reuse_us_per_glyph": 4.558510638,
+      "native_outline_unhinted_us_per_glyph": 1.2403226950000001,
+      "hinting_increment_us_per_glyph": -0.023345744500000043,
+      "potential_saved_us_per_glyph": 1.224069149
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikWetPaint-Regular",
+      "font_sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1947393615,
+      "native_render_us_per_glyph": 4.0651613475,
+      "geometry_reuse_us_per_glyph": 2.9144503544999996,
+      "native_outline_unhinted_us_per_glyph": 1.199173759,
+      "hinting_increment_us_per_glyph": -0.010342198500000066,
+      "potential_saved_us_per_glyph": 1.1485638289999995
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitch-Regular",
+      "font_sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1424343970000002,
+      "native_render_us_per_glyph": 4.5033989365,
+      "geometry_reuse_us_per_glyph": 3.188755319,
+      "native_outline_unhinted_us_per_glyph": 1.1386666664999998,
+      "hinting_increment_us_per_glyph": -0.006945035499999808,
+      "potential_saved_us_per_glyph": 1.3146436174999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMoonrocks-Regular",
+      "font_sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1166524825000002,
+      "native_render_us_per_glyph": 4.300382979,
+      "geometry_reuse_us_per_glyph": 3.054962766,
+      "native_outline_unhinted_us_per_glyph": 1.0768315605,
+      "hinting_increment_us_per_glyph": 0.0376046095,
+      "potential_saved_us_per_glyph": 1.1820336879999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikVinyl-Regular",
+      "font_sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.0491276594999999,
+      "native_render_us_per_glyph": 3.895241135,
+      "geometry_reuse_us_per_glyph": 2.8655425535,
+      "native_outline_unhinted_us_per_glyph": 1.0141843975,
+      "hinting_increment_us_per_glyph": 0.03457446799999975,
+      "potential_saved_us_per_glyph": 1.0084202125
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPuddles-Regular",
+      "font_sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.9470301415,
+      "native_render_us_per_glyph": 5.291076241,
+      "geometry_reuse_us_per_glyph": 3.8721187945000004,
+      "native_outline_unhinted_us_per_glyph": 0.928560284,
+      "hinting_increment_us_per_glyph": 0.010934396499999943,
+      "potential_saved_us_per_glyph": 1.2183067375000007
+    },
+    {
+      "screen": "aggressive",
+      "font": "Ewert-Regular",
+      "font_sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.4554539005,
+      "native_render_us_per_glyph": 2.3377659575000003,
+      "geometry_reuse_us_per_glyph": 1.8371755319999998,
+      "native_outline_unhinted_us_per_glyph": 0.4429663125,
+      "hinting_increment_us_per_glyph": -0.002437943499999984,
+      "potential_saved_us_per_glyph": 0.479758865
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeShade-Regular",
+      "font_sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.414671986,
+      "native_render_us_per_glyph": 2.3084361700000002,
+      "geometry_reuse_us_per_glyph": 1.8713812055,
+      "native_outline_unhinted_us_per_glyph": 0.4185868795,
+      "hinting_increment_us_per_glyph": -0.0039893615000000104,
+      "potential_saved_us_per_glyph": 0.4960851064999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeOutline-Regular",
+      "font_sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.4111258865,
+      "native_render_us_per_glyph": 2.2245868795000003,
+      "geometry_reuse_us_per_glyph": 1.786569149,
+      "native_outline_unhinted_us_per_glyph": 0.4227996455,
+      "hinting_increment_us_per_glyph": -0.005393616500000031,
+      "potential_saved_us_per_glyph": 0.4712624110000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "MysteryQuest-Regular",
+      "font_sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.349882979,
+      "native_render_us_per_glyph": 1.6514485815,
+      "geometry_reuse_us_per_glyph": 1.2296843974999998,
+      "native_outline_unhinted_us_per_glyph": 0.3530567375,
+      "hinting_increment_us_per_glyph": -0.0031737585000000124,
+      "potential_saved_us_per_glyph": 0.3656932625
+    },
+    {
+      "screen": "aggressive",
+      "font": "Monoton-Regular",
+      "font_sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.34943971650000005,
+      "native_render_us_per_glyph": 3.02570922,
+      "geometry_reuse_us_per_glyph": 2.4210248229999998,
+      "native_outline_unhinted_us_per_glyph": 0.3494397165,
+      "hinting_increment_us_per_glyph": -0.002141843500000018,
+      "potential_saved_us_per_glyph": 0.5062783684999999
+    },
+    {
+      "screen": "aggressive",
+      "font": "VastShadow-Regular",
+      "font_sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.3441205675,
+      "native_render_us_per_glyph": 1.857046099,
+      "geometry_reuse_us_per_glyph": 1.473184397,
+      "native_outline_unhinted_us_per_glyph": 0.3519521275,
+      "hinting_increment_us_per_glyph": -0.006726949999999954,
+      "potential_saved_us_per_glyph": 0.3452269499999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "RibeyeMarrow-Regular",
+      "font_sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.327718085,
+      "native_render_us_per_glyph": 1.824466312,
+      "geometry_reuse_us_per_glyph": 1.5472819150000001,
+      "native_outline_unhinted_us_per_glyph": 0.33156028400000004,
+      "hinting_increment_us_per_glyph": -0.006280142000000044,
+      "potential_saved_us_per_glyph": 0.3663546099999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "FascinateInline-Regular",
+      "font_sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.312498227,
+      "native_render_us_per_glyph": 1.2684680855,
+      "geometry_reuse_us_per_glyph": 0.9252358155,
+      "native_outline_unhinted_us_per_glyph": 0.3175975175,
+      "hinting_increment_us_per_glyph": -0.005099290499999964,
+      "potential_saved_us_per_glyph": 0.3314131210000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "Spirax-Regular",
+      "font_sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.226656028,
+      "native_render_us_per_glyph": 1.182698582,
+      "geometry_reuse_us_per_glyph": 0.954712766,
+      "native_outline_unhinted_us_per_glyph": 0.2333031915,
+      "hinting_increment_us_per_glyph": -0.004728723500000032,
+      "potential_saved_us_per_glyph": 0.23116312049999987
+    },
+    {
+      "screen": "aggressive",
+      "font": "FontdinerSwanky-Regular",
+      "font_sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "profile": "ascii94",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.2091453905,
+      "native_render_us_per_glyph": 1.093675532,
+      "geometry_reuse_us_per_glyph": 0.8441932624999999,
+      "native_outline_unhinted_us_per_glyph": 0.21579432650000002,
+      "hinting_increment_us_per_glyph": -0.006203899999999984,
+      "potential_saved_us_per_glyph": 0.24948226950000008
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPixels-Regular",
+      "font_sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 20.430560606,
+      "native_render_us_per_glyph": 61.89094444449999,
+      "geometry_reuse_us_per_glyph": 40.2613484845,
+      "native_outline_unhinted_us_per_glyph": 20.153549382999998,
+      "hinting_increment_us_per_glyph": 0.2243083329999962,
+      "potential_saved_us_per_glyph": 20.422061728499997
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 19.0630123455,
+      "native_render_us_per_glyph": 21.0195432095,
+      "geometry_reuse_us_per_glyph": 1.4709696970000001,
+      "native_outline_unhinted_us_per_glyph": 0.5056021505,
+      "hinting_increment_us_per_glyph": 18.517746913499998,
+      "potential_saved_us_per_glyph": 19.414864197500002
+    },
+    {
+      "screen": "aggressive",
+      "font": "DiplomataSC-Regular",
+      "font_sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 18.616709677499998,
+      "native_render_us_per_glyph": 19.773301075,
+      "geometry_reuse_us_per_glyph": 1.094983871,
+      "native_outline_unhinted_us_per_glyph": 0.299863636,
+      "hinting_increment_us_per_glyph": 18.319666666499998,
+      "potential_saved_us_per_glyph": 18.678317204
+    },
+    {
+      "screen": "aggressive",
+      "font": "Diplomata-Regular",
+      "font_sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 17.968188171999998,
+      "native_render_us_per_glyph": 19.448863636,
+      "geometry_reuse_us_per_glyph": 1.196908602,
+      "native_outline_unhinted_us_per_glyph": 0.320344086,
+      "hinting_increment_us_per_glyph": 17.647844086,
+      "potential_saved_us_per_glyph": 18.1301505375
+    },
+    {
+      "screen": "aggressive",
+      "font": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 14.6079833335,
+      "native_render_us_per_glyph": 15.125,
+      "geometry_reuse_us_per_glyph": 0.74619697,
+      "native_outline_unhinted_us_per_glyph": 0.24937878800000002,
+      "hinting_increment_us_per_glyph": 14.346525,
+      "potential_saved_us_per_glyph": 14.5079753085
+    },
+    {
+      "screen": "aggressive",
+      "font": "SnowburstOne-Regular",
+      "font_sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 12.7368083335,
+      "native_render_us_per_glyph": 13.774999999999999,
+      "geometry_reuse_us_per_glyph": 0.9545454545000001,
+      "native_outline_unhinted_us_per_glyph": 0.339636364,
+      "hinting_increment_us_per_glyph": 12.3979250005,
+      "potential_saved_us_per_glyph": 12.807575268499999
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rubik80sFade-Regular",
+      "font_sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 11.032833333,
+      "native_render_us_per_glyph": 32.161741935500004,
+      "geometry_reuse_us_per_glyph": 20.694215054,
+      "native_outline_unhinted_us_per_glyph": 10.95766129,
+      "hinting_increment_us_per_glyph": 0.10879629599999951,
+      "potential_saved_us_per_glyph": 11.514591666000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitchPop-Regular",
+      "font_sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 7.5159444445000005,
+      "native_render_us_per_glyph": 21.7754814815,
+      "geometry_reuse_us_per_glyph": 13.579462963000001,
+      "native_outline_unhinted_us_per_glyph": 7.415317204500001,
+      "hinting_increment_us_per_glyph": -0.06874999999999964,
+      "potential_saved_us_per_glyph": 8.1960185185
+    },
+    {
+      "screen": "aggressive",
+      "font": "FrederickatheGreat-Regular",
+      "font_sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 4.7662037040000005,
+      "native_render_us_per_glyph": 15.1304074075,
+      "geometry_reuse_us_per_glyph": 9.429777778,
+      "native_outline_unhinted_us_per_glyph": 4.7538580244999995,
+      "hinting_increment_us_per_glyph": 0.012345679500000983,
+      "potential_saved_us_per_glyph": 4.847892472999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMicrobe-Regular",
+      "font_sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 4.020141667,
+      "native_render_us_per_glyph": 14.1032688175,
+      "geometry_reuse_us_per_glyph": 9.7021666665,
+      "native_outline_unhinted_us_per_glyph": 4.1363636365,
+      "hinting_increment_us_per_glyph": -0.005407407999999947,
+      "potential_saved_us_per_glyph": 4.245133333
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikDistressed-Regular",
+      "font_sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 2.359212121,
+      "native_render_us_per_glyph": 8.448314815,
+      "geometry_reuse_us_per_glyph": 6.236727273,
+      "native_outline_unhinted_us_per_glyph": 2.301075269,
+      "hinting_increment_us_per_glyph": 0.11874166650000006,
+      "potential_saved_us_per_glyph": 2.4452222225
+    },
+    {
+      "screen": "aggressive",
+      "font": "Frijole-Regular",
+      "font_sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.9922777775,
+      "native_render_us_per_glyph": 6.8712272725000005,
+      "geometry_reuse_us_per_glyph": 4.685606061,
+      "native_outline_unhinted_us_per_glyph": 1.929,
+      "hinting_increment_us_per_glyph": 0.0,
+      "potential_saved_us_per_glyph": 2.0022419355
+    },
+    {
+      "screen": "aggressive",
+      "font": "JacquesFrancoisShadow-Regular",
+      "font_sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.6707839505,
+      "native_render_us_per_glyph": 3.0643939395000004,
+      "geometry_reuse_us_per_glyph": 1.2847272725,
+      "native_outline_unhinted_us_per_glyph": 0.35864516150000003,
+      "hinting_increment_us_per_glyph": 1.30422043,
+      "potential_saved_us_per_glyph": 1.7330185185
+    },
+    {
+      "screen": "aggressive",
+      "font": "Kranky-Regular",
+      "font_sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.5483518520000001,
+      "native_render_us_per_glyph": 5.312720430000001,
+      "geometry_reuse_us_per_glyph": 3.7856182795,
+      "native_outline_unhinted_us_per_glyph": 1.5990185184999999,
+      "hinting_increment_us_per_glyph": -0.050666666499999735,
+      "potential_saved_us_per_glyph": 1.4490740739999994
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBurned-Regular",
+      "font_sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.4629629625,
+      "native_render_us_per_glyph": 4.9413030305,
+      "geometry_reuse_us_per_glyph": 3.4008787875,
+      "native_outline_unhinted_us_per_glyph": 1.455865591,
+      "hinting_increment_us_per_glyph": -0.0050454550000003096,
+      "potential_saved_us_per_glyph": 1.5786290320000007
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBeastly-Regular",
+      "font_sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.190408602,
+      "native_render_us_per_glyph": 4.315592593,
+      "geometry_reuse_us_per_glyph": 3.4589696965,
+      "native_outline_unhinted_us_per_glyph": 1.1976060605,
+      "hinting_increment_us_per_glyph": -0.0031515149999998826,
+      "potential_saved_us_per_glyph": 1.0620537635000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMoonrocks-Regular",
+      "font_sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1157407405,
+      "native_render_us_per_glyph": 3.7840537635000002,
+      "geometry_reuse_us_per_glyph": 2.5517727275,
+      "native_outline_unhinted_us_per_glyph": 1.108537037,
+      "hinting_increment_us_per_glyph": 0.0023148144999998177,
+      "potential_saved_us_per_glyph": 1.2628641970000003
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitch-Regular",
+      "font_sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.0895061725000001,
+      "native_render_us_per_glyph": 3.3510268815,
+      "geometry_reuse_us_per_glyph": 2.1092272725,
+      "native_outline_unhinted_us_per_glyph": 1.1115591395,
+      "hinting_increment_us_per_glyph": -0.003870370499999831,
+      "potential_saved_us_per_glyph": 1.079158333
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikWetPaint-Regular",
+      "font_sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.007969136,
+      "native_render_us_per_glyph": 3.2227345675,
+      "geometry_reuse_us_per_glyph": 2.224016129,
+      "native_outline_unhinted_us_per_glyph": 1.017473118,
+      "hinting_increment_us_per_glyph": -0.002530303500000053,
+      "potential_saved_us_per_glyph": 1.0315806455
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikVinyl-Regular",
+      "font_sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.93441358,
+      "native_render_us_per_glyph": 3.1643518520000002,
+      "geometry_reuse_us_per_glyph": 2.2130430105,
+      "native_outline_unhinted_us_per_glyph": 0.921296296,
+      "hinting_increment_us_per_glyph": -0.004709677500000065,
+      "potential_saved_us_per_glyph": 1.0061666665000004
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPuddles-Regular",
+      "font_sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.920698925,
+      "native_render_us_per_glyph": 3.6148939395,
+      "geometry_reuse_us_per_glyph": 2.7954696969999997,
+      "native_outline_unhinted_us_per_glyph": 0.9152750000000001,
+      "hinting_increment_us_per_glyph": 0.001030864499999895,
+      "potential_saved_us_per_glyph": 1.0054074075
+    },
+    {
+      "screen": "aggressive",
+      "font": "Ewert-Regular",
+      "font_sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.5620483869999999,
+      "native_render_us_per_glyph": 2.160348485,
+      "geometry_reuse_us_per_glyph": 1.6363636365,
+      "native_outline_unhinted_us_per_glyph": 0.5536666665000001,
+      "hinting_increment_us_per_glyph": 0.005045454499999935,
+      "potential_saved_us_per_glyph": 0.5239848485
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeShade-Regular",
+      "font_sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.4229408605,
+      "native_render_us_per_glyph": 1.7291666664999998,
+      "geometry_reuse_us_per_glyph": 1.3017037035,
+      "native_outline_unhinted_us_per_glyph": 0.4265215055,
+      "hinting_increment_us_per_glyph": -0.0035806449999999934,
+      "potential_saved_us_per_glyph": 0.4128939395
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeOutline-Regular",
+      "font_sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.414876344,
+      "native_render_us_per_glyph": 1.642919355,
+      "geometry_reuse_us_per_glyph": 1.2235698925,
+      "native_outline_unhinted_us_per_glyph": 0.4218833335,
+      "hinting_increment_us_per_glyph": -0.0014000000000000123,
+      "potential_saved_us_per_glyph": 0.4024333335000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "VastShadow-Regular",
+      "font_sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.375512346,
+      "native_render_us_per_glyph": 1.5705645165,
+      "geometry_reuse_us_per_glyph": 1.166681818,
+      "native_outline_unhinted_us_per_glyph": 0.38040123449999996,
+      "hinting_increment_us_per_glyph": -0.0038181820000000033,
+      "potential_saved_us_per_glyph": 0.371525
+    },
+    {
+      "screen": "aggressive",
+      "font": "MysteryQuest-Regular",
+      "font_sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.364247312,
+      "native_render_us_per_glyph": 1.3669354839999999,
+      "geometry_reuse_us_per_glyph": 0.9853333335000001,
+      "native_outline_unhinted_us_per_glyph": 0.36805913999999995,
+      "hinting_increment_us_per_glyph": -0.002774999499999986,
+      "potential_saved_us_per_glyph": 0.3904320984999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "Monoton-Regular",
+      "font_sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.362363636,
+      "native_render_us_per_glyph": 2.0650151515,
+      "geometry_reuse_us_per_glyph": 1.5439086025,
+      "native_outline_unhinted_us_per_glyph": 0.362378788,
+      "hinting_increment_us_per_glyph": -0.0015555550000000418,
+      "potential_saved_us_per_glyph": 0.47736419750000003
+    },
+    {
+      "screen": "aggressive",
+      "font": "RibeyeMarrow-Regular",
+      "font_sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.3525967745,
+      "native_render_us_per_glyph": 1.2999999999999998,
+      "geometry_reuse_us_per_glyph": 0.969681818,
+      "native_outline_unhinted_us_per_glyph": 0.355736559,
+      "hinting_increment_us_per_glyph": -0.00313978450000002,
+      "potential_saved_us_per_glyph": 0.3590493829999999
+    },
+    {
+      "screen": "aggressive",
+      "font": "FascinateInline-Regular",
+      "font_sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.3323,
+      "native_render_us_per_glyph": 1.1463518515,
+      "geometry_reuse_us_per_glyph": 0.837191358,
+      "native_outline_unhinted_us_per_glyph": 0.33715,
+      "hinting_increment_us_per_glyph": -0.004850000000000021,
+      "potential_saved_us_per_glyph": 0.32291666699999977
+    },
+    {
+      "screen": "aggressive",
+      "font": "FontdinerSwanky-Regular",
+      "font_sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.23055,
+      "native_render_us_per_glyph": 0.9722222225,
+      "geometry_reuse_us_per_glyph": 0.7305107525000001,
+      "native_outline_unhinted_us_per_glyph": 0.233683333,
+      "hinting_increment_us_per_glyph": -0.005155913999999984,
+      "potential_saved_us_per_glyph": 0.232641667
+    },
+    {
+      "screen": "aggressive",
+      "font": "Spirax-Regular",
+      "font_sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "profile": "demo_unique",
+      "dpr": 1,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.23006451649999998,
+      "native_render_us_per_glyph": 0.968104938,
+      "geometry_reuse_us_per_glyph": 0.711425926,
+      "native_outline_unhinted_us_per_glyph": 0.238,
+      "hinting_increment_us_per_glyph": -0.004500000000000004,
+      "potential_saved_us_per_glyph": 0.24305555550000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPixels-Regular",
+      "font_sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 20.071367021,
+      "native_render_us_per_glyph": 70.6083031915,
+      "geometry_reuse_us_per_glyph": 51.163859929,
+      "native_outline_unhinted_us_per_glyph": 19.9422287235,
+      "hinting_increment_us_per_glyph": 0.04041134749999742,
+      "potential_saved_us_per_glyph": 19.7390656025
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 17.9465868795,
+      "native_render_us_per_glyph": 21.933953901000002,
+      "geometry_reuse_us_per_glyph": 3.5450656030000003,
+      "native_outline_unhinted_us_per_glyph": 0.44806383,
+      "hinting_increment_us_per_glyph": 17.5093085105,
+      "potential_saved_us_per_glyph": 18.243719858
+    },
+    {
+      "screen": "aggressive",
+      "font": "DiplomataSC-Regular",
+      "font_sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 17.253842198500003,
+      "native_render_us_per_glyph": 20.0514184395,
+      "geometry_reuse_us_per_glyph": 2.9429663120000003,
+      "native_outline_unhinted_us_per_glyph": 0.31346099299999997,
+      "hinting_increment_us_per_glyph": 16.940381205500003,
+      "potential_saved_us_per_glyph": 17.421544326
+    },
+    {
+      "screen": "aggressive",
+      "font": "Diplomata-Regular",
+      "font_sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 16.943558511,
+      "native_render_us_per_glyph": 20.462691489500003,
+      "geometry_reuse_us_per_glyph": 3.15625,
+      "native_outline_unhinted_us_per_glyph": 0.3181170215,
+      "hinting_increment_us_per_glyph": 16.6254414895,
+      "potential_saved_us_per_glyph": 17.32210461
+    },
+    {
+      "screen": "aggressive",
+      "font": "SnowburstOne-Regular",
+      "font_sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 12.898789007,
+      "native_render_us_per_glyph": 15.340278369,
+      "geometry_reuse_us_per_glyph": 2.42966844,
+      "native_outline_unhinted_us_per_glyph": 0.35593971599999996,
+      "hinting_increment_us_per_glyph": 12.540042553,
+      "potential_saved_us_per_glyph": 13.226654255
+    },
+    {
+      "screen": "aggressive",
+      "font": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 12.3713067375,
+      "native_render_us_per_glyph": 14.078384752,
+      "geometry_reuse_us_per_glyph": 1.4327730495,
+      "native_outline_unhinted_us_per_glyph": 0.2473404255,
+      "hinting_increment_us_per_glyph": 12.099365248,
+      "potential_saved_us_per_glyph": 12.531544326499999
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rubik80sFade-Regular",
+      "font_sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 11.505539007,
+      "native_render_us_per_glyph": 43.9006347515,
+      "geometry_reuse_us_per_glyph": 31.501108156,
+      "native_outline_unhinted_us_per_glyph": 11.487219858,
+      "hinting_increment_us_per_glyph": 0.015661347500000034,
+      "potential_saved_us_per_glyph": 12.3995265955
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitchPop-Regular",
+      "font_sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 8.7075957445,
+      "native_render_us_per_glyph": 29.146572695,
+      "geometry_reuse_us_per_glyph": 20.1784875885,
+      "native_outline_unhinted_us_per_glyph": 8.497856382999998,
+      "hinting_increment_us_per_glyph": 0.14125354599999973,
+      "potential_saved_us_per_glyph": 8.994679077499999
+    },
+    {
+      "screen": "aggressive",
+      "font": "FrederickatheGreat-Regular",
+      "font_sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 5.087026596,
+      "native_render_us_per_glyph": 20.0857712765,
+      "geometry_reuse_us_per_glyph": 14.7162375885,
+      "native_outline_unhinted_us_per_glyph": 4.980643617,
+      "hinting_increment_us_per_glyph": 0.03849113500000012,
+      "potential_saved_us_per_glyph": 5.502363475000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMicrobe-Regular",
+      "font_sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 4.186319149,
+      "native_render_us_per_glyph": 20.6251489365,
+      "geometry_reuse_us_per_glyph": 16.296099290500003,
+      "native_outline_unhinted_us_per_glyph": 4.1716897159999995,
+      "hinting_increment_us_per_glyph": 0.004210993499999205,
+      "potential_saved_us_per_glyph": 4.296764184499999
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikDistressed-Regular",
+      "font_sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 2.6609024825,
+      "native_render_us_per_glyph": 18.0835549645,
+      "geometry_reuse_us_per_glyph": 15.113992908,
+      "native_outline_unhinted_us_per_glyph": 2.6720585110000004,
+      "hinting_increment_us_per_glyph": -0.014255319500000141,
+      "potential_saved_us_per_glyph": 3.1645975180000008
+    },
+    {
+      "screen": "aggressive",
+      "font": "Frijole-Regular",
+      "font_sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.860741135,
+      "native_render_us_per_glyph": 9.025562057,
+      "geometry_reuse_us_per_glyph": 7.3151595745,
+      "native_outline_unhinted_us_per_glyph": 1.8303049645,
+      "hinting_increment_us_per_glyph": 0.015886524500000165,
+      "potential_saved_us_per_glyph": 1.7104024825000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "Kranky-Regular",
+      "font_sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.6094113475,
+      "native_render_us_per_glyph": 6.9572996455,
+      "geometry_reuse_us_per_glyph": 5.1673297875,
+      "native_outline_unhinted_us_per_glyph": 1.6076382974999999,
+      "hinting_increment_us_per_glyph": -0.0077570920000000765,
+      "potential_saved_us_per_glyph": 1.7200780140000003
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBurned-Regular",
+      "font_sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.5709202125,
+      "native_render_us_per_glyph": 7.2646258865,
+      "geometry_reuse_us_per_glyph": 5.5932322695,
+      "native_outline_unhinted_us_per_glyph": 1.56168617,
+      "hinting_increment_us_per_glyph": 0.030141844000000084,
+      "potential_saved_us_per_glyph": 1.5413723405000006
+    },
+    {
+      "screen": "aggressive",
+      "font": "JacquesFrancoisShadow-Regular",
+      "font_sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.5494237590000002,
+      "native_render_us_per_glyph": 6.1111861705,
+      "geometry_reuse_us_per_glyph": 4.3055549645,
+      "native_outline_unhinted_us_per_glyph": 0.35498049649999996,
+      "hinting_increment_us_per_glyph": 1.1944432625,
+      "potential_saved_us_per_glyph": 1.8056312060000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikWetPaint-Regular",
+      "font_sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.2253989365,
+      "native_render_us_per_glyph": 5.30112234,
+      "geometry_reuse_us_per_glyph": 3.92058156,
+      "native_outline_unhinted_us_per_glyph": 1.2593812055,
+      "hinting_increment_us_per_glyph": -0.027409574999999853,
+      "potential_saved_us_per_glyph": 1.289968085
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBeastly-Regular",
+      "font_sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.2082588655,
+      "native_render_us_per_glyph": 10.1515212765,
+      "geometry_reuse_us_per_glyph": 8.5791950355,
+      "native_outline_unhinted_us_per_glyph": 1.2214840425,
+      "hinting_increment_us_per_glyph": -0.007609929000000015,
+      "potential_saved_us_per_glyph": 1.5193546095000006
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitch-Regular",
+      "font_sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1566914895,
+      "native_render_us_per_glyph": 5.674496454,
+      "geometry_reuse_us_per_glyph": 4.619384752,
+      "native_outline_unhinted_us_per_glyph": 1.1514468085,
+      "hinting_increment_us_per_glyph": 0.0007375885000000526,
+      "potential_saved_us_per_glyph": 1.154625887
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMoonrocks-Regular",
+      "font_sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.0801578015,
+      "native_render_us_per_glyph": 6.6891241135,
+      "geometry_reuse_us_per_glyph": 5.368645390499999,
+      "native_outline_unhinted_us_per_glyph": 1.067819149,
+      "hinting_increment_us_per_glyph": 0.021943262500000005,
+      "potential_saved_us_per_glyph": 1.1354166670000003
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikVinyl-Regular",
+      "font_sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.0305106385,
+      "native_render_us_per_glyph": 5.5350159575,
+      "geometry_reuse_us_per_glyph": 4.354388298,
+      "native_outline_unhinted_us_per_glyph": 1.0358297875,
+      "hinting_increment_us_per_glyph": 0.012705673499999959,
+      "potential_saved_us_per_glyph": 0.8059255319999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPuddles-Regular",
+      "font_sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.9154095745,
+      "native_render_us_per_glyph": 8.3172287235,
+      "geometry_reuse_us_per_glyph": 7.1094131205,
+      "native_outline_unhinted_us_per_glyph": 0.906175532,
+      "hinting_increment_us_per_glyph": 0.0027322694999999397,
+      "potential_saved_us_per_glyph": 1.0559999999999992
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeShade-Regular",
+      "font_sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.457521277,
+      "native_render_us_per_glyph": 4.268913120500001,
+      "geometry_reuse_us_per_glyph": 3.78856383,
+      "native_outline_unhinted_us_per_glyph": 0.462101064,
+      "hinting_increment_us_per_glyph": -0.003987587999999986,
+      "potential_saved_us_per_glyph": 0.5429237590000007
+    },
+    {
+      "screen": "aggressive",
+      "font": "Ewert-Regular",
+      "font_sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.442005319,
+      "native_render_us_per_glyph": 4.043439716,
+      "geometry_reuse_us_per_glyph": 3.5110088655,
+      "native_outline_unhinted_us_per_glyph": 0.454787234,
+      "hinting_increment_us_per_glyph": -0.016992907999999973,
+      "potential_saved_us_per_glyph": 0.5876932624999993
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeOutline-Regular",
+      "font_sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.415115248,
+      "native_render_us_per_glyph": 3.6682943265,
+      "geometry_reuse_us_per_glyph": 3.1536631205,
+      "native_outline_unhinted_us_per_glyph": 0.412900709,
+      "hinting_increment_us_per_glyph": 0.0016985815000000182,
+      "potential_saved_us_per_glyph": 0.5146312059999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "MysteryQuest-Regular",
+      "font_sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.3474432625,
+      "native_render_us_per_glyph": 2.6948156030000003,
+      "geometry_reuse_us_per_glyph": 2.3540195035,
+      "native_outline_unhinted_us_per_glyph": 0.3583031915,
+      "hinting_increment_us_per_glyph": -0.008051418500000018,
+      "potential_saved_us_per_glyph": 0.5683368789999999
+    },
+    {
+      "screen": "aggressive",
+      "font": "Monoton-Regular",
+      "font_sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.3473705675,
+      "native_render_us_per_glyph": 5.606235816,
+      "geometry_reuse_us_per_glyph": 5.1343085105,
+      "native_outline_unhinted_us_per_glyph": 0.3524663125,
+      "hinting_increment_us_per_glyph": -0.0017730494999999569,
+      "potential_saved_us_per_glyph": 0.47554787249999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "VastShadow-Regular",
+      "font_sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.34182801399999996,
+      "native_render_us_per_glyph": 3.5423315605,
+      "geometry_reuse_us_per_glyph": 3.1216755320000003,
+      "native_outline_unhinted_us_per_glyph": 0.344858156,
+      "hinting_increment_us_per_glyph": -0.0019202130000000595,
+      "potential_saved_us_per_glyph": 0.5328723405
+    },
+    {
+      "screen": "aggressive",
+      "font": "RibeyeMarrow-Regular",
+      "font_sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.328012411,
+      "native_render_us_per_glyph": 3.2317517735,
+      "geometry_reuse_us_per_glyph": 2.767363475,
+      "native_outline_unhinted_us_per_glyph": 0.327865248,
+      "hinting_increment_us_per_glyph": -0.0036187940000000363,
+      "potential_saved_us_per_glyph": 0.5593226950000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "FascinateInline-Regular",
+      "font_sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.29491666650000004,
+      "native_render_us_per_glyph": 1.964537234,
+      "geometry_reuse_us_per_glyph": 1.5805265954999999,
+      "native_outline_unhinted_us_per_glyph": 0.30260106350000004,
+      "hinting_increment_us_per_glyph": -0.007904255000000027,
+      "potential_saved_us_per_glyph": 0.38401063850000017
+    },
+    {
+      "screen": "aggressive",
+      "font": "Spirax-Regular",
+      "font_sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.2320478725,
+      "native_render_us_per_glyph": 1.979388298,
+      "geometry_reuse_us_per_glyph": 1.7415035460000001,
+      "native_outline_unhinted_us_per_glyph": 0.236406028,
+      "hinting_increment_us_per_glyph": -0.0082748225,
+      "potential_saved_us_per_glyph": 0.3252074469999999
+    },
+    {
+      "screen": "aggressive",
+      "font": "FontdinerSwanky-Regular",
+      "font_sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "profile": "ascii94",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.1937056735,
+      "native_render_us_per_glyph": 1.8382836880000002,
+      "geometry_reuse_us_per_glyph": 1.6230797875,
+      "native_outline_unhinted_us_per_glyph": 0.2017570925,
+      "hinting_increment_us_per_glyph": -0.008494681000000004,
+      "potential_saved_us_per_glyph": 0.31900177250000006
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPixels-Regular",
+      "font_sha256": "2d81a3511bf20e24f1f7bae72029ff4c04134a98a4e0e9ff81e4d664d2412e18",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 20.1772098765,
+      "native_render_us_per_glyph": 74.597212121,
+      "geometry_reuse_us_per_glyph": 52.1893939395,
+      "native_outline_unhinted_us_per_glyph": 20.391722222,
+      "hinting_increment_us_per_glyph": -0.10542424249999982,
+      "potential_saved_us_per_glyph": 20.538314815
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rye-Regular",
+      "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 19.9585925925,
+      "native_render_us_per_glyph": 22.631944444,
+      "geometry_reuse_us_per_glyph": 2.3162727275,
+      "native_outline_unhinted_us_per_glyph": 0.4915,
+      "hinting_increment_us_per_glyph": 19.4387839505,
+      "potential_saved_us_per_glyph": 20.205204301000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "DiplomataSC-Regular",
+      "font_sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 18.639338709500002,
+      "native_render_us_per_glyph": 20.9941720435,
+      "geometry_reuse_us_per_glyph": 1.9460000000000002,
+      "native_outline_unhinted_us_per_glyph": 0.3008494625,
+      "hinting_increment_us_per_glyph": 18.338489247000002,
+      "potential_saved_us_per_glyph": 19.120069893
+    },
+    {
+      "screen": "aggressive",
+      "font": "Diplomata-Regular",
+      "font_sha256": "0197d3dd0c7e8daf4ec373f15a4cdeeb963f76748ffd8360b9150bac90b73997",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 18.017740740999997,
+      "native_render_us_per_glyph": 20.6245537635,
+      "geometry_reuse_us_per_glyph": 2.250672043,
+      "native_outline_unhinted_us_per_glyph": 0.3138916665,
+      "hinting_increment_us_per_glyph": 17.715783951,
+      "potential_saved_us_per_glyph": 18.320734568
+    },
+    {
+      "screen": "aggressive",
+      "font": "Vollkorn-Medium",
+      "font_sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 14.9089506175,
+      "native_render_us_per_glyph": 16.1022727275,
+      "geometry_reuse_us_per_glyph": 1.1310483869999999,
+      "native_outline_unhinted_us_per_glyph": 0.2607272725,
+      "hinting_increment_us_per_glyph": 14.6589506175,
+      "potential_saved_us_per_glyph": 14.970969697000001
+    },
+    {
+      "screen": "aggressive",
+      "font": "SnowburstOne-Regular",
+      "font_sha256": "ede8110b5922b718c9b80717a4c5dcc2b4a862767d8319877983773c900bb00f",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 12.766462962999999,
+      "native_render_us_per_glyph": 14.8734567905,
+      "geometry_reuse_us_per_glyph": 1.688166667,
+      "native_outline_unhinted_us_per_glyph": 0.34184946250000003,
+      "hinting_increment_us_per_glyph": 12.418981481499998,
+      "potential_saved_us_per_glyph": 13.076733333
+    },
+    {
+      "screen": "aggressive",
+      "font": "Rubik80sFade-Regular",
+      "font_sha256": "da14679ae16caaf4ad32aece9a7357dcdea02c5d7c9b1d296faba86e19862d3f",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 11.380141975499999,
+      "native_render_us_per_glyph": 41.628803030499995,
+      "geometry_reuse_us_per_glyph": 30.032704301,
+      "native_outline_unhinted_us_per_glyph": 10.993500000000001,
+      "hinting_increment_us_per_glyph": 0.3158395064999979,
+      "potential_saved_us_per_glyph": 11.628466666999998
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitchPop-Regular",
+      "font_sha256": "20545e9c47a8d5f1a23305c598c54b2c29f252079db2965e593184e765d5880f",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 7.563392473,
+      "native_render_us_per_glyph": 25.506962963,
+      "geometry_reuse_us_per_glyph": 18.522090909,
+      "native_outline_unhinted_us_per_glyph": 7.4794259255,
+      "hinting_increment_us_per_glyph": 0.018939393999999332,
+      "potential_saved_us_per_glyph": 8.010037036999996
+    },
+    {
+      "screen": "aggressive",
+      "font": "FrederickatheGreat-Regular",
+      "font_sha256": "33dc0832b5e934f3db79dc683dea5029c22eb418183b69669b047355c0c245a2",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 4.8505860215,
+      "native_render_us_per_glyph": 17.9151296295,
+      "geometry_reuse_us_per_glyph": 14.875,
+      "native_outline_unhinted_us_per_glyph": 4.90277957,
+      "hinting_increment_us_per_glyph": -0.05324074049999972,
+      "potential_saved_us_per_glyph": 4.6948924729999995
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMicrobe-Regular",
+      "font_sha256": "af2360aa13ce3a068142dedded39d2d831615d8bbe370bc086e95192f2e528d7",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 4.0761358025,
+      "native_render_us_per_glyph": 19.445712121,
+      "geometry_reuse_us_per_glyph": 14.6205757575,
+      "native_outline_unhinted_us_per_glyph": 3.944703704,
+      "hinting_increment_us_per_glyph": -0.0024999999999995026,
+      "potential_saved_us_per_glyph": 4.8251363635
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikDistressed-Regular",
+      "font_sha256": "64a9962c862451507b5d8dbc1c4bf023ddbcad701bc73d277eae46723718327a",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 2.361112903,
+      "native_render_us_per_glyph": 13.7973484845,
+      "geometry_reuse_us_per_glyph": 10.736742424,
+      "native_outline_unhinted_us_per_glyph": 2.3380376345,
+      "hinting_increment_us_per_glyph": -0.018954545500000197,
+      "potential_saved_us_per_glyph": 3.0321481479999974
+    },
+    {
+      "screen": "aggressive",
+      "font": "Frijole-Regular",
+      "font_sha256": "e182bbad0e1ba7eb06d93edb1c97a71f5b7d56e27433fb375f5f7138399ab72c",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.966172043,
+      "native_render_us_per_glyph": 8.606045455,
+      "geometry_reuse_us_per_glyph": 6.6174242425,
+      "native_outline_unhinted_us_per_glyph": 1.9266851855,
+      "hinting_increment_us_per_glyph": -0.004516666500000044,
+      "potential_saved_us_per_glyph": 1.9440999999999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "JacquesFrancoisShadow-Regular",
+      "font_sha256": "3947827a196a3c12ceb471ed589168a9b57285db7258eb468a83f4c17945784c",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.6350666665,
+      "native_render_us_per_glyph": 4.0865,
+      "geometry_reuse_us_per_glyph": 2.221590909,
+      "native_outline_unhinted_us_per_glyph": 0.3551975305,
+      "hinting_increment_us_per_glyph": 1.284025,
+      "potential_saved_us_per_glyph": 1.7838225805000008
+    },
+    {
+      "screen": "aggressive",
+      "font": "Kranky-Regular",
+      "font_sha256": "2b40548b2a84e3daa922f770657aefc86d4ce13d155b96912bea2d50bcb09cc4",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.5933641975000001,
+      "native_render_us_per_glyph": 6.0756296295,
+      "geometry_reuse_us_per_glyph": 4.1697592595,
+      "native_outline_unhinted_us_per_glyph": 1.5318888890000002,
+      "hinting_increment_us_per_glyph": 0.08087096799999993,
+      "potential_saved_us_per_glyph": 1.6834731174999993
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBurned-Regular",
+      "font_sha256": "149705177b7fe352b54227b05121c030520a55e1cc8a4cdd7f8d0af324e6f00d",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.4785303035,
+      "native_render_us_per_glyph": 5.71912963,
+      "geometry_reuse_us_per_glyph": 4.4728484845,
+      "native_outline_unhinted_us_per_glyph": 1.449817204,
+      "hinting_increment_us_per_glyph": 0.0026935484999999204,
+      "potential_saved_us_per_glyph": 1.283607527
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikBeastly-Regular",
+      "font_sha256": "854c5f4bd05aae76d7830e871e2c990ea309a436072d8f0b67a796a80ec1cb18",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1628148145,
+      "native_render_us_per_glyph": 6.9815,
+      "geometry_reuse_us_per_glyph": 5.654030303,
+      "native_outline_unhinted_us_per_glyph": 1.196506173,
+      "hinting_increment_us_per_glyph": -0.009454545500000133,
+      "potential_saved_us_per_glyph": 1.6123950614999991
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikMoonrocks-Regular",
+      "font_sha256": "39ff4d96b906e8cc2fd7a350aa13620d5eff18d776fedb5c98c12cbf6e1f2c1e",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.1507222225,
+      "native_render_us_per_glyph": 5.155939394,
+      "geometry_reuse_us_per_glyph": 3.883325,
+      "native_outline_unhinted_us_per_glyph": 1.1335000000000002,
+      "hinting_increment_us_per_glyph": -0.00022580650000003644,
+      "potential_saved_us_per_glyph": 1.3541666669999994
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikGlitch-Regular",
+      "font_sha256": "260245012483d56956269100ebece747aa95b4b67e5a9411a81a36e91f55e653",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.111376543,
+      "native_render_us_per_glyph": 3.789757576,
+      "geometry_reuse_us_per_glyph": 2.583969697,
+      "native_outline_unhinted_us_per_glyph": 1.1005617285,
+      "hinting_increment_us_per_glyph": -0.0031333330000000714,
+      "potential_saved_us_per_glyph": 1.2723888895000002
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikWetPaint-Regular",
+      "font_sha256": "3f35d1c77219c5219826b23c2f0c72dd0eed46425a0d4fff21b8827cdce61693",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 1.008234568,
+      "native_render_us_per_glyph": 4.0154444445,
+      "geometry_reuse_us_per_glyph": 2.689064516,
+      "native_outline_unhinted_us_per_glyph": 1.017493827,
+      "hinting_increment_us_per_glyph": -0.0037878780000000223,
+      "potential_saved_us_per_glyph": 1.1710432099999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikVinyl-Regular",
+      "font_sha256": "64f1d1636851d814a9031a945bc6ca6b7bc26a29009eb316176d27f00f2b7d4e",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.924895062,
+      "native_render_us_per_glyph": 3.9861111109999996,
+      "geometry_reuse_us_per_glyph": 2.851,
+      "native_outline_unhinted_us_per_glyph": 0.9187583335,
+      "hinting_increment_us_per_glyph": 0.004263440999999979,
+      "potential_saved_us_per_glyph": 1.0615967740000003
+    },
+    {
+      "screen": "aggressive",
+      "font": "RubikPuddles-Regular",
+      "font_sha256": "ac690b0790b890a24c54997cfc66bde14d4648cb1a914e9b8754e9023bb0d342",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.8781344085,
+      "native_render_us_per_glyph": 5.5744848485,
+      "geometry_reuse_us_per_glyph": 4.691924242500001,
+      "native_outline_unhinted_us_per_glyph": 0.881939394,
+      "hinting_increment_us_per_glyph": -0.0018024690000000287,
+      "potential_saved_us_per_glyph": 0.9591111115000004
+    },
+    {
+      "screen": "aggressive",
+      "font": "Ewert-Regular",
+      "font_sha256": "8a7eb23adce5193b61bc1843d752f37c208c163dd6db2fc1b64791791969f4ab",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.5194892470000001,
+      "native_render_us_per_glyph": 3.4097121215,
+      "geometry_reuse_us_per_glyph": 3.031575758,
+      "native_outline_unhinted_us_per_glyph": 0.5336913585,
+      "hinting_increment_us_per_glyph": -0.015685185499999976,
+      "potential_saved_us_per_glyph": 0.46605555500000007
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeShade-Regular",
+      "font_sha256": "665c626082682b462f4e696308eafa7071c114da8f8ff3fb73a289c7ff7df482",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.4334623655,
+      "native_render_us_per_glyph": 2.6566481485,
+      "geometry_reuse_us_per_glyph": 2.152,
+      "native_outline_unhinted_us_per_glyph": 0.45216666699999997,
+      "hinting_increment_us_per_glyph": -0.0018939390000000111,
+      "potential_saved_us_per_glyph": 0.4996499999999997
+    },
+    {
+      "screen": "aggressive",
+      "font": "BungeeOutline-Regular",
+      "font_sha256": "9232000ff85fdbb68987007305f2de877486d63d31450f81b403461bbe721f1f",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.4106129035,
+      "native_render_us_per_glyph": 2.4944032255,
+      "geometry_reuse_us_per_glyph": 1.9506296295,
+      "native_outline_unhinted_us_per_glyph": 0.413891667,
+      "hinting_increment_us_per_glyph": -0.0018939394999999415,
+      "potential_saved_us_per_glyph": 0.37950833350000024
+    },
+    {
+      "screen": "aggressive",
+      "font": "VastShadow-Regular",
+      "font_sha256": "98bdf7f93c2330697078ece27e48dea7d97b253a547d699bf7afc4bdfa641a93",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.3774333335,
+      "native_render_us_per_glyph": 2.426075269,
+      "geometry_reuse_us_per_glyph": 2.063259259,
+      "native_outline_unhinted_us_per_glyph": 0.376537037,
+      "hinting_increment_us_per_glyph": -0.002241935500000014,
+      "potential_saved_us_per_glyph": 0.42500000000000027
+    },
+    {
+      "screen": "aggressive",
+      "font": "MysteryQuest-Regular",
+      "font_sha256": "fc3fba61be98d7de03964b41175ee5629bcc6958b251f8037ef13eabb5431eb2",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.359567901,
+      "native_render_us_per_glyph": 1.899,
+      "geometry_reuse_us_per_glyph": 1.849518519,
+      "native_outline_unhinted_us_per_glyph": 0.366316667,
+      "hinting_increment_us_per_glyph": -0.006432098999999969,
+      "potential_saved_us_per_glyph": 0.33525757600000006
+    },
+    {
+      "screen": "aggressive",
+      "font": "Monoton-Regular",
+      "font_sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.357333333,
+      "native_render_us_per_glyph": 4.239962963,
+      "geometry_reuse_us_per_glyph": 3.411621212,
+      "native_outline_unhinted_us_per_glyph": 0.360469697,
+      "hinting_increment_us_per_glyph": -0.005401234500000018,
+      "potential_saved_us_per_glyph": 0.6142473119999994
+    },
+    {
+      "screen": "aggressive",
+      "font": "RibeyeMarrow-Regular",
+      "font_sha256": "4b19d54b86a068bb5b8a060938d87d1e6028d566c8efb68fa9c7debaa19987d0",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.34318817199999996,
+      "native_render_us_per_glyph": 2.0372424245,
+      "geometry_reuse_us_per_glyph": 1.7070606060000002,
+      "native_outline_unhinted_us_per_glyph": 0.3499916665,
+      "hinting_increment_us_per_glyph": -0.0046296289999999685,
+      "potential_saved_us_per_glyph": 0.39471505350000013
+    },
+    {
+      "screen": "aggressive",
+      "font": "FascinateInline-Regular",
+      "font_sha256": "413101810fe420520122880404d1f8e892269e6a6afa2e00e980f65ef632ee3b",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.312759259,
+      "native_render_us_per_glyph": 1.539424731,
+      "geometry_reuse_us_per_glyph": 1.404314815,
+      "native_outline_unhinted_us_per_glyph": 0.34027777800000003,
+      "hinting_increment_us_per_glyph": -0.007197531500000021,
+      "potential_saved_us_per_glyph": 0.32459259249999994
+    },
+    {
+      "screen": "aggressive",
+      "font": "Spirax-Regular",
+      "font_sha256": "e509975c0680e447e6be89467f7f0bebec6d4cb0a8b75d7b6bb6d6fd7e2d5b65",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.228946237,
+      "native_render_us_per_glyph": 1.5180061725,
+      "geometry_reuse_us_per_glyph": 1.2455161289999999,
+      "native_outline_unhinted_us_per_glyph": 0.229166667,
+      "hinting_increment_us_per_glyph": 0.0020833330000000205,
+      "potential_saved_us_per_glyph": 0.21780303
+    },
+    {
+      "screen": "aggressive",
+      "font": "FontdinerSwanky-Regular",
+      "font_sha256": "847229fbf58c7f7479f93fd7cf9fc269b54c0c9f6465abcb65a206fb261be41b",
+      "profile": "demo_unique",
+      "dpr": 2,
+      "logical_sizes": [
+        11.0,
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "native_outline_us_per_glyph": 0.2283888885,
+      "native_render_us_per_glyph": 1.6123787875,
+      "geometry_reuse_us_per_glyph": 1.3787727275,
+      "native_outline_unhinted_us_per_glyph": 0.23096296249999998,
+      "hinting_increment_us_per_glyph": -0.0038703704999999977,
+      "potential_saved_us_per_glyph": 0.2284259260000001
+    }
+  ],
+  "rejections": [],
+  "rows_checked": 9920,
+  "reporter": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/run_native_prescreen.py",
+    "sha256": "21b404be0c86485b28ae267f919487238df8a67c05c08de8540b697fe62ffe45",
+    "bytes": 8114
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "frozen_utc": "2026-10-02T23:26:15.526134+00:00",
+  "fonts": [
+    {
+      "label": "NanumGothic-ExtraBold",
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanumgothic/NanumGothic-ExtraBold.ttf",
+      "sha256": "5c4568e5295a8c52bc30e7efa1ea6d2de43556268ef42daba93540a1ece691ae",
+      "bytes": 2112720
+    },
+    {
+      "label": "NanumMyeongjo-Regular",
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/NanumMyeongjo-Regular.ttf",
+      "sha256": "7ed9e8653a8ed04285d51dc343ffea6eb3d9c73afc27383ea8929ee4ffd03205",
+      "bytes": 3058408
+    },
+    {
+      "label": "NanumMyeongjo-ExtraBold",
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/nanummyeongjo/NanumMyeongjo-ExtraBold.ttf",
+      "sha256": "60c0077fce069ba90ae97c0a3679f6eb3712e0ca637bdd0c15b72d335ec46db7",
+      "bytes": 3180888
+    }
+  ],
+  "confirmation": {
+    "versions": [
+      "master",
+      "final"
+    ],
+    "dpi": [
+      2
+    ],
+    "blocks": 12,
+    "cpu_trials": 5,
+    "control_font": "NanumMyeongjo-Regular"
+  },
+  "selection_inputs": {
+    "../supporting/native-audit.json": "7cbfbe2a82a036862353c495b7681a7808291e043795ffd4590309ed18066ccb",
+    "../supporting/font-inspection.json": "7c0ce9b054d4d00e27578e613b9e36fc7caada11c08b129d8097623cda6624be"
+  },
+  "reason": "Korean: three most costly native outline candidates on the fixed Korean text. Chinese: most complex corpus geometry plus modern Noto serif/sans controls. Selected before application timing; no selection based on favorable application phases."
+}

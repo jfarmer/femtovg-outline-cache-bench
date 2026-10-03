@@ -1,0 +1,16 @@
+{
+  "aborted_utc": "2026-10-03T12:40:26.385174+00:00",
+  "reason": "Build/compiler/linker process name guard matched",
+  "pids": [
+    "67096"
+  ],
+  "process_families_and_names_only": [
+    {
+      "pid": "67096",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+      "family": "build",
+      "parent_pid": "67082",
+      "parent_comm": "/bin/zsh"
+    }
+  ]
+}

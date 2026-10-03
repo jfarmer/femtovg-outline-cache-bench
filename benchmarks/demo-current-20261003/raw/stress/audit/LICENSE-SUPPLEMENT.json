@@ -1,0 +1,24 @@
+{
+  "font": {
+    "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/RobotoFlex-VariableFont.ttf",
+    "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+  },
+  "applicable_license": {
+    "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/licenses/RobotoFlex-OFL.txt",
+    "sha256": "9cbaed04b20c853f99840efe5dc96956f6f6120ed83a0ade35f9281a2b63e5d0",
+    "license": "SIL OFL 1.1"
+  },
+  "attribution": {
+    "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/ATTRIBUTION.md",
+    "sha256": "846d0d50ecca32cd55deb74b791bc62cf965a8b50aab0ced1a31432247d9c569",
+    "mapping_line": "| RobotoFlex-VariableFont.ttf | Copyright 2017 The Roboto Flex Project Authors; [Roboto Flex](https://github.com/TypeNetwork/Roboto-Flex) | [OFL 1.1](licenses/RobotoFlex-OFL.txt) |"
+  },
+  "predeclared_legacy_file": {
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "contents": "Apache 2.0",
+    "applicable_to_this_RobotoFlex_font": false
+  },
+  "original_plans_and_measurements_changed": false,
+  "correction": "The audit verifies the legacy file bytes but does not treat that file as the applicable Roboto Flex license."
+}

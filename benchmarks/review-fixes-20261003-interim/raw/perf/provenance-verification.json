@@ -1,0 +1,137 @@
+{
+  "dependency_graphs_equal_per_feature": true,
+  "binary_hashes_verified": true,
+  "final_production_matches_working_tree": true,
+  "production_files": {
+    "src/lib.rs": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+    "src/text.rs": "8eecab31d843fbac7a9f038f65dfb5ab50477578a219c30c41425cbabc22a0fb",
+    "src/text/font.rs": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+    "src/text/swash_rasterizer.rs": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e"
+  },
+  "builds": [
+    {
+      "variant": "master",
+      "feature": "swash_only",
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55",
+      "femtovg_features": [
+        "swash"
+      ]
+    },
+    {
+      "variant": "master",
+      "feature": "default_swash",
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "master",
+      "feature": "default_no_swash",
+      "dependency_graph_sha256": "8d039497495b68539345eeb4425c89210ca1f79bab753ac5f32358a3846a0386",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "base",
+      "feature": "swash_only",
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55",
+      "femtovg_features": [
+        "swash"
+      ]
+    },
+    {
+      "variant": "base",
+      "feature": "default_swash",
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "base",
+      "feature": "default_no_swash",
+      "dependency_graph_sha256": "8d039497495b68539345eeb4425c89210ca1f79bab753ac5f32358a3846a0386",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "final",
+      "feature": "swash_only",
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55",
+      "femtovg_features": [
+        "swash"
+      ]
+    },
+    {
+      "variant": "final",
+      "feature": "default_swash",
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "final",
+      "feature": "default_no_swash",
+      "dependency_graph_sha256": "8d039497495b68539345eeb4425c89210ca1f79bab753ac5f32358a3846a0386",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "ordinary-inline",
+      "feature": "swash_only",
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55",
+      "femtovg_features": [
+        "swash"
+      ]
+    },
+    {
+      "variant": "ordinary-inline",
+      "feature": "default_swash",
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ]
+    },
+    {
+      "variant": "ordinary-inline",
+      "feature": "default_no_swash",
+      "dependency_graph_sha256": "8d039497495b68539345eeb4425c89210ca1f79bab753ac5f32358a3846a0386",
+      "femtovg_features": [
+        "default",
+        "image",
+        "image-loading",
+        "textlayout"
+      ]
+    }
+  ]
+}

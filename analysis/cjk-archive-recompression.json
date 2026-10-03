@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "decoded_tar_byte_equivalence_verified": true,
+  "decoded_tar_bytes": 535531520,
+  "decoded_tar_sha256": "c00662a4f2946e72cd8ebfa88939cf647a613918159b6ff4c8c5495d0018f571",
+  "elapsed_seconds": 49.19756912498269,
+  "format": "xz",
+  "output": "/private/tmp/femtovg-cjk-recompression-xz-v1/records.tar.xz",
+  "output_bytes": 72288620,
+  "output_sha256": "3032732e649638a4d700d826588b1891cb57b9586d064b5e34468aa4ab0b02b8",
+  "scope": "Storage-only recompression. Original archive, manifests, paths, font bytes and measurements remain unchanged.",
+  "script_sha256": "c77c337dcbc9ff99ab90db4941df36e31af129f0b0c18921eab1b8c2ce53fdbc",
+  "source": "/private/tmp/femtovg-cjk-install-stage-v1/results/cjk-font-search/records.tar.gz",
+  "source_bytes": 110053611,
+  "source_sha256": "a90be63041ef4c3296b1d5f096b68dc43760334f98a558521c9bfb0532e4778b"
+}

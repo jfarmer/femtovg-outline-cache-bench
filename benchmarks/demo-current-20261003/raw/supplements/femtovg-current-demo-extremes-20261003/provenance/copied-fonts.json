@@ -1,0 +1,22 @@
+{
+  "FleurDeLeah": {
+    "source_path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/FleurDeLeah-Regular.ttf",
+    "license_source_path": "/private/tmp/femtovg-aggressive-font-search-20261002/hinted-supplement-v1/fonts/fleurdeleah/OFL.txt",
+    "repository": "google/fonts",
+    "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+    "font_member": "ofl/fleurdeleah/FleurDeLeah-Regular.ttf",
+    "license_member": "ofl/fleurdeleah/OFL.txt",
+    "font_sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+    "license_sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8"
+  },
+  "DiplomataSC": {
+    "source_path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/DiplomataSC-Regular.ttf",
+    "license_source_path": "/private/tmp/femtovg-aggressive-font-search-20261002/fonts/diplomatasc/OFL.txt",
+    "repository": "google/fonts",
+    "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+    "font_member": "ofl/diplomatasc/DiplomataSC-Regular.ttf",
+    "license_member": "ofl/diplomatasc/OFL.txt",
+    "font_sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+    "license_sha256": "f4e8602be4b69bc44e3ce17d026622722b992a07b1aab0db23da48b0155b289e"
+  }
+}

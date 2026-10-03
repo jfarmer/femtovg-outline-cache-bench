@@ -1,0 +1,34 @@
+=== 10 missing font: Err(NoFontFound)
+--- after
+current_render_target(before flush) = Screen
+state_stack.len = 1
+rendered_glyphs.len = 0
+glyph_textures.len = 0
+glyph_textures = []
+commands = [
+    Command {
+        cmd_type: SetRenderTarget(
+            Screen,
+        ),
+        clip_active: false,
+        drawables: [],
+        triangles_verts: None,
+        image: None,
+        filter_scratch: None,
+        glyph_texture: None,
+        blend_pass: BlendPass {
+            backdrop_flipped: false,
+            source_alpha: 1.0,
+            contribution: false,
+        },
+        fill_rule: NonZero,
+        composite_operation: CompositeOperationState {
+            src_rgb: One,
+            src_alpha: One,
+            dst_rgb: OneMinusSrcAlpha,
+            dst_alpha: OneMinusSrcAlpha,
+        },
+    },
+]
+verts.len = 0
+verts = []

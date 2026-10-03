@@ -1,0 +1,51 @@
+{
+  "head": "b87a94ddfba46ee67ca35ba240104615ac1503d8",
+  "upstream_master": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+  "production_identity": {
+    "src/lib.rs": {
+      "current_sha256": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+      "frozen_sha256": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+      "whole_file_equal": true,
+      "released_code_equal": true
+    },
+    "src/text.rs": {
+      "current_sha256": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+      "frozen_sha256": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+      "whole_file_equal": true,
+      "released_code_equal": true
+    },
+    "src/text/font.rs": {
+      "current_sha256": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+      "frozen_sha256": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+      "whole_file_equal": true,
+      "released_code_equal": true
+    },
+    "src/text/swash_rasterizer.rs": {
+      "current_sha256": "c0f5d831132bf4bb104217538a96e15766b090858762f477411f35926f59a6aa",
+      "frozen_sha256": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e",
+      "whole_file_equal": false,
+      "released_code_equal": true
+    },
+    "Cargo.toml": {
+      "current_sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+      "frozen_sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+      "whole_file_equal": true,
+      "released_code_equal": true
+    },
+    "build.rs": {
+      "current_sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+      "frozen_sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+      "whole_file_equal": true,
+      "released_code_equal": true
+    }
+  },
+  "binaries": {
+    "master-default_swash": "3a6624a90c4aa420a08b0fb37f84196cf6f94407da76f443589d331aa6e32058",
+    "final-default_swash": "906e8e81beb4ac1e56c155e6f78de10649d217d2b7a61fea0fe5b01f6cd6cd43",
+    "master-default_no_swash": "d62b31f95ce4be455d30347466d0c226e3f0e5154666027a4516f3ae168cfc9c",
+    "final-default_no_swash": "de363ab82e0e792d70c6aafc01b9fdbcb1866058425a8cc2cbdb0cb65be6adc2"
+  },
+  "matching_build_conditions": true,
+  "lock_difference": "Only the local harness package name differs; all dependency records match.",
+  "exception": "Two comment-only changes in the Swash rasterizer test module."
+}

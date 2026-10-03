@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "scope": "Independent direct raw/stdout process medians, weighted trial sequences, paired mean effects, direct-indexed bootstrap intervals and control advantages; no collector/analyzer imports.",
+  "backends": {
+    "cpu": {
+      "processes": 72,
+      "rows": 10080,
+      "font_DPR_factors": 3,
+      "balanced_AB_BA_orders": true,
+      "native_reference_counts": true,
+      "regenerated_bootstrap_indices": true
+    }
+  },
+  "endpoint_comparisons": 279,
+  "interval_comparisons": 560,
+  "control_advantages": 2,
+  "checked_raw_metadata_files": 163,
+  "compiled_binaries_not_required": true,
+  "archive_integrity_prerequisite": "Offline caller verifies every retained member (including RGBA/font/source bytes) before this audit.",
+  "localized_source_metadata_bound": true,
+  "auditor_sha256": "5d425df755523cb043571e446950670fd9c7b40e38a24ec370814998028c14df",
+  "summary_sha256": "fcaad0f2e4af1eb98b7d1dbdac349577311b8fde69de79788c0f95aa498facf6"
+}

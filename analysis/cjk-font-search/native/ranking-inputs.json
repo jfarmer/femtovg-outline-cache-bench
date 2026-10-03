@@ -1,0 +1,7 @@
+{
+  "complete": true,
+  "audit_path": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/native-audit.json",
+  "audit_sha256": "7cbfbe2a82a036862353c495b7681a7808291e043795ffd4590309ed18066ccb",
+  "report_driver_sha256": "4b4fc3fd07ebb36c9437dc0f6738c694dc3b79f1612cf424f27e66c95bc1e5ff",
+  "dpr2_profile_rows": 60
+}

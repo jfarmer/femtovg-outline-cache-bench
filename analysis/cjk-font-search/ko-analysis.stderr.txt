@@ -1,0 +1,6 @@
+/private/tmp/femtovg-cjk-font-search-20261002/localized-ko-replay-v2/analyze_font_confirm.py:382: RuntimeWarning: divide by zero encountered in matmul
+  return (weights @ numpy.asarray(values, dtype=numpy.float64) / len(values)).tolist()
+/private/tmp/femtovg-cjk-font-search-20261002/localized-ko-replay-v2/analyze_font_confirm.py:382: RuntimeWarning: overflow encountered in matmul
+  return (weights @ numpy.asarray(values, dtype=numpy.float64) / len(values)).tolist()
+/private/tmp/femtovg-cjk-font-search-20261002/localized-ko-replay-v2/analyze_font_confirm.py:382: RuntimeWarning: invalid value encountered in matmul
+  return (weights @ numpy.asarray(values, dtype=numpy.float64) / len(values)).tolist()

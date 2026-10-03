@@ -1,0 +1,15 @@
+{
+  "installed_utc": "2026-10-03T13:29:49.000767+00:00",
+  "destination": "/Users/jesse/github/femtovg-outline-cache-bench/benchmarks/review-fixes-20261003-interim",
+  "input_roots": {
+    "perf": "/private/tmp/femtovg-review-fixes-perf",
+    "containment": "/private/tmp/femtovg-review-fixes-containment",
+    "scenes": "/private/tmp/femtovg-review-fixes-scenes"
+  },
+  "candidate_commit_reported_by_parent": "b87a94ddfba46ee67ca35ba240104615ac1503d8",
+  "preservation": "All retained inputs byte-identical. Original paths/metadata unchanged. No archives/compression.",
+  "omissions": "OMITTED.json records excluded bin/artifact file sizes and SHA-256; compiler-cache directories are not traversed/hashed; symlinks record target identity.",
+  "checksum_scope": "Every retained file except SHA256SUMS itself.",
+  "tdd": "Initial red/green observations were tool-output-only; no reconstructed raw logs.",
+  "status": "interim: warm/generic complete; eight-block cold reanalysis provisional; scenes and portable builds wait for the other project build to finish; no further cold run planned; no PR before manual review"
+}

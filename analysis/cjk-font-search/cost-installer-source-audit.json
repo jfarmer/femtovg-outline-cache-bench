@@ -1,0 +1,63 @@
+{
+  "complete": true,
+  "scope": "Source-only adaptation and syntax checks; no stage, archive compression, live verification or repository mutation",
+  "stage": "/private/tmp/femtovg-cjk-installer-source-adaptation-v3",
+  "files": {
+    "/private/tmp/femtovg-cjk-font-search-20261002/install_cjk_study.py": {
+      "sha256": "fc1aca0dfdb0d45c2620ef037ec023447dc1e1e4fed173ecd95fc068526b3d5e",
+      "bytes": 29056
+    },
+    "/private/tmp/femtovg-cjk-font-search-20261002/supporting/audit_cost_decomposition.py": {
+      "sha256": "2176a1a3336e75c318c29d680b9bf59de90d4a31715b6a283df054f959244592",
+      "bytes": 10284
+    },
+    "/private/tmp/femtovg-cjk-font-search-20261002/supporting/report_cost_decomposition.py": {
+      "sha256": "6af294252b7744332505e7a73713cbfa7e2a5342d82b9a60ad6545f568da6bf5",
+      "bytes": 12191
+    },
+    "/private/tmp/femtovg-cjk-installer-source-adaptation-v3/scripts/archive-campaign.py": {
+      "sha256": "3030213cfb6beeb6308cf250fca3fa91a19e545f6448a827297452e0edbe17aa",
+      "bytes": 7771
+    },
+    "/private/tmp/femtovg-cjk-installer-source-adaptation-v3/scripts/verify-results.py": {
+      "sha256": "5d7db24816850da3b37078384f1fe0cef1e6f150f1f58fafd2a976e7fdc9a012",
+      "bytes": 9480
+    },
+    "/private/tmp/femtovg-cjk-installer-source-adaptation-v3/scripts/archive-study.py": {
+      "sha256": "a71e34b410f7a54644aa330b611e796283b4bd6c58f6801f1b48aab36299f03a",
+      "bytes": 4784
+    }
+  },
+  "expected_campaigns": 31,
+  "expected_audits_with_cost_suite": 15,
+  "cost_cohorts": [
+    [
+      "default",
+      "en"
+    ],
+    [
+      "default",
+      "ko"
+    ],
+    [
+      "default",
+      "zh"
+    ],
+    [
+      "weights",
+      "en-w300"
+    ],
+    [
+      "weights",
+      "en-w400"
+    ],
+    [
+      "weights",
+      "zh-w300"
+    ],
+    [
+      "weights",
+      "zh-w400"
+    ]
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "written_utc": "2026-10-03T15:17:17.128045+00:00",
+  "authorization": {
+    "exact_user_instruction": "Anyways, do what you need to do to get the current demo cdata",
+    "interpretation": "Prior guarded current-demo instruction remains authorization; this supplemental cohort tests the two previously identified extremes, without a new search/component study or assertion that the external build finished.",
+    "latest_steering": "Ok, but didn't we have worse fonts than Rye?"
+  },
+  "baseline_commit": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+  "candidate_commit": "b87a94ddfba46ee67ca35ba240104615ac1503d8",
+  "logical_blocks": 12,
+  "trials_per_process": 1,
+  "dpi": 2,
+  "configurations": [
+    {
+      "configuration_id": "default_swash-FleurDeLeah",
+      "feature": "default_swash",
+      "font": "FleurDeLeah",
+      "scene": "demo",
+      "stable_configuration_index": 0
+    },
+    {
+      "configuration_id": "default_swash-DiplomataSC",
+      "feature": "default_swash",
+      "font": "DiplomataSC",
+      "scene": "demo",
+      "stable_configuration_index": 1
+    },
+    {
+      "configuration_id": "default_no_swash-FleurDeLeah",
+      "feature": "default_no_swash",
+      "font": "FleurDeLeah",
+      "scene": "demo",
+      "stable_configuration_index": 2
+    },
+    {
+      "configuration_id": "default_no_swash-DiplomataSC",
+      "feature": "default_no_swash",
+      "font": "DiplomataSC",
+      "scene": "demo",
+      "stable_configuration_index": 3
+    }
+  ],
+  "blocks": [
+    {
+      "logical_block": 0,
+      "configurations": [
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 1,
+      "configurations": [
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 2,
+      "configurations": [
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 3,
+      "configurations": [
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 4,
+      "configurations": [
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 5,
+      "configurations": [
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 6,
+      "configurations": [
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 7,
+      "configurations": [
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 8,
+      "configurations": [
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 9,
+      "configurations": [
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 10,
+      "configurations": [
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    },
+    {
+      "logical_block": 11,
+      "configurations": [
+        {
+          "configuration_id": "default_no_swash-DiplomataSC",
+          "feature": "default_no_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 3,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-FleurDeLeah",
+          "feature": "default_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 0,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        },
+        {
+          "configuration_id": "default_swash-DiplomataSC",
+          "feature": "default_swash",
+          "font": "DiplomataSC",
+          "scene": "demo",
+          "stable_configuration_index": 1,
+          "variant_order": [
+            "master",
+            "final"
+          ]
+        },
+        {
+          "configuration_id": "default_no_swash-FleurDeLeah",
+          "feature": "default_no_swash",
+          "font": "FleurDeLeah",
+          "scene": "demo",
+          "stable_configuration_index": 2,
+          "variant_order": [
+            "final",
+            "master"
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_processes_per_accepted_block": 8,
+  "expected_accepted_processes": 96,
+  "expected_phase_observations": 480,
+  "expected_summary_rows": 24,
+  "fonts": {
+    "FleurDeLeah": {
+      "file": "assets/FleurDeLeah-Regular.ttf",
+      "sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+      "bytes": 231608,
+      "license": "assets/LICENSE-FleurDeLeah",
+      "license_sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8"
+    },
+    "DiplomataSC": {
+      "file": "assets/DiplomataSC-Regular.ttf",
+      "sha256": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+      "bytes": 87544,
+      "license": "assets/LICENSE-DiplomataSC",
+      "license_sha256": "f4e8602be4b69bc44e3ce17d026622722b992a07b1aab0db23da48b0155b289e"
+    }
+  },
+  "binaries": {
+    "master-default_swash": {
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-master-default_swash",
+      "binary_sha256": "3a6624a90c4aa420a08b0fb37f84196cf6f94407da76f443589d331aa6e32058",
+      "build_record": "provenance/master-default_swash.json"
+    },
+    "final-default_swash": {
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-final-default_swash",
+      "binary_sha256": "906e8e81beb4ac1e56c155e6f78de10649d217d2b7a61fea0fe5b01f6cd6cd43",
+      "build_record": "provenance/final-default_swash.json"
+    },
+    "master-default_no_swash": {
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-master-default_no_swash",
+      "binary_sha256": "d62b31f95ce4be455d30347466d0c226e3f0e5154666027a4516f3ae168cfc9c",
+      "build_record": "provenance/master-default_no_swash.json"
+    },
+    "final-default_no_swash": {
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-final-default_no_swash",
+      "binary_sha256": "de363ab82e0e792d70c6aafc01b9fdbcb1866058425a8cc2cbdb0cb65be6adc2",
+      "build_record": "provenance/final-default_no_swash.json"
+    }
+  },
+  "external_scene_assets": {
+    "/private/tmp/femtovg-review-fixes-scenes/assets/BungeeColor-Subset.ttf": "17205020659530ce48c76112089dc0ca532302e16acc5a4d98e2e3696e871a5e",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/Ghostscript_Tiger.svg": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/LICENSE-BungeeColor": "b77aa3c20ddef79c5ad1088826ca88081fec3fe097caddc096984dec126438d6",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/LICENSE-Roboto": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/LICENSE-Vollkorn": "53f9c99fa3d47f7d632a42ee7bab4a834a60a744f6026d676c3a223cef2b2ef3",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/RobotoFlex-VariableFont.ttf": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/Vollkorn-Medium.ttf": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/amiri-regular.ttf": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/entypo.ttf": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image1.jpg": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image10.jpg": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image11.jpg": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image12.jpg": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image2.jpg": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image3.jpg": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image4.jpg": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image5.jpg": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image6.jpg": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image7.jpg": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image8.jpg": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/images/image9.jpg": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/pattern.jpg": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+    "/private/tmp/femtovg-review-fixes-scenes/assets/rust-logo.png": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596"
+  },
+  "optional_host_emoji_font": {
+    "path": "/System/Library/Fonts/Apple Color Emoji.ttc",
+    "present": true,
+    "sha256": "435ee0b75b26d671e089ddad38640473cc31febc4dbdfae27843a0a000d7ff62"
+  },
+  "policy": {
+    "discard_unit": "whole8-process logical paired block attempt",
+    "guard": "before and after EACH process",
+    "trigger": "any build/compiler/linker process-name match; metadata/version matches remain excluded",
+    "quiet_seconds_before_start_or_replay": 60,
+    "max_retries": 8,
+    "max_duration_seconds": 1800,
+    "process_timeout_seconds": 120,
+    "no_timing_value_filtering": true,
+    "retention": "attempts.jsonl contains every completed/failed process, raw.jsonl contains only accepted whole blocks, excluded-raw.jsonl preserves rejected/failed block records; ledger records empty attempts too"
+  },
+  "statistics": {
+    "estimator": "median of whole-block paired differences and ratios; marginal medians shown separately",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 61432,
+    "interval": "percentile sorted indices250/9750 with shared whole-block resamples across endpoints",
+    "multiplicity_adjustment": null
+  },
+  "metrics": {
+    "primary": "first_paint total_us, one frame per independent process",
+    "phases_frames": {
+      "first_paint": 1,
+      "warm": 30,
+      "zoom_in": 12,
+      "zoom_out": 12,
+      "pan": 10
+    },
+    "reported_sequence_frames": 65,
+    "unreported_warmup_frames": 119,
+    "scope": "Actual byte-preserved demo adapter CPU drawing includes Canvas set_size, text layout and other scene work; total adds Void flush; fonts/images/setup excluded; no GPU/window/presentation/app-startup measurement."
+  },
+  "source_and_build_provenance": {
+    "scene_setup": "/private/tmp/femtovg-review-fixes-scenes",
+    "historical_runner_path": "/private/tmp/femtovg-review-fixes-perf/scene-run.py",
+    "historical_runner_sha256": "4e193b0dafc4ee40f358354d47781027645bafee0253921da270ab3bfd23cd47",
+    "changes": "Python orchestration only: new authorization gate, demo only, four fonts, DPI2, stable-index balanced AB/BA ordering, raw failure/guard retention, complete sequence totals and paired absolute intervals; Rust source/binaries unchanged.",
+    "root_verification": "Root owns current source/build verification and timing execution; --code-ready records that GO.",
+    "supplemental_parent_plan_sha256": "01a6d198db41b5a65555215a80f3fb40374f10a41b2cda1f3d31c3d9aa90dd1d",
+    "supplemental_scope": "Same unmodified Python orchestration and Rust binaries; new PLAN selects two established font extremes. No arena A/B, font search, source edit or rebuild."
+  },
+  "prepared_files": {
+    "assets/DiplomataSC-Regular.ttf": "6c91b299f45463424e26daf5fbbd5f298ad7b2e89f25bee506dd34a6d5297054",
+    "assets/FleurDeLeah-Regular.ttf": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+    "assets/LICENSE-DiplomataSC": "f4e8602be4b69bc44e3ce17d026622722b992a07b1aab0db23da48b0155b289e",
+    "assets/LICENSE-FleurDeLeah": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8",
+    "guard.py": "372690765510c32ab2ae1879b22989977ac74b7f6483592a7beaf334c1bbeb4a",
+    "provenance/Diplomata-acquisition-record.json": "75047db6c73f8e3d9f74a48fca7e288a824fadb8c70fde41bcb9c6a5a3ce6ce6",
+    "provenance/Fleur-acquisition-record.json": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f",
+    "provenance/PIN_VERIFICATION.json": "b38713d1ec0940e6b3ad62f3b3e5b707ccef8db85fb23f4259f7368c5b5617b4",
+    "provenance/copied-fonts.json": "a2a2972a0763e636a64f5c559573c5b59f4ba224cb513e74fe420d99cfcd9320",
+    "provenance/final-default_no_swash.json": "db1ba6f06062a80883672cc4da40ca7466750a183bd463623f27e74a1d3de1af",
+    "provenance/final-default_swash.json": "3b5e032e0c29fdf83395de52ade686a0847237930722f3be9da99fc0ade8763c",
+    "provenance/final-runtime-identity.json": "4a42b03bdbe625ca869f1495232af4e8913ca30897fa2a116151f2dbc180a94c",
+    "provenance/master-default_no_swash.json": "909d5103b97bafca85075d13da27e3c3a4aadbbdbff1cad3c7bddd68be7b65a8",
+    "provenance/master-default_swash.json": "b85114815ae925a9e703a98e1ad424f58ed0c5ee4f5b129cf1405566d6732fbd",
+    "provenance/scene-provenance.json": "12a36bf8e7459ef917e7730f681de03b20055483ff6dd21ca76daa984fd932b7",
+    "provenance/source-final.json": "ecd5020f0831f7213b8b7812a70c7c45b916c56c4607cf54131a0589706698c6",
+    "provenance/source-master.json": "b2813d6a4e65be50cc96472384e409157e945dc51718dda6939e778dfcafdfff",
+    "run-demo.py": "45547cdc77f81293184d75fc8bad73131c63985b1f68e9c3a28d6ceb1c4ef93a"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "scene_sources": {
+    "demo.rs": {
+      "source": "/Users/jesse/github/femtovg-outline-cache-bench/vendor/runtime/core/runner/src/demo.rs",
+      "sha256": "af2ee8d9ef983b1c7cbfde8406ca5262f41557781fad178b104c235653202cb2",
+      "modifications": null
+    },
+    "text.rs": {
+      "source": "/Users/jesse/github/femtovg-outline-cache-bench/vendor/runtime/core/runner/src/text.rs",
+      "sha256": "4b55ff0a63685f4f11fd4c3cf860dc44c37945d270b205587454f19feacba944",
+      "modifications": null
+    },
+    "perf_graph.rs": {
+      "source": "/Users/jesse/github/femtovg-outline-cache-bench/vendor/runtime/core/runner/src/perf_graph.rs",
+      "sha256": "dceb854365f9a0c748ac176a957d1530517b2fe6e04344d74a92ac7a152edc1a",
+      "modifications": null
+    }
+  },
+  "assets": {
+    "BungeeColor-Subset.ttf": "17205020659530ce48c76112089dc0ca532302e16acc5a4d98e2e3696e871a5e",
+    "Ghostscript_Tiger.svg": "eab0c137e4298d91b00113c58072b03c097c82a6e3bd8862fce9fc40856e5035",
+    "LICENSE-BungeeColor": "b77aa3c20ddef79c5ad1088826ca88081fec3fe097caddc096984dec126438d6",
+    "LICENSE-Roboto": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "LICENSE-Vollkorn": "53f9c99fa3d47f7d632a42ee7bab4a834a60a744f6026d676c3a223cef2b2ef3",
+    "RobotoFlex-VariableFont.ttf": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+    "Vollkorn-Medium.ttf": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892",
+    "amiri-regular.ttf": "2ae2ce034ee6d96676f7351bec465f1f86a22e3c4bf2e3bfdb5a653db3bdb46e",
+    "entypo.ttf": "395b3c06111715f2c803d6e7b3b8b65824fccd5a6e67c586d6f4e7cd6f00bb0a",
+    "images/image1.jpg": "1ce89e61acb30f23afdb51ea7acd4909bb3de978e51f1c7e71b46b93933858a1",
+    "images/image10.jpg": "0d3cc14070f2d0ee84447cc3ec845f03ad3db10396d7789b65c98867b71ded07",
+    "images/image11.jpg": "dd8851afa1fc60aae217741409269d9c29af271db31f3c49c918b5e5d303df37",
+    "images/image12.jpg": "a7c5cb0595bbe8f4513f19cea32437aafff5389fabae7f2f5f4ea65d4289d83d",
+    "images/image2.jpg": "210ae97aeb3c5db32fdb3e301af9affcd120164ca090886abb12b4672dfe40f4",
+    "images/image3.jpg": "4aada2d5a56d6775d975692ca5055b98f4c0fb6d97031edab2aa26ff7f482f9e",
+    "images/image4.jpg": "87739ab4e9677c5b0b55d22ed4bece717bc16a0b859bd1afd3c427770a7a27a4",
+    "images/image5.jpg": "3b0718e779dd1f4d87c9629c5efa000e211cb5523b54c4f1755e603c5c754a20",
+    "images/image6.jpg": "1b0273d9c4853cb799978f31c9422a4ccdd58719b17917dca94acb132aa575c5",
+    "images/image7.jpg": "db3e94e1ef940f29586d64d1d6358944f86923c556a98014dc31d69d70ed8a7d",
+    "images/image8.jpg": "b87d90334b21f891f54853a0649c835c6ace7c75902cb20fae98aa3e91243667",
+    "images/image9.jpg": "c81991ead5a476d852a869b43f56c8ac96f9ea94dc667425426fae592b7e9721",
+    "pattern.jpg": "7d5b9e646853585c760934c213a594b7cd0db1a0698da9eecda9bfc4a68a2408",
+    "rust-logo.png": "4d1e4d37c5df6a67e3dbb481d5df1d05f6a85ae502e09fb8c56cbcb2b00ca596"
+  },
+  "fonts": {
+    "stock": "RobotoFlex-VariableFont.ttf",
+    "serif": "Vollkorn-Medium.ttf"
+  },
+  "optional_emoji_font": "/System/Library/Fonts/Apple Color Emoji.ttc",
+  "measurement": "Canvas set_size + original scene draw; total adds Void flush; setup excluded.",
+  "source_instrumentation": null
+}

@@ -1,0 +1,227 @@
+{
+  "bootstrap_resamples": 10000,
+  "seed": 72531,
+  "versions": [
+    "master",
+    "prior",
+    "updated45",
+    "final"
+  ],
+  "comparisons": [
+    [
+      "master",
+      "prior"
+    ],
+    [
+      "master",
+      "updated45"
+    ],
+    [
+      "master",
+      "final"
+    ],
+    [
+      "prior",
+      "updated45"
+    ],
+    [
+      "prior",
+      "final"
+    ],
+    [
+      "updated45",
+      "final"
+    ]
+  ],
+  "pairing": "Median across trials per child process, then pair all versions within block/font/DPR/phase",
+  "effect": "Median paired candidate-minus-reference microseconds and median paired 100*(candidate/reference-1) percent; negative means faster",
+  "intervals": "Percentile bootstrap of whole multi-version blocks, using shared block indices across comparisons and cumulative metrics; linearly interpolated 2.5/97.5 percentiles; no CI below three blocks",
+  "absolute_values": "All per-trial phase averages pooled for marginal medians; process-median absolutes also recorded",
+  "scope": "Exploratory intervals across 28 phases and reference comparisons, without multiplicity adjustment; Roboto control repetitions across font factors are not independent font evidence",
+  "retention": "All validated processes/trials from completed batches included; retained raw stdout re-parsed and matched against aggregate CSV; no outlier removal",
+  "units": "Microseconds per frame, averaged within phase/trial; draw/submit/complete cumulative and not additive",
+  "provenance_files": {
+    "cpu": "/private/tmp/femtovg-updated-cache-bench-20261002/examples-validated/cpu-provenance.json",
+    "gpu": "/private/tmp/femtovg-updated-cache-bench-20261002/examples-validated/gpu-provenance.json"
+  },
+  "oracle_ledgers": {
+    "cpu": {
+      "path": "/private/tmp/femtovg-updated-cache-bench-20261002/native-oracle-pixels/ledger.json",
+      "bytes": 163948,
+      "sha256": "98c9c78126086ff3f19ba76038dc3060234cab92394dfd39c924986e8f5b716a"
+    },
+    "gpu": {
+      "path": "/private/tmp/femtovg-updated-cache-bench-20261002/native-oracle-pixels/ledger.json",
+      "bytes": 163948,
+      "sha256": "98c9c78126086ff3f19ba76038dc3060234cab92394dfd39c924986e8f5b716a"
+    }
+  },
+  "count_validation": "Exact per-version oracle ledger; master/prior/updated45 equal, final matches independent native phase-offset identity; unequal counts recorded as a JSON version map",
+  "pixels": {
+    "complete": true,
+    "comparisons": 504,
+    "identical_comparisons": 504,
+    "font_override_controls": [
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "prior",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "prior",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "updated45",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "updated45",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 1,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 1,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "master",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "prior",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "prior",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "updated45",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "updated45",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "vollkorn",
+        "dpi": 2,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      },
+      {
+        "font": "ptsans",
+        "dpi": 2,
+        "version": "final",
+        "roboto_controls_unchanged": true,
+        "regular_first_paint_changed": {
+          "demo": true,
+          "text": true
+        }
+      }
+    ]
+  }
+}

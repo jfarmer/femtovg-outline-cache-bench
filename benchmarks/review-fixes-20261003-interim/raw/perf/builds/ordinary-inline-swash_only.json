@@ -1,0 +1,91 @@
+{
+  "variant": "ordinary-inline",
+  "feature": "swash_only",
+  "command": [
+    "cargo",
+    "build",
+    "--offline",
+    "--locked",
+    "--release",
+    "--manifest-path",
+    "/private/tmp/femtovg-review-fixes-perf/harness/ordinary-inline/Cargo.toml",
+    "--features",
+    "swash_only",
+    "--message-format=json"
+  ],
+  "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/ordinary-inline",
+  "femtovg_artifact": {
+    "reason": "compiler-artifact",
+    "package_id": "path+file:///private/tmp/femtovg-review-fixes-perf/source/ordinary-inline#femtovg@0.27.0",
+    "manifest_path": "/private/tmp/femtovg-review-fixes-perf/source/ordinary-inline/Cargo.toml",
+    "target": {
+      "kind": [
+        "lib"
+      ],
+      "crate_types": [
+        "lib"
+      ],
+      "name": "femtovg",
+      "src_path": "/private/tmp/femtovg-review-fixes-perf/source/ordinary-inline/src/lib.rs",
+      "edition": "2021",
+      "doc": true,
+      "doctest": true,
+      "test": true
+    },
+    "profile": {
+      "opt_level": "3",
+      "debuginfo": 0,
+      "debug_assertions": false,
+      "overflow_checks": false,
+      "test": false
+    },
+    "features": [
+      "swash"
+    ],
+    "filenames": [
+      "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-f498b1bb400ed6f9.rlib",
+      "/private/tmp/femtovg-review-fixes-perf/target/release/deps/libfemtovg-f498b1bb400ed6f9.rmeta"
+    ],
+    "executable": null,
+    "fresh": false
+  },
+  "executables": {
+    "cold": {
+      "artifact_path": "/private/tmp/femtovg-review-fixes-perf/target/release/cold-ordinary-inline",
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/ordinary-inline-swash_only-cold",
+      "binary_sha256": "399baf58b5445fd3fc4d7b9c679c5f0c5a17976757ed143a98f3b255c284348a",
+      "binary_size": 2205184
+    },
+    "warm": {
+      "artifact_path": "/private/tmp/femtovg-review-fixes-perf/target/release/probe-ordinary-inline",
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/ordinary-inline-swash_only-warm",
+      "binary_sha256": "862c37088c2f4856c4823e88af964924a2b095b5752ee667c94b77259627f4f5",
+      "binary_size": 2165680
+    },
+    "generic": {
+      "artifact_path": "/private/tmp/femtovg-review-fixes-perf/target/release/generic-ordinary-inline",
+      "binary_path": "/private/tmp/femtovg-review-fixes-perf/bin/ordinary-inline-swash_only-generic",
+      "binary_sha256": "56bddcf793842825f9c9bfcc42fa1d4d8591358f1f5d7ad9c2f73426d941dfdd",
+      "binary_size": 2185568
+    }
+  },
+  "lock_sha256": "2660a56b263b4beaafbaeb425e11d0861ab76a13cc015d55854a6b72d8010c04",
+  "harness_sha256": "db7bffca787fa3403761205b46fd00052243fbe569ec53ebe4ee437d11f4faee",
+  "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+  "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)\n",
+  "profile": {
+    "opt_level": 3,
+    "debug": false,
+    "lto": false,
+    "codegen_units": 16,
+    "incremental": false,
+    "panic": "unwind"
+  },
+  "build_environment": {
+    "RUSTFLAGS": null,
+    "CARGO_ENCODED_RUSTFLAGS": null,
+    "CARGO_BUILD_TARGET": null,
+    "CARGO_INCREMENTAL": "0",
+    "CARGO_TARGET_DIR": "/private/tmp/femtovg-review-fixes-perf/target"
+  }
+}

@@ -1,0 +1,1804 @@
+{
+  "status": "post hoc provisional provenance check; not a new measurement or bootstrap",
+  "selection": "All complete chronological blocks0..7 of earliest cold-genericrestore only; partial block8 excluded; no other campaigns merged; no selection by measured effect.",
+  "selected_process_records": 1584,
+  "excluded_partial_process_records": 174,
+  "total_original_process_records": 1758,
+  "selected_original_line_range_zero_based": [
+    0,
+    1583
+  ],
+  "selected_original_bytes_sha256": "aff2292baa14ad12635bcfa3838ff59d9e3596bed683fad2ed8d31823344a658",
+  "selected_complete_configurations": 66,
+  "blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "samples_per_process": 7,
+  "immutable_original_files_sha256": {
+    "metadata.json": "aab9d6a58a5496bb90f789b5a0bce22eadbf4f985c845c5c59fd787d1f72346f",
+    "raw.jsonl": "08e2f917f9288392e97f5cffd11004e7e449355ebb8ddbc63b5c4c6eb3510e79",
+    "EXCLUDED.md": "86b59a74b95647fc8756c1322ecd9908e2c0eae8551f083162815455dade47cd"
+  },
+  "fonts": {
+    "Arial": {
+      "path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+    },
+    "RobotoFlex": {
+      "path": "/private/tmp/femtovg-review-fixes-perf/source/base/examples/assets/RobotoFlex-VariableFont.ttf",
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+    },
+    "Vollkorn": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/Vollkorn-Medium.ttf",
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+    },
+    "PTSans": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/PTSans-Regular.ttf",
+      "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a"
+    }
+  },
+  "harness_files": {
+    "controlled.rs": "98ba91a9eee74b615ca537cbc007e85f0887e4f2a1e278784fd60dc67fbb64dd",
+    "generic.rs": "c357059043eea162f268f6ebc1a163040ee14b69cbcef4a28c5ecc97f8591195",
+    "main.rs": "db7bffca787fa3403761205b46fd00052243fbe569ec53ebe4ee437d11f4faee",
+    "cold.rs": "4ffc93c39cb6e38f4df82d580f957960ec84f392786399f5ba7d16842c42a9e1"
+  },
+  "builds": [
+    {
+      "label": "master-swash_only",
+      "binary_sha256": "39bd9e16ff84ef51935b774f42d507ef8eda0ff36772d92aaf748369f77bcb5b",
+      "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/master",
+      "source_manifest_sha256": "4b3b6fb15a9bd5e3cf0ea9b37ef4a14785159f5f8ddc83ad9548e3f48a3c2e1d",
+      "production_files": {
+        "src/lib.rs": "c513282de54ccf64c12f8580c575c08bbaf73a367bd243f585d50a58665b3455",
+        "src/text.rs": "a2f5b73e5517f3d1076b8d023f5490f0024f4b158ed78e8eff62cd71bf6d49f2",
+        "src/text/font.rs": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+        "src/text/swash_rasterizer.rs": null
+      },
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "profile": {
+        "opt_level": 3,
+        "debug": false,
+        "lto": false,
+        "codegen_units": 16,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "features": [
+        "swash"
+      ],
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55"
+    },
+    {
+      "label": "base-swash_only",
+      "binary_sha256": "3405e4d3549aaf8478ccb05570b2b2189234073b4459036bb316ea3fcba6ee4f",
+      "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/base",
+      "source_manifest_sha256": "1648a3e05db606ae27e3cc131a66564e0728df2abb2682d8eb6c346b30dd9def",
+      "production_files": {
+        "src/lib.rs": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+        "src/text.rs": "a8f133f00855815c183a1bba4977e5a635fb399ef813317409c1260d8883886e",
+        "src/text/font.rs": "d3c9504da3e7965e7d060cd1471309c631a5a92ad860965c6cd714d844ae8e68",
+        "src/text/swash_rasterizer.rs": "68b64014927961596381d11f7f86dbd5b351f4e766bbfba15bd01cc54c3bc239"
+      },
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "profile": {
+        "opt_level": 3,
+        "debug": false,
+        "lto": false,
+        "codegen_units": 16,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "features": [
+        "swash"
+      ],
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55"
+    },
+    {
+      "label": "finalgenericrestore-swash_only",
+      "binary_sha256": "7aa1f86070af3a3d137b00396d91bc25ccdaea788fcee174c54bf28d97cc53b6",
+      "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/finalgenericrestore",
+      "source_manifest_sha256": "f97fea012a12259233b62685694197f80d32eda1a61fdd257aa0dd2b32e565b2",
+      "production_files": {
+        "src/lib.rs": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+        "src/text.rs": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+        "src/text/font.rs": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+        "src/text/swash_rasterizer.rs": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e"
+      },
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "profile": {
+        "opt_level": 3,
+        "debug": false,
+        "lto": false,
+        "codegen_units": 16,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "features": [
+        "swash"
+      ],
+      "dependency_graph_sha256": "bb01feeb214d1b56232641feccd4ea11c545b36e9cff824274385a1543a6ea55"
+    },
+    {
+      "label": "master-default_swash",
+      "binary_sha256": "71cc04666e34fcd72363b37f20e4263ccdc7b6c2a1f5926e160f8855fe868074",
+      "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/master",
+      "source_manifest_sha256": "4b3b6fb15a9bd5e3cf0ea9b37ef4a14785159f5f8ddc83ad9548e3f48a3c2e1d",
+      "production_files": {
+        "src/lib.rs": "c513282de54ccf64c12f8580c575c08bbaf73a367bd243f585d50a58665b3455",
+        "src/text.rs": "a2f5b73e5517f3d1076b8d023f5490f0024f4b158ed78e8eff62cd71bf6d49f2",
+        "src/text/font.rs": "6ec48d99b3aff6ce55616db1002defba6ad107fee242afd473c77cce52171d82",
+        "src/text/swash_rasterizer.rs": null
+      },
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "profile": {
+        "opt_level": 3,
+        "debug": false,
+        "lto": false,
+        "codegen_units": 16,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ],
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d"
+    },
+    {
+      "label": "base-default_swash",
+      "binary_sha256": "c75cdce391dec945782f76f0573e3c37ca855ca4de33dd42d2861a24e8144c19",
+      "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/base",
+      "source_manifest_sha256": "1648a3e05db606ae27e3cc131a66564e0728df2abb2682d8eb6c346b30dd9def",
+      "production_files": {
+        "src/lib.rs": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+        "src/text.rs": "a8f133f00855815c183a1bba4977e5a635fb399ef813317409c1260d8883886e",
+        "src/text/font.rs": "d3c9504da3e7965e7d060cd1471309c631a5a92ad860965c6cd714d844ae8e68",
+        "src/text/swash_rasterizer.rs": "68b64014927961596381d11f7f86dbd5b351f4e766bbfba15bd01cc54c3bc239"
+      },
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "profile": {
+        "opt_level": 3,
+        "debug": false,
+        "lto": false,
+        "codegen_units": 16,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ],
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d"
+    },
+    {
+      "label": "finalgenericrestore-default_swash",
+      "binary_sha256": "a485726ceded6f69835f25d33998f1040666b7e2472ae0aab04ef9144aef2117",
+      "source_manifest": "/private/tmp/femtovg-review-fixes-perf/source/finalgenericrestore",
+      "source_manifest_sha256": "f97fea012a12259233b62685694197f80d32eda1a61fdd257aa0dd2b32e565b2",
+      "production_files": {
+        "src/lib.rs": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+        "src/text.rs": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+        "src/text/font.rs": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+        "src/text/swash_rasterizer.rs": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e"
+      },
+      "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+      "profile": {
+        "opt_level": 3,
+        "debug": false,
+        "lto": false,
+        "codegen_units": 16,
+        "incremental": false,
+        "panic": "unwind"
+      },
+      "features": [
+        "default",
+        "image",
+        "image-loading",
+        "swash",
+        "textlayout"
+      ],
+      "dependency_graph_sha256": "090e8c9268534d2049c8df84bbea9e8c840f1254a601f1abb040df6b1064c28d"
+    }
+  ],
+  "configurations": [
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_natural",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_natural",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_natural",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_natural",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_onephase",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_onephase",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_onephase",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_labels_onephase",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_natural",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_natural",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_natural",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_natural",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_onephase",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_onephase",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_onephase",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "cold_para_onephase",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_singleton",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_singleton",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_singleton",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_singleton",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_two_phases",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_two_phases",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_two_phases",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_two_phases",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_unique_sizes",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_unique_sizes",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_unique_sizes",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_unique_sizes",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_pollution",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_pollution",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_pollution",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_pollution",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_natural",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_natural",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_natural",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_natural",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_onephase",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_onephase",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_onephase",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_labels_onephase",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 340,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_natural",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_natural",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_natural",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_natural",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_onephase",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_onephase",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_onephase",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "cold_para_onephase",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 1836,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_singleton",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_singleton",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_singleton",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_singleton",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 1,
+      "glyph_requests_per_complete_sequence": 94,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_two_phases",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_two_phases",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_two_phases",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_two_phases",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 2,
+      "glyph_requests_per_complete_sequence": 188,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_unique_sizes",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_unique_sizes",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_unique_sizes",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_unique_sizes",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_pollution",
+      "font": "Arial",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_pollution",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_pollution",
+      "font": "Vollkorn",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_pollution",
+      "font": "PTSans",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 67,
+      "glyph_requests_per_complete_sequence": 6298,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "swash_only",
+      "workload": "grid_unique_variations",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    },
+    {
+      "feature": "default_swash",
+      "workload": "grid_unique_variations",
+      "font": "RobotoFlex",
+      "complete_blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "variants": [
+        "master",
+        "base",
+        "finalgenericrestore"
+      ],
+      "process_records": 24,
+      "frames_per_complete_sequence": 32,
+      "glyph_requests_per_complete_sequence": 3008,
+      "metric_identity": "ns_total is median complete-sequence time across seven fresh samples; per-frame and per-glyph costs divide that total, rounded to0.01ns; totals remain unrounded integer ns"
+    }
+  ],
+  "limits": "Original guard checked process names before each configuration, not continuously or after every process. Background activity may have occurred between checks. User later confirmed external build still running. Chronological-prefix analysis is explicitly post hoc/provisional; eight blocks rather than planned twelve; no GPU, layout or window timing. Original EXCLUDED status is preserved."
+}

@@ -1,0 +1,13 @@
+=== 11b missing glyph stroke: Ok(())
+--- after
+current_render_target(before flush) = Screen
+state_stack.len = 1
+rendered_glyphs.len = 3
+  RenderedGlyphId { glyph_index: 65000, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 10, render_mode: Fill, subpixel_location: 0, variation_hash: 12161962213042174405 } => None
+  RenderedGlyphId { glyph_index: 65000, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 10, render_mode: Fill, subpixel_location: 5, variation_hash: 12161962213042174405 } => None
+  RenderedGlyphId { glyph_index: 65000, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 20, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => None
+glyph_textures.len = 0
+glyph_textures = []
+commands = []
+verts.len = 0
+verts = []

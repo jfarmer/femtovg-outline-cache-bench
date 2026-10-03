@@ -1,0 +1,65 @@
+[
+  {
+    "source": "/private/tmp/femtovg-current-demo-20261003/__pycache__",
+    "archive_path": "raw/current/__pycache__",
+    "reason": "cache or compiled-binary directory; contents not traversed"
+  },
+  {
+    "source": "/private/tmp/femtovg-current-demo-extremes-20261003/__pycache__",
+    "archive_path": "raw/supplements/femtovg-current-demo-extremes-20261003/__pycache__",
+    "reason": "cache or compiled-binary directory; contents not traversed"
+  },
+  {
+    "source": "/private/tmp/femtovg-hinting-stress-scene-20261003/bin",
+    "archive_path": "raw/stress/bin",
+    "reason": "cache or compiled-binary directory; contents not traversed"
+  },
+  {
+    "source": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-master-default_swash",
+    "label": "master-default_swash",
+    "reason": "measured executable omitted",
+    "recorded_sha256": "3a6624a90c4aa420a08b0fb37f84196cf6f94407da76f443589d331aa6e32058",
+    "sha256_origin": "retained cohort PLAN; not rehashed by installer",
+    "bytes_at_installation": 3549680
+  },
+  {
+    "source": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-final-default_swash",
+    "label": "final-default_swash",
+    "reason": "measured executable omitted",
+    "recorded_sha256": "906e8e81beb4ac1e56c155e6f78de10649d217d2b7a61fea0fe5b01f6cd6cd43",
+    "sha256_origin": "retained cohort PLAN; not rehashed by installer",
+    "bytes_at_installation": 3741264
+  },
+  {
+    "source": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-master-default_no_swash",
+    "label": "master-default_no_swash",
+    "reason": "measured executable omitted",
+    "recorded_sha256": "d62b31f95ce4be455d30347466d0c226e3f0e5154666027a4516f3ae168cfc9c",
+    "sha256_origin": "retained cohort PLAN; not rehashed by installer",
+    "bytes_at_installation": 2273712
+  },
+  {
+    "source": "/private/tmp/femtovg-review-fixes-perf/bin/scenes-final-default_no_swash",
+    "label": "final-default_no_swash",
+    "reason": "measured executable omitted",
+    "recorded_sha256": "de363ab82e0e792d70c6aafc01b9fdbcb1866058425a8cc2cbdb0cb65be6adc2",
+    "sha256_origin": "retained cohort PLAN; not rehashed by installer",
+    "bytes_at_installation": 2274256
+  },
+  {
+    "source": "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-master",
+    "label": "stress-master",
+    "reason": "measured executable omitted",
+    "recorded_sha256": "13239e1e23976a29edfdbd711258d73951c240917efad15364a28fe4b6e77425",
+    "sha256_origin": "retained stress PLAN/build record; not rehashed by installer",
+    "bytes_at_installation": 3379856
+  },
+  {
+    "source": "/private/tmp/femtovg-hinting-stress-scene-20261003/bin/hinting-stress-final",
+    "label": "stress-final",
+    "reason": "measured executable omitted",
+    "recorded_sha256": "074aa61d2bafa5276b8445cd15057beb5304d1c7913ad9e68f138078e5e67b13",
+    "sha256_origin": "retained stress PLAN/build record; not rehashed by installer",
+    "bytes_at_installation": 3571616
+  }
+]

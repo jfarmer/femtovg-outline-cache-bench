@@ -55,6 +55,228 @@
       "campaign": "native-pool-alustin",
       "experiment": "experiment.json",
       "suite": "app"
+    },
+    {
+      "campaign": "updated-cache-examples",
+      "experiment": "runtime/core/experiment.json",
+      "modes": [
+        "cpu",
+        "gpu"
+      ],
+      "phase_summary": "analysis/replay/phase/summary.csv",
+      "results": "examples-validated",
+      "sequence_summary": "analysis/replay/sequence/summary.csv",
+      "suite": "replay",
+      "validation_protocol": "native-master-offset-oracle"
+    },
+    {
+      "analysis": "analysis",
+      "batch": "cpu",
+      "campaign": "updated-cache-alustin",
+      "experiment": "experiment.json",
+      "suite": "app"
+    },
+    {
+      "analysis": "analysis",
+      "campaign": "font-stress-search",
+      "cpu": "confirm-cpu",
+      "gpu": "confirm-gpu",
+      "required_campaigns": [
+        "updated-cache-examples"
+      ],
+      "scope": "Independent raw/stdout effects and intervals; every archive byte checked first; omitted executable bytes represented by preserved provenance.",
+      "suite": "font-confirmation"
+    },
+    {
+      "analysis": "analysis",
+      "campaign": "font-stress-rerun",
+      "cpu": "confirm-cpu",
+      "gpu": "confirm-gpu",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples"
+      ],
+      "scope": "Repeat of fixed selection, collector, binaries and native pixel proof; independent raw/stdout effects and intervals, all-member integrity required first.",
+      "suite": "font-confirmation"
+    },
+    {
+      "campaign": "cjk-font-search",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples"
+      ],
+      "scope": "Exploratory independent native raw/order/duration/coverage/count/digest/source/build/lock/font audit. Native exact image/geometry assertions; no application/cache gain or confidence interval inferred.",
+      "screens": [
+        [
+          "english",
+          "native-english"
+        ],
+        [
+          "ko",
+          "native-ko"
+        ],
+        [
+          "zh",
+          "native-zh"
+        ],
+        [
+          "zh-pure-ui",
+          "native-zh-pure-ui"
+        ]
+      ],
+      "suite": "cjk-native"
+    },
+    {
+      "audit_root": "mechanism-cost-timing-v1",
+      "campaign": "cjk-font-search",
+      "completed_audit": "mechanism-cost-timing-v1/analysis/independent-audit.json",
+      "expected_cases": 360,
+      "expected_processes": 18,
+      "expected_raw_rows": 12960,
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples"
+      ],
+      "scope": "Separate frozen warm-cost decomposition of scaler build/drop, rebuild+outline, prepared hinted/unhinted outlines, alpha raster and retained geometry. All 18 processes, 12960 raw rows and 360 exact-size cases; independent reader recomputation. No CIs or application percentage. Public Swash weight-300 NotoSerif coordinate [1556] is one step from production [1555]; nearby-instance diagnostic.",
+      "suite": "cjk-cost",
+      "timed_cohorts": [
+        [
+          "default",
+          "en"
+        ],
+        [
+          "default",
+          "ko"
+        ],
+        [
+          "default",
+          "zh"
+        ],
+        [
+          "weights",
+          "en-w300"
+        ],
+        [
+          "weights",
+          "en-w400"
+        ],
+        [
+          "weights",
+          "zh-w300"
+        ],
+        [
+          "weights",
+          "zh-w400"
+        ]
+      ]
+    },
+    {
+      "audit_root": "english-demo-selection",
+      "campaign": "cjk-font-search",
+      "completed_audit": "supporting/english-demo-audit.json",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples"
+      ],
+      "scope": "Exploratory unchanged-English demo screening; retain all 13 fonts, raw trials and balanced order. No application pixel-proof campaign or confirmation confidence interval.",
+      "suite": "cjk-english"
+    },
+    {
+      "audit_root": "confirm-zh-v2",
+      "campaign": "cjk-font-search",
+      "collector_fix_proof": "collector-path-normalization.json",
+      "completed_audit": "confirm-zh-v2/independent-audit.json",
+      "control_font": "NotoSansSC-VF",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples"
+      ],
+      "scope": "Separate Chinese-localized demo CPU confirmation with its own sources, native pixels and frozen three-font selection; DPR2, 12 balanced blocks, 5 trials.",
+      "suite": "cjk-localized"
+    },
+    {
+      "audit_root": "confirm-ko-v2",
+      "campaign": "cjk-font-search",
+      "collector_fix_proof": "collector-path-normalization.json",
+      "completed_audit": "confirm-ko-v2/independent-audit.json",
+      "control_font": "NanumMyeongjo-Regular",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples"
+      ],
+      "scope": "Separate Korean-localized demo CPU confirmation with its own sources, native pixels and frozen three-font selection; DPR2, 12 balanced blocks, 5 trials.",
+      "suite": "cjk-localized"
+    },
+    {
+      "campaign": "aggressive-font-search",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples",
+        "cjk-font-search"
+      ],
+      "scope": "Exploratory native outline/hinting/geometry costs; verify every declared font process including rejected ASCII-precondition records, original sources/fonts/order and raw arithmetic. No predicted app gain or native confidence intervals.",
+      "screens": [
+        [
+          "broad-29",
+          "native-prescreen-v1"
+        ],
+        [
+          "hinted-10",
+          "hinted-supplement-v1/native-prescreen-v1"
+        ],
+        [
+          "ornate-8",
+          "ornate-supplement-v1/native-prescreen-v1"
+        ]
+      ],
+      "suite": "aggressive-native"
+    },
+    {
+      "campaign": "aggressive-font-search",
+      "cohort_root": "",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples",
+        "cjk-font-search"
+      ],
+      "scope": "Exploratory unchanged-demo comparison; exact rational independent raw/order/effect audit of every frozen font and both blocks. No confidence intervals or post-selection confirmation inferred.",
+      "suite": "aggressive-demo-screen"
+    },
+    {
+      "campaign": "aggressive-font-search",
+      "cohort_root": "hinted-supplement-v1",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples",
+        "cjk-font-search"
+      ],
+      "scope": "Exploratory unchanged-demo comparison for separately frozen ten-font supplement plus Rye/Vollkorn; preserve native rejection and demo corpus coverage separately. No confidence intervals or post-selection confirmation inferred.",
+      "suite": "aggressive-demo-screen"
+    },
+    {
+      "campaign": "aggressive-font-search",
+      "cohort_root": "ornate-supplement-v1",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples",
+        "cjk-font-search"
+      ],
+      "scope": "Exploratory unchanged-demo comparison for separately frozen eight-font ornate supplement plus Rye/Vollkorn. No confidence intervals or post-selection confirmation inferred.",
+      "suite": "aggressive-demo-screen"
+    },
+    {
+      "analysis": "primary-analysis-v1",
+      "audit_root": "",
+      "campaign": "aggressive-font-search",
+      "control_font": "Rye-Regular",
+      "cpu": "primary-confirm-cpu-v1",
+      "required_campaigns": [
+        "font-stress-search",
+        "updated-cache-examples",
+        "cjk-font-search"
+      ],
+      "selection": "primary-selection-v1/selection.json",
+      "suite": "aggressive-demo-confirmation"
     }
   ],
   "campaigns": [
@@ -407,6 +629,104 @@
       "path": "results/native-pool-source-bundle",
       "raw_bytes": 56604212,
       "role": "native-outline-reproduction"
+    },
+    {
+      "archive": {
+        "bytes": 34453458,
+        "path": "records.tar.gz",
+        "sha256": "e41c6bdab7cd5c7fd5b22338fbf3369014756ef2d0c2e78104155461b06a4dd5"
+      },
+      "complete": true,
+      "files": 7448,
+      "label": "updated-cache-examples",
+      "original_root": "/private/tmp/femtovg-updated-cache-bench-20261002",
+      "path": "results/updated-cache-examples",
+      "raw_bytes": 3114253017,
+      "role": "revised-cache-comparison"
+    },
+    {
+      "archive": {
+        "bytes": 12184499,
+        "path": "records.tar.gz",
+        "sha256": "8c869ba2f8f8b4a69c15d1af6b73404741830b0599639aaf66119cf6a36d7048"
+      },
+      "complete": true,
+      "files": 1767,
+      "label": "updated-cache-alustin",
+      "original_root": "/private/tmp/femtovg-updated-cache-bench-20261002/alustin",
+      "path": "results/updated-cache-alustin",
+      "raw_bytes": 133854227,
+      "role": "revised-cache-comparison"
+    },
+    {
+      "archive": {
+        "bytes": 12024045,
+        "path": "records.tar.gz",
+        "sha256": "ce17194613ce59b780dc051fdb2ee0aeb800a6f933b1407e84c2ee024c7c06c8"
+      },
+      "complete": true,
+      "files": 637,
+      "label": "updated-cache-source-bundle",
+      "original_root": "/private/tmp/femtovg-updated-cache-bench-20261002/bundle",
+      "path": "results/updated-cache-source-bundle",
+      "raw_bytes": 67395439,
+      "role": "revised-cache-reproduction"
+    },
+    {
+      "archive": {
+        "bytes": 29653806,
+        "path": "records.tar.gz",
+        "sha256": "f05d56f87bcd4c4f36d835ff075e5e826bbb4d3f3b63769f0eac843e0990939f"
+      },
+      "complete": true,
+      "files": 2179,
+      "label": "font-stress-search",
+      "original_root": "/private/tmp/femtovg-font-stress-search-20261002",
+      "path": "results/font-stress-search",
+      "raw_bytes": 1243923129,
+      "role": "favorable-font-confirmation"
+    },
+    {
+      "archive": {
+        "bytes": 2525811,
+        "path": "records.tar.gz",
+        "sha256": "d97420835de07fef341c58b026f7f32af930d0afbe1500fb4a962d851e7b9bbc"
+      },
+      "complete": true,
+      "files": 617,
+      "label": "font-stress-rerun",
+      "original_root": "/private/tmp/femtovg-font-stress-rerun-20261002",
+      "path": "results/font-stress-rerun",
+      "raw_bytes": 19695729,
+      "role": "font-confirmation-repeat"
+    },
+    {
+      "archive": {
+        "bytes": 72288620,
+        "path": "records.tar.xz",
+        "sha256": "3032732e649638a4d700d826588b1891cb57b9586d064b5e34468aa4ab0b02b8"
+      },
+      "complete": true,
+      "files": 3041,
+      "label": "cjk-font-search",
+      "original_root": "/private/tmp/femtovg-cjk-font-search-20261002",
+      "path": "results/cjk-font-search",
+      "raw_bytes": 1494876785,
+      "role": "exploratory-cjk-font-search"
+    },
+    {
+      "archive": {
+        "bytes": 18430466,
+        "path": "records.tar.gz",
+        "sha256": "88b55ff8aa6246a7574330ba8e091952449ada82c861844442156ad1c92050d8"
+      },
+      "complete": true,
+      "files": 3158,
+      "label": "aggressive-font-search",
+      "original_root": "/private/tmp/femtovg-aggressive-font-search-20261002",
+      "path": "results/aggressive-font-search",
+      "raw_bytes": 289549360,
+      "role": "exploratory-latin-font-search"
     }
   ],
   "schema": 1

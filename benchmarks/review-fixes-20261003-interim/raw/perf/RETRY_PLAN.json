@@ -1,0 +1,49 @@
+{
+  "status": "prepared; paused until explicit user confirmation that external build is finished",
+  "source_candidate": "immutable finalgenericrestore",
+  "primary_baseline": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+  "attribution_control": "da268321ec2b53cdd188e8c07f853897121c3767",
+  "policy": {
+    "new_cohorts_only": true,
+    "reuse_any_old_incomplete_data": false,
+    "logical_blocks": 12,
+    "attempt_identity": "monotonically increasing global attempt; distinct from logical block",
+    "order": "rotation and reversal depend only on logical block; replay uses the same order",
+    "environment_guard": "before and after EACH process",
+    "rejection": "discard entire attempt of logical block only on process-name guard match",
+    "timing_value_filtering": false,
+    "quiet_seconds_before_start_or_replay": 60,
+    "max_retries": 30,
+    "max_duration_seconds": 1800,
+    "known_pid_privacy": "inspect known Cargo/rustc PID arguments privately only to classify family; persist PID, family, comm and parent names; no full args or environment"
+  },
+  "retention": {
+    "PLAN.json": "written before initial quiet wait; runner/guard/archive hashes plus deterministic per-block orders",
+    "attempts.jsonl": "all completed process records from every attempt",
+    "raw.jsonl": "only accepted complete blocks",
+    "excluded-raw.jsonl": "all records from environment-rejected attempts",
+    "ledger.jsonl": "accepted/rejected attempt IDs, start/end UTC, record offsets/counts, and guard evidence; empty rejected attempts preserved",
+    "rejected-blocks.jsonl": "guard evidence for every rejected whole-block attempt",
+    "interference-events.jsonl": "build events during quiet waits",
+    "ABORT.json": "latest process-name guard match"
+  },
+  "cold": {
+    "features": ["swash_only", "default_swash"],
+    "configurations": 66,
+    "variants": ["master", "base", "finalgenericrestore"],
+    "accepted_processes_per_block": 198,
+    "accepted_process_records_total": 2376,
+    "summary_rows_including_baseline": 198,
+    "cold_samples_per_process": 7
+  },
+  "scenes": {
+    "features": ["default_swash", "default_no_swash"],
+    "configurations": 8,
+    "scene_font_pairs": ["demo/RobotoFlex", "demo/Vollkorn", "text/RobotoFlex", "text/Vollkorn"],
+    "variants": ["master", "final"],
+    "accepted_processes_per_block": 16,
+    "accepted_process_records_total": 192,
+    "summary_rows": 52,
+    "phase_observations_including_both_variants": 1248
+  }
+}

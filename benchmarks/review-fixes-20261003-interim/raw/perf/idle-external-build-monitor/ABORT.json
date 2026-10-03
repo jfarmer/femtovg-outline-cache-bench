@@ -1,0 +1,24 @@
+{
+  "aborted_utc": "2026-10-03T12:36:23.662050+00:00",
+  "reason": "Build/compiler/linker process name guard matched",
+  "pids": [
+    "56272",
+    "56437"
+  ],
+  "process_families_and_names_only": [
+    {
+      "pid": "56272",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+      "family": "test",
+      "parent_pid": "56028",
+      "parent_comm": "/Users/jesse/.cargo/bin/cargo-nextest"
+    },
+    {
+      "pid": "56437",
+      "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc",
+      "family": "compile",
+      "parent_pid": "56272",
+      "parent_comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo"
+    }
+  ]
+}

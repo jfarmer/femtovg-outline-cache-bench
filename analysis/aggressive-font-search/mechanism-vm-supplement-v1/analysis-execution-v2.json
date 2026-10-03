@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "command": [
+    "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+    "-B",
+    "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analyze_selected_v2.py"
+  ],
+  "exit_code": 0,
+  "adapter": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/finish_analysis_v2.py",
+    "sha256": "abe799e9272780d5e750abe5d1a2f7d893f9302aaca0ca1cd0099b9f6093d925",
+    "bytes": 4832
+  },
+  "adapted_auditor": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analyze_selected_v2.py",
+    "sha256": "1a85214f1131bd2b73a3d5ba16b22b1830b3372c5bb8c6cf3605dfca3696077b",
+    "bytes": 11182
+  },
+  "stdout": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analysis-v2.stdout",
+    "sha256": "0c655f17e66ced8eab8529dccbfef8917551bb25fb0893b4e76689166f6e4913",
+    "bytes": 188
+  },
+  "stderr": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-supplement-v1/analysis-v2.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

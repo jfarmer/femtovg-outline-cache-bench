@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "started_utc": "2026-10-02T23:32:51.261472+00:00",
+  "locale": "zh",
+  "control_font": "NotoSansSC-VF",
+  "commands": [
+    {
+      "name": "analysis",
+      "command": [
+        "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+        "-B",
+        "/private/tmp/femtovg-cjk-font-search-20261002/localized-zh-replay-v2/analyze_font_confirm.py",
+        "--cpu",
+        "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/confirm-cpu",
+        "--output",
+        "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis",
+        "--control-font",
+        "NotoSansSC-VF"
+      ],
+      "complete": true,
+      "stdout": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis.stdout.txt",
+      "stderr": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/analysis.stderr.txt",
+      "started_utc": "2026-10-02T23:32:51.261748+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-02T23:32:52.811560+00:00"
+    },
+    {
+      "name": "independent-audit",
+      "command": [
+        "/Users/jesse/.asdf/installs/python/3.12.11/bin/python3",
+        "-B",
+        "/private/tmp/femtovg-cjk-font-search-20261002/independent_localized_confirmation_audit_v2.py",
+        "--root",
+        "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2",
+        "--control-font",
+        "NotoSansSC-VF",
+        "--collector-fix-proof",
+        "/private/tmp/femtovg-cjk-font-search-20261002/collector-path-normalization.json",
+        "--output",
+        "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/independent-audit.json"
+      ],
+      "complete": true,
+      "stdout": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/independent-audit.stdout.txt",
+      "stderr": "/private/tmp/femtovg-cjk-font-search-20261002/confirm-zh-v2/independent-audit.stderr.txt",
+      "started_utc": "2026-10-02T23:32:52.811851+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-02T23:32:55.299332+00:00"
+    }
+  ],
+  "finished_utc": "2026-10-02T23:32:55.299597+00:00"
+}

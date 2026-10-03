@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "files": {
+    "src/lib.rs": "ae79b1702bb44fcef401b47dda0b38458160a57876f74b10cbb445d4d97c8798",
+    "src/text.rs": "6ec9215f1ab17cad624fca578ef327af2bf842554d322a06887fc26b8204ca5f",
+    "src/text/swash_rasterizer.rs": "fa2fc5852710952ee3122500e08bda3a1dd38d69a39cd0420604f51c9488ee92"
+  },
+  "scope": "Current production workspace matches exact final source files measured in the retained updated-cache campaign."
+}

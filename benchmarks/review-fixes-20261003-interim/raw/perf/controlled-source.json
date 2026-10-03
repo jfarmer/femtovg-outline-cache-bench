@@ -1,0 +1,6 @@
+{
+  "source": "/Users/jesse/github/femtovg-outline-cache-bench/vendor/runtime/core/runner/src/controlled.rs",
+  "original_sha256": "30f7d26a8fcb2e74698c92ce098733ce3f5b8f79ab12b05d0e0dd17cf110ef51",
+  "sha256": "98ba91a9eee74b615ca537cbc007e85f0887e4f2a1e278784fd60dc67fbb64dd",
+  "modifications": "Scene::new takes an already registered FontId, because Canvas::add_font_mem is unavailable without textlayout. Cold runner registers through public TextContext outside timing. Request construction, phases and draw method unchanged."
+}

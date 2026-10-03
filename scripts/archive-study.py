@@ -33,6 +33,13 @@ CAMPAIGNS = [
     ("native-pool-examples", "femtovg-outline-pool-review", "native-outline-comparison"),
     ("native-pool-alustin", "alustin-outline-pool-review", "native-outline-comparison"),
     ("native-pool-source-bundle", "femtovg-outline-pool-bundle", "native-outline-reproduction"),
+    ('updated-cache-examples', '/private/tmp/femtovg-updated-cache-bench-20261002', 'revised-cache-comparison'),
+    ('updated-cache-alustin', '/private/tmp/femtovg-updated-cache-bench-20261002/alustin', 'revised-cache-comparison'),
+    ('updated-cache-source-bundle', '/private/tmp/femtovg-updated-cache-bench-20261002/bundle', 'revised-cache-reproduction'),
+    ('font-stress-search', '/private/tmp/femtovg-font-stress-search-20261002', 'favorable-font-confirmation'),
+    ('font-stress-rerun', '/private/tmp/femtovg-font-stress-rerun-20261002', 'font-confirmation-repeat'),
+    ('cjk-font-search', '/private/tmp/femtovg-cjk-font-search-20261002', 'exploratory-cjk-font-search'),
+    ('aggressive-font-search', '/private/tmp/femtovg-aggressive-font-search-20261002', 'exploratory-latin-font-search'),
 ]
 
 
@@ -53,8 +60,9 @@ def main():
                 raise RuntimeError(f"Existing archive is incomplete: {destination}")
             print(f"Retained existing archive: {label}", flush=True)
             continue
-        subprocess.run([sys.executable, str(REPO / "scripts/archive-campaign.py"), str(source),
-                        str(destination), "--label", label], check=True)
+        command=[sys.executable, str(REPO / "scripts/archive-campaign.py"), str(source), str(destination), "--label", label]
+        if label=="updated-cache-examples":command += ["--exclude-prefix","alustin","--exclude-prefix","bundle"]
+        subprocess.run(command, check=True)
     index = []
     for label, name, role in CAMPAIGNS:
         destination = REPO / "results" / label

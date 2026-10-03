@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "entries": [
+    {
+      "observed_tool_exit_code": 0,
+      "tool_chunk": "490547",
+      "command": [
+        "python3",
+        "-B",
+        "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace_selected.py",
+        "collect"
+      ],
+      "stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/collector.stdout",
+        "sha256": "1e664d1e3d5bc21cc8567456c4a7b79acf85b4af6ed444be65acbe095b81e594",
+        "bytes": 897
+      },
+      "stderr": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/collector.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "driver": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace_selected.py",
+        "sha256": "a95935b55207514c0fabf87709995f0edfee0cecda57a3103485f808eac0d678",
+        "bytes": 10818
+      }
+    },
+    {
+      "observed_tool_exit_code": 0,
+      "tool_chunk": "6438f7",
+      "command": [
+        "python3",
+        "-B",
+        "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace_selected.py",
+        "analyze"
+      ],
+      "stdout": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyzer.stdout",
+        "sha256": "2b69e7d8eb0a544cbd69c62f75fc9dc07b5c621eaa27ae3f9491ff1c45dc9b56",
+        "bytes": 2451
+      },
+      "stderr": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/analyzer.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "driver": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace_selected.py",
+        "sha256": "a95935b55207514c0fabf87709995f0edfee0cecda57a3103485f808eac0d678",
+        "bytes": 10818
+      }
+    }
+  ],
+  "observation": "Exact exit0 observed in functions tool responses; completion records and preserved stdout/stderr additionally checked."
+}

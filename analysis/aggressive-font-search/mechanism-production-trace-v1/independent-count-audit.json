@@ -1,0 +1,154 @@
+{
+  "complete": true,
+  "auditor": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace_selected.py",
+    "sha256": "a95935b55207514c0fabf87709995f0edfee0cecda57a3103485f808eac0d678",
+    "bytes": 10818
+  },
+  "campaign": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/trace-campaign.json",
+    "sha256": "3fe5510c9d7e5b48c6a40ec9bc92ac7ad5219709b6c7290f5754488acb4f8736",
+    "bytes": 29190
+  },
+  "analysis": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/counts-analysis.json",
+    "sha256": "e78412e56006183ce7586dccf06eb5e726ce194dea0cf6b83f433193113f412e",
+    "bytes": 329767
+  },
+  "raw_checks": [
+    {
+      "font": "WaterBrush-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-WaterBrush-Regular-master.events.tsv",
+        "sha256": "364a21aa5f3bc6085fcc81454afb0ddff556f5fae1d176acc0e9b187e170ea5d",
+        "bytes": 266113
+      },
+      "render_requests": 5290,
+      "outline_requests": 0
+    },
+    {
+      "font": "WaterBrush-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-WaterBrush-Regular-final.events.tsv",
+        "sha256": "f6e369ac5a58c328aaebe995710903682e232e40a685eb2be25fdd0575ff1483",
+        "bytes": 731756
+      },
+      "render_requests": 0,
+      "outline_requests": 5290
+    },
+    {
+      "font": "LavishlyYours-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-LavishlyYours-Regular-master.events.tsv",
+        "sha256": "9766d0195e542d15f062a6436ccf91dbeb678cdf8ec8d2a839a938259bf33eb9",
+        "bytes": 267991
+      },
+      "render_requests": 5322,
+      "outline_requests": 0
+    },
+    {
+      "font": "LavishlyYours-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-LavishlyYours-Regular-final.events.tsv",
+        "sha256": "ba317b87b01903fd551f7649286759dc1352c2d2116491ac1af9c9851cb9bb38",
+        "bytes": 723199
+      },
+      "render_requests": 0,
+      "outline_requests": 5322
+    },
+    {
+      "font": "Rye-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Rye-Regular-master.events.tsv",
+        "sha256": "331d28296720cd85373c0c453e150c96de90817afcacaf5df8f8808522ce9033",
+        "bytes": 265573
+      },
+      "render_requests": 5323,
+      "outline_requests": 0
+    },
+    {
+      "font": "Rye-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Rye-Regular-final.events.tsv",
+        "sha256": "af716154fdedbf1eb094369d7ec536d093a8aed2d976f0e4af2041086b59c525",
+        "bytes": 722668
+      },
+      "render_requests": 0,
+      "outline_requests": 5323
+    },
+    {
+      "font": "Vollkorn-Medium",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Vollkorn-Medium-master.events.tsv",
+        "sha256": "0b754ab237653b61dd9beae5fa5a4637cf5a59a131ed5b1fa4c79c07f35e01a1",
+        "bytes": 266708
+      },
+      "render_requests": 5270,
+      "outline_requests": 0
+    },
+    {
+      "font": "Vollkorn-Medium",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-Vollkorn-Medium-final.events.tsv",
+        "sha256": "0ee8024fe07d064d8ccf50d1e4bc7fefcbac12db3606daf63df5efba7c8f20c7",
+        "bytes": 722482
+      },
+      "render_requests": 0,
+      "outline_requests": 5270
+    },
+    {
+      "font": "DiplomataSC-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-DiplomataSC-Regular-master.events.tsv",
+        "sha256": "65aa0dcbec06440947c2de59fbb4bbafa4f35f936b83ac15fdfd8e29fd59247d",
+        "bytes": 257995
+      },
+      "render_requests": 5224,
+      "outline_requests": 0
+    },
+    {
+      "font": "DiplomataSC-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-DiplomataSC-Regular-final.events.tsv",
+        "sha256": "01bf6d4fe989cc39686d88d7596238cf2854e2dbb3128be11357463704e5a300",
+        "bytes": 705643
+      },
+      "render_requests": 0,
+      "outline_requests": 5224
+    },
+    {
+      "font": "FleurDeLeah-Regular",
+      "version": "master",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-FleurDeLeah-Regular-master.events.tsv",
+        "sha256": "b160bb0d4d0a265e6a058f5adba8e4397eaad45f025c69af431369c58a433777",
+        "bytes": 267093
+      },
+      "render_requests": 5308,
+      "outline_requests": 0
+    },
+    {
+      "font": "FleurDeLeah-Regular",
+      "version": "final",
+      "events": {
+        "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-production-trace-v1/en-FleurDeLeah-Regular-final.events.tsv",
+        "sha256": "adab326d75582ed664743cbc38c763899e29a0422fe0d69ba503de4cd13c08b2",
+        "bytes": 725090
+      },
+      "render_requests": 0,
+      "outline_requests": 5308
+    }
+  ],
+  "elapsed_time_columns_read": 0,
+  "method": "Separate raw event recount of R/Q/H/M/B and exact requested size/glyph/coords/phase stream identity, compared with original state-machine analysis. Source/feature graphs remain sealed by prior reconstructed-edit audit and current full source guards."
+}

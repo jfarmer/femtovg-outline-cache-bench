@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/MECHANISM-FINAL-ANALYSIS.md",
+      "bytes": 17264,
+      "sha256": "4d2b2193e8507a38af660a40ab63b25c3dddd1d1ccb04686926346c21094cd30"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/analysis.json",
+      "bytes": 239302,
+      "sha256": "1e3d8b723663cef78a9134316e676d964da8b274f2a4beb9bf3b074d0a5bc3f1"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-retention-ablation/independent-audit.json",
+      "bytes": 67035,
+      "sha256": "79e3d639ad8992ab0d0de2445591b03e93f9dc4c7a8e173fd2de4114bfffb5e4"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic/analysis/count-summary.json",
+      "bytes": 331036,
+      "sha256": "0e659df44ab406c3c5ecba09616928a5f690a5b49f737042b400cf2c18a3bee7"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-cost-timing-v1/analysis-v2/summary.json",
+      "bytes": 135510,
+      "sha256": "b5e6a10ef9e334a8ece5e523c2495c203acbbf820138eebf5fdaab970a2cfd71"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/counts-analysis.json",
+      "bytes": 661245,
+      "sha256": "d12e90e966b97d4c59dc697ac89673b2fc0aca85f9abb59401b6f92b4b317640"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-production-trace-v2/geometry-and-advances.json",
+      "bytes": 19727,
+      "sha256": "6714b3b67ffc3245455a6218b4a43ce3e9f2d19a3d2311cb4e9d8582ab6eea7e"
+    }
+  ]
+}

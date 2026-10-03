@@ -1,0 +1,25 @@
+--- upstream 6a5f15a
++++ current source
+@@ -2,11 +2,12 @@
+ --- after
+ current_render_target(before flush) = Screen
+ state_stack.len = 1
+-rendered_glyphs.len = 2
+-  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 79, height: 67, bearing_x: 1, bearing_y: 64, atlas_x: 1, atlas_y: 1, color_glyph: false })
+-  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 4, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 78, height: 67, bearing_x: 2, bearing_y: 64, atlas_x: 82, atlas_y: 1, color_glyph: false })
++rendered_glyphs.len = 3
++  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 78, height: 67, bearing_x: 2, bearing_y: 64, atlas_x: 82, atlas_y: 1, color_glyph: false, uses_subpixel_positioning: true })
++  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 4, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 78, height: 67, bearing_x: 2, bearing_y: 64, atlas_x: 162, atlas_y: 1, color_glyph: false, uses_subpixel_positioning: true })
++  RenderedGlyphId { glyph_index: 58, font_id: FontId(DefaultKey(1v1)), size: 900, line_width: 10, render_mode: Fill, subpixel_location: 6, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 79, height: 67, bearing_x: 2, bearing_y: 64, atlas_x: 1, atlas_y: 1, color_glyph: false, uses_subpixel_positioning: true })
+ glyph_textures.len = 1
+-glyph_textures = [FontTexture { atlas: Atlas { width: 512, height: 512, nodes: [Node { x: 0, y: 69, width: 161 }, Node { x: 161, y: 0, width: 351 }] }, image_id: ImageId(DefaultKey(1v1)) }]
++glyph_textures = [FontTexture { atlas: Atlas { width: 512, height: 512, nodes: [Node { x: 0, y: 69, width: 241 }, Node { x: 241, y: 0, width: 271 }] }, image_id: ImageId(DefaultKey(1v1)) }]
+ commands = [
+     Command {
+         cmd_type: SetRenderTarget(
+@@ -139,4 +140,4 @@
+     },
+ ]
+ verts.len = 18
+-verts = [Vertex { x: 197.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 276.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 276.0, y: 325.0, u: 0.15625, v: 0.001953125 }, Vertex { x: 197.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 197.0, y: 392.0, u: 0.001953125, v: 0.1328125 }, Vertex { x: 276.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 300.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 379.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 379.0, y: 325.0, u: 0.15625, v: 0.001953125 }, Vertex { x: 300.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 300.0, y: 392.0, u: 0.001953125, v: 0.1328125 }, Vertex { x: 379.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 404.0, y: 325.0, u: 0.16015625, v: 0.001953125 }, Vertex { x: 482.0, y: 392.0, u: 0.3125, v: 0.1328125 }, Vertex { x: 482.0, y: 325.0, u: 0.3125, v: 0.001953125 }, Vertex { x: 404.0, y: 325.0, u: 0.16015625, v: 0.001953125 }, Vertex { x: 404.0, y: 392.0, u: 0.16015625, v: 0.1328125 }, Vertex { x: 482.0, y: 392.0, u: 0.3125, v: 0.1328125 }]
++verts = [Vertex { x: 197.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 276.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 276.0, y: 325.0, u: 0.15625, v: 0.001953125 }, Vertex { x: 197.0, y: 325.0, u: 0.001953125, v: 0.001953125 }, Vertex { x: 197.0, y: 392.0, u: 0.001953125, v: 0.1328125 }, Vertex { x: 276.0, y: 392.0, u: 0.15625, v: 0.1328125 }, Vertex { x: 301.0, y: 325.0, u: 0.16015625, v: 0.001953125 }, Vertex { x: 379.0, y: 392.0, u: 0.3125, v: 0.1328125 }, Vertex { x: 379.0, y: 325.0, u: 0.3125, v: 0.001953125 }, Vertex { x: 301.0, y: 325.0, u: 0.16015625, v: 0.001953125 }, Vertex { x: 301.0, y: 392.0, u: 0.16015625, v: 0.1328125 }, Vertex { x: 379.0, y: 392.0, u: 0.3125, v: 0.1328125 }, Vertex { x: 404.0, y: 325.0, u: 0.31640625, v: 0.001953125 }, Vertex { x: 482.0, y: 392.0, u: 0.46875, v: 0.1328125 }, Vertex { x: 482.0, y: 325.0, u: 0.46875, v: 0.001953125 }, Vertex { x: 404.0, y: 325.0, u: 0.31640625, v: 0.001953125 }, Vertex { x: 404.0, y: 392.0, u: 0.31640625, v: 0.1328125 }, Vertex { x: 482.0, y: 392.0, u: 0.46875, v: 0.1328125 }]

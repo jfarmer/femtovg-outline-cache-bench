@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "scope": "independent frozen source and native raster semantics; binary and pixel results audited separately",
+  "master_file_count": 136,
+  "oracle_file_count": 136,
+  "changed_files": [
+    "src/text.rs"
+  ],
+  "master_text_sha256": "a2f5b73e5517f3d1076b8d023f5490f0024f4b158ed78e8eff62cd71bf6d49f2",
+  "oracle_text_sha256": "21a37b0aa35d0b2e03341281f85ab436fea1f826f833610c7ea09c81c414e088",
+  "native_Render_code_byte_identical_to_master": true,
+  "contains_final_outline_arena": false,
+  "key": "u32 bits of actual f32 raster offset, canonicalizing +0/-0",
+  "quantizer_and_raster_offset_unchanged": true,
+  "independent_of_final_signed_bin_key": true,
+  "purpose": "untimed native Swash bitmap rendering oracle; different key width is not a timed cache competitor",
+  "prepare_sha256": "18cdfcc169bc79ed7caad0edc13ee381d352d03c42872c7141bca05d80a48862",
+  "audit_script_sha256": "6d0015913c1480774f06212d7cf51f5609db6a7d8c3c64a4c3c670af32bec2e2"
+}

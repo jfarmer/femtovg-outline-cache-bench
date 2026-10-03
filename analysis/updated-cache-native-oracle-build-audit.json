@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "scope": "fresh native-reference compile log, exact executable/hash, and full resolved dependency/feature/edge identity; no timings",
+  "binary": {
+    "path": "/private/tmp/femtovg-cache-bench/target/release/femtovg-example-outline-review-native-master-offset-oracle",
+    "bytes": 9808216,
+    "sha256": "3b04ef45aa75ecf58662e1e75e6f606eb4031669a1c77ece8968b2c3b4f328a8"
+  },
+  "fresh_local_femtovg_compile": true,
+  "fresh_unique_root_compile": true,
+  "release_log_sha256": "4fb6f7f44be9414d7199f4c5feeabaaf16cc10bcde1c2ebe127e2791f0110fa9",
+  "native_metadata_sha256": "5f0519b3a978de956955b9ce57a5ff5be7804bbafa8064e1f4cafb091ae32031",
+  "primary_master_metadata_sha256": "1230cae854315779e92854d997b5623fd03c998a9143f9410fad0228f859f6bb",
+  "full_graph_equal_after_only_local_root_name_and_source_path_normalization": true,
+  "graph_node_count": 163,
+  "common_gpu_helpers_byte_identical_to_master": true,
+  "prepare_sha256": "18cdfcc169bc79ed7caad0edc13ee381d352d03c42872c7141bca05d80a48862",
+  "build_proof_sha256": "dd79cd76ac48bf70f7d1b0bea5dcff204cd9c4d38f0ca5e1b5c696e79a660403",
+  "source_audit_sha256": "90c586ec46ea62e7de861c054227acd9891556d94907b3cea1f556a5c1a74364",
+  "audit_script_sha256": "86665cef2982e668782db92c90b63b602d5de6064ebcd50819735f516a2f7703"
+}

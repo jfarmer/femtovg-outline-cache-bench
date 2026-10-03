@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-10-03T14:20:18.459363+00:00",
+  "plan_sha256": "01a6d198db41b5a65555215a80f3fb40374f10a41b2cda1f3d31c3d9aa90dd1d",
+  "authorization": {
+    "exact_user_instruction": "Anyways, do what you need to do to get the current demo cdata",
+    "interpretation": "Fresh guarded current demo measurement authorized; does not assert that the external build has finished. Strict process guards still apply."
+  },
+  "source_and_build_provenance": {
+    "scene_setup": "/private/tmp/femtovg-review-fixes-scenes",
+    "historical_runner_path": "/private/tmp/femtovg-review-fixes-perf/scene-run.py",
+    "historical_runner_sha256": "4e193b0dafc4ee40f358354d47781027645bafee0253921da270ab3bfd23cd47",
+    "changes": "Python orchestration only: new authorization gate, demo only, four fonts, DPI2, stable-index balanced AB/BA ordering, raw failure/guard retention, complete sequence totals and paired absolute intervals; Rust source/binaries unchanged.",
+    "root_verification": "Root owns current source/build verification and timing execution; --code-ready records that GO."
+  },
+  "metrics": {
+    "primary": "first_paint total_us, one frame per independent process",
+    "phases_frames": {
+      "first_paint": 1,
+      "warm": 30,
+      "zoom_in": 12,
+      "zoom_out": 12,
+      "pan": 10
+    },
+    "reported_sequence_frames": 65,
+    "unreported_warmup_frames": 119,
+    "scope": "Actual byte-preserved demo adapter CPU drawing includes Canvas set_size, text layout and other scene work; total adds Void flush; fonts/images/setup excluded; no GPU/window/presentation/app-startup measurement."
+  },
+  "statistics": {
+    "estimator": "median of whole-block paired differences and ratios; marginal medians shown separately",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 61432,
+    "interval": "percentile sorted indices250/9750 with shared whole-block resamples across endpoints",
+    "multiplicity_adjustment": null
+  },
+  "policy": {
+    "discard_unit": "whole 16-process logical paired block attempt",
+    "guard": "before and after EACH process",
+    "trigger": "any build/compiler/linker process-name match; metadata/version matches remain excluded",
+    "quiet_seconds_before_start_or_replay": 60,
+    "max_retries": 8,
+    "max_duration_seconds": 1800,
+    "process_timeout_seconds": 120,
+    "no_timing_value_filtering": true,
+    "retention": "attempts.jsonl contains every completed/failed process, raw.jsonl contains only accepted whole blocks, excluded-raw.jsonl preserves rejected/failed block records; ledger records empty attempts too"
+  },
+  "platform": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n"
+}

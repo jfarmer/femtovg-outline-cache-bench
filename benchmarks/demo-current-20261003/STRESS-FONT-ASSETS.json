@@ -1,0 +1,67 @@
+{
+  "FleurDeLeah": {
+    "original_font": "/private/tmp/femtovg-current-demo-extremes-20261003/assets/FleurDeLeah-Regular.ttf",
+    "font_sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+    "archive_font": "assets/stress/FleurDeLeah/FleurDeLeah-Regular.ttf",
+    "font_documents": [
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-extremes-20261003/assets/LICENSE-FleurDeLeah",
+        "sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8",
+        "archive_path": "assets/stress/FleurDeLeah/LICENSE-FleurDeLeah"
+      },
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-extremes-20261003/provenance/Fleur-acquisition-record.json",
+        "sha256": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f",
+        "archive_path": "assets/stress/FleurDeLeah/Fleur-acquisition-record.json"
+      }
+    ]
+  },
+  "RobotoFlex": {
+    "original_font": "/private/tmp/femtovg-current-demo-20261003/assets/RobotoFlex-VariableFont.ttf",
+    "font_sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+    "archive_font": "assets/stress/RobotoFlex/RobotoFlex-VariableFont.ttf",
+    "font_documents": [
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "archive_path": "assets/stress/RobotoFlex/LICENSE-Roboto"
+      },
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-20261003/provenance/copied-control-assets.json",
+        "sha256": "b43819604fc067c71fc51074ffb672a4f517224d2f63d90c13175dacf7f04b43",
+        "archive_path": "assets/stress/RobotoFlex/copied-control-assets.json"
+      }
+    ],
+    "applicable_license": {
+      "original_path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/licenses/RobotoFlex-OFL.txt",
+      "sha256": "9cbaed04b20c853f99840efe5dc96956f6f6120ed83a0ade35f9281a2b63e5d0",
+      "archive_path": "assets/stress/RobotoFlex/RobotoFlex-OFL.txt",
+      "basis": "Font bytes match benchmark assets/RobotoFlex-VariableFont.ttf; benchmark assets/ATTRIBUTION.md maps those bytes to RobotoFlex-OFL.txt."
+    },
+    "preserved_legacy_license": [
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "archive_path": "assets/stress/RobotoFlex/LICENSE-Roboto"
+      }
+    ],
+    "packaging_note": "Recorded LICENSE-Roboto is legacy Apache text. The measured Roboto Flex font uses the separately bundled OFL 1.1 license; original PLAN/documents remain verbatim."
+  },
+  "Rye": {
+    "original_font": "/private/tmp/femtovg-current-demo-20261003/assets/Rye-Regular.ttf",
+    "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+    "archive_font": "assets/stress/Rye/Rye-Regular.ttf",
+    "font_documents": [
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Rye",
+        "sha256": "399b33eb38cdfc76b8665defa5f81d52e8193d630ad5858c893db6bc20031bc9",
+        "archive_path": "assets/stress/Rye/LICENSE-Rye"
+      },
+      {
+        "original_path": "/private/tmp/femtovg-current-demo-20261003/provenance/Rye-acquisition-record.json",
+        "sha256": "5f5503c5f016fd6343b6a328afae3e4c9be2e4928d45c05e2112860e8d598e38",
+        "archive_path": "assets/stress/Rye/Rye-acquisition-record.json"
+      }
+    ]
+  }
+}

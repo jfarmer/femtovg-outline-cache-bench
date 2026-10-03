@@ -1,0 +1,42 @@
+--- upstream 6a5f15a
++++ current source
+@@ -1,7 +1,7 @@
+ === 8 stroke larger than atlas after a fitting glyph: Err(FontSizeTooLargeForAtlas)
+-target right after = Image(ImageId(DefaultKey(1v1)))
++target right after = Screen
+ --- after error and a screen rect
+-current_render_target(before flush) = Image(ImageId(DefaultKey(1v1)))
++current_render_target(before flush) = Screen
+ state_stack.len = 1
+ rendered_glyphs.len = 1
+   RenderedGlyphId { glyph_index: 17, font_id: FontId(DefaultKey(1v1)), size: 400, line_width: 4760, render_mode: Stroke, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 484, height: 483, bearing_x: 3, bearing_y: 4, atlas_x: 1, atlas_y: 1, color_glyph: false })
+@@ -1519,6 +1519,29 @@
+         },
+     },
+     Command {
++        cmd_type: SetRenderTarget(
++            Screen,
++        ),
++        clip_active: false,
++        drawables: [],
++        triangles_verts: None,
++        image: None,
++        filter_scratch: None,
++        glyph_texture: None,
++        blend_pass: BlendPass {
++            backdrop_flipped: false,
++            source_alpha: 1.0,
++            contribution: false,
++        },
++        fill_rule: NonZero,
++        composite_operation: CompositeOperationState {
++            src_rgb: One,
++            src_alpha: One,
++            dst_rgb: OneMinusSrcAlpha,
++            dst_alpha: OneMinusSrcAlpha,
++        },
++    },
++    Command {
+         cmd_type: ConvexFill {
+             params: Params {
+                 scissor_mat: [

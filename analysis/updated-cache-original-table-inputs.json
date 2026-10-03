@@ -1,0 +1,88 @@
+{
+  "files": {
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/analysis/summary.csv": {
+      "bytes": 180159,
+      "sha256": "13c5135b7e2ae83dbec623710322ba7c2c906a21820f526394fcc839d22b055e"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/summary.json": {
+      "bytes": 2163048,
+      "sha256": "93239420ef99118059f16e2f282c6064a317af5ce7904e825fd3e7401a6ea07c"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/independent-app-statistics-audit.json": {
+      "bytes": 106856,
+      "sha256": "55a88a266eab2d0449ebf3ffa1ee6191b311e5b1bc6c994a928d97177a8b0131"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/independent-order-audit.json": {
+      "bytes": 15616,
+      "sha256": "aa810e429fb5ff5f9252c527144c6710ea81c56d270e6667fc4a525769001524"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/analysis/replay/phase/summary-methodology.json": {
+      "bytes": 6231,
+      "sha256": "001494b28609b7ca01b9243472b34b1027668a620735f600609072bf1d287b7d"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/analysis/replay/phase/summary.csv": {
+      "bytes": 762951,
+      "sha256": "0aac053e19384c36c1df18aea95c147aed067e65300b4c64fce233847595d76c"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/analysis/replay/sequence/methodology.json": {
+      "bytes": 2510,
+      "sha256": "ef726fc3c6d0ef9129d3638897bb4381200e094be2bf21ced9b987b3af14aced"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/analysis/replay/sequence/summary.csv": {
+      "bytes": 259090,
+      "sha256": "b116c6d83889cb79546f7836a2b8dce2a6609f82510a81331045481991acd212"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/budget-timing/analysis.json": {
+      "bytes": 24703,
+      "sha256": "c0bb82e8833fd09ba5ecf45c0f938fc297fa03c9330b22b7d4390f1a478fcf09"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/budget-timing/provenance.json": {
+      "bytes": 33754,
+      "sha256": "1b461b6d7cf42f0b568a4a031950677d56cffd7cd608841b48ef43dce15a5c4f"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/budget/independent-budget-audit.json": {
+      "bytes": 569217,
+      "sha256": "97b5dbc53709abcabd183d7dcc1561cb7a8ebe1093802a8bb512eca6ad188be1"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/examples-validated/pixels-provenance.json": {
+      "bytes": 625751,
+      "sha256": "64fd6ae649d83c2b7ea2e486aa7b2707ecf6cbe92a515e1761354cc93581a235"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/final-validation.json": {
+      "bytes": 966,
+      "sha256": "3b376192ad0e18dc6eaed81ff06b51ccaf9f39535bfee1691b34ba35c5e44dbc"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/independent-identity-pixel-audit.json": {
+      "bytes": 403192,
+      "sha256": "f266f279aecde2a6a94098f20c87d17eeeb8c91defeb5e59bf839255d6a6a22a"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/independent-native-offset-oracle-build-audit.json": {
+      "bytes": 1304,
+      "sha256": "517399d78978776e08b035bfd4f34d99f36c3eda44d087e2dd924bccc27b811d"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/independent-native-offset-oracle-source-audit.json": {
+      "bytes": 978,
+      "sha256": "90c586ec46ea62e7de861c054227acd9891556d94907b3cea1f556a5c1a74364"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/independent-replay-statistics-audit.json": {
+      "bytes": 2580308,
+      "sha256": "aecab2bd73faf2e73cf338c758357e93fadbd251981b38ddd86f4ca37b3abd90"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/independent-source-build-audit.json": {
+      "bytes": 25778,
+      "sha256": "73a69f17c170fbabd8984ea67b977828f2ecb8e333133fb88ec51b60fb8587ec"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/machine.json": {
+      "bytes": 551,
+      "sha256": "82282f9612589a90261d923581ff2e5b52aa838d28abd39f6716bd1595351f10"
+    },
+    "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/experiment.json": {
+      "bytes": 1458,
+      "sha256": "28fe6e85e286ce22392a9eba3fd3b6014ccd33dde061ebc557bfa9db1b26d385"
+    }
+  },
+  "script": {
+    "path": "/private/tmp/femtovg-updated-cache-bench-20261002/revised-cache-report.py",
+    "sha256": "5f07f1a94a0c9a1208486c81967ecfa03a7f67b9697dc383199d76a66a9bb9f0"
+  }
+}

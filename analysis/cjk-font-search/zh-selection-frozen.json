@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "frozen_utc": "2026-10-02T23:26:15.526134+00:00",
+  "fonts": [
+    {
+      "label": "BabelStoneHan",
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/babelstone/release/BabelStoneHan.ttf",
+      "sha256": "d8bb747b3fdccd84a60bd0aa56bb90937270d0bd15f1101cd8f2a5a3709dd0a3",
+      "bytes": 51971284
+    },
+    {
+      "label": "NotoSerifSC-VF",
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notoserifsc/NotoSerifSC[wght].ttf",
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "bytes": 25125512
+    },
+    {
+      "label": "NotoSansSC-VF",
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/fonts/notosanssc/NotoSansSC[wght].ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "bytes": 17772300
+    }
+  ],
+  "confirmation": {
+    "versions": [
+      "master",
+      "final"
+    ],
+    "dpi": [
+      2
+    ],
+    "blocks": 12,
+    "cpu_trials": 5,
+    "control_font": "NotoSansSC-VF"
+  },
+  "selection_inputs": {
+    "../supporting/native-audit.json": "7cbfbe2a82a036862353c495b7681a7808291e043795ffd4590309ed18066ccb",
+    "../supporting/font-inspection.json": "7c0ce9b054d4d00e27578e613b9e36fc7caada11c08b129d8097623cda6624be"
+  },
+  "reason": "Korean: three most costly native outline candidates on the fixed Korean text. Chinese: most complex corpus geometry plus modern Noto serif/sans controls. Selected before application timing; no selection based on favorable application phases."
+}

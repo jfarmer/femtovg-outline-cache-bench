@@ -1,0 +1,46 @@
+--- upstream 6a5f15a
++++ current source
+@@ -1,10 +1,10 @@
+ === 12b image update failure after a fallback space: Err(UnknownError)
+-target right after = Image(ImageId(DefaultKey(1v1)))
++target right after = Screen
+ --- after
+-current_render_target(before flush) = Image(ImageId(DefaultKey(1v1)))
++current_render_target(before flush) = Screen
+ state_stack.len = 1
+ rendered_glyphs.len = 1
+-  RenderedGlyphId { glyph_index: 3, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 10, render_mode: Fill, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 2, height: 2, bearing_x: 0, bearing_y: 0, atlas_x: 18, atlas_y: 1, color_glyph: false })
++  RenderedGlyphId { glyph_index: 3, font_id: FontId(DefaultKey(1v1)), size: 200, line_width: 10, render_mode: Fill, subpixel_location: 0, variation_hash: 12161962213042174405 } => Some(RenderedGlyph { texture_index: 0, width: 2, height: 2, bearing_x: 0, bearing_y: 0, atlas_x: 18, atlas_y: 1, color_glyph: false, uses_subpixel_positioning: false })
+ glyph_textures.len = 1
+ glyph_textures = [FontTexture { atlas: Atlas { width: 512, height: 512, nodes: [Node { x: 0, y: 19, width: 17 }, Node { x: 17, y: 4, width: 4 }, Node { x: 21, y: 19, width: 15 }, Node { x: 36, y: 0, width: 476 }] }, image_id: ImageId(DefaultKey(1v1)) }]
+ commands = [
+@@ -55,6 +55,29 @@
+                 6,
+             ),
+         ),
++        image: None,
++        filter_scratch: None,
++        glyph_texture: None,
++        blend_pass: BlendPass {
++            backdrop_flipped: false,
++            source_alpha: 1.0,
++            contribution: false,
++        },
++        fill_rule: NonZero,
++        composite_operation: CompositeOperationState {
++            src_rgb: One,
++            src_alpha: One,
++            dst_rgb: OneMinusSrcAlpha,
++            dst_alpha: OneMinusSrcAlpha,
++        },
++    },
++    Command {
++        cmd_type: SetRenderTarget(
++            Screen,
++        ),
++        clip_active: false,
++        drawables: [],
++        triangles_verts: None,
+         image: None,
+         filter_scratch: None,
+         glyph_texture: None,

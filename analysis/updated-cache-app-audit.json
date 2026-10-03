@@ -1,0 +1,1970 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-02T19:03:25.068023+00:00",
+  "versions": [
+    "master",
+    "prior",
+    "updated45",
+    "final"
+  ],
+  "raw_launches": 288,
+  "accepted_launches": 288,
+  "accepted_blocks": 72,
+  "retry_attempts_revalidated": 0,
+  "point_effects_recomputed": 72,
+  "cpu_ci_rows_recomputed": 72,
+  "results": [
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 18.420125,
+      "candidate_median": 17.252062000000002,
+      "median_paired_delta": -1.1071254999999987,
+      "median_paired_ratio": 0.9395364002321476,
+      "median_paired_change_pct": -6.046359976785243,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.8824938242925136,
+        -4.292466717767118
+      ],
+      "delta_ci95": [
+        -1.4899579999999997,
+        -0.779854499999999
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 18.420125,
+      "candidate_median": 17.544938000000002,
+      "median_paired_delta": -1.0201884999999997,
+      "median_paired_ratio": 0.9449891493493104,
+      "median_paired_change_pct": -5.501085065068956,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.517542840287006,
+        -2.7115098457301867
+      ],
+      "delta_ci95": [
+        -1.3951659999999997,
+        -0.49272900000000064
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 18.420125,
+      "candidate_median": 17.5146455,
+      "median_paired_delta": -0.8607715000000002,
+      "median_paired_ratio": 0.9536888475445839,
+      "median_paired_change_pct": -4.631115245541606,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.958354861375127,
+        -2.488565660618214
+      ],
+      "delta_ci95": [
+        -1.3010410000000014,
+        -0.45654200000000067
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 17.252062000000002,
+      "candidate_median": 17.544938000000002,
+      "median_paired_delta": 0.25420849999999895,
+      "median_paired_ratio": 1.0144293554910782,
+      "median_paired_change_pct": 1.4429355491078155,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.7197541970845878,
+        2.4187785045321375
+      ],
+      "delta_ci95": [
+        -0.12481199999999859,
+        0.4277914999999979
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.252062000000002,
+      "candidate_median": 17.5146455,
+      "median_paired_delta": 0.061291999999998126,
+      "median_paired_ratio": 1.0035657908875075,
+      "median_paired_change_pct": 0.3565790887507525,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.6085444092380765,
+        2.060751487394752
+      ],
+      "delta_ci95": [
+        -0.10654199999999925,
+        0.35545849999999923
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.544938000000002,
+      "candidate_median": 17.5146455,
+      "median_paired_delta": 0.04537449999999943,
+      "median_paired_ratio": 1.002582945799253,
+      "median_paired_change_pct": 0.2582945799253,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.2323540108457163,
+        2.029389250216407
+      ],
+      "delta_ci95": [
+        -0.40427050000000087,
+        0.3507289999999994
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 2.184604,
+      "candidate_median": 2.1420000000000003,
+      "median_paired_delta": -0.052999499999999866,
+      "median_paired_ratio": 0.9760940175924797,
+      "median_paired_change_pct": -2.3905982407520288,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.637139758060372,
+        -0.6062004562553347
+      ],
+      "delta_ci95": [
+        -0.12431349999999997,
+        -0.013187999999999978
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.184604,
+      "candidate_median": 2.1458125,
+      "median_paired_delta": -0.048521000000000036,
+      "median_paired_ratio": 0.9776115838833188,
+      "median_paired_change_pct": -2.2388416116681187,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.7997424983860295,
+        0.7291782784005107
+      ],
+      "delta_ci95": [
+        -0.1308330000000002,
+        0.015604499999999799
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.184604,
+      "candidate_median": 2.1497710000000003,
+      "median_paired_delta": -0.018833499999999948,
+      "median_paired_ratio": 0.9914535946744986,
+      "median_paired_change_pct": -0.8546405325501438,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.213114329314039,
+        3.6495676656330467
+      ],
+      "delta_ci95": [
+        -0.115896,
+        0.07608349999999997
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.1420000000000003,
+      "candidate_median": 2.1458125,
+      "median_paired_delta": 0.012917499999999915,
+      "median_paired_ratio": 1.0057939676710028,
+      "median_paired_change_pct": 0.579396767100282,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.202442466343979,
+        2.4592018685935635
+      ],
+      "delta_ci95": [
+        -0.04750050000000017,
+        0.051832999999999796
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1420000000000003,
+      "candidate_median": 2.1497710000000003,
+      "median_paired_delta": 0.0317909999999999,
+      "median_paired_ratio": 1.0146786791711815,
+      "median_paired_change_pct": 1.4678679171181486,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.440804680121711,
+        7.582013513680108
+      ],
+      "delta_ci95": [
+        -0.05183400000000016,
+        0.1531665000000002
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1458125,
+      "candidate_median": 2.1497710000000003,
+      "median_paired_delta": -0.0009789999999998411,
+      "median_paired_ratio": 0.9997221834670929,
+      "median_paired_change_pct": -0.027781653290714914,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.5104647470824193,
+        4.878499316922391
+      ],
+      "delta_ci95": [
+        -0.0540624999999999,
+        0.1027285
+      ],
+      "bootstrap_seed": 17745831730580539975
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 17.5396875,
+      "candidate_median": 16.983417,
+      "median_paired_delta": -0.44343749999999993,
+      "median_paired_ratio": 0.9747145590011361,
+      "median_paired_change_pct": -2.5285440998863873,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.575945019648053,
+        -0.18439137830870145
+      ],
+      "delta_ci95": [
+        -0.799354000000001,
+        -0.03250049999999938
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 17.5396875,
+      "candidate_median": 17.184333000000002,
+      "median_paired_delta": -0.3228334999999998,
+      "median_paired_ratio": 0.9812973146119301,
+      "median_paired_change_pct": -1.870268538806985,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.4506661369033242,
+        0.04435469640269307
+      ],
+      "delta_ci95": [
+        -0.6133334999999995,
+        0.007499999999998508
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.5396875,
+      "candidate_median": 17.1605205,
+      "median_paired_delta": -0.17214549999999917,
+      "median_paired_ratio": 0.9901198476679391,
+      "median_paired_change_pct": -0.9880152332060854,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.6806403044801863,
+        0.01667018173319157
+      ],
+      "delta_ci95": [
+        -0.4860205000000004,
+        0.0028329999999989752
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 16.983417,
+      "candidate_median": 17.184333000000002,
+      "median_paired_delta": 0.020521000000000456,
+      "median_paired_ratio": 1.0011787793058415,
+      "median_paired_change_pct": 0.11787793058415375,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.6844778908407196,
+        3.022681840378949
+      ],
+      "delta_ci95": [
+        -0.4748340000000013,
+        0.5037080000000014
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 16.983417,
+      "candidate_median": 17.1605205,
+      "median_paired_delta": 0.14887550000000083,
+      "median_paired_ratio": 1.0087022064529085,
+      "median_paired_change_pct": 0.8702206452908534,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.9978788032399941,
+        3.1388210060056654
+      ],
+      "delta_ci95": [
+        -0.35927100000000145,
+        0.5258955000000007
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.184333000000002,
+      "candidate_median": 17.1605205,
+      "median_paired_delta": 0.05925049999999921,
+      "median_paired_ratio": 1.003437472030767,
+      "median_paired_change_pct": 0.34374720307670525,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.2348517445349918,
+        1.2101841909868405
+      ],
+      "delta_ci95": [
+        -0.0391875000000006,
+        0.21179200000000087
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 2.1692295,
+      "candidate_median": 2.1983125,
+      "median_paired_delta": -0.04556250000000017,
+      "median_paired_ratio": 0.9787467348741936,
+      "median_paired_change_pct": -2.1253265125806386,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.172575078766583,
+        4.340499623040817
+      ],
+      "delta_ci95": [
+        -0.09333349999999996,
+        0.0932504999999999
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.1692295,
+      "candidate_median": 2.139542,
+      "median_paired_delta": -0.05729150000000005,
+      "median_paired_ratio": 0.9750841884304828,
+      "median_paired_change_pct": -2.4915811569517166,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.5279126413516937,
+        3.30314146835069
+      ],
+      "delta_ci95": [
+        -0.07764550000000003,
+        0.07177049999999996
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1692295,
+      "candidate_median": 2.1622915000000003,
+      "median_paired_delta": -0.0061875000000000124,
+      "median_paired_ratio": 0.9971129537573318,
+      "median_paired_change_pct": -0.2887046242668223,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.8822536171305035,
+        2.1174656580956963
+      ],
+      "delta_ci95": [
+        -0.06387500000000013,
+        0.048875
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.1983125,
+      "candidate_median": 2.139542,
+      "median_paired_delta": 0.024478999999999917,
+      "median_paired_ratio": 1.010734198464324,
+      "median_paired_change_pct": 1.0734198464324107,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.4061896320894745,
+        3.9783380413207503
+      ],
+      "delta_ci95": [
+        -0.09810399999999997,
+        0.08318700000000012
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.1983125,
+      "candidate_median": 2.1622915000000003,
+      "median_paired_delta": 0.05179099999999992,
+      "median_paired_ratio": 1.0242386562320136,
+      "median_paired_change_pct": 2.42386562320136,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.4365140437439665,
+        5.0860615801277875
+      ],
+      "delta_ci95": [
+        -0.09974950000000016,
+        0.11418799999999996
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.139542,
+      "candidate_median": 2.1622915000000003,
+      "median_paired_delta": 0.032312999999999814,
+      "median_paired_ratio": 1.0150387749199496,
+      "median_paired_change_pct": 1.503877491994965,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.4419582496578283,
+        4.153326826254244
+      ],
+      "delta_ci95": [
+        -0.0754165,
+        0.08654149999999983
+      ],
+      "bootstrap_seed": 18196330937311949155
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 25.666458,
+      "candidate_median": 20.6641875,
+      "median_paired_delta": -4.9002289999999995,
+      "median_paired_ratio": 0.8089951991139938,
+      "median_paired_change_pct": -19.100480088600623,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -21.05477932259682,
+        -18.502467838249647
+      ],
+      "delta_ci95": [
+        -5.474355000000001,
+        -4.634646000000002
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 25.666458,
+      "candidate_median": 20.8074795,
+      "median_paired_delta": -4.938895500000001,
+      "median_paired_ratio": 0.8046805639891044,
+      "median_paired_change_pct": -19.531943601089562,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -21.198986596514334,
+        -18.279235419997008
+      ],
+      "delta_ci95": [
+        -5.5018335,
+        -4.7036455
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 25.666458,
+      "candidate_median": 21.122979,
+      "median_paired_delta": -4.736188,
+      "median_paired_ratio": 0.8181443453079105,
+      "median_paired_change_pct": -18.185565469208953,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -20.245989685330745,
+        -17.274484990753148
+      ],
+      "delta_ci95": [
+        -5.1811454999999995,
+        -4.3735
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 20.6641875,
+      "candidate_median": 20.8074795,
+      "median_paired_delta": 0.04631300000000138,
+      "median_paired_ratio": 1.002243955979703,
+      "median_paired_change_pct": 0.22439559797029496,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.5253466541922611,
+        2.032718005475509
+      ],
+      "delta_ci95": [
+        -0.3222915000000004,
+        0.4181045000000001
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 20.6641875,
+      "candidate_median": 21.122979,
+      "median_paired_delta": 0.41031249999999986,
+      "median_paired_ratio": 1.0198962357174408,
+      "median_paired_change_pct": 1.9896235717440813,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.6576755724708394,
+        3.863889171727397
+      ],
+      "delta_ci95": [
+        -0.13489599999999946,
+        0.7953334999999999
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 20.8074795,
+      "candidate_median": 21.122979,
+      "median_paired_delta": 0.4458335000000009,
+      "median_paired_ratio": 1.0215457583835086,
+      "median_paired_change_pct": 2.1545758383508584,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.10451182786811453,
+        4.00390226220293
+      ],
+      "delta_ci95": [
+        -0.022625500000000187,
+        0.8143330000000013
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 2.404166,
+      "candidate_median": 2.267417,
+      "median_paired_delta": -0.15993700000000022,
+      "median_paired_ratio": 0.9328820111089541,
+      "median_paired_change_pct": -6.7117988891045925,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -9.78131101541786,
+        -3.86797390113951
+      ],
+      "delta_ci95": [
+        -0.23818800000000007,
+        -0.09166600000000003
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.404166,
+      "candidate_median": 2.2365,
+      "median_paired_delta": -0.16539500000000018,
+      "median_paired_ratio": 0.931006479090958,
+      "median_paired_change_pct": -6.899352090904198,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -9.757373617879372,
+        -6.025242001123832
+      ],
+      "delta_ci95": [
+        -0.2330000000000001,
+        -0.14656200000000008
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.404166,
+      "candidate_median": 2.2388755,
+      "median_paired_delta": -0.1928749999999999,
+      "median_paired_ratio": 0.919955970530523,
+      "median_paired_change_pct": -8.004402946947698,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -10.097086484948758,
+        -4.561773818979975
+      ],
+      "delta_ci95": [
+        -0.25106300000000004,
+        -0.10887450000000021
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.267417,
+      "candidate_median": 2.2365,
+      "median_paired_delta": -0.02520800000000012,
+      "median_paired_ratio": 0.9891469306036864,
+      "median_paired_change_pct": -1.0853069396313586,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.8575814467321714,
+        1.2087280707863801
+      ],
+      "delta_ci95": [
+        -0.06591649999999993,
+        0.02677050000000003
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.267417,
+      "candidate_median": 2.2388755,
+      "median_paired_delta": -0.04222950000000014,
+      "median_paired_ratio": 0.9813715652196406,
+      "median_paired_change_pct": -1.862843478035936,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.085570277751351,
+        1.897137772096591
+      ],
+      "delta_ci95": [
+        -0.13887549999999993,
+        0.041896000000000155
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2365,
+      "candidate_median": 2.2388755,
+      "median_paired_delta": -0.018874999999999753,
+      "median_paired_ratio": 0.9915393345942579,
+      "median_paired_change_pct": -0.8460665405742085,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.203268678710326,
+        5.12535163689638
+      ],
+      "delta_ci95": [
+        -0.09418799999999994,
+        0.11118700000000015
+      ],
+      "bootstrap_seed": 8423398762550598730
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 15.3151875,
+      "candidate_median": 14.7321875,
+      "median_paired_delta": -0.5681875000000005,
+      "median_paired_ratio": 0.9641237393494226,
+      "median_paired_change_pct": -3.5876260650577363,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.840901096043695,
+        -2.6291354683695256
+      ],
+      "delta_ci95": [
+        -1.2129584999999992,
+        -0.3997919999999997
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 15.3151875,
+      "candidate_median": 14.4835,
+      "median_paired_delta": -0.8845425000000002,
+      "median_paired_ratio": 0.9419595905302727,
+      "median_paired_change_pct": -5.804040946972733,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.801895778605061,
+        -4.834058603814162
+      ],
+      "delta_ci95": [
+        -1.2107915,
+        -0.7414995000000006
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 15.3151875,
+      "candidate_median": 14.427937499999999,
+      "median_paired_delta": -1.027209000000001,
+      "median_paired_ratio": 0.9319775327412989,
+      "median_paired_change_pct": -6.802246725870109,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -7.8826423692477725,
+        -4.784614057448289
+      ],
+      "delta_ci95": [
+        -1.250645500000001,
+        -0.7271875000000003
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 14.7321875,
+      "candidate_median": 14.4835,
+      "median_paired_delta": -0.19612600000000047,
+      "median_paired_ratio": 0.9867896102645999,
+      "median_paired_change_pct": -1.3210389735400119,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.6179856997674555,
+        1.650793183474164
+      ],
+      "delta_ci95": [
+        -0.3874170000000001,
+        0.23958349999999928
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.7321875,
+      "candidate_median": 14.427937499999999,
+      "median_paired_delta": -0.23172950000000103,
+      "median_paired_ratio": 0.9839942657466636,
+      "median_paired_change_pct": -1.60057342533364,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.983155763803913,
+        -0.03503120668013615
+      ],
+      "delta_ci95": [
+        -0.4586459999999999,
+        -0.009415999999999869
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.4835,
+      "candidate_median": 14.427937499999999,
+      "median_paired_delta": -0.0015000000000000568,
+      "median_paired_ratio": 0.9999081413872708,
+      "median_paired_change_pct": -0.009185861272920093,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.706384732276712,
+        1.6679278134969833
+      ],
+      "delta_ci95": [
+        -0.39508350000000014,
+        0.23725050000000003
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 2.3325,
+      "candidate_median": 2.2185625,
+      "median_paired_delta": -0.11514650000000004,
+      "median_paired_ratio": 0.9492239464541601,
+      "median_paired_change_pct": -5.077605354583992,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -8.347713905027476,
+        -0.24868596110221297
+      ],
+      "delta_ci95": [
+        -0.20152100000000006,
+        -0.0048954999999999416
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.3325,
+      "candidate_median": 2.2034585,
+      "median_paired_delta": -0.1467704999999997,
+      "median_paired_ratio": 0.937027084167484,
+      "median_paired_change_pct": -6.297291583251596,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -8.989983348140719,
+        -0.9606749255043345
+      ],
+      "delta_ci95": [
+        -0.21408300000000002,
+        -0.021938000000000013
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.3325,
+      "candidate_median": 2.249708,
+      "median_paired_delta": -0.12072950000000016,
+      "median_paired_ratio": 0.946080440701528,
+      "median_paired_change_pct": -5.391955929847203,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -10.72444028727546,
+        1.658054730918268
+      ],
+      "delta_ci95": [
+        -0.25893750000000004,
+        0.03747900000000004
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.2185625,
+      "candidate_median": 2.2034585,
+      "median_paired_delta": -0.04000049999999988,
+      "median_paired_ratio": 0.9822257696055335,
+      "median_paired_change_pct": -1.7774230394466461,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.9746124513672987,
+        3.413388158630637
+      ],
+      "delta_ci95": [
+        -0.08835399999999982,
+        0.07374999999999998
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2185625,
+      "candidate_median": 2.249708,
+      "median_paired_delta": 0.031145500000000048,
+      "median_paired_ratio": 1.0140415568322667,
+      "median_paired_change_pct": 1.404155683226671,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.672848129262839,
+        3.0483761998128855
+      ],
+      "delta_ci95": [
+        -0.060708500000000054,
+        0.06858300000000006
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "ptsans",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2034585,
+      "candidate_median": 2.249708,
+      "median_paired_delta": 0.020479000000000136,
+      "median_paired_ratio": 1.009421516789858,
+      "median_paired_change_pct": 0.942151678985792,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.566877878855068,
+        6.808666819950648
+      ],
+      "delta_ci95": [
+        -0.07856250000000009,
+        0.14551999999999987
+      ],
+      "bootstrap_seed": 7400798218329450662
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 14.8328545,
+      "candidate_median": 14.444708,
+      "median_paired_delta": -0.3748334999999994,
+      "median_paired_ratio": 0.9743253870129229,
+      "median_paired_change_pct": -2.5674612987077072,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.337767797836101,
+        -1.1105664607647947
+      ],
+      "delta_ci95": [
+        -0.6546035000000003,
+        -0.162666999999999
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 14.8328545,
+      "candidate_median": 14.628708,
+      "median_paired_delta": -0.44325050000000044,
+      "median_paired_ratio": 0.9697188326150272,
+      "median_paired_change_pct": -3.0281167384972774,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -4.53102421604914,
+        -0.24290970691706049
+      ],
+      "delta_ci95": [
+        -0.6875420000000005,
+        -0.03633350000000046
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.8328545,
+      "candidate_median": 14.401292,
+      "median_paired_delta": -0.5603334999999996,
+      "median_paired_ratio": 0.9625575309225243,
+      "median_paired_change_pct": -3.7442469077475726,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.863571198173001,
+        -0.25183774160015826
+      ],
+      "delta_ci95": [
+        -0.8949995,
+        -0.036728999999999346
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 14.444708,
+      "candidate_median": 14.628708,
+      "median_paired_delta": 0.1958959999999994,
+      "median_paired_ratio": 1.013924227682499,
+      "median_paired_change_pct": 1.3924227682498902,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.2744988150692036,
+        5.929708554731716
+      ],
+      "delta_ci95": [
+        -0.3238340000000006,
+        0.8659999999999997
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.444708,
+      "candidate_median": 14.401292,
+      "median_paired_delta": 0.0062715000000004295,
+      "median_paired_ratio": 1.0004483636974646,
+      "median_paired_change_pct": 0.044836369746459326,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.408381287859862,
+        3.0900050016733793
+      ],
+      "delta_ci95": [
+        -0.34845850000000045,
+        0.4420004999999998
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 14.628708,
+      "candidate_median": 14.401292,
+      "median_paired_delta": -0.1471044999999993,
+      "median_paired_ratio": 0.9897449990092055,
+      "median_paired_change_pct": -1.025500099079446,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.92424987268165,
+        0.9618761333316961
+      ],
+      "delta_ci95": [
+        -0.42727049999999966,
+        0.13685400000000048
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 2.2733335,
+      "candidate_median": 2.222292,
+      "median_paired_delta": -0.05249950000000014,
+      "median_paired_ratio": 0.9767673551798277,
+      "median_paired_change_pct": -2.323264482017229,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.882205315404108,
+        -0.9799622713266731
+      ],
+      "delta_ci95": [
+        -0.08783300000000005,
+        -0.02172900000000011
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.2733335,
+      "candidate_median": 2.2760625,
+      "median_paired_delta": 0.03224949999999982,
+      "median_paired_ratio": 1.0139890677014742,
+      "median_paired_change_pct": 1.3989067701474234,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.759543524742348,
+        4.727483372126584
+      ],
+      "delta_ci95": [
+        -0.08491700000000013,
+        0.1055204999999999
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2733335,
+      "candidate_median": 2.2873545,
+      "median_paired_delta": 0.01808349999999992,
+      "median_paired_ratio": 1.0082732582994713,
+      "median_paired_change_pct": 0.8273258299471342,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.5496575561490884,
+        6.47310198424873
+      ],
+      "delta_ci95": [
+        -0.0814165,
+        0.14414649999999996
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.222292,
+      "candidate_median": 2.2760625,
+      "median_paired_delta": 0.03662499999999991,
+      "median_paired_ratio": 1.016476729386552,
+      "median_paired_change_pct": 1.647672938655198,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.0459661111233864,
+        6.312737966286219
+      ],
+      "delta_ci95": [
+        -0.023063000000000056,
+        0.13858300000000012
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.222292,
+      "candidate_median": 2.2873545,
+      "median_paired_delta": 0.04168700000000003,
+      "median_paired_ratio": 1.0184683060283177,
+      "median_paired_change_pct": 1.8468306028317727,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -0.09388740476081736,
+        8.114820313306659
+      ],
+      "delta_ci95": [
+        -0.0017084999999998907,
+        0.17777050000000005
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "roboto",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.2760625,
+      "candidate_median": 2.2873545,
+      "median_paired_delta": 0.000875500000000029,
+      "median_paired_ratio": 1.0001849668134333,
+      "median_paired_change_pct": 0.01849668134332738,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -3.467542627544473,
+        5.305162293888999
+      ],
+      "delta_ci95": [
+        -0.08306250000000004,
+        0.12497950000000024
+      ],
+      "bootstrap_seed": 13902075736394794915
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 22.4037085,
+      "candidate_median": 17.376520999999997,
+      "median_paired_delta": -5.243062000000002,
+      "median_paired_ratio": 0.7644671642278245,
+      "median_paired_change_pct": -23.553283577217556,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -25.286519423625865,
+        -20.746609871831968
+      ],
+      "delta_ci95": [
+        -5.886458000000001,
+        -4.639563000000001
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 22.4037085,
+      "candidate_median": 17.3393335,
+      "median_paired_delta": -5.170167500000002,
+      "median_paired_ratio": 0.7687781348392547,
+      "median_paired_change_pct": -23.122186516074528,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -24.617038735940334,
+        -21.58534411768951
+      ],
+      "delta_ci95": [
+        -5.7140629999999994,
+        -4.817103500000002
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 22.4037085,
+      "candidate_median": 17.3557295,
+      "median_paired_delta": -5.3596255,
+      "median_paired_ratio": 0.7603726041701694,
+      "median_paired_change_pct": -23.962739582983062,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -24.79696475819555,
+        -21.45295925662233
+      ],
+      "delta_ci95": [
+        -5.6826455,
+        -4.765750000000001
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 17.376520999999997,
+      "candidate_median": 17.3393335,
+      "median_paired_delta": -0.08831299999999764,
+      "median_paired_ratio": 0.9948984141132013,
+      "median_paired_change_pct": -0.5101585886798654,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -1.920574904767458,
+        2.5433492248334133
+      ],
+      "delta_ci95": [
+        -0.3419369999999997,
+        0.4296665000000015
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.376520999999997,
+      "candidate_median": 17.3557295,
+      "median_paired_delta": -0.25043749999999854,
+      "median_paired_ratio": 0.9855128201915813,
+      "median_paired_change_pct": -1.4487179808418738,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.8432719249834593,
+        2.9658791702020126
+      ],
+      "delta_ci95": [
+        -0.49535399999999896,
+        0.500270500000001
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "first_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 17.3393335,
+      "candidate_median": 17.3557295,
+      "median_paired_delta": -0.003853499999998178,
+      "median_paired_ratio": 0.9997826422035698,
+      "median_paired_change_pct": -0.021735779643017317,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -2.1707598233718706,
+        0.7001228768716672
+      ],
+      "delta_ci95": [
+        -0.37812549999999945,
+        0.12068749999999895
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "prior",
+      "n_blocks": 12,
+      "reference_median": 2.520292,
+      "candidate_median": 2.3814585,
+      "median_paired_delta": -0.1347505,
+      "median_paired_ratio": 0.9461496782783434,
+      "median_paired_change_pct": -5.38503217216566,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -11.704695364071105,
+        -0.8435181450096363
+      ],
+      "delta_ci95": [
+        -0.2981665,
+        -0.020624999999999893
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.520292,
+      "candidate_median": 2.3581045,
+      "median_paired_delta": -0.18272899999999992,
+      "median_paired_ratio": 0.9289318745461361,
+      "median_paired_change_pct": -7.106812545386387,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -9.676717766094212,
+        -4.412311240871714
+      ],
+      "delta_ci95": [
+        -0.24291700000000005,
+        -0.11022899999999991
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "master",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.520292,
+      "candidate_median": 2.3845205,
+      "median_paired_delta": -0.12516649999999996,
+      "median_paired_ratio": 0.9495808515255918,
+      "median_paired_change_pct": -5.04191484744082,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -12.788186364631448,
+        -0.7871329964005969
+      ],
+      "delta_ci95": [
+        -0.3285625000000001,
+        -0.019292000000000087
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "updated45",
+      "n_blocks": 12,
+      "reference_median": 2.3814585,
+      "candidate_median": 2.3581045,
+      "median_paired_delta": -0.03541700000000003,
+      "median_paired_ratio": 0.9849571943445915,
+      "median_paired_change_pct": -1.5042805655408498,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.377995421852599,
+        3.535214644825313
+      ],
+      "delta_ci95": [
+        -0.12902100000000005,
+        0.08420849999999991
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "prior",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.3814585,
+      "candidate_median": 2.3845205,
+      "median_paired_delta": 0.0011039999999999939,
+      "median_paired_ratio": 1.0004597405832278,
+      "median_paired_change_pct": 0.04597405832278412,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -6.406143347133309,
+        10.314723996863773
+      ],
+      "delta_ci95": [
+        -0.15233300000000027,
+        0.23685400000000012
+      ],
+      "bootstrap_seed": 1812024596969256872
+    },
+    {
+      "backend": "winit-femtovg-wgpu",
+      "font": "vollkorn",
+      "metric": "search_frame.render.thread_cpu_ms",
+      "reference": "updated45",
+      "candidate": "final",
+      "n_blocks": 12,
+      "reference_median": 2.3581045,
+      "candidate_median": 2.3845205,
+      "median_paired_delta": 0.04162500000000002,
+      "median_paired_ratio": 1.0180194441090336,
+      "median_paired_change_pct": 1.8019444109033556,
+      "ci_independently_checked": true,
+      "pct_ci95": [
+        -5.566233793572883,
+        7.01471407952754
+      ],
+      "delta_ci95": [
+        -0.13437450000000006,
+        0.1598949999999999
+      ],
+      "bootstrap_seed": 1812024596969256872
+    }
+  ],
+  "input_sha256": {
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/summary.json": "93239420ef99118059f16e2f282c6064a317af5ce7904e825fd3e7401a6ea07c",
+    "alustin/analysis/summary.json": "0b1392b6b1c557ec954747ed1889da1cd9eebd1ba80570fb2b80575db84fe9d2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "92087c19d489ee7449a552ad79ea48417a97d6d40a3fedf16d9726e03b43a44a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "f1ec830252c0175cae9be43345939a09dafe5f4b400720422320a28f1f438ff6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "453ad6a9e3e89c9b42e9d49e71dbcad7e9d7282c053a84d35714aa9d7bea693c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "b73b155986689e990e82ae1aeecb16d77f90ec7d00ff70e08dda840f99d03775",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-vollkorn-attempt1-master/summary.json": "46e0e475e4f09bb89ac90c850b7d84fc8bf75087b9329a88885876cd43afc89a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-vollkorn-attempt1-prior/summary.json": "f815d778cbee8eddca6b500294b66fd65eb3e1080a707981c65e924fe2e23944",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-vollkorn-attempt1-final/summary.json": "f3b5dc1bb484d6a906fc739e33a080c031b6b172db586e90acf37f330a58b9b6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "7a5bfa16f3011c22cd2d2502dbc8267b401e9afe9837ffdb69c397a7e69532e0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "28ac45927f8da9a3d7850e308d6ac5c8fdfc227258f019a7c6373a8d9ca9f006",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "3a3ea67600df3baa0e182d9a8f0cfb04801023ee20cb9fac3f86ccca10cb3085",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "deb8f0ac118a062ce1d39be633da641dfcd909cc2a4f53154caa36816f0941c1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "96f68f4f0cde58164b754b3073102c001c6a652256b4160618cc4e480f51a436",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-ptsans-attempt1-master/summary.json": "4314ed5bf3321eca7a297e7af5561d75fe2506507aa05f0cd0f2d14d03639333",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-ptsans-attempt1-prior/summary.json": "125854bc1bcac9a19ba1e0a9b44e80c6dab763f134153b4bf2cea4def6755c50",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-ptsans-attempt1-final/summary.json": "ebeea85470c4af9bb523ee5ed85e04d200b5318ad967396d7d1ea3ec17140625",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-ptsans-attempt1-updated45/summary.json": "4b1bf6ed1ddb9fe17dcb992c9a42f32675c5b68fae7c8e2e1cca8b598008f482",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "e9bb534d2773227b431624995bb92b2d80c3a409f1fcda85c83f2775026c9067",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "40e1eae48b6812f9b0dc900c0f059b5935e4815b44dea74d4870c6ad369ce89e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "ff19cc57b76699aee1e7cdcfc89f31bd04880ff8f6ba29cba2218776ed81c3b4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "3c7cd82d8bef64ce930f9bc61c60783d577fb574d181f111bab54f56a17e13c6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-roboto-attempt1-master/summary.json": "9fe5ebd052e29659a2addd2e0bb28184e44379281d2ce6300ab1f25f5fcbaaf4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-roboto-attempt1-prior/summary.json": "dfc45416e24dc5b91d0df310992b654a34963639540c904d8bbf39c6b3b7c0c7",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-roboto-attempt1-final/summary.json": "86da57de01749e9c985cf2afc0587715111eba4688ebebaa00f199a6a4720027",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/01-winit-femtovg-roboto-attempt1-updated45/summary.json": "52e9027d431e5d4622afdf57ada53b5202aa1d406fd39c0a78dab847ed899856",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-vollkorn-attempt1-prior/summary.json": "ab8ae9160a5dfde2cf4fbee5a59c3f7bad82e2b03b36cadf14e3e9fe06745c2d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "65082e9afc7b46c85aebdf348fbab952198a761534722946d42537657b42c9c5",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-vollkorn-attempt1-master/summary.json": "41c827faa737e2cadf686e207a163b66de7f06f32dd7f452a091d81a050307b2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-vollkorn-attempt1-final/summary.json": "3e0eae91cbe082ea80a23f64065813f59c6c65a2f07ffe6311ce80a135f174c7",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "63268b0424bca2711c3b22afd02fe8e0c468d26add72dc5ad0521bf8a46d98d5",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "f147b2b8b395bbdad3b722def176d90660ce38ca1a627a6faa61fd00bd35e581",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "3d1d699d7168dd790349438655839f06edd6195e728f8f26c49b48f8fe6d94d8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "c839409c44f3087f775ab7ae2219b5848d4229d08ca9afd56a03e7872a6936d1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-ptsans-attempt1-prior/summary.json": "4a14493c8081bfd84afc613ebeaebc17852cae036454232c11099294a0e23ace",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-ptsans-attempt1-updated45/summary.json": "f2d75ee11886d8b3dfc51b42fc83848fda6d0600f2728b2ada8cb50cb1c9536c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-ptsans-attempt1-master/summary.json": "71c480c238af723dd70268ce4c7e149139b07876ac99485ddc00920a20ce7961",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-ptsans-attempt1-final/summary.json": "4afe9f8bdc09b6bf34d512e44b7b8acc1b4b1e3fd83ce95c0598c550144c86e4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "d68ad072a34c435273154067424a39eb1c7a2acbe3408aeefdd863ce5f61938a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "23ca47029fc03b6c9dc87db31a74e162600c3c88cd4a8edd09dd9584f62582e0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "e4089d50cd0b3ab678ec92a2e9b003926279a61b9cab9dcfbeaccbdfbf31c41f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "22972d25630b2f975b06e50e2c457cfa77352f836c2937dba8bab095980fd3da",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-roboto-attempt1-prior/summary.json": "c68f6b1c704c95d63c85d8c41ea38b160dea3bc317776ffe812a1abcd90c21e3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-roboto-attempt1-updated45/summary.json": "e85527e1884b40a6501fe3bb8feb7798c2ad391a8e1f426f5aa071b08b747228",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-roboto-attempt1-master/summary.json": "841baba3b44830469cc01ffeab4e0690700f3a8ffe0ae1c3681cdd7e5a102bf0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-roboto-attempt1-final/summary.json": "cef3bf82b576b4237d9c1bb5e9177f067e869c25588f4000c24e3ade1a87bbf7",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "9ece39cedb93034d815a26bccb278857e0d386cbc9df81ca077dda7104b4268d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "3486d153bd23a69091b1c7899fd1acbaad0292128540a771b93cc88ad52b2e33",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "597627b7a840192c46376d565dfc69d1e61d01cf4d0d81e66e8ff6117776a379",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/02-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "43b78aebd0e193efd63bf59fb6cc55156a85ea006504cdbbc3d2549dedcb324f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "62868cead4feb92ac6678c007e73d01053f04ab30f620284d17c9ddfb8f79b7b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "03cfe2dabab34247af59225b17227c8977a942eebb6ec910ef1ae82cc852daa9",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "c012b181a97322919a952208581f38b5d992c02698717c265851e0dcac2faee1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "8e1ed24b4f37d293f567c0c185f97d97d1afcd7a0471b6ec7553578b95557326",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-ptsans-attempt1-updated45/summary.json": "e641301518e2b98e13eec2d406453dc37cd7e7e004848adf7d73c95ec4cb8782",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-ptsans-attempt1-final/summary.json": "e3c05b76a3da909371e85226df22a039c34f8e204dabf43b8bc10cc99c1dd2ff",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-ptsans-attempt1-prior/summary.json": "f8b0f3c6e245881715969bbf0bc22726e34163f6c15969d1e051198f1c6c10b6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-ptsans-attempt1-master/summary.json": "d1327806223d11f7b07dfd9a63efac7c2cdee684bd8ca8f7251a310d94473d3b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "c19d823f3d2e41d9311dc4c753f7b2559345d0bd8918d801c56953e81750c1f9",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "6b04dc9eaa8b41bd0177b293d10da445028582a322c7179df6f9d36699e9faad",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "550f7d579dbe7a7b4b0c620ce3b61199dde4b5f85932edefd67de1a625577990",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "715c40ab2c2c3db2e156eea10e4e345a1b91e52188b5c1968860e36543476880",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-roboto-attempt1-updated45/summary.json": "9911f41a4abe38ff769b64d211cc93a386fe0367b9e542bd7c819021a6a29ec1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-roboto-attempt1-final/summary.json": "78d89baa604b37ed3a31fdc8ee402e6e3a072051c4d061bf0e85262a2db8fb2c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-roboto-attempt1-prior/summary.json": "f7be79692f38986ed02879ce86dacd9e08d14e9fa565307d86f59969982fff41",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-roboto-attempt1-master/summary.json": "4752b6df07450501ef8bdfa0faaef522c2ec7f42f112e569f6ec9aea69e1c7f3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "0b7dce97952fe8555d127bf0a7cdc80fc50f148b069cf7b9263d9c5354a9173f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "99a27d9600603489a06d4e60ea9fad74d6071a3863c1705115cfa57f55d51ee3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "62ea1de4d0c90c204f44901437fc5923c9c19eb90af313021016231180e380c3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "34ddb17444843c0e1a7ec53d467f5c26c50bd1ac869240aef67c3f15bbdbd324",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "26f0cae9b16396397f383235dcf6721a812805acfc5f119e591fed26119bd306",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-vollkorn-attempt1-final/summary.json": "c4d1d7d7901f4dbeeb63298c5d1070406fb7ab9b4183c956f5895fcdf6cf6e5d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-vollkorn-attempt1-prior/summary.json": "f60969802ee37b57566f411251a7d19d1a7fcf8a9e5f3e07c2c4454087dabf1c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/03-winit-femtovg-vollkorn-attempt1-master/summary.json": "da39d22dbd326c13ad34b2a6b2397d193277e963bfcbd4d1c62d96e8779fd128",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-ptsans-attempt1-final/summary.json": "b9f9ec2ca44b12dcd7e545d08c555e37f7784c7b766334458f8dfb948ad29c65",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-ptsans-attempt1-master/summary.json": "263cfdc281e96a1f3e91bf5913f7672fc55ea435477385ec23fc5e857aa06e6e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-ptsans-attempt1-updated45/summary.json": "da4f2e2dfd9485045aa2b662be6bbcdf0d4d54195ed188b88b57d0ae69dc1204",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-ptsans-attempt1-prior/summary.json": "c9fa492d66dd3ba9069a15ce09f0cdc90df2191e60f986d4c49418e5e10cdaa8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "0fb54de739917fa8b0c89ee22afa2d15ed60ea6c0a6777ab86a75e15dc34b666",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "ac2e1e67133a77ccc55e7a409e03d315f3675526fa169288d1c0cb7ad0ad2a4a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "351789881eb7dc898ab9c20c9226aa8409564140a88eeb235d7fffaf7037383c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "2f65fdce653233b2fe45eb91522ffbf9c79a5d61dec41311e0b02d06fa6c015d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-roboto-attempt1-final/summary.json": "6c3950484099e287e559cfb8731807671a7d03686f16baafb582899522fd10c1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-roboto-attempt1-master/summary.json": "9a87974fec53ed6b50b1f91e1713fedc0d85a8932d3aa69e1fed335f4a08e563",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-roboto-attempt1-updated45/summary.json": "f2af7f4eda2caf83978349f221a4ec3a274a31c51ca59beda7a53dbe5218e2dd",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-roboto-attempt1-prior/summary.json": "c8242fa6e4a9a8b6f486860f844d3df8d1b5027774413e0059a6d1856020d402",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "4fcbe968078947923c5bd88cda3db337bc8976340fd0ce7ae1df254870601c60",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "74799230eab78bdf1b916186fca9973c1c3858eafa395fa694e03f30129e80a8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "f039e46c5dc18f174000265e3a01ef8ec9c22a140c1997ab4b4b211fe0ce5e92",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "f8d0ed8404b9dd81335ddd52599c7790c95f835a3cb221f79ec4fea7af6ca628",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-vollkorn-attempt1-final/summary.json": "392fbaf605f3a0df104a7b8d6491979b5bc57082d5edcbb786eabc67abea8c65",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-vollkorn-attempt1-master/summary.json": "9a5530e757c3d9a06ae6c40b15ffed728ca9d9a32874725e721dbbf6ff796dc8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "ce582fcbc533378e421c1db052cdf5cca5ac4e60a0e2398b3eda329d7f3cd672",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-vollkorn-attempt1-prior/summary.json": "d19ca5a025b6efd4cea888cb5f352bfe934cb834feaf690ec34d3eab98fb76eb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "5b61cd8be8612ab47e90dfd3204f7350930fa5738ab7466514cb482d631a08c5",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "28f4312c9726fea8610b976037f4d86cec6fc57fb38095d67821890ff5b4cf0d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "d71d914e4ea22f1d43610936227dd7647842b3de4083c9d7e39d9e3667cc2fa4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/04-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "e683ae7e3e803fe6580d0332a42b5745ffafc90007d45d1a4fd470af5231cdcf",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "6cd4c8e53cb6ed4fc9c8d0b6a76efafd69a76dfeaad3ae9c73fd698bac945c68",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "34131a4ca15975909abfd942a701b92ab5ceea1a098f204f4f0507345abcc1a9",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "481095f7b0ea02870f232f501a94c8cc2952be56bd57e93e0505e6e9e9630d69",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "a1f285ec3dacf63dd7c06a3224859ed5ea8dc874b39fd884dcfb1f41ce30a34e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-roboto-attempt1-master/summary.json": "721f916692e9a7dcc95a4dc7047469ba63777b90d1fa8fc9eaac15567ca995a1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-roboto-attempt1-prior/summary.json": "8cf9d4d260e4f6176d0eb9c73777d961864e456c101ae1f2cc5219d1bdd3d04d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-roboto-attempt1-final/summary.json": "fa6a123db33d87edcca7367018ff22aba8d21948531539279bf69091f8e1cbb9",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-roboto-attempt1-updated45/summary.json": "4857eb68454d9669a688fb2d706ccd944a52b0ae9a8d0e8aca79317967b2462c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "9bb19e9bc76b4bf670eb77a7924a46aa10aef7b41f55e4288436721c23bfe5de",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "b2a3a1c33341b965ddf525ffe5492c85e5a2074e695f88453181e8308ac9ba8a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "bbd9b1e2cca2daf3e18f58e4679531d482cb354ba20e120a176e8b04b2657b83",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "719c34c827fcf442a0227d2a697f6004dd0323110affbdf48cffef9b75afce87",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-vollkorn-attempt1-master/summary.json": "2dbac4acaff7ad28384b87b5d5281a3e0402b0a1c4b736df058bcfde7d648ba1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-vollkorn-attempt1-prior/summary.json": "2e00153d6207d4492cd6c4708040bcae4d96a064ebe72c84026ee7ea8e8038b6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-vollkorn-attempt1-final/summary.json": "52a72bd126f5cb1962bb36e2b5415dbde56b5d20d1aaf1aaa9b2f723b9927537",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "187940d9d0e5ab2a94d42f74a0d81bb349dd930ca31d98992863af3fdffd0c81",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "2915dd34d9203f47cc6524a021d7692f8e7b4ac297634a5a26cca21f9f14adbe",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "1cc1019289e7d53adc1e2390090261aca44d8dbc7cb38790cb5cfd07b7e37311",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "ec89d6fd7cdcf2139c00387bf2a76323b1b52508fc94e7658dfb5e511b1a1927",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "83ba549b8f2705576e7e8a797667d28c6ccb5dfb7a51c9195b9f247ce3ddc7e9",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-ptsans-attempt1-master/summary.json": "39202b0c966db8f9d96be0e34bfe47dca4c13d4dbf2b053b660e817cdd8114b4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-ptsans-attempt1-prior/summary.json": "b2b5237e588165e1af75f652c32395014d43e1daf16673ad2c096713d8c5244e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-ptsans-attempt1-final/summary.json": "89647262120b61c17056287fa3c8bd62d9d0eafaa99d91632dd2cd663b8f2f25",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/05-winit-femtovg-ptsans-attempt1-updated45/summary.json": "c061790dc243f2537e29416f2e6fb1c8bb80225e4aee738bc24229adc090271b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-roboto-attempt1-prior/summary.json": "3fa5c60c5310ba2be7679324c9acf865560757f522de56eb853e09afa5739d60",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-roboto-attempt1-updated45/summary.json": "fc5a13dfe8bcc20906e525e817cc12ccd1c5d9c5aac9bc9b813561e9144471cc",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-roboto-attempt1-master/summary.json": "70811aa0b34b215a911d9021bda60c6f4dc421fd992aa937266cc4ee0636f8b4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-roboto-attempt1-final/summary.json": "8d7243ae5caf292d4c1f8d488106a58b247efea1cca3a5dc0a1262de493a6835",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "5e520e15b816d8fbd7ba059d205441a7334f96889df7dfd881fc49ba51c6a819",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "5ecb71ad4df4b2c359cbd8cb4bcbd1aa7a2d12d13b5f8a60f241eb85cf6c6555",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "7bfe520a5b14be0e82ac08a28784f651902f011b2d972cc97f2bd67e9993f507",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "2e067916967681f26967240fa3bc53d254adcf970a29ba84f41f14750cfbe307",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-vollkorn-attempt1-prior/summary.json": "bb9fdcfd798816114f5b2a5270fddb2401e559f85a3d484eb98e8f3a17b97cab",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "864d92a348a03591f9a84ab6e0675d46410bac61091d703d8b207bad4ad3df02",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-vollkorn-attempt1-master/summary.json": "e883448414e6da6bd9a1db0ae0fb12438ded76dc9fa824ae26429bd4307e82eb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-vollkorn-attempt1-final/summary.json": "d91389a21e00dc8e049d632d39818c2c78a8876dd54ed4e8c6df9f6a5fb95835",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "e3abfb22166354976323ce2776e9131ed534f2c20f42acfba732b22f64fd2401",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "085ef0fef20f0a4800e1b4335f4758bdc0bb61f37c8705064237cdf8847eb2c2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "d3f5306625995bedcb72dcacc94b2621fdae6b12230e16ab2c1d975063f07b2c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "40a55c8ebb4d2c2bf1199120014e2053fb121f95bd8e9127cab71d0b2df7a05d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-ptsans-attempt1-prior/summary.json": "21b9ca291bd0cfa3fcfd459dee9489c013eac933b486ec63857c4ec04d9ad0e9",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-ptsans-attempt1-updated45/summary.json": "cbd7974ad0dad6d2f2dbb61351be7a294b72262c7c67e3b1f039961b5ebdeccb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-ptsans-attempt1-master/summary.json": "06acf90c4fc2ea50245f36edecd80279cd2a707d2a2976bcda3261073b5f3a3a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-ptsans-attempt1-final/summary.json": "ebea563f88d27a23c84cf533e2304b1a4fed488723b94bcbad3aa422ba969bec",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "740efbead62bf19eab4765a3ca5a53f72b59e26d095db08c88eaffb7b033843f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "f0a8f06dc73ceb1a6033ac19b7b782e9d5a098237d65e6eb6a5f34d9b33480c0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "6ef68b419d5d1337c172e9c22120733f21cf90b8520c8f6350558761a78faa08",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/06-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "5e3aa2f4902569eb42f23c5ec3fdc40f3d00434ab35df3217f6fbd67a1fd051c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "e144f4b9db2e58ec466c5561875dfb8a17e993f57893da950c493c30f4a1eb06",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "d586de0d0507a954f0e26f54696e7b739913275d527d5cbe1528cb8a1df2a7ad",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "35fa563d0ff977ac784cc5eaf82ef43f9ad2d316952d60911fffcf1f639a1b70",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "647b4da5c68617ebb9202e773a9b1afe6e06e33dfe19c6fea626b0e9ef276ab8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "c65e24c0541e899abf504643fbab077c7096e0b0dee150f201d694bd3c18d1d6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-vollkorn-attempt1-final/summary.json": "c95a716fdc71e367e0c111fd21d11481e662a206100f7487dfb6a9e8e9065d6c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-vollkorn-attempt1-prior/summary.json": "e61dacb6f8bdf23a6de1d174f721ed10236bfca4de5aae85b63188a255195fb2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-vollkorn-attempt1-master/summary.json": "4d79b2ca90956392f1e0b2a8560f3096f4361544267a797dafad8947b3fc7849",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "73706784ea7242b37ceefa66144dc252fe8f6a329e7d53d7f51202319c959231",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "8a5940ed5055e2ad3c4c6ea270e54f606819becc484b92b0a613e5a8be55543a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "651b6228008d1dd6e48816e1fbedbc2b59ed37c369e2f39505a1c8972bafffdf",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "dd8140d737d49efe835e876f81f30a8960dda10ad1e4906932b2295c36699bca",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-ptsans-attempt1-updated45/summary.json": "fcf4f3463efad15afd1a7efb6a380ecf3b24a83f3c58b012d602f62c9bf6a49d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-ptsans-attempt1-final/summary.json": "5900a9b8826ad2b345b5edf9c4faf0df1aa20b2c908d170424a7d8d07266d75d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-ptsans-attempt1-prior/summary.json": "338a0f043f676bdd2ac454e2190b0c8748ffe4d203ac300462ac6850e257013e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-ptsans-attempt1-master/summary.json": "65720a7d3f70c06c031c37cb9359ec3355b27e8153619289ad51f4a11537f6ba",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "504cb3632bb2ec30d4010ec11c6015baf4b2a1af4c543d6ee165f62ae3f31107",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "3e503f3f2936d2407aa49ee7385ec526de83c0c97609bfa1c84d19cd125150ba",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "31585cbe308791c83e04a7928876e9e36c74f0903c42742b1620241a44924b6f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "fa6a6bff790470e4a444094ff32c9889f25a439b365092d7c80594d84a3fd5dd",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-roboto-attempt1-updated45/summary.json": "a80efff7abc0f9d2282abf4e325e755a61e07ee1a2eb2454e3247f986b3f5b7c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-roboto-attempt1-final/summary.json": "070db7074fdb366de556bcc809d0469684d270f7e8f5ea2cfa64df8a72d474fd",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-roboto-attempt1-prior/summary.json": "85e622f21b8c146c591371b8a6e645445e8823db13b9db0316d4d8a4d8cc1db8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/07-winit-femtovg-roboto-attempt1-master/summary.json": "f9733a550e821bcca00150f5e44eab91f4bd1a864bdf9701a26b401edde27ffb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-vollkorn-attempt1-final/summary.json": "7cbfc0eddba23b09d3626450bbb638ddfc24ac1d90f46607087db9400886d339",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-vollkorn-attempt1-master/summary.json": "434f3cd6635b8c899abdf07604db03ccad545e9d8a536a34942a15e79bec7cb1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "6bb44c82a529512d41ac3ffb22193d6b9dfd909b7b4155524e01d23e902db3c8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-vollkorn-attempt1-prior/summary.json": "56363f27f74413f662b98b96af43bfef33d63f5870e87acc94043ed4c5c6e26c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "d5eb47c42360e988a9eb38797df30bd5c4f5cef003b2c413ed3edbf41f93d20c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "5ada60f5f9e1df55de9e4261cf4e03d810de1af869f1aba5bc414147b85ace40",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "6330a6c19d626d7e0d060a9acab637ae3d0b942ebfb32f47fa3c772cab419145",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "ff793ff1b45c2b6e2e06009bfd7e2c77b1fdcdd166ba66b880a9d8e0bf02d63c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-ptsans-attempt1-final/summary.json": "ec2d62b12003241b1f152719aa03464ac9bdc129c812ff4a0c9946ed2bde3fa5",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-ptsans-attempt1-master/summary.json": "80afb37a545d99cd0f68347684899d1afcec3627c16cd670bb0d723bab6f90d7",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-ptsans-attempt1-updated45/summary.json": "563133b4694768a2ece01aabbc7d89e5b58f3ad62f8c98aa2d3fc71f81d2e372",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-ptsans-attempt1-prior/summary.json": "178ec83622a08164f6b6a58bd47740a6995d616e27661e5f3795f17d5af689de",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "522b3c84f92fe9349073204c4d66f5a574863e694d442cc3ef3c286203f14cfb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "8bd518ef3892f38eaafde0c14a92547260e5af7e1c44ea8c33a332323e14cb34",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "d261bb90bbf9f6b9ed17aa068a922708d7141f10fbd032b4e5a800162fee3d7d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "d7c79b2bb413e12994adebb48abd0dd0069ca408c603d77c2b76beb12dedb925",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-roboto-attempt1-final/summary.json": "2a80f4e0db5a1a15ebf4107991da5c5837f5c5e16ccc0d4f914a4062fb0bafe2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-roboto-attempt1-master/summary.json": "d4fad67ab272aa434089c4547c4b6da73a9bd76422470d8a5e36465e6adba661",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-roboto-attempt1-updated45/summary.json": "3779faf98b37d7ce12871f3331ebdc966dd6935babffb24fa32daa95d4a8ee0b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-roboto-attempt1-prior/summary.json": "9a7e25ed5c57c3ec26bb8cb5d1ad97b35061e269fb71212121275ebe7bb5b820",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "798da068e05e92bdb72c471a63580908a51b30786db2aa9fef42c58a7cf5c166",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "534a631cc96b7d97ae13b152471a2f85f55ba2525cd5f4e90187679b63f3227d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "c88b885684aa874e7003730211454d56cb4ab0ef37147e6814d8c46af7c37a67",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/08-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "a0241bd63cb09fd3b51cdbea97b9763dbbc7d84da1db3bcdcf318c88bf17ca67",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "3c4e5b29a708c1017c1278573197c920c386ac323999c580a5b57eb845cce2cc",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "7b24ace60d6c81cc831cdbf306be1c2b7a07b6a90413a559fd27aef0792c5b13",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "ed5dcd6039e495afc1bfe18be20e4a2fa95f13dffd01639051563c4315374969",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "db85bdbc6020b263877406c50939889d018bbe042e177493215f0503e8e4ec68",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-ptsans-attempt1-master/summary.json": "d04a75deaf731860e87e7a793b6fd0df43b70aec7bc794d102d9f28fc3c8d7b0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-ptsans-attempt1-prior/summary.json": "6d99460f9d1606f3869e04abdd8ff6cebb7d13a751cf5fb7e0cc7e1901bc60ad",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-ptsans-attempt1-final/summary.json": "044daa6aeddc261f1c50f99ead0cfa80337851778ce82e22296bf9ddd67d82ca",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-ptsans-attempt1-updated45/summary.json": "ccd187c805eecfe7e2c5d83ac712e3d1c0576e30e1ad49dc5efe6003eb2a5507",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "d3c783a1ece7336fcf1e4f7c3ee62425f74d88d84f6a0fb9c0866b4d7e386a61",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "a71b219ff93d94160cfb82565b9f7f7f373785f8858aae1fca0703efbd0dd53c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "fcb3526bc8b3ce22fda708a4ce966467e95319ba5605d0896bdc6543a208b40a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "3d20a955a738ddb5a8e0774ec54d977e02026801d45d88d5d1d2c494e2343f01",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-roboto-attempt1-master/summary.json": "c13610915a7a00149d6dbf306532be2f073cff37dc004c2487edf9838efebd14",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-roboto-attempt1-prior/summary.json": "ca182404671a0e5af1551a5963c644ec3b8d08e6a19805fb82f66e333c93c487",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-roboto-attempt1-final/summary.json": "2b4712d9d6c4695430a8f5fcd215426893eea48dbbc645a70c44e9a2af27daa5",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-roboto-attempt1-updated45/summary.json": "081bb3317bcd4e892885b709ad94ec232985fa6973a612e59a88b1ab5aaeea4b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "6e979bbdcff7ebc83cc3f2e4d5bebb646387950a1f1785d977657c903559dfad",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "cd266f1d957790f77fb90cead9274eb0aee2c05d10722d31cfe33d48ea81187b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "1779d522e961b07d06b66f9d8edeae74d83a94de82ec77fca7cf133589aeddd6",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "8b30582d84f18847ae1b583daa994499c47c6a457e925ecd53758dce86693d39",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-vollkorn-attempt1-master/summary.json": "4a3b5f7b4559cd917bdc171c17bd20a0a09cbdd2cc17fe2c43067416e2477c1d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-vollkorn-attempt1-prior/summary.json": "76ee852dca0b29b1ee7cddfe14089ecf18eb936b0cce8189b3474933d3968e11",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-vollkorn-attempt1-final/summary.json": "ed069418f35fa5503a684217096e0ed774a8a16d9fa19552ce43bf9767e8ee61",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/09-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "50ac412231ad7ad8e559185b7e080e462781e3f6fd74dfa36596319f4d0ac6dd",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-ptsans-attempt1-prior/summary.json": "e16d9116dd487c96ecf1796264de0c9c6fe878f1ee5304b04f8b5f35da5e737f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-ptsans-attempt1-updated45/summary.json": "c5f871f8e12446b7dfbdcbf8f9165e9e153eab00dfe645227d69c2ffdc3a5af4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-ptsans-attempt1-master/summary.json": "c636921128dfa0f70f92060334f67a75b04e2eeeb6df618ceae87cd707437c69",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-ptsans-attempt1-final/summary.json": "9d908516cc5904518dce71c3e80708ccd5828e3365a65ac8dd80f4d064ca72e8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "649ef8d07d79c7bdfc0d8d4d23ed4587cc3873c4a3050b9c05c8bb9cbfade024",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "b1981cdfbc844a76521b13c827f735ac58a07c33ee68fc0933a31ac1278bc65d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "d109b224bc58bd63ee1d3ada7f707f5991dc1ebe2606c73e19c855f399be49ba",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "01ead07cf87b0baf5adc24c41e3b5111757ffc824708f193da8248a28c35383f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-roboto-attempt1-prior/summary.json": "16b083e4d0319302e8ae6938f0fe9aa0ed315c5a8a008c786a4cbdc4d78220c3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-roboto-attempt1-updated45/summary.json": "b16faa482d13c6b5a5a97b657b297c72af935eabcbfadcbe238204782d9ad35e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-roboto-attempt1-master/summary.json": "36a9473fe79973e709165a03cf38791256e6d9c18f1693600cf17a8e65fb7039",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-roboto-attempt1-final/summary.json": "278af5d6fcb9602954a0753df065ce7524e9a99abf78819388911ebda703010f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "98941805679730dd65653299f0d1df0f4b26bbd2ddb37cbfc0a53c254802c14e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "da414b576165823eeb774555f2c6313ab7d93e8b15dd9dd7aaa7a16fd6a2403b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "ad279b631d0f3354176d4a0e5dc4e01455c97cee7c43e742c8e04ec3c7a12f10",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "f08058f4de0834ebf8ecebabec8bdf1257d37161166330f9b55b3ce389fb62ec",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-vollkorn-attempt1-prior/summary.json": "1aad08a407e8369825b558221083acc960c17f42d7ca895a87990ccc4dbc104d",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "596547cfc5fa671604578fe2a47ed8bc3f9d10caa3f9a0bb06641896083abec1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-vollkorn-attempt1-master/summary.json": "b01baa081f23a3aee323a273322a211e5b406debb900919a88a75e723582cd25",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-vollkorn-attempt1-final/summary.json": "385b265f4a05dc93f0547f2265621b91b8a1ce0d8d0b656a56aaf7d753fdc15c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "b84e1e8d41d9159507202347b8980da1ba43506381f67c59e7c9824898eda5b2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "6cdc0bcdb6de3498d006b284de58468b03a96ddc2330ebd80df99e0b0b96778c",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "968e05d2464929032a79a343cc1deaf19dc60d4ac77038a1a7ba4a31746a6dbf",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/10-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "334dffcb67d3154ff666a5fd00b8133cd5092224481947ee5db32ea079146bfb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "3881c92cedcaaf8ab68f19ddd879d7550814ebed8725befe62991d3aa2ae6901",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "3077f42252eb677e020842df45aba0cb85dec0afd05680d7440b4c0964d45ace",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "d620b959a2038939aa968a6ed60169d31fe5afd6f3049e403103c473b90ff819",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "bc3e5d05b9b655b55a541a25f437e78b5512638026a5e0e74c6208c862384741",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-roboto-attempt1-updated45/summary.json": "b8a63ef56a1b8fc0a1af6bdb0fe2f37d4e914c0b685c1ed80abb469f7303c393",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-roboto-attempt1-final/summary.json": "4740c8748a8cfbc86901dd1976938b101b0abede8d4f660604318aa812e920b2",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-roboto-attempt1-prior/summary.json": "d103dd0bab7004c97afb280aeb74fc9c36b61adf811c83513f10c0753ff395da",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-roboto-attempt1-master/summary.json": "34742a7d0edcfc97027c5056b1b41a29c3b636d32b9ae745207c79ef0ae5d079",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "dd58c020c149102aa0c654669dd24e85ebcfb715ebfbd858f760cf20d68a8d13",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "a804e36bcc7db0fb29f6e5ad31b9423489979773b6ea2f836f6c3c4ebef99a11",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "93f4aebb9af84d80f7c2e362dd2bde62f947abb8906f691a7af17cfa4e19872b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "147524dbb92d358b32e46d14c756bd6be89072b161228a9ea9aa996b0c7cf969",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "291e62fa97cfafc0598e951e0a8e3c9823031f8637267fb1c0eabb2a99055299",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-vollkorn-attempt1-final/summary.json": "b99c5d45e3ef9e5442c0176894e1302096a02421448998cee7278708ae3709be",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-vollkorn-attempt1-prior/summary.json": "9d42f7014ef109d29bd18f4542cb48afa4618bcdde8e2b4561044c4d92d254f1",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-vollkorn-attempt1-master/summary.json": "48e09062af04296c72faa3e0ae6fc73a9cf2fbc2d8d1556e05d129ee35af9169",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "5a9fd5dd17ad0768def5325f1adcdccd7bb559ea97101b1ce15771eb018b46e3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "1180b4d697e510c121a4c3994bdb3da22c9214559d1d292e6ee7a6fd03a916d3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "a7cda08c5096f1305112e7d64b690a39712b6b3ae373f3c38ba9ce19e2712e0e",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "a8d96c5576f32bc4757d365aa3038d401c91ddb66851222409c84a4fddd8fa53",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-ptsans-attempt1-updated45/summary.json": "0111c48d20df49ecbf6a704a371104f5164a7319a77b9fa57105aa8d9919d09a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-ptsans-attempt1-final/summary.json": "dc53811cac67439b1c7b9e5d6d294f0dc294cd24f361df939aa41ab0a9b958f0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-ptsans-attempt1-prior/summary.json": "f5ea9251a8fa9c16cb2f8faf1e2c945b95a730ca0762ad8734753038f7b1cad5",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/11-winit-femtovg-ptsans-attempt1-master/summary.json": "428a75c3675f1a3e02b65a21cb376f3c02ad6c99166da89be627ef8639094878",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-roboto-attempt1-final/summary.json": "a04308404634fff7c7f08d64f9cab850f25dd044e364933673ca9cf57a2f760a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-roboto-attempt1-master/summary.json": "81c862bfe672f4cbf216b20c59076c7a2a3cf6a2a64858d8706f84f8213ac0b3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-roboto-attempt1-updated45/summary.json": "8cad41f3b9c01b822d25d4686dbebae3376168cec971e2394d8db53dc8546ba4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-roboto-attempt1-prior/summary.json": "9616008a731feb47a4665edac3261ceb235a3a53378d74a31824201c4e9504cb",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-vollkorn-attempt1-final/summary.json": "ba4f935dbcf17e92e66472fd476c3834c3b6fb6f8dac624b31b9c0e49c994282",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-vollkorn-attempt1-master/summary.json": "4cb2811c60d981925f996b8455bb36221572918c12f247c557950042fc7df24b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-vollkorn-attempt1-updated45/summary.json": "a2d4bdfc3caceb2ea9769e3bffef95099760db3cb2a8c60630b4420bedee0b68",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-vollkorn-attempt1-prior/summary.json": "e08aba09d350e9f6e0d567df93844bf70ef790c1811a41a8585830cc9570be5b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-vollkorn-attempt1-final/summary.json": "0954c099cedb62342266f4023fa727484ed5a59c0c168ef1b4310ce0daeff583",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-vollkorn-attempt1-master/summary.json": "925a0b7125e604b0556b0691cffeb88ea37b38f1589c5f814d11a164114c885b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-vollkorn-attempt1-updated45/summary.json": "f79d1f058a09d21a75214fb044c3449f207eabb59bc6fd1ebe45c32a7fcf7f9f",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-vollkorn-attempt1-prior/summary.json": "44cc92ba95404130af7b45f2e029667fedecd908a3761d6d85f7e7998456ecb4",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-ptsans-attempt1-final/summary.json": "9756929e2450fecc8709c5a3d64dcc616a09ccb27419dbbf19e99957f01b4ad8",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-ptsans-attempt1-master/summary.json": "4beaa0d96a74302de5af0b0064b182607fa9d3c05b12594f7b513e68760ef0c0",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-ptsans-attempt1-updated45/summary.json": "f5d0daac274ba5527f5d12a325e319eaa2476c7d3ac549465d88d7291d8fa153",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-ptsans-attempt1-prior/summary.json": "4835b45bf2a4c6996d303ffeabb51bec68ebe0cd2cfb3ceb9a1ecc86aae61679",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-ptsans-attempt1-final/summary.json": "6333da4c0b6866a5fe2e5dc3e53010a1d1187b48c99265b51ab660f9eb2cef37",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-ptsans-attempt1-master/summary.json": "1808a2ef4a6164b3707c480d1e513b069ad12d2e69e8147d86a155a10303ed56",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-ptsans-attempt1-updated45/summary.json": "58ac9e20bdea25f5aaf6df7c80640121e96de6218aae3521c192e3bd2e7771cc",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-ptsans-attempt1-prior/summary.json": "97e4d44678cc79cb24dfff51b36cf0ab6f88c8bac88db4bf1080f5b2a1d929db",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-roboto-attempt1-final/summary.json": "a8de93f74d21db4026aaf63106c53984634fe111a7821c83d80d2f0409f1a68a",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-roboto-attempt1-master/summary.json": "635399f4778b4604ab510387156912f51c13a2c1f03f1e7507a7b84ba71a0a69",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-roboto-attempt1-updated45/summary.json": "1d74a1d59eca2169172dcbeaa424624731161f6c96f5407ab12a369045c9450b",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/alustin/cpu/12-winit-femtovg-wgpu-roboto-attempt1-prior/summary.json": "592055ab2ecf8c1ef70ca44af367bbe8c7e82b4db9a2287d1140d0aea95f5c52"
+  },
+  "binary_verification": "Executable bytes independently hashed",
+  "auditor_sha256": "8d958ef93dd1aacfaec738448383ba2c378403f9c06b462266c485703547d0cc",
+  "math_helper_sha256": "22cf6d84f117e65a2b67ad61d02f5872a5c3e99239443ff16bf09abe6a9413c1",
+  "scope": "Unique raw renderer frames enclosing first/search markers and their unique renderer-thread CPU amount counters; all accepted variants paired within the same round/attempt; retries independently require raw query contamination. Deterministic whole-block percentile bootstrap; exploratory/unadjusted intervals. No runner/analyzer imports."
+}

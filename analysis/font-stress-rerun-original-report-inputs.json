@@ -1,0 +1,180 @@
+{
+  "complete": true,
+  "files": {
+    "/private/tmp/femtovg-font-stress-rerun-20261002/FONT-STRESS-RERUN.md": {
+      "bytes": 9677,
+      "sha256": "73c1cc72ff96a0559fbb320af53e3e3f5594053838fb0d6bcf2ac76b2d136d5c"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/SUMMARY-FONT-STRESS-RERUN.md": {
+      "bytes": 1646,
+      "sha256": "4bc57d08dbf06f441e6148027211dfd16149e8583b20b06b7c45cd80d618f271"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/alias-provenance.json": {
+      "bytes": 1850,
+      "sha256": "ede207b46a8d6f74014bf9092aa030b2cfe0732765167f471dbdb93c00df1c64"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/analysis-inputs.json": {
+      "bytes": 2328,
+      "sha256": "503c247733ce9b76fef2e0bcc3df3a3ed279b50c7afda11340a0a0671df1bcf5"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/bootstrap-indices.json": {
+      "bytes": 2999967,
+      "sha256": "7673f8a4982af9ae0e4cbcf82fdeaccd7fa6749b5335475c1902115e4729dfef"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/paired-processes.csv": {
+      "bytes": 1453375,
+      "sha256": "60a8d34a302af7b2a708e9b5583b79ffd68a51cd74162441b020a624e61b7f12"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/primary-table.md": {
+      "bytes": 1462,
+      "sha256": "424a162afbf4319eb88235f457089582fe0ff7cba5eb74bbb36c5849a48a3116"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/raw-audit.json": {
+      "bytes": 609703,
+      "sha256": "9bc5f5faf15545299c0ff53c3a28107c88097a324002b13726bb7d2819831ed4"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/summary.csv": {
+      "bytes": 298441,
+      "sha256": "6694bbcd1fda644cdc43e15e21e789d2881ba99b7ed34051e2741245d59fe50d"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analysis/summary.json": {
+      "bytes": 1004660,
+      "sha256": "b32d1aba6270c50d919a5112988e3b275d047a7a9a0ed567e5841ecc6a2e62b8"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analyzer.stderr": {
+      "bytes": 647,
+      "sha256": "af25ee45196f999d49c0c47028a92298a50f5c89d1bf5a262627c20e90dfc8bb"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/analyzer.stdout": {
+      "bytes": 116,
+      "sha256": "c375a1166a27c8186153e775fae7fd4518025bfca5d0276ff437e03a31eff2ca"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/compare_confirmations.py": {
+      "bytes": 12328,
+      "sha256": "9cb6c54951f4d8b3bc93a66347e93ff1bfe4afe89588909ad9fcba5022214c3e"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/comparison/COMPARISON.md": {
+      "bytes": 5450,
+      "sha256": "81debced45e1c5f9827da94fd2038183be67bbea0e1484fff1f149669f340d2c"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/comparison/comparison-inputs.json": {
+      "bytes": 2656,
+      "sha256": "43a9e2068d3283d704d18f9d181d69a44e459782cec044c4cf388cb9ec8ac305"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/comparison/comparison.csv": {
+      "bytes": 474143,
+      "sha256": "d72e6852753b79933009e7e4f5c12bca43fb5e3bcb7c646197b04d49435bfaa5"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/comparison/comparison.json": {
+      "bytes": 1726030,
+      "sha256": "35de4d4926ea7ca0b219f6a91c3c1ce41979bc6c5c1caed53548cc28dfd063e6"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/confirm-cpu/cpu-provenance.json": {
+      "bytes": 3208936,
+      "sha256": "5c384c78c12cdcc3b79f4b7694803083b5b0b8aa27d36ee31fe03e2b48af4f7d"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/confirm-gpu/gpu-provenance.json": {
+      "bytes": 2066008,
+      "sha256": "6c2e450c52625646534ba444f4c7ce2d4406bb0d274a244777a4439f9891f82a"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/current-workspace-identity.json": {
+      "bytes": 442,
+      "sha256": "04879ef797b375e49497243cb21a91cacdfe3411d6dac5e81463dda76e236697"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/demo-selection-wave2/ranking.json": {
+      "bytes": 13782,
+      "sha256": "d27f844c3c9451beea8fc340c807a1bf2033ee4f185353a9583ac3f23969b5ba"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/demo-selection/ranking.json": {
+      "bytes": 13714,
+      "sha256": "a796464a265911d6fc4d51e4b8a01b8fd174d32c7b8afb8f9f1986766542e29d"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/font-candidates-wave2.json": {
+      "bytes": 7494,
+      "sha256": "6a3541f131a54c669eabd196531250d468794b8efd033d0c4b89340a0ab79f6a"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/font-candidates.json": {
+      "bytes": 7593,
+      "sha256": "e891ba83a51d320003757cf7c791e285b39ad3cb9a9f4ae6557f8a85297516ff"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/generate_rerun_report.py": {
+      "bytes": 19266,
+      "sha256": "4ae9d1fff892ccf3ae4ce5da3f0420bbec2db2d768455ef51209830fb780cc69"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/hardware.json": {
+      "bytes": 618,
+      "sha256": "5824187345bb2e8d9443ce38ae5febf78dbb044989fc066c4f583a392d549810"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/independent-rerun-audit.json": {
+      "bytes": 1154,
+      "sha256": "6878781ebcbd05f056d88c9589d2de1083f9207a36c16c9568c69bcdc9b83a40"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/native-screen-wave2/batch.json": {
+      "bytes": 40347,
+      "sha256": "f4523f7634991b1e64de51ca1ae5c93143d45152e9ffff3b0f2125384da7f80f"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/native-screen/batch.json": {
+      "bytes": 39645,
+      "sha256": "916edbff565103218e8eae6ceb9416585294666f1b3b978e101fe216ebf2eb7a"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/rerun-context.md": {
+      "bytes": 1342,
+      "sha256": "9217d4af058d24a8111143195d3b03fdeb936cd99ca7b02b182a77872fc8aca3"
+    },
+    "/private/tmp/femtovg-font-stress-rerun-20261002/selection-frozen.json": {
+      "bytes": 3260,
+      "sha256": "845ab9c0d043c526dc8ca2f34419fcb11cfad9bca0a22b67295ef7c7fbc2c5bd"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/analysis/raw-audit.json": {
+      "bytes": 610287,
+      "sha256": "47d2273f288ea2f9de1e509e5de71256b67f78452459862535c9f081a920451d"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/analysis/summary.json": {
+      "bytes": 1004154,
+      "sha256": "1e8a10fa03c8480db90a9806af8c91b41a1fedd9fc53b159d35846e98fe2a978"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/analyze_font_confirm.py": {
+      "bytes": 37902,
+      "sha256": "0ce8ba540bebac34c4930bc2d7b283794c63ad1e116a0ed5b615b225f71c08f5"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/confirm-cpu/cpu-provenance.json": {
+      "bytes": 3209513,
+      "sha256": "aa17483fc8d142a98e552bc7b5765ae68d8be7951ccadffb48e558c133226a8f"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/confirm-gpu/gpu-provenance.json": {
+      "bytes": 2066585,
+      "sha256": "d0bc86e61b6e7c7407752cf40604eddfb08bb085d4653437da06ac3167f97ee2"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/controls/Vollkorn-Medium.ttf": {
+      "bytes": 428384,
+      "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/rye/Rye-Regular.ttf": {
+      "bytes": 183244,
+      "sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/fonts/upstream-agent/DoulosSIL-Regular.ttf": {
+      "bytes": 887828,
+      "sha256": "cc89b87c047bcc8dc00246398218bb6343e0f2372b153cf560c29a77f27068ef"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/independent-confirmation-audit.json": {
+      "bytes": 1154,
+      "sha256": "0e57479d347050f369c2bb9ccebbb1e04e3f91d61c4c7cfae88171b47b042cc5"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/pixels/pixels-provenance.json": {
+      "bytes": 386518,
+      "sha256": "3fabeda95b509a8c4b3feba01c68264ebb881bbd264167fc619a770127e01407"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/replay_campaign.py": {
+      "bytes": 23468,
+      "sha256": "6ce05139d7deeef1c04077d2ee9775fab7faa89556f7e2fe5ae408e7d3a8db98"
+    },
+    "/private/tmp/femtovg-font-stress-search-20261002/selection-frozen.json": {
+      "bytes": 3260,
+      "sha256": "845ab9c0d043c526dc8ca2f34419fcb11cfad9bca0a22b67295ef7c7fbc2c5bd"
+    }
+  },
+  "generated_utc": "2026-10-02T22:08:55.276416+00:00",
+  "generator": "/private/tmp/femtovg-font-stress-rerun-20261002/generate_rerun_report.py",
+  "scope": "Render completed original/repeat estimates and independent comparisons; no new estimator, timing or exclusion; original reports are not modified."
+}

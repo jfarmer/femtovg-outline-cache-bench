@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "scope": "Independent reader correction only; frozen timed sources, binaries, inputs, selections, collectors and raw rows unchanged",
+  "first_failure": {
+    "command": "default independent reader on en/ko/zh",
+    "exit_code": 1,
+    "exception": "AssertionError",
+    "line": 191,
+    "assertion": "Raw row tuple did not match reader expected order at trials using sequences 4 and 5",
+    "output_written": false
+  },
+  "readers": [
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-cost-screen/audit_cost_screens.py",
+      "original": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/cost-audit-reader-correction/audit_cost_screens.py",
+      "original_sha256": "b0f062f500ac1a89d7990aad3f5ed9fbd66b755034070d2f3a4e1c79dc124dd7",
+      "corrected_sha256": "e77cb6d8e9c45261d66748d4ae2d6e1edefd19107f7bc2e8470e296cc6011475",
+      "changes": [
+        "Expected order indexes all six Williams sequences instead of four",
+        "Per-kernel trial count uses prepared_hinted rather than legacy native_outline"
+      ]
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/mechanism-weight-cost-screen/audit_weight_cost_screens.py",
+      "original": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/cost-audit-reader-correction/audit_weight_cost_screens.py",
+      "original_sha256": "a5981eff7122b0953b44e5b84bab94e0d173ab8272a700d7e3c20b11b04704ca",
+      "corrected_sha256": "9681ec879efaef96df67fc639bd8fc786477343cca87762fa17beb50d6c5b53f",
+      "changes": [
+        "Expected order indexes all six Williams sequences instead of four",
+        "Per-kernel trial count uses prepared_hinted rather than legacy native_outline"
+      ]
+    }
+  ]
+}

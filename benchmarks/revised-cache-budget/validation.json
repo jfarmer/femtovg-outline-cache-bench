@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "complete": true,
+  "reproduction_only": true,
+  "validator_sha256": "eb2b3dbdecd147520a81f4c3592b374808a41ef8bfd8d512b3fe35e0d54bb5ad",
+  "driver_sha256": "0d9f25b7a236b72837e9b9a44da185fe5c6b899fd54c57c992b33e536397e25e",
+  "adaptation_sha256": "47bd121a80ece8bc53fafa3d176e8e1d40cd9aa24ef6d244f3986553e73d2a4d",
+  "measured_lock_record_sha256": "c8d48d1a7672ba18fe7bc4cd9fc55f512289e1092a995efc817fe59742bb7b87",
+  "prepare_command": [
+    "python3",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction/bench.py",
+    "prepare",
+    "--output",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime",
+    "--source",
+    "master",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/master",
+    "--source",
+    "prior",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/prior",
+    "--source",
+    "updated45",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/updated45",
+    "--source",
+    "final",
+    "/private/tmp/femtovg-updated-cache-bench-20261002/runtime/core/snapshots/final"
+  ],
+  "prepare_stdout": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime\n",
+  "prepare_sha256": "6928404075bb697f8abf14f7e3ab8df76af091e65bfc2d5920b23d8341932f9e",
+  "validation_runtime": "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime",
+  "unchanged_functions": [
+    "analyze",
+    "files",
+    "graph",
+    "main",
+    "once",
+    "parse_rows",
+    "percentile",
+    "run",
+    "sha",
+    "write"
+  ],
+  "changed_functions": [
+    "build",
+    "prepare",
+    "verify_prepared"
+  ],
+  "runner_and_audit_sink_byte_identical": true,
+  "eight_exact_measured_locks_preserved": true,
+  "metadata_checks": [
+    {
+      "kind": "timing",
+      "version": "master",
+      "lock_sha256": "73204ee945e5f7b9a569b4ce39296ca6bd9d2beee9da2665a9f30bf4e093ec78",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/timing/master/wrapper/Cargo.toml"
+      ],
+      "metadata_sha256": "16e904840181c31145aef06ce42388539a0ec848fd5eb44fb1f29ff97639780d",
+      "measured_metadata_sha256": "31052bab86da831a029880526adf74be928e5e218908791c412f61d6ef271171",
+      "full_graph_sha256": "f27eb9eaf696f5f46915408fd8aecc9152a08c0056ad01e4cb7951561c0d2226",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "timing",
+      "version": "prior",
+      "lock_sha256": "a69621f0ba064bf5b134338af07a372fa6423090cb8e7e568593ddc7d2737edc",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/timing/prior/wrapper/Cargo.toml"
+      ],
+      "metadata_sha256": "22b40a484898783019a1faf2aeeba282d10cf69d3287d971dd23cd89a7b89748",
+      "measured_metadata_sha256": "427513855bf3881aef7d0219a28e1ffc560a4732b4406434aa28ad9984bfcb2e",
+      "full_graph_sha256": "f27eb9eaf696f5f46915408fd8aecc9152a08c0056ad01e4cb7951561c0d2226",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "timing",
+      "version": "updated45",
+      "lock_sha256": "9f8ed6f3758c393958cb6f424c15b5daa0e3e2637615e3dcce04f6475998a795",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/timing/updated45/wrapper/Cargo.toml"
+      ],
+      "metadata_sha256": "f9f9b4eb39c4f42f6dcc298540b95f969f5d3d4ea301f97c6f4af2602aa92b4b",
+      "measured_metadata_sha256": "d2346b4b9ba8f4c9e85546b7b5b2255fd1f06cbe32da13d13e87351ede181645",
+      "full_graph_sha256": "f27eb9eaf696f5f46915408fd8aecc9152a08c0056ad01e4cb7951561c0d2226",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "timing",
+      "version": "final",
+      "lock_sha256": "263e1a40a16372d8a68be1d408ac96b54538673fc09c6ac7850d23be9930cfee",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/timing/final/wrapper/Cargo.toml"
+      ],
+      "metadata_sha256": "45d9c549a8920c11e19dbb26734d076944e6c10ab0dc4f7b26dfca08493ef23c",
+      "measured_metadata_sha256": "2d64e7835c2ac116fe8bd58838df602cbd1cdd312458808a25d2e17e5d8ef07b",
+      "full_graph_sha256": "f27eb9eaf696f5f46915408fd8aecc9152a08c0056ad01e4cb7951561c0d2226",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "audit",
+      "version": "master",
+      "lock_sha256": "6189c99acc88c3ec4dd3bd77add4b04864981190ceaa72a98ff490f9f030107b",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/audit/master/wrapper/Cargo.toml",
+        "--features",
+        "audit"
+      ],
+      "metadata_sha256": "9eb4bd2796da1cca7cba6b8001e178224617cf534bb2bd2654f2b0814b8f2581",
+      "measured_metadata_sha256": "88fa780e38e1f11601e2fa601740ea45e59ad61eaa6ea0cf7c46eafff921ae20",
+      "full_graph_sha256": "1bbf6159099d437c80be0a939c54ca9a2418e9235270fea32c31c25c32d0c677",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "audit",
+      "version": "prior",
+      "lock_sha256": "6083d688bc2ff50316770de3f25f0d23b44911fdd9088f01e6609ed3b294bfbc",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/audit/prior/wrapper/Cargo.toml",
+        "--features",
+        "audit"
+      ],
+      "metadata_sha256": "f173b05ae9a879e82a059db566eb5870b961f62428ebc894ac0aaa4e664ee5ca",
+      "measured_metadata_sha256": "c892a229f640f664b1dcbc07c5ac95695d0920f115c99e108c2a6a67a573f3d8",
+      "full_graph_sha256": "1bbf6159099d437c80be0a939c54ca9a2418e9235270fea32c31c25c32d0c677",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "audit",
+      "version": "updated45",
+      "lock_sha256": "295e8cdb0f3bc4190ac56345db9bdbd914ba70fa7ebccbae3a383b5fc9e9e5c4",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/audit/updated45/wrapper/Cargo.toml",
+        "--features",
+        "audit"
+      ],
+      "metadata_sha256": "cec2e26895c393ed2f7b8e9e668296b98451cbc6f5afa96726cfd0ccbd638aaa",
+      "measured_metadata_sha256": "2eeb8b22d5e437cc34a8f5d58d2b1a5b4e2ec0bcca4446e2621e6aeb58db25ec",
+      "full_graph_sha256": "1bbf6159099d437c80be0a939c54ca9a2418e9235270fea32c31c25c32d0c677",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    },
+    {
+      "kind": "audit",
+      "version": "final",
+      "lock_sha256": "913473fcd34944ab685162bdc6c3f596605e253ce738d0433c9930d0a546497a",
+      "command": [
+        "cargo",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--format-version",
+        "1",
+        "--manifest-path",
+        "/private/tmp/femtovg-updated-cache-bench-20261002/budget-reproduction-validation-runtime/audit/final/wrapper/Cargo.toml",
+        "--features",
+        "audit"
+      ],
+      "metadata_sha256": "aa0d585fb68cd2c0d3c8a5d569628d7fbe48fd9ec0781feaaa1026b875e146f5",
+      "measured_metadata_sha256": "a7584316f07b0e619f8adc273d802fa4d6ee61a2e651e6cf3a4fe502e3f48123",
+      "full_graph_sha256": "1bbf6159099d437c80be0a939c54ca9a2418e9235270fea32c31c25c32d0c677",
+      "nodes_including_wrapper": 58,
+      "matches_measured_graph": true,
+      "lock_unchanged_after_metadata": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "case": "missing prepared lock",
+      "error": "Prepared measured lockfile missing or changed: timing/master"
+    },
+    {
+      "case": "changed prepared lock",
+      "error": "Prepared measured lockfile missing or changed: timing/master"
+    },
+    {
+      "case": "missing measured input lock",
+      "error": "Measured lockfile missing or changed: audit/final"
+    },
+    {
+      "case": "changed measured input lock",
+      "error": "Measured lockfile missing or changed: audit/final"
+    },
+    {
+      "case": "changed lock provenance",
+      "error": "Measured lockfile provenance missing or changed"
+    }
+  ],
+  "original_measured_scripts_and_independent_proof_unchanged": true,
+  "measured_independent_proof_sha256": "97b5dbc53709abcabd183d7dcc1561cb7a8ebe1093802a8bb512eca6ad188be1",
+  "compilations": 0,
+  "new_measurements": 0,
+  "scope": "Fresh preparation plus eight offline locked cargo metadata calls compared to retained measured full graphs (origins, features, renamed edges and dependency kinds/targets, including wrapper edges). No Rust builds or benchmarks executed."
+}

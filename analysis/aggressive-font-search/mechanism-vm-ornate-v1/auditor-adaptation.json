@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "original_auditor": {
+    "path": "/private/tmp/femtovg-cjk-font-search-20261002/supporting/analyze_mechanism_diagnostic.py",
+    "sha256": "22c434fda74efef405e98700603e762f4851680c8e21141da9790f7413a6b921",
+    "bytes": 13600
+  },
+  "adapted_auditor": {
+    "path": "/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1/analyze_selected.py",
+    "sha256": "abd54eeeef17e0e4101e12303adeaf8418e1295a5f3852f3ba523e55c73207a3",
+    "bytes": 11178
+  },
+  "literal_source_edits": [
+    {
+      "old": "lines = [\"Dynamic TrueType execution diagnostic\", \"===================================\", \"\", \"This is an isolated count-only diagnostic, never a timing result. Instrumented\", \"Skrifa 0.44.0 was copied under this study; production FemtoVG, Swash, and the\", \"Cargo registry were not edited. Only the dispatch loop and a counter API were\", \"added in the private copy. The unchanged-reference package and counted package\", \"use identical drivers and pinned dependency versions/features, separate names\", \"and separate targets. All 560 ten-phase native alpha cases match retained\", \"screen counts/digests; hinted and unhinted per-glyph geometry hashes agree\", \"between unchanged and counted builds. No VM execution errors occurred.\", \"\", \"DPR2 values below are medians across five logical sizes of the per-case mean\", \"completed VM dispatches per unique glyph. Builder Font/prep dispatches are\", \"separate cold preparation counts per instance, excluded from glyph counts.\", \"\", \"| Locale/profile | Font | Glyph dispatches | Called fpgm dispatches | CALLs | LOOPCALLs | Builder Font | Builder prep |\", \"| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |\"]\nfor row in sorted([row for row in overview if row[\"dpr\"] == 2 and row[\"profile\"] != \"ascii94\"], key=lambda row: -row[\"mean_glyph_completed_dispatches\"]):\n    lines.append(\"| \" + \" | \".join([row[\"locale\"] + \"/\" + row[\"profile\"], row[\"font\"], *(f\"{row[field]:.2f}\" for field in (\"mean_glyph_completed_dispatches\", \"mean_fpgm_origin_dispatches_during_glyph\", \"mean_call_dispatches\", \"mean_loopcall_dispatches\", \"builder_font_dispatches\", \"builder_prep_dispatches\"))]) + \" |\")\nlines += [\"\", \"These counts explain why whole-font stored bytes are a weak predictor. Rye\", \"and Vollkorn execute thousands of dispatches for each selected Latin glyph,\", \"including calls into shared fpgm functions. The Nanum programs cover a much\", \"larger repertoire but execute only hundreds for the sampled Latin/Hangul\", \"glyphs. Gothic ExtraBold has substantial prep work, which occurs during\", \"prepared-instance setup and is reused by Swash; it is not repeated per glyph.\", \"Noto SC and BabelStone execute zero glyph VM dispatches here even though\", \"their outlines still require decoding, scaling, and rasterization.\", \"\", \"A dispatch is not a constant-cost machine operation. PUSH operands and code\", \"scanned through skipped branches or function definitions are not additional\", \"dispatches; instructions can contain internal point loops. Twilight/storage\", \"copies, scratch initialization, allocation, parsing, variable-outline decoding\", \"and mask rasterization remain outside this count. Font geometry, program\", \"operations, declared scratch sizes, glyph reuse, and workload all matter.\", \"All per-size, ASCII94, opcode and origin details remain in JSON/CSV/raw files.\"]\n(out / \"dynamic-instructions.md\").write_text(\"\\n\".join(lines) + \"\\n\")\nfor path, expected in checked.items():\n    assert sha(path) == expected\nassert tree(Path(prep[\"original_skrifa\"])) == prep[\"original_skrifa_files\"]\nprint(json.dumps({\"complete\": True, \"processes\": 28, \"matched_native_alpha_cases\": matched_alpha_cases, \"vm_errors\": total_vm_errors, \"output\": str(out)}))\n",
+      "new": "Historical narrative omitted; final guards/completion retain fresh three-font scope."
+    },
+    {
+      "old": "ROOT = BASE / \"mechanism-diagnostic\"",
+      "new": "ROOT = Path('/private/tmp/femtovg-cjk-font-search-20261002/mechanism-diagnostic')\nRUNS = Path('/private/tmp/femtovg-aggressive-font-search-20261002/mechanism-vm-ornate-v1')"
+    },
+    {
+      "old": "run = read(ROOT / \"runs-01/provenance.json\")",
+      "new": "run = read(RUNS / \"provenance.json\")"
+    },
+    {
+      "old": "checked = {str(ROOT / \"prepare.json\"): sha(ROOT / \"prepare.json\"), str(ROOT / \"runs-01/provenance.json\"): sha(ROOT / \"runs-01/provenance.json\")}",
+      "new": "checked = {str(ROOT / \"prepare.json\"): sha(ROOT / \"prepare.json\"), str(RUNS / \"provenance.json\"): sha(RUNS / \"provenance.json\")}"
+    },
+    {
+      "old": "    reference = read(prep[\"native_references\"][launch[\"locale\"]][\"provenance\"])",
+      "new": "    assert sha(launch[\"native_reference\"][\"path\"]) == launch[\"native_reference\"][\"sha256\"]\n    assert sha(launch[\"native_reference_stdout\"][\"path\"]) == launch[\"native_reference_stdout\"][\"sha256\"]\n    checked[launch[\"native_reference\"][\"path\"]] = launch[\"native_reference\"][\"sha256\"]\n    checked[launch[\"native_reference_stdout\"][\"path\"]] = launch[\"native_reference_stdout\"][\"sha256\"]\n    reference = read(launch[\"native_reference\"][\"path\"])"
+    },
+    {
+      "old": "assert len(all_rows) == 28 and matched_alpha_cases == run[\"original_native_alpha_case_matches\"] == 560",
+      "new": "assert len(all_rows) == 6 and matched_alpha_cases == run[\"original_native_alpha_case_matches\"] == 120"
+    },
+    {
+      "old": "out = ROOT / \"analysis\"",
+      "new": "out = RUNS / \"analysis\""
+    },
+    {
+      "old": "sha(ROOT / \"runs-01/provenance.json\")",
+      "new": "sha(RUNS / \"provenance.json\")"
+    },
+    {
+      "old": "\"processes\": 28, \"matched_native_alpha_cases\"",
+      "new": "\"processes\": 6, \"matched_native_alpha_cases\""
+    }
+  ],
+  "method": "Original dispatch/origin/opcode arithmetic and native geometry/alpha/source guards retained; fresh paths, six-process cardinality and final native-reference bindings explicitly adapted."
+}

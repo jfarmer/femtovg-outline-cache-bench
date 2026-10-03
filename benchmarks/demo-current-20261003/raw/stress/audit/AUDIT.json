@@ -1,0 +1,3618 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-03T16:24:39.358834+00:00",
+  "audit_script_sha256": "889b4e114f6571f3fac58c529fab2059b7f152fce7d41302f85cdcaca0a5ddb1",
+  "provenance": {
+    "pin_sha256": "b38713d1ec0940e6b3ad62f3b3e5b707ccef8db85fb23f4259f7368c5b5617b4",
+    "final_runtime_identity_sha256": "4a42b03bdbe625ca869f1495232af4e8913ca30897fa2a116151f2dbc180a94c",
+    "master_commit": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+    "final_commit": "b87a94ddfba46ee67ca35ba240104615ac1503d8",
+    "variants": {
+      "master": {
+        "build_record_sha256": "57f3179016fa53cb59d76fb2bc6413c4c11106cd8687c95a609f64b6fcf3b6d3",
+        "binary_sha256": "13239e1e23976a29edfdbd711258d73951c240917efad15364a28fe4b6e77425",
+        "source_files_verified": 143,
+        "registered_snapshot_revision": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+        "snapshot_is_working_tree": false,
+        "compiler_artifact_manifest": "/private/tmp/femtovg-review-fixes-scenes/source/master/Cargo.toml",
+        "features": [
+          "default",
+          "image",
+          "image-loading",
+          "swash",
+          "textlayout"
+        ],
+        "dependency_graph_sha256": "f071c3210bccff0ddf1c166f9671f31f91f96921fd6dab7c3382abdae2904394",
+        "harness_sha256": "8a16f144fc32b0808cd4202d79b19ba1faf23b356894a5fa20c62541e0a418e5",
+        "lock_sha256": "6ce5a4eb546ef4d90f93379a007e8b75402bc9d8db498e2d77f34d806e85e39d"
+      },
+      "final": {
+        "build_record_sha256": "bbe6a09991b46ee1f745da8b529e6aa7297936a61ef879be287584d8a74ad3f7",
+        "binary_sha256": "074aa61d2bafa5276b8445cd15057beb5304d1c7913ad9e68f138078e5e67b13",
+        "source_files_verified": 148,
+        "registered_snapshot_revision": "da268321ec2b53cdd188e8c07f853897121c3767",
+        "snapshot_is_working_tree": true,
+        "compiler_artifact_manifest": "/private/tmp/femtovg-review-fixes-scenes/source/final/Cargo.toml",
+        "features": [
+          "default",
+          "image",
+          "image-loading",
+          "swash",
+          "textlayout"
+        ],
+        "dependency_graph_sha256": "f071c3210bccff0ddf1c166f9671f31f91f96921fd6dab7c3382abdae2904394",
+        "harness_sha256": "8a16f144fc32b0808cd4202d79b19ba1faf23b356894a5fa20c62541e0a418e5",
+        "lock_sha256": "bc58e776503abe30bf94d1e1240d6f4f569f6185358f2c4bf3134fc18bf94fcc"
+      }
+    },
+    "commit_file_identity": {
+      "src/lib.rs": {
+        "master_file_identity_6a": "file bytes match",
+        "final_whole_file_matches_b87": true,
+        "final_released_code_matches_b87": true,
+        "frozen_sha256": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db",
+        "committed_sha256": "34386ab65cf0c55e66cb1de2b9152124e4cc043d0ac6787fe6518f0f340608db"
+      },
+      "src/text.rs": {
+        "master_file_identity_6a": "file bytes match",
+        "final_whole_file_matches_b87": true,
+        "final_released_code_matches_b87": true,
+        "frozen_sha256": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0",
+        "committed_sha256": "5b91530da53d626fa2f83067f7e97956122f9dc452e9c5ba43a74f05f96778e0"
+      },
+      "src/text/font.rs": {
+        "master_file_identity_6a": "file bytes match",
+        "final_whole_file_matches_b87": true,
+        "final_released_code_matches_b87": true,
+        "frozen_sha256": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219",
+        "committed_sha256": "89ad1fef223f4f40dae84fc1fb37545835dcb677e525fdf8156965f93450a219"
+      },
+      "src/text/swash_rasterizer.rs": {
+        "master_file_identity_6a": "absent from both baseline and upstream commit",
+        "final_whole_file_matches_b87": false,
+        "final_released_code_matches_b87": true,
+        "frozen_sha256": "5f2e8ec56074736238fed2d1fdde4a830b97638b3e66e966a2bcffcea361f74e",
+        "committed_sha256": "c0f5d831132bf4bb104217538a96e15766b090858762f477411f35926f59a6aa"
+      },
+      "Cargo.toml": {
+        "master_file_identity_6a": "file bytes match",
+        "final_whole_file_matches_b87": true,
+        "final_released_code_matches_b87": true,
+        "frozen_sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4",
+        "committed_sha256": "5bdf9ee9a9ff6d96864ab4360d4fffd99c094e37186d7e536322a4a8a613a2c4"
+      },
+      "build.rs": {
+        "master_file_identity_6a": "file bytes match",
+        "final_whole_file_matches_b87": true,
+        "final_released_code_matches_b87": true,
+        "frozen_sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5",
+        "committed_sha256": "0391cffded6a052361533b8a8f38d826ee41ff06056eaf81ae7d665ff2e331f5"
+      }
+    },
+    "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+    "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)\n",
+    "profile": {
+      "opt_level": 3,
+      "lto": false,
+      "codegen_units": 16,
+      "debug": false,
+      "incremental": false,
+      "panic": "unwind"
+    },
+    "build_environment": {
+      "RUSTFLAGS": null,
+      "CARGO_ENCODED_RUSTFLAGS": null,
+      "CARGO_BUILD_TARGET": null,
+      "CARGO_INCREMENTAL": "0",
+      "CARGO_TARGET_DIR": "/private/tmp/femtovg-review-fixes-perf/target"
+    },
+    "source_revision_label_caveat": "The final snapshot registration predates the squash and says da26832 working tree; its file hashes, not that stale label, establish released-code identity with b87a94d.",
+    "same_dependencies_features_and_build_conditions": true
+  },
+  "cohorts": [
+    {
+      "cohort": "paired12-dpi1",
+      "dpi": 1.0,
+      "processes": 72,
+      "phase_records": 288,
+      "measured_frames": 3168,
+      "accepted_complete_blocks": 12,
+      "excluded_measured_records": 0,
+      "pair_orders": {
+        "FleurDeLeah": {
+          "master_then_final": 6,
+          "final_then_master": 6
+        },
+        "RobotoFlex": {
+          "master_then_final": 6,
+          "final_then_master": 6
+        },
+        "Rye": {
+          "master_then_final": 6,
+          "final_then_master": 6
+        }
+      },
+      "all_workload_dimensions_equal_between_variants": true,
+      "per_frame_reported_requests": 1980,
+      "per_frame_reported_distinct_instances": 198,
+      "phase_weights": {
+        "first_paint": 1,
+        "warm": 30,
+        "new_size": 12,
+        "return": 1
+      },
+      "total_sequence_frames": 44,
+      "bootstrap": {
+        "resamples": 10000,
+        "seed": 61432,
+        "method": "paired median, percentile order indices250/9750; unweighted choices protocol",
+        "multiplicity_adjustment": false
+      },
+      "largest_summary_absolute_error": 0.0,
+      "summary_rows_reproduced": 15,
+      "ci_classification": {
+        "saving_ci_below_zero": 15,
+        "loss_ci_above_zero": 0,
+        "inconclusive_ci_crosses_zero": 0
+      },
+      "font_assets": {
+        "FleurDeLeah": {
+          "font_sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+          "license": "SIL OFL 1.1",
+          "recorded_origin": {
+            "repository": "google/fonts",
+            "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+            "path": "ofl/fleurdeleah/FleurDeLeah-Regular.ttf"
+          },
+          "documents": [
+            {
+              "path": "/private/tmp/femtovg-current-demo-extremes-20261003/assets/LICENSE-FleurDeLeah",
+              "sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8"
+            },
+            {
+              "path": "/private/tmp/femtovg-current-demo-extremes-20261003/provenance/Fleur-acquisition-record.json",
+              "sha256": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f"
+            }
+          ]
+        },
+        "RobotoFlex": {
+          "font_sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+          "license": "SIL OFL 1.1",
+          "recorded_origin": {
+            "repository": "femtovg",
+            "commit": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+            "path": "examples/assets/RobotoFlex-VariableFont.ttf"
+          },
+          "documents": [
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+              "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            },
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/provenance/copied-control-assets.json",
+              "sha256": "b43819604fc067c71fc51074ffb672a4f517224d2f63d90c13175dacf7f04b43"
+            }
+          ],
+          "predeclared_license_file_is_legacy_Apache_not_applicable_RobotoFlex_license": true,
+          "applicable_license_supplement": "LICENSE-SUPPLEMENT.json"
+        },
+        "Rye": {
+          "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+          "license": "SIL OFL 1.1",
+          "recorded_origin": {
+            "repository": "https://github.com/google/fonts",
+            "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+            "path": "ofl/rye/Rye-Regular.ttf"
+          },
+          "documents": [
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Rye",
+              "sha256": "399b33eb38cdfc76b8665defa5f81d52e8193d630ad5858c893db6bc20031bc9"
+            },
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/provenance/Rye-acquisition-record.json",
+              "sha256": "5f5503c5f016fd6343b6a328afae3e4c9be2e4928d45c05e2112860e8d598e38"
+            }
+          ]
+        }
+      },
+      "file_hashes": {
+        "PLAN.json": "28baa1129ec0a9615bb22371b3a042b0639d02818d9f888da11443b1363a66d2",
+        "raw.jsonl": "4510d0fc98c75c8699a53fa4d839dd4f19c4a90654082dd9058532f1b7ce0b67",
+        "summary.json": "af323ab422a2b4f2d0f66707f8be497a2c07044d6cc79c8b94e8fc1d3441bc34",
+        "REPORT.md": "95d0791b7151122991055afeb53bc0519fd711c54a765d63a7baf44a91d9baa7",
+        "COMPLETE.json": "63c8d2136694fbca3169998f788bd61d37f74ff1736f5df5854404fa4c8d9f35"
+      },
+      "reconstructed_rows": [
+        {
+          "font": "FleurDeLeah",
+          "phase": "first_paint",
+          "units": "us/frame",
+          "master_median": 89303.95850000001,
+          "final_median": 19935.7705,
+          "median_paired_ratio": 0.22074800536179653,
+          "paired_ratio_ci95": [
+            0.21865145041839368,
+            0.2263079793262878
+          ],
+          "median_paired_delta": -69192.458,
+          "paired_delta_ci95": [
+            -70555.292,
+            -68632.542
+          ],
+          "paired_ratios": [
+            0.21373426781669097,
+            0.2388240308724794,
+            0.22048490092093675,
+            0.22604535129316594,
+            0.22448077544695746,
+            0.22657060735940965,
+            0.24457429921189322,
+            0.2210111098026563,
+            0.21465373563019413,
+            0.22046784635408587,
+            0.2175479412228895,
+            0.21975495961389788
+          ],
+          "paired_deltas": [
+            -73930.208,
+            -66520.5,
+            -68698.958,
+            -68566.126,
+            -69238.292,
+            -68752.459,
+            -67480.667,
+            -69146.624,
+            -70886.041,
+            -69666.041,
+            -70647.792,
+            -70462.792
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "warm",
+          "units": "us/frame",
+          "master_median": 151.1090165,
+          "final_median": 142.6312665,
+          "median_paired_ratio": 0.9519449729740518,
+          "paired_ratio_ci95": [
+            0.9166675736412069,
+            0.9644149421687215
+          ],
+          "median_paired_delta": -7.335533499999983,
+          "paired_delta_ci95": [
+            -12.71116649999999,
+            -5.293049999999994
+          ],
+          "paired_ratios": [
+            0.9517284442380524,
+            0.9544294404678327,
+            0.9486512365086143,
+            0.9273725245277193,
+            0.9916181829904016,
+            0.9744004438696102,
+            1.1492910235794018,
+            0.9059626227546945,
+            0.8840108148692402,
+            0.9525425674048951,
+            0.9521615017100512,
+            0.8980470100759963
+          ],
+          "paired_deltas": [
+            -7.234766999999977,
+            -6.809632999999991,
+            -7.529299999999978,
+            -11.022333000000003,
+            -1.261066999999997,
+            -3.7764669999999967,
+            22.750065999999975,
+            -14.399999999999977,
+            -18.277799999999985,
+            -7.061000000000007,
+            -7.436299999999989,
+            -16.328066999999976
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "new_size",
+          "units": "us/frame",
+          "master_median": 90611.72750000001,
+          "final_median": 21685.145750000003,
+          "median_paired_ratio": 0.23895933987559484,
+          "paired_ratio_ci95": [
+            0.23854423639826774,
+            0.2404293721777208
+          ],
+          "median_paired_delta": -68946.208292,
+          "paired_delta_ci95": [
+            -69473.9844165,
+            -68087.8002915
+          ],
+          "paired_ratios": [
+            0.2407789882450392,
+            0.24406892126096463,
+            0.23887236766808284,
+            0.23817871563666052,
+            0.2442085171594422,
+            0.23904631208310684,
+            0.23871775678179732,
+            0.23948901547782134,
+            0.23860508180316436,
+            0.23638839804720793,
+            0.23848339099337112,
+            0.24007975611040244
+          ],
+          "paired_deltas": [
+            -67829.76725,
+            -67633.940917,
+            -68263.565833,
+            -68604.270917,
+            -67912.03474999999,
+            -69083.312583,
+            -69083.083334,
+            -68809.33325,
+            -69385.8925,
+            -69562.076333,
+            -69602.61799999999,
+            -70092.31233300001
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "return",
+          "units": "us/frame",
+          "master_median": 238.02100000000002,
+          "final_median": 220.5625,
+          "median_paired_ratio": 0.925812528580036,
+          "paired_ratio_ci95": [
+            0.8948785736717518,
+            0.9516439786246602
+          ],
+          "median_paired_delta": -17.834000000000003,
+          "paired_delta_ci95": [
+            -24.790999999999997,
+            -11.229
+          ],
+          "paired_ratios": [
+            0.9727878160500794,
+            0.8980357336220899,
+            0.9164814004376367,
+            0.965562467053242,
+            0.9193839948515939,
+            0.9373924835821645,
+            0.8917214137214138,
+            1.1454545454545455,
+            0.8867455356786487,
+            0.9377254901960784,
+            0.8492143859095777,
+            0.932241062308478
+          ],
+          "paired_deltas": [
+            -6.125,
+            -23.540999999999997,
+            -19.084000000000003,
+            -8.165999999999997,
+            -19.667,
+            -14.957999999999998,
+            -26.040999999999997,
+            34.0,
+            -28.375,
+            -14.292000000000002,
+            -36.333,
+            -16.584000000000003
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "complete_sequence",
+          "units": "us/sequence",
+          "master_median": 1181152.519998,
+          "final_median": 284902.07999,
+          "median_paired_ratio": 0.2409374375563179,
+          "paired_ratio_ci95": [
+            0.2399479686637018,
+            0.24214465211048114
+          ],
+          "median_paired_delta": -895538.9145140001,
+          "paired_delta_ci95": [
+            -904365.2694979999,
+            -888108.6470030001
+          ],
+          "paired_ratios": [
+            0.24147802710892952,
+            0.24653693852714262,
+            0.24028946677645668,
+            0.24008280512643906,
+            0.24572426611606038,
+            0.24100090606040817,
+            0.2428112771120328,
+            0.24087396905222766,
+            0.23948971066873906,
+            0.23801806214557045,
+            0.23981313220096453,
+            0.2413234519853844
+          ],
+          "paired_deltas": [
+            -888110.58301,
+            -878355.620994,
+            -888106.7109960002,
+            -892156.2129940001,
+            -884240.2080099997,
+            -897880.4620059999,
+            -895821.206028,
+            -895256.6230000001,
+            -904093.46,
+            -904637.0789959999,
+            -906138.6299999999,
+            -912076.966006
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "first_paint",
+          "units": "us/frame",
+          "master_median": 4550.6669999999995,
+          "final_median": 3766.4795,
+          "median_paired_ratio": 0.8259554998233466,
+          "paired_ratio_ci95": [
+            0.8211345064452045,
+            0.8362788926953317
+          ],
+          "median_paired_delta": -786.896,
+          "paired_delta_ci95": [
+            -813.0835000000002,
+            -750.896
+          ],
+          "paired_ratios": [
+            0.823929295893383,
+            0.8453433462175594,
+            0.8379835107835107,
+            0.827325171108844,
+            0.8160907699037621,
+            0.8298355775939814,
+            0.8231488199788802,
+            0.8397965414234426,
+            0.8345742746071526,
+            0.8245858285378492,
+            0.8186048899379487,
+            0.8191201929115286
+          ],
+          "paired_deltas": [
+            -797.4169999999999,
+            -700.2080000000001,
+            -741.8330000000001,
+            -777.375,
+            -840.8330000000001,
+            -776.9990000000003,
+            -802.875,
+            -730.7080000000001,
+            -759.9589999999998,
+            -796.4169999999999,
+            -823.2920000000004,
+            -838.1669999999999
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "warm",
+          "units": "us/frame",
+          "master_median": 159.0180835,
+          "final_median": 150.3159335,
+          "median_paired_ratio": 0.953162431424943,
+          "paired_ratio_ci95": [
+            0.9391933816895868,
+            0.968742718212263
+          ],
+          "median_paired_delta": -7.380566500000015,
+          "paired_delta_ci95": [
+            -9.730616499999996,
+            -4.8861334999999855
+          ],
+          "paired_ratios": [
+            0.9594720378803572,
+            0.9977037662968714,
+            0.8861384366652517,
+            0.9374720947604311,
+            0.9771808353281412,
+            0.9409146686187425,
+            0.9480745885086458,
+            0.9489958696951659,
+            0.9603046010963849,
+            0.92649476971012,
+            0.9823914210913182,
+            0.9573289931547201
+          ],
+          "paired_deltas": [
+            -6.39863299999999,
+            -0.367999999999995,
+            -19.172234000000003,
+            -9.96113299999999,
+            -3.622066999999987,
+            -9.500100000000003,
+            -8.112333000000007,
+            -8.184966000000003,
+            -6.150199999999984,
+            -12.463933999999995,
+            -2.640433999999999,
+            -6.648800000000023
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "new_size",
+          "units": "us/frame",
+          "master_median": 5068.378500000001,
+          "final_median": 4245.1839165,
+          "median_paired_ratio": 0.8348289229772303,
+          "paired_ratio_ci95": [
+            0.8305316772760432,
+            0.8383084654849122
+          ],
+          "median_paired_delta": -836.3577500000001,
+          "paired_delta_ci95": [
+            -855.0067494999998,
+            -810.86625
+          ],
+          "paired_ratios": [
+            0.8337248393479534,
+            0.8366663737616633,
+            0.8303032326376228,
+            0.8399505572081613,
+            0.8297602698745989,
+            0.835634868298448,
+            0.8634589612753474,
+            0.8424393787973571,
+            0.8340229776560126,
+            0.7854418874710449,
+            0.8360812734045271,
+            0.8307601219144635
+          ],
+          "paired_deltas": [
+            -841.3020840000008,
+            -833.972417,
+            -858.0345829999997,
+            -801.4409159999996,
+            -851.978916,
+            -820.2915840000005,
+            -696.704917,
+            -799.9445830000004,
+            -828.4512500000001,
+            -1173.57625,
+            -838.7430830000003,
+            -870.4894170000007
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "return",
+          "units": "us/frame",
+          "master_median": 200.625,
+          "final_median": 187.2495,
+          "median_paired_ratio": 0.9420151344550001,
+          "paired_ratio_ci95": [
+            0.8846198431301309,
+            0.9808655184149035
+          ],
+          "median_paired_delta": -11.1665,
+          "paired_delta_ci95": [
+            -25.063000000000002,
+            -3.7295000000000016
+          ],
+          "paired_ratios": [
+            0.8659803875807813,
+            1.0018271604938271,
+            0.9302813287820985,
+            1.161537631373591,
+            0.95990387633598,
+            0.9469799091977699,
+            1.0256089943785134,
+            0.951313859540087,
+            0.9032592986794805,
+            0.821710127349909,
+            0.9370503597122302,
+            0.7510809190809191
+          ],
+          "paired_deltas": [
+            -31.584000000000003,
+            0.3329999999999984,
+            -12.5,
+            38.91700000000003,
+            -7.792000000000002,
+            -9.832999999999998,
+            5.125,
+            -9.792000000000002,
+            -18.542,
+            -36.75,
+            -13.125,
+            -62.292
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "complete_sequence",
+          "units": "us/sequence",
+          "master_median": 70493.06549800001,
+          "final_median": 59383.957492999994,
+          "median_paired_ratio": 0.8427893880590751,
+          "paired_ratio_ci95": [
+            0.8386690177852918,
+            0.8477631695721568
+          ],
+          "median_paired_delta": -10947.940512000001,
+          "paired_delta_ci95": [
+            -11363.415003000002,
+            -10686.583493000002
+          ],
+          "paired_ratios": [
+            0.8416834622433447,
+            0.8485839513594677,
+            0.8350580199027295,
+            0.846942387784846,
+            0.8393141919953463,
+            0.8428616460600294,
+            0.8669410552058147,
+            0.8498553823176335,
+            0.8427171300581209,
+            0.7974032768756587,
+            0.8445729383561198,
+            0.8380238435752374
+          ],
+          "paired_deltas": [
+            -11116.584997999998,
+            -10718.584004000004,
+            -11625.915015999999,
+            -10654.582982,
+            -11181.034002,
+            -10915.33400799999,
+            -9401.578994000003,
+            -10585.383976000005,
+            -10904.421999999999,
+            -15290.000020000007,
+            -10980.547016000011,
+            -11545.796004000003
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "first_paint",
+          "units": "us/frame",
+          "master_median": 51452.9585,
+          "final_median": 12771.417000000001,
+          "median_paired_ratio": 0.2481777611890606,
+          "paired_ratio_ci95": [
+            0.24455164059904472,
+            0.2533878716643687
+          ],
+          "median_paired_delta": -38513.062,
+          "paired_delta_ci95": [
+            -39175.9995,
+            -38079.3965
+          ],
+          "paired_ratios": [
+            0.2537434990991678,
+            0.256587206364934,
+            0.25027935529252926,
+            0.24429477771877697,
+            0.24643138302944606,
+            0.2451429620108629,
+            0.24992413934867513,
+            0.2448085034793125,
+            0.23829283146229735,
+            0.2584863292843505,
+            0.24035328588461088,
+            0.25303224422956955
+          ],
+          "paired_deltas": [
+            -37730.666,
+            -37889.334,
+            -37768.458,
+            -39064.166,
+            -39069.831999999995,
+            -38709.666,
+            -38314.25,
+            -39282.167,
+            -41411.416,
+            -38269.459,
+            -39832.709,
+            -38316.458
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "warm",
+          "units": "us/frame",
+          "master_median": 151.52155,
+          "final_median": 139.609067,
+          "median_paired_ratio": 0.9219098939547279,
+          "paired_ratio_ci95": [
+            0.9088908429717351,
+            0.9390364462943231
+          ],
+          "median_paired_delta": -11.761132999999987,
+          "paired_delta_ci95": [
+            -13.973583000000005,
+            -9.16253300000001
+          ],
+          "paired_ratios": [
+            0.9173643352174455,
+            1.0155077156296035,
+            0.9445676253845477,
+            0.9333487234206735,
+            0.9132123960349477,
+            0.9335052672040985,
+            0.9264554526920101,
+            0.9132149360457772,
+            0.7844244739735522,
+            0.8877924641673405,
+            0.9045692899085224,
+            0.9455884266811385
+          ],
+          "paired_deltas": [
+            -12.33613299999999,
+            2.2737330000000213,
+            -8.213765999999993,
+            -9.944365999999974,
+            -13.161100000000005,
+            -9.870866000000007,
+            -11.186132999999984,
+            -13.138900000000007,
+            -38.93893300000002,
+            -17.301467000000002,
+            -14.786066000000005,
+            -8.454200000000014
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "new_size",
+          "units": "us/frame",
+          "master_median": 52581.8281665,
+          "final_median": 13799.46875,
+          "median_paired_ratio": 0.2615621344257842,
+          "paired_ratio_ci95": [
+            0.26067477707221876,
+            0.2652227353410286
+          ],
+          "median_paired_delta": -38860.3767085,
+          "paired_delta_ci95": [
+            -39190.3297915,
+            -38292.819749999995
+          ],
+          "paired_ratios": [
+            0.2716070574508308,
+            0.28689841890503165,
+            0.2623688671174848,
+            0.262683434097819,
+            0.26776203658423814,
+            0.26082377054567973,
+            0.26052578359875783,
+            0.25716523357801097,
+            0.26105067859817016,
+            0.2610160843368823,
+            0.2595681256863196,
+            0.2620735902533982
+          ],
+          "paired_deltas": [
+            -37686.405916,
+            -36907.33,
+            -38384.423833,
+            -38615.260417000005,
+            -38201.215667,
+            -38710.913167,
+            -39159.732667000004,
+            -39427.972334,
+            -39009.84025,
+            -39077.343833000006,
+            -39529.958417,
+            -39220.926916000004
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "return",
+          "units": "us/frame",
+          "master_median": 233.312,
+          "final_median": 222.3545,
+          "median_paired_ratio": 0.9236268659971709,
+          "paired_ratio_ci95": [
+            0.864097445566987,
+            0.9815349990959545
+          ],
+          "median_paired_delta": -17.792,
+          "paired_delta_ci95": [
+            -33.3125,
+            -4.291499999999999
+          ],
+          "paired_ratios": [
+            0.8998676028084253,
+            1.177295618413755,
+            0.984119835265485,
+            0.9110064997974318,
+            0.9456588425582303,
+            0.93624723219691,
+            0.8305248436128733,
+            0.8112839233305554,
+            0.8976700475211008,
+            0.9948948758584257,
+            0.7934131736526946,
+            0.9789501629264241
+          ],
+          "paired_deltas": [
+            -24.958,
+            39.95800000000003,
+            -3.6670000000000016,
+            -20.209000000000003,
+            -12.665999999999997,
+            -15.375,
+            -42.291,
+            -41.667,
+            -23.084000000000003,
+            -1.2079999999999984,
+            -51.75,
+            -4.915999999999997
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "complete_sequence",
+          "units": "us/sequence",
+          "master_median": 687949.0425,
+          "final_median": 183040.584508,
+          "median_paired_ratio": 0.2655838611808559,
+          "paired_ratio_ci95": [
+            0.2639135187991065,
+            0.26845614028906506
+          ],
+          "median_paired_delta": -505634.980995,
+          "paired_delta_ci95": [
+            -509973.4369910001,
+            -498261.77148999996
+          ],
+          "paired_ratios": [
+            0.27478004694110564,
+            0.28964817353482,
+            0.26618078536437245,
+            0.26589364142126226,
+            0.27067485981418804,
+            0.2642638654205435,
+            0.2643433493231178,
+            0.26071035561494726,
+            0.26356317217766956,
+            0.2652740809404496,
+            0.26261156758469845,
+            0.26623742076394213
+          ],
+          "paired_deltas": [
+            -490362.5789819999,
+            -480669.12400999997,
+            -498631.62397599994,
+            -502765.830984,
+            -497891.91900399997,
+            -503552.124984,
+            -508608.91699399997,
+            -512853.66900800006,
+            -510720.7509900001,
+            -507717.8370059999,
+            -514687.5419840001,
+            -509226.1229920001
+          ]
+        }
+      ],
+      "all_weighted_sequences": [
+        {
+          "block": 0,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 94027.0,
+            "warm": 4496.2919999999995,
+            "new_size": 1072095.206004,
+            "return": 225.083
+          },
+          "total_us": 1170843.581004
+        },
+        {
+          "block": 0,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 20096.792,
+            "warm": 4279.24899,
+            "new_size": 258137.999004,
+            "return": 218.958
+          },
+          "total_us": 282732.99799400003
+        },
+        {
+          "block": 0,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3731.542,
+            "warm": 4544.499000000001,
+            "new_size": 50620.749996,
+            "return": 204.083
+          },
+          "total_us": 59100.873996
+        },
+        {
+          "block": 0,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4528.959,
+            "warm": 4736.45799,
+            "new_size": 60716.375004,
+            "return": 235.667
+          },
+          "total_us": 70217.458994
+        },
+        {
+          "block": 0,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 50559.916,
+            "warm": 4478.502,
+            "new_size": 620869.374996,
+            "return": 249.25
+          },
+          "total_us": 676157.0429959999
+        },
+        {
+          "block": 0,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12829.25,
+            "warm": 4108.41801,
+            "new_size": 168632.50400400002,
+            "return": 224.292
+          },
+          "total_us": 185794.46401400003
+        },
+        {
+          "block": 1,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3827.292,
+            "warm": 4796.83299,
+            "new_size": 51263.664,
+            "return": 182.583
+          },
+          "total_us": 60070.37199
+        },
+        {
+          "block": 1,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4527.5,
+            "warm": 4807.87299,
+            "new_size": 61271.333004,
+            "return": 182.25
+          },
+          "total_us": 70788.955994
+        },
+        {
+          "block": 1,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 50966.75,
+            "warm": 4398.58401,
+            "new_size": 621072.75,
+            "return": 225.375
+          },
+          "total_us": 676663.45901
+        },
+        {
+          "block": 1,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 13077.416,
+            "warm": 4466.796,
+            "new_size": 178184.79,
+            "return": 265.333
+          },
+          "total_us": 195994.33500000002
+        },
+        {
+          "block": 1,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 20871.25,
+            "warm": 4278.627,
+            "new_size": 262045.206996,
+            "return": 207.334
+          },
+          "total_us": 287402.417996
+        },
+        {
+          "block": 1,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 87391.75,
+            "warm": 4482.9159899999995,
+            "new_size": 1073652.4980000001,
+            "return": 230.875
+          },
+          "total_us": 1165758.03899
+        },
+        {
+          "block": 2,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 50376.708,
+            "warm": 4445.28999,
+            "new_size": 624449.085,
+            "return": 230.917
+          },
+          "total_us": 679501.9999899999
+        },
+        {
+          "block": 2,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12608.25,
+            "warm": 4198.87701,
+            "new_size": 163835.99900399998,
+            "return": 227.25
+          },
+          "total_us": 180870.37601399998
+        },
+        {
+          "block": 2,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 19431.417,
+            "warm": 4173.039000000001,
+            "new_size": 257086.12700399998,
+            "return": 209.416
+          },
+          "total_us": 280899.999004
+        },
+        {
+          "block": 2,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 88130.375,
+            "warm": 4398.918,
+            "new_size": 1076248.9170000001,
+            "return": 228.5
+          },
+          "total_us": 1169006.7100000002
+        },
+        {
+          "block": 2,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4578.75,
+            "warm": 5051.4590100000005,
+            "new_size": 60675.375,
+            "return": 179.292
+          },
+          "total_us": 70484.87601
+        },
+        {
+          "block": 2,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3836.917,
+            "warm": 4476.29199,
+            "new_size": 50378.96000400001,
+            "return": 166.792
+          },
+          "total_us": 58858.96099400001
+        },
+        {
+          "block": 3,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 20025.791,
+            "warm": 4222.29,
+            "new_size": 257384.41499999998,
+            "return": 228.959
+          },
+          "total_us": 281861.45499999996
+        },
+        {
+          "block": 3,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 88591.917,
+            "warm": 4552.95999,
+            "new_size": 1080635.666004,
+            "return": 237.125
+          },
+          "total_us": 1174017.667994
+        },
+        {
+          "block": 3,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4501.959,
+            "warm": 4779.21,
+            "new_size": 60089.499996,
+            "return": 240.916
+          },
+          "total_us": 69611.584996
+        },
+        {
+          "block": 3,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3724.584,
+            "warm": 4480.37601,
+            "new_size": 50472.209004000004,
+            "return": 279.833
+          },
+          "total_us": 58957.002014000005
+        },
+        {
+          "block": 3,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12628.167,
+            "warm": 4177.66701,
+            "new_size": 165089.292996,
+            "return": 206.875
+          },
+          "total_us": 182102.002006
+        },
+        {
+          "block": 3,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 51692.333,
+            "warm": 4475.99799,
+            "new_size": 628472.4180000001,
+            "return": 227.084
+          },
+          "total_us": 684867.83299
+        },
+        {
+          "block": 4,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4572.0,
+            "warm": 4761.87501,
+            "new_size": 60054.999996,
+            "return": 194.333
+          },
+          "total_us": 69583.208006
+        },
+        {
+          "block": 4,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3731.167,
+            "warm": 4653.213,
+            "new_size": 49831.253004,
+            "return": 186.541
+          },
+          "total_us": 58402.174004
+        },
+        {
+          "block": 4,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12776.584,
+            "warm": 4154.58399,
+            "new_size": 167631.33000000002,
+            "return": 220.417
+          },
+          "total_us": 184782.91499000002
+        },
+        {
+          "block": 4,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 51846.416,
+            "warm": 4549.41699,
+            "new_size": 626045.918004,
+            "return": 233.083
+          },
+          "total_us": 682674.833994
+        },
+        {
+          "block": 4,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 89279.917,
+            "warm": 4513.581,
+            "new_size": 1078266.2090039998,
+            "return": 243.959
+          },
+          "total_us": 1172303.6660039998
+        },
+        {
+          "block": 4,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 20041.625,
+            "warm": 4475.74899,
+            "new_size": 263321.792004,
+            "return": 224.292
+          },
+          "total_us": 288063.457994
+        },
+        {
+          "block": 5,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12571.125,
+            "warm": 4157.2490099999995,
+            "new_size": 163913.166,
+            "return": 225.791
+          },
+          "total_us": 180867.33101
+        },
+        {
+          "block": 5,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 51280.791,
+            "warm": 4453.37499,
+            "new_size": 628444.124004,
+            "return": 241.166
+          },
+          "total_us": 684419.455994
+        },
+        {
+          "block": 5,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 88893.0,
+            "warm": 4425.624,
+            "new_size": 1089422.082,
+            "return": 238.917
+          },
+          "total_us": 1182979.623
+        },
+        {
+          "block": 5,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 20140.541,
+            "warm": 4312.32999,
+            "new_size": 260422.33100400004,
+            "return": 223.959
+          },
+          "total_us": 285099.16099400003
+        },
+        {
+          "block": 5,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3789.167,
+            "warm": 4538.58,
+            "new_size": 50044.500996,
+            "return": 175.625
+          },
+          "total_us": 58547.872996000006
+        },
+        {
+          "block": 5,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4566.166,
+            "warm": 4823.5830000000005,
+            "new_size": 59888.000004,
+            "return": 185.458
+          },
+          "total_us": 69463.207004
+        },
+        {
+          "block": 6,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 89328.0,
+            "warm": 4571.621010000001,
+            "new_size": 1088948.294004,
+            "return": 240.5
+          },
+          "total_us": 1183088.415014
+        },
+        {
+          "block": 6,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 21847.333,
+            "warm": 5254.12299,
+            "new_size": 259951.29399599996,
+            "return": 214.459
+          },
+          "total_us": 287267.208986
+        },
+        {
+          "block": 6,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3736.959,
+            "warm": 4443.54501,
+            "new_size": 52869.915995999996,
+            "return": 205.25
+          },
+          "total_us": 61255.67000599999
+        },
+        {
+          "block": 6,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4539.834,
+            "warm": 4686.915,
+            "new_size": 61230.375,
+            "return": 200.125
+          },
+          "total_us": 70657.249
+        },
+        {
+          "block": 6,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 51080.5,
+            "warm": 4563.003,
+            "new_size": 635474.208,
+            "return": 249.541
+          },
+          "total_us": 691367.252
+        },
+        {
+          "block": 6,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12766.25,
+            "warm": 4227.4190100000005,
+            "new_size": 165557.415996,
+            "return": 207.25
+          },
+          "total_us": 182758.335006
+        },
+        {
+          "block": 7,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3830.417,
+            "warm": 4568.747009999999,
+            "new_size": 51325.373999999996,
+            "return": 191.333
+          },
+          "total_us": 59915.871009999995
+        },
+        {
+          "block": 7,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4561.125,
+            "warm": 4814.29599,
+            "new_size": 60924.708996,
+            "return": 201.125
+          },
+          "total_us": 70501.254986
+        },
+        {
+          "block": 7,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52016.167,
+            "warm": 4541.87601,
+            "new_size": 636932.585004,
+            "return": 220.792
+          },
+          "total_us": 693711.420014
+        },
+        {
+          "block": 7,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12734.0,
+            "warm": 4147.7090100000005,
+            "new_size": 163796.91699599999,
+            "return": 179.125
+          },
+          "total_us": 180857.75100599998
+        },
+        {
+          "block": 7,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 19617.959,
+            "warm": 4161.918000000001,
+            "new_size": 260021.166996,
+            "return": 267.75
+          },
+          "total_us": 284068.793996
+        },
+        {
+          "block": 7,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 88764.583,
+            "warm": 4593.918,
+            "new_size": 1085733.1659960002,
+            "return": 233.75
+          },
+          "total_us": 1179325.416996
+        },
+        {
+          "block": 8,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 54366.583,
+            "warm": 5418.834,
+            "new_size": 633491.4579960001,
+            "return": 225.584
+          },
+          "total_us": 693502.4589960001
+        },
+        {
+          "block": 8,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12955.167,
+            "warm": 4250.66601,
+            "new_size": 165373.374996,
+            "return": 202.5
+          },
+          "total_us": 182781.708006
+        },
+        {
+          "block": 8,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 19374.834,
+            "warm": 4179.12399,
+            "new_size": 260928.87399599998,
+            "return": 222.167
+          },
+          "total_us": 284704.99898599996
+        },
+        {
+          "block": 8,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 90260.875,
+            "warm": 4727.45799,
+            "new_size": 1093559.583996,
+            "return": 250.542
+          },
+          "total_us": 1188798.458986
+        },
+        {
+          "block": 8,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4593.959,
+            "warm": 4648.04499,
+            "new_size": 59896.332996,
+            "return": 191.667
+          },
+          "total_us": 69330.003986
+        },
+        {
+          "block": 8,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3834.0,
+            "warm": 4463.53899,
+            "new_size": 49954.917996,
+            "return": 173.125
+          },
+          "total_us": 58425.581986
+        },
+        {
+          "block": 9,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 19703.0,
+            "warm": 4251.7490099999995,
+            "new_size": 258408.873,
+            "return": 215.208
+          },
+          "total_us": 282578.83001
+        },
+        {
+          "block": 9,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 89369.041,
+            "warm": 4463.57901,
+            "new_size": 1093153.7889959998,
+            "return": 229.5
+          },
+          "total_us": 1187215.9090059998
+        },
+        {
+          "block": 9,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4540.209,
+            "warm": 5086.95801,
+            "new_size": 65636.832996,
+            "return": 206.125
+          },
+          "total_us": 75470.125006
+        },
+        {
+          "block": 9,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3743.792,
+            "warm": 4713.03999,
+            "new_size": 51553.917996,
+            "return": 169.375
+          },
+          "total_us": 60180.124985999995
+        },
+        {
+          "block": 9,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 13340.458,
+            "warm": 4106.706,
+            "new_size": 165629.834004,
+            "return": 235.417
+          },
+          "total_us": 183312.415004
+        },
+        {
+          "block": 9,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 51609.917,
+            "warm": 4625.75001,
+            "new_size": 634557.96,
+            "return": 236.625
+          },
+          "total_us": 691030.2520099999
+        },
+        {
+          "block": 10,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4538.667,
+            "warm": 4498.54701,
+            "new_size": 61401.873996,
+            "return": 208.5
+          },
+          "total_us": 70647.588006
+        },
+        {
+          "block": 10,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3715.375,
+            "warm": 4419.33399,
+            "new_size": 51336.956999999995,
+            "return": 195.375
+          },
+          "total_us": 59667.040989999994
+        },
+        {
+          "block": 10,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12603.125,
+            "warm": 4204.62801,
+            "new_size": 166292.95799999998,
+            "return": 198.75
+          },
+          "total_us": 183299.46100999997
+        },
+        {
+          "block": 10,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52435.834,
+            "warm": 4648.20999,
+            "new_size": 640652.4590040001,
+            "return": 250.5
+          },
+          "total_us": 697987.0029940001
+        },
+        {
+          "block": 10,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 90290.25,
+            "warm": 4663.37799,
+            "new_size": 1096799.9990039999,
+            "return": 240.958
+          },
+          "total_us": 1191994.584994
+        },
+        {
+          "block": 10,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 19642.458,
+            "warm": 4440.28899,
+            "new_size": 261568.583004,
+            "return": 204.625
+          },
+          "total_us": 285855.95499399997
+        },
+        {
+          "block": 11,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 12979.542,
+            "warm": 4407.624989999999,
+            "new_size": 167151.125004,
+            "return": 228.625
+          },
+          "total_us": 184766.916994
+        },
+        {
+          "block": 11,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 51296.0,
+            "warm": 4661.2509900000005,
+            "new_size": 637802.247996,
+            "return": 233.541
+          },
+          "total_us": 693993.039986
+        },
+        {
+          "block": 11,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 90308.542,
+            "warm": 4804.5869999999995,
+            "new_size": 1106836.875,
+            "return": 244.75
+          },
+          "total_us": 1202194.754
+        },
+        {
+          "block": 11,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 19845.75,
+            "warm": 4314.74499,
+            "new_size": 265729.127004,
+            "return": 228.166
+          },
+          "total_us": 290117.787994
+        },
+        {
+          "block": 11,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3795.667,
+            "warm": 4474.998,
+            "new_size": 51276.417996,
+            "return": 187.958
+          },
+          "total_us": 59735.040995999996
+        },
+        {
+          "block": 11,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 4633.834,
+            "warm": 4674.462,
+            "new_size": 61722.291000000005,
+            "return": 250.25
+          },
+          "total_us": 71280.837
+        }
+      ]
+    },
+    {
+      "cohort": "paired12-native",
+      "dpi": 2.0,
+      "processes": 72,
+      "phase_records": 288,
+      "measured_frames": 3168,
+      "accepted_complete_blocks": 12,
+      "excluded_measured_records": 0,
+      "pair_orders": {
+        "FleurDeLeah": {
+          "master_then_final": 6,
+          "final_then_master": 6
+        },
+        "RobotoFlex": {
+          "master_then_final": 6,
+          "final_then_master": 6
+        },
+        "Rye": {
+          "master_then_final": 6,
+          "final_then_master": 6
+        }
+      },
+      "all_workload_dimensions_equal_between_variants": true,
+      "per_frame_reported_requests": 1980,
+      "per_frame_reported_distinct_instances": 198,
+      "phase_weights": {
+        "first_paint": 1,
+        "warm": 30,
+        "new_size": 12,
+        "return": 1
+      },
+      "total_sequence_frames": 44,
+      "bootstrap": {
+        "resamples": 10000,
+        "seed": 61432,
+        "method": "paired median, percentile order indices250/9750; unweighted choices protocol",
+        "multiplicity_adjustment": false
+      },
+      "largest_summary_absolute_error": 0.0,
+      "summary_rows_reproduced": 15,
+      "ci_classification": {
+        "saving_ci_below_zero": 14,
+        "loss_ci_above_zero": 0,
+        "inconclusive_ci_crosses_zero": 1
+      },
+      "font_assets": {
+        "FleurDeLeah": {
+          "font_sha256": "11f6c19bd52835c66cf6cf78f060a467a92a85f1d667447ea8feefdd9bccba7d",
+          "license": "SIL OFL 1.1",
+          "recorded_origin": {
+            "repository": "google/fonts",
+            "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+            "path": "ofl/fleurdeleah/FleurDeLeah-Regular.ttf"
+          },
+          "documents": [
+            {
+              "path": "/private/tmp/femtovg-current-demo-extremes-20261003/assets/LICENSE-FleurDeLeah",
+              "sha256": "bb3ee29bfc75dc1ac4407831b665c92e9e58fb5e2e07022f6f731d8e063e37f8"
+            },
+            {
+              "path": "/private/tmp/femtovg-current-demo-extremes-20261003/provenance/Fleur-acquisition-record.json",
+              "sha256": "5aecc93cc6dc9c51e62d6ddb7eabb0257095857ccd69a65be5ccaf693a25c96f"
+            }
+          ]
+        },
+        "RobotoFlex": {
+          "font_sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9",
+          "license": "SIL OFL 1.1",
+          "recorded_origin": {
+            "repository": "femtovg",
+            "commit": "6a5f15ae55db439a4ed8b1e818c6521029c34fbd",
+            "path": "examples/assets/RobotoFlex-VariableFont.ttf"
+          },
+          "documents": [
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+              "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            },
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/provenance/copied-control-assets.json",
+              "sha256": "b43819604fc067c71fc51074ffb672a4f517224d2f63d90c13175dacf7f04b43"
+            }
+          ],
+          "predeclared_license_file_is_legacy_Apache_not_applicable_RobotoFlex_license": true,
+          "applicable_license_supplement": "LICENSE-SUPPLEMENT.json"
+        },
+        "Rye": {
+          "font_sha256": "b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba",
+          "license": "SIL OFL 1.1",
+          "recorded_origin": {
+            "repository": "https://github.com/google/fonts",
+            "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+            "path": "ofl/rye/Rye-Regular.ttf"
+          },
+          "documents": [
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Rye",
+              "sha256": "399b33eb38cdfc76b8665defa5f81d52e8193d630ad5858c893db6bc20031bc9"
+            },
+            {
+              "path": "/private/tmp/femtovg-current-demo-20261003/provenance/Rye-acquisition-record.json",
+              "sha256": "5f5503c5f016fd6343b6a328afae3e4c9be2e4928d45c05e2112860e8d598e38"
+            }
+          ]
+        }
+      },
+      "file_hashes": {
+        "PLAN.json": "10ce1f5e410c67c2481cc14e5f5bddf4e70338b226662ca8c0febc970bd18cfc",
+        "raw.jsonl": "df86ef9af5558413926965bf9ae5a6250ad9c5ff7b2b5c8ce5f2f77254d397d8",
+        "summary.json": "0a7c79bada88e4128f293262b2373400c2952cdd3e872943f6e1322e7a1c10c9",
+        "REPORT.md": "9c94d7d011877f8e3f0fa45388350a199efcaf52a9801a0c150151da5e8df5a7",
+        "COMPLETE.json": "ccdde09b51a834cc5ee10829a2ee4bb601f3aaf0c7fadc5b2ac1998948da58dd"
+      },
+      "reconstructed_rows": [
+        {
+          "font": "FleurDeLeah",
+          "phase": "first_paint",
+          "units": "us/frame",
+          "master_median": 53253.291,
+          "final_median": 15141.2085,
+          "median_paired_ratio": 0.2827399020039597,
+          "paired_ratio_ci95": [
+            0.27792120429205774,
+            0.2849973800073005
+          ],
+          "median_paired_delta": -38219.9165,
+          "paired_delta_ci95": [
+            -38689.8125,
+            -37749.4995
+          ],
+          "paired_ratios": [
+            0.2577878308822012,
+            0.28402566692246506,
+            0.28315158452424855,
+            0.2936001357323723,
+            0.285969093092136,
+            0.27685149184306795,
+            0.2946643434848213,
+            0.27637192091141666,
+            0.28156159011230614,
+            0.2837443586701638,
+            0.2823282194836709,
+            0.27899091674104753
+          ],
+          "paired_deltas": [
+            -44953.75,
+            -38369.333,
+            -37715.873999999996,
+            -37146.626000000004,
+            -38147.666,
+            -38769.709,
+            -37216.623999999996,
+            -38292.167,
+            -37783.125,
+            -38019.416,
+            -39998.958,
+            -38609.916
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "warm",
+          "units": "us/frame",
+          "master_median": 150.136217,
+          "final_median": 140.9785,
+          "median_paired_ratio": 0.9385750034387869,
+          "paired_ratio_ci95": [
+            0.9294623106672737,
+            0.9673393135317911
+          ],
+          "median_paired_delta": -9.266717000000014,
+          "paired_delta_ci95": [
+            -10.708333500000009,
+            -4.811816500000006
+          ],
+          "paired_ratios": [
+            0.9326474034352148,
+            0.9380916200688681,
+            0.9445751516080401,
+            0.9616091431493732,
+            0.9112903328621068,
+            0.9332655050261865,
+            0.9390583868087056,
+            0.9145549910399244,
+            0.9262772178993325,
+            0.9950295950866427,
+            0.9730694839142091,
+            0.9913549472571557
+          ],
+          "paired_deltas": [
+            -10.22636700000001,
+            -9.359767000000005,
+            -8.238900000000001,
+            -5.60560000000001,
+            -13.359667000000002,
+            -9.934632999999991,
+            -9.173667000000023,
+            -12.794567,
+            -11.190300000000008,
+            -0.7513670000000161,
+            -4.018033000000003,
+            -1.2445999999999913
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "new_size",
+          "units": "us/frame",
+          "master_median": 53749.12325,
+          "final_median": 15789.9755835,
+          "median_paired_ratio": 0.2940443558498535,
+          "paired_ratio_ci95": [
+            0.2931577970852618,
+            0.29584721506138534
+          ],
+          "median_paired_delta": -37950.1303335,
+          "paired_delta_ci95": [
+            -38164.4410835,
+            -37784.809125
+          ],
+          "paired_ratios": [
+            0.29618963769447504,
+            0.2973400429600685,
+            0.29332287700987275,
+            0.2935927612892364,
+            0.29377009530918735,
+            0.29299271716065084,
+            0.2912703441565556,
+            0.29987666143445363,
+            0.29550479242829564,
+            0.29431861639051965,
+            0.2903877774812351,
+            0.29465963046202004
+          ],
+          "paired_deltas": [
+            -37286.968833,
+            -37881.02775,
+            -37952.013917,
+            -37763.118167,
+            -37806.500083,
+            -37970.194417000006,
+            -38242.934167,
+            -37612.670165999996,
+            -38312.944416,
+            -37948.24675,
+            -38879.392416,
+            -38085.948000000004
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "return",
+          "units": "us/frame",
+          "master_median": 211.7295,
+          "final_median": 193.917,
+          "median_paired_ratio": 0.9028018615436124,
+          "paired_ratio_ci95": [
+            0.8673981701903521,
+            0.9742481994427625
+          ],
+          "median_paired_delta": -21.021,
+          "paired_delta_ci95": [
+            -27.7915,
+            -5.334000000000003
+          ],
+          "paired_ratios": [
+            1.014646577669792,
+            0.8982302955434518,
+            0.931872037914692,
+            0.861881785283474,
+            1.0386029411764706,
+            1.0637213963587773,
+            0.933849821215733,
+            0.8495691476656806,
+            0.9073734275437731,
+            0.8868284327178778,
+            0.8729145550972304,
+            0.8468283470919067
+          ],
+          "paired_deltas": [
+            3.2069999999999936,
+            -21.748999999999995,
+            -14.375,
+            -28.625,
+            7.875,
+            12.207999999999998,
+            -13.875,
+            -32.75,
+            -20.293000000000006,
+            -23.917,
+            -26.958,
+            -33.417
+          ]
+        },
+        {
+          "font": "FleurDeLeah",
+          "phase": "complete_sequence",
+          "units": "us/sequence",
+          "master_median": 702933.669004,
+          "final_median": 209136.731002,
+          "median_paired_ratio": 0.2976391459911144,
+          "paired_ratio_ci95": [
+            0.29646569890025204,
+            0.2984621781252414
+          ],
+          "median_paired_delta": -493423.209007,
+          "paired_delta_ci95": [
+            -496066.483007,
+            -492459.771006
+          ],
+          "paired_ratios": [
+            0.2972315718975359,
+            0.3006311202802371,
+            0.29689091645955185,
+            0.29795012433357865,
+            0.2973746269119109,
+            0.29604048134095223,
+            0.29586497150284335,
+            0.30220776556772144,
+            0.29870649065378646,
+            0.29821786559669633,
+            0.2941906263111914,
+            0.29790366507031796
+          ],
+          "paired_deltas": [
+            -492700.960006,
+            -493244.20800999994,
+            -493401.58300400013,
+            -490500.83700400003,
+            -492218.582006,
+            -494697.872994,
+            -496420.919014,
+            -490060.79600199993,
+            -497894.4599920001,
+            -493444.8350099999,
+            -506699.165982,
+            -495712.047
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "first_paint",
+          "units": "us/frame",
+          "master_median": 2975.667,
+          "final_median": 2459.6665000000003,
+          "median_paired_ratio": 0.8257280940171551,
+          "paired_ratio_ci95": [
+            0.8194734663895497,
+            0.8347247317002623
+          ],
+          "median_paired_delta": -514.4589999999998,
+          "paired_delta_ci95": [
+            -538.0629999999999,
+            -491.1044999999999
+          ],
+          "paired_ratios": [
+            0.8398675086914178,
+            0.8304735018172598,
+            0.8224505285822429,
+            0.8136188723439852,
+            0.8389188306165266,
+            0.8164964041968564,
+            0.830530632783998,
+            0.8249329772847694,
+            0.8428441755114595,
+            0.8265232107495407,
+            0.8244041229349262,
+            0.8116173848543892
+          ],
+          "paired_deltas": [
+            -475.6669999999999,
+            -501.4169999999999,
+            -531.7089999999998,
+            -557.0,
+            -477.25,
+            -544.4169999999999,
+            -505.1669999999999,
+            -531.2919999999999,
+            -480.7919999999999,
+            -510.37599999999975,
+            -518.5419999999999,
+            -564.8339999999998
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "warm",
+          "units": "us/frame",
+          "master_median": 155.018733,
+          "final_median": 145.4492835,
+          "median_paired_ratio": 0.9480351893363808,
+          "paired_ratio_ci95": [
+            0.9144717727378849,
+            0.9550688211223184
+          ],
+          "median_paired_delta": -8.036783,
+          "paired_delta_ci95": [
+            -13.495883500000005,
+            -6.924317000000002
+          ],
+          "paired_ratios": [
+            0.9477426504349696,
+            0.918273188253938,
+            0.972249933618959,
+            0.8279059555605766,
+            0.9508560404256234,
+            0.9106703572218319,
+            0.9365047413539526,
+            0.9578717627843091,
+            0.9522658794603276,
+            0.948327728237792,
+            0.9003238638977896,
+            0.965682185521489
+          ],
+          "paired_deltas": [
+            -8.163833000000011,
+            -12.893200000000007,
+            -4.309700000000021,
+            -30.11956699999999,
+            -7.532066999999984,
+            -14.098567000000003,
+            -9.824832999999984,
+            -6.494534000000016,
+            -7.354099999999988,
+            -7.909732999999989,
+            -15.855565999999982,
+            -5.224932999999993
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "new_size",
+          "units": "us/frame",
+          "master_median": 2886.9044585,
+          "final_median": 2281.5555415,
+          "median_paired_ratio": 0.7935907079965913,
+          "paired_ratio_ci95": [
+            0.7782287389030208,
+            0.8058472939110373
+          ],
+          "median_paired_delta": -592.8453750000001,
+          "paired_delta_ci95": [
+            -650.9115829999998,
+            -551.3577085000002
+          ],
+          "paired_ratios": [
+            0.7944299592488945,
+            0.8052451268889528,
+            0.8064494609331219,
+            0.7770496772758994,
+            0.8105809986732051,
+            0.792751456744288,
+            0.7982306013372529,
+            0.8225295160937217,
+            0.7792052601380332,
+            0.7772522176680084,
+            0.7750205519447207,
+            0.790744131870438
+          ],
+          "paired_deltas": [
+            -584.9895000000001,
+            -550.1460000000002,
+            -545.4549999999999,
+            -665.5833339999999,
+            -552.5694170000002,
+            -600.7012500000001,
+            -572.2467500000002,
+            -501.9894169999998,
+            -652.2813329999999,
+            -649.5418329999998,
+            -664.3088339999999,
+            -601.6840000000002
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "return",
+          "units": "us/frame",
+          "master_median": 162.5,
+          "final_median": 159.4375,
+          "median_paired_ratio": 0.9956781800057892,
+          "paired_ratio_ci95": [
+            0.9379618578671958,
+            1.0137464954624822
+          ],
+          "median_paired_delta": -0.6875,
+          "paired_delta_ci95": [
+            -10.125,
+            2.228999999999999
+          ],
+          "paired_ratios": [
+            0.8802659669822852,
+            1.010665198548099,
+            0.9540412044374009,
+            0.9974599036347134,
+            0.9597677616501146,
+            0.9984496124031008,
+            0.9938964563768652,
+            1.0168277923768654,
+            1.1051364365971108,
+            0.9056296364770863,
+            0.9218825112969907,
+            1.0782339271882262
+          ],
+          "paired_deltas": [
+            -22.040999999999997,
+            1.6659999999999968,
+            -7.25,
+            -0.4170000000000016,
+            -6.582999999999998,
+            -0.25,
+            -0.9579999999999984,
+            2.7920000000000016,
+            16.375,
+            -16.334000000000003,
+            -13.0,
+            12.625
+          ]
+        },
+        {
+          "font": "RobotoFlex",
+          "phase": "complete_sequence",
+          "units": "us/sequence",
+          "master_median": 42437.893497,
+          "final_median": 34380.707996,
+          "median_paired_ratio": 0.8136889220411239,
+          "paired_ratio_ci95": [
+            0.8014597960608769,
+            0.8236659816002755
+          ],
+          "median_paired_delta": -7845.830990000002,
+          "paired_delta_ci95": [
+            -8535.459990999996,
+            -7414.463507
+          ],
+          "paired_ratios": [
+            0.8151327915643233,
+            0.8206159177278501,
+            0.8267160454727008,
+            0.7863763565619193,
+            0.8282112202390376,
+            0.808273713996679,
+            0.8166184775472909,
+            0.83846177126305,
+            0.8033535181023833,
+            0.7995660740193704,
+            0.7927526159432223,
+            0.8122450525179246
+          ],
+          "paired_deltas": [
+            -7762.496990000007,
+            -7488.298999999999,
+            -7213.709999999999,
+            -9448.004017999992,
+            -7340.628014000002,
+            -8176.03901,
+            -7667.8309900000095,
+            -6747.209023999989,
+            -8512.415996000003,
+            -8558.503985999989,
+            -8978.914988000004,
+            -7929.1649899999975
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "first_paint",
+          "units": "us/frame",
+          "master_median": 30934.0625,
+          "final_median": 9423.1875,
+          "median_paired_ratio": 0.30322868078959553,
+          "paired_ratio_ci95": [
+            0.30016276853876445,
+            0.31023637348917954
+          ],
+          "median_paired_delta": -21569.9375,
+          "paired_delta_ci95": [
+            -21863.834000000003,
+            -21203.5
+          ],
+          "paired_ratios": [
+            0.2981555535195727,
+            0.2996751800600803,
+            0.3088301948343215,
+            0.30228800413650464,
+            0.312536832641189,
+            0.3012396708924252,
+            0.3002535843618505,
+            0.3117968928871865,
+            0.30416935744268647,
+            0.30474320615377154,
+            0.3000719527156784,
+            0.3116425521440375
+          ],
+          "paired_deltas": [
+            -22023.790999999997,
+            -21768.459000000003,
+            -21187.292,
+            -21590.0,
+            -20914.748999999996,
+            -21592.917,
+            -21959.209000000003,
+            -21134.000999999997,
+            -21549.875,
+            -21500.208,
+            -22010.666,
+            -21219.708
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "warm",
+          "units": "us/frame",
+          "master_median": 149.91386649999998,
+          "final_median": 136.66525000000001,
+          "median_paired_ratio": 0.9143967784294216,
+          "paired_ratio_ci95": [
+            0.9059329051027893,
+            0.9305617650051674
+          ],
+          "median_paired_delta": -12.916016499999998,
+          "paired_delta_ci95": [
+            -14.125699999999995,
+            -10.179217000000008
+          ],
+          "paired_ratios": [
+            0.8998976947237685,
+            0.9170333753678017,
+            0.934455425063035,
+            0.9605928749680417,
+            0.9127367005358409,
+            0.8764287609577268,
+            0.9144417170064827,
+            0.9143518398523606,
+            0.9536791118204324,
+            0.9266681049472997,
+            0.8753801380938208,
+            0.9119681154818102
+          ],
+          "paired_deltas": [
+            -15.055667,
+            -12.336099999999988,
+            -9.583434000000011,
+            -5.672167000000002,
+            -13.083432999999985,
+            -18.856966999999997,
+            -12.96113299999999,
+            -12.870900000000006,
+            -6.925032999999985,
+            -10.775000000000006,
+            -19.34446700000001,
+            -13.19573299999999
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "new_size",
+          "units": "us/frame",
+          "master_median": 31262.618083499998,
+          "final_median": 9616.625,
+          "median_paired_ratio": 0.307729227020321,
+          "paired_ratio_ci95": [
+            0.3058193881388058,
+            0.3086742452796199
+          ],
+          "median_paired_delta": -21546.710124999998,
+          "paired_delta_ci95": [
+            -21946.5017085,
+            -21490.1475
+          ],
+          "paired_ratios": [
+            0.3074938204313855,
+            0.30808061492371036,
+            0.3072044024110492,
+            0.3011388406163509,
+            0.30796463360925647,
+            0.30475711641881664,
+            0.30897605412347795,
+            0.2982145888116815,
+            0.30849039207831125,
+            0.30885809848092854,
+            0.30688165985879495,
+            0.3239048669072659
+          ],
+          "paired_deltas": [
+            -21546.093999999997,
+            -21403.687917,
+            -21463.611083,
+            -22175.444583999997,
+            -21521.413167,
+            -21994.868000000002,
+            -21547.32625,
+            -23035.579666,
+            -21516.683917000002,
+            -21805.944499999998,
+            -21898.135417,
+            -21191.187916999996
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "return",
+          "units": "us/frame",
+          "master_median": 215.2295,
+          "final_median": 175.25,
+          "median_paired_ratio": 0.8426831093252227,
+          "paired_ratio_ci95": [
+            0.7960952459418518,
+            0.8712313864959882
+          ],
+          "median_paired_delta": -33.208,
+          "paired_delta_ci95": [
+            -45.667500000000004,
+            -25.5625
+          ],
+          "paired_ratios": [
+            0.8457008244994111,
+            0.9869403901911642,
+            0.8404575556893438,
+            0.8449086629611016,
+            0.6712572320229584,
+            0.9251072927638302,
+            0.848130542680924,
+            0.8030406037405267,
+            0.8943322303110522,
+            0.7891498881431768,
+            0.7855587991329414,
+            0.8164798173944929
+          ],
+          "paired_deltas": [
+            -32.75,
+            -2.1260000000000048,
+            -33.125,
+            -31.167,
+            -78.583,
+            -14.292000000000002,
+            -33.291,
+            -43.167,
+            -19.958,
+            -47.125,
+            -46.793000000000006,
+            -44.542
+          ]
+        },
+        {
+          "font": "Rye",
+          "phase": "complete_sequence",
+          "units": "us/sequence",
+          "master_median": 411007.29249699996,
+          "final_median": 129123.247003,
+          "median_paired_ratio": 0.3143720663249422,
+          "paired_ratio_ci95": [
+            0.31203608062586957,
+            0.3153442606867143
+          ],
+          "median_paired_delta": -281005.294,
+          "paired_delta_ci95": [
+            -285763.376012,
+            -279357.023005
+          ],
+          "paired_ratios": [
+            0.31358515977013246,
+            0.31438554562674825,
+            0.3143585870231362,
+            0.3083281834973927,
+            0.31517950973369663,
+            0.31108210085373794,
+            0.31530297315923955,
+            0.30591376370981405,
+            0.31550827236400847,
+            0.31538554821418896,
+            0.3129900603980012,
+            0.3297005590922344
+          ],
+          "paired_deltas": [
+            -281061.33901,
+            -278984.92300400004,
+            -279071.25301600003,
+            -287896.667018,
+            -279642.792994,
+            -286111.33401000005,
+            -280949.24899,
+            -297990.250992,
+            -279977.79099400004,
+            -283541.917,
+            -285415.418014,
+            -275954.376994
+          ]
+        }
+      ],
+      "all_weighted_sequences": [
+        {
+          "block": 0,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 60567.25,
+            "warm": 4554.999,
+            "new_size": 635744.583996,
+            "return": 218.959
+          },
+          "total_us": 701085.791996
+        },
+        {
+          "block": 0,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15613.5,
+            "warm": 4248.20799,
+            "new_size": 188300.95799999998,
+            "return": 222.166
+          },
+          "total_us": 208384.83198999998
+        },
+        {
+          "block": 0,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2494.792,
+            "warm": 4441.794,
+            "new_size": 27128.457995999997,
+            "return": 162.042
+          },
+          "total_us": 34227.085995999994
+        },
+        {
+          "block": 0,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2970.459,
+            "warm": 4686.70899,
+            "new_size": 34148.331996,
+            "return": 184.083
+          },
+          "total_us": 41989.582986
+        },
+        {
+          "block": 0,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 31379.875,
+            "warm": 4512.084000000001,
+            "new_size": 373358.586,
+            "return": 212.25
+          },
+          "total_us": 409462.795
+        },
+        {
+          "block": 0,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9356.084,
+            "warm": 4060.4139900000005,
+            "new_size": 114805.45799999998,
+            "return": 179.5
+          },
+          "total_us": 128401.45598999999
+        },
+        {
+          "block": 1,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2456.333,
+            "warm": 4345.99599,
+            "new_size": 27295.998,
+            "return": 157.875
+          },
+          "total_us": 34256.20199
+        },
+        {
+          "block": 1,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2957.75,
+            "warm": 4732.791990000001,
+            "new_size": 33897.75,
+            "return": 156.209
+          },
+          "total_us": 41744.50099
+        },
+        {
+          "block": 1,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 31083.375,
+            "warm": 4460.625,
+            "new_size": 371205.462,
+            "return": 162.792
+          },
+          "total_us": 406912.254
+        },
+        {
+          "block": 1,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9314.916,
+            "warm": 4090.5420000000004,
+            "new_size": 114361.206996,
+            "return": 160.666
+          },
+          "total_us": 127927.33099599999
+        },
+        {
+          "block": 1,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15221.042,
+            "warm": 4254.82899,
+            "new_size": 192358.41699599999,
+            "return": 191.959
+          },
+          "total_us": 212026.24698599998
+        },
+        {
+          "block": 1,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 53590.375,
+            "warm": 4535.622,
+            "new_size": 646930.749996,
+            "return": 213.708
+          },
+          "total_us": 705270.4549959999
+        },
+        {
+          "block": 2,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30654.25,
+            "warm": 4386.37401,
+            "new_size": 371773.917,
+            "return": 207.625
+          },
+          "total_us": 407022.16601000004
+        },
+        {
+          "block": 2,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9466.958,
+            "warm": 4098.870989999999,
+            "new_size": 114210.58400399999,
+            "return": 174.5
+          },
+          "total_us": 127950.91299399998
+        },
+        {
+          "block": 2,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 14897.584,
+            "warm": 4212.33099,
+            "new_size": 189034.45799999998,
+            "return": 196.625
+          },
+          "total_us": 208340.99798999997
+        },
+        {
+          "block": 2,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52613.458,
+            "warm": 4459.49799,
+            "new_size": 644458.625004,
+            "return": 211.0
+          },
+          "total_us": 701742.5809940001
+        },
+        {
+          "block": 2,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2994.709,
+            "warm": 4659.12399,
+            "new_size": 33817.833996,
+            "return": 157.75
+          },
+          "total_us": 41629.416986000004
+        },
+        {
+          "block": 2,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2463.0,
+            "warm": 4529.83299,
+            "new_size": 27272.373996000002,
+            "return": 150.5
+          },
+          "total_us": 34415.706986000005
+        },
+        {
+          "block": 3,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15439.208,
+            "warm": 4212.24999,
+            "new_size": 188338.581996,
+            "return": 178.625
+          },
+          "total_us": 208168.664986
+        },
+        {
+          "block": 3,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52585.834,
+            "warm": 4380.41799,
+            "new_size": 641496.0,
+            "return": 207.25
+          },
+          "total_us": 698669.50199
+        },
+        {
+          "block": 3,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2988.5,
+            "warm": 5250.54201,
+            "new_size": 35824.124004,
+            "return": 164.167
+          },
+          "total_us": 44227.333013999996
+        },
+        {
+          "block": 3,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2431.5,
+            "warm": 4346.955,
+            "new_size": 27837.123996000002,
+            "return": 163.75
+          },
+          "total_us": 34779.328996000004
+        },
+        {
+          "block": 3,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9354.0,
+            "warm": 4147.96299,
+            "new_size": 114664.62399600001,
+            "return": 169.792
+          },
+          "total_us": 128336.37898600001
+        },
+        {
+          "block": 3,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30944.0,
+            "warm": 4318.128,
+            "new_size": 380769.959004,
+            "return": 200.959
+          },
+          "total_us": 416233.046004
+        },
+        {
+          "block": 4,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2962.792,
+            "warm": 4597.96101,
+            "new_size": 35006.166,
+            "return": 163.625
+          },
+          "total_us": 42730.54401
+        },
+        {
+          "block": 4,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2485.542,
+            "warm": 4371.999000000001,
+            "new_size": 28375.332995999997,
+            "return": 157.042
+          },
+          "total_us": 35389.915995999996
+        },
+        {
+          "block": 4,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9508.334,
+            "warm": 4105.4130000000005,
+            "new_size": 114927.666,
+            "return": 160.458
+          },
+          "total_us": 128701.871
+        },
+        {
+          "block": 4,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30423.083,
+            "warm": 4497.9159899999995,
+            "new_size": 373184.624004,
+            "return": 239.041
+          },
+          "total_us": 408344.663994
+        },
+        {
+          "block": 4,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 53425.791,
+            "warm": 4517.996999999999,
+            "new_size": 642394.209,
+            "return": 204.0
+          },
+          "total_us": 700541.997
+        },
+        {
+          "block": 4,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15278.125,
+            "warm": 4117.20699,
+            "new_size": 188716.20800400001,
+            "return": 211.875
+          },
+          "total_us": 208323.41499400002
+        },
+        {
+          "block": 5,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9308.833,
+            "warm": 4012.29,
+            "new_size": 115696.41699599999,
+            "return": 176.541
+          },
+          "total_us": 129194.08099599999
+        },
+        {
+          "block": 5,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30901.75,
+            "warm": 4577.9990099999995,
+            "new_size": 379634.832996,
+            "return": 190.833
+          },
+          "total_us": 415305.415006
+        },
+        {
+          "block": 5,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 53612.375,
+            "warm": 4466.0409899999995,
+            "new_size": 644466.251004,
+            "return": 191.584
+          },
+          "total_us": 702736.250994
+        },
+        {
+          "block": 5,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 14842.666,
+            "warm": 4168.002,
+            "new_size": 188823.918,
+            "return": 203.792
+          },
+          "total_us": 208038.378
+        },
+        {
+          "block": 5,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2422.375,
+            "warm": 4311.83199,
+            "new_size": 27573.084000000003,
+            "return": 161.0
+          },
+          "total_us": 34468.29099
+        },
+        {
+          "block": 5,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2966.792,
+            "warm": 4734.789,
+            "new_size": 34781.499,
+            "return": 161.25
+          },
+          "total_us": 42644.33
+        },
+        {
+          "block": 6,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52764.416,
+            "warm": 4515.96201,
+            "new_size": 647518.001004,
+            "return": 209.75
+          },
+          "total_us": 705008.129014
+        },
+        {
+          "block": 6,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15547.792,
+            "warm": 4240.7519999999995,
+            "new_size": 188602.791,
+            "return": 195.875
+          },
+          "total_us": 208587.21
+        },
+        {
+          "block": 6,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2475.708,
+            "warm": 4347.255,
+            "new_size": 27166.748003999997,
+            "return": 156.0
+          },
+          "total_us": 34145.711004
+        },
+        {
+          "block": 6,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2980.875,
+            "warm": 4641.999989999999,
+            "new_size": 34033.709004000004,
+            "return": 156.958
+          },
+          "total_us": 41813.54199400001
+        },
+        {
+          "block": 6,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 31381.667,
+            "warm": 4544.66799,
+            "new_size": 374180.832,
+            "return": 219.208
+          },
+          "total_us": 410326.37499
+        },
+        {
+          "block": 6,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9422.458,
+            "warm": 4155.834000000001,
+            "new_size": 115612.91700000002,
+            "return": 185.917
+          },
+          "total_us": 129377.12600000002
+        },
+        {
+          "block": 7,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2503.5,
+            "warm": 4429.995989999999,
+            "new_size": 27919.083996,
+            "return": 168.708
+          },
+          "total_us": 35021.287986
+        },
+        {
+          "block": 7,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3034.792,
+            "warm": 4624.83201,
+            "new_size": 33942.956999999995,
+            "return": 165.916
+          },
+          "total_us": 41768.49700999999
+        },
+        {
+          "block": 7,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30708.959,
+            "warm": 4508.29299,
+            "new_size": 393890.997996,
+            "return": 219.167
+          },
+          "total_us": 429327.41698599997
+        },
+        {
+          "block": 7,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9574.958,
+            "warm": 4122.1659899999995,
+            "new_size": 117464.042004,
+            "return": 176.0
+          },
+          "total_us": 131337.165994
+        },
+        {
+          "block": 7,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 14624.75,
+            "warm": 4108.374,
+            "new_size": 193322.99900399998,
+            "return": 184.958
+          },
+          "total_us": 212241.08100399998
+        },
+        {
+          "block": 7,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52916.917,
+            "warm": 4492.21101,
+            "new_size": 644675.0409959999,
+            "return": 217.708
+          },
+          "total_us": 702301.8770059999
+        },
+        {
+          "block": 8,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30970.0,
+            "warm": 4485.039,
+            "new_size": 373386.290004,
+            "return": 188.875
+          },
+          "total_us": 409030.204004
+        },
+        {
+          "block": 8,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9420.125,
+            "warm": 4277.28801,
+            "new_size": 115186.08299999998,
+            "return": 168.917
+          },
+          "total_us": 129052.41300999999
+        },
+        {
+          "block": 8,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 14807.5,
+            "warm": 4217.9580000000005,
+            "new_size": 192847.166004,
+            "return": 198.791
+          },
+          "total_us": 212071.415004
+        },
+        {
+          "block": 8,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 52590.625,
+            "warm": 4553.667,
+            "new_size": 652602.498996,
+            "return": 219.084
+          },
+          "total_us": 709965.8749960001
+        },
+        {
+          "block": 8,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 3059.333,
+            "warm": 4621.914,
+            "new_size": 35450.916996,
+            "return": 155.75
+          },
+          "total_us": 43287.913996
+        },
+        {
+          "block": 8,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2578.541,
+            "warm": 4401.291,
+            "new_size": 27623.540999999997,
+            "return": 172.125
+          },
+          "total_us": 34775.498
+        },
+        {
+          "block": 9,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15061.375,
+            "warm": 4512.504,
+            "new_size": 189924.956004,
+            "return": 187.417
+          },
+          "total_us": 209686.252004
+        },
+        {
+          "block": 9,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 53080.791,
+            "warm": 4535.045010000001,
+            "new_size": 645303.9170039999,
+            "return": 211.334
+          },
+          "total_us": 703131.0870139999
+        },
+        {
+          "block": 9,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2942.042,
+            "warm": 4592.25,
+            "new_size": 34992.501,
+            "return": 173.084
+          },
+          "total_us": 42699.87699999999
+        },
+        {
+          "block": 9,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2431.666,
+            "warm": 4354.95801,
+            "new_size": 27197.999004,
+            "return": 156.75
+          },
+          "total_us": 34141.373014000004
+        },
+        {
+          "block": 9,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9423.917,
+            "warm": 4084.7909999999997,
+            "new_size": 116935.914996,
+            "return": 176.375
+          },
+          "total_us": 130620.997996
+        },
+        {
+          "block": 9,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30924.125,
+            "warm": 4408.041,
+            "new_size": 378607.248996,
+            "return": 223.5
+          },
+          "total_us": 414162.914996
+        },
+        {
+          "block": 10,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2953.042,
+            "warm": 4772.12499,
+            "new_size": 35433.041004,
+            "return": 166.416
+          },
+          "total_us": 43324.623994
+        },
+        {
+          "block": 10,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2434.5,
+            "warm": 4296.45801,
+            "new_size": 27461.334995999998,
+            "return": 153.416
+          },
+          "total_us": 34345.709006
+        },
+        {
+          "block": 10,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9436.375,
+            "warm": 4076.49999,
+            "new_size": 116346.126,
+            "return": 171.416
+          },
+          "total_us": 130030.41699
+        },
+        {
+          "block": 10,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 31447.041,
+            "warm": 4656.834,
+            "new_size": 379123.751004,
+            "return": 218.209
+          },
+          "total_us": 415445.835004
+        },
+        {
+          "block": 10,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 55734.333,
+            "warm": 4476.0,
+            "new_size": 657475.581996,
+            "return": 212.125
+          },
+          "total_us": 717898.039996
+        },
+        {
+          "block": 10,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 15735.375,
+            "warm": 4355.45901,
+            "new_size": 190922.873004,
+            "return": 185.167
+          },
+          "total_us": 211198.874014
+        },
+        {
+          "block": 11,
+          "font": "Rye",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 9606.875,
+            "warm": 4101.0440100000005,
+            "new_size": 121827.747,
+            "return": 198.167
+          },
+          "total_us": 135733.83301
+        },
+        {
+          "block": 11,
+          "font": "Rye",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 30826.583,
+            "warm": 4496.916,
+            "new_size": 376122.002004,
+            "return": 242.709
+          },
+          "total_us": 411688.210004
+        },
+        {
+          "block": 11,
+          "font": "FleurDeLeah",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 53549.833,
+            "warm": 4319.00199,
+            "new_size": 647958.624996,
+            "return": 218.167
+          },
+          "total_us": 706045.626986
+        },
+        {
+          "block": 11,
+          "font": "FleurDeLeah",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 14939.917,
+            "warm": 4281.66399,
+            "new_size": 190927.248996,
+            "return": 184.75
+          },
+          "total_us": 210333.579986
+        },
+        {
+          "block": 11,
+          "font": "RobotoFlex",
+          "variant": "final",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2433.5,
+            "warm": 4410.7919999999995,
+            "new_size": 27284.000004,
+            "return": 174.0
+          },
+          "total_us": 34302.292004
+        },
+        {
+          "block": 11,
+          "font": "RobotoFlex",
+          "variant": "master",
+          "frames": 44,
+          "phase_contributions_us": {
+            "first_paint": 2998.334,
+            "warm": 4567.539989999999,
+            "new_size": 34504.208004,
+            "return": 161.375
+          },
+          "total_us": 42231.456994
+        }
+      ]
+    }
+  ],
+  "failed_prestart_attempt": {
+    "path": "/private/tmp/femtovg-hinting-stress-scene-20261003/paired12",
+    "file_hashes": {
+      "PLAN.json": "700c77232391fd9ebe00595b0ea480e8060edb30268e2827013a9e1dfa517347",
+      "ABORT.json": "a3929a7e18bd5baa4d3f037e52e2b8c7f3792f635b81578d4d6d471ee5c5e8d1"
+    },
+    "timing_records": 0,
+    "unchanged": true,
+    "abort": {
+      "utc": "2026-10-03T15:56:05.379855+00:00",
+      "reason": "compiler/build/linker process-name match",
+      "pids": [
+        "2131"
+      ]
+    }
+  },
+  "smoke": {
+    "records": 6,
+    "sha256": "beecbf4c1aa454823f278e64addb6b69512ea95bad7e75af9403d6968eeecd95",
+    "included_in_timings": false
+  },
+  "RobotoFlex_license_correction": {
+    "font": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/RobotoFlex-VariableFont.ttf",
+      "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+    },
+    "applicable_license": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/licenses/RobotoFlex-OFL.txt",
+      "sha256": "9cbaed04b20c853f99840efe5dc96956f6f6120ed83a0ade35f9281a2b63e5d0",
+      "license": "SIL OFL 1.1"
+    },
+    "attribution": {
+      "path": "/Users/jesse/github/femtovg-outline-cache-bench/assets/ATTRIBUTION.md",
+      "sha256": "846d0d50ecca32cd55deb74b791bc62cf965a8b50aab0ced1a31432247d9c569",
+      "mapping_line": "| RobotoFlex-VariableFont.ttf | Copyright 2017 The Roboto Flex Project Authors; [Roboto Flex](https://github.com/TypeNetwork/Roboto-Flex) | [OFL 1.1](licenses/RobotoFlex-OFL.txt) |"
+    },
+    "predeclared_legacy_file": {
+      "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "contents": "Apache 2.0",
+      "applicable_to_this_RobotoFlex_font": false
+    },
+    "original_plans_and_measurements_changed": false,
+    "correction": "The audit verifies the legacy file bytes but does not treat that file as the applicable Roboto Flex license."
+  },
+  "no_binaries_builds_or_timings_executed_by_audit": true
+}

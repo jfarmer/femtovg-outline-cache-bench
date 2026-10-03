@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/MECHANISM-SOURCE-AUDIT.txt",
+      "bytes": 12913,
+      "sha256": "45bbf9009c00c26c1cc6dc13dab3060f48cfadfd901b83034e5c0603cdffaf47"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/production_count_trace_v2.py",
+      "bytes": 12660,
+      "sha256": "648b2f1ce74dba995479c1157ab74555935c123365fdb7d09aaec9ae7327652f"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/analyze_production_count_trace.py",
+      "bytes": 8000,
+      "sha256": "b093ed7e5ef91f435e54e99787cd7bd989166bfdd11556ea00429e59c7a93b97"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/audit_production_count_trace.py",
+      "bytes": 6221,
+      "sha256": "9141f61e035e422ad24b1d374b09f2ce02b2053670648ed7186f749cd606a2fd"
+    },
+    {
+      "path": "/private/tmp/femtovg-cjk-font-search-20261002/annotate_production_count_trace.py",
+      "bytes": 3059,
+      "sha256": "99700ecbe52b183c96095e1cf938386a359dba39424f83d0f6570653baa05338"
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/mod.rs",
+      "bytes": 35661,
+      "sha256": "105a8f1df5778c96777421eb95020b5e48e3ceadc406d7e13ed1d9bb1edaec6a"
+    },
+    {
+      "path": "/Users/jesse/code/swash/src/scale/hinting_cache.rs",
+      "bytes": 3174,
+      "sha256": "a7006e74a0edee707e9fd58d4192ff72eefd1840eaeaeb2b96f80ae3d4dbf28a"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/mod.rs",
+      "bytes": 58186,
+      "sha256": "5f092180bd55512bde24193f7064f4cb9569ec7e90234b1bcd79b50486e4dbbb"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/memory.rs",
+      "bytes": 1092,
+      "sha256": "3ea6966c266c29d38cb37a2b998489da4fdff36f0a33e27a5009f3feeedd8c8c"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/hint.rs",
+      "bytes": 23800,
+      "sha256": "0e9b7620f383bf28ed075da0e639b8f141b238764f484b008ddf5f12a4216c78"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/glyf/mod.rs",
+      "bytes": 59600,
+      "sha256": "d4962a52521d970029006f1624aa974e8b326c281841c333e42b54df29a30d7f"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/glyf/hint/instance.rs",
+      "bytes": 10018,
+      "sha256": "99dd4ee9ec9546bf4f68603f303921a280a2f5a44165a540a3105d81672b1d79"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/glyf/hint/engine/dispatch.rs",
+      "bytes": 9759,
+      "sha256": "b13d151d7d5367b52b62ddb6b5bd86bc7dcd84df0cc7961b2ca8fb6130d70b85"
+    },
+    {
+      "path": "/Users/jesse/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/skrifa-0.44.0/src/outline/glyf/hint/engine/definition.rs",
+      "bytes": 18436,
+      "sha256": "4b92385e6c9fe0d6342d27c4ebddf4c7dafdea64f3d53f19fc737a91534eca36"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "RobotoFlex-VariableFont.ttf": {
+    "source_path": "/private/tmp/femtovg-review-fixes-scenes/assets/RobotoFlex-VariableFont.ttf",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/RobotoFlex-VariableFont.ttf",
+    "sha256": "512f759e24d81543f5629b8edc99c566140a8d161fc2277ac82e64add2f26cf9"
+  },
+  "Vollkorn-Medium.ttf": {
+    "source_path": "/private/tmp/femtovg-review-fixes-scenes/assets/Vollkorn-Medium.ttf",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/Vollkorn-Medium.ttf",
+    "sha256": "b704817fe4433aa674c54f87141f2541d88d7d48342d98ec727a5eed4873a892"
+  },
+  "LICENSE-Roboto": {
+    "source_path": "/private/tmp/femtovg-review-fixes-scenes/assets/LICENSE-Roboto",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Roboto",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "LICENSE-Vollkorn": {
+    "source_path": "/private/tmp/femtovg-review-fixes-scenes/assets/LICENSE-Vollkorn",
+    "path": "/private/tmp/femtovg-current-demo-20261003/assets/LICENSE-Vollkorn",
+    "sha256": "53f9c99fa3d47f7d632a42ee7bab4a834a60a744f6026d676c3a223cef2b2ef3"
+  }
+}
