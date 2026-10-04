@@ -1,6 +1,8 @@
 # FemtoVG Swash outline cache experiments
 
-The current PR measurements compare upstream master `6a5f15a` with proposed code `b87a94dd`. See the [combined results and analysis](benchmarks/demo-current-20261003/SUMMARY.md).
+The current implementation uses the smaller cache behind FemtoVG’s private `Font` API. The [exact-version comparison](benchmarks/font-cache-adapter-20261004/SUMMARY.md) preserves the demo and stress benefits, with no clear added cost from the wrapper. A small cost remains when every request misses. Sources, six balanced blocks per cohort, raw results and the independent audit are retained. No FemtoVG PR has been created.
+
+The earlier demo measurements compare upstream master `6a5f15a` with proposed code `b87a94dd`. See those [combined results and analysis](benchmarks/demo-current-20261003/SUMMARY.md).
 
 | Scene | What it draws | Source and results |
 |---|---|---|
@@ -9,13 +11,13 @@ The current PR measurements compare upstream master `6a5f15a` with proposed code
 
 Both measure CPU layout/drawing plus Void flush, excluding font/image loading, GPU work, window creation and startup. Each comparison uses twelve paired blocks on M4 Max/macOS. Plans, raw process output, provenance, font licenses and independent audits are retained alongside the reports. [Reproduction instructions](benchmarks/demo-current-20261003/README.md) describe the archived scripts and their validation scope.
 
-A [smaller-integration experiment](benchmarks/lower-touch-20261003/SUMMARY.md) compares master, the current cache plus encapsulation edits, and a prototype using the original atlas loop. It removes 146 production lines and preserves the demo gains, but loses some protection against repeated size changes when every request misses. The current FemtoVG implementation is unchanged.
+A [smaller-integration experiment](benchmarks/lower-touch-20261003/SUMMARY.md) compares master, the current cache plus encapsulation edits, and a prototype using the original atlas loop. It removes 146 production lines and preserves the demo gains, but loses some protection against repeated size changes when every request misses. The prototype was subsequently adopted, with cache ownership moved behind the private Font API.
 
 The [same comparison on the extreme hinting demo](benchmarks/lower-touch-stress-20261003/SUMMARY.md) shows that the smaller integration retains nearly all the savings there: Fleur de Leah goes from 90.26 ms on master to 20.18 ms with the current cache and 20.50 ms with the smaller version on the first frame.
 
 The earlier studies below retain their own source pins and baselines. They are not pooled with these current-master comparisons.
 
-Original evidence documents are preserved as captured. Statements that the repository had no public remote describe the capture date; the current [PR draft](pr-draft/PR_BODY.md) links the published source and results.
+Original evidence documents are preserved as captured. Statements that the repository had no public remote describe the capture date; the [earlier PR draft](pr-draft/PR_BODY.md) links those results but predates the smaller implementation and needs revision before manual review.
 
 This repository preserves the outline-cache investigation: original benchmarks,
 font/hinting studies, rejected alternatives, native Swash miss-cost prototypes,

@@ -1,0 +1,980 @@
+{
+  "status": "PASS",
+  "provenance": {
+    "source_trees": {
+      "master": "6d872a3877285ef6a38624d4f34154ea29404061f570350c11a4f3dcca2fb7d9",
+      "simple": "e8457ec2821fe7be228216c36cf6d50620e664597efcc174bf59922d0233006e",
+      "adapter": "b8535b74002c760c181593503f00858f081130e39ac05f798cdf552442d3528f"
+    },
+    "normalized_lock_sha256": "fc6cf71ea75b655dc138ffc263403cc30477c19f18d2f7f5d827075d46737f85",
+    "binary_count": 12,
+    "harness_records": 9,
+    "rustc": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+    "cargo": "cargo 1.96.0 (30a34c682 2026-05-25)\n",
+    "limitations": "Build logs and saved binary hashes verified; no fresh compilation or resolved Cargo compiler-artifact JSON was requested."
+  },
+  "line_counts": {
+    "production_code_lines": {
+      "master": 3107,
+      "simple": 3400,
+      "adapter": 3441
+    },
+    "adapter_net_vs_master": 334,
+    "adapter_net_vs_simple": 41,
+    "prior_full_net_vs_master": 439,
+    "adapter_fewer_than_prior_full": 105,
+    "method": "Reproduced saved lexical physical-line method: comments/blanks/test-only items excluded; attributes/braces and all feature branches included. Net additions are not total patch churn or statements."
+  },
+  "cohorts": {
+    "comparison": {
+      "processes": 108,
+      "raw_rows": 396,
+      "summary_rows": 22,
+      "accepted_attempts": [
+        "block-00-00",
+        "block-01-00",
+        "block-02-00",
+        "block-03-00",
+        "block-04-00",
+        "block-05-00"
+      ],
+      "excluded_attempts": [],
+      "pair_order_counts": {
+        "simple/master": {
+          "BA": 3,
+          "AB": 3
+        },
+        "adapter/master": {
+          "BA": 3,
+          "AB": 3
+        },
+        "adapter/simple": {
+          "BA": 3,
+          "AB": 3
+        }
+      },
+      "maximum_summary_numeric_error": 0,
+      "guard_checks": 405,
+      "guard_status_counts": {
+        "idle": 405
+      },
+      "quiet_intervals": [
+        {
+          "started_utc": "2026-10-04T00:40:45.724423+00:00",
+          "ended_utc": "2026-10-04T00:40:50.952394+00:00",
+          "required_quiet_seconds": 5,
+          "context": {
+            "stage": "pre_run"
+          }
+        }
+      ],
+      "results": [
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 1964.9585,
+          "simple": 1921.7295,
+          "adapter": 1838.8745,
+          "simple_vs_master_percent": -1.7780405484339956,
+          "simple_vs_master_ci95": [
+            -31.279997982116747,
+            3.3513265047415253
+          ],
+          "simple_vs_master_delta_us": -33.875,
+          "adapter_vs_master_percent": -8.338232170077402,
+          "adapter_vs_master_ci95": [
+            -27.09607144211315,
+            -1.8019901641340539
+          ],
+          "adapter_vs_master_delta_us": -160.58350000000007,
+          "adapter_vs_simple_percent": -5.070708981077743,
+          "adapter_vs_simple_ci95": [
+            -12.121760445070828,
+            13.613172435624566
+          ],
+          "adapter_vs_simple_delta_us": -96.33349999999996
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 237.0312,
+          "simple": 227.76684999999998,
+          "adapter": 219.35205,
+          "simple_vs_master_percent": 0.9222769368360306,
+          "simple_vs_master_ci95": [
+            -10.496761360505918,
+            3.127598711693824
+          ],
+          "simple_vs_master_delta_us": 2.0959499999999878,
+          "adapter_vs_master_percent": -6.82152014350978,
+          "adapter_vs_master_ci95": [
+            -14.097363953044495,
+            0.8996882953425156
+          ],
+          "adapter_vs_master_delta_us": -17.072850000000017,
+          "adapter_vs_simple_percent": -3.636221879371016,
+          "adapter_vs_simple_ci95": [
+            -14.937274227994802,
+            6.008715560552014
+          ],
+          "adapter_vs_simple_delta_us": -8.26894999999999
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 234.9299,
+          "simple": 226.03895,
+          "adapter": 227.92915,
+          "simple_vs_master_percent": -7.068886622284614,
+          "simple_vs_master_ci95": [
+            -8.088958074516867,
+            10.482751781149702
+          ],
+          "simple_vs_master_delta_us": -16.7555665,
+          "adapter_vs_master_percent": -3.648930134884171,
+          "adapter_vs_master_ci95": [
+            -8.415807754879761,
+            6.270039910975384
+          ],
+          "adapter_vs_master_delta_us": -8.456367,
+          "adapter_vs_simple_percent": -0.26771991157923947,
+          "adapter_vs_simple_ci95": [
+            -5.00356314403223,
+            4.833696289300282
+          ],
+          "adapter_vs_simple_delta_us": -0.9680670000000049
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 1430.7187915,
+          "simple": 1406.6214585,
+          "adapter": 1386.83675,
+          "simple_vs_master_percent": -2.0322259990345257,
+          "simple_vs_master_ci95": [
+            -4.173761128104747,
+            0.913088486737551
+          ],
+          "simple_vs_master_delta_us": -29.07800050000003,
+          "adapter_vs_master_percent": -3.5433951604773917,
+          "adapter_vs_master_ci95": [
+            -4.868305637475778,
+            0.9151235262023383
+          ],
+          "adapter_vs_master_delta_us": -50.725791500000014,
+          "adapter_vs_simple_percent": -0.07707058210367213,
+          "adapter_vs_simple_ci95": [
+            -5.513220412431768,
+            3.6169565309206564
+          ],
+          "adapter_vs_simple_delta_us": -2.203249999999912
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 922.199625,
+          "simple": 928.105875,
+          "adapter": 884.81425,
+          "simple_vs_master_percent": -2.4523376893992754,
+          "simple_vs_master_ci95": [
+            -7.210451212139684,
+            8.345648024563623
+          ],
+          "simple_vs_master_delta_us": -22.762125000000026,
+          "adapter_vs_master_percent": -4.664433620238051,
+          "adapter_vs_master_ci95": [
+            -10.068564524904655,
+            4.199862015717115
+          ],
+          "adapter_vs_master_delta_us": -42.70487449999996,
+          "adapter_vs_simple_percent": -2.502125413865197,
+          "adapter_vs_simple_ci95": [
+            -8.724071492486656,
+            2.4479967707539907
+          ],
+          "adapter_vs_simple_delta_us": -24.13545799999997
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 4304.562,
+          "simple": 4235.7085,
+          "adapter": 4262.937,
+          "simple_vs_master_percent": -1.0040645971379714,
+          "simple_vs_master_ci95": [
+            -4.259479613207306,
+            12.506687105921367
+          ],
+          "simple_vs_master_delta_us": -42.95800000000054,
+          "adapter_vs_master_percent": -0.47270847055780885,
+          "adapter_vs_master_ci95": [
+            -5.783585730619101,
+            3.9283618149526522
+          ],
+          "adapter_vs_master_delta_us": -20.478999999999814,
+          "adapter_vs_simple_percent": -2.433897249747935,
+          "adapter_vs_simple_ci95": [
+            -7.380556938407563,
+            1.4167241964562816
+          ],
+          "adapter_vs_simple_delta_us": -101.02099999999973
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 229.877,
+          "simple": 229.2771,
+          "adapter": 231.31455,
+          "simple_vs_master_percent": 0.05716675354515699,
+          "simple_vs_master_ci95": [
+            -3.7095227483174176,
+            3.09530401446666
+          ],
+          "simple_vs_master_delta_us": 0.13144999999998674,
+          "adapter_vs_master_percent": -0.8206642360618632,
+          "adapter_vs_master_ci95": [
+            -5.057094225350439,
+            6.3762281228597395
+          ],
+          "adapter_vs_master_delta_us": -1.8251499999999936,
+          "adapter_vs_simple_percent": 1.718318140817443,
+          "adapter_vs_simple_ci95": [
+            -4.8743323893418005,
+            4.291264289623831
+          ],
+          "adapter_vs_simple_delta_us": 4.0188500000000005
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 233.08818300000001,
+          "simple": 234.22025000000002,
+          "adapter": 228.8242835,
+          "simple_vs_master_percent": 1.327109033317797,
+          "simple_vs_master_ci95": [
+            -3.7040882154543713,
+            2.6526927232307096
+          ],
+          "simple_vs_master_delta_us": 3.1057169999999985,
+          "adapter_vs_master_percent": -1.1809025041774002,
+          "adapter_vs_master_ci95": [
+            -6.375113518131808,
+            -0.5504286331497854
+          ],
+          "adapter_vs_master_delta_us": -2.685483000000005,
+          "adapter_vs_simple_percent": -3.4590182382772117,
+          "adapter_vs_simple_ci95": [
+            -4.383381683572474,
+            -0.5397153530636023
+          ],
+          "adapter_vs_simple_delta_us": -8.067400000000006
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 3487.984292,
+          "simple": 3519.2309999999998,
+          "adapter": 3455.7344165000004,
+          "simple_vs_master_percent": 0.7431672168743853,
+          "simple_vs_master_ci95": [
+            -0.9985745817352121,
+            3.0843004364020987
+          ],
+          "simple_vs_master_delta_us": 26.047000000000253,
+          "adapter_vs_master_percent": -0.22001880661974282,
+          "adapter_vs_master_ci95": [
+            -2.467725131601278,
+            1.2367058180734136
+          ],
+          "adapter_vs_master_delta_us": -7.39233349999995,
+          "adapter_vs_simple_percent": -1.5371313961990485,
+          "adapter_vs_simple_ci95": [
+            -4.5601681861571155,
+            1.9943824559975565
+          ],
+          "adapter_vs_simple_delta_us": -53.93049999999994
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 2251.0642915,
+          "simple": 2273.2151665,
+          "adapter": 2285.4252500000002,
+          "simple_vs_master_percent": 1.7363923472180076,
+          "simple_vs_master_ci95": [
+            -4.320110817626771,
+            4.554657050643163
+          ],
+          "simple_vs_master_delta_us": 38.74979150000013,
+          "adapter_vs_master_percent": -0.029303773009142775,
+          "adapter_vs_master_ci95": [
+            -3.355698456316941,
+            3.809336412208686
+          ],
+          "adapter_vs_master_delta_us": -0.8820834999999079,
+          "adapter_vs_simple_percent": -1.216366134589686,
+          "adapter_vs_simple_ci95": [
+            -2.779322298547282,
+            2.6823608193917714
+          ],
+          "adapter_vs_simple_delta_us": -27.547000000000025
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 6963.2295,
+          "simple": 4261.5205000000005,
+          "adapter": 4287.313,
+          "simple_vs_master_percent": -37.89776352576929,
+          "simple_vs_master_ci95": [
+            -40.36678161993222,
+            -35.73155948580518
+          ],
+          "simple_vs_master_delta_us": -2610.6885,
+          "adapter_vs_master_percent": -38.2170587238148,
+          "adapter_vs_master_ci95": [
+            -39.21143925111299,
+            -36.3099925645013
+          ],
+          "adapter_vs_master_delta_us": -2689.7080000000005,
+          "adapter_vs_simple_percent": 1.7919400522804718,
+          "adapter_vs_simple_ci95": [
+            -4.368916684418417,
+            3.231162021190215
+          ],
+          "adapter_vs_simple_delta_us": 76.16750000000002
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 236.34564999999998,
+          "simple": 227.85215,
+          "adapter": 229.61455,
+          "simple_vs_master_percent": -3.96914607995657,
+          "simple_vs_master_ci95": [
+            -8.31904835679645,
+            -0.13685115170586348
+          ],
+          "simple_vs_master_delta_us": -9.420749999999984,
+          "adapter_vs_master_percent": -3.2405845088289142,
+          "adapter_vs_master_ci95": [
+            -8.227070430286803,
+            6.66797912728741
+          ],
+          "adapter_vs_master_delta_us": -7.691549999999992,
+          "adapter_vs_simple_percent": 0.9578125452452568,
+          "adapter_vs_simple_ci95": [
+            -5.6024417671843185,
+            12.868071021856753
+          ],
+          "adapter_vs_simple_delta_us": 2.1456500000000034
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 231.32496650000002,
+          "simple": 221.792283,
+          "adapter": 224.8784835,
+          "simple_vs_master_percent": -3.693009116787782,
+          "simple_vs_master_ci95": [
+            -8.695551501447873,
+            5.195425232915829
+          ],
+          "simple_vs_master_delta_us": -8.5445165,
+          "adapter_vs_master_percent": -2.2478526090782602,
+          "adapter_vs_master_ci95": [
+            -4.801919430367108,
+            -0.19401954416236045
+          ],
+          "adapter_vs_master_delta_us": -5.1138665,
+          "adapter_vs_simple_percent": 2.5005513639162036,
+          "adapter_vs_simple_ci95": [
+            -7.458760451340407,
+            6.1258034336535765
+          ],
+          "adapter_vs_simple_delta_us": 5.509050000000002
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 6315.5295835,
+          "simple": 3723.71875,
+          "adapter": 3665.336792,
+          "simple_vs_master_percent": -42.1357647443092,
+          "simple_vs_master_ci95": [
+            -43.579944589959226,
+            -39.836427095357166
+          ],
+          "simple_vs_master_delta_us": -2670.2673335,
+          "adapter_vs_master_percent": -42.75135171850622,
+          "adapter_vs_master_ci95": [
+            -43.306116619559624,
+            -41.37892802648747
+          ],
+          "adapter_vs_master_delta_us": -2718.9307080000003,
+          "adapter_vs_simple_percent": -0.9726811378724665,
+          "adapter_vs_simple_ci95": [
+            -3.4851572618443294,
+            1.3661906394510814
+          ],
+          "adapter_vs_simple_delta_us": -37.243000000000166
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 4211.40275,
+          "simple": 2432.7742500000004,
+          "adapter": 2422.4200414999996,
+          "simple_vs_master_percent": -42.75101475279598,
+          "simple_vs_master_ci95": [
+            -44.2363342477634,
+            -41.315940428423474
+          ],
+          "simple_vs_master_delta_us": -1806.5380420000001,
+          "adapter_vs_master_percent": -42.19919405418472,
+          "adapter_vs_master_ci95": [
+            -43.9045174741662,
+            -41.25807914850602
+          ],
+          "adapter_vs_master_delta_us": -1770.4807915000001,
+          "adapter_vs_simple_percent": -0.23499054777872952,
+          "adapter_vs_simple_ci95": [
+            -1.4913579131913324,
+            3.4486380117478066
+          ],
+          "adapter_vs_simple_delta_us": -5.736125500000298
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 7367.625,
+          "simple": 5136.0205000000005,
+          "adapter": 4968.792,
+          "simple_vs_master_percent": -30.92697385440654,
+          "simple_vs_master_ci95": [
+            -32.689999111936935,
+            -27.019387913779607
+          ],
+          "simple_vs_master_delta_us": -2244.0005,
+          "adapter_vs_master_percent": -33.4951662290826,
+          "adapter_vs_master_ci95": [
+            -38.62052002586027,
+            -27.845382524933747
+          ],
+          "adapter_vs_master_delta_us": -2501.9784999999993,
+          "adapter_vs_simple_percent": -5.520194215984381,
+          "adapter_vs_simple_ci95": [
+            -10.495699957240351,
+            2.7569590984603876
+          ],
+          "adapter_vs_simple_delta_us": -294.79149999999936
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 234.027,
+          "simple": 228.53755,
+          "adapter": 239.46885,
+          "simple_vs_master_percent": -2.236916000502337,
+          "simple_vs_master_ci95": [
+            -10.023743423974585,
+            5.08304981558616
+          ],
+          "simple_vs_master_delta_us": -5.429100000000005,
+          "adapter_vs_master_percent": 2.3637084503230876,
+          "adapter_vs_master_ci95": [
+            -5.851769432019438,
+            7.905106854557864
+          ],
+          "adapter_vs_master_delta_us": 5.502200000000002,
+          "adapter_vs_simple_percent": 8.25751892157064,
+          "adapter_vs_simple_ci95": [
+            -8.01723765436248,
+            13.570687489495258
+          ],
+          "adapter_vs_simple_delta_us": 18.47080000000001
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 228.4743665,
+          "simple": 224.4173,
+          "adapter": 225.2186835,
+          "simple_vs_master_percent": -1.9724311909110783,
+          "simple_vs_master_ci95": [
+            -7.171167247634585,
+            4.888378164510865
+          ],
+          "simple_vs_master_delta_us": -4.546566499999997,
+          "adapter_vs_master_percent": -0.3813574964512012,
+          "adapter_vs_master_ci95": [
+            -6.324807426310153,
+            0.8658036572099403
+          ],
+          "adapter_vs_master_delta_us": -0.8360669999999999,
+          "adapter_vs_simple_percent": 0.20084127612418623,
+          "adapter_vs_simple_ci95": [
+            -4.763065150123935,
+            3.5154746878344856
+          ],
+          "adapter_vs_simple_delta_us": 0.4497999999999962
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 6395.038292,
+          "simple": 4389.373250000001,
+          "adapter": 4350.8613335,
+          "simple_vs_master_percent": -31.766919017772928,
+          "simple_vs_master_ci95": [
+            -32.85299506667377,
+            -30.04868596864933
+          ],
+          "simple_vs_master_delta_us": -2031.5139590000003,
+          "adapter_vs_master_percent": -32.43082750207598,
+          "adapter_vs_master_ci95": [
+            -34.499782755880105,
+            -31.431035893467218
+          ],
+          "adapter_vs_master_delta_us": -2073.480917,
+          "adapter_vs_simple_percent": -2.7311713664979695,
+          "adapter_vs_simple_ci95": [
+            -4.264051448574047,
+            1.6953402357181457
+          ],
+          "adapter_vs_simple_delta_us": -122.32787449999978
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 4225.7656664999995,
+          "simple": 2760.685708,
+          "adapter": 2751.257,
+          "simple_vs_master_percent": -35.265018133518915,
+          "simple_vs_master_ci95": [
+            -37.14712039177081,
+            -32.57269658525716
+          ],
+          "simple_vs_master_delta_us": -1495.8821665,
+          "adapter_vs_master_percent": -34.67318696830941,
+          "adapter_vs_master_ci95": [
+            -37.641315466083014,
+            -32.59167122656274
+          ],
+          "adapter_vs_master_delta_us": -1465.074667,
+          "adapter_vs_simple_percent": -0.8760086583896709,
+          "adapter_vs_simple_ci95": [
+            -4.4781048187448995,
+            5.736417106647673
+          ],
+          "adapter_vs_simple_delta_us": -24.73262499999987
+        },
+        {
+          "case": "grid_unique_sizes-RobotoFlex",
+          "phase": "all_misses",
+          "blocks": 6,
+          "unit": "us",
+          "master": 6073.791499999999,
+          "simple": 6161.896000000001,
+          "adapter": 6175.3125,
+          "simple_vs_master_percent": 3.2381273296088864,
+          "simple_vs_master_ci95": [
+            0.0030524094533967983,
+            9.064687947037841
+          ],
+          "simple_vs_master_delta_us": 191.5005000000001,
+          "adapter_vs_master_percent": 2.2169445226838613,
+          "adapter_vs_master_ci95": [
+            -2.8876738538181677,
+            6.6827620987224385
+          ],
+          "adapter_vs_master_delta_us": 134.0630000000001,
+          "adapter_vs_simple_percent": -0.8773565762015989,
+          "adapter_vs_simple_ci95": [
+            -8.143503008112035,
+            3.3394749309219263
+          ],
+          "adapter_vs_simple_delta_us": -54.1255000000001
+        },
+        {
+          "case": "grid_unique_sizes-Vollkorn",
+          "phase": "all_misses",
+          "blocks": 6,
+          "unit": "us",
+          "master": 48260.125,
+          "simple": 49083.167,
+          "adapter": 50111.104,
+          "simple_vs_master_percent": 1.3806273673829472,
+          "simple_vs_master_ci95": [
+            -0.8571391094474579,
+            3.879032562318141
+          ],
+          "simple_vs_master_delta_us": 659.3539999999994,
+          "adapter_vs_master_percent": 2.2112066753404713,
+          "adapter_vs_master_ci95": [
+            1.3830017978891829,
+            4.292786495189171
+          ],
+          "adapter_vs_master_delta_us": 1076.313000000002,
+          "adapter_vs_simple_percent": 0.8589978851842872,
+          "adapter_vs_simple_ci95": [
+            -0.7040278952113233,
+            3.3757094706898694
+          ],
+          "adapter_vs_simple_delta_us": 422.1875
+        }
+      ]
+    },
+    "stress": {
+      "processes": 18,
+      "raw_rows": 90,
+      "summary_rows": 5,
+      "accepted_attempts": [
+        "block-00-01",
+        "block-01-00",
+        "block-02-02",
+        "block-03-00",
+        "block-04-00",
+        "block-05-00"
+      ],
+      "excluded_attempts": [
+        {
+          "attempt": "block-00-00",
+          "status": {
+            "status": "excluded",
+            "started_utc": "2026-10-04T00:41:30.651937+00:00",
+            "ended_utc": "2026-10-04T00:41:33.506718+00:00",
+            "reason": "Build/compiler/linker process-name guard matched",
+            "evidence": {
+              "checked_utc": "2026-10-04T00:41:33.472895+00:00",
+              "status": "matched",
+              "context": {
+                "stage": "during_process",
+                "block": 0,
+                "variant": "adapter",
+                "case": "stress-FleurDeLeah"
+              },
+              "pids": [
+                "73449"
+              ],
+              "process_families_and_names_only": [
+                {
+                  "pid": "73449",
+                  "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+                  "family": "build",
+                  "parent_pid": "73419",
+                  "parent_comm": "/bin/sh"
+                }
+              ]
+            }
+          },
+          "raw_rows": 10
+        },
+        {
+          "attempt": "block-02-00",
+          "status": {
+            "status": "excluded",
+            "started_utc": "2026-10-04T00:42:30.687696+00:00",
+            "ended_utc": "2026-10-04T00:42:32.578481+00:00",
+            "reason": "Build/compiler/linker process-name guard matched",
+            "evidence": {
+              "checked_utc": "2026-10-04T00:42:32.546959+00:00",
+              "status": "matched",
+              "context": {
+                "stage": "during_process",
+                "block": 2,
+                "variant": "adapter",
+                "case": "stress-FleurDeLeah"
+              },
+              "pids": [
+                "76380"
+              ],
+              "process_families_and_names_only": [
+                {
+                  "pid": "76380",
+                  "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+                  "family": "build",
+                  "parent_pid": "76348",
+                  "parent_comm": "/bin/sh"
+                }
+              ]
+            }
+          },
+          "raw_rows": 10
+        },
+        {
+          "attempt": "block-02-01",
+          "status": {
+            "status": "excluded",
+            "started_utc": "2026-10-04T00:43:22.732226+00:00",
+            "ended_utc": "2026-10-04T00:43:24.124058+00:00",
+            "reason": "Build/compiler/linker process-name guard matched",
+            "evidence": {
+              "checked_utc": "2026-10-04T00:43:24.091174+00:00",
+              "status": "matched",
+              "context": {
+                "stage": "during_process",
+                "block": 2,
+                "variant": "master",
+                "case": "stress-FleurDeLeah"
+              },
+              "pids": [
+                "78911"
+              ],
+              "process_families_and_names_only": [
+                {
+                  "pid": "78911",
+                  "comm": "/Users/jesse/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+                  "family": "build",
+                  "parent_pid": "78887",
+                  "parent_comm": "/bin/sh"
+                }
+              ]
+            }
+          },
+          "raw_rows": 5
+        }
+      ],
+      "pair_order_counts": {
+        "simple/master": {
+          "BA": 3,
+          "AB": 3
+        },
+        "adapter/master": {
+          "BA": 3,
+          "AB": 3
+        },
+        "adapter/simple": {
+          "BA": 3,
+          "AB": 3
+        }
+      },
+      "maximum_summary_numeric_error": 0,
+      "guard_checks": 243,
+      "guard_status_counts": {
+        "idle": 240,
+        "matched": 3
+      },
+      "quiet_intervals": [
+        {
+          "started_utc": "2026-10-04T00:41:25.397241+00:00",
+          "ended_utc": "2026-10-04T00:41:30.650964+00:00",
+          "required_quiet_seconds": 5,
+          "context": {
+            "stage": "pre_run"
+          }
+        },
+        {
+          "started_utc": "2026-10-04T00:42:20.854947+00:00",
+          "ended_utc": "2026-10-04T00:42:26.083988+00:00",
+          "required_quiet_seconds": 5,
+          "context": {
+            "stage": "pre_run"
+          }
+        },
+        {
+          "started_utc": "2026-10-04T00:43:17.496487+00:00",
+          "ended_utc": "2026-10-04T00:43:22.729108+00:00",
+          "required_quiet_seconds": 5,
+          "context": {
+            "stage": "pre_run"
+          }
+        },
+        {
+          "started_utc": "2026-10-04T00:43:50.584648+00:00",
+          "ended_utc": "2026-10-04T00:44:20.966573+00:00",
+          "required_quiet_seconds": 30.0,
+          "context": {
+            "stage": "pre_run"
+          }
+        }
+      ],
+      "results": [
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "complete_sequence",
+          "blocks": 6,
+          "unit": "us/sequence",
+          "master": 1268190.8364979997,
+          "simple": 301101.020014,
+          "adapter": 301649.064002,
+          "simple_vs_master_percent": -76.20102622149088,
+          "simple_vs_master_ci95": [
+            -76.53962590082264,
+            -75.86565590055909
+          ],
+          "simple_vs_master_delta_us": -965723.8379909999,
+          "adapter_vs_master_percent": -76.2157486225646,
+          "adapter_vs_master_ci95": [
+            -76.71979198772053,
+            -75.52887971251434
+          ],
+          "adapter_vs_master_delta_us": -966638.0639979999,
+          "adapter_vs_simple_percent": 0.012536536817564503,
+          "adapter_vs_simple_ci95": [
+            -1.053646894659338,
+            1.6116278793913086
+          ],
+          "adapter_vs_simple_delta_us": 27.96099500003038
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 95421.563,
+          "simple": 21083.5835,
+          "adapter": 20785.7295,
+          "simple_vs_master_percent": -78.24614071778709,
+          "simple_vs_master_ci95": [
+            -79.07444519629605,
+            -75.99156011405626
+          ],
+          "simple_vs_master_delta_us": -74734.83350000001,
+          "adapter_vs_master_percent": -78.2092151371578,
+          "adapter_vs_master_ci95": [
+            -79.99816665890677,
+            -77.64324956540234
+          ],
+          "adapter_vs_master_delta_us": -74602.35399999999,
+          "adapter_vs_simple_percent": -2.066704399394753,
+          "adapter_vs_simple_ci95": [
+            -10.138793167905696,
+            1.8351821262363899
+          ],
+          "adapter_vs_simple_delta_us": -439.02100000000064
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "new_size",
+          "blocks": 6,
+          "unit": "us",
+          "master": 96885.49841649999,
+          "simple": 22894.4704585,
+          "adapter": 23025.058958499998,
+          "simple_vs_master_percent": -76.26867253420463,
+          "simple_vs_master_ci95": [
+            -76.68878327931063,
+            -76.15373006467715
+          ],
+          "simple_vs_master_delta_us": -73828.347333,
+          "adapter_vs_master_percent": -76.33757776814505,
+          "adapter_vs_master_ci95": [
+            -76.71079630681857,
+            -75.64983058060622
+          ],
+          "adapter_vs_master_delta_us": -74024.36825,
+          "adapter_vs_simple_percent": 0.18727079686211567,
+          "adapter_vs_simple_ci95": [
+            -0.8506619417108396,
+            2.4001788782269218
+          ],
+          "adapter_vs_simple_delta_us": 42.97404149999784
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "return",
+          "blocks": 6,
+          "unit": "us",
+          "master": 251.72899999999998,
+          "simple": 227.6875,
+          "adapter": 222.77100000000002,
+          "simple_vs_master_percent": -12.03682014520976,
+          "simple_vs_master_ci95": [
+            -12.526134101378828,
+            -6.043299052347195
+          ],
+          "simple_vs_master_delta_us": -29.665999999999997,
+          "adapter_vs_master_percent": -10.526005702846476,
+          "adapter_vs_master_ci95": [
+            -16.552121883787507,
+            -5.932325285633455
+          ],
+          "adapter_vs_master_delta_us": -25.958,
+          "adapter_vs_simple_percent": -1.2829370743456192,
+          "adapter_vs_simple_ci95": [
+            -7.84580673710496,
+            6.73439705465122
+          ],
+          "adapter_vs_simple_delta_us": -2.959000000000003
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 166.00565,
+          "simple": 151.4756335,
+          "adapter": 144.7612,
+          "simple_vs_master_percent": -8.187155051817768,
+          "simple_vs_master_ci95": [
+            -14.550675262926067,
+            -6.127098545880411
+          ],
+          "simple_vs_master_delta_us": -13.394599500000012,
+          "adapter_vs_master_percent": -12.262667704560837,
+          "adapter_vs_master_ci95": [
+            -17.75955255029165,
+            -9.603582359900937
+          ],
+          "adapter_vs_master_delta_us": -20.2312,
+          "adapter_vs_simple_percent": -3.9271291961574475,
+          "adapter_vs_simple_ci95": [
+            -6.038472815016383,
+            -1.8858820837986512
+          ],
+          "adapter_vs_simple_delta_us": -6.053449999999998
+        }
+      ]
+    }
+  },
+  "statistics": "Six complete blocks; each pair 3 AB/3 BA. Absolute values are marginal medians; deltas and percentages are medians of within-block differences/ratios. 5,000 paired-block resamples; seed 20261004+alphabetical group index; percentile indices 125 and 4874. Exploratory intervals, no multiplicity correction.",
+  "limits": [
+    "CPU benchmark with Void, no GPU/window/application performance claim.",
+    "Demo uses draw_us; cold/stress use total_us including Void flush. Do not mix these metrics.",
+    "Only default+Swash and a default-without-Swash Roboto demo control are timed; Swash-only/direct/stroke correctness depends on separate functional checks.",
+    "The seven cold samples are collapsed to one per-process median; individual sample times are not retained.",
+    "Name-based 0.1-second polling cannot prove absence of all transient/background load.",
+    "Prior non-Swash synthetic paragraph losses remain relevant; this limited demo control does not erase them."
+  ]
+}

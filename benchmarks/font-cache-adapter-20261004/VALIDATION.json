@@ -1,0 +1,31 @@
+{
+  "feature_matrix": [
+    {
+      "command": "cargo test --offline --features swash --lib",
+      "passed": 187
+    },
+    {
+      "command": "cargo test --offline --no-default-features --features swash --lib",
+      "passed": 171
+    },
+    {
+      "command": "cargo test --offline --lib",
+      "passed": 163
+    },
+    {
+      "command": "cargo check --offline --no-default-features --lib",
+      "status": "passed"
+    },
+    {
+      "command": "cargo fmt --check",
+      "status": "passed"
+    },
+    {
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "tdd": "Font adapter test failed to compile because rasterize_glyph did not exist, then passed in the Swash-only full suite; rasterizer handle regression has its own saved TDD log. Font test renamed images to outlines after the suite, without changing behavior.",
+  "warnings": "Existing optional-feature unused import/dead code warnings; no new adapter warnings.",
+  "head": "b87a94ddfba46ee67ca35ba240104615ac1503d8"
+}
