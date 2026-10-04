@@ -1,0 +1,137 @@
+[
+  {
+    "case": "stress-FleurDeLeah",
+    "phase": "complete_sequence",
+    "blocks": 6,
+    "unit": "us/sequence",
+    "master": 1240644.2695,
+    "before": 302261.086501,
+    "after": 299713.669001,
+    "before_vs_master_percent": -75.82430136024706,
+    "before_vs_master_ci95": [
+      -76.03892843882181,
+      -75.33869675231142
+    ],
+    "before_vs_master_delta_us": -942773.2309910001,
+    "after_vs_master_percent": -75.83960734582033,
+    "after_vs_master_ci95": [
+      -75.99696680910388,
+      -75.54790279467932
+    ],
+    "after_vs_master_delta_us": -942081.2695030001,
+    "after_vs_before_percent": 0.23443492220609485,
+    "after_vs_before_ci95": [
+      -2.203314837005299,
+      1.2736041209640558
+    ],
+    "after_vs_before_delta_us": 691.9614879999426
+  },
+  {
+    "case": "stress-FleurDeLeah",
+    "phase": "first_paint",
+    "blocks": 6,
+    "unit": "us",
+    "master": 94626.6045,
+    "before": 21631.771,
+    "after": 21571.625,
+    "before_vs_master_percent": -77.18630539307057,
+    "before_vs_master_ci95": [
+      -77.68354519308592,
+      -72.47923379429318
+    ],
+    "before_vs_master_delta_us": -73431.10399999999,
+    "after_vs_master_percent": -77.13877948983173,
+    "after_vs_master_ci95": [
+      -77.5774399228969,
+      -74.87649605006197
+    ],
+    "after_vs_master_delta_us": -73400.7705,
+    "after_vs_before_percent": 1.0155480660510752,
+    "after_vs_before_ci95": [
+      -12.503676060093365,
+      4.769337114111982
+    ],
+    "after_vs_before_delta_us": 219.20800000000054
+  },
+  {
+    "case": "stress-FleurDeLeah",
+    "phase": "new_size",
+    "blocks": 6,
+    "unit": "us",
+    "master": 95098.88712500001,
+    "before": 22774.9235835,
+    "after": 22757.015708,
+    "before_vs_master_percent": -76.06905150155352,
+    "before_vs_master_ci95": [
+      -76.23728192301385,
+      -75.80773197810417
+    ],
+    "before_vs_master_delta_us": -72382.97745800001,
+    "after_vs_master_percent": -76.13185349517914,
+    "after_vs_master_ci95": [
+      -76.21582970044133,
+      -75.74088598470621
+    ],
+    "after_vs_master_delta_us": -72337.34891649999,
+    "after_vs_before_percent": -0.07873593230697251,
+    "after_vs_before_ci95": [
+      -1.0785854403857598,
+      1.2778508333516903
+    ],
+    "after_vs_before_delta_us": -17.907875500000955
+  },
+  {
+    "case": "stress-FleurDeLeah",
+    "phase": "return",
+    "blocks": 6,
+    "unit": "us",
+    "master": 246.3125,
+    "before": 227.9375,
+    "after": 223.39600000000002,
+    "before_vs_master_percent": -9.823195839754822,
+    "before_vs_master_ci95": [
+      -15.926768761269848,
+      -2.1954655673713463
+    ],
+    "before_vs_master_delta_us": -23.7705,
+    "after_vs_master_percent": -9.259778077231212,
+    "after_vs_master_ci95": [
+      -20.63425270753918,
+      -0.7577296656919585
+    ],
+    "after_vs_master_delta_us": -22.75,
+    "after_vs_before_percent": -3.3586730682839185,
+    "after_vs_before_ci95": [
+      -5.677888557418576,
+      5.660898263226189
+    ],
+    "after_vs_before_delta_us": -7.604500000000002
+  },
+  {
+    "case": "stress-FleurDeLeah",
+    "phase": "warm",
+    "blocks": 6,
+    "unit": "us",
+    "master": 169.71526699999998,
+    "before": 143.47713349999998,
+    "after": 144.0153335,
+    "before_vs_master_percent": -13.86534390310844,
+    "before_vs_master_ci95": [
+      -15.995957383597032,
+      1.642474575083186
+    ],
+    "before_vs_master_delta_us": -23.078433500000003,
+    "after_vs_master_percent": -13.24886500410843,
+    "after_vs_master_ci95": [
+      -19.26893003122573,
+      -6.450270531719083
+    ],
+    "after_vs_master_delta_us": -22.035399999999996,
+    "after_vs_before_percent": -1.4439315565269784,
+    "after_vs_before_ci95": [
+      -10.91463070574117,
+      1.536493422487506
+    ],
+    "after_vs_before_delta_us": -2.0665670000000063
+  }
+]

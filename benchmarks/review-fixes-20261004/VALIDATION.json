@@ -1,0 +1,165 @@
+{
+  "timings": "complete: six balanced blocks in each of comparison-final, stress-final and probe-final",
+  "source_after_tree_sha256": "3ee2ca6404e212efc1cee6c92db38dfa6b366f9761889a3b8c62c5288bbba601",
+  "tdd_logs": {
+    "atlas-default-red.txt": {
+      "sha256": "f0bfdb2de01ff8bdd31affb03a0412d68dd6b1457fe1d3af0c5582e8995e4299",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/atlas-default-red.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "atlas-swash-red.txt": {
+      "sha256": "a83c05639e26b2176f48789729105e27f3b808d64eb1730e575d8c47910319a8",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/atlas-swash-red.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "atlas-swash-green.txt": {
+      "sha256": "46346ee8a15a26ac7b3e2f6c393dd2c568e88ab62e9934165d41884a99d994d6",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/atlas-swash-green.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "arena-red.log": {
+      "sha256": "feef9e39469608fd1bf0a805fdd1c8cae8c88a42780078bda78a700bf1d4ad14",
+      "source": "/private/tmp/femtovg-cow-key-review/arena-red.log",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "coordinate-red.log": {
+      "sha256": "4c048f001fa08f209f044fe86951e29239e2dc5d13ab810232f074d704848e4a",
+      "source": "/private/tmp/femtovg-cow-key-review/coordinate-red.log",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "coordinate-green.log": {
+      "sha256": "cb2ab7d6d97b16763a212beb20fc413eb60a78dda8f46702b4169c601ec2c4a9",
+      "source": "/private/tmp/femtovg-cow-key-review/coordinate-green.log",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "module-green.log": {
+      "sha256": "33afc624e8f0b1ef9ad912d0a5562f0b9f59f5bb68196fe5c8a90fd1daa1a21f",
+      "source": "/private/tmp/femtovg-cow-key-review/module-green.log",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "atlas-default-green-final.txt": {
+      "sha256": "b99e4f08747e2df24469da1aa7e891acb1096a0f410558b60e5c0c27f1e36434",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/atlas-default-green-final.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "nextest-swash-debug-no-image.txt": {
+      "sha256": "62c7dbf3e4faa43cb9cb9a7c5e08859ba0255e36946c4fef57841d048fc3e7cb",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-swash-debug-no-image.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "nextest-swash-debug-no-image-green.txt": {
+      "sha256": "93b7b571c333a585b17e588c700a3943b7dd37132e0229171c2e48e132bab9f9",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-swash-debug-no-image-green.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "nextest-default-swash.txt": {
+      "sha256": "389d9a179710b414a21a51b84509d08b66772b34be8ced1b95e37b414faf0763",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-default-swash.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "nextest-swash-only.txt": {
+      "sha256": "a0ad596fb34eea69a4a9d1417d34c4ac7dfb2f48f94ad3424d9e523d2aa76ea0",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-swash-only.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "nextest-default-no-swash.txt": {
+      "sha256": "d3432aa0d5f7d5a59b6c7f3723013bc6f9e9090fd2a6b8e6a43d30544ce61638",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-default-no-swash.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "check-no-default.txt": {
+      "sha256": "1e26ac02e2a820126b2f2d2f7296a2491cf5268f582e60f5df27ae81efd7cf26",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/check-no-default.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "atlas-batching-red.txt": {
+      "sha256": "7de033a13af821b80db30c50a0cda3a3e98a9a389335438af27224366cf4b5d8",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/atlas-batching-red.txt",
+      "stage": "a6eb669 with the new batching regression test, before correction"
+    },
+    "atlas-swash-first-attempt.txt": {
+      "sha256": "0f42f4e31b13ded4b9584e727ba3416802dbda475018250853227427d933cb2d",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/atlas-swash-first-attempt.txt",
+      "stage": "prior review-fix stage, before the final batching correction"
+    },
+    "nextest-batched-default-no-swash.txt": {
+      "sha256": "8429c926d6e685ab3bc7f4e7dffd07aea6e954b6459b9ff113249e285b86838f",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-batched-default-no-swash.txt",
+      "stage": "final committed 907bb375 source"
+    },
+    "nextest-batched-default-swash.txt": {
+      "sha256": "7653d6e46ce98998bbeee215fa28b1ce7bb905000e2a92cb577671a11e1d6a6a",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-batched-default-swash.txt",
+      "stage": "final committed 907bb375 source"
+    },
+    "nextest-batched-swash-debug.txt": {
+      "sha256": "c0d1b0578e28dfde4d62384c721b005333facc356027ad45a70922dfb3adb302",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-batched-swash-debug.txt",
+      "stage": "final committed 907bb375 source"
+    },
+    "nextest-batched-swash-only.txt": {
+      "sha256": "cc3cc34e10efcc4b62a7df96d66a45793004eea80056439afe96e8cc547baa99",
+      "source": "/private/tmp/femtovg-feedback-20261004/tdd/nextest-batched-swash-only.txt",
+      "stage": "final committed 907bb375 source"
+    }
+  },
+  "limitations": [
+    "Allocation counters and net capacity transitions are mechanism evidence, not application performance.",
+    "Void CPU measurements exclude backend/GPU performance and application startup.",
+    "The no-default-feature check predates the final batching correction; the final nextest feature matrix and selected debug suite ran after it.",
+    "Earlier 197/181/169 nextest runs and the first debug test-helper failures remain as explicitly marked prior-stage evidence."
+  ],
+  "root_reported_checks": {
+    "formatting": "passed",
+    "git_diff_check": "passed"
+  },
+  "prior_stage_evidence": {
+    "default_atlas_red": "2 targeted failures (layer survival and generic PNG upload panic), 10 passed",
+    "swash_only_atlas_red": "4 targeted failures, 7 passed",
+    "swash_only_atlas_green": "11 passed",
+    "arena_red": "1688 observed arena capacity changes across 1858 inserts; amortization regression fails",
+    "arena_green": "new amortization test passes (<64 changes), all 16 rasterizer module tests pass",
+    "coordinate_red": "1000 empty-coordinate hits allocate 1000 times; 1000 nonempty-coordinate hits allocate 2000 times",
+    "coordinate_green": "both 1000-hit cases allocate 1000 times; native image buffers remain",
+    "debug_no_image_initial": "8 targeted tests passed and 3 native origin assertions failed because the test helper included the inspector initialization clear quad",
+    "debug_no_image_final": "test helper selects the glyph draw command; all 11 targeted tests passed",
+    "default_atlas_final": "all 12 targeted tests passed after the test-helper correction",
+    "full_matrix": "default + Swash 197 passed; Swash-only 181 passed; default without Swash 169 passed",
+    "no_default_check": "cargo check without default features completed successfully"
+  },
+  "prior_stage_source_after_tree_sha256": "37f854790a4e8519571ecf3f5b22afadd168d219bc1fb71609d6550a3d5f39b3",
+  "after_commit": "907bb375645613b3647efab4c0efe29b50ed5b18",
+  "evidence": {
+    "batching_red": "four cold generic glyphs emitted eight target switches where two were expected; one targeted nextest failure",
+    "batching_green": "the final feature matrix passes the regression asserting two switches, caller target/transform/state depth/layer count",
+    "final_full_matrix": "cargo nextest: default + Swash 198 passed; Swash-only 182 passed; default without Swash 170 passed",
+    "final_debug_no_image": "cargo nextest selected atlas suite: Swash + debug-inspector without image-loading 12 passed, 170 skipped",
+    "no_default_check": "passed before the batching correction; retained as prior-stage evidence",
+    "arena": "near-budget capacity-change regression and Swash Render oracle pass in the final nextest matrix; earlier isolated module run passed all 16 tests",
+    "coordinate_allocations": "prior-stage standalone evidence: 1000 cached nonempty-coordinate renders use 1000 allocations after the fix versus 2000 before; image allocations remain"
+  },
+  "prior_stage_validation": {
+    "path": "validation/prior-stage-VALIDATION.json",
+    "sha256": "1503ce21c24281b07f2f40b488a0c5cd9ba81577f9a0e18faf8275a012877a49"
+  },
+  "cohorts": {
+    "comparison-final": {
+      "blocks": 6,
+      "accepted_attempts": 6,
+      "excluded_attempts": 0,
+      "records": 396
+    },
+    "stress-final": {
+      "blocks": 6,
+      "accepted_attempts": 6,
+      "excluded_attempts": 1,
+      "records": 90
+    },
+    "probe-final": {
+      "blocks": 6,
+      "accepted_attempts": 6,
+      "excluded_attempts": 0,
+      "records": 48
+    }
+  }
+}

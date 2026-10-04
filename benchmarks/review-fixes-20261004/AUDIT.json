@@ -1,0 +1,977 @@
+{
+  "status": "PASS",
+  "method": "Independent stdout/matrix/statistical reconstruction; no runner imports",
+  "verified_file_hashes": 507,
+  "source_git_references": {
+    "master": "9d574e076d3ce6006d9a21a01e3ae8a3bc649a57",
+    "before": "af989d9b617e9f424cb05974b057e4099592267a",
+    "after": "907bb375645613b3647efab4c0efe29b50ed5b18"
+  },
+  "after_source_tree_sha256": "3ee2ca6404e212efc1cee6c92db38dfa6b366f9761889a3b8c62c5288bbba601",
+  "after_source_file_count": 150,
+  "normalized_locks_and_feature_profiles_equal": true,
+  "cohorts": [
+    {
+      "path": "/private/tmp/femtovg-feedback-20261004/bench/runs/comparison-final",
+      "blocks": 6,
+      "accepted_records": 396,
+      "accepted_processes": 108,
+      "excluded_attempts": [],
+      "summary": [
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 1711.4165,
+          "before": 1721.8125,
+          "after": 1711.5210000000002,
+          "before_vs_master_percent": -1.371867220820705,
+          "before_vs_master_ci95": [
+            -6.725853851078933,
+            4.990873782918426
+          ],
+          "before_vs_master_delta_us": -23.250000000000114,
+          "after_vs_master_percent": -0.24198376014455958,
+          "after_vs_master_ci95": [
+            -1.429196769316804,
+            11.46437235564568
+          ],
+          "after_vs_master_delta_us": -4.144999999999982,
+          "after_vs_before_percent": 3.796353683836051,
+          "after_vs_before_ci95": [
+            -5.742497373903571,
+            15.771617281640903
+          ],
+          "after_vs_before_delta_us": 60.64600000000007
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 226.58955,
+          "before": 222.2396,
+          "after": 224.78334999999998,
+          "before_vs_master_percent": -0.8970808239254113,
+          "before_vs_master_ci95": [
+            -7.278263325331285,
+            1.9706430418779286
+          ],
+          "before_vs_master_delta_us": -2.064549999999997,
+          "after_vs_master_percent": -0.6024494256869461,
+          "after_vs_master_ci95": [
+            -4.674577488455317,
+            2.60975607777969
+          ],
+          "after_vs_master_delta_us": -1.3853000000000009,
+          "after_vs_before_percent": 0.6266073368194403,
+          "after_vs_before_ci95": [
+            -0.6000275781389341,
+            3.8887242138019307
+          ],
+          "after_vs_before_delta_us": 1.4189000000000078
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 229.79855,
+          "before": 222.74856699999998,
+          "after": 227.7090335,
+          "before_vs_master_percent": -1.5973743522325834,
+          "before_vs_master_ci95": [
+            -3.4749651741041605,
+            -0.24246852958464404
+          ],
+          "before_vs_master_delta_us": -3.6687835000000035,
+          "after_vs_master_percent": 0.2379959868100523,
+          "after_vs_master_ci95": [
+            -2.4515628622181596,
+            1.9475835370204142
+          ],
+          "after_vs_master_delta_us": 0.5006164999999925,
+          "after_vs_before_percent": 1.6531920859693572,
+          "after_vs_before_ci95": [
+            1.003445020650684,
+            2.462761741653552
+          ],
+          "after_vs_before_delta_us": 3.6763665000000003
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 1390.8645000000001,
+          "before": 1364.92175,
+          "after": 1375.9879584999999,
+          "before_vs_master_percent": -1.0502062948287927,
+          "before_vs_master_ci95": [
+            -5.991224816375823,
+            5.713361446158816
+          ],
+          "before_vs_master_delta_us": -14.510458499999913,
+          "after_vs_master_percent": -2.2507752114920843,
+          "after_vs_master_ci95": [
+            -3.8562799425964687,
+            0.4604867560395798
+          ],
+          "after_vs_master_delta_us": -31.3540835,
+          "after_vs_before_percent": -1.5533019241699586,
+          "after_vs_before_ci95": [
+            -5.02893823814809,
+            2.713923591908074
+          ],
+          "after_vs_before_delta_us": -21.20991700000002
+        },
+        {
+          "case": "demo-RobotoFlex",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 915.6738335,
+          "before": 869.9097085000001,
+          "after": 885.9896249999999,
+          "before_vs_master_percent": -4.699239155812851,
+          "before_vs_master_ci95": [
+            -6.495348671648349,
+            0.16661349340931775
+          ],
+          "before_vs_master_delta_us": -43.156458499999985,
+          "after_vs_master_percent": -3.047181822500178,
+          "after_vs_master_ci95": [
+            -4.630243318577043,
+            2.0078897498680193
+          ],
+          "after_vs_master_delta_us": -27.586958500000037,
+          "after_vs_before_percent": 1.2144420059371441,
+          "after_vs_before_ci95": [
+            -2.990239914891324,
+            7.826701744743391
+          ],
+          "after_vs_before_delta_us": 10.503458499999965
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 4216.8330000000005,
+          "before": 4388.646000000001,
+          "after": 4059.25,
+          "before_vs_master_percent": -1.3976872637216087,
+          "before_vs_master_ci95": [
+            -4.3244479025306095,
+            9.161574079627032
+          ],
+          "before_vs_master_delta_us": -61.20749999999998,
+          "after_vs_master_percent": -5.242184412041794,
+          "after_vs_master_ci95": [
+            -11.920675133101271,
+            2.6925073606758776
+          ],
+          "after_vs_master_delta_us": -221.39600000000019,
+          "after_vs_before_percent": -6.294847002681808,
+          "after_vs_before_ci95": [
+            -12.920081381269094,
+            2.0048828350428094
+          ],
+          "after_vs_before_delta_us": -275.60400000000004
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 229.73329999999999,
+          "before": 230.9686,
+          "after": 229.81675,
+          "before_vs_master_percent": -1.0087444197102835,
+          "before_vs_master_ci95": [
+            -5.515136574049206,
+            0.5397544858050218
+          ],
+          "before_vs_master_delta_us": -2.3730000000000047,
+          "after_vs_master_percent": 0.14072808760807187,
+          "after_vs_master_ci95": [
+            -10.117236894937431,
+            2.5273247738610394
+          ],
+          "after_vs_master_delta_us": 0.3000499999999988,
+          "after_vs_before_percent": -0.11909002907991573,
+          "after_vs_before_ci95": [
+            -5.009330233502412,
+            3.4941679212491805
+          ],
+          "after_vs_before_delta_us": -0.2686000000000064
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 234.29521699999998,
+          "before": 230.96245,
+          "after": 228.1396165,
+          "before_vs_master_percent": -1.5701420181398917,
+          "before_vs_master_ci95": [
+            -4.48565107244312,
+            0.4062407854043548
+          ],
+          "before_vs_master_delta_us": -3.7307334999999995,
+          "after_vs_master_percent": -2.774901027572596,
+          "after_vs_master_ci95": [
+            -5.4244039129758,
+            4.137680400558008
+          ],
+          "after_vs_master_delta_us": -6.511916999999997,
+          "after_vs_before_percent": 0.2884518295333205,
+          "after_vs_before_ci95": [
+            -2.465944080727267,
+            3.722326646388807
+          ],
+          "after_vs_before_delta_us": 0.6445500000000095
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 3428.2932920000003,
+          "before": 3456.0052914999997,
+          "after": 3424.845333,
+          "before_vs_master_percent": 0.45539920669960265,
+          "before_vs_master_ci95": [
+            -0.30671071625373303,
+            1.6396077932874675
+          ],
+          "before_vs_master_delta_us": 15.913166499999988,
+          "after_vs_master_percent": -0.11942534872823041,
+          "after_vs_master_ci95": [
+            -2.2336253036302542,
+            3.409903451914964
+          ],
+          "after_vs_master_delta_us": -4.092292000000043,
+          "after_vs_before_percent": -0.2828676750026071,
+          "after_vs_before_ci95": [
+            -3.332822398625429,
+            2.8805226593692224
+          ],
+          "after_vs_before_delta_us": -9.74150050000003
+        },
+        {
+          "case": "demo-RobotoFlex-no-swash",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 2308.124958,
+          "before": 2282.727333,
+          "after": 2272.3507915,
+          "before_vs_master_percent": -1.5207153685726837,
+          "before_vs_master_ci95": [
+            -2.222173884716666,
+            0.4424010134841505
+          ],
+          "before_vs_master_delta_us": -34.78820799999994,
+          "after_vs_master_percent": -1.3432531186234664,
+          "after_vs_master_ci95": [
+            -2.8692899878829783,
+            1.7784201435675773
+          ],
+          "after_vs_master_delta_us": -30.755041499999834,
+          "after_vs_before_percent": 0.0511543221103139,
+          "after_vs_before_ci95": [
+            -2.2294579590865116,
+            3.1193186811021567
+          ],
+          "after_vs_before_delta_us": 1.1667915000000448
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 7003.8125,
+          "before": 4268.6875,
+          "after": 4287.521000000001,
+          "before_vs_master_percent": -39.40389717171104,
+          "before_vs_master_ci95": [
+            -40.68490813175425,
+            -38.482517173684876
+          ],
+          "before_vs_master_delta_us": -2759.7704999999996,
+          "after_vs_master_percent": -38.64615629073553,
+          "after_vs_master_ci95": [
+            -40.03765264931808,
+            -37.22857749434212
+          ],
+          "after_vs_master_delta_us": -2687.9369999999994,
+          "after_vs_before_percent": 0.8862129260821527,
+          "after_vs_before_ci95": [
+            -0.5773805127564813,
+            4.141872595357388
+          ],
+          "after_vs_before_delta_us": 37.64649999999983
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 233.66885,
+          "before": 229.3417,
+          "after": 228.23964999999998,
+          "before_vs_master_percent": -1.3831432799935928,
+          "before_vs_master_ci95": [
+            -4.124458016952731,
+            0.3537604519721349
+          ],
+          "before_vs_master_delta_us": -3.204250000000002,
+          "after_vs_master_percent": -2.6604964679822043,
+          "after_vs_master_ci95": [
+            -4.582161357258102,
+            -0.35283989756998424
+          ],
+          "after_vs_master_delta_us": -6.329199999999986,
+          "after_vs_before_percent": -0.6778491612981941,
+          "after_vs_before_ci95": [
+            -2.317402919966194,
+            0.5433927776429537
+          ],
+          "after_vs_before_delta_us": -1.566749999999999
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 228.3326,
+          "before": 221.3409835,
+          "after": 220.17295000000001,
+          "before_vs_master_percent": -2.73302799158654,
+          "before_vs_master_ci95": [
+            -4.006167449177611,
+            -0.33417146463340375
+          ],
+          "before_vs_master_delta_us": -6.238816499999984,
+          "after_vs_master_percent": -3.5623363078737533,
+          "after_vs_master_ci95": [
+            -4.153211572457294,
+            -2.490048244814136
+          ],
+          "after_vs_master_delta_us": -8.144400000000005,
+          "after_vs_before_percent": -0.5343669756209646,
+          "after_vs_before_ci95": [
+            -3.2733551282831783,
+            0.6911896554970598
+          ],
+          "after_vs_before_delta_us": -1.1819169999999986
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 6282.6545415,
+          "before": 3628.8750419999997,
+          "after": 3636.70825,
+          "before_vs_master_percent": -42.10860822149455,
+          "before_vs_master_ci95": [
+            -43.05403865864757,
+            -41.88351878610961
+          ],
+          "before_vs_master_delta_us": -2644.3871665,
+          "after_vs_master_percent": -42.328438173542715,
+          "after_vs_master_ci95": [
+            -42.81212049058817,
+            -40.58752109156699
+          ],
+          "after_vs_master_delta_us": -2659.3855000000003,
+          "after_vs_before_percent": 0.5214605793218863,
+          "after_vs_before_ci95": [
+            -0.5994333508913097,
+            2.3536064989302385
+          ],
+          "after_vs_before_delta_us": 18.90783300000021
+        },
+        {
+          "case": "demo-Rye",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 4147.4184165,
+          "before": 2374.8663335,
+          "after": 2432.4999585,
+          "before_vs_master_percent": -42.71212735975456,
+          "before_vs_master_ci95": [
+            -42.99560243084969,
+            -41.738042399995365
+          ],
+          "before_vs_master_delta_us": -1774.500083,
+          "after_vs_master_percent": -41.1932249273536,
+          "after_vs_master_ci95": [
+            -42.25681544445816,
+            -40.54383007637182
+          ],
+          "after_vs_master_delta_us": -1699.7605,
+          "after_vs_before_percent": 2.550590470794456,
+          "after_vs_before_ci95": [
+            -0.5847308618529723,
+            4.081256691660573
+          ],
+          "after_vs_before_delta_us": 60.48270850000017
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 7170.5,
+          "before": 4996.208500000001,
+          "after": 4982.5419999999995,
+          "before_vs_master_percent": -29.26598181327369,
+          "before_vs_master_ci95": [
+            -34.5984312168757,
+            -17.35882088033014
+          ],
+          "before_vs_master_delta_us": -2075.458,
+          "after_vs_master_percent": -31.349629410443967,
+          "after_vs_master_ci95": [
+            -33.34191443333964,
+            -29.58666550239574
+          ],
+          "after_vs_master_delta_us": -2242.271,
+          "after_vs_before_percent": -2.941576378427807,
+          "after_vs_before_ci95": [
+            -15.431021276884161,
+            3.848962271180323
+          ],
+          "after_vs_before_delta_us": -149.91600000000017
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "pan",
+          "blocks": 6,
+          "unit": "us",
+          "master": 225.98739999999998,
+          "before": 232.92505,
+          "after": 228.12305,
+          "before_vs_master_percent": 3.8389472719731144,
+          "before_vs_master_ci95": [
+            1.3217272945983072,
+            9.654272113504158
+          ],
+          "before_vs_master_delta_us": 8.61045,
+          "after_vs_master_percent": 2.016507522972355,
+          "after_vs_master_ci95": [
+            -0.9476728429754167,
+            7.793876179716553
+          ],
+          "after_vs_master_delta_us": 4.56880000000001,
+          "after_vs_before_percent": -2.229069206491868,
+          "after_vs_before_ci95": [
+            -5.824675140963759,
+            2.6317429217046993
+          ],
+          "after_vs_before_delta_us": -5.162449999999993
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 226.1104,
+          "before": 222.8006665,
+          "after": 222.04165,
+          "before_vs_master_percent": -0.5738909373976975,
+          "before_vs_master_ci95": [
+            -2.5946113554947248,
+            1.344198477940961
+          ],
+          "before_vs_master_delta_us": -1.3069670000000002,
+          "after_vs_master_percent": -1.0907793409610067,
+          "after_vs_master_ci95": [
+            -2.755107807414825,
+            0.6126325311030967
+          ],
+          "after_vs_master_delta_us": -2.474367000000001,
+          "after_vs_before_percent": 0.4504540720599248,
+          "after_vs_before_ci95": [
+            -3.235859493440063,
+            1.451015589991833
+          ],
+          "after_vs_before_delta_us": 0.9846499999999878
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "zoom_in",
+          "blocks": 6,
+          "unit": "us",
+          "master": 6313.696125,
+          "before": 4206.079833,
+          "after": 4195.9687085000005,
+          "before_vs_master_percent": -33.40792402369114,
+          "before_vs_master_ci95": [
+            -34.19093697585696,
+            -32.989628463219155
+          ],
+          "before_vs_master_delta_us": -2108.4912085,
+          "after_vs_master_percent": -33.64121703682551,
+          "after_vs_master_ci95": [
+            -34.087426181793845,
+            -30.861042703589238
+          ],
+          "after_vs_master_delta_us": -2123.210125,
+          "after_vs_before_percent": -0.3502465551235623,
+          "after_vs_before_ci95": [
+            -0.6947605548568769,
+            4.104935201275273
+          ],
+          "after_vs_before_delta_us": -14.718916499999978
+        },
+        {
+          "case": "demo-Vollkorn",
+          "phase": "zoom_out",
+          "blocks": 6,
+          "unit": "us",
+          "master": 4150.2932915,
+          "before": 2661.956667,
+          "after": 2670.9548335,
+          "before_vs_master_percent": -35.79528568257998,
+          "before_vs_master_ci95": [
+            -37.4628714264485,
+            -35.27651699317931
+          ],
+          "before_vs_master_delta_us": -1490.4389585,
+          "after_vs_master_percent": -35.6100655971256,
+          "after_vs_master_ci95": [
+            -37.40717554752334,
+            -35.014875396161756
+          ],
+          "after_vs_master_delta_us": -1477.2778335,
+          "after_vs_before_percent": -0.024893111768387044,
+          "after_vs_before_ci95": [
+            -0.8690178118866576,
+            1.6879970577036496
+          ],
+          "after_vs_before_delta_us": -0.6425835000000006
+        },
+        {
+          "case": "grid_unique_sizes-RobotoFlex",
+          "phase": "all_misses",
+          "blocks": 6,
+          "unit": "us",
+          "master": 5997.6875,
+          "before": 6160.603999999999,
+          "after": 6178.4795,
+          "before_vs_master_percent": 1.991214798815144,
+          "before_vs_master_ci95": [
+            0.9316983641494359,
+            4.567459358912274
+          ],
+          "before_vs_master_delta_us": 119.58249999999998,
+          "after_vs_master_percent": 3.2747101195501394,
+          "after_vs_master_ci95": [
+            2.6020145422461893,
+            7.0252804334950625
+          ],
+          "after_vs_master_delta_us": 195.52050000000008,
+          "after_vs_before_percent": 0.7482864281514678,
+          "after_vs_before_ci95": [
+            -1.2087501380661891,
+            5.888823716460056
+          ],
+          "after_vs_before_delta_us": 45.85450000000037
+        },
+        {
+          "case": "grid_unique_sizes-Vollkorn",
+          "phase": "all_misses",
+          "blocks": 6,
+          "unit": "us",
+          "master": 48637.4165,
+          "before": 48806.3125,
+          "after": 49033.521,
+          "before_vs_master_percent": 0.2968069968561027,
+          "before_vs_master_ci95": [
+            -0.2641438429932419,
+            0.9629140927294277
+          ],
+          "before_vs_master_delta_us": 144.33299999999872,
+          "after_vs_master_percent": 0.47628726859952897,
+          "after_vs_master_ci95": [
+            -0.27090113667370685,
+            1.6961545796214006
+          ],
+          "after_vs_master_delta_us": 231.70850000000064,
+          "after_vs_before_percent": 0.3713751773687268,
+          "after_vs_before_ci95": [
+            -0.19783995459580206,
+            0.7260608031620208
+          ],
+          "after_vs_before_delta_us": 181.375
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/femtovg-feedback-20261004/bench/runs/stress-final",
+      "blocks": 6,
+      "accepted_records": 90,
+      "accepted_processes": 18,
+      "excluded_attempts": [
+        {
+          "attempt": "block-02-00",
+          "records": 5,
+          "reason": "Build/compiler/linker process-name guard matched",
+          "evidence": {
+            "checked_utc": "2026-10-04T13:33:58.675345+00:00",
+            "status": "matched",
+            "context": {
+              "stage": "during_process",
+              "block": 2,
+              "variant": "master",
+              "case": "stress-FleurDeLeah"
+            },
+            "pids": [
+              "12113",
+              "12114"
+            ],
+            "process_families_and_names_only": [
+              {
+                "pid": "12113",
+                "comm": "/Users/jesse/.cargo/bin/cargo-nextest",
+                "family": "build/compiler/linker",
+                "parent_pid": "3142",
+                "parent_comm": "/Users/jesse/.codex/packages/app-server-daemon/releases/0.160.0-aarch64-apple-darwin/bin/codex"
+              },
+              {
+                "pid": "12114",
+                "comm": "/Users/jesse/.cargo/bin/cargo-nextest",
+                "family": "build/compiler/linker",
+                "parent_pid": "3142",
+                "parent_comm": "/Users/jesse/.codex/packages/app-server-daemon/releases/0.160.0-aarch64-apple-darwin/bin/codex"
+              }
+            ]
+          }
+        }
+      ],
+      "summary": [
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "complete_sequence",
+          "blocks": 6,
+          "unit": "us/sequence",
+          "master": 1240644.2695,
+          "before": 302261.086501,
+          "after": 299713.669001,
+          "before_vs_master_percent": -75.82430136024706,
+          "before_vs_master_ci95": [
+            -76.03892843882181,
+            -75.33869675231142
+          ],
+          "before_vs_master_delta_us": -942773.2309910001,
+          "after_vs_master_percent": -75.83960734582033,
+          "after_vs_master_ci95": [
+            -75.99696680910388,
+            -75.54790279467932
+          ],
+          "after_vs_master_delta_us": -942081.2695030001,
+          "after_vs_before_percent": 0.23443492220609485,
+          "after_vs_before_ci95": [
+            -2.203314837005299,
+            1.2736041209640558
+          ],
+          "after_vs_before_delta_us": 691.9614879999426
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "first_paint",
+          "blocks": 6,
+          "unit": "us",
+          "master": 94626.6045,
+          "before": 21631.771,
+          "after": 21571.625,
+          "before_vs_master_percent": -77.18630539307057,
+          "before_vs_master_ci95": [
+            -77.68354519308592,
+            -72.47923379429318
+          ],
+          "before_vs_master_delta_us": -73431.10399999999,
+          "after_vs_master_percent": -77.13877948983173,
+          "after_vs_master_ci95": [
+            -77.5774399228969,
+            -74.87649605006197
+          ],
+          "after_vs_master_delta_us": -73400.7705,
+          "after_vs_before_percent": 1.0155480660510752,
+          "after_vs_before_ci95": [
+            -12.503676060093365,
+            4.769337114111982
+          ],
+          "after_vs_before_delta_us": 219.20800000000054
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "new_size",
+          "blocks": 6,
+          "unit": "us",
+          "master": 95098.88712500001,
+          "before": 22774.9235835,
+          "after": 22757.015708,
+          "before_vs_master_percent": -76.06905150155352,
+          "before_vs_master_ci95": [
+            -76.23728192301385,
+            -75.80773197810417
+          ],
+          "before_vs_master_delta_us": -72382.97745800001,
+          "after_vs_master_percent": -76.13185349517914,
+          "after_vs_master_ci95": [
+            -76.21582970044133,
+            -75.74088598470621
+          ],
+          "after_vs_master_delta_us": -72337.34891649999,
+          "after_vs_before_percent": -0.07873593230697251,
+          "after_vs_before_ci95": [
+            -1.0785854403857598,
+            1.2778508333516903
+          ],
+          "after_vs_before_delta_us": -17.907875500000955
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "return",
+          "blocks": 6,
+          "unit": "us",
+          "master": 246.3125,
+          "before": 227.9375,
+          "after": 223.39600000000002,
+          "before_vs_master_percent": -9.823195839754822,
+          "before_vs_master_ci95": [
+            -15.926768761269848,
+            -2.1954655673713463
+          ],
+          "before_vs_master_delta_us": -23.7705,
+          "after_vs_master_percent": -9.259778077231212,
+          "after_vs_master_ci95": [
+            -20.63425270753918,
+            -0.7577296656919585
+          ],
+          "after_vs_master_delta_us": -22.75,
+          "after_vs_before_percent": -3.3586730682839185,
+          "after_vs_before_ci95": [
+            -5.677888557418576,
+            5.660898263226189
+          ],
+          "after_vs_before_delta_us": -7.604500000000002
+        },
+        {
+          "case": "stress-FleurDeLeah",
+          "phase": "warm",
+          "blocks": 6,
+          "unit": "us",
+          "master": 169.71526699999998,
+          "before": 143.47713349999998,
+          "after": 144.0153335,
+          "before_vs_master_percent": -13.86534390310844,
+          "before_vs_master_ci95": [
+            -15.995957383597032,
+            1.642474575083186
+          ],
+          "before_vs_master_delta_us": -23.078433500000003,
+          "after_vs_master_percent": -13.24886500410843,
+          "after_vs_master_ci95": [
+            -19.26893003122573,
+            -6.450270531719083
+          ],
+          "after_vs_master_delta_us": -22.035399999999996,
+          "after_vs_before_percent": -1.4439315565269784,
+          "after_vs_before_ci95": [
+            -10.91463070574117,
+            1.536493422487506
+          ],
+          "after_vs_before_delta_us": -2.0665670000000063
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/femtovg-feedback-20261004/bench/runs/probe-final",
+      "blocks": 6,
+      "accepted_records": 48,
+      "accepted_processes": 12,
+      "excluded_attempts": [],
+      "summary": [
+        {
+          "case": "coords_hits",
+          "variant": "after",
+          "blocks": 6,
+          "requests": 4096.0,
+          "coords": 2.0,
+          "allocations": 4096.0,
+          "reallocations": 0.0,
+          "requested_bytes": 949449.0,
+          "ns_total": 5092395.5
+        },
+        {
+          "case": "coords_hits",
+          "variant": "before",
+          "blocks": 6,
+          "requests": 4096.0,
+          "coords": 2.0,
+          "allocations": 8192.0,
+          "reallocations": 0.0,
+          "requested_bytes": 965833.0,
+          "ns_total": 5095729.0
+        },
+        {
+          "case": "empty_coords_hits",
+          "variant": "after",
+          "blocks": 6,
+          "requests": 4096.0,
+          "coords": 0.0,
+          "allocations": 4096.0,
+          "reallocations": 0.0,
+          "requested_bytes": 926098.0,
+          "ns_total": 4883562.0
+        },
+        {
+          "case": "empty_coords_hits",
+          "variant": "before",
+          "blocks": 6,
+          "requests": 4096.0,
+          "coords": 0.0,
+          "allocations": 4096.0,
+          "reallocations": 0.0,
+          "requested_bytes": 926098.0,
+          "ns_total": 4806708.5
+        },
+        {
+          "case": "near_budget_roboto",
+          "variant": "after",
+          "blocks": 6,
+          "requests": 4000.0,
+          "point_grows": 18.0,
+          "verb_grows": 20.0,
+          "point_trims": 0.0,
+          "verb_trims": 0.0,
+          "clears": 1.0,
+          "first_clear_request": 3332.0,
+          "peak_entries": 3331.0,
+          "high_water_bytes": 1048451.0,
+          "final_entries": 669.0,
+          "allocations": 8112.0,
+          "reallocations": 54.0,
+          "requested_bytes": 7199659.0,
+          "ns_total": 7364104.0
+        },
+        {
+          "case": "near_budget_roboto",
+          "variant": "before",
+          "blocks": 6,
+          "requests": 4000.0,
+          "point_grows": 290.0,
+          "verb_grows": 262.0,
+          "point_trims": 0.0,
+          "verb_trims": 0.0,
+          "clears": 1.0,
+          "first_clear_request": 3418.0,
+          "peak_entries": 3417.0,
+          "high_water_bytes": 1048300.0,
+          "final_entries": 583.0,
+          "allocations": 8112.0,
+          "reallocations": 568.0,
+          "requested_bytes": 217861755.0,
+          "ns_total": 7219021.5
+        },
+        {
+          "case": "near_budget_vollkorn",
+          "variant": "after",
+          "blocks": 6,
+          "requests": 4000.0,
+          "point_grows": 27.0,
+          "verb_grows": 22.0,
+          "point_trims": 0.0,
+          "verb_trims": 1.0,
+          "clears": 2.0,
+          "first_clear_request": 1662.0,
+          "peak_entries": 1661.0,
+          "high_water_bytes": 1048568.0,
+          "final_entries": 679.0,
+          "allocations": 8118.0,
+          "reallocations": 68.0,
+          "requested_bytes": 93965912.0,
+          "ns_total": 58633125.0
+        },
+        {
+          "case": "near_budget_vollkorn",
+          "variant": "before",
+          "blocks": 6,
+          "requests": 4000.0,
+          "point_grows": 340.0,
+          "verb_grows": 296.0,
+          "point_trims": 0.0,
+          "verb_trims": 0.0,
+          "clears": 2.0,
+          "first_clear_request": 1680.0,
+          "peak_entries": 1681.0,
+          "high_water_bytes": 1048272.0,
+          "final_entries": 640.0,
+          "allocations": 8118.0,
+          "reallocations": 654.0,
+          "requested_bytes": 356121083.0,
+          "ns_total": 57963250.0
+        }
+      ]
+    }
+  ],
+  "preserved_prestart_attempt": {
+    "path": "/private/tmp/femtovg-feedback-20261004/bench/runs/comparison",
+    "timing_samples": 0,
+    "guard_records": 55,
+    "guard_status_counts": {
+      "guard_failed": 1,
+      "idle": 1,
+      "matched": 53
+    }
+  },
+  "mechanism_counts": {
+    "coords_hits": {
+      "requests": 4096.0,
+      "allocations_before": 8192.0,
+      "allocations_after": 4096.0
+    },
+    "empty_coords_hits": {
+      "requests": 4096.0,
+      "allocations_before": 4096.0,
+      "allocations_after": 4096.0
+    },
+    "near_budget_roboto": {
+      "requests": 4000.0,
+      "allocations_before": 8112.0,
+      "allocations_after": 8112.0,
+      "capacity_changes_before": 552.0,
+      "peak_entries_before": 3417.0,
+      "modeled_high_water_bytes_before": 1048300.0,
+      "capacity_changes_after": 38.0,
+      "peak_entries_after": 3331.0,
+      "modeled_high_water_bytes_after": 1048451.0
+    },
+    "near_budget_vollkorn": {
+      "requests": 4000.0,
+      "allocations_before": 8118.0,
+      "allocations_after": 8118.0,
+      "capacity_changes_before": 636.0,
+      "peak_entries_before": 1681.0,
+      "modeled_high_water_bytes_before": 1048272.0,
+      "capacity_changes_after": 50.0,
+      "peak_entries_after": 1661.0,
+      "modeled_high_water_bytes_after": 1048568.0
+    }
+  },
+  "limits": [
+    "CPU/Void measurements do not measure backend/GPU render-target switch cost.",
+    "Six balanced blocks; exploratory percentile intervals, no multiplicity correction.",
+    "Probe is a combined review-fix comparison with counters; capacity observations are net per request.",
+    "Cumulative allocator requested bytes are not retained memory or RSS."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "cohorts": {
+    "comparison": "comparison-final",
+    "probe": "probe-final",
+    "stress": "stress-final"
+  },
+  "commits": {
+    "after": "907bb375645613b3647efab4c0efe29b50ed5b18",
+    "before": "af989d9b617e9f424cb05974b057e4099592267a",
+    "master": "9d574e076d3ce6006d9a21a01e3ae8a3bc649a57"
+  },
+  "created_utc": "2026-10-04T13:52:27.447608+00:00",
+  "independent_audit": "/private/tmp/femtovg-feedback-20261004/review/AUDIT.json",
+  "original_study": "/private/tmp/femtovg-feedback-20261004",
+  "pre_run_attempts": "runs/comparison retains failed guard checks from the superseded a6eb669 freeze; it has no accepted timings and is not used in the final statistics.",
+  "reproduction_limit": "Relocated fresh build not tested; rebuild binaries before new runs."
+}

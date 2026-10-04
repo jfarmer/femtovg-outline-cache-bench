@@ -1,0 +1,93 @@
+{
+  "binaries": [
+    {
+      "bytes": 2275504,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/after-default_no_swash-scenes",
+      "path": "bench/bin/after-default_no_swash-scenes",
+      "sha256": "bd609b39caca01bded3293ed499878602ac54c12895acd4b5857bc3ca9044d53"
+    },
+    {
+      "bytes": 2817392,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/after-default_swash-cold",
+      "path": "bench/bin/after-default_swash-cold",
+      "sha256": "e6be0e005042b61e49c16d5e2a36cf428b47ade2941379ccdd9df409eafb323e"
+    },
+    {
+      "bytes": 1902848,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/after-default_swash-probe",
+      "path": "bench/bin/after-default_swash-probe",
+      "sha256": "be8fb0e41d824a084acd45caf51d414e4a8833637450b546554cff278cd5ee77"
+    },
+    {
+      "bytes": 3727456,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/after-default_swash-scenes",
+      "path": "bench/bin/after-default_swash-scenes",
+      "sha256": "f94347b1ed3f2effdaa0c5c1e3cdd250f58070e540181696df5fdee92d12736e"
+    },
+    {
+      "bytes": 3574256,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/after-default_swash-stress",
+      "path": "bench/bin/after-default_swash-stress",
+      "sha256": "cbbd9ae7299dbc53d9bbe0e8c6ba1100ce44c227539c0b79832517c59b1e05bd"
+    },
+    {
+      "bytes": 2291936,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/before-default_no_swash-scenes",
+      "path": "bench/bin/before-default_no_swash-scenes",
+      "sha256": "d278871ea6b2b767b20c83fdd78b09773360daf20b866c661de73a29cd36d6fd"
+    },
+    {
+      "bytes": 2817040,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/before-default_swash-cold",
+      "path": "bench/bin/before-default_swash-cold",
+      "sha256": "b143dcabe01d3ce262bb0fc97582c669dab41f8329223df9b8b4f6791daedd8c"
+    },
+    {
+      "bytes": 1902288,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/before-default_swash-probe",
+      "path": "bench/bin/before-default_swash-probe",
+      "sha256": "7340cc5805b7ab77c3f3747b2d328faeb49656460f99421ca3f1fb44b5a52742"
+    },
+    {
+      "bytes": 3726848,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/before-default_swash-scenes",
+      "path": "bench/bin/before-default_swash-scenes",
+      "sha256": "a42c422215f6a37ab33bbea3167ee8fa4b947adfde20956608af61534bce3431"
+    },
+    {
+      "bytes": 3573872,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/before-default_swash-stress",
+      "path": "bench/bin/before-default_swash-stress",
+      "sha256": "09b64400c036a1a5b29f61a1fd49064911fc41a82e16eda27721dc1368f8c954"
+    },
+    {
+      "bytes": 2291360,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/master-default_no_swash-scenes",
+      "path": "bench/bin/master-default_no_swash-scenes",
+      "sha256": "79289d9d47f4052d09b61feb5612babe3f98400823cfbf70f5e6f035ae6104d5"
+    },
+    {
+      "bytes": 2644288,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/master-default_swash-cold",
+      "path": "bench/bin/master-default_swash-cold",
+      "sha256": "0b670e37ae02a4a457e1e0519f71236144958c5a3d64cc591b73dc586d8372dc"
+    },
+    {
+      "bytes": 3553824,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/master-default_swash-scenes",
+      "path": "bench/bin/master-default_swash-scenes",
+      "sha256": "e2a7d7e81b9a7b1bc3b66595729e9a0a34e6745ed91d75f7932e19d2bb6a9d65"
+    },
+    {
+      "bytes": 3401184,
+      "original_path": "/private/tmp/femtovg-feedback-20261004/bench/bin/master-default_swash-stress",
+      "path": "bench/bin/master-default_swash-stress",
+      "sha256": "c5186da079312f0dec09c0b988ce17b23107df8f25f1914aa53cc3387e4a99ed"
+    }
+  ],
+  "excluded_roots": [
+    "bench/bin",
+    "target caches",
+    "__pycache__"
+  ]
+}
