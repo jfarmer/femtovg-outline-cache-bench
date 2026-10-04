@@ -1,0 +1,170 @@
+diff --git a/src/text/swash_rasterizer.rs b/src/text/swash_rasterizer.rs
+index 01f7e16..02d8bf9 100644
+--- a/src/text/swash_rasterizer.rs
++++ b/src/text/swash_rasterizer.rs
+@@ -139,25 +139,26 @@ impl RasterizerState {
+                 subpixel_x,
+             ));
+         }
+-        let context = Rc::clone(&self.scale_context);
+-        let mut context = context.borrow_mut();
+-        let mut scaler = context
+-            .builder(font)
+-            .size(font_size)
+-            .hint(true)
+-            .normalized_coords(normalized_coords)
+-            .build();
+-        if let Some(image) = Render::new(&COLOR_SOURCES)
+-            .format(Format::Alpha)
+-            .offset(Vector::new(subpixel_x, 0.0))
+-            .render(&mut scaler, glyph_id)
+-        {
+-            return Some(image);
+-        }
+-        if !scaler.has_outlines() {
+-            return None;
+-        }
+-        let success = scaler.scale_outline_into(glyph_id, &mut self.scaled_outline);
++        let success = {
++            let mut context = self.scale_context.borrow_mut();
++            let mut scaler = context
++                .builder(font)
++                .size(font_size)
++                .hint(true)
++                .normalized_coords(normalized_coords)
++                .build();
++            if let Some(image) = Render::new(&COLOR_SOURCES)
++                .format(Format::Alpha)
++                .offset(Vector::new(subpixel_x, 0.0))
++                .render(&mut scaler, glyph_id)
++            {
++                return Some(image);
++            }
++            if !scaler.has_outlines() {
++                return None;
++            }
++            scaler.scale_outline_into(glyph_id, &mut self.scaled_outline)
++        };
+         // Include failed draws too: a failed pen can already have grown buffers.
+         self.observe_scratch_lengths();
+         if !success {
+@@ -231,58 +232,68 @@ impl RasterizerState {
+             metadata_bytes + point_capacity * size_of::<Point>() + verb_capacity * size_of::<Verb>() + scratch_bytes
+                 <= budget
+         };
+-        if !fits(points_len, verbs_len, metadata) {
+-            return;
+-        }
+-        fn grow(capacity: usize, required: usize) -> usize {
+-            if required <= capacity {
+-                capacity
+-            } else {
+-                required.max(capacity.saturating_mul(2)).max(8)
++        let can_append = points_len <= self.points.capacity() - self.points.len()
++            && verbs_len <= self.verbs.capacity() - self.verbs.len()
++            && fits(
++                self.points.capacity(),
++                self.verbs.capacity(),
++                self.metadata_bytes + metadata,
++            );
++        if !can_append {
++            if !fits(points_len, verbs_len, metadata) {
++                return;
++            }
++            fn grow(capacity: usize, required: usize) -> usize {
++                if required <= capacity {
++                    capacity
++                } else {
++                    required.max(capacity.saturating_mul(2)).max(8)
++                }
++            }
++            let mut required_points = self.points.len() + points_len;
++            let mut required_verbs = self.verbs.len() + verbs_len;
++            if !fits(required_points, required_verbs, self.metadata_bytes + metadata) {
++                self.clear_cached_paths();
++                required_points = points_len;
++                required_verbs = verbs_len;
++            }
++            let metadata_bytes = self.metadata_bytes + metadata;
++            if !fits(
++                self.points.capacity().max(required_points),
++                self.verbs.capacity().max(required_verbs),
++                metadata_bytes,
++            ) {
++                // Reclaim spare capacity before evicting a working set whose
++                // contents still fit. Retained capacity counts against the budget.
++                self.points.shrink_to(required_points);
++                self.verbs.shrink_to(required_verbs);
++            }
++            let minimum_points = self.points.capacity().max(required_points);
++            let minimum_verbs = self.verbs.capacity().max(required_verbs);
++            if !fits(minimum_points, minimum_verbs, metadata_bytes) {
++                // Allocators may retain more capacity than shrink_to requests.
++                return;
++            }
++            let mut point_capacity = grow(self.points.capacity(), required_points);
++            let mut verb_capacity = grow(self.verbs.capacity(), required_verbs);
++            if !fits(point_capacity, verb_capacity, metadata_bytes) {
++                // Bound growth near the ceiling, reserving half the remaining
++                // room for future metadata and growth in the other arena.
++                let minimum_bytes = minimum_points * size_of::<Point>() + minimum_verbs * size_of::<Verb>();
++                let spare_bytes = (budget - metadata_bytes - scratch_bytes - minimum_bytes) / 2;
++                let geometry_bytes = required_points * size_of::<Point>() + required_verbs * size_of::<Verb>();
++                let extra_points =
++                    (spare_bytes as u128 * required_points as u128 / geometry_bytes.max(1) as u128) as usize;
++                let extra_verbs = (spare_bytes - extra_points * size_of::<Point>()) / size_of::<Verb>();
++                point_capacity = point_capacity.min(minimum_points + extra_points);
++                verb_capacity = verb_capacity.min(minimum_verbs + extra_verbs);
++            }
++            if point_capacity > self.points.capacity() {
++                self.points.reserve_exact(point_capacity - self.points.len());
++            }
++            if verb_capacity > self.verbs.capacity() {
++                self.verbs.reserve_exact(verb_capacity - self.verbs.len());
+             }
+-        }
+-        let mut required_points = self.points.len() + points_len;
+-        let mut required_verbs = self.verbs.len() + verbs_len;
+-        if !fits(required_points, required_verbs, self.metadata_bytes + metadata) {
+-            self.clear_cached_paths();
+-            required_points = points_len;
+-            required_verbs = verbs_len;
+-        }
+-        let metadata_bytes = self.metadata_bytes + metadata;
+-        if !fits(
+-            self.points.capacity().max(required_points),
+-            self.verbs.capacity().max(required_verbs),
+-            metadata_bytes,
+-        ) {
+-            // Reclaim spare capacity before evicting a working set whose
+-            // contents still fit. Retained capacity counts against the budget.
+-            self.points.shrink_to(required_points);
+-            self.verbs.shrink_to(required_verbs);
+-        }
+-        let minimum_points = self.points.capacity().max(required_points);
+-        let minimum_verbs = self.verbs.capacity().max(required_verbs);
+-        if !fits(minimum_points, minimum_verbs, metadata_bytes) {
+-            // Allocators may retain more capacity than shrink_to requests.
+-            return;
+-        }
+-        let mut point_capacity = grow(self.points.capacity(), required_points);
+-        let mut verb_capacity = grow(self.verbs.capacity(), required_verbs);
+-        if !fits(point_capacity, verb_capacity, metadata_bytes) {
+-            // Bound growth near the ceiling, reserving half the remaining
+-            // room for future metadata and growth in the other arena.
+-            let minimum_bytes = minimum_points * size_of::<Point>() + minimum_verbs * size_of::<Verb>();
+-            let spare_bytes = (budget - metadata_bytes - scratch_bytes - minimum_bytes) / 2;
+-            let geometry_bytes = required_points * size_of::<Point>() + required_verbs * size_of::<Verb>();
+-            let extra_points = (spare_bytes as u128 * required_points as u128 / geometry_bytes.max(1) as u128) as usize;
+-            let extra_verbs = (spare_bytes - extra_points * size_of::<Point>()) / size_of::<Verb>();
+-            point_capacity = point_capacity.min(minimum_points + extra_points);
+-            verb_capacity = verb_capacity.min(minimum_verbs + extra_verbs);
+-        }
+-        if point_capacity > self.points.capacity() {
+-            self.points.reserve_exact(point_capacity - self.points.len());
+-        }
+-        if verb_capacity > self.verbs.capacity() {
+-            self.verbs.reserve_exact(verb_capacity - self.verbs.len());
+         }
+         let points_start = self.points.len();
+         let verbs_start = self.verbs.len();

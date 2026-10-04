@@ -1,0 +1,16 @@
+   Compiling femtovg v0.27.0 (/Users/jesse/github/femtovg)
+warning: unused import: `geometry::Transform2D`
+    --> src/paint.rs:1630:17
+     |
+1630 |     use crate::{geometry::Transform2D, Color};
+     |                 ^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `femtovg` (lib test) generated 1 warning (run `cargo fix --lib -p femtovg --tests` to apply 1 suggestion)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.91s
+────────────
+ Nextest run ID 5906f295-42b1-4f6a-859d-1ef59398a78b with nextest profile: default
+    Starting 170 tests across 1 binary
+────────────
+     Summary [   0.132s] 170 tests run: 170 passed, 0 skipped

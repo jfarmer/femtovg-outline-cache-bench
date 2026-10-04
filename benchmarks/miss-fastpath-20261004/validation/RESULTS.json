@@ -1,0 +1,75 @@
+{
+  "rasterizer_sha256": "31f2d9010a91b98f05ec3d217c8eea0ab8f72f730ad2838fa153b54358be1603",
+  "results": [
+    {
+      "name": "format",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.39179329199942003,
+      "log": "/private/tmp/femtovg-miss-fastpath-20261004/bench/validation/format.log"
+    },
+    {
+      "name": "default-swash",
+      "command": [
+        "cargo",
+        "nextest",
+        "run",
+        "--lib",
+        "--locked",
+        "--offline",
+        "--features",
+        "swash",
+        "--status-level",
+        "fail",
+        "--final-status-level",
+        "fail"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.744740333000664,
+      "log": "/private/tmp/femtovg-miss-fastpath-20261004/bench/validation/default-swash.log"
+    },
+    {
+      "name": "swash-only",
+      "command": [
+        "cargo",
+        "nextest",
+        "run",
+        "--lib",
+        "--locked",
+        "--offline",
+        "--no-default-features",
+        "--features",
+        "swash",
+        "--status-level",
+        "fail",
+        "--final-status-level",
+        "fail"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.182319457999256,
+      "log": "/private/tmp/femtovg-miss-fastpath-20261004/bench/validation/swash-only.log"
+    },
+    {
+      "name": "default-no-swash",
+      "command": [
+        "cargo",
+        "nextest",
+        "run",
+        "--lib",
+        "--locked",
+        "--offline",
+        "--status-level",
+        "fail",
+        "--final-status-level",
+        "fail"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.5199624590004532,
+      "log": "/private/tmp/femtovg-miss-fastpath-20261004/bench/validation/default-no-swash.log"
+    }
+  ]
+}

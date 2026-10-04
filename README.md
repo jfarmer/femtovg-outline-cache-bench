@@ -1,5 +1,7 @@
 # FemtoVG Swash outline cache experiments
 
+The [normal-miss fast-path follow-up](benchmarks/miss-fastpath-20261004/SUMMARY.md) compares upstream Master `9d574e0`, committed cache branch `907bb37`, and an additional working-tree optimization. It retains the same seven scenes, six balanced blocks, exact sources, tests, raw records and independent review.
+
 The [committed review-fix comparison](benchmarks/review-fixes-20261004/SUMMARY.md) compares upstream Master `9d574e0`, the pre-fix cache, and PR code `907bb37`. It retains demo, miss and Fleur stress results, plus allocation/growth probes, exact sources, raw attempts, test evidence and an independent audit.
 
 The current implementation uses the smaller cache behind FemtoVG’s private `Font` API. The [exact-version comparison](benchmarks/font-cache-adapter-20261004/SUMMARY.md) preserves the demo and stress benefits, with no clear added cost from the wrapper. A small cost remains when every request misses. Sources, six balanced blocks per cohort, raw results and the independent audit are retained. No FemtoVG PR has been created.

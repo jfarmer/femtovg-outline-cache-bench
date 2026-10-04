@@ -1,0 +1,10 @@
+{
+  "public_repository_base_commit": "0be053e1ac0c8975330520af796550466e3a5549",
+  "public_repository_base_readme_sha256": "d6c86a97c75b7fc585fba68307bdafac4487b7693e86536e0b26bfadc4ad0a43",
+  "destination": "benchmarks/miss-fastpath-20261004",
+  "study_source_after": "measured working tree based on 907bb37",
+  "snapshot_bytes": 6004322,
+  "snapshot_members": 791,
+  "snapshot_sha256": "ab060353fef7e8782735fdc9f60bfddd028b7433df218ecfc221c829460da846",
+  "packaging_script": "/private/tmp/femtovg-miss-fastpath-package.py"
+}

@@ -1,0 +1,2777 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 16093f6..6838d27 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -46,6 +46,19 @@ All notable changes to this project will be documented in this file.
+   paint type (color, gradient, image) and for text.
+ - Sped up glyph rasterization with the `swash` feature by letting swash reuse
+   its scaler and hinting caches across glyphs.
++- Sped up glyph rasterization with the `swash` feature further by hinting a
++  glyph's outline once per size and reusing it for each subpixel position the
++  glyph is drawn at.
++- Fixed a panic during the first rotated or oversized PNG glyph draw with
++  the `swash` and `textlayout` features.
++- Fixed filled outline glyphs at negative fractional x positions using the
++  wrong subpixel bitmap with the `swash` feature. Bitmap glyphs and generic
++  glyph rendering retain their placement.
++- Fixed a glyph-atlas error leaving the atlas image as the active render target.
++- Fixed first-time glyph atlas drawing discarding open layers and caller state,
++  and generic PNG glyph upload failures panicking instead of returning an error.
++- Avoided allocating glyph atlas cells for empty paths, including spaces with
++  the `swash` feature alone.
+ - Added `Canvas::with_render_target`: a side pass on another target that goes
+   back to the one that was current, an open layer's store included.
+ - Added `ImageFilter::Blend`: blends the filtered image over a second image
+diff --git a/README.md b/README.md
+index 850ae6b..0041815 100644
+--- a/README.md
++++ b/README.md
+@@ -59,6 +59,12 @@ Run with `cargo run --example text`
+ * [x] WGPU backend
+ * [x] Color fonts
+ 
++With the `swash` feature, text rasterization reuses hinted glyph outlines across
++horizontal subpixel positions. Its 1 MiB soft accounting budget per shared text
++context includes cache geometry capacities, entry metadata, and logical outline
++scratch. It excludes Swash's private buffers, spare map storage, allocator
++overhead, and transient working memory.
++
+ ## Not supported
+ * [ ] Custom shaders
+ * [ ] 3D transforms
+@@ -86,3 +92,4 @@ Fonts used in examples:
+ - Roboto licensed under [Apache license](http://www.apache.org/licenses/LICENSE-2.0)
+ - Entypo licensed under CC BY-SA 4.0.
+ - Amiri licensed under [SIL Open Font License, Version 1.1](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
++- Bungee Color (a subset, used in tests) licensed under [SIL Open Font License, Version 1.1](examples/assets/LICENSE-BungeeColor)
+diff --git a/examples/assets/BungeeColor-Subset.ttf b/examples/assets/BungeeColor-Subset.ttf
+new file mode 100644
+index 0000000000000000000000000000000000000000..5cc12f2e62c5a3a2cf1c112e7c07c635cdcc74cc
+GIT binary patch
+literal 2216
+zcmbVOU1(fI6h3qB{@qQQX4%a)X|~}eTQ^bbZq3goHW4?C6>XO$P1K5(n46!?PdA%%
+zv!*HZp<o3qeNam^TB?<%(1$`T_*8und{9s-NI;^9X$yuT>VuZNG~;(>Z<;kk5a%-Y
+z{LVSwnK^fMNf1#nogkeO9i7Q;ic%Yqrxe<jj;{7(=L3hIhKxzQojtMoR~NF!iL{>~
+z_YI6&la!-FM0x^p+i?0=YW(#tPJ{oNNc4^jS%bmX7Vp5n54!jW6vnXQ2gsj6-aay(
+zn+aSMS0K+qu1QY}SRx{>Lry{tj9W94+E&L+$U7jL8EbqfQ}fn&<O2prc5-4W2izF$
+zKiEzh#o;@reM<&C3<U0m+DIfEu5sxB7f7VZ*BEbZj>j9S>w{ai1cPNhTi+BGdt>Kg
+z4#QR9G9LH&&-i`*z(H3<Ky30?xDEy&z8mmg6DzZ`hR3tA&F}O1g{NwN<1Jrlsqa?f
+z{;HK_)}1CPX;6NzpVXFh7bC;aXh#03PinV;)lKB|Rr}nSdg@-tt1WxA+lt=v@LGFd
+zEuRZ(?24e#lu@G#^rE&)n?|%+B7b#RwKLq*7^$^Ob-P`zvNCA$l{VOwUJ`GwWW-so
+z;oehJ9_p_u_a@wi*YG5YLN)!>mBo8JhA8!3nXilnE^ZBnE9L^x%K7<FEI1d6M7CWF
+z#zM%>m<*ak6+9I}#-x!h@yg>P+D-eYk4Eui>8kRAXV(WGoqKt6+g~K~C0_I0@!ol+
+zKYjAVL-NMTJI*7HEX36+30{M=h}a7hXC8Bg<y9SaLE+I4$sB#@d_&%l^Ufn{m|*4M
+zAzeEs-Xtdp?UeQcH2d;Y^kO-8RpGc_5i1ABvL+?Sr1pFcM^=nMt$f6v=rMwgyN~N;
+z8o-;a0di0ss0&oUiU{gt6_tzf^Lz|=5N)RGyvkvK=lb)!!1}DsYg9t-+q{l%^Rmr5
+zsD-$rc&(E%B4qO}iilG-@1}0?vCVrZqT!&Fzfr&!(RQuQ))yD>n}mt4Fz;VNje6SV
+zOQ~GHKpixJ9ykV+qclt-xCKnAr=56Oz&#7i5a@1tg)*=YDX9zI6Ep^XK>4@BnuF&A
+z^i%Mz!--oojfjKT_d$4OaT^W5K28s=i^ciVYNbith&YT`X{^q!lO9C`Mzxb#?T9A0
+zLR@Q+9$B}x(92X6Z=7*Gg6DyUD;fp94C*Sx&_zA>HLa@loT@N`x>r4;)Qr7sMb#D^
+zMyv_!QVMmX5wRbZC^f11n5wG~<$tYZRPDEgj5#2+uros{TNe3D<V)ebdWKJ_D)@Xk
+zQx={UXq27=&7YM?dzFu+PSa8~cSAFUhdU#OPT55<JV(_NU3a#eDUWC^SC2xGgFl}s
+z_fp=2_h0~W2C;__#{`y)!k-1t-Ne2<^b93IJCT`vO<Ieb{6~Zxux)f+d}jGQ*eLHR
+z8r}g5@woH)@#fq|Au|pWI?mfp2Na*f9+>O)V+ytK7sS7!Q^?3YlLqB4Vi^0?iS^0<
+zwWhEu3VSzyQ}NC7?}P8M5=;{}7!OU|Vtl_lFxkrYniG_NrSOY}TUIDPgZO_#mEs++
+zdhmFu7}1Qc<cYIVjbE0Q<cBB2@|)l8%2X;Pr|<qKFTYeIS1vs#J3jqgUb}fmzPBJ{
+P;((Mzi&8eJ-^ITH!3u?f
+
+literal 0
+HcmV?d00001
+
+diff --git a/examples/assets/LICENSE-BungeeColor b/examples/assets/LICENSE-BungeeColor
+new file mode 100644
+index 0000000..2e7de4e
+--- /dev/null
++++ b/examples/assets/LICENSE-BungeeColor
+@@ -0,0 +1,93 @@
++Copyright 2008 The Bungee Project Authors (david@djr.com)
++
++This Font Software is licensed under the SIL Open Font License, Version 1.1.
++This license is copied below, and is also available with a FAQ at:
++http://scripts.sil.org/OFL
++
++
++-----------------------------------------------------------
++SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
++-----------------------------------------------------------
++
++PREAMBLE
++The goals of the Open Font License (OFL) are to stimulate worldwide
++development of collaborative font projects, to support the font creation
++efforts of academic and linguistic communities, and to provide a free and
++open framework in which fonts may be shared and improved in partnership
++with others.
++
++The OFL allows the licensed fonts to be used, studied, modified and
++redistributed freely as long as they are not sold by themselves. The
++fonts, including any derivative works, can be bundled, embedded,
++redistributed and/or sold with any software provided that any reserved
++names are not used by derivative works. The fonts and derivatives,
++however, cannot be released under any other type of license. The
++requirement for fonts to remain under this license does not apply
++to any document created using the fonts or their derivatives.
++
++DEFINITIONS
++"Font Software" refers to the set of files released by the Copyright
++Holder(s) under this license and clearly marked as such. This may
++include source files, build scripts and documentation.
++
++"Reserved Font Name" refers to any names specified as such after the
++copyright statement(s).
++
++"Original Version" refers to the collection of Font Software components as
++distributed by the Copyright Holder(s).
++
++"Modified Version" refers to any derivative made by adding to, deleting,
++or substituting -- in part or in whole -- any of the components of the
++Original Version, by changing formats or by porting the Font Software to a
++new environment.
++
++"Author" refers to any designer, engineer, programmer, technical
++writer or other person who contributed to the Font Software.
++
++PERMISSION & CONDITIONS
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of the Font Software, to use, study, copy, merge, embed, modify,
++redistribute, and sell modified and unmodified copies of the Font
++Software, subject to the following conditions:
++
++1) Neither the Font Software nor any of its individual components,
++in Original or Modified Versions, may be sold by itself.
++
++2) Original or Modified Versions of the Font Software may be bundled,
++redistributed and/or sold with any software, provided that each copy
++contains the above copyright notice and this license. These can be
++included either as stand-alone text files, human-readable headers or
++in the appropriate machine-readable metadata fields within text or
++binary files as long as those fields can be easily viewed by the user.
++
++3) No Modified Version of the Font Software may use the Reserved Font
++Name(s) unless explicit written permission is granted by the corresponding
++Copyright Holder. This restriction only applies to the primary font name as
++presented to the users.
++
++4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
++Software shall not be used to promote, endorse or advertise any
++Modified Version, except to acknowledge the contribution(s) of the
++Copyright Holder(s) and the Author(s) or with their explicit written
++permission.
++
++5) The Font Software, modified or unmodified, in part or in whole,
++must be distributed entirely under this license, and must not be
++distributed under any other license. The requirement for fonts to
++remain under this license does not apply to any document created
++using the Font Software.
++
++TERMINATION
++This license becomes null and void if any of the above conditions are
++not met.
++
++DISCLAIMER
++THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
++OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
++COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
++INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
++DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
++OTHER DEALINGS IN THE FONT SOFTWARE.
+diff --git a/src/lib.rs b/src/lib.rs
+index 2046d04..de793fa 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -444,7 +444,7 @@ where
+     /// Creates a new canvas.
+     pub fn new(renderer: T) -> Result<Self, ErrorKind> {
+         let text_context = Rc::new(RefCell::new(TextContextImpl::default()));
+-        let glyph_atlas = Rc::new(GlyphAtlas::new(&text_context));
++        let glyph_atlas = Rc::new(GlyphAtlas::new());
+         let mut canvas = Self {
+             width: 0,
+             height: 0,
+@@ -485,7 +485,7 @@ where
+     /// provided [`TextContext`]. Note that the context is explicitly shared, so that any fonts
+     /// registered with a clone of this context will also be visible to this canvas.
+     pub fn new_with_text_context(renderer: T, text_context: TextContext) -> Result<Self, ErrorKind> {
+-        let glyph_atlas = Rc::new(GlyphAtlas::new(&text_context.0));
++        let glyph_atlas = Rc::new(GlyphAtlas::new());
+         let mut canvas = Self {
+             width: 0,
+             height: 0,
+@@ -2105,7 +2105,7 @@ where
+         // TODO: Early out if text is outside the canvas bounds, or maybe even check for each character in layout.
+ 
+         let text_context = self.text_context.clone();
+-        let mut text_context = text_context.borrow_mut();
++        let text_context = text_context.borrow();
+ 
+         // How this glyph run is rasterized for the current canvas transform.
+         #[derive(Clone, Copy)]
+@@ -2168,7 +2168,7 @@ where
+         let mut stroke = paint.stroke.clone();
+         stroke.line_width *= effective_scale;
+ 
+-        let Some(font) = text_context.font_mut(font_id) else {
++        let Some(font) = text_context.font(font_id) else {
+             return Err(ErrorKind::NoFontFound);
+         };
+ 
+@@ -2176,15 +2176,14 @@ where
+ 
+         // TODO: create on demand
+ 
++        let is_color_bitmap =
++            font.color_bitmap_classifier(&font_face, normalized_coords, render_mode, need_direct_rendering);
+         let mut color_glyphs = Vec::new();
+ 
+         let glyphs_it = glyphs.into_iter();
+         let non_color_glyphs = glyphs_it
+             .filter(|glyph| {
+-                if font
+-                    .glyph(&font_face, glyph.glyph_id, normalized_coords)
+-                    .is_some_and(|glyph| glyph.path.is_none())
+-                {
++                if is_color_bitmap(glyph.glyph_id) {
+                     color_glyphs.push(glyph.clone());
+ 
+                     false
+@@ -2234,7 +2233,7 @@ where
+             let color_commands = {
+                 let atlas = if need_direct_rendering {
+                     self.ephemeral_glyph_atlas
+-                        .get_or_insert_with(|| Rc::new(GlyphAtlas::new(&self.text_context)))
++                        .get_or_insert_with(|| Rc::new(GlyphAtlas::new()))
+                         .clone()
+                 } else {
+                     self.glyph_atlas.clone()
+@@ -2445,6 +2444,12 @@ pub struct RecordingRenderer {
+     pub max_texture_size: usize,
+     /// Makes image allocation fail for resource-pressure tests.
+     pub fail_image_allocations: bool,
++    /// Makes image updates fail for glyph-atlas error recovery tests.
++    pub fail_image_updates: bool,
++    /// Records uploaded mask coverage for glyph rasterization tests.
++    pub record_image_masks: bool,
++    /// Width, height and red-channel coverage of recorded image updates.
++    pub image_masks: Vec<(usize, usize, Vec<u8>)>,
+     /// Number of image allocation attempts.
+     pub image_allocation_attempts: usize,
+     /// Number of backend images released.
+@@ -2503,7 +2508,25 @@ impl Renderer for RecordingRenderer {
+         x: usize,
+         y: usize,
+     ) -> Result<(), ErrorKind> {
+-        data.check_update(&image.info, x, y)
++        data.check_update(&image.info, x, y)?;
++        if self.fail_image_updates {
++            return Err(ErrorKind::UnknownError);
++        }
++        if self.record_image_masks {
++            let size = data.dimensions();
++            let coverage = match data {
++                ImageSource::Rgba(image) => image.rows().flat_map(|row| row.iter().map(|pixel| pixel.r)).collect(),
++                ImageSource::Rgb(image) => image.rows().flat_map(|row| row.iter().map(|pixel| pixel.r)).collect(),
++                ImageSource::Gray(image) => image
++                    .rows()
++                    .flat_map(|row| row.iter().map(|pixel| pixel.value()))
++                    .collect(),
++                #[allow(unreachable_patterns)]
++                _ => unreachable!("mask upload must contain pixels"),
++            };
++            self.image_masks.push((size.width, size.height, coverage));
++        }
++        Ok(())
+     }
+ 
+     fn delete_image(&mut self, _image: Self::Image, _image_id: crate::ImageId) {
+diff --git a/src/text.rs b/src/text.rs
+index 9b2b723..7f0c08f 100644
+--- a/src/text.rs
++++ b/src/text.rs
+@@ -18,6 +18,17 @@ mod font;
+ use font::{Font, GlyphRendering};
+ pub use font::{FontMetrics, VariationAxisInfo};
+ 
++#[cfg(feature = "swash")]
++mod swash_rasterizer;
++#[cfg(feature = "swash")]
++use swash_rasterizer::SwashRasterizer;
++
++#[cfg(all(test, feature = "swash"))]
++mod glyph_atlas_tests;
++
++#[cfg(all(test, any(feature = "textlayout", feature = "swash")))]
++mod glyph_atlas_fallback_tests;
++
+ #[cfg(feature = "textlayout")]
+ mod textlayout;
+ #[cfg(feature = "textlayout")]
+@@ -132,6 +143,9 @@ pub struct RenderedGlyph {
+     atlas_x: u32,
+     atlas_y: u32,
+     color_glyph: bool,
++    // Only native outline sources rasterize a fractional horizontal offset.
++    #[cfg(feature = "swash")]
++    uses_subpixel_positioning: bool,
+ }
+ 
+ #[derive(Debug)]
+@@ -222,7 +236,7 @@ pub struct TextContextImpl {
+     #[cfg(feature = "textlayout")]
+     shaped_words_cache: textlayout::ShapedWordsCache<fnv::FnvBuildHasher>,
+     #[cfg(feature = "swash")]
+-    swash_scale_context: Rc<RefCell<swash::scale::ScaleContext>>,
++    swash_rasterizer: SwashRasterizer,
+ }
+ 
+ impl std::fmt::Debug for TextContextImpl {
+@@ -237,7 +251,6 @@ impl Default for TextContextImpl {
+         let fnv_run = fnv::FnvBuildHasher::default();
+         #[cfg(feature = "textlayout")]
+         let fnv_words = fnv::FnvBuildHasher::default();
+-
+         Self {
+             fonts: SlotMap::default(),
+             #[cfg(feature = "textlayout")]
+@@ -251,15 +264,15 @@ impl Default for TextContextImpl {
+                 fnv_words,
+             ),
+             #[cfg(feature = "swash")]
+-            swash_scale_context: Rc::new(RefCell::new(swash::scale::ScaleContext::new())),
++            swash_rasterizer: SwashRasterizer::default(),
+         }
+     }
+ }
+ 
+ impl TextContextImpl {
+     #[cfg(feature = "swash")]
+-    pub(crate) fn swash_scale_context(&self) -> Rc<RefCell<swash::scale::ScaleContext>> {
+-        self.swash_scale_context.clone()
++    fn swash_rasterizer(&self) -> SwashRasterizer {
++        self.swash_rasterizer.clone()
+     }
+ 
+     pub fn add_font_dir<T: AsRef<FilePath>>(&mut self, path: T) -> Result<Vec<FontId>, ErrorKind> {
+@@ -332,6 +345,7 @@ impl TextContextImpl {
+         self.fonts.get(id.0)
+     }
+ 
++    #[cfg(feature = "textlayout")]
+     pub fn font_mut(&mut self, id: FontId) -> Option<&mut Font> {
+         self.fonts.get_mut(id.0)
+     }
+@@ -439,17 +453,13 @@ pub struct GlyphDrawCommands {
+ pub struct GlyphAtlas {
+     pub rendered_glyphs: RefCell<FnvHashMap<RenderedGlyphId, Option<RenderedGlyph>>>,
+     pub glyph_textures: RefCell<Vec<FontTexture>>,
+-    #[cfg(feature = "swash")]
+-    swash_scale_context: Rc<RefCell<swash::scale::ScaleContext>>,
+ }
+ 
+ impl GlyphAtlas {
+-    pub(crate) fn new(_text_context: &Rc<RefCell<TextContextImpl>>) -> Self {
++    pub(crate) fn new() -> Self {
+         Self {
+             rendered_glyphs: RefCell::default(),
+             glyph_textures: RefCell::default(),
+-            #[cfg(feature = "swash")]
+-            swash_scale_context: (**_text_context).borrow().swash_scale_context(),
+         }
+     }
+ }
+@@ -477,6 +487,9 @@ impl GlyphAtlas {
+         mode: RenderMode,
+         normalized_coords: &[i16],
+     ) -> Result<GlyphDrawCommands, ErrorKind> {
++        #[cfg(feature = "swash")]
++        let native_atlas = font.uses_swash_atlas(mode);
++
+         let mut alpha_cmd_map = FnvHashMap::default();
+         let mut color_cmd_map = FnvHashMap::default();
+ 
+@@ -487,89 +500,111 @@ impl GlyphAtlas {
+         };
+ 
+         let initial_render_target = canvas.current_render_target;
++        canvas.with_render_target(initial_render_target, |canvas| {
++            for glyph in glyphs {
++                let subpixel_location = crate::geometry::quantize(glyph.x.fract(), 0.1) * 10.0;
++                #[cfg(feature = "swash")]
++                let (subpixel_location, glyph_origin) = if native_atlas {
++                    // Native masks use a nonnegative phase and a floor origin,
++                    // including positions left of zero. Phase ten is phase zero
++                    // translated by one pixel.
++                    let origin = glyph.x.floor();
++                    let phase = crate::geometry::quantize(glyph.x - origin, 0.1) * 10.0;
++                    if phase == 10.0 {
++                        (0.0, origin + 1.0)
++                    } else {
++                        (phase, origin)
++                    }
++                } else {
++                    (subpixel_location, glyph.x.trunc())
++                };
+ 
+-        for glyph in glyphs {
+-            let subpixel_location = crate::geometry::quantize(glyph.x.fract(), 0.1) * 10.0;
+-
+-            let id = RenderedGlyphId::new(
+-                glyph.glyph_id,
+-                font_id,
+-                font_size,
+-                line_width,
+-                mode,
+-                subpixel_location as u8,
+-                normalized_coords,
+-            );
+-
+-            let mut rendered_glyphs = self.rendered_glyphs.borrow_mut();
+-            let glyph_cache_entry = rendered_glyphs.entry(id);
+-            let glyph_cache_entry = match glyph_cache_entry {
+-                std::collections::hash_map::Entry::Occupied(occupied_entry) => occupied_entry,
+-                std::collections::hash_map::Entry::Vacant(_) => {
+-                    let result = self.render_glyph(
+-                        canvas,
+-                        font_size,
+-                        line_width,
+-                        mode,
+-                        font,
+-                        font_face,
+-                        glyph.glyph_id,
+-                        subpixel_location / 10.0,
+-                        normalized_coords,
+-                    )?;
+-                    glyph_cache_entry.insert_entry(result)
+-                }
+-            };
+-
+-            let Some(rendered) = glyph_cache_entry.get() else {
+-                continue;
+-            };
++                let id = RenderedGlyphId::new(
++                    glyph.glyph_id,
++                    font_id,
++                    font_size,
++                    line_width,
++                    mode,
++                    subpixel_location as u8,
++                    normalized_coords,
++                );
+ 
+-            if let Some(texture) = self.glyph_textures.borrow().get(rendered.texture_index) {
+-                let image_id = texture.image_id;
+-                let size = texture.atlas.size();
+-                let itw = 1.0 / size.0 as f32;
+-                let ith = 1.0 / size.1 as f32;
++                let mut rendered_glyphs = self.rendered_glyphs.borrow_mut();
++                let glyph_cache_entry = rendered_glyphs.entry(id);
++                let glyph_cache_entry = match glyph_cache_entry {
++                    std::collections::hash_map::Entry::Occupied(occupied_entry) => occupied_entry,
++                    std::collections::hash_map::Entry::Vacant(_) => {
++                        let result = self.render_glyph(
++                            canvas,
++                            font_size,
++                            line_width,
++                            mode,
++                            font,
++                            font_face,
++                            glyph.glyph_id,
++                            subpixel_location / 10.0,
++                            normalized_coords,
++                        )?;
++                        glyph_cache_entry.insert_entry(result)
++                    }
++                };
+ 
+-                let cmd_map = if rendered.color_glyph {
+-                    &mut color_cmd_map
+-                } else {
+-                    &mut alpha_cmd_map
++                let Some(rendered) = glyph_cache_entry.get() else {
++                    continue;
+                 };
+ 
+-                let cmd = cmd_map.entry(rendered.texture_index).or_insert_with(|| DrawCommand {
+-                    image_id,
+-                    quads: Vec::new(),
+-                });
++                if let Some(texture) = self.glyph_textures.borrow().get(rendered.texture_index) {
++                    let image_id = texture.image_id;
++                    let size = texture.atlas.size();
++                    let itw = 1.0 / size.0 as f32;
++                    let ith = 1.0 / size.1 as f32;
+ 
+-                let mut q = Quad::default();
++                    let cmd_map = if rendered.color_glyph {
++                        &mut color_cmd_map
++                    } else {
++                        &mut alpha_cmd_map
++                    };
+ 
+-                let line_width_offset = if rendered.color_glyph { 0. } else { line_width_offset };
++                    let cmd = cmd_map.entry(rendered.texture_index).or_insert_with(|| DrawCommand {
++                        image_id,
++                        quads: Vec::new(),
++                    });
+ 
+-                q.x0 = glyph.x.trunc() + rendered.bearing_x as f32 - line_width_offset - GLYPH_PADDING as f32;
+-                q.y0 = glyph.y.round() - rendered.bearing_y as f32 - line_width_offset - GLYPH_PADDING as f32;
+-                q.x1 = q.x0 + rendered.width as f32;
+-                q.y1 = q.y0 + rendered.height as f32;
++                    let mut q = Quad::default();
+ 
+-                q.s0 = rendered.atlas_x as f32 * itw;
+-                q.t0 = rendered.atlas_y as f32 * ith;
+-                q.s1 = (rendered.atlas_x + rendered.width) as f32 * itw;
+-                q.t1 = (rendered.atlas_y + rendered.height) as f32 * ith;
++                    let line_width_offset = if rendered.color_glyph { 0. } else { line_width_offset };
+ 
+-                cmd.quads.push(q);
++                    #[cfg(feature = "swash")]
++                    let origin = if rendered.uses_subpixel_positioning {
++                        glyph_origin
++                    } else {
++                        glyph.x.trunc()
++                    };
++                    #[cfg(not(feature = "swash"))]
++                    let origin = glyph.x.trunc();
++                    q.x0 = origin + rendered.bearing_x as f32 - line_width_offset - GLYPH_PADDING as f32;
++                    q.y0 = glyph.y.round() - rendered.bearing_y as f32 - line_width_offset - GLYPH_PADDING as f32;
++                    q.x1 = q.x0 + rendered.width as f32;
++                    q.y1 = q.y0 + rendered.height as f32;
++
++                    q.s0 = rendered.atlas_x as f32 * itw;
++                    q.t0 = rendered.atlas_y as f32 * ith;
++                    q.s1 = (rendered.atlas_x + rendered.width) as f32 * itw;
++                    q.t1 = (rendered.atlas_y + rendered.height) as f32 * ith;
++
++                    cmd.quads.push(q);
++                }
+             }
+-        }
+ 
+-        canvas.set_render_target(initial_render_target);
+-
+-        Ok(GlyphDrawCommands {
+-            alpha_glyphs: alpha_cmd_map.drain().map(|(_, cmd)| cmd).collect(),
+-            color_glyphs: color_cmd_map.drain().map(|(_, cmd)| cmd).collect(),
++            Ok(GlyphDrawCommands {
++                alpha_glyphs: alpha_cmd_map.drain().map(|(_, cmd)| cmd).collect(),
++                color_glyphs: color_cmd_map.drain().map(|(_, cmd)| cmd).collect(),
++            })
+         })
+     }
+ 
+-    // Renders the glyph into the atlas and returns the RenderedGlyph struct for it.
+-    // Returns Ok(None) if there exists no path or image for the glyph in the font (missing glyph).
++    // Renders a glyph into the atlas, falling back to its generic representation
++    // when native Swash rendering is unavailable.
+     #[allow(clippy::too_many_arguments)]
+     fn render_glyph<T: Renderer>(
+         &self,
+@@ -584,11 +619,11 @@ impl GlyphAtlas {
+         normalized_coords: &[i16],
+     ) -> Result<Option<RenderedGlyph>, ErrorKind> {
+         #[cfg(feature = "swash")]
+-        if mode == RenderMode::Fill {
+-            if let Some(result) =
++        if font.uses_swash_atlas(mode) {
++            if let Some(rendered) =
+                 self.render_glyph_swash(canvas, font, font_size, glyph_id, _subpixel_x, normalized_coords)?
+             {
+-                return Ok(Some(result));
++                return Ok(Some(rendered));
+             }
+         }
+ 
+@@ -610,6 +645,10 @@ impl GlyphAtlas {
+             }
+         };
+ 
++        if matches!(&glyph_representation, GlyphRendering::RenderAsPath(path) if path.is_empty()) {
++            return Ok(None);
++        }
++
+         #[cfg(feature = "image-loading")]
+         let color_glyph = matches!(glyph_representation, GlyphRendering::RenderAsImage(..));
+         #[cfg(not(feature = "image-loading"))]
+@@ -629,10 +668,6 @@ impl GlyphAtlas {
+         let (dst_index, dst_image_id, (dst_x, dst_y)) =
+             self.find_texture_or_alloc(canvas, width as usize, height as usize)?;
+ 
+-        // render glyph to image
+-        canvas.save();
+-        canvas.reset();
+-
+         let rendered_bearing_x = (glyph_metrics.bearing_x * scale).round();
+         let rendered_bearing_y = (glyph_metrics.bearing_y * scale).round();
+         let x = dst_x as f32 - rendered_bearing_x + line_width_offset + padding as f32;
+@@ -647,74 +682,87 @@ impl GlyphAtlas {
+             atlas_y: dst_y as u32 + GLYPH_MARGIN,
+             texture_index: dst_index,
+             color_glyph,
++            #[cfg(feature = "swash")]
++            uses_subpixel_positioning: false,
+         };
+ 
+         match glyph_representation {
+             GlyphRendering::RenderAsPath(ref mut path) => {
+-                canvas.translate(x, y);
+-
++                // Keep cold glyphs in one atlas pass; render_atlas restores
++                // the caller's target when the run finishes or returns an error.
+                 canvas.set_render_target(RenderTarget::Image(dst_image_id));
+-                canvas.clear_rect(
+-                    dst_x as u32,
+-                    TEXTURE_SIZE as u32 - dst_y as u32 - height,
+-                    width,
+-                    height,
+-                    Color::black(),
+-                );
+-                let factor = 1.0 / 8.0;
+-
+-                let mask_color = Color::rgbf(factor, factor, factor);
+-
+-                let mut line_width = line_width;
+-
+-                if mode == RenderMode::Stroke {
+-                    line_width /= scale;
+-                }
+-
+-                canvas.global_composite_blend_func(crate::BlendFactor::SrcAlpha, crate::BlendFactor::One);
+-
+-                // 4x
+-                // let points = [
+-                //     (-3.0/8.0, 1.0/8.0),
+-                //     (1.0/8.0, 3.0/8.0),
+-                //     (3.0/8.0, -1.0/8.0),
+-                //     (-1.0/8.0, -3.0/8.0),
+-                // ];
+-
+-                // 8x
+-                let points = [
+-                    (-7.0 / 16.0, -1.0 / 16.0),
+-                    (-1.0 / 16.0, -5.0 / 16.0),
+-                    (3.0 / 16.0, -7.0 / 16.0),
+-                    (5.0 / 16.0, -3.0 / 16.0),
+-                    (7.0 / 16.0, 1.0 / 16.0),
+-                    (1.0 / 16.0, 5.0 / 16.0),
+-                    (-3.0 / 16.0, 7.0 / 16.0),
+-                    (-5.0 / 16.0, 3.0 / 16.0),
+-                ];
+-
+-                for point in &points {
+-                    canvas.save();
+-                    canvas.translate(point.0, point.1);
+-
+-                    canvas.scale(scale, scale);
+-
+-                    if mode == RenderMode::Stroke {
+-                        canvas.stroke_path_internal(
+-                            path,
+-                            &PaintFlavor::Color(mask_color),
+-                            false,
+-                            &StrokeSettings {
+-                                line_width,
+-                                ..Default::default()
+-                            },
++                canvas.offscreen_pass(
++                    RenderTarget::Image(dst_image_id),
++                    crate::geometry::Transform2D::translation(x, y),
++                    |canvas| {
++                        canvas.clear_rect(
++                            dst_x as u32,
++                            TEXTURE_SIZE as u32 - dst_y as u32 - height,
++                            width,
++                            height,
++                            Color::black(),
+                         );
+-                    } else {
+-                        canvas.fill_path_internal(path, &PaintFlavor::Color(mask_color), false, FillRule::NonZero);
+-                    }
+-
+-                    canvas.restore();
+-                }
++                        let factor = 1.0 / 8.0;
++
++                        let mask_color = Color::rgbf(factor, factor, factor);
++
++                        let mut line_width = line_width;
++
++                        if mode == RenderMode::Stroke {
++                            line_width /= scale;
++                        }
++
++                        canvas.global_composite_blend_func(crate::BlendFactor::SrcAlpha, crate::BlendFactor::One);
++
++                        // 4x
++                        // let points = [
++                        //     (-3.0/8.0, 1.0/8.0),
++                        //     (1.0/8.0, 3.0/8.0),
++                        //     (3.0/8.0, -1.0/8.0),
++                        //     (-1.0/8.0, -3.0/8.0),
++                        // ];
++
++                        // 8x
++                        let points = [
++                            (-7.0 / 16.0, -1.0 / 16.0),
++                            (-1.0 / 16.0, -5.0 / 16.0),
++                            (3.0 / 16.0, -7.0 / 16.0),
++                            (5.0 / 16.0, -3.0 / 16.0),
++                            (7.0 / 16.0, 1.0 / 16.0),
++                            (1.0 / 16.0, 5.0 / 16.0),
++                            (-3.0 / 16.0, 7.0 / 16.0),
++                            (-5.0 / 16.0, 3.0 / 16.0),
++                        ];
++
++                        for point in &points {
++                            canvas.save();
++                            canvas.translate(point.0, point.1);
++
++                            canvas.scale(scale, scale);
++
++                            if mode == RenderMode::Stroke {
++                                canvas.stroke_path_internal(
++                                    path,
++                                    &PaintFlavor::Color(mask_color),
++                                    false,
++                                    &StrokeSettings {
++                                        line_width,
++                                        ..Default::default()
++                                    },
++                                );
++                            } else {
++                                canvas.fill_path_internal(
++                                    path,
++                                    &PaintFlavor::Color(mask_color),
++                                    false,
++                                    FillRule::NonZero,
++                                );
++                            }
++
++                            canvas.restore();
++                        }
++                    },
++                );
+             }
+             #[cfg(feature = "image-loading")]
+             GlyphRendering::RenderAsImage(image_buffer) => {
+@@ -726,13 +774,11 @@ impl GlyphAtlas {
+                 let image_buffer =
+                     image_buffer.resize(target_width, target_height, image::imageops::FilterType::Nearest);
+                 if let Ok(image) = crate::image::ImageSource::try_from(&image_buffer) {
+-                    canvas.update_image(dst_image_id, image, target_x, target_y).unwrap();
++                    canvas.update_image(dst_image_id, image, target_x, target_y)?;
+                 }
+             }
+         }
+ 
+-        canvas.restore();
+-
+         Ok(Some(rendered_glyph))
+     }
+ 
+@@ -746,33 +792,7 @@ impl GlyphAtlas {
+         subpixel_x: f32,
+         normalized_coords: &[i16],
+     ) -> Result<Option<RenderedGlyph>, ErrorKind> {
+-        use swash::scale::{Render, Source, StrikeWith};
+-        use swash::zeno::Format;
+-
+-        let font_ref = match font.swash_font_ref() {
+-            Some(f) => f,
+-            None => return Ok(None),
+-        };
+-
+-        let image = {
+-            let mut scale_context = self.swash_scale_context.borrow_mut();
+-            let scaler_builder = scale_context
+-                .builder(font_ref)
+-                .size(font_size)
+-                .hint(true)
+-                .normalized_coords(normalized_coords);
+-            let mut scaler = scaler_builder.build();
+-
+-            Render::new(&[
+-                Source::ColorOutline(0),
+-                Source::ColorBitmap(StrikeWith::BestFit),
+-                Source::Outline,
+-            ])
+-            .format(Format::Alpha)
+-            .offset(swash::zeno::Vector::new(subpixel_x, 0.0))
+-            .render(&mut scaler, glyph_id)
+-        };
+-
++        let image = font.rasterize_glyph(font_size, glyph_id, subpixel_x, normalized_coords);
+         let image = match image {
+             // Guard against glyphs with no visual (spaces)
+             Some(img) if img.placement.width > 0 && img.placement.height > 0 => img,
+@@ -834,6 +854,10 @@ impl GlyphAtlas {
+             atlas_x: dst_x as u32 + GLYPH_MARGIN,
+             atlas_y: dst_y as u32 + GLYPH_MARGIN,
+             color_glyph: is_color,
++            uses_subpixel_positioning: matches!(
++                image.source,
++                swash::scale::Source::Outline | swash::scale::Source::ColorOutline(_)
++            ),
+         }))
+     }
+ 
+@@ -903,17 +927,19 @@ impl GlyphAtlas {
+                     }
+                     #[cfg(not(feature = "image-loading"))]
+                     {
+-                        canvas.save();
+-                        canvas.reset();
+-                        canvas.set_render_target(RenderTarget::Image(image_id));
+-                        canvas.clear_rect(
+-                            0,
+-                            0,
+-                            size.0 as u32,
+-                            size.1 as u32,
+-                            Color::rgb(255, 0, 0), // Shown as white if using Gray8.,
++                        canvas.offscreen_pass(
++                            RenderTarget::Image(image_id),
++                            crate::geometry::Transform2D::identity(),
++                            |canvas| {
++                                canvas.clear_rect(
++                                    0,
++                                    0,
++                                    size.0 as u32,
++                                    size.1 as u32,
++                                    Color::rgb(255, 0, 0), // Shown as white if using Gray8.,
++                                );
++                            },
+                         );
+-                        canvas.restore();
+                     }
+                 }
+             }
+diff --git a/src/text/font.rs b/src/text/font.rs
+index 50ad880..fb8e630 100644
+--- a/src/text/font.rs
++++ b/src/text/font.rs
+@@ -359,12 +359,30 @@ impl fmt::Debug for Font {
+ /// The hash covers all normalized variation coordinates, or 0 for defaults.
+ type GlyphCacheKey = (u16, u64);
+ 
++#[cfg(feature = "swash")]
++struct SwashFont {
++    offset: u32,
++    key: swash::CacheKey,
++    rasterizer: super::SwashRasterizer,
++}
++
++#[cfg(feature = "swash")]
++impl SwashFont {
++    fn new(font: swash::FontRef<'_>, context: &super::TextContextImpl) -> Self {
++        Self {
++            offset: font.offset,
++            key: font.key,
++            rasterizer: context.swash_rasterizer(),
++        }
++    }
++}
++
+ pub struct Font {
+     data: Box<dyn AsRef<[u8]>>,
+     face_index: u32,
+-    // swash's table-directory offset and cache key; `None` if swash can't parse the face.
++    // Native rendering is attached once at registration when Swash can read the face.
+     #[cfg(feature = "swash")]
+-    swash_identity: Option<(u32, swash::CacheKey)>,
++    swash: Option<SwashFont>,
+     units_per_em: u16,
+     metrics: FontMetrics,
+     glyphs: RefCell<FnvHashMap<GlyphCacheKey, Glyph>>,
+@@ -373,6 +391,11 @@ pub struct Font {
+ }
+ 
+ impl Font {
++    #[cfg(all(test, feature = "swash"))]
++    pub(crate) fn glyph_cache_len(&self) -> usize {
++        self.glyphs.borrow().len()
++    }
++
+     #[cfg(feature = "textlayout")]
+     pub fn new_with_data<T: AsRef<[u8]> + 'static>(
+         data: T,
+@@ -462,8 +485,8 @@ impl Font {
+ 
+         Ok(Self {
+             #[cfg(feature = "swash")]
+-            swash_identity: swash::FontRef::from_index(data.as_ref(), face_index as usize)
+-                .map(|font_ref| (font_ref.offset, font_ref.key)),
++            swash: swash::FontRef::from_index(data.as_ref(), face_index as usize)
++                .map(|font_ref| SwashFont::new(font_ref, _text_context)),
+             data: Box::new(data),
+             face_index,
+             units_per_em,
+@@ -573,13 +596,13 @@ impl Font {
+         };
+ 
+         Ok(Self {
+-            swash_identity: Some((font_ref.offset, font_ref.key)),
++            swash: Some(SwashFont::new(font_ref, text_context)),
+             data: Box::new(data),
+             face_index,
+             units_per_em,
+             metrics,
+             glyphs: RefCell::default(),
+-            swash_scale_context: text_context.swash_scale_context(),
++            swash_scale_context: text_context.swash_rasterizer.scale_context(),
+         })
+     }
+ 
+@@ -613,17 +636,39 @@ impl Font {
+     }
+ 
+     #[cfg(feature = "swash")]
+-    pub(crate) fn swash_font_ref(&self) -> Option<swash::FontRef<'_>> {
++    fn swash_font_ref(&self) -> Option<swash::FontRef<'_>> {
+         // swash caches per-font scaler data and hinting instances by key, and every
+         // `FontRef` constructor mints a new key, so reuse the one minted at load.
+-        let (offset, key) = self.swash_identity?;
++        let native = self.swash.as_ref()?;
+         Some(swash::FontRef {
+             data: self.data.as_ref().as_ref(),
+-            offset,
+-            key,
++            offset: native.offset,
++            key: native.key,
+         })
+     }
+ 
++    #[cfg(feature = "swash")]
++    pub(super) fn uses_swash_atlas(&self, mode: super::RenderMode) -> bool {
++        mode == super::RenderMode::Fill && self.swash.is_some()
++    }
++
++    #[cfg(feature = "swash")]
++    pub(super) fn rasterize_glyph(
++        &self,
++        font_size: f32,
++        glyph_id: u16,
++        subpixel_x: f32,
++        normalized_coords: &[i16],
++    ) -> Option<swash::scale::image::Image> {
++        self.swash.as_ref()?.rasterizer.render(
++            self.swash_font_ref()?,
++            font_size,
++            glyph_id,
++            subpixel_x,
++            normalized_coords,
++        )
++    }
++
+     #[cfg(all(feature = "swash", not(feature = "textlayout")))]
+     fn swash_scale_context(&self) -> &RefCell<swash::scale::ScaleContext> {
+         &self.swash_scale_context
+@@ -792,6 +837,53 @@ impl Font {
+         hasher.finish()
+     }
+ 
++    #[cfg(feature = "textlayout")]
++    fn glyph_png_bitmap<'a>(face: &'a FontFaceRef<'_>, codepoint: u16) -> Option<ttf_parser::RasterGlyphImage<'a>> {
++        face.0
++            .glyph_raster_image(GlyphId(codepoint), u16::MAX)
++            .filter(|image| image.format == ttf_parser::RasterImageFormat::PNG)
++    }
++
++    // PNG glyphs form the second atlas batch even when they also have COLR
++    // layers. Other bitmap formats stay with outline glyphs in the first batch.
++    #[cfg(feature = "swash")]
++    fn glyph_has_png_bitmap(&self, face: &FontFaceRef<'_>, codepoint: u16) -> bool {
++        #[cfg(feature = "textlayout")]
++        {
++            Self::glyph_png_bitmap(face, codepoint).is_some()
++        }
++        #[cfg(not(feature = "textlayout"))]
++        {
++            let _ = (face, codepoint);
++            false
++        }
++    }
++
++    pub(crate) fn color_bitmap_classifier<'a>(
++        &'a self,
++        face: &'a FontFaceRef<'a>,
++        normalized_coords: &'a [i16],
++        mode: super::RenderMode,
++        direct: bool,
++    ) -> impl Fn(u16) -> bool + 'a {
++        // Native atlas fills classify PNGs without constructing generic paths,
++        // preserving the two-batch order for mixed PNG/COLR runs. Select the
++        // classifier once per run using the atlas's own eligibility check.
++        #[cfg(feature = "swash")]
++        let native_atlas = !direct && self.uses_swash_atlas(mode);
++        #[cfg(not(feature = "swash"))]
++        let _ = (mode, direct);
++
++        move |glyph_id| {
++            #[cfg(feature = "swash")]
++            if native_atlas {
++                return self.glyph_has_png_bitmap(face, glyph_id);
++            }
++            self.glyph(face, glyph_id, normalized_coords)
++                .is_some_and(|glyph| glyph.path.is_none())
++        }
++    }
++
+     #[cfg(feature = "textlayout")]
+     pub(crate) fn glyph(
+         &self,
+@@ -806,11 +898,7 @@ impl Font {
+ 
+             let id = GlyphId(codepoint);
+ 
+-            let maybe_glyph = if let Some(image) = face
+-                .0
+-                .glyph_raster_image(id, u16::MAX)
+-                .filter(|img| img.format == ttf_parser::RasterImageFormat::PNG)
+-            {
++            let maybe_glyph = if let Some(image) = Self::glyph_png_bitmap(face, codepoint) {
+                 let scale = if image.pixels_per_em != 0 {
+                     self.units_per_em as f32 / image.pixels_per_em as f32
+                 } else {
+@@ -1126,4 +1214,44 @@ mod tests {
+         assert_eq!(key, font.swash_font_ref().unwrap().key);
+         assert_ne!(key, other.swash_font_ref().unwrap().key);
+     }
++
++    #[cfg(all(feature = "swash", not(feature = "textlayout")))]
++    #[test]
++    fn fonts_share_the_native_context_and_cached_outlines_do_not_borrow_it() {
++        let context = super::super::TextContextImpl::default();
++        let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++        let font = Font::new_with_data(data, 0, &context).unwrap();
++        let other = Font::new_with_data(data, 0, &context).unwrap();
++        assert!(std::rc::Rc::ptr_eq(
++            &font.swash_scale_context,
++            &other.swash.as_ref().unwrap().rasterizer.scale_context(),
++        ));
++
++        let glyph_id = font.swash_font_ref().unwrap().charmap().map('A');
++        let first = font.rasterize_glyph(24.0, glyph_id, 0.3, &[]).unwrap();
++        let _borrow = other.swash_scale_context.borrow_mut();
++        let cached = font.rasterize_glyph(24.0, glyph_id, 0.3, &[]).unwrap();
++        let bounds = |image: &swash::scale::image::Image| {
++            let p = image.placement;
++            (p.left, p.top, p.width, p.height)
++        };
++        assert_eq!(bounds(&first), bounds(&cached));
++        assert_eq!(first.data, cached.data);
++    }
++
++    #[cfg(all(feature = "textlayout", feature = "swash"))]
++    #[test]
++    fn atlas_classification_keeps_generic_paths_when_swash_cannot_read_the_face() {
++        let mut font = parse_font(include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf").to_vec());
++        let glyph_id = font.face_ref().0.glyph_index('A').unwrap().0;
++        // A face accepted by textlayout need not be available to Swash.
++        font.swash = None;
++        assert!(font.rasterize_glyph(24.0, glyph_id, 0.0, &[]).is_none());
++        let face = font.face_ref();
++        let classify = font.color_bitmap_classifier(&face, &[], super::super::RenderMode::Fill, false);
++
++        assert_eq!(font.glyph_cache_len(), 0);
++        assert!(!classify(glyph_id));
++        assert_eq!(font.glyph_cache_len(), 1);
++    }
+ }
+diff --git a/src/text/glyph_atlas_fallback_tests.rs b/src/text/glyph_atlas_fallback_tests.rs
+new file mode 100644
+index 0000000..5a3eae4
+--- /dev/null
++++ b/src/text/glyph_atlas_fallback_tests.rs
+@@ -0,0 +1,178 @@
++use super::*;
++use crate::{LayerEffects, RecordingRenderer};
++
++const FONT: &[u8] = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++
++fn canvas() -> (Canvas<RecordingRenderer>, FontId) {
++    let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();
++    canvas.set_size(400, 200, 1.0);
++    let font = canvas.text_context.borrow_mut().add_font_mem(FONT).unwrap();
++    (canvas, font)
++}
++
++fn glyph(glyph_id: u16, x: f32) -> PositionedGlyph {
++    PositionedGlyph { glyph_id, x, y: 70.0 }
++}
++
++#[test]
++fn generic_negative_positions_reuse_the_integer_bitmap() {
++    let glyph_id = swash::FontRef::from_index(FONT, 0).unwrap().charmap().map('g');
++    #[cfg(feature = "swash")]
++    let modes = [RenderMode::Stroke];
++    #[cfg(not(feature = "swash"))]
++    let modes = [RenderMode::Fill, RenderMode::Stroke];
++    for mode in modes {
++        for positions in [[-0.4, 10.0], [10.0, -0.4]] {
++            let (mut canvas, font) = canvas();
++            let paint = Paint::color(Color::black()).with_font_size(24.0).with_line_width(1.25);
++            let draw = |canvas: &mut Canvas<RecordingRenderer>, x| match mode {
++                RenderMode::Fill => canvas.fill_glyph_run(font, &[], [glyph(glyph_id, x)], &paint),
++                RenderMode::Stroke => canvas.stroke_glyph_run(font, &[], [glyph(glyph_id, x)], &paint),
++            };
++            draw(&mut canvas, positions[0]).unwrap();
++            let first = canvas.verts[canvas.verts.len() - 6..].to_vec();
++            let commands_before = canvas.commands.len();
++            draw(&mut canvas, positions[1]).unwrap();
++            assert_eq!(
++                canvas.glyph_atlas.rendered_glyphs.borrow().len(),
++                1,
++                "{mode:?}, {positions:?}"
++            );
++            assert_eq!(
++                canvas.commands.len() - commands_before,
++                1,
++                "the second draw only emits its quad"
++            );
++            let second = &canvas.verts[canvas.verts.len() - 6..];
++            for (a, b) in first.iter().zip(second) {
++                assert_eq!((a.u, a.v), (b.u, b.v), "both quads sample the same atlas cell");
++            }
++        }
++    }
++}
++
++pub(super) fn select_target(canvas: &mut Canvas<RecordingRenderer>, kind: u8) -> RenderTarget {
++    match kind {
++        1 => {
++            let image = canvas
++                .create_image_empty(400, 200, PixelFormat::Rgba8, ImageFlags::empty())
++                .unwrap();
++            canvas.set_render_target(RenderTarget::Image(image));
++        }
++        2 => assert!(canvas.begin_layer(&LayerEffects::new())),
++        _ => {}
++    }
++    canvas.current_render_target
++}
++
++#[test]
++fn cold_generic_run_batches_atlas_target_changes_and_preserves_state() {
++    let face = swash::FontRef::from_index(FONT, 0).unwrap();
++    #[cfg(feature = "swash")]
++    let modes = [RenderMode::Stroke];
++    #[cfg(not(feature = "swash"))]
++    let modes = [RenderMode::Fill, RenderMode::Stroke];
++    for mode in modes {
++        for kind in 0..3 {
++            let (mut canvas, font) = canvas();
++            let paint = Paint::color(Color::black()).with_font_size(24.0).with_line_width(1.25);
++            let draw = |canvas: &mut Canvas<RecordingRenderer>, glyphs: Vec<PositionedGlyph>| match mode {
++                RenderMode::Fill => canvas.fill_glyph_run(font, &[], glyphs, &paint),
++                RenderMode::Stroke => canvas.stroke_glyph_run(font, &[], glyphs, &paint),
++            };
++            // Initialize the texture first: debug inspector may clear it in
++            // its own pass. The following four glyphs are still atlas misses.
++            draw(&mut canvas, vec![glyph(face.charmap().map('A'), 10.0)]).unwrap();
++            let target = select_target(&mut canvas, kind);
++            canvas.translate(7.0, 11.0);
++            let transform = canvas.transform();
++            let state_depth = canvas.state_stack.len();
++            let layer_count = canvas.layers.len();
++            canvas.commands.clear();
++            let glyphs = ['B', 'C', 'D', 'E']
++                .into_iter()
++                .enumerate()
++                .map(|(index, ch)| glyph(face.charmap().map(ch), 10.0 + index as f32 * 30.0))
++                .collect();
++            draw(&mut canvas, glyphs).unwrap();
++            assert_eq!(canvas.glyph_atlas.rendered_glyphs.borrow().len(), 5);
++            assert_eq!(canvas.glyph_atlas.glyph_textures.borrow().len(), 1);
++            let switches = canvas
++                .commands
++                .iter()
++                .filter_map(|command| match command.cmd_type {
++                    crate::renderer::CommandType::SetRenderTarget(target) => Some(target),
++                    _ => None,
++                })
++                .collect::<Vec<_>>();
++            assert_eq!(switches.len(), 2, "one atlas pass for all four cold glyphs");
++            assert_eq!(switches[1], target);
++            assert_ne!(switches[0], target);
++            assert_eq!(canvas.current_render_target, target);
++            assert_eq!(canvas.layers.len(), layer_count);
++            assert_eq!(canvas.state_stack.len(), state_depth);
++            assert_eq!(canvas.transform(), transform);
++        }
++    }
++}
++
++pub(super) fn assert_target_and_following_clear(canvas: &mut Canvas<RecordingRenderer>, expected: RenderTarget) {
++    use crate::renderer::CommandType;
++    assert_eq!(canvas.current_render_target, expected);
++    let last_target = canvas.commands.iter().rev().find_map(|command| match command.cmd_type {
++        CommandType::SetRenderTarget(target) => Some(target),
++        _ => None,
++    });
++    if let Some(last_target) = last_target {
++        assert_eq!(last_target, expected);
++    }
++    let count = canvas.commands.len();
++    canvas.clear_rect(0, 0, 4, 4, Color::white());
++    assert_eq!(canvas.commands.len(), count + 1);
++    assert!(matches!(
++        &canvas.commands.last().unwrap().cmd_type,
++        CommandType::ClearRect { .. }
++    ));
++    assert_eq!(canvas.current_render_target, expected);
++}
++
++#[test]
++fn stroke_atlas_allocation_error_restores_screen_image_and_layer_targets() {
++    let face = swash::FontRef::from_index(FONT, 0).unwrap();
++    let paint = Paint::color(Color::black()).with_font_size(90.0).with_line_width(30.0);
++    for kind in 0..3 {
++        let (mut canvas, font) = canvas();
++        let initial = select_target(&mut canvas, kind);
++        canvas.translate(7.0, 11.0);
++        let transform = canvas.transform();
++        let state_depth = canvas.state_stack.len();
++        let layer_count = canvas.layers.len();
++        canvas
++            .stroke_glyph_run(font, &[], [glyph(face.charmap().map('A'), 10.0)], &paint)
++            .unwrap();
++        assert_eq!(canvas.layers.len(), layer_count, "first glyph must preserve the layer");
++        assert_eq!(canvas.state_stack.len(), state_depth);
++        assert_eq!(canvas.transform(), transform);
++        assert_eq!(canvas.current_render_target, initial);
++        canvas.commands.clear();
++        canvas.verts.clear();
++        canvas.renderer.fail_image_allocations = true;
++        let glyphs = ('!'..='~')
++            .enumerate()
++            .map(|(index, ch)| glyph(face.charmap().map(ch), 10.0 + index as f32 * 20.0));
++        let result = canvas.stroke_glyph_run(font, &[], glyphs, &paint);
++        assert!(matches!(result, Err(ErrorKind::UnknownError)), "{result:?}");
++        assert_eq!(canvas.layers.len(), layer_count);
++        assert_eq!(canvas.state_stack.len(), state_depth);
++        assert_eq!(canvas.transform(), transform);
++        assert!(
++            canvas.commands.iter().any(|command| matches!(
++                &command.cmd_type,
++                crate::renderer::CommandType::SetRenderTarget(RenderTarget::Image(target))
++                    if RenderTarget::Image(*target) != initial
++            )),
++            "the failed run switched to an atlas target"
++        );
++        assert_target_and_following_clear(&mut canvas, initial);
++    }
++}
+diff --git a/src/text/glyph_atlas_tests.rs b/src/text/glyph_atlas_tests.rs
+new file mode 100644
+index 0000000..0a9ed94
+--- /dev/null
++++ b/src/text/glyph_atlas_tests.rs
+@@ -0,0 +1,620 @@
++#[cfg(not(feature = "textlayout"))]
++use crate::ErrorKind;
++use crate::{renderer, Canvas, Color, FontId, Paint, PositionedGlyph, RecordingRenderer};
++
++#[test]
++fn native_rendering_releases_shared_context_before_empty_and_invalid_fallbacks() {
++    let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++    let font_ref = swash::FontRef::from_index(data, 0).unwrap();
++    let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();
++    canvas.set_size(400, 200, 1.0);
++    let font_id = canvas.text_context.borrow_mut().add_font_mem(data).unwrap();
++    let ids = ['A', ' ', 'g'].map(|ch| font_ref.charmap().map(ch));
++    let paint = Paint::color(Color::black()).with_font_size(24.0);
++    for phase in [0.0, 0.3] {
++        let glyphs = [ids[0], u16::MAX, ids[1], ids[2]]
++            .into_iter()
++            .enumerate()
++            .map(|(index, glyph_id)| PositionedGlyph {
++                x: 10.0 + index as f32 * 30.0 + phase,
++                y: 70.0,
++                glyph_id,
++            });
++        canvas.fill_glyph_run(font_id, &[], glyphs, &paint).unwrap();
++    }
++    let atlas = canvas.glyph_atlas.rendered_glyphs.borrow();
++    assert_eq!(atlas.values().filter(|glyph| glyph.is_some()).count(), 4);
++    assert_eq!(atlas.values().filter(|glyph| glyph.is_none()).count(), 4);
++}
++
++#[test]
++fn swash_atlas_fills_defer_generic_paths_but_direct_and_strokes_keep_them() {
++    let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++    let glyph_id = swash::FontRef::from_index(data, 0).unwrap().charmap().map('A');
++    let glyphs = || {
++        [PositionedGlyph {
++            x: 10.3,
++            y: 70.0,
++            glyph_id,
++        }]
++    };
++    for route in 0..4 {
++        let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();
++        canvas.set_size(300, 200, 1.0);
++        let font_id = canvas.text_context.borrow_mut().add_font_mem(data).unwrap();
++        let paint = Paint::color(Color::black()).with_font_size(if route == 3 { 96.0 } else { 24.0 });
++        if route == 2 {
++            canvas.rotate(0.2);
++        }
++        if route == 1 {
++            canvas.stroke_glyph_run(font_id, &[], glyphs(), &paint).unwrap();
++        } else {
++            canvas.fill_glyph_run(font_id, &[], glyphs(), &paint).unwrap();
++        }
++        let text_context = canvas.text_context.borrow();
++        let paths = text_context.font(font_id).unwrap().glyph_cache_len();
++        assert_eq!(paths, usize::from(route != 0), "route {route}");
++        assert!(!canvas.commands.is_empty(), "route {route} draws");
++    }
++}
++
++#[test]
++fn swash_prepass_bypass_routes_colr_and_plain_layer_glyphs_to_their_atlas_draws() {
++    let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();
++    canvas.set_size(300, 200, 1.0);
++    let font_id = canvas
++        .text_context
++        .borrow_mut()
++        .add_font_mem(include_bytes!("../../examples/assets/BungeeColor-Subset.ttf"))
++        .unwrap();
++    let paint = Paint::color(Color::black()).with_font_size(24.0);
++    let glyphs = [2, 7, u16::MAX]
++        .into_iter()
++        .enumerate()
++        .map(|(index, glyph_id)| PositionedGlyph {
++            x: 10.0 + index as f32 * 40.0,
++            y: 70.0,
++            glyph_id,
++        });
++    canvas.fill_glyph_run(font_id, &[], glyphs, &paint).unwrap();
++    let atlas = canvas.glyph_atlas.rendered_glyphs.borrow();
++    assert_eq!(atlas.values().filter(|glyph| glyph.is_some()).count(), 2);
++    assert_eq!(atlas.values().filter(|glyph| glyph.is_none()).count(), 1);
++    let commands = &canvas.commands;
++    let mask_draws = commands
++        .iter()
++        .filter(|command| match &command.cmd_type {
++            renderer::CommandType::Triangles { params } => params.glyph_texture_type == 1,
++            _ => false,
++        })
++        .count();
++    let color_draws = commands
++        .iter()
++        .filter(|command| match &command.cmd_type {
++            renderer::CommandType::Triangles { params } => params.glyph_texture_type == 2,
++            _ => false,
++        })
++        .count();
++    assert_eq!(mask_draws, 1);
++    assert_eq!(color_draws, 1);
++    let text_context = canvas.text_context.borrow();
++    assert_eq!(text_context.font(font_id).unwrap().glyph_cache_len(), 0);
++}
++
++// Add a real PNG strike to the existing COLR fixture. The synthetic sfnt table
++// assembly is confined to this test; both production classifiers use the
++// existing font APIs. Glyph 7 has a glyf outline too, so source precedence is
++// exercised rather than treating bitmap presence as the absence of an outline.
++fn mixed_colr_png_font() -> Vec<u8> {
++    let original = include_bytes!("../../examples/assets/BungeeColor-Subset.ttf");
++    let glyph_count = swash::FontRef::from_index(original, 0)
++        .unwrap()
++        .metrics(&[])
++        .glyph_count;
++    let bitmap_glyph = 7;
++    assert!(glyph_count > bitmap_glyph);
++
++    let bitmap = ::image::RgbaImage::from_pixel(24, 24, ::image::Rgba([255, 0, 64, 255]));
++    let mut png = std::io::Cursor::new(Vec::new());
++    bitmap.write_to(&mut png, ::image::ImageFormat::Png).unwrap();
++    let png = png.into_inner();
++    let mut payload = Vec::new();
++    payload.extend_from_slice(&0i16.to_be_bytes()); // originOffsetX
++    payload.extend_from_slice(&0i16.to_be_bytes()); // originOffsetY
++    payload.extend_from_slice(b"png ");
++    payload.extend_from_slice(&png);
++
++    let mut sbix = Vec::new();
++    sbix.extend_from_slice(&1u16.to_be_bytes()); // version
++    sbix.extend_from_slice(&1u16.to_be_bytes()); // required flag bit 0
++    sbix.extend_from_slice(&1u32.to_be_bytes()); // one strike
++    sbix.extend_from_slice(&12u32.to_be_bytes()); // strike offset
++    sbix.extend_from_slice(&24u16.to_be_bytes()); // pixels per em
++    sbix.extend_from_slice(&72u16.to_be_bytes()); // resolution
++    let payload_start = 4 + 4 * (u32::from(glyph_count) + 1);
++    for glyph in 0..=glyph_count {
++        let offset = payload_start + if glyph > bitmap_glyph { payload.len() as u32 } else { 0 };
++        sbix.extend_from_slice(&offset.to_be_bytes());
++    }
++    sbix.extend_from_slice(&payload);
++
++    let u16_at = |offset| u16::from_be_bytes(original[offset..offset + 2].try_into().unwrap());
++    let u32_at = |offset| u32::from_be_bytes(original[offset..offset + 4].try_into().unwrap()) as usize;
++    let mut tables = Vec::new();
++    for index in 0..usize::from(u16_at(4)) {
++        let record = 12 + index * 16;
++        let tag: [u8; 4] = original[record..record + 4].try_into().unwrap();
++        assert_ne!(&tag, b"sbix");
++        let start = u32_at(record + 8);
++        let length = u32_at(record + 12);
++        tables.push((tag, original[start..start + length].to_vec()));
++    }
++    tables.push((*b"sbix", sbix));
++    tables.sort_by_key(|(tag, _)| *tag);
++
++    let table_count = tables.len() as u16;
++    let entry_selector = table_count.ilog2() as u16;
++    let search_range = (1u16 << entry_selector) * 16;
++    let mut font = original[..4].to_vec();
++    font.extend_from_slice(&table_count.to_be_bytes());
++    font.extend_from_slice(&search_range.to_be_bytes());
++    font.extend_from_slice(&entry_selector.to_be_bytes());
++    font.extend_from_slice(&(table_count * 16 - search_range).to_be_bytes());
++    let body_start = 12 + tables.len() * 16;
++    let mut body = Vec::new();
++    for (tag, table) in tables {
++        font.extend_from_slice(&tag);
++        // As in the other minimal sfnt fixtures, parsers do not verify checksums.
++        font.extend_from_slice(&0u32.to_be_bytes());
++        font.extend_from_slice(&((body_start + body.len()) as u32).to_be_bytes());
++        font.extend_from_slice(&(table.len() as u32).to_be_bytes());
++        body.extend_from_slice(&table);
++        while !body.len().is_multiple_of(4) {
++            body.push(0);
++        }
++    }
++    font.extend_from_slice(&body);
++    font
++}
++
++#[cfg(feature = "textlayout")]
++#[test]
++fn swash_prepass_preserves_overlapping_colr_then_png_batches_on_cold_and_warm_atlas() {
++    let data = mixed_colr_png_font();
++    let face = ttf_parser::Face::parse(&data, 0).unwrap();
++    let bitmap = face.glyph_raster_image(ttf_parser::GlyphId(7), u16::MAX).unwrap();
++    assert_eq!(bitmap.format, ttf_parser::RasterImageFormat::PNG);
++    assert_eq!((bitmap.width, bitmap.height), (24, 24));
++    assert!(face.glyph_raster_image(ttf_parser::GlyphId(2), u16::MAX).is_none());
++
++    let prepare = || {
++        let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();
++        canvas.set_size(100, 100, 1.0);
++        let font_id = canvas.text_context.borrow_mut().add_font_mem(&data).unwrap();
++        (canvas, font_id)
++    };
++    let paint = Paint::color(Color::black()).with_font_size(24.0);
++    let glyph = |glyph_id| PositionedGlyph {
++        x: 20.0,
++        y: 70.0,
++        glyph_id,
++    };
++    let signature = |canvas: &Canvas<RecordingRenderer>| {
++        canvas
++            .commands
++            .iter()
++            .filter_map(|command| match &command.cmd_type {
++                renderer::CommandType::Triangles { params } if params.glyph_texture_type == 2 => {
++                    let (start, count) = command.triangles_verts.unwrap();
++                    Some(canvas.verts[start..start + count].to_vec())
++                }
++                _ => None,
++            })
++            .collect::<Vec<_>>()
++    };
++    let (mut reference, reference_font) = prepare();
++    // The existing classifier puts the COLR glyph in the first atlas batch and
++    // the generic PNG in the second, even if the caller supplies PNG first.
++    reference
++        .fill_glyph_run(reference_font, &[], [glyph(2)], &paint)
++        .unwrap();
++    reference
++        .fill_glyph_run(reference_font, &[], [glyph(7)], &paint)
++        .unwrap();
++    let expected = signature(&reference);
++    assert_eq!(expected.len(), 2, "fixture must rasterize both color sources");
++    assert!(expected.iter().all(|vertices| vertices.len() == 6));
++    let bounds = |vertices: &[renderer::Vertex]| {
++        vertices.iter().fold(
++            (f32::INFINITY, f32::INFINITY, f32::NEG_INFINITY, f32::NEG_INFINITY),
++            |(x0, y0, x1, y1), v| (x0.min(v.x), y0.min(v.y), x1.max(v.x), y1.max(v.y)),
++        )
++    };
++    let (ax0, ay0, ax1, ay1) = bounds(&expected[0]);
++    let (bx0, by0, bx1, by1) = bounds(&expected[1]);
++    assert!(
++        ax0.max(bx0) < ax1.min(bx1) && ay0.max(by0) < ay1.min(by1),
++        "the two color quads overlap, so their painter order matters"
++    );
++
++    let (mut canvas, font_id) = prepare();
++    for warm in [false, true] {
++        canvas.commands.clear();
++        canvas.verts.clear();
++        canvas
++            .fill_glyph_run(font_id, &[], [glyph(7), glyph(2)], &paint)
++            .unwrap();
++        assert_eq!(signature(&canvas), expected, "warm atlas: {warm}");
++        assert_eq!(
++            canvas.glyph_atlas.glyph_textures.borrow().len(),
++            1,
++            "both sources share a texture; combining batches would reverse their painter order"
++        );
++        assert_eq!(canvas.text_context.borrow().font(font_id).unwrap().glyph_cache_len(), 0);
++    }
++}
++
++mod glyph_atlas_regressions {
++    use super::*;
++    use crate::text::glyph_atlas_fallback_tests::{assert_target_and_following_clear, select_target};
++
++    fn canvas(data: &[u8]) -> (Canvas<RecordingRenderer>, FontId) {
++        let mut canvas = Canvas::new(RecordingRenderer::default()).unwrap();
++        canvas.set_size(400, 200, 1.0);
++        let font = canvas.text_context.borrow_mut().add_font_mem(data).unwrap();
++        (canvas, font)
++    }
++
++    fn glyph(glyph_id: u16, x: f32) -> PositionedGlyph {
++        PositionedGlyph { glyph_id, x, y: 70.0 }
++    }
++
++    #[test]
++    fn spaces_at_ten_phases_allocate_no_atlas_and_preserve_caller_state() {
++        let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++        let id = swash::FontRef::from_index(data, 0).unwrap().charmap().map(' ');
++        for kind in 0..3 {
++            let (mut canvas, font) = canvas(data);
++            let target = select_target(&mut canvas, kind);
++            canvas.translate(7.0, 11.0);
++            let transform = canvas.transform();
++            let state_depth = canvas.state_stack.len();
++            let layer_count = canvas.layers.len();
++            let allocations = canvas.renderer.image_allocation_attempts;
++            canvas.commands.clear();
++            canvas
++                .fill_glyph_run(
++                    font,
++                    &[],
++                    (0..10).map(|phase| glyph(id, 10.0 + phase as f32 / 10.0)),
++                    &Paint::color(Color::black()).with_font_size(24.0),
++                )
++                .unwrap();
++            assert_eq!(canvas.renderer.image_allocation_attempts, allocations);
++            assert!(canvas.glyph_atlas.glyph_textures.borrow().is_empty());
++            assert!(canvas
++                .glyph_atlas
++                .rendered_glyphs
++                .borrow()
++                .values()
++                .all(Option::is_none));
++            assert!(canvas.commands.is_empty());
++            assert_eq!(canvas.layers.len(), layer_count);
++            assert_eq!(canvas.state_stack.len(), state_depth);
++            assert_eq!(canvas.transform(), transform);
++            assert_eq!(canvas.current_render_target, target);
++        }
++    }
++
++    #[cfg(not(feature = "textlayout"))]
++    #[test]
++    fn tiny_nonempty_outline_keeps_its_generic_fallback() {
++        use swash::scale::{Render, ScaleContext, Source};
++        let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++        let face = swash::FontRef::from_index(data, 0).unwrap();
++        let id = face.charmap().map('g');
++        let mut context = ScaleContext::new();
++        let size = [0.01, 0.05, 0.1, 0.2, 0.3, 0.5]
++            .into_iter()
++            .find(|&size| {
++                let mut scaler = context.builder(face).size(size).hint(true).build();
++                let image = Render::new(&[Source::Outline]).render(&mut scaler, id).unwrap();
++                image.placement.width == 0 || image.placement.height == 0
++            })
++            .expect("fixture must have a nonempty glyph with a zero-area hinted image");
++        let (mut canvas, font) = canvas(data);
++        canvas
++            .fill_glyph_run(
++                font,
++                &[],
++                [glyph(id, 10.0)],
++                &Paint::color(Color::black()).with_font_size(size),
++            )
++            .unwrap();
++        let atlas = canvas.glyph_atlas.rendered_glyphs.borrow();
++        let rendered = atlas
++            .values()
++            .next()
++            .unwrap()
++            .as_ref()
++            .expect("nonempty generic outline is retained");
++        assert!(!rendered.uses_subpixel_positioning);
++    }
++
++    #[cfg(all(feature = "textlayout", feature = "image-loading"))]
++    #[test]
++    fn generic_png_upload_error_preserves_caller_state() {
++        let data = mixed_colr_png_font();
++        for kind in 0..3 {
++            let (mut canvas, font) = canvas(&data);
++            // Initialize the texture before injecting a glyph upload failure.
++            canvas
++                .fill_glyph_run(
++                    font,
++                    &[],
++                    [glyph(2, 10.0)],
++                    &Paint::color(Color::black()).with_font_size(24.0),
++                )
++                .unwrap();
++            let target = select_target(&mut canvas, kind);
++            canvas.translate(7.0, 11.0);
++            let transform = canvas.transform();
++            let state_depth = canvas.state_stack.len();
++            let layer_count = canvas.layers.len();
++            canvas.commands.clear();
++            canvas.renderer.fail_image_updates = true;
++            let result = canvas.stroke_glyph_run(
++                font,
++                &[],
++                [glyph(7, 30.0)],
++                &Paint::color(Color::black()).with_font_size(24.0),
++            );
++            assert!(matches!(result, Err(crate::ErrorKind::UnknownError)), "{result:?}");
++            assert_eq!(canvas.layers.len(), layer_count);
++            assert_eq!(canvas.state_stack.len(), state_depth);
++            assert_eq!(canvas.transform(), transform);
++            assert_target_and_following_clear(&mut canvas, target);
++        }
++    }
++
++    #[cfg(feature = "textlayout")]
++    #[test]
++    fn first_rotated_and_large_png_draws_initialize_the_ephemeral_atlas() {
++        let data = mixed_colr_png_font();
++        for (rotation, size) in [(0.2, 24.0), (0.0, 96.0)] {
++            let (mut canvas, font) = canvas(&data);
++            canvas.rotate(rotation);
++            canvas
++                .fill_glyph_run(
++                    font,
++                    &[],
++                    [glyph(7, 20.0)],
++                    &Paint::color(Color::black()).with_font_size(size),
++                )
++                .unwrap();
++            assert!(canvas.ephemeral_glyph_atlas.is_some());
++            assert!(canvas.commands.iter().any(|command| matches!(
++                &command.cmd_type,
++                renderer::CommandType::Triangles { params } if params.glyph_texture_type == 2
++            )));
++        }
++    }
++
++    fn assert_native_draw(
++        canvas: &mut Canvas<RecordingRenderer>,
++        font: FontId,
++        id: u16,
++        x: f32,
++        origin: f32,
++        expected: &swash::scale::image::Image,
++    ) {
++        let padding = super::super::GLYPH_PADDING as usize;
++        let command_start = canvas.commands.len();
++        canvas
++            .fill_glyph_run(
++                font,
++                &[],
++                [glyph(id, x)],
++                &Paint::color(Color::black()).with_font_size(24.0),
++            )
++            .unwrap();
++        let (width, height, pixels) = canvas.renderer.image_masks.last().unwrap();
++        assert_eq!(
++            (*width, *height),
++            (
++                expected.placement.width as usize + 2 * padding,
++                expected.placement.height as usize + 2 * padding
++            )
++        );
++        let mask = (0..expected.placement.height as usize)
++            .flat_map(|y| {
++                pixels[(y + padding) * width + padding
++                    ..(y + padding) * width + padding + expected.placement.width as usize]
++                    .iter()
++                    .copied()
++            })
++            .collect::<Vec<_>>();
++        let expected_mask = if expected.content == swash::scale::image::Content::Color {
++            expected.data.chunks_exact(4).map(|pixel| pixel[0]).collect::<Vec<_>>()
++        } else {
++            expected.data.clone()
++        };
++        assert_eq!(mask, expected_mask, "native coverage at x={x}");
++        // Debug atlas initialization can add its own clear quad. Check the
++        // glyph's draw command rather than all vertices added by the call.
++        let draws = canvas.commands[command_start..]
++            .iter()
++            .filter(|command| {
++                matches!(
++                    &command.cmd_type,
++                    renderer::CommandType::Triangles { params } if params.glyph_texture_type != 0
++                )
++            })
++            .collect::<Vec<_>>();
++        assert_eq!(draws.len(), 1);
++        let (start, count) = draws[0].triangles_verts.unwrap();
++        let vertices = &canvas.verts[start..start + count];
++        assert_eq!(vertices.len(), 6);
++        assert_eq!(
++            vertices.iter().map(|vertex| vertex.x).fold(f32::INFINITY, f32::min),
++            origin + expected.placement.left as f32 - padding as f32,
++            "native placement at x={x}"
++        );
++        assert_eq!(
++            vertices.iter().map(|vertex| vertex.y).fold(f32::INFINITY, f32::min),
++            70.0 - expected.placement.top as f32 - padding as f32
++        );
++    }
++
++    #[test]
++    fn native_subpixel_masks_reuse_integer_translations_in_either_order() {
++        use swash::{
++            scale::{Render, ScaleContext, Source},
++            zeno::{Format, Vector},
++        };
++        let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++        let face = swash::FontRef::from_index(data, 0).unwrap();
++        let id = face.charmap().map('g');
++        let mut native_context = ScaleContext::new();
++        let mut scaler = native_context.builder(face).size(24.0).hint(true).build();
++        let integer = Render::new(&[Source::Outline])
++            .format(Format::Alpha)
++            .render(&mut scaler, id)
++            .unwrap();
++        // Explicit origins and offsets keep the oracle independent of the binning formula.
++        for (phase, positions) in [
++            (0.6, [(-0.4, -1.0), (19.6, 19.0)]),
++            (0.8, [(-0.25, -1.0), (19.75, 19.0)]),
++            (0.0, [(-0.04, 0.0), (19.96, 20.0)]),
++        ] {
++            let expected = Render::new(&[Source::Outline])
++                .format(Format::Alpha)
++                .offset(Vector::new(phase, 0.0))
++                .render(&mut scaler, id)
++                .unwrap();
++            for reverse in [false, true] {
++                let mut positions = positions;
++                if reverse {
++                    positions.reverse();
++                }
++                let (mut canvas, font) = canvas(data);
++                canvas.renderer.record_image_masks = true;
++                for _ in 0..2 {
++                    for (x, origin) in positions {
++                        assert_native_draw(&mut canvas, font, id, x, origin, &expected);
++                    }
++                    assert_eq!(canvas.renderer.image_masks.len(), 1, "translated masks upload once");
++                    assert_eq!(canvas.glyph_atlas.rendered_glyphs.borrow().len(), 1);
++                }
++                for x in [0.0, 20.0] {
++                    assert_native_draw(&mut canvas, font, id, x, x, &integer);
++                }
++                let distinct_phases = if phase == 0.0 { 1 } else { 2 };
++                assert_eq!(canvas.renderer.image_masks.len(), distinct_phases);
++                assert_eq!(canvas.glyph_atlas.rendered_glyphs.borrow().len(), distinct_phases);
++            }
++        }
++    }
++
++    #[test]
++    fn native_color_outlines_use_subpixel_origins_on_cold_and_warm_draws() {
++        use swash::{
++            scale::{Render, ScaleContext, Source},
++            zeno::Vector,
++        };
++
++        let data = include_bytes!("../../examples/assets/BungeeColor-Subset.ttf");
++        let face = swash::FontRef::from_index(data, 0).unwrap();
++        let mut context = ScaleContext::new();
++        let mut scaler = context.builder(face).size(24.0).hint(true).build();
++        for reverse in [false, true] {
++            let mut cases = [(-0.4, -1.0, 0.6), (0.95, 1.0, 0.0)];
++            if reverse {
++                cases.reverse();
++            }
++            let (mut canvas, font) = canvas(data);
++            canvas.renderer.record_image_masks = true;
++            for (x, origin, phase) in cases {
++                let expected = Render::new(&[Source::ColorOutline(0)])
++                    .offset(Vector::new(phase, 0.0))
++                    .render(&mut scaler, 2)
++                    .unwrap();
++                assert!(matches!(expected.source, Source::ColorOutline(0)));
++                for _ in 0..2 {
++                    assert_native_draw(&mut canvas, font, 2, x, origin, &expected);
++                }
++            }
++            assert_eq!(
++                canvas.renderer.image_masks.len(),
++                2,
++                "each color-outline phase uploads once"
++            );
++            assert_eq!(canvas.glyph_atlas.rendered_glyphs.borrow().len(), 2);
++        }
++    }
++
++    #[test]
++    fn native_color_bitmaps_preserve_truncated_origins_on_cold_and_warm_draws() {
++        use swash::scale::{Render, ScaleContext, Source, StrikeWith};
++
++        let data = mixed_colr_png_font();
++        let face = swash::FontRef::from_index(&data, 0).unwrap();
++        let mut context = ScaleContext::new();
++        let mut scaler = context.builder(face).size(24.0).hint(true).build();
++        let expected = Render::new(&[Source::ColorBitmap(StrikeWith::BestFit)])
++            .render(&mut scaler, 7)
++            .unwrap();
++        assert!(matches!(expected.source, Source::ColorBitmap(_)));
++        for reverse in [false, true] {
++            let mut positions = [(-0.4, 0.0), (-0.95, 0.0), (0.95, 0.0), (19.95, 19.0), (-1.05, -1.0)];
++            if reverse {
++                positions.reverse();
++            }
++            let (mut canvas, font) = canvas(&data);
++            canvas.renderer.record_image_masks = true;
++            for (x, origin) in positions {
++                assert_native_draw(&mut canvas, font, 7, x, origin, &expected);
++            }
++            let uploads = canvas.renderer.image_masks.len();
++            for (x, origin) in positions {
++                assert_native_draw(&mut canvas, font, 7, x, origin, &expected);
++            }
++            assert_eq!(
++                canvas.renderer.image_masks.len(),
++                uploads,
++                "warm bitmap draws reuse the atlas"
++            );
++        }
++    }
++
++    #[cfg(not(feature = "textlayout"))]
++    #[test]
++    fn fallback_then_native_upload_error_restores_screen_image_and_layer_targets() {
++        let data = include_bytes!("../../examples/assets/RobotoFlex-VariableFont.ttf");
++        let face = swash::FontRef::from_index(data, 0).unwrap();
++        for kind in 0..3 {
++            let (mut canvas, font) = canvas(data);
++            let initial = select_target(&mut canvas, kind);
++            canvas.translate(7.0, 11.0);
++            let transform = canvas.transform();
++            let state_depth = canvas.state_stack.len();
++            let layer_count = canvas.layers.len();
++            canvas.commands.clear();
++            canvas.renderer.fail_image_updates = true;
++            let result = canvas.fill_glyph_run(
++                font,
++                &[],
++                [
++                    glyph(face.charmap().map(' '), 10.0),
++                    glyph(face.charmap().map('A'), 30.0),
++                ],
++                &Paint::color(Color::black()).with_font_size(24.0),
++            );
++            assert!(matches!(result, Err(ErrorKind::UnknownError)), "{result:?}");
++            assert_eq!(canvas.layers.len(), layer_count);
++            assert_eq!(canvas.state_stack.len(), state_depth);
++            assert_eq!(canvas.transform(), transform);
++            assert_target_and_following_clear(&mut canvas, initial);
++        }
++    }
++}
+diff --git a/src/text/swash_rasterizer.rs b/src/text/swash_rasterizer.rs
+new file mode 100644
+index 0000000..02d8bf9
+--- /dev/null
++++ b/src/text/swash_rasterizer.rs
+@@ -0,0 +1,879 @@
++use std::{
++    borrow::Cow,
++    cell::RefCell,
++    mem::{size_of, size_of_val},
++    ops::Range,
++    rc::Rc,
++};
++
++use fnv::FnvHashMap;
++use swash::{
++    scale::{
++        image::{Content, Image},
++        outline::Outline,
++        Render, ScaleContext, Source, StrikeWith,
++    },
++    zeno::{Format, Mask, Origin, Point, Scratch, Vector, Verb},
++    CacheKey, FontRef,
++};
++
++const COLOR_SOURCES: [Source; 2] = [Source::ColorOutline(0), Source::ColorBitmap(StrikeWith::BestFit)];
++const OUTLINE_CACHE_BUDGET: usize = 1 << 20;
++
++#[derive(Debug, Hash, PartialEq, Eq)]
++struct OutlineKey<'a> {
++    font: CacheKey,
++    glyph_id: u16,
++    font_size: u32,
++    normalized_coords: Cow<'a, [i16]>,
++}
++
++struct CachedPath {
++    points: Range<usize>,
++    verbs: Range<usize>,
++}
++
++/// Shared Swash rendering state, opaque to fonts and the glyph atlas.
++#[derive(Clone)]
++pub(super) struct SwashRasterizer {
++    state: Rc<RefCell<RasterizerState>>,
++}
++
++impl Default for SwashRasterizer {
++    fn default() -> Self {
++        let context = Rc::new(RefCell::new(ScaleContext::new()));
++        Self {
++            state: Rc::new(RefCell::new(RasterizerState::new(context))),
++        }
++    }
++}
++
++impl SwashRasterizer {
++    pub(super) fn render(
++        &self,
++        font: FontRef<'_>,
++        font_size: f32,
++        glyph_id: u16,
++        subpixel_x: f32,
++        normalized_coords: &[i16],
++    ) -> Option<Image> {
++        self.state
++            .borrow_mut()
++            .render(font, font_size, glyph_id, subpixel_x, normalized_coords)
++    }
++
++    // Swash-only fonts share this native context for their generic fallback.
++    #[cfg(not(feature = "textlayout"))]
++    pub(super) fn scale_context(&self) -> Rc<RefCell<ScaleContext>> {
++        Rc::clone(&self.state.borrow().scale_context)
++    }
++}
++
++/// Renders glyphs using Swash, retaining hinted geometry in compact arenas.
++/// Swash hints outlines before applying the raster offset, so each outline can
++/// serve every subpixel position. Color sources bypass the outline cache.
++///
++/// The 1 MiB soft budget counts own arena capacities, logical metadata and
++/// logical native outline scratch. Swash spare capacity, private layer buffers,
++/// map buckets and allocator overhead are outside this accounting.
++struct RasterizerState {
++    scale_context: Rc<RefCell<ScaleContext>>,
++    scratch: Scratch,
++    scaled_outline: Outline,
++    outlines: FnvHashMap<OutlineKey<'static>, CachedPath>,
++    points: Vec<Point>,
++    verbs: Vec<Verb>,
++    metadata_bytes: usize,
++    outline_bytes: usize,
++    outline_budget: usize,
++    scratch_points_high_water: usize,
++    scratch_verbs_high_water: usize,
++}
++
++impl RasterizerState {
++    fn new(scale_context: Rc<RefCell<ScaleContext>>) -> Self {
++        Self::with_outline_budget(scale_context, OUTLINE_CACHE_BUDGET)
++    }
++
++    fn with_outline_budget(scale_context: Rc<RefCell<ScaleContext>>, outline_budget: usize) -> Self {
++        Self {
++            scale_context,
++            scratch: Scratch::new(),
++            scaled_outline: Outline::new(),
++            outlines: FnvHashMap::default(),
++            points: Vec::new(),
++            verbs: Vec::new(),
++            metadata_bytes: 0,
++            outline_bytes: 0,
++            outline_budget,
++            scratch_points_high_water: 0,
++            scratch_verbs_high_water: 0,
++        }
++    }
++
++    #[cfg(test)]
++    fn scale_context(&self) -> Rc<RefCell<ScaleContext>> {
++        Rc::clone(&self.scale_context)
++    }
++
++    /// Looks up hinted geometry before building its matching native scaler.
++    fn render(
++        &mut self,
++        font: FontRef<'_>,
++        font_size: f32,
++        glyph_id: u16,
++        subpixel_x: f32,
++        normalized_coords: &[i16],
++    ) -> Option<Image> {
++        let key = OutlineKey {
++            font: font.key,
++            glyph_id,
++            font_size: font_size.to_bits(),
++            normalized_coords: Cow::Borrowed(normalized_coords),
++        };
++        if let Some(path) = self.outlines.get(&key) {
++            return Some(rasterize_path(
++                &self.points[path.points.clone()],
++                &self.verbs[path.verbs.clone()],
++                &mut self.scratch,
++                subpixel_x,
++            ));
++        }
++        let success = {
++            let mut context = self.scale_context.borrow_mut();
++            let mut scaler = context
++                .builder(font)
++                .size(font_size)
++                .hint(true)
++                .normalized_coords(normalized_coords)
++                .build();
++            if let Some(image) = Render::new(&COLOR_SOURCES)
++                .format(Format::Alpha)
++                .offset(Vector::new(subpixel_x, 0.0))
++                .render(&mut scaler, glyph_id)
++            {
++                return Some(image);
++            }
++            if !scaler.has_outlines() {
++                return None;
++            }
++            scaler.scale_outline_into(glyph_id, &mut self.scaled_outline)
++        };
++        // Include failed draws too: a failed pen can already have grown buffers.
++        self.observe_scratch_lengths();
++        if !success {
++            self.enforce_retained_budget();
++            return None;
++        }
++        let image = rasterize_path(
++            self.scaled_outline.points(),
++            self.scaled_outline.verbs(),
++            &mut self.scratch,
++            subpixel_x,
++        );
++        self.insert_scaled_outline(key);
++        self.enforce_retained_budget();
++        Some(image)
++    }
++
++    // This is a soft accounting budget, not a bound on total heap retention.
++    // Swash exposes outline lengths, not capacities or private layer storage.
++    // Charge a high-water logical point/verb count plus the Outline value;
++    // own arena capacities and key/range metadata are counted separately.
++    fn observe_scratch_lengths(&mut self) {
++        self.scratch_points_high_water = self.scratch_points_high_water.max(self.scaled_outline.points().len());
++        self.scratch_verbs_high_water = self.scratch_verbs_high_water.max(self.scaled_outline.verbs().len());
++        self.refresh_bytes();
++    }
++
++    fn scratch_logical_bytes(&self) -> usize {
++        size_of::<Outline>()
++            + self.scratch_points_high_water * size_of::<Point>()
++            + self.scratch_verbs_high_water * size_of::<Verb>()
++    }
++
++    fn refresh_bytes(&mut self) {
++        self.outline_bytes = self.metadata_bytes
++            + self.points.capacity() * size_of::<Point>()
++            + self.verbs.capacity() * size_of::<Verb>()
++            + self.scratch_logical_bytes();
++    }
++
++    fn clear_cached_paths(&mut self) {
++        self.outlines.clear();
++        self.points.clear();
++        self.verbs.clear();
++        self.metadata_bytes = 0;
++        self.refresh_bytes();
++    }
++
++    fn enforce_retained_budget(&mut self) {
++        self.refresh_bytes();
++        if self.outline_bytes > self.outline_budget {
++            self.clear_cached_paths();
++        }
++        if self.outline_bytes > self.outline_budget {
++            // An oversized glyph may use temporary working memory, but must
++            // not make the retained scratch high-water state unbounded.
++            self.scaled_outline = Outline::new();
++            self.scratch_points_high_water = 0;
++            self.scratch_verbs_high_water = 0;
++            self.refresh_bytes();
++        }
++    }
++
++    fn insert_scaled_outline(&mut self, key: OutlineKey<'_>) {
++        let metadata = size_of::<OutlineKey>() + size_of::<CachedPath>() + size_of_val(&*key.normalized_coords);
++        let points_len = self.scaled_outline.points().len();
++        let verbs_len = self.scaled_outline.verbs().len();
++        let scratch_bytes = self.scratch_logical_bytes();
++        let budget = self.outline_budget;
++        let fits = |point_capacity: usize, verb_capacity: usize, metadata_bytes: usize| {
++            metadata_bytes + point_capacity * size_of::<Point>() + verb_capacity * size_of::<Verb>() + scratch_bytes
++                <= budget
++        };
++        let can_append = points_len <= self.points.capacity() - self.points.len()
++            && verbs_len <= self.verbs.capacity() - self.verbs.len()
++            && fits(
++                self.points.capacity(),
++                self.verbs.capacity(),
++                self.metadata_bytes + metadata,
++            );
++        if !can_append {
++            if !fits(points_len, verbs_len, metadata) {
++                return;
++            }
++            fn grow(capacity: usize, required: usize) -> usize {
++                if required <= capacity {
++                    capacity
++                } else {
++                    required.max(capacity.saturating_mul(2)).max(8)
++                }
++            }
++            let mut required_points = self.points.len() + points_len;
++            let mut required_verbs = self.verbs.len() + verbs_len;
++            if !fits(required_points, required_verbs, self.metadata_bytes + metadata) {
++                self.clear_cached_paths();
++                required_points = points_len;
++                required_verbs = verbs_len;
++            }
++            let metadata_bytes = self.metadata_bytes + metadata;
++            if !fits(
++                self.points.capacity().max(required_points),
++                self.verbs.capacity().max(required_verbs),
++                metadata_bytes,
++            ) {
++                // Reclaim spare capacity before evicting a working set whose
++                // contents still fit. Retained capacity counts against the budget.
++                self.points.shrink_to(required_points);
++                self.verbs.shrink_to(required_verbs);
++            }
++            let minimum_points = self.points.capacity().max(required_points);
++            let minimum_verbs = self.verbs.capacity().max(required_verbs);
++            if !fits(minimum_points, minimum_verbs, metadata_bytes) {
++                // Allocators may retain more capacity than shrink_to requests.
++                return;
++            }
++            let mut point_capacity = grow(self.points.capacity(), required_points);
++            let mut verb_capacity = grow(self.verbs.capacity(), required_verbs);
++            if !fits(point_capacity, verb_capacity, metadata_bytes) {
++                // Bound growth near the ceiling, reserving half the remaining
++                // room for future metadata and growth in the other arena.
++                let minimum_bytes = minimum_points * size_of::<Point>() + minimum_verbs * size_of::<Verb>();
++                let spare_bytes = (budget - metadata_bytes - scratch_bytes - minimum_bytes) / 2;
++                let geometry_bytes = required_points * size_of::<Point>() + required_verbs * size_of::<Verb>();
++                let extra_points =
++                    (spare_bytes as u128 * required_points as u128 / geometry_bytes.max(1) as u128) as usize;
++                let extra_verbs = (spare_bytes - extra_points * size_of::<Point>()) / size_of::<Verb>();
++                point_capacity = point_capacity.min(minimum_points + extra_points);
++                verb_capacity = verb_capacity.min(minimum_verbs + extra_verbs);
++            }
++            if point_capacity > self.points.capacity() {
++                self.points.reserve_exact(point_capacity - self.points.len());
++            }
++            if verb_capacity > self.verbs.capacity() {
++                self.verbs.reserve_exact(verb_capacity - self.verbs.len());
++            }
++        }
++        let points_start = self.points.len();
++        let verbs_start = self.verbs.len();
++        self.points.extend_from_slice(self.scaled_outline.points());
++        self.verbs.extend_from_slice(self.scaled_outline.verbs());
++        self.outlines.insert(
++            OutlineKey {
++                font: key.font,
++                glyph_id: key.glyph_id,
++                font_size: key.font_size,
++                normalized_coords: Cow::Owned(key.normalized_coords.into_owned()),
++            },
++            CachedPath {
++                points: points_start..self.points.len(),
++                verbs: verbs_start..self.verbs.len(),
++            },
++        );
++        self.metadata_bytes += metadata;
++        self.refresh_bytes();
++    }
++}
++
++// Match the Source::Outline arm of Swash's Render::render_into, including both
++// offset and render_offset. The independent Render oracle tests guard this copy.
++fn rasterize_path(points: &[Point], verbs: &[Verb], scratch: &mut Scratch, subpixel_x: f32) -> Image {
++    let offset = Vector::new(subpixel_x, 0.0);
++    let mut image = Image::new();
++    image.placement = Mask::with_scratch((points, verbs), scratch)
++        .format(Format::Alpha)
++        .origin(Origin::BottomLeft)
++        .offset(offset)
++        .render_offset(offset)
++        .inspect(|format, width, height| image.data.resize(format.buffer_size(width, height), 0))
++        .render_into(&mut image.data[..], None);
++    image.content = Content::Mask;
++    image.source = Source::Outline;
++    image
++}
++
++#[cfg(test)]
++mod tests {
++    use super::*;
++
++    #[test]
++    fn cloned_handles_share_cached_geometry_without_borrowing_the_scale_context() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let first = font.charmap().map('A');
++        let second = font.charmap().map('g');
++        let original = SwashRasterizer::default();
++        let cloned = original.clone();
++        original.render(font, 24.0, first, 0.0, &[]).unwrap();
++        cloned.render(font, 24.0, second, 0.0, &[]).unwrap();
++
++        let context = Rc::clone(&original.state.borrow().scale_context);
++        let _context_borrow = context.borrow_mut();
++        for (handle, glyph_id) in [(&cloned, first), (&original, second)] {
++            let actual = handle.render(font, 24.0, glyph_id, 0.3, &[]);
++            let expected = render_uncached(&mut ScaleContext::new(), font, 24.0, glyph_id, 0.3, &[]);
++            assert_same_image(actual.as_ref(), expected.as_ref(), "geometry shared between handles");
++        }
++    }
++
++    #[test]
++    fn cached_outline_does_not_borrow_the_shared_scale_context() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('g');
++        let mut rasterizer = rasterizer();
++        rasterizer.render(font, 24.0, glyph_id, 0.0, &[]).unwrap();
++
++        let context = rasterizer.scale_context();
++        let _borrow = context.borrow_mut();
++        let actual = rasterizer.render(font, 24.0, glyph_id, 0.3, &[]);
++        let expected = render_uncached(&mut ScaleContext::new(), font, 24.0, glyph_id, 0.3, &[]);
++        assert_same_image(
++            actual.as_ref(),
++            expected.as_ref(),
++            "cached glyph with occupied scale context",
++        );
++    }
++
++    #[test]
++    fn variable_coordinate_lookups_borrow_but_cached_keys_own_their_coordinates() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('g');
++        let mut coordinates = vec![0; font.variations().len()];
++        coordinates[0] = 0x2000;
++        let mut rasterizer = rasterizer();
++        rasterizer.render(font, 24.0, glyph_id, 0.0, &coordinates).unwrap();
++        assert!(rasterizer
++            .outlines
++            .keys()
++            .all(|key| matches!(key.normalized_coords, Cow::Owned(_))));
++        let original_instance = coordinates.clone();
++        coordinates[0] = 0x1000;
++        assert!(!rasterizer.outlines.contains_key(&OutlineKey {
++            font: font.key,
++            glyph_id,
++            font_size: 24.0_f32.to_bits(),
++            normalized_coords: Cow::Borrowed(&coordinates),
++        }));
++        drop(coordinates);
++
++        let context = rasterizer.scale_context();
++        let _context_borrow = context.borrow_mut();
++        let actual = rasterizer.render(font, 24.0, glyph_id, 0.3, &original_instance);
++        let expected = render_uncached(&mut ScaleContext::new(), font, 24.0, glyph_id, 0.3, &original_instance);
++        assert_same_image(
++            actual.as_ref(),
++            expected.as_ref(),
++            "owned variable instance after input dropped",
++        );
++    }
++
++    #[test]
++    fn interleaved_glyphs_match_native_render_for_outlines_color_invalid_and_variations() {
++        for face in faces() {
++            let font = FontRef::from_index(&face.data, 0).unwrap();
++            for coords in &face.instances {
++                for size in [9.0, 16.5, 40.0] {
++                    let mut rasterizer = rasterizer();
++                    let mut reference = ScaleContext::new();
++                    for offset in subpixel_offsets() {
++                        for glyph_id in face.glyph_ids.clone() {
++                            let actual = rasterizer.render(font, size, glyph_id, offset, coords);
++                            let expected = render_uncached(&mut reference, font, size, glyph_id, offset, coords);
++                            assert_same_image(
++                                actual.as_ref(),
++                                expected.as_ref(),
++                                &format!("{} {coords:?} {size} glyph {glyph_id} phase {offset}", face.name),
++                            );
++                        }
++                    }
++                }
++            }
++        }
++    }
++
++    #[test]
++    fn second_phase_hits_skip_the_scale_context_and_a_later_miss_initializes_it() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let mut rasterizer = rasterizer();
++        let context = rasterizer.scale_context();
++        let glyph_ids = ['A', 'g', 'W'].map(|ch| font.charmap().map(ch));
++        for glyph_id in glyph_ids {
++            rasterizer.render(font, 24.0, glyph_id, 0.0, &[]).unwrap();
++        }
++        assert_eq!(rasterizer.outlines.len(), glyph_ids.len());
++        {
++            let _context_borrow = context.borrow_mut();
++            for glyph_id in glyph_ids {
++                rasterizer.render(font, 24.0, glyph_id, 0.3, &[]).unwrap();
++            }
++        }
++        let cold_glyph = font.charmap().map('O');
++        let actual = rasterizer.render(font, 24.0, cold_glyph, 0.3, &[]);
++        let expected = render_uncached(&mut ScaleContext::new(), font, 24.0, cold_glyph, 0.3, &[]);
++        assert_same_image(actual.as_ref(), expected.as_ref(), "later cold glyph");
++        assert_eq!(rasterizer.outlines.len(), glyph_ids.len() + 1);
++    }
++
++    fn read_font(file: &str) -> Vec<u8> {
++        let path = format!("{}/examples/assets/{file}", env!("CARGO_MANIFEST_DIR"));
++        std::fs::read(&path).unwrap_or_else(|err| panic!("{path}: {err}"))
++    }
++
++    /// Cover the native atlas's ten phases plus signed offsets and the upper
++    /// endpoint accepted by the lower-level rasterizer.
++    fn subpixel_offsets() -> impl Iterator<Item = f32> {
++        (-9..=10).map(|tenths| tenths as f32 / 10.0)
++    }
++
++    /// Renders through swash's `Render` alone, with no outline cache: the
++    /// reference the production renderer must match.
++    fn render_uncached(
++        context: &mut ScaleContext,
++        font: FontRef<'_>,
++        font_size: f32,
++        glyph_id: u16,
++        subpixel_x: f32,
++        normalized_coords: &[i16],
++    ) -> Option<Image> {
++        let mut scaler = context
++            .builder(font)
++            .size(font_size)
++            .hint(true)
++            .normalized_coords(normalized_coords)
++            .build();
++        Render::new(&[
++            Source::ColorOutline(0),
++            Source::ColorBitmap(StrikeWith::BestFit),
++            Source::Outline,
++        ])
++        .format(Format::Alpha)
++        .offset(Vector::new(subpixel_x, 0.0))
++        .render(&mut scaler, glyph_id)
++    }
++
++    fn placement(image: &Image) -> (i32, i32, u32, u32) {
++        let p = image.placement;
++        (p.left, p.top, p.width, p.height)
++    }
++
++    fn rasterizer() -> RasterizerState {
++        RasterizerState::new(Rc::default())
++    }
++
++    fn assert_same_image(actual: Option<&Image>, expected: Option<&Image>, case: &str) {
++        let (actual, expected) = match (actual, expected) {
++            (Some(actual), Some(expected)) => (actual, expected),
++            (None, None) => return,
++            (actual, expected) => panic!("{case}: rendered {}, expected {}", actual.is_some(), expected.is_some()),
++        };
++        assert_eq!(placement(actual), placement(expected), "{case}: placement");
++        assert_eq!(actual.content, expected.content, "{case}: content");
++        assert_eq!(
++            format!("{:?}", actual.source),
++            format!("{:?}", expected.source),
++            "{case}: source"
++        );
++        assert!(actual.data == expected.data, "{case}: coverage differs");
++    }
++
++    struct Face {
++        name: &'static str,
++        data: Vec<u8>,
++        glyph_ids: std::ops::Range<u16>,
++        /// Normalized coordinates to render at; the face's default instance is empty.
++        instances: Vec<Vec<i16>>,
++    }
++
++    fn faces() -> Vec<Face> {
++        let roboto = read_font("RobotoFlex-VariableFont.ttf");
++        let axis_count = FontRef::from_index(&roboto, 0).unwrap().variations().len();
++        // F2Dot14: halfway along the first axis, a quarter back along the last.
++        let mut roboto_instance = vec![0; axis_count];
++        roboto_instance[0] = 0x2000;
++        roboto_instance[axis_count - 1] = -0x1000;
++
++        vec![
++            Face {
++                name: "Roboto Flex",
++                data: roboto,
++                glyph_ids: 0..80,
++                instances: vec![Vec::new(), roboto_instance],
++            },
++            Face {
++                name: "Amiri",
++                data: read_font("amiri-regular.ttf"),
++                glyph_ids: 0..80,
++                instances: vec![Vec::new()],
++            },
++            Face {
++                name: "Entypo",
++                data: read_font("entypo.ttf"),
++                glyph_ids: 0..40,
++                instances: vec![Vec::new()],
++            },
++            Face {
++                name: "Bungee Color subset",
++                data: read_font("BungeeColor-Subset.ttf"),
++                // Glyph 9 is past the last glyph, 8.
++                glyph_ids: 0..10,
++                instances: vec![Vec::new()],
++            },
++        ]
++    }
++
++    // One rasterizer serves every face, instance and size, so an outline cached
++    // under a key that left out the face, the size or the coordinates, or that
++    // rounded the size, would be reused for another glyph and fail the
++    // comparison.
++    #[test]
++    fn renders_like_swash_render_at_every_subpixel_offset() {
++        let faces = faces();
++        let mut rasterizer = rasterizer();
++        let mut context = ScaleContext::new();
++
++        for face in &faces {
++            let font = FontRef::from_index(&face.data, 0).unwrap();
++            for coords in &face.instances {
++                for font_size in [9.0, 12.0, 16.1, 16.5, 16.9, 40.0] {
++                    for glyph_id in face.glyph_ids.clone() {
++                        for subpixel_x in subpixel_offsets() {
++                            let actual = rasterizer.render(font, font_size, glyph_id, subpixel_x, coords);
++                            let expected = render_uncached(&mut context, font, font_size, glyph_id, subpixel_x, coords);
++                            let case = format!(
++                                "{} {coords:?} glyph {glyph_id} at {font_size}px, offset {subpixel_x}",
++                                face.name
++                            );
++                            assert_same_image(actual.as_ref(), expected.as_ref(), &case);
++                        }
++                    }
++                }
++            }
++        }
++    }
++
++    #[test]
++    fn color_glyphs_render_from_color_sources_and_are_not_cached() {
++        // BungeeColor-Subset.ttf is Bungee Color Regular, Version 1.000, from
++        // google/fonts ofl/bungeecolor, SHA-256
++        // cf21a786e54f43694f4edbb51a38f81331a4c3414217c524c8cb2d091aa7fd63,
++        // subset with fontTools 4.59.1:
++        //   pyftsubset BungeeColor-Regular.ttf --unicodes=U+0020,U+0041 \
++        //     --layout-features='' --drop-tables+=DSIG,GSUB,GPOS --name-IDs='*'
++        // Glyph 2 is A, whose COLR layers are glyphs 7 and 8.
++        const COLOR_A: u16 = 2;
++        const LAYER_OF_A: u16 = 7;
++
++        let data = read_font("BungeeColor-Subset.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let mut rasterizer = rasterizer();
++
++        let color = rasterizer.render(font, 24.0, COLOR_A, 0.3, &[]).unwrap();
++        assert_eq!(color.content, Content::Color);
++        assert!(matches!(color.source, Source::ColorOutline(0)));
++        assert!(rasterizer.outlines.is_empty());
++
++        // A layer glyph has no color layers of its own, so even in a color
++        // face it renders from, and caches, its plain outline.
++        let layer = rasterizer.render(font, 24.0, LAYER_OF_A, 0.3, &[]).unwrap();
++        assert_eq!(layer.content, Content::Mask);
++        assert!(matches!(layer.source, Source::Outline));
++        assert_eq!(rasterizer.outlines.len(), 1);
++    }
++
++    #[test]
++    fn subpixel_offsets_reuse_the_cached_outline() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('g');
++        let mut rasterizer = rasterizer();
++
++        let first = rasterizer.render(font, 16.0, glyph_id, 0.0, &[]).unwrap();
++        assert!(first.data.iter().any(|&coverage| coverage > 0));
++
++        // Swap the cached outline for an empty one: renders at every offset must
++        // then cover nothing, which they only do if they skip hinting.
++        assert_eq!(rasterizer.outlines.len(), 1);
++        for cached in rasterizer.outlines.values_mut() {
++            cached.points = 0..0;
++            cached.verbs = 0..0;
++        }
++
++        for subpixel_x in subpixel_offsets() {
++            let image = rasterizer.render(font, 16.0, glyph_id, subpixel_x, &[]).unwrap();
++            assert!(image.data.iter().all(|&coverage| coverage == 0), "offset {subpixel_x}");
++        }
++    }
++
++    #[test]
++    fn exact_budget_boundary_controls_admission_and_rehinting() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph = font.charmap().map('g');
++        let mut probe = rasterizer();
++        probe.render(font, 16.0, glyph, 0.0, &[]).unwrap();
++        let entry_cost = probe.outline_bytes;
++        let mut reference = ScaleContext::new();
++        for (budget, admitted) in [(entry_cost - 1, false), (entry_cost, true), (entry_cost + 1, true)] {
++            let mut rasterizer = RasterizerState::with_outline_budget(Rc::default(), budget);
++            rasterizer.render(font, 16.0, glyph, 0.0, &[]).unwrap();
++            assert_eq!(rasterizer.outlines.len(), usize::from(admitted), "budget {budget}");
++            let context = rasterizer.scale_context();
++            // Holding the context proves an admitted outline cannot rehint.
++            // An unadmitted outline must remain renderable on every miss.
++            let _context_borrow = admitted.then(|| context.borrow_mut());
++            let actual = rasterizer.render(font, 16.0, glyph, 0.3, &[]);
++            let expected = render_uncached(&mut reference, font, 16.0, glyph, 0.3, &[]);
++            assert_same_image(actual.as_ref(), expected.as_ref(), "budget boundary");
++        }
++    }
++
++    #[test]
++    fn an_unadmittable_outline_preserves_a_working_set_that_still_fits() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let small = font.charmap().map('.');
++        let large = font.charmap().map('@');
++        let mut rasterizer = rasterizer();
++        rasterizer.render(font, 16.0, small, 0.0, &[]).unwrap();
++        let mut reference = ScaleContext::new();
++        let mut large_outline = Outline::new();
++        assert!(reference
++            .builder(font)
++            .size(16.0)
++            .hint(true)
++            .build()
++            .scale_outline_into(large, &mut large_outline));
++        let scratch_bytes = size_of::<Outline>()
++            + large_outline.points().len().max(rasterizer.scratch_points_high_water) * size_of::<Point>()
++            + large_outline.verbs().len().max(rasterizer.scratch_verbs_high_water) * size_of::<Verb>();
++        // Allow the retained small entry and the larger temporary scratch,
++        // but not a cached copy of the larger outline.
++        rasterizer.outline_budget = rasterizer.metadata_bytes
++            + rasterizer.points.capacity() * size_of::<Point>()
++            + rasterizer.verbs.capacity() * size_of::<Verb>()
++            + scratch_bytes;
++        let actual = rasterizer.render(font, 16.0, large, 0.3, &[]);
++        let expected = render_uncached(&mut reference, font, 16.0, large, 0.3, &[]);
++        assert_same_image(actual.as_ref(), expected.as_ref(), "unadmittable outline");
++        assert_eq!(rasterizer.outlines.len(), 1);
++        let context = rasterizer.scale_context();
++        let _context_borrow = context.borrow_mut();
++        assert!(rasterizer.render(font, 16.0, small, 0.3, &[]).is_some());
++    }
++
++    #[test]
++    fn exact_arena_growth_preserves_a_working_set_that_fits_the_budget() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('@');
++        let sizes = [24.0, 25.0, 26.0];
++        let mut rasterizer = rasterizer();
++        rasterizer.render(font, sizes[0], glyph_id, 0.0, &[]).unwrap();
++        let geometry_bytes = rasterizer.points.len() * size_of::<Point>() + rasterizer.verbs.len() * size_of::<Verb>();
++        let metadata = rasterizer.metadata_bytes;
++        let scratch = rasterizer.scratch_logical_bytes();
++        // Three entries fit, but doubling the two-entry arena for the third
++        // would exceed the budget.
++        rasterizer.outline_budget = 4 * geometry_bytes + 3 * metadata + scratch - 1;
++        assert!(3 * geometry_bytes + 3 * metadata + scratch <= rasterizer.outline_budget);
++        for size in &sizes[1..] {
++            rasterizer.render(font, *size, glyph_id, 0.0, &[]).unwrap();
++        }
++        assert_eq!(rasterizer.outlines.len(), sizes.len());
++        assert!(rasterizer.outline_bytes <= rasterizer.outline_budget);
++
++        let mut reference = ScaleContext::new();
++        let context = rasterizer.scale_context();
++        for size in sizes.into_iter().cycle().take(9) {
++            let actual = {
++                let _context_borrow = context.borrow_mut();
++                rasterizer.render(font, size, glyph_id, 0.3, &[])
++            };
++            let expected = render_uncached(&mut reference, font, size, glyph_id, 0.3, &[]);
++            assert_same_image(actual.as_ref(), expected.as_ref(), "retained near-budget outline");
++            assert_eq!(rasterizer.outlines.len(), sizes.len());
++        }
++        // A fourth size really exceeds the budget, so eviction is still needed.
++        let actual = rasterizer.render(font, 27.0, glyph_id, 0.3, &[]);
++        let expected = render_uncached(&mut reference, font, 27.0, glyph_id, 0.3, &[]);
++        assert_same_image(actual.as_ref(), expected.as_ref(), "over-budget outline");
++        assert_eq!(rasterizer.outlines.len(), 1);
++        assert!(rasterizer.outline_bytes <= rasterizer.outline_budget);
++    }
++
++    #[test]
++    fn near_budget_inserts_amortize_arena_capacity_changes() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('g');
++        let mut rasterizer = rasterizer();
++        rasterizer.render(font, 16.0, glyph_id, 0.0, &[]).unwrap();
++        let mut capacity_changes = 0;
++        let mut previous_entries = rasterizer.outlines.len();
++        let mut inserts = 0;
++        for id in 0..10_000 {
++            let before = (rasterizer.points.capacity(), rasterizer.verbs.capacity());
++            rasterizer.insert_scaled_outline(OutlineKey {
++                font: font.key,
++                glyph_id: id,
++                font_size: 17.0_f32.to_bits(),
++                normalized_coords: (&[][..]).into(),
++            });
++            let after = (rasterizer.points.capacity(), rasterizer.verbs.capacity());
++            // Count shrinking as well as growing: trimming spare capacity
++            // must not hide repeated allocator work near the ceiling.
++            capacity_changes += usize::from(before.0 != after.0) + usize::from(before.1 != after.1);
++            assert!(rasterizer.outline_bytes <= rasterizer.outline_budget);
++            inserts += 1;
++            if rasterizer.outlines.len() < previous_entries {
++                break;
++            }
++            previous_entries = rasterizer.outlines.len();
++        }
++        assert!(inserts > 1_000, "the working set should fill most of the cache");
++        assert!(inserts < 10_000, "the workload must reach the budget boundary");
++        assert!(
++            capacity_changes < 64,
++            "{capacity_changes} arena capacity changes across {inserts} inserts"
++        );
++    }
++
++    #[test]
++    fn arena_capacity_and_logical_scratch_are_charged_and_reused_after_clears() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let mut rasterizer = RasterizerState::with_outline_budget(Rc::default(), 4096);
++        let mut context = ScaleContext::new();
++        let mut cleared = false;
++        let mut prior_entries = 0;
++        let mut scratch_peak = size_of::<Outline>();
++        for (i, ch) in ('!'..='~').cycle().take(400).enumerate() {
++            let glyph = font.charmap().map(ch);
++            let size = 16.0 + (i / 94) as f32;
++            let actual = rasterizer.render(font, size, glyph, 0.3, &[]);
++            let expected = render_uncached(&mut context, font, size, glyph, 0.3, &[]);
++            assert_same_image(actual.as_ref(), expected.as_ref(), "bounded arena churn");
++            assert!(rasterizer.outline_bytes <= 4096);
++            assert_eq!(
++                rasterizer.outline_bytes,
++                rasterizer.metadata_bytes
++                    + rasterizer.points.capacity() * size_of::<Point>()
++                    + rasterizer.verbs.capacity() * size_of::<Verb>()
++                    + rasterizer.scratch_logical_bytes()
++            );
++            scratch_peak = scratch_peak.max(rasterizer.scratch_logical_bytes());
++            cleared |= rasterizer.outlines.len() < prior_entries;
++            prior_entries = rasterizer.outlines.len();
++        }
++        assert!(cleared);
++        assert!(scratch_peak > size_of::<Outline>());
++    }
++
++    #[test]
++    fn empty_outlines_still_charge_metadata_and_coordinates() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let space = font.charmap().map(' ');
++        let mut coords = vec![0; font.variations().len()];
++        let mut rasterizer = RasterizerState::with_outline_budget(Rc::default(), 1024);
++        for first_axis in 0..20 {
++            coords[0] = first_axis * 0x100;
++            rasterizer.render(font, 16.0, space, 0.0, &coords);
++            assert!(rasterizer.outline_bytes <= 1024);
++            assert_eq!(
++                rasterizer.metadata_bytes,
++                rasterizer.outlines.len()
++                    * (size_of::<OutlineKey>() + size_of::<CachedPath>() + size_of_val(&coords[..]))
++            );
++        }
++    }
++
++    #[test]
++    fn outlines_larger_than_the_budget_are_not_cached() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let glyph_id = font.charmap().map('g');
++
++        let mut rasterizer = RasterizerState::with_outline_budget(Rc::default(), 1);
++        let image = rasterizer.render(font, 16.0, glyph_id, 0.0, &[]).unwrap();
++        assert!(image.placement.width > 0);
++        assert!(rasterizer.outlines.is_empty());
++        assert!(rasterizer.outline_bytes <= size_of::<Outline>());
++        assert!(rasterizer.scaled_outline.points().is_empty());
++    }
++    #[test]
++    fn native_scratch_uses_public_length_high_water_and_resets_when_oversized() {
++        let data = read_font("RobotoFlex-VariableFont.ttf");
++        let font = FontRef::from_index(&data, 0).unwrap();
++        let mut rasterizer = rasterizer();
++        let wide = font.charmap().map('W');
++        rasterizer.render(font, 24.0, wide, 0.0, &[]).unwrap();
++        let points = rasterizer.scaled_outline.points().len();
++        let verbs = rasterizer.scaled_outline.verbs().len();
++        assert!(points > 0 && verbs > 0);
++        assert_eq!(rasterizer.scratch_points_high_water, points);
++        assert_eq!(rasterizer.scratch_verbs_high_water, verbs);
++        assert_eq!(
++            rasterizer.scratch_logical_bytes(),
++            size_of::<Outline>() + points * size_of::<Point>() + verbs * size_of::<Verb>()
++        );
++        rasterizer
++            .render(font, 24.0, font.charmap().map(' '), 0.0, &[])
++            .unwrap();
++        assert!(rasterizer.scaled_outline.points().is_empty());
++        assert_eq!(rasterizer.scratch_points_high_water, points);
++        assert_eq!(rasterizer.scratch_verbs_high_water, verbs);
++        // Give the scratch alone insufficient logical budget and render a miss.
++        rasterizer.outline_budget = size_of::<Outline>() + 1;
++        rasterizer.render(font, 25.0, wide, 0.0, &[]).unwrap();
++        assert!(rasterizer.outlines.is_empty());
++        assert!(rasterizer.scaled_outline.points().is_empty());
++        assert_eq!(rasterizer.scratch_points_high_water, 0);
++        assert_eq!(rasterizer.scratch_verbs_high_water, 0);
++        assert_eq!(rasterizer.scratch_logical_bytes(), size_of::<Outline>());
++    }
++}

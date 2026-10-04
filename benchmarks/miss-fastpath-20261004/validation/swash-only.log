@@ -1,0 +1,35 @@
+   Compiling femtovg v0.27.0 (/Users/jesse/github/femtovg)
+warning: unused import: `path::Path as FilePath`
+  --> src/lib.rs:28:5
+   |
+28 |     path::Path as FilePath,
+   |     ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `geometry::Transform2D`
+    --> src/paint.rs:1630:17
+     |
+1630 |     use crate::{geometry::Transform2D, Color};
+     |                 ^^^^^^^^^^^^^^^^^^^^^
+
+warning: method `font_scale` is never used
+    --> src/lib.rs:2346:8
+     |
+ 440 | / impl<T> Canvas<T>
+ 441 | | where
+ 442 | |     T: Renderer,
+     | |________________- method in this implementation
+...
+2346 |       fn font_scale(&self) -> f32 {
+     |          ^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `femtovg` (lib test) generated 3 warnings (run `cargo fix --lib -p femtovg --tests` to apply 2 suggestions)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.96s
+────────────
+ Nextest run ID f0aa4866-c977-427d-b22b-3be8ad3d9832 with nextest profile: default
+    Starting 182 tests across 1 binary
+────────────
+     Summary [   1.740s] 182 tests run: 182 passed, 0 skipped

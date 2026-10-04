@@ -1,0 +1,24 @@
+{
+  "complete_blocks": 6,
+  "accepted_processes": 126,
+  "measurement_rows": 486,
+  "excluded_attempts": [],
+  "guard_checks": 547,
+  "matched_guard_checks": 0,
+  "source_files": {
+    "master": 145,
+    "before": 150,
+    "after": 150
+  },
+  "source_tree_sha256": {
+    "master": "c2bfca9d290f405f102e7f7fe928222412f6bbf6576115d86694c5c4ecc5ad79",
+    "before": "3ee2ca6404e212efc1cee6c92db38dfa6b366f9761889a3b8c62c5288bbba601",
+    "after": "acaac82f3928cf3617be8e5275b903e60ff2a7b911e221f09183fbce4303974f"
+  },
+  "artifacts": {
+    "PLAN.json": "085d7a1d9f8de8430db444a7fc4e7908a388dbe425a1807cb1bd719cdbaaa1dd",
+    "METADATA.json": "2fb667e5233521c70d7d0b92787347658a2b6231f55f4e985adba6ebbcbf6fdb",
+    "raw.jsonl": "cda0094e274bb6434b181db6977777537e019a93c607cabbf435ec944abf4cf3"
+  },
+  "verified": "Source, harness, assets, locks and copied binary identities; unique complete measurement matrix; balanced orders; retained attempt statuses"
+}

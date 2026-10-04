@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "path": "bench/bin/after-default_no_swash-scenes",
+      "bytes": 2292016,
+      "sha256": "90538af4f05fbaebf7bacbee4ad08d06f2fdeee0b0f39ab4846d0343e1d09964",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/after-default_swash-cold",
+      "bytes": 2817440,
+      "sha256": "6cad9dffd7b10d13f87b56c120bb8e065c3e59105da3ac95575f15ea50d6e7ca",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/after-default_swash-scenes",
+      "bytes": 3727456,
+      "sha256": "4fa268f77e6a4dac0ef97be13ab4d40f50c2f39674da6d16e0c366c2fe0df6b1",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/after-default_swash-stress",
+      "bytes": 3574288,
+      "sha256": "df2ca147e5329e58f3fc090829f2abf15694a8ca1113bf13ea2eac3ca1378810",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/before-default_no_swash-scenes",
+      "bytes": 2292032,
+      "sha256": "4061cce32daed35c01a745db973330d389e8c1b2cab0f120520d0c2a4646edac",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/before-default_swash-cold",
+      "bytes": 2817440,
+      "sha256": "bd3c2bc7325e40254c28a2e4058e85f6a84d837c5cea9e6f17901e89d60b0b1d",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/before-default_swash-scenes",
+      "bytes": 3727472,
+      "sha256": "178f9665ebe21bf01b6d732deaa72a0003f1f2e122bd0efa6a75a8fb771d6320",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/before-default_swash-stress",
+      "bytes": 3574272,
+      "sha256": "1a8e2d23ba108f001cd12d01aeaf967a4f1cd9521448ddd63d1c2c9aff8f6948",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/master-default_no_swash-scenes",
+      "bytes": 2291376,
+      "sha256": "826d891c4ccdbc71dc822fda6d5a62a79263219a89ca1de6d3ef0b61adad5f6d",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/master-default_swash-cold",
+      "bytes": 2644304,
+      "sha256": "045ec1f50f9aa02ab23559c01e85ddccb38fc7061bd3b36d81239920522e1655",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/master-default_swash-scenes",
+      "bytes": 3553808,
+      "sha256": "a9c77e6f23ed352a6e37cca39d715675c98c55c7815c415d263a5b2d53d28002",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    },
+    {
+      "path": "bench/bin/master-default_swash-stress",
+      "bytes": 3401200,
+      "sha256": "e7cf7077d7671bc2617e10b7b8716f6fab47a7c55cf9b63fc4dfa750266d89fe",
+      "reason": "compiled executable; identity retained, bytes omitted"
+    }
+  ],
+  "excluded_directory_names": [
+    ".git",
+    ".serena",
+    "__pycache__",
+    "bin",
+    "target"
+  ],
+  "compiler_caches": "Outside the study and not archived; build metadata retains the original target path."
+}
