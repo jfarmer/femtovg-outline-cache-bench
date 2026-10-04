@@ -11,6 +11,8 @@ Both measure CPU layout/drawing plus Void flush, excluding font/image loading, G
 
 A [smaller-integration experiment](benchmarks/lower-touch-20261003/SUMMARY.md) compares master, the current cache plus encapsulation edits, and a prototype using the original atlas loop. It removes 146 production lines and preserves the demo gains, but loses some protection against repeated size changes when every request misses. The current FemtoVG implementation is unchanged.
 
+The [same comparison on the extreme hinting demo](benchmarks/lower-touch-stress-20261003/SUMMARY.md) shows that the smaller integration retains nearly all the savings there: Fleur de Leah goes from 90.26 ms on master to 20.18 ms with the current cache and 20.50 ms with the smaller version on the first frame.
+
 The earlier studies below retain their own source pins and baselines. They are not pooled with these current-master comparisons.
 
 Original evidence documents are preserved as captured. Statements that the repository had no public remote describe the capture date; the current [PR draft](pr-draft/PR_BODY.md) links the published source and results.

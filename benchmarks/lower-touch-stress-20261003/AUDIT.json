@@ -1,0 +1,11 @@
+{
+  "accepted_rows": 540,
+  "accepted_blocks": 12,
+  "excluded_blocks": 0,
+  "duplicates": 0,
+  "all_blocks_complete": true,
+  "scene_counts_and_dimensions_equal_across_variants_and_blocks": true,
+  "guard_checks": 573,
+  "matched_build_process_checks": 0,
+  "preflight_guard_failures": 0
+}

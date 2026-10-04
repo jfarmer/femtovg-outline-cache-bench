@@ -1,0 +1,422 @@
+[
+  {
+    "font": "FleurDeLeah",
+    "phase": "first_paint",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 90255.8955,
+    "full": 20183.417,
+    "simple": 20503.667,
+    "full_vs_master_percent": -77.57009800265921,
+    "full_vs_master_ci95": [
+      -77.9008804046461,
+      -77.52964840684965
+    ],
+    "full_vs_master_delta_us": -70181.6455,
+    "simple_vs_master_percent": -77.30386847092956,
+    "simple_vs_master_ci95": [
+      -77.49831226724982,
+      -77.06262593441171
+    ],
+    "simple_vs_master_delta_us": -69843.937,
+    "simple_vs_full_percent": 2.253914935651591,
+    "simple_vs_full_ci95": [
+      0.818154895425971,
+      3.655748605066511
+    ],
+    "simple_vs_full_delta_us": 453.6244999999999
+  },
+  {
+    "font": "FleurDeLeah",
+    "phase": "new_size",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 91617.4670835,
+    "full": 21733.9236665,
+    "simple": 21739.616291500002,
+    "full_vs_master_percent": -76.28178399843546,
+    "full_vs_master_ci95": [
+      -76.40897269005475,
+      -76.11495393999749
+    ],
+    "full_vs_master_delta_us": -69927.81266699999,
+    "simple_vs_master_percent": -76.13946692018371,
+    "simple_vs_master_ci95": [
+      -76.31246227837042,
+      -76.01193130308869
+    ],
+    "simple_vs_master_delta_us": -69636.1528335,
+    "simple_vs_full_percent": -0.11158253612535418,
+    "simple_vs_full_ci95": [
+      -0.3437408483306148,
+      1.3367052906959165
+    ],
+    "simple_vs_full_delta_us": -24.401041999999507
+  },
+  {
+    "font": "FleurDeLeah",
+    "phase": "warm",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 154.236683,
+    "full": 143.885333,
+    "simple": 138.75279999999998,
+    "full_vs_master_percent": -6.831499564731991,
+    "full_vs_master_ci95": [
+      -8.380021781901686,
+      -3.8489278127203654
+    ],
+    "full_vs_master_delta_us": -10.5333835,
+    "simple_vs_master_percent": -9.8648813129888,
+    "simple_vs_master_ci95": [
+      -12.379389399724289,
+      -7.020986962793185
+    ],
+    "simple_vs_master_delta_us": -15.186032999999995,
+    "simple_vs_full_percent": -3.5832446296036604,
+    "simple_vs_full_ci95": [
+      -5.610541589421697,
+      0.1868701566688613
+    ],
+    "simple_vs_full_delta_us": -5.1652665000000155
+  },
+  {
+    "font": "FleurDeLeah",
+    "phase": "return",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 237.29149999999998,
+    "full": 219.83350000000002,
+    "simple": 214.33350000000002,
+    "full_vs_master_percent": -7.123422066130403,
+    "full_vs_master_ci95": [
+      -13.172591133938301,
+      -5.5558655693588594
+    ],
+    "full_vs_master_delta_us": -16.75,
+    "simple_vs_master_percent": -9.780679296808326,
+    "simple_vs_master_ci95": [
+      -14.463353846860272,
+      -5.356405395975623
+    ],
+    "simple_vs_master_delta_us": -23.5,
+    "simple_vs_full_percent": -2.354395365742884,
+    "simple_vs_full_ci95": [
+      -7.691370914212459,
+      1.0012804402316
+    ],
+    "simple_vs_full_delta_us": -5.146500000000003
+  },
+  {
+    "font": "FleurDeLeah",
+    "phase": "sequence44",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "complete 44-frame sequence",
+    "master": 1194589.250999,
+    "full": 285742.354497,
+    "simple": 286643.312508,
+    "full_vs_master_percent": -76.084808106152,
+    "full_vs_master_ci95": [
+      -76.20841144276869,
+      -75.94600276965146
+    ],
+    "full_vs_master_delta_us": -909398.9365020001,
+    "simple_vs_master_percent": -75.97625586571071,
+    "simple_vs_master_ci95": [
+      -76.12302487363584,
+      -75.71194850873495
+    ],
+    "simple_vs_master_delta_us": -904331.1484930001,
+    "simple_vs_full_percent": 0.0013432617791631074,
+    "simple_vs_full_ci95": [
+      -0.19604975088275967,
+      1.5743039649791957
+    ],
+    "simple_vs_full_delta_us": 3.0630119999987073
+  },
+  {
+    "font": "RobotoFlex",
+    "phase": "first_paint",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 4705.458,
+    "full": 3965.541,
+    "simple": 4001.125,
+    "full_vs_master_percent": -15.299086619126017,
+    "full_vs_master_ci95": [
+      -18.468284733531263,
+      -12.386194694136726
+    ],
+    "full_vs_master_delta_us": -710.02,
+    "simple_vs_master_percent": -15.13849379638571,
+    "simple_vs_master_ci95": [
+      -16.807748847730057,
+      -12.427613589897602
+    ],
+    "simple_vs_master_delta_us": -708.8124999999998,
+    "simple_vs_full_percent": -0.006632033052050845,
+    "simple_vs_full_ci95": [
+      -2.7662084346052938,
+      1.7438631480678368
+    ],
+    "simple_vs_full_delta_us": -0.2504999999998745
+  },
+  {
+    "font": "RobotoFlex",
+    "phase": "new_size",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 5100.600625,
+    "full": 4207.468792,
+    "simple": 4302.2795,
+    "full_vs_master_percent": -16.848209780517386,
+    "full_vs_master_ci95": [
+      -17.58496386059351,
+      -16.453667737608278
+    ],
+    "full_vs_master_delta_us": -867.3454164999998,
+    "simple_vs_master_percent": -16.124735861846865,
+    "simple_vs_master_ci95": [
+      -16.842345222031533,
+      -14.43235337065229
+    ],
+    "simple_vs_master_delta_us": -822.1892500000004,
+    "simple_vs_full_percent": 1.2500087211195998,
+    "simple_vs_full_ci95": [
+      -0.5678118632877538,
+      2.757407182042393
+    ],
+    "simple_vs_full_delta_us": 52.82458349999979
+  },
+  {
+    "font": "RobotoFlex",
+    "phase": "warm",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 166.3972335,
+    "full": 158.9549,
+    "simple": 145.6833335,
+    "full_vs_master_percent": -3.757221282343398,
+    "full_vs_master_ci95": [
+      -5.887835948886261,
+      -2.9152443256852454
+    ],
+    "full_vs_master_delta_us": -6.315399499999998,
+    "simple_vs_master_percent": -12.55564134720607,
+    "simple_vs_master_ci95": [
+      -14.396010310660369,
+      -8.778356975377443
+    ],
+    "simple_vs_master_delta_us": -20.836850000000013,
+    "simple_vs_full_percent": -8.416344859403,
+    "simple_vs_full_ci95": [
+      -9.974170429788543,
+      -5.778230186538003
+    ],
+    "simple_vs_full_delta_us": -13.234083000000012
+  },
+  {
+    "font": "RobotoFlex",
+    "phase": "return",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 205.5,
+    "full": 178.7705,
+    "simple": 196.813,
+    "full_vs_master_percent": -11.064286850304494,
+    "full_vs_master_ci95": [
+      -13.787807124331097,
+      -2.2172042158461194
+    ],
+    "full_vs_master_delta_us": -20.8545,
+    "simple_vs_master_percent": -6.101373530288207,
+    "simple_vs_master_ci95": [
+      -18.663200552562138,
+      4.3801510913922375
+    ],
+    "simple_vs_master_delta_us": -13.125,
+    "simple_vs_full_percent": 7.445526426071602,
+    "simple_vs_full_ci95": [
+      -1.220872852536381,
+      17.552173892267298
+    ],
+    "simple_vs_full_delta_us": 13.6875
+  },
+  {
+    "font": "RobotoFlex",
+    "phase": "sequence44",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "complete 44-frame sequence",
+    "master": 71032.708001,
+    "full": 59389.85350700001,
+    "simple": 60169.103001999996,
+    "full_vs_master_percent": -16.141679728460694,
+    "full_vs_master_ci95": [
+      -16.524654563525043,
+      -15.515606774908248
+    ],
+    "full_vs_master_delta_us": -11559.561996,
+    "simple_vs_master_percent": -15.80292679037808,
+    "simple_vs_master_ci95": [
+      -16.33533629613964,
+      -14.248832281888308
+    ],
+    "simple_vs_master_delta_us": -11261.937013000013,
+    "simple_vs_full_percent": 0.5908637059104049,
+    "simple_vs_full_ci95": [
+      -1.1991030346113318,
+      1.5680201453536768
+    ],
+    "simple_vs_full_delta_us": 350.2114880000008
+  },
+  {
+    "font": "Rye",
+    "phase": "first_paint",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 52128.646,
+    "full": 13077.8955,
+    "simple": 13379.7915,
+    "full_vs_master_percent": -75.02876918493749,
+    "full_vs_master_ci95": [
+      -75.18341064547639,
+      -74.62549753858546
+    ],
+    "full_vs_master_delta_us": -39153.3335,
+    "simple_vs_master_percent": -74.32827449447359,
+    "simple_vs_master_ci95": [
+      -74.51716398028734,
+      -74.09620865969137
+    ],
+    "simple_vs_master_delta_us": -38671.2085,
+    "simple_vs_full_percent": 2.2449368972248585,
+    "simple_vs_full_ci95": [
+      0.10927012874394348,
+      3.1632017447441374
+    ],
+    "simple_vs_full_delta_us": 291.5619999999999
+  },
+  {
+    "font": "Rye",
+    "phase": "new_size",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 52772.434083500004,
+    "full": 13766.524291999998,
+    "simple": 13925.7690415,
+    "full_vs_master_percent": -73.94215305747639,
+    "full_vs_master_ci95": [
+      -74.09114636148479,
+      -73.84334787491834
+    ],
+    "full_vs_master_delta_us": -38981.4897085,
+    "simple_vs_master_percent": -73.59790556558002,
+    "simple_vs_master_ci95": [
+      -73.81716358262932,
+      -73.4946251930952
+    ],
+    "simple_vs_master_delta_us": -38838.94262450001,
+    "simple_vs_full_percent": 0.9391095688917606,
+    "simple_vs_full_ci95": [
+      0.49746085926909434,
+      1.9772452325211742
+    ],
+    "simple_vs_full_delta_us": 128.8262080000004
+  },
+  {
+    "font": "Rye",
+    "phase": "warm",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 153.9472,
+    "full": 144.8451,
+    "simple": 140.26458300000002,
+    "full_vs_master_percent": -5.04463781845087,
+    "full_vs_master_ci95": [
+      -6.6882893279485875,
+      -3.239104493053091
+    ],
+    "full_vs_master_delta_us": -7.829800000000006,
+    "simple_vs_master_percent": -7.637578659445121,
+    "simple_vs_master_ci95": [
+      -9.894513042322616,
+      -6.331248706212239
+    ],
+    "simple_vs_master_delta_us": -11.658300000000011,
+    "simple_vs_full_percent": -3.2198695533102173,
+    "simple_vs_full_ci95": [
+      -5.187758988652036,
+      -0.9840429798974315
+    ],
+    "simple_vs_full_delta_us": -4.681316999999993
+  },
+  {
+    "font": "Rye",
+    "phase": "return",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "per-frame phase mean",
+    "master": 227.04149999999998,
+    "full": 215.77100000000002,
+    "simple": 209.58350000000002,
+    "full_vs_master_percent": -4.22215797764684,
+    "full_vs_master_ci95": [
+      -9.670449900845163,
+      0.9953110702882961
+    ],
+    "full_vs_master_delta_us": -9.395499999999998,
+    "simple_vs_master_percent": -6.536838896992986,
+    "simple_vs_master_ci95": [
+      -11.459837352179765,
+      -1.2240429934879393
+    ],
+    "simple_vs_master_delta_us": -14.688500000000005,
+    "simple_vs_full_percent": -0.26135540529721446,
+    "simple_vs_full_ci95": [
+      -9.632411571991783,
+      4.9153939259889645
+    ],
+    "simple_vs_full_delta_us": -0.4170000000000016
+  },
+  {
+    "font": "Rye",
+    "phase": "sequence44",
+    "blocks": 12,
+    "unit": "us",
+    "meaning": "complete 44-frame sequence",
+    "master": 689914.606493,
+    "full": 182903.4575,
+    "simple": 184764.208505,
+    "full_vs_master_percent": -73.5621177959161,
+    "full_vs_master_ci95": [
+      -73.66462223397785,
+      -73.43299340854175
+    ],
+    "full_vs_master_delta_us": -506909.732502,
+    "simple_vs_master_percent": -73.20278250941361,
+    "simple_vs_master_ci95": [
+      -73.37929836087167,
+      -73.12049011294562
+    ],
+    "simple_vs_master_delta_us": -504973.876991,
+    "simple_vs_full_percent": 0.9501853292532059,
+    "simple_vs_full_ci95": [
+      0.3470170867112876,
+      1.798402914354269
+    ],
+    "simple_vs_full_delta_us": 1734.5999909999955
+  }
+]
